@@ -365,7 +365,8 @@ FILTERED = [
 
 player_lookup  = {p["name"]: p for p in PLAYERS}
 
-_all_names = [p["name"] for p in FILTERED]
+_display_players = sorted(FILTERED, key=lambda p: p["rank"])[:200]
+_all_names = [p["name"] for p in _display_players]
 
 selected_name = st.sidebar.selectbox(
     "Search Player",
@@ -666,7 +667,7 @@ with tab_scout:
 with tab_cmp:
     _cmp_selected = st.multiselect(
         "Search and select players to compare (2-10)",
-        [p["name"] for p in FILTERED],
+        _all_names,
         max_selections=10, key="cmp_picks",
     )
 
@@ -734,9 +735,14 @@ with tab_cmp:
 with tab_bb:
     st.markdown("Move players between tiers to build your custom draft board.")
 
-    # Apply position/conference filters to big board display
-    bb_players = [p for p in PLAYERS
-                  if p["pos"] in pos_filter and p.get("conference", "Other") in conf_filter]
+    _bb_pool = st.slider("Show top N prospects", 15, 500, 200, step=5, key="bb_pool")
+
+    # Apply position/conference filters, limit to top N by rank
+    bb_players = sorted(
+        [p for p in PLAYERS
+         if p["pos"] in pos_filter and p.get("conference", "Other") in conf_filter],
+        key=lambda p: p["rank"],
+    )[:_bb_pool]
 
     for tier_id, tier_label in TIER_LABELS.items():
         tier_players = sorted(
