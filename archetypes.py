@@ -28,19 +28,19 @@ def _height_inches(height: str) -> int:
 
 # ── Position height thresholds (inches) ──────────────────────────────────────
 
-_UNDERSIZED = {"PG": 73, "SG": 75, "SF": 77, "PF": 79, "C": 81, "G": 73, "F": 77}
-_PLUS_SIZE  = {"PG": 76, "SG": 78, "SF": 80, "PF": 82, "C": 84, "G": 76, "F": 80}
+_UNDERSIZED = {"G": 73, "F": 77, "C": 81}
+_PLUS_SIZE  = {"G": 76, "F": 80, "C": 84}
 _POWER_CONFS = {"ACC", "SEC", "Big Ten", "Big 12", "Big East", "Pac-12"}
 
 
 # ── Age/class year draft value multiplier ────────────────────────────────────
 _CLASS_BONUS = {
-    "Freshman": 1.30,
-    "Sophomore": 1.15,
+    "Freshman": 1.22,
+    "Sophomore": 1.10,
     "Junior": 1.0,
-    "Senior": 0.82,
-    "Graduate": 0.72,
-    "5th Year": 0.65,
+    "Senior": 0.85,
+    "Graduate": 0.76,
+    "5th Year": 0.70,
     "Unknown": 0.95,
 }
 
@@ -53,8 +53,7 @@ _CONF_MULTIPLIER = {
 
 # ── Position value (modern NBA values wings/guards slightly more) ────────────
 _POS_VALUE = {
-    "PG": 1.02, "SG": 1.03, "SF": 1.04, "PF": 1.01, "C": 0.98,
-    "G": 1.02, "F": 1.02,
+    "G": 1.03, "F": 1.02, "C": 0.98,
 }
 
 
@@ -94,8 +93,8 @@ def draft_score(player: dict) -> float:
 
     # ── Production score (0-100 scale, position-specific caps) ──────────────
     pos = player.get("pos", "")
-    is_g = pos in ("PG", "SG", "G")
-    is_c = pos in ("C",)
+    is_g = pos == "G"
+    is_c = pos == "C"
     if is_g:
         ppg_cap, rpg_cap, apg_cap = 23.0, 6.0, 8.0
     elif is_c:
@@ -104,7 +103,7 @@ def draft_score(player: dict) -> float:
         ppg_cap, rpg_cap, apg_cap = 23.0, 9.0, 5.0
 
     prod = (
-        min(ppg / ppg_cap, 1.0) * 40 +    # scoring
+        min(ppg / ppg_cap, 1.0) * 50 +    # scoring
         min(rpg / rpg_cap, 1.0) * 15 +    # rebounding
         min(apg / apg_cap, 1.0) * 25 +    # playmaking
         min(spg / 2.5, 1.0) * 10 +        # steals
@@ -192,26 +191,24 @@ def draft_score(player: dict) -> float:
     # ── Size bonus (reduced — only for 6'10"+) ──────────────────────────────
     # ── Height bonus/penalty (position-relative, per inch from average) ─────
     # Average heights: PG=75(6'3"), SG=77(6'5"), SF=79(6'7"), PF=81(6'9"), C=83(6'11")
-    _POS_AVG_HT = {"PG": 75, "SG": 77, "SF": 79, "PF": 81, "C": 83, "G": 76, "F": 80}
+    _POS_AVG_HT = {"G": 75, "F": 80, "C": 83}
     ht = _height_inches(player.get("height", ""))
     avg_ht = _POS_AVG_HT.get(pos, 79)
     size_bonus = 0
     if ht > 0:
         diff = ht - avg_ht  # positive = taller than avg for position
-        if diff >= 4:
-            size_bonus = 6.0
-        elif diff >= 3:
-            size_bonus = 4.0
+        if diff >= 3:
+            size_bonus = 3.5
         elif diff >= 2:
-            size_bonus = 2.5
+            size_bonus = 2.0
         elif diff >= 1:
             size_bonus = 1.0
         elif diff <= -3:
-            size_bonus = -5.0
+            size_bonus = -8.0
         elif diff <= -2:
-            size_bonus = -3.0
+            size_bonus = -5.0
         elif diff <= -1:
-            size_bonus = -1.5
+            size_bonus = -2.5
 
     final = (raw * age_mult * conf_mult * pos_mult) + size_bonus
 
@@ -271,9 +268,9 @@ def classify(player: dict) -> dict:
     ws40 = _s(a, "WS/40")
 
     ht = _height_inches(height)
-    is_guard = pos in ("PG", "SG", "G")
-    is_wing = pos in ("SF", "SG", "G", "F")
-    is_big = pos in ("PF", "C", "F")
+    is_guard = pos in ("G",)
+    is_wing = pos in ("G", "F")
+    is_big = pos in ("F", "C")
     is_young = year in ("Freshman", "Sophomore")
     is_veteran = year in ("Senior", "Graduate", "5th Year")
 
@@ -309,14 +306,14 @@ def classify(player: dict) -> dict:
             primary = "Two-Way Wing"
         elif tp > 37 and tpa > 4:
             primary = "Sharpshooter"
-        elif pos in ("SF", "PF", "F") and apg > 3.5:
+        elif pos == "F" and apg > 3.5:
             primary = "Point Forward"
 
     # Bigs
     if not primary and is_big:
         if pos == "C" and tpa > 2 and tp > 30 and bpg > 1:
             primary = "Stretch Five"
-        elif pos in ("C", "PF", "F") and apg > 2 and tp > 30:
+        elif pos in ("C", "F") and apg > 2 and tp > 30:
             primary = "Modern Big"
         elif fg > 55 and ppg > 14 and fta > 3:
             primary = "Post Scorer"
@@ -324,7 +321,7 @@ def classify(player: dict) -> dict:
             primary = "Glass Cleaner"
         elif fg > 55 and tpa < 1 and rpg > 8:
             primary = "Old School Big"
-        elif pos in ("PF", "C", "F") and ht > 0 and ht < 80 and apg > 2 and tp > 30:
+        elif pos in ("C", "F") and ht > 0 and ht < 80 and apg > 2 and tp > 30:
             primary = "Small Ball Five"
 
     # Fallback archetypes
