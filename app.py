@@ -365,28 +365,12 @@ FILTERED = [
 
 player_lookup  = {p["name"]: p for p in PLAYERS}
 
-_search = st.sidebar.text_input("Search Player", "", placeholder="Type a name to search...")
-if _search.strip() and len(_search.strip()) >= 2:
-    _q = _search.strip().lower()
-    _matches = [
-        p for p in FILTERED
-        if _q in p["name"].lower()
-        or _q in p["school"].lower()
-        or _q in p.get("conference", "").lower()
-    ][:20]  # limit to top 20 results for performance
-elif not _search.strip():
-    _matches = FILTERED[:10]  # show top 10 by default
-else:
-    _matches = []
-
-if not _matches:
-    st.sidebar.info("Keep typing to find a player...")
-    st.stop()
+_all_names = [p["name"] for p in FILTERED]
 
 selected_name = st.sidebar.selectbox(
-    "Select Player",
-    [p["name"] for p in _matches],
-    format_func=lambda n: f"{n} · {player_lookup[n]['pos']} · {player_lookup[n]['school']}",
+    "Search Player",
+    _all_names,
+    format_func=lambda n: f"#{player_lookup[n]['rank']} {n} · {player_lookup[n]['pos']} · {player_lookup[n]['school']}",
 )
 player = player_lookup[selected_name]
 
@@ -680,21 +664,9 @@ with tab_scout:
 # TAB 3 — COMPARE
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_cmp:
-    _cmp_search = st.text_input("Search players to compare", "", placeholder="Type a name to add players...", key="cmp_search")
-    if _cmp_search.strip() and len(_cmp_search.strip()) >= 2:
-        _cq = _cmp_search.strip().lower()
-        _cmp_options = [
-            p["name"] for p in FILTERED
-            if _cq in p["name"].lower()
-            or _cq in p["school"].lower()
-            or _cq in p.get("conference", "").lower()
-        ][:30]
-    else:
-        _cmp_options = [p["name"] for p in FILTERED[:20]]
-
     _cmp_selected = st.multiselect(
-        "Select players (2-10)", _cmp_options,
-        default=_cmp_options[:2] if len(_cmp_options) >= 2 else _cmp_options,
+        "Search and select players to compare (2-10)",
+        [p["name"] for p in FILTERED],
         max_selections=10, key="cmp_picks",
     )
 

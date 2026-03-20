@@ -157,6 +157,18 @@ def draft_score(player: dict) -> float:
     if apg > 4 and ast_pct > 20:
         play_bonus = min((apg - 4) / 5.0, 1.0) * 5
 
+    # ── Minutes bonus/penalty ────────────────────────────────────────────────
+    mpg = _s(s, "MPG")
+    min_bonus = 0
+    if mpg >= 34:
+        min_bonus = 4       # starter, heavy minutes
+    elif mpg >= 30:
+        min_bonus = 2       # solid starter
+    elif mpg >= 25:
+        min_bonus = 0       # rotation player
+    elif mpg > 0:
+        min_bonus = -3      # limited minutes, stats inflated
+
     # ── Turnover penalty ─────────────────────────────────────────────────────
     tov_pen = 0
     if tov > 3:
@@ -176,7 +188,8 @@ def draft_score(player: dict) -> float:
         impact * 0.15 +
         two_way * 0.10 +
         play_bonus +
-        ft_bonus -
+        ft_bonus +
+        min_bonus -
         tov_pen
     )
 
