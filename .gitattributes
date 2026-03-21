@@ -1,0 +1,4 @@
+# Ensure GitHub classifies this as a Python project
+templates/*.html linguist-vendored
+static/*.js linguist-vendored
+static/*.css linguist-vendored

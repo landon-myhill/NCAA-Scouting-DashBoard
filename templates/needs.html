@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% set active_page = "needs" %}
+{% block title %}Team Needs — NCAA Draft Scout{% endblock %}
+
+{% block content %}
+<h4 class="mb-1">Team Needs Finder</h4>
+<p class="text-secondary small">Select the archetypes your team needs — see which prospects fit.</p>
+
+<!-- Needs selector -->
+<form method="GET" action="/needs">
+    <div class="filter-bar">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label small text-secondary mb-1">Offensive Archetypes Needed</label>
+                <div class="d-flex flex-wrap gap-2">
+                    {% for a in off_archetypes %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="off" value="{{ a }}"
+                               id="off_{{ loop.index }}" {{ 'checked' if a in sel_off else '' }}>
+                        <label class="form-check-label small" for="off_{{ loop.index }}"
+                               title="{{ arch_desc.get(a, '') }}">{{ a }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label small text-secondary mb-1">Defensive Archetypes Needed</label>
+                <div class="d-flex flex-wrap gap-2">
+                    {% for a in def_archetypes %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="def" value="{{ a }}"
+                               id="def_{{ loop.index }}" {{ 'checked' if a in sel_def else '' }}>
+                        <label class="form-check-label small" for="def_{{ loop.index }}"
+                               title="{{ arch_desc.get(a, '') }}">{{ a }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 d-flex gap-2">
+            <button type="submit" class="btn btn-primary btn-sm">Find Prospects</button>
+            <a href="/needs" class="btn btn-outline-secondary btn-sm">Clear</a>
+        </div>
+    </div>
+</form>
+
+{% if sel_off or sel_def %}
+<!-- Results -->
+<div class="section-hdr mt-4">
+    {{ results|length }} Prospect{{ 's' if results|length != 1 else '' }} Found
+    <span class="text-secondary fw-normal ms-2" style="font-size:11px">
+        Looking for: {{ (sel_off + sel_def)|join(', ') }}
+    </span>
+</div>
+
+{% if not results %}
+<div class="alert alert-secondary">No prospects in the top 200 match those criteria.</div>
+{% else %}
+
+{% for r in results %}
+{% set p = r.player %}
+{% set prof = r.profile %}
+{% set tier = p.tier or 3 %}
+<div class="wl-card">
+    <div class="row align-items-start">
+        <div class="col-md-4">
+            <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="rank-badge" style="font-size:14px;padding:4px 10px;min-width:auto">
+                    <span class="badge-sub">RANK</span>#{{ p.rank }}
+                </span>
+                <div>
+                    <div class="fw-bold" style="font-size:15px">{{ p.name }}</div>
+                    <div class="text-secondary small">
+                        {{ p.pos }} · {{ p.school }}{% if p.conference %} · {{ p.conference }}{% endif %}
+                    </div>
+                    <div class="text-secondary small">{{ p.year }} · {{ p.height }}</div>
+                </div>
+            </div>
+            <span class="tier-{{ tier }}" style="font-size:10px">{{ tier_labels.get(tier, '') }}</span>
+            <span class="text-secondary small ms-2">Score: {{ "%.1f"|format(p.draft_score or 0) }}</span>
+        </div>
+
+        <div class="col-md-5">
+            <!-- Archetype matches -->
+            <div class="mb-2">
+                {% for a in prof.get('all_offensive', []) %}
+                {% if a in sel_off %}
+                <span class="arch-off" style="font-size:11px;padding:3px 9px;box-shadow:0 0 8px rgba(245,158,11,0.4)">{{ a }}</span>
+                {% else %}
+                <span class="arch-off" style="font-size:10px;padding:2px 7px;opacity:0.4">{{ a }}</span>
+                {% endif %}
+                {% endfor %}
+                {% for a in prof.get('all_defensive', []) %}
+                {% if a in sel_def %}
+                <span class="arch-def" style="font-size:11px;padding:3px 9px;box-shadow:0 0 8px rgba(59,130,246,0.4)">{{ a }}</span>
+                {% else %}
+                <span class="arch-def" style="font-size:10px;padding:2px 7px;opacity:0.4">{{ a }}</span>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+            <!-- Key stats -->
+            <div class="row g-1">
+                {% for lbl, key in [('PPG','PPG'),('RPG','RPG'),('APG','APG'),('FG%','FG%'),('3P%','3P%')] %}
+                <div class="col">
+                    <div class="stat-card" style="padding:6px 4px">
+                        <div class="stat-label" style="font-size:9px">{{ lbl }}</div>
+                        <div class="stat-value" style="font-size:14px">{{ fmt_stat(p.stats.get(key), key) }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col-md-3 text-end">
+            <div class="mb-2">
+                <span style="font-size:20px;font-weight:800;color:#34d399">{{ r.fit_pct }}%</span>
+                <span class="text-secondary small d-block">Fit ({{ r.total_matches }}/{{ r.total_needs }} needs)</span>
+            </div>
+            <a href="/scouting?player_id={{ p.id }}" class="btn btn-sm btn-outline-primary">Scout</a>
+            <a href="/compare?ids={{ p.id }}" class="btn btn-sm btn-outline-secondary">Compare</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endif %}
+{% else %}
+<!-- Empty state -->
+<div class="text-center py-5">
+    <div style="font-size:48px;opacity:0.3">🎯</div>
+    <p class="text-secondary mt-2">Select the archetypes your team is missing, then hit <strong>Find Prospects</strong> to see who fits.</p>
+</div>
+{% endif %}
+{% endblock %}

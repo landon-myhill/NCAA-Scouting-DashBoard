@@ -234,10 +234,12 @@ def classify(player: dict) -> dict:
 
     Returns:
         {
-            "primary": str,          # Primary offensive archetype
-            "defensive": str,        # Defensive archetype
-            "tags": list[str],       # All applicable tags
-            "red_flags": list[str],  # Warning tags
+            "primary": str,                  # Primary offensive archetype
+            "defensive": str,                # Primary defensive archetype
+            "all_offensive": list[str],      # All matching offensive archetypes
+            "all_defensive": list[str],      # All matching defensive archetypes
+            "tags": list[str],               # All applicable tags
+            "red_flags": list[str],          # Warning tags
         }
     """
     s = player.get("stats", {})
@@ -289,97 +291,134 @@ def classify(player: dict) -> dict:
 
     primary = None
     defensive = None
+    all_offensive = []
+    all_defensive = []
     tags = []
     red_flags = []
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # PRIMARY OFFENSIVE ARCHETYPE
+    # OFFENSIVE ARCHETYPES — collect ALL that qualify, no fallbacks
     # ═══════════════════════════════════════════════════════════════════════════
 
     # Guards
+    if is_guard and apg > 6 and ast_pct > 25 and tov_pct < 18 and ts > 55:
+        all_offensive.append("Elite Floor General")
     if is_guard and apg > 6 and ast_pct > 25:
-        if tov_pct < 18 and ts > 55:
-            primary = "Elite Floor General"
-        else:
-            primary = "Floor General"
-    elif is_guard and ppg > 18 and usg > 25:
-        primary = "Scoring Guard"
-    elif is_guard and tp > 36 and spg > 1.2 and usg < 22:
-        primary = "3-and-D Guard"
-    elif is_guard and ppg > 14 and apg > 4:
-        primary = "Combo Guard"
+        all_offensive.append("Floor General")
+    if is_guard and ppg > 18 and usg > 25:
+        all_offensive.append("Scoring Guard")
+    if is_guard and tp > 36 and spg > 1.2 and usg < 22:
+        all_offensive.append("3-and-D Guard")
+    if is_guard and ppg > 14 and apg > 4:
+        all_offensive.append("Combo Guard")
 
     # Wings
-    if not primary and is_wing:
+    if is_wing:
         if ppg > 16 and fg > 44 and tp > 34 and fta > 3:
-            primary = "Three-Level Scorer"
-        elif ppg > 12 and (spg + bpg) > 1.5 and ppg > 16 and bpm > 5:
-            primary = "Two-Way Star"
-        elif ppg > 12 and (spg + bpg) > 1.5:
-            primary = "Two-Way Wing"
-        elif tp > 37 and tpa > 4:
-            primary = "Sharpshooter"
-        elif pos == "F" and apg > 3.5:
-            primary = "Point Forward"
+            all_offensive.append("Three-Level Scorer")
+        if ppg > 16 and (spg + bpg) > 1.5 and bpm > 5:
+            all_offensive.append("Two-Way Star")
+        if tp > 37 and tpa > 4:
+            all_offensive.append("Sharpshooter")
+        if pos == "F" and apg > 3.5:
+            all_offensive.append("Point Forward")
+
+    # Two-Way Wing only if NOT already a Two-Way Star (it's strictly weaker)
+    if is_wing and ppg > 12 and (spg + bpg) > 1.5 and "Two-Way Star" not in all_offensive:
+        all_offensive.append("Two-Way Wing")
 
     # Bigs
-    if not primary and is_big:
+    if is_big:
         if pos == "C" and tpa > 2 and tp > 30 and bpg > 1:
-            primary = "Stretch Five"
-        elif pos in ("C", "F") and apg > 2 and tp > 30:
-            primary = "Modern Big"
-        elif fg > 55 and ppg > 14 and fta > 3:
-            primary = "Post Scorer"
-        elif rpg > 8 and oreb > 2:
-            primary = "Glass Cleaner"
-        elif fg > 55 and tpa < 1 and rpg > 8:
-            primary = "Old School Big"
-        elif pos in ("C", "F") and ht > 0 and ht < 80 and apg > 2 and tp > 30:
-            primary = "Small Ball Five"
+            all_offensive.append("Stretch Five")
+        if pos in ("C", "F") and apg > 2 and tp > 30:
+            all_offensive.append("Modern Big")
+        if fg > 55 and ppg > 14 and fta > 3:
+            all_offensive.append("Post Scorer")
+        if rpg > 8 and oreb > 2:
+            all_offensive.append("Glass Cleaner")
+        if fg > 55 and tpa < 1 and rpg > 8:
+            all_offensive.append("Old School Big")
+        if pos in ("C", "F") and ht > 0 and ht < 80 and apg > 2 and tp > 30:
+            all_offensive.append("Small Ball Five")
 
-    # Fallback archetypes
-    if not primary:
-        if ppg > 18 and usg > 25:
-            primary = "Volume Scorer"
-        elif ppg > 14 and usg > 22:
-            primary = "Secondary Scorer"
-        elif tp > 36 and tpa > 3:
-            primary = "Sharpshooter"
-        elif apg > 5:
-            primary = "Playmaker"
-        elif rpg > 8:
-            primary = "Rebounder"
-        elif bpg > 1.5:
-            primary = "Rim Protector"
-        else:
-            primary = "Role Player"
+    # Suppress overlapping general archetypes:
+    # - Floor General suppresses Playmaker (FG is more specific)
+    # - Glass Cleaner suppresses Rebounder (GC is more specific)
+    # - Scoring Guard / Three-Level Scorer suppress Volume Scorer
+    # - Elite Floor General suppresses Floor General
+    _off_set = set(all_offensive)
+    _has_scorer = _off_set & {"Scoring Guard", "Three-Level Scorer", "Two-Way Star"}
+    _has_passer = _off_set & {"Elite Floor General", "Floor General"}
+    _has_boards = _off_set & {"Glass Cleaner"}
+    _has_elite_fg = "Elite Floor General" in _off_set
+
+    if _has_elite_fg:
+        all_offensive = [a for a in all_offensive if a != "Floor General"]
+    if not _has_scorer and ppg > 18 and usg > 25:
+        all_offensive.append("Volume Scorer")
+    if not _has_passer and apg > 5:
+        all_offensive.append("Playmaker")
+    if not _has_boards and rpg > 8:
+        all_offensive.append("Rebounder")
+    if bpg > 1.5 and "Stretch Five" not in _off_set:
+        all_offensive.append("Rim Protector")
+
+    # Deduplicate while preserving order
+    seen_off = set()
+    unique_off = []
+    for a in all_offensive:
+        if a not in seen_off:
+            seen_off.add(a)
+            unique_off.append(a)
+    all_offensive = unique_off
+
+    # Primary is the first match; empty list means no archetype
+    primary = all_offensive[0] if all_offensive else None
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # DEFENSIVE ARCHETYPE
+    # DEFENSIVE ARCHETYPES — collect ALL that qualify, no fallbacks
     # ═══════════════════════════════════════════════════════════════════════════
 
     if bpg > 2 and dws > 1.5 and dbpm > 2:
-        defensive = "Defensive Anchor"
-    elif is_guard and spg > 1.5 and dbpm > 0:
-        defensive = "Point of Attack Defender"
-    elif spg > 1.5 and not is_big:
-        defensive = "Perimeter Pest"
-    elif is_wing and spg > 1 and bpg > 0.5 and dbpm > 0:
-        defensive = "Wing Stopper"
-    elif spg > 1 and bpg > 0.8 and dbpm > 0:
-        defensive = "Versatile Defender"
-    elif is_big and bpg > 1.5:
-        defensive = "Paint Presence"
-    elif bpg > 2 and spg < 0.5:
-        defensive = "Weak Side Shot Blocker"
-    elif dreb > 5 and bpg > 1 and spg < 0.8:
-        defensive = "Help Defender"
-    elif dbpm < -2 and spg < 0.5 and bpg < 0.3:
-        defensive = "Defensive Liability"
-    elif dbpm < 0 and spg < 0.5 and bpg < 0.3:
-        defensive = "No Defense"
-    else:
-        defensive = "Average Defender"
+        all_defensive.append("Defensive Anchor")
+    if is_guard and spg > 1.5 and dbpm > 0:
+        all_defensive.append("Point of Attack Defender")
+    if spg > 1.5 and not is_big:
+        all_defensive.append("Perimeter Pest")
+    if is_wing and spg > 1 and bpg > 0.5 and dbpm > 0:
+        all_defensive.append("Wing Stopper")
+    if spg > 1 and bpg > 0.8 and dbpm > 0:
+        all_defensive.append("Versatile Defender")
+    if is_big and bpg > 1.5:
+        all_defensive.append("Paint Presence")
+    if bpg > 2 and spg < 0.5:
+        all_defensive.append("Weak Side Shot Blocker")
+    if dreb > 5 and bpg > 1 and spg < 0.8:
+        all_defensive.append("Help Defender")
+    if dbpm < -2 and spg < 0.5 and bpg < 0.3:
+        all_defensive.append("Defensive Liability")
+
+    # Suppress overlaps:
+    # - Defensive Anchor suppresses Paint Presence and Weak Side Shot Blocker
+    # - Defensive Liability is exclusive (can't also be No Defense)
+    _def_set = set(all_defensive)
+    if "Defensive Anchor" in _def_set:
+        all_defensive = [a for a in all_defensive if a not in ("Paint Presence", "Weak Side Shot Blocker")]
+    if "Defensive Liability" not in _def_set and dbpm < 0 and spg < 0.5 and bpg < 0.3:
+        all_defensive.append("No Defense")
+
+    # Deduplicate
+    seen_def = set()
+    unique_def = []
+    for a in all_defensive:
+        if a not in seen_def:
+            seen_def.add(a)
+            unique_def.append(a)
+    all_defensive = unique_def
+
+    # Primary defensive is the first match; empty means none qualified
+    defensive = all_defensive[0] if all_defensive else None
 
     # ═══════════════════════════════════════════════════════════════════════════
     # TAGS
@@ -646,6 +685,8 @@ def classify(player: dict) -> dict:
     return {
         "primary": primary,
         "defensive": defensive,
+        "all_offensive": all_offensive,
+        "all_defensive": all_defensive,
         "tags": unique_tags,
         "red_flags": unique_rf,
     }

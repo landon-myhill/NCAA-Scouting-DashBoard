@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% set active_page = "compare" %}
+{% block title %}Compare — NCAA Draft Scout{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">Compare Players</h4>
+
+<!-- Search to add players -->
+<div class="filter-bar">
+    <label class="form-label text-secondary small mb-1">Search and add players to compare (up to 10)</label>
+    <div class="position-relative" style="max-width:500px">
+        <input type="text" class="form-control form-control-sm" id="cmpSearch"
+               placeholder="Type a player name..." autocomplete="off"
+               style="background:#0f172a;color:#f1f5f9;border-color:#475569;">
+        <div id="cmpDropdown" class="search-dropdown"></div>
+    </div>
+
+    <!-- Selected players chips -->
+    <div id="cmpChips" class="d-flex flex-wrap gap-2 mt-3">
+        {% for p in selected %}
+        <span class="cmp-chip" data-id="{{ p.id }}">
+            #{{ p.rank }} {{ p.name }} · {{ p.pos }}
+            <button type="button" class="cmp-chip-x">&times;</button>
+        </span>
+        {% endfor %}
+    </div>
+
+    <button id="cmpSubmit" class="btn btn-sm btn-primary mt-2"
+            {{ 'disabled' if selected|length < 2 else '' }}>Compare</button>
+</div>
+
+{% if selected|length >= 2 %}
+<!-- Radar overlay -->
+<div class="section-hdr">Radar Comparison</div>
+<div id="radarChart" style="max-width:600px;margin:0 auto"></div>
+
+<!-- Stat comparison table -->
+<div class="section-hdr mt-4">Stat Comparison</div>
+<div class="table-responsive">
+    <table class="table table-scout table-sm">
+        <thead>
+            <tr>
+                <th>Stat</th>
+                {% for p in selected %}
+                <th>{{ p.name }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in comp_rows %}
+            <tr>
+                <td><strong>{{ row.stat }}</strong></td>
+                {% for i in range(selected|length) %}
+                <td class="{{ 'best' if row.best_idx == i else '' }}">
+                    {{ row.cells[i] }}{{ ' ✓' if row.best_idx == i else '' }}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% elif selected|length == 1 %}
+<div class="alert alert-info mt-3">Add at least one more player to compare.</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if selected|length >= 2 %}
+<script>
+    const radarData = {{ radar_json|safe }};
+    if (radarData && radarData.data) {
+        Plotly.newPlot('radarChart', radarData.data, radarData.layout, {responsive: true, displayModeBar: false});
+    }
+</script>
+{% endif %}
+
+<script>
+// Compare search + chip system
+const cmpSearch = document.getElementById('cmpSearch');
+const cmpDropdown = document.getElementById('cmpDropdown');
+const cmpChips = document.getElementById('cmpChips');
+const cmpSubmit = document.getElementById('cmpSubmit');
+
+let cmpCache = [];
+let cmpActiveIdx = -1;
+
+// Get current IDs from chips
+function getSelectedIds() {
+    return Array.from(cmpChips.querySelectorAll('.cmp-chip')).map(c => c.dataset.id);
+}
+
+function updateSubmitBtn() {
+    const ids = getSelectedIds();
+    cmpSubmit.disabled = ids.length < 2;
+}
+
+// Search
+let cmpDebounce;
+cmpSearch.addEventListener('input', function() {
+    clearTimeout(cmpDebounce);
+    const q = this.value.trim();
+    if (q.length < 2) { cmpDropdown.classList.remove('show'); return; }
+    cmpDebounce = setTimeout(async () => {
+        const resp = await fetch(`/api/players?q=${encodeURIComponent(q)}`);
+        cmpCache = await resp.json();
+        cmpActiveIdx = -1;
+        // Filter out already-selected
+        const selected = new Set(getSelectedIds());
+        cmpCache = cmpCache.filter(p => !selected.has(String(p.id)));
+        renderCmpDropdown();
+    }, 200);
+});
+
+cmpSearch.addEventListener('keydown', function(e) {
+    const items = cmpDropdown.querySelectorAll('.search-item');
+    if (e.key === 'ArrowDown') { e.preventDefault(); cmpActiveIdx = Math.min(cmpActiveIdx + 1, items.length - 1); updateCmpActive(items); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); cmpActiveIdx = Math.max(cmpActiveIdx - 1, 0); updateCmpActive(items); }
+    else if (e.key === 'Enter') { e.preventDefault(); if (cmpActiveIdx >= 0 && cmpActiveIdx < cmpCache.length) addPlayer(cmpCache[cmpActiveIdx]); }
+    else if (e.key === 'Escape') { cmpDropdown.classList.remove('show'); }
+});
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('#cmpSearch') && !e.target.closest('#cmpDropdown')) cmpDropdown.classList.remove('show');
+});
+
+function renderCmpDropdown() {
+    if (!cmpCache.length) {
+        cmpDropdown.innerHTML = '<div class="search-item"><span class="si-meta">No results</span></div>';
+        cmpDropdown.classList.add('show');
+        return;
+    }
+    cmpDropdown.innerHTML = cmpCache.map((p, i) => `
+        <div class="search-item ${i === cmpActiveIdx ? 'active' : ''}" data-idx="${i}">
+            <span class="si-rank">#${p.rank}</span>
+            <span class="si-name">${p.name}</span>
+            <span class="si-meta">${p.pos} · ${p.school}</span>
+        </div>
+    `).join('');
+    cmpDropdown.querySelectorAll('.search-item').forEach(item => {
+        item.addEventListener('click', () => addPlayer(cmpCache[parseInt(item.dataset.idx)]));
+        item.addEventListener('mouseenter', () => { cmpActiveIdx = parseInt(item.dataset.idx); updateCmpActive(cmpDropdown.querySelectorAll('.search-item')); });
+    });
+    cmpDropdown.classList.add('show');
+}
+
+function updateCmpActive(items) {
+    items.forEach((el, i) => el.classList.toggle('active', i === cmpActiveIdx));
+}
+
+function addPlayer(p) {
+    if (getSelectedIds().length >= 10) return;
+    const chip = document.createElement('span');
+    chip.className = 'cmp-chip';
+    chip.dataset.id = p.id;
+    chip.innerHTML = `#${p.rank} ${p.name} · ${p.pos} <button type="button" class="cmp-chip-x">&times;</button>`;
+    chip.querySelector('.cmp-chip-x').addEventListener('click', () => { chip.remove(); updateSubmitBtn(); });
+    cmpChips.appendChild(chip);
+    cmpSearch.value = '';
+    cmpDropdown.classList.remove('show');
+    updateSubmitBtn();
+}
+
+// Remove chip on X click (for server-rendered chips)
+cmpChips.querySelectorAll('.cmp-chip-x').forEach(btn => {
+    btn.addEventListener('click', function() { this.closest('.cmp-chip').remove(); updateSubmitBtn(); });
+});
+
+// Submit
+cmpSubmit.addEventListener('click', function() {
+    const ids = getSelectedIds().join(',');
+    if (ids) window.location.href = `/compare?ids=${ids}`;
+});
+</script>
+{% endblock %}

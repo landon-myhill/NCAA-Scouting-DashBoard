@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% set active_page = "bigboard" %}
+{% block title %}Big Board — NCAA Draft Scout{% endblock %}
+
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">Big Board — Top 200</h4>
+    <a href="/api/export/bigboard.csv" class="btn btn-sm btn-outline-secondary">📥 Export CSV</a>
+</div>
+<p class="text-secondary small">Drag players to reorder. Tier boundaries update automatically.</p>
+
+<!-- Filters -->
+<div class="filter-bar d-flex gap-3 flex-wrap">
+    <div>
+        <label class="form-label small text-secondary mb-0">Position</label>
+        <select id="bbFilterPos" class="form-select form-select-sm" style="min-width:100px">
+            <option value="All">All</option>
+            {% set positions = players|map(attribute='pos')|unique|sort %}
+            {% for pos in positions %}<option>{{ pos }}</option>{% endfor %}
+        </select>
+    </div>
+    <div>
+        <label class="form-label small text-secondary mb-0">Conference</label>
+        <select id="bbFilterConf" class="form-select form-select-sm" style="min-width:140px">
+            <option value="All">All</option>
+            {% set confs = players|map(attribute='conference')|unique|sort %}
+            {% for c in confs %}{% if c %}<option>{{ c }}</option>{% endif %}{% endfor %}
+        </select>
+    </div>
+    <div>
+        <label class="form-label small text-secondary mb-0">Show top</label>
+        <select id="bbFilterLimit" class="form-select form-select-sm" style="min-width:90px">
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200" selected>200</option>
+        </select>
+    </div>
+</div>
+
+<div id="boardList">
+    {% for p in players %}
+    {% set pos_num = loop.index %}
+    {% set tier = 1 if pos_num <= 15 else (2 if pos_num <= 45 else 3) %}
+    {% set prof = profiles.get(p.id, {}) %}
+
+    {# Insert tier headers #}
+    {% if pos_num == 1 %}
+    <div class="tier-header tier-header-1" data-tier-header="1">Tier 1 — Lottery (1-15)</div>
+    {% elif pos_num == 16 %}
+    <div class="tier-header tier-header-2" data-tier-header="2">Tier 2 — Late 1st (16-45)</div>
+    {% elif pos_num == 46 %}
+    <div class="tier-header tier-header-3" data-tier-header="3">Tier 3 — 2nd Round (46+)</div>
+    {% endif %}
+
+    <div class="bb-row" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}">
+        <div class="bb-pos">{{ pos_num }}</div>
+        <div class="bb-name">
+            {{ '★' if p.id in wl_ids else '' }}
+            {{ p.name }}
+            <span class="bb-meta ms-2">{{ p.pos }} · {{ p.school }}{% if p.conference %} · {{ p.conference }}{% endif %}</span>
+        </div>
+        <div class="bb-archetypes">
+            {% for a in prof.get('all_offensive', []) %}
+            <span class="arch-off" style="font-size:10px;padding:2px 7px">{{ a }}</span>
+            {% endfor %}
+            {% for a in prof.get('all_defensive', []) %}
+            <span class="arch-def" style="font-size:10px;padding:2px 7px">{{ a }}</span>
+            {% endfor %}
+        </div>
+        <div class="bb-stat">{{ fmt_stat(p.stats.get('PPG'), 'PPG') }} <span class="text-secondary" style="font-size:10px">PPG</span></div>
+        <div class="bb-stat">{{ "%.1f"|format(p.draft_score or 0) }} <span class="text-secondary" style="font-size:10px">Score</span></div>
+        <div class="bb-stat">
+            <a href="/scouting?player_id={{ p.id }}" class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Drag and drop
+const boardList = document.getElementById('boardList');
+const sortable = new Sortable(boardList, {
+    animation: 150,
+    ghostClass: 'dragging',
+    filter: '[data-tier-header]',
+    onEnd: async function() {
+        updatePositions();
+        const rows = boardList.querySelectorAll('.bb-row');
+        const order = Array.from(rows).map(r => parseInt(r.dataset.id));
+        await fetch('/api/board/reorder', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({order})
+        });
+    }
+});
+
+function updatePositions() {
+    // Remove old tier headers
+    boardList.querySelectorAll('[data-tier-header]').forEach(h => h.remove());
+
+    const rows = boardList.querySelectorAll('.bb-row');
+    let inserted = {1: false, 16: false, 46: false};
+
+    rows.forEach((row, i) => {
+        const pos = i + 1;
+        row.querySelector('.bb-pos').textContent = pos;
+
+        // Insert tier headers
+        if (pos === 1 && !inserted[1]) {
+            const h = document.createElement('div');
+            h.className = 'tier-header tier-header-1';
+            h.dataset.tierHeader = '1';
+            h.textContent = 'Tier 1 — Lottery (1-15)';
+            row.before(h);
+            inserted[1] = true;
+        } else if (pos === 16 && !inserted[16]) {
+            const h = document.createElement('div');
+            h.className = 'tier-header tier-header-2';
+            h.dataset.tierHeader = '2';
+            h.textContent = 'Tier 2 — Late 1st (16-45)';
+            row.before(h);
+            inserted[16] = true;
+        } else if (pos === 46 && !inserted[46]) {
+            const h = document.createElement('div');
+            h.className = 'tier-header tier-header-3';
+            h.dataset.tierHeader = '3';
+            h.textContent = 'Tier 3 — 2nd Round (46+)';
+            row.before(h);
+            inserted[46] = true;
+        }
+    });
+}
+
+// Filters
+document.getElementById('bbFilterPos').addEventListener('change', applyBBFilters);
+document.getElementById('bbFilterConf').addEventListener('change', applyBBFilters);
+document.getElementById('bbFilterLimit').addEventListener('change', applyBBFilters);
+
+function applyBBFilters() {
+    const posVal = document.getElementById('bbFilterPos').value;
+    const confVal = document.getElementById('bbFilterConf').value;
+    const limit = parseInt(document.getElementById('bbFilterLimit').value);
+    boardList.querySelectorAll('.bb-row').forEach(row => {
+        const rank = parseInt(row.querySelector('.bb-pos').textContent);
+        let show = true;
+        if (rank > limit) show = false;
+        if (posVal !== 'All' && row.dataset.pos !== posVal) show = false;
+        if (confVal !== 'All' && row.dataset.conf !== confVal) show = false;
+        row.style.display = show ? '' : 'none';
+    });
+}
+</script>
+{% endblock %}

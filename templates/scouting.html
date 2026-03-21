@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% set active_page = "scouting" %}
+{% block title %}{{ player.name }} — NCAA Draft Scout{% endblock %}
+
+{% block content %}
+<div class="row g-3">
+    <!-- LEFT: Player Card -->
+    <div class="col-lg-7">
+        <div class="info-card">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                <div>
+                    <div class="player-name">{{ player.name }}</div>
+                    <div class="player-meta">
+                        {{ player.pos }} · {{ player.school }}{% if player.conference %} · {{ player.conference }}{% endif %}<br>
+                        {{ player.year }} · {{ player.height }}{% if player.weight %} · {{ player.weight }}{% endif %}
+                        {% if player.hometown and player.hometown != '—' %}<br>📍 {{ player.hometown }}{% endif %}
+                    </div>
+                </div>
+                <div class="d-flex gap-2">
+                    <div class="rank-badge"><span class="badge-sub">RANK</span>#{{ player.rank }}</div>
+                    <div class="score-badge"><span class="badge-sub">SCORE</span>{{ "%.1f"|format(player.draft_score or 0) }}</div>
+                </div>
+            </div>
+            <div class="mt-3">
+                {% for a in profile.all_offensive %}
+                <span class="arch-off" title="{{ arch_desc.get(a, '') }}">{{ a }}</span>
+                {% endfor %}
+                {% for a in profile.all_defensive %}
+                <span class="arch-def" title="{{ arch_desc.get(a, '') }}">{{ a }}</span>
+                {% endfor %}
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-sm btn-watch {{ 'btn-warning' if in_watchlist else 'btn-outline-secondary' }}"
+                        data-player-id="{{ player.id }}" data-watched="{{ 'true' if in_watchlist else 'false' }}">
+                    {{ '★ Watching' if in_watchlist else '☆ Watch' }}
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT: Hero Stats -->
+    <div class="col-lg-5">
+        <!-- PPG / RPG / APG -->
+        <div class="row g-2 mb-2">
+            {% for lbl, key in [('PPG','PPG'),('RPG','RPG'),('APG','APG')] %}
+            <div class="col-4">
+                <div class="stat-card">
+                    <div class="stat-label">{{ lbl }}</div>
+                    <div class="stat-value hero">{{ fmt_stat(player.stats.get(key), key) }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Shooting -->
+        <div class="row g-2 mb-2">
+            {% for lbl, key in [('FG%','FG%'),('3P%','3P%'),('FT%','FT%')] %}
+            <div class="col-4">
+                <div class="stat-card">
+                    <div class="stat-label">{{ lbl }}</div>
+                    <div class="stat-value">{{ fmt_stat(player.stats.get(key), key) }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Key advanced -->
+        <div class="row g-2">
+            {% for lbl, key in [('PER','PER'),('BPM','BPM'),('Win Shares','Win Shares')] %}
+            <div class="col-4">
+                <div class="stat-card">
+                    <div class="stat-label">{{ lbl }}</div>
+                    <div class="stat-value">{{ fmt_stat(player.advanced.get(key), key) }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Tags + Concerns -->
+{% if profile.tags or profile.red_flags %}
+<div class="row g-3 mt-1">
+    {% if profile.tags %}
+    <div class="{{ 'col-lg-7' if profile.red_flags else 'col-12' }}">
+        <div class="section-hdr">Scouting Tags</div>
+        {% for t in profile.tags %}<span class="pill-str">{{ t }}</span>{% endfor %}
+    </div>
+    {% endif %}
+    {% if profile.red_flags %}
+    <div class="col-lg-5">
+        <div class="section-hdr">Concerns</div>
+        {% for r in profile.red_flags %}<span class="pill-wk">⚠️ {{ r }}</span>{% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+
+<!-- Radar + Notes -->
+<div class="row g-3 mt-1">
+    <div class="col-lg-6">
+        <div class="section-hdr">Skill Ratings</div>
+        <div id="radarChart"></div>
+    </div>
+    <div class="col-lg-6">
+        <div class="section-hdr">Scout Notes <span class="save-indicator text-success ms-2" style="font-size:11px;opacity:0;transition:opacity .3s"></span></div>
+        <textarea class="form-control notes-area" rows="10" data-player-id="{{ player.id }}"
+                  placeholder="Add your personal scouting notes here...">{{ note }}</textarea>
+    </div>
+</div>
+
+<!-- Full Stats (collapsible) -->
+<div class="mt-3">
+    <div class="section-hdr">
+        <a data-bs-toggle="collapse" href="#fullStats" class="text-decoration-none text-secondary">
+            Full Season Stats ▾
+        </a>
+    </div>
+    <div class="collapse show" id="fullStats">
+        <div class="row g-2">
+            {% set all_stats = ['PPG','RPG','APG','SPG','BPG','FG%','3P%','FT%','MPG','GS','TOV','FTA','OREB','DREB','3PA','FGA','PF'] %}
+            {% for key in all_stats %}
+            {% set val = player.stats.get(key) %}
+            {% if val is not none %}
+            <div class="col-6 col-md-3 col-lg-2">
+                <div class="stat-card">
+                    <div class="stat-label">{{ key }}</div>
+                    <div class="stat-value" style="font-size:18px">{{ fmt_stat(val, key) }}</div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Advanced Metrics (collapsible) -->
+<div class="mt-2">
+    <div class="section-hdr">
+        <a data-bs-toggle="collapse" href="#advMetrics" class="text-decoration-none text-secondary">
+            Advanced Metrics ▾
+        </a>
+    </div>
+    <div class="collapse show" id="advMetrics">
+        {% set adv_meta = {'PER':'Efficiency Rating','TS%':'True Shooting','eFG%':'Eff. FG%','USG%':'Usage Rate','BPM':'Box +/−','OBPM':'Off. Box +/−','DBPM':'Def. Box +/−','Win Shares':'Season Total','WS/40':'Per 40 min','AST%':'Assist Rate','TOV%':'TO Rate','OWS':'Offensive WS','DWS':'Defensive WS'} %}
+        <div class="row g-2">
+            {% for key in ['PER','TS%','eFG%','USG%','BPM','OBPM','DBPM','Win Shares','WS/40','OWS','DWS','AST%','TOV%'] %}
+            {% set val = player.advanced.get(key) %}
+            {% if val is not none %}
+            <div class="col-6 col-md-3 col-lg-2">
+                <div class="stat-card">
+                    <div class="stat-label">{{ key }}</div>
+                    <div class="stat-value" style="font-size:18px">{{ fmt_stat(val, key) }}</div>
+                    <div class="stat-sub">{{ adv_meta.get(key, '') }}</div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const radarData = {{ radar_json|safe }};
+    if (radarData && radarData.data) {
+        Plotly.newPlot('radarChart', radarData.data, radarData.layout, {responsive: true, displayModeBar: false});
+    }
+</script>
+{% endblock %}

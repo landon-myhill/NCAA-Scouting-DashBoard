@@ -51,6 +51,7 @@ CLASS_MAP = {
 def get(url: str) -> requests.Response:
     r = requests.get(url, headers=HEADERS, timeout=20)
     r.raise_for_status()
+    r.encoding = "utf-8"
     return r
 
 

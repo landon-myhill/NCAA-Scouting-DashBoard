@@ -1,0 +1,238 @@
+/* ── Base ──────────────────────────────────────────────── */
+body { background: #0f172a; color: #e2e8f0; }
+
+/* ── Search Bar ───────────────────────────────────────── */
+.search-bar-wrap {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-bottom: 1px solid #334155;
+    padding: 12px 0;
+    position: sticky;
+    top: 56px;
+    z-index: 1020;
+}
+.search-icon {
+    background: #334155;
+    border: 1px solid #475569;
+    color: #94a3b8;
+    font-size: 16px;
+}
+.search-input {
+    background: #0f172a !important;
+    border: 1px solid #475569 !important;
+    color: #f1f5f9 !important;
+    font-size: 15px;
+    padding: 10px 16px;
+}
+.search-input::placeholder { color: #64748b; }
+.search-input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3) !important;
+    border-color: #3b82f6 !important;
+}
+.search-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: #1e293b;
+    border: 1px solid #475569;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 360px;
+    overflow-y: auto;
+    z-index: 1050;
+}
+.search-dropdown.show { display: block; }
+.search-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #334155;
+    transition: background .1s;
+}
+.search-item:hover, .search-item.active { background: #334155; }
+.search-item:last-child { border-bottom: none; }
+.search-item .si-rank {
+    font-weight: 800; color: #f59e0b;
+    min-width: 36px; text-align: center; font-size: 14px;
+}
+.search-item .si-name { font-weight: 600; color: #f1f5f9; font-size: 14px; }
+.search-item .si-meta { color: #64748b; font-size: 12px; margin-left: 4px; }
+
+/* ── Player Info Card ─────────────────────────────────── */
+.info-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 24px 28px;
+}
+.info-card .player-name {
+    font-size: 30px; font-weight: 800; color: #fff;
+    margin: 0 0 6px; line-height: 1.1;
+}
+.info-card .player-meta {
+    font-size: 13px; color: #94a3b8; line-height: 1.7;
+}
+.info-card .player-meta b { color: #cbd5e1; }
+
+/* ── Badges ───────────────────────────────────────────── */
+.rank-badge {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff; font-size: 22px; font-weight: 800;
+    padding: 10px 20px; border-radius: 12px; text-align: center;
+    min-width: 70px; display: inline-block;
+}
+.score-badge {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff; font-size: 22px; font-weight: 800;
+    padding: 10px 20px; border-radius: 12px; text-align: center;
+    min-width: 70px; display: inline-block;
+}
+.badge-sub { font-size: 10px; font-weight: 600; display: block; opacity: .85; }
+
+/* ── Archetype badges ─────────────────────────────────── */
+.arch-off {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff; padding: 6px 16px; border-radius: 20px;
+    font-weight: 700; font-size: 13px; cursor: help;
+    display: inline-block; margin: 3px;
+}
+.arch-def {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff; padding: 6px 16px; border-radius: 20px;
+    font-weight: 700; font-size: 13px; cursor: help;
+    display: inline-block; margin: 3px;
+}
+
+/* ── Stat cards ───────────────────────────────────────── */
+.stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 14px 10px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.stat-label {
+    font-size: 10px; color: #64748b; text-transform: uppercase;
+    letter-spacing: .1em; font-weight: 700;
+}
+.stat-value {
+    font-size: 24px; font-weight: 700; color: #f1f5f9; margin: 4px 0 2px;
+}
+.stat-value.hero { font-size: 36px; font-weight: 800; }
+.stat-sub { font-size: 10px; color: #64748b; }
+
+/* ── Pills ────────────────────────────────────────────── */
+.pill-str {
+    background: #065f46; color: #d1fae5;
+    padding: 4px 12px; border-radius: 20px;
+    font-size: 12px; font-weight: 500;
+    display: inline-block; margin: 3px;
+}
+.pill-wk {
+    background: #991b1b; color: #fee2e2;
+    padding: 4px 12px; border-radius: 20px;
+    font-size: 12px; font-weight: 500;
+    display: inline-block; margin: 3px;
+}
+
+/* ── Tier badges ──────────────────────────────────────── */
+.tier-1 { background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.tier-2 { background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.tier-3 { background: #374151; color: #d1d5db; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+
+/* ── Section headers ──────────────────────────────────── */
+.section-hdr {
+    font-size: 12px; font-weight: 700; color: #64748b;
+    text-transform: uppercase; letter-spacing: .12em;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 6px; margin: 20px 0 12px;
+}
+
+/* ── Tables ────────────────────────────────────────────── */
+.table-scout { font-size: 13px; }
+.table-scout th { color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; border-color: #334155; }
+.table-scout td { border-color: #1e293b; vertical-align: middle; color: #e2e8f0; }
+.table-scout .best { color: #34d399; font-weight: 700; }
+
+/* ── Big Board ────────────────────────────────────────── */
+.tier-header {
+    padding: 8px 16px; border-radius: 8px;
+    font-weight: 700; font-size: 13px; margin: 16px 0 8px;
+}
+.tier-header-1 { background: #422006; color: #fbbf24; border: 1px solid #f59e0b; }
+.tier-header-2 { background: #172554; color: #60a5fa; border: 1px solid #3b82f6; }
+.tier-header-3 { background: #1f2937; color: #9ca3af; border: 1px solid #4b5563; }
+
+.bb-row {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: grab;
+    transition: background .15s;
+}
+.bb-row:hover { background: #334155; }
+.bb-row.dragging { opacity: .5; background: #475569; }
+.bb-pos { font-weight: 800; color: #f59e0b; min-width: 32px; text-align: center; font-size: 15px; }
+.bb-name { font-weight: 600; flex: 1; }
+.bb-meta { color: #94a3b8; font-size: 12px; }
+.bb-stat { color: #cbd5e1; font-size: 13px; min-width: 50px; text-align: center; }
+.bb-archetypes { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; max-width: 320px; }
+
+/* ── Watchlist cards ──────────────────────────────────── */
+.wl-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 10px;
+}
+
+/* ── Scarcity guide cards ─────────────────────────────── */
+.arch-guide {
+    border-left: 4px solid;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: #1e293b;
+}
+.arch-guide-off { border-color: #f59e0b; }
+.arch-guide-def { border-color: #3b82f6; }
+.arch-guide .arch-name { font-weight: 700; font-size: 14px; color: #f1f5f9; }
+.arch-guide .arch-count { color: #64748b; font-size: 12px; margin-left: 8px; }
+.arch-guide .arch-desc { color: #94a3b8; font-size: 13px; margin-top: 4px; }
+
+/* ── Misc ─────────────────────────────────────────────── */
+.btn-watch { font-size: 13px; }
+.notes-area { background: #0f172a; color: #e2e8f0; border: 1px solid #334155; border-radius: 8px; }
+.filter-bar { background: #1e293b; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; border: 1px solid #334155; }
+
+/* ── Compare chips ────────────────────────────────────── */
+.cmp-chip {
+    background: #334155;
+    color: #f1f5f9;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.cmp-chip-x {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+.cmp-chip-x:hover { color: #ef4444; }

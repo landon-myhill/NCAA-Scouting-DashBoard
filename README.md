@@ -1,6 +1,12 @@
 # NCAA Draft Scout
 
-A Streamlit-based scouting app for NCAA D1 basketball prospects. Scrapes real stats from sports-reference.com, classifies players into archetypes, and ranks them using a composite draft score.
+A Flask-based scouting dashboard for NCAA D1 basketball prospects. Scrapes real stats from sports-reference.com, classifies players into multiple archetypes, and ranks them using a composite draft score.
+
+![Scouting](screenshots/Scout_1.png)
+
+![Big Board](screenshots/BigBoard.png)
+
+> **[See the full walkthrough with all screenshots](WALKTHROUGH.md)**
 
 ## Quick Start
 
@@ -11,54 +17,55 @@ pip install -r requirements.txt
 # 2. Scrape player data (~12 min, only need to run once)
 python scrape.py
 
-# 3. Apply draft rankings
+# 3. Apply draft rankings + classify archetypes + build scarcity data
 python rerank.py
 
 # 4. Launch the app
-streamlit run app.py
+python app.py
 ```
 
-The app opens at http://localhost:8501.
+The app opens at http://localhost:5001.
+
+## Features
+
+- **Scouting** — Player profiles with archetype badges, skill radar charts, scouting tags, auto-saving notes, full stats and advanced metrics
+- **Compare** — Search and compare up to 10 players with overlaid radar charts and best-value stat highlighting
+- **Big Board** — Drag-and-drop draft board for the top 200 prospects with instant position/conference filters
+- **Watchlist** — Persistent watchlist with notes, stored in SQLite
+- **Scarcity** — Archetype depth analysis with charts, positional gaps, and conference production breakdowns
+- **Team Needs** — Select the archetypes your team is missing and get ranked prospect recommendations with fit percentages
 
 ## How It Works
 
 ### Data Pipeline
 
-1. **`scrape.py`** — Scrapes all 365 D1 school pages from sports-reference.com. Collects per-game stats (PPG, RPG, APG, SPG, BPG, FG%, 3P%, FT%, MPG, TOV, etc.), advanced metrics (PER, TS%, BPM, Win Shares, etc.), and roster info (height, weight, class year, hometown). Saves everything to `players.json`.
+1. **`scrape.py`** — Scrapes all 365 D1 school pages from sports-reference.com. Collects per-game stats, advanced metrics, and roster info. Saves to `players.json`.
 
-2. **`rerank.py`** — Reads `players.json` and re-sorts players using a composite draft score that weighs production, efficiency, impact, two-way ability, age, conference strength, position value, and size. Updates ranks and tiers in place.
+2. **`rerank.py`** — Re-sorts players using a composite draft score. Classifies every player into all qualifying archetypes, generates trait tags and red flags, and pre-builds `scarcity.json`.
 
-3. **`archetypes.py`** — Classifies each player into a primary archetype (e.g., Floor General, Three-Level Scorer, Rim Protector), a defensive archetype (e.g., Perimeter Pest, Paint Presence), trait tags, and red flags. Also contains the `draft_score()` function used by `rerank.py`.
+3. **`archetypes.py`** — Classifies players into offensive archetypes (e.g., Three-Level Scorer, Combo Guard) and defensive archetypes (e.g., Wing Stopper, Point of Attack Defender). Players can have multiple archetypes — no fallbacks, you either qualify or you don't.
 
-4. **`app.py`** — The Streamlit app that reads `players.json` and displays everything.
+4. **`app.py`** — Flask web app with SQLite persistence for watchlist, scout notes, and board order.
 
-### App Features
+### Draft Score Formula
 
-- **Scouting** — Player header, archetype badges, trait/concern tags, radar skill chart, scout notes, season stats, advanced metrics
-- **Compare** — Compare 2-5 players side by side with overlaid radar charts and a stat table that highlights the best value per stat
-- **Big Board** — Three-tier draft board (Lottery / Late 1st / 2nd Round) with move-up/move-down controls, draft scores, and CSV export
-- **Watchlist** — Star players to track them, with stat cards, notes preview, and CSV export
-- **Scarcity** — Archetype scarcity analysis with adjustable player pool, stacked bar charts, draft score box plots, positional gap detection, and conference archetype production
-
-### Sidebar
-
-- **Search** — Type a name, school, or conference to filter the player dropdown
-- **Filters** — Filter by position, conference, or primary archetype
-- **Data Source** — Switch between scraped data and live NCAA API (limited to PPG/RPG/APG)
-
-## Re-scraping
-
-Run `python scrape.py` again to refresh data. It uses a 2-second delay between requests to avoid rate limiting. If you get blocked (HTTP 429), wait 1-2 hours and try again.
-
-After scraping, always run `python rerank.py` to apply the draft score rankings.
+The composite draft score weighs:
+- **Production (38%)** — PPG, RPG, APG, SPG, BPG with position-specific caps
+- **Efficiency (25%)** — PER, TS%, BPM, eFG%
+- **Impact (15%)** — Win Shares, WS/40
+- **Two-Way (10%)** — DBPM, DWS, stocks
+- **Multipliers** — Class year (Freshman 1.22x, Senior 0.85x), conference strength, position value, size adjustment
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `app.py` | Streamlit app |
+| `app.py` | Flask web app |
 | `scrape.py` | Sports-reference scraper |
-| `rerank.py` | Draft score ranking |
-| `archetypes.py` | Player classification & draft scoring |
-| `players.json` | Scraped player data (generated) |
-| `requirements.txt` | Python dependencies |
+| `rerank.py` | Draft score ranking, archetype classification, scarcity pre-computation |
+| `archetypes.py` | Player classification & draft scoring engine |
+| `players.json` | Full player database (generated) |
+| `scarcity.json` | Pre-computed scarcity data for top 200 (generated) |
+| `scouting.db` | SQLite database for notes, watchlist, board order (auto-created) |
+| `templates/` | HTML templates |
+| `static/` | CSS and JavaScript |
