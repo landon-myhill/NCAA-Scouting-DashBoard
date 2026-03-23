@@ -35,13 +35,13 @@ _POWER_CONFS = {"ACC", "SEC", "Big Ten", "Big 12", "Big East", "Pac-12"}
 
 # ── Age/class year draft value multiplier ────────────────────────────────────
 _CLASS_BONUS = {
-    "Freshman": 1.22,
-    "Sophomore": 1.10,
+    "Freshman": 1.12,
+    "Sophomore": 1.06,
     "Junior": 1.0,
-    "Senior": 0.85,
-    "Graduate": 0.76,
-    "5th Year": 0.70,
-    "Unknown": 0.95,
+    "Senior": 0.92,
+    "Graduate": 0.86,
+    "5th Year": 0.82,
+    "Unknown": 0.97,
 }
 
 # ── Conference strength multiplier ───────────────────────────────────────────
@@ -396,7 +396,7 @@ def classify(player: dict) -> dict:
         all_defensive.append("Weak Side Shot Blocker")
     if dreb > 5 and bpg > 1 and spg < 0.8:
         all_defensive.append("Help Defender")
-    if dbpm < -2 and spg < 0.5 and bpg < 0.3:
+    if dbpm < -2 and spg < 0.8 and bpg < 0.5:
         all_defensive.append("Defensive Liability")
 
     # Suppress overlaps:
@@ -405,8 +405,12 @@ def classify(player: dict) -> dict:
     _def_set = set(all_defensive)
     if "Defensive Anchor" in _def_set:
         all_defensive = [a for a in all_defensive if a not in ("Paint Presence", "Weak Side Shot Blocker")]
-    if "Defensive Liability" not in _def_set and dbpm < 0 and spg < 0.5 and bpg < 0.3:
+    if "Defensive Liability" not in _def_set and dbpm < -1 and spg < 0.8 and bpg < 0.5:
         all_defensive.append("No Defense")
+
+    # Average Defender: fallback for players who don't qualify for anything else
+    if not all_defensive:
+        all_defensive.append("Average Defender")
 
     # Deduplicate
     seen_def = set()

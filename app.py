@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 from flask import (Flask, Response, g, jsonify, redirect, render_template,
                    request, url_for)
 
-from archetypes import classify
+from archetypes import classify, draft_score, _CLASS_BONUS, _CONF_MULTIPLIER, _POS_VALUE, _s, _height_inches
 
 # ─── App Setup ────────────────────────────────────────────────────────────────
 
@@ -54,6 +54,44 @@ def _get_profile(p):
     return classify(p)
 
 PROFILES = {p["id"]: _get_profile(p) for p in PLAYERS}
+
+# ─── Percentile computation (once at startup) ────────────────────────────────
+
+_PCTL_STATS = ["PPG", "RPG", "APG", "SPG", "BPG", "FG%", "3P%", "FT%", "MPG"]
+_PCTL_ADV = ["PER", "TS%", "eFG%", "USG%", "BPM", "Win Shares", "WS/40"]
+_PCTL_KEYS = _PCTL_STATS + _PCTL_ADV
+
+def _build_percentiles():
+    """Pre-sort stat values so we can compute any player's percentile in O(log n)."""
+    from bisect import bisect_left
+    sorted_vals = {}
+    for key in _PCTL_KEYS:
+        vals = []
+        for p in PLAYERS:
+            src = p["stats"] if key in _PCTL_STATS else p.get("advanced", {})
+            v = src.get(key)
+            if v is not None:
+                vals.append(v)
+        vals.sort()
+        sorted_vals[key] = vals
+    return sorted_vals
+
+_SORTED_STATS = _build_percentiles()
+
+def get_percentiles(player):
+    """Return {stat_key: percentile_int} for a player."""
+    from bisect import bisect_left
+    result = {}
+    for key in _PCTL_KEYS:
+        src = player["stats"] if key in _PCTL_STATS else player.get("advanced", {})
+        v = src.get(key)
+        vals = _SORTED_STATS.get(key, [])
+        if v is not None and vals:
+            idx = bisect_left(vals, v)
+            result[key] = int(round(idx / len(vals) * 100))
+        else:
+            result[key] = None
+    return result
 
 TIER_LABELS = {1: "Tier 1 — Lottery", 2: "Tier 2 — Late 1st", 3: "Tier 3 — 2nd Round"}
 
@@ -119,11 +157,33 @@ def init_db():
             player_id INTEGER PRIMARY KEY,
             added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
+        CREATE TABLE IF NOT EXISTS boards (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
         CREATE TABLE IF NOT EXISTS board_order (
-            player_id INTEGER PRIMARY KEY,
-            position INTEGER NOT NULL
+            board_id INTEGER NOT NULL,
+            player_id INTEGER NOT NULL,
+            position INTEGER NOT NULL,
+            PRIMARY KEY (board_id, player_id),
+            FOREIGN KEY (board_id) REFERENCES boards(id) ON DELETE CASCADE
         );
     """)
+    # Migrate: if old board_order has no board_id column, recreate
+    cur = db.execute("PRAGMA table_info(board_order)")
+    cols = [r[1] for r in cur.fetchall()]
+    if "board_id" not in cols:
+        db.executescript("""
+            DROP TABLE IF EXISTS board_order;
+            CREATE TABLE board_order (
+                board_id INTEGER NOT NULL,
+                player_id INTEGER NOT NULL,
+                position INTEGER NOT NULL,
+                PRIMARY KEY (board_id, player_id),
+                FOREIGN KEY (board_id) REFERENCES boards(id) ON DELETE CASCADE
+            );
+        """)
     db.close()
 
 init_db()
@@ -187,10 +247,17 @@ def get_notes_map():
     rows = db.execute("SELECT player_id, content FROM notes").fetchall()
     return {r["player_id"]: r["content"] for r in rows}
 
-def get_board_order():
+def get_board_order(board_id=None):
     db = get_db()
-    rows = db.execute("SELECT player_id, position FROM board_order").fetchall()
+    if board_id is None:
+        return {}
+    rows = db.execute("SELECT player_id, position FROM board_order WHERE board_id=?", (board_id,)).fetchall()
     return {r["player_id"]: r["position"] for r in rows}
+
+def get_all_boards():
+    db = get_db()
+    rows = db.execute("SELECT id, name, created_at FROM boards ORDER BY created_at").fetchall()
+    return [dict(r) for r in rows]
 
 # ─── Routes ───────────────────────────────────────────────────────────────────
 
@@ -212,7 +279,18 @@ def scouting():
     profile = PROFILES.get(player["id"], {})
     wl_ids = get_watchlist_ids()
     notes = get_notes_map()
-    radar_json = make_radar_json(player)
+    percentiles = get_percentiles(player)
+
+    # Compare player (optional)
+    cmp_id = request.args.get("compare", type=int)
+    cmp_player = PLAYERS_BY_ID.get(cmp_id) if cmp_id else None
+    cmp_profile = PROFILES.get(cmp_id, {}) if cmp_player else None
+    cmp_percentiles = get_percentiles(cmp_player) if cmp_player else None
+
+    if cmp_player:
+        radar_json = make_radar_json(player, cmp_player)
+    else:
+        radar_json = make_radar_json(player)
 
     # Player search list (top 200 for dropdown)
     search_players = sorted(PLAYERS, key=lambda p: p["rank"])[:200]
@@ -226,6 +304,9 @@ def scouting():
         fmt_stat=fmt_stat,
         tier_labels=TIER_LABELS,
         arch_desc=ARCHETYPE_DESCRIPTIONS,
+        percentiles=percentiles,
+        cmp_player=cmp_player, cmp_profile=cmp_profile,
+        cmp_percentiles=cmp_percentiles,
     )
 
 @app.route("/compare")
@@ -280,15 +361,31 @@ def compare():
 @app.route("/bigboard")
 def bigboard():
     top200 = sorted(PLAYERS, key=lambda p: p["rank"])[:200]
-    board_order = get_board_order()
     wl_ids = get_watchlist_ids()
+    boards = get_all_boards()
 
-    # Sort by custom order if exists, else by rank
-    for p in top200:
-        p["_board_pos"] = board_order.get(p["id"], p["rank"])
-    top200.sort(key=lambda p: p["_board_pos"])
+    # Which board are we viewing? None = master (formula ranking)
+    board_id = request.args.get("board_id", type=int)
+    current_board = None
+    is_master = board_id is None
 
-    # Assign display positions
+    if board_id is not None:
+        # Verify board exists
+        db = get_db()
+        row = db.execute("SELECT id, name FROM boards WHERE id=?", (board_id,)).fetchone()
+        if row:
+            current_board = dict(row)
+        else:
+            is_master = True
+            board_id = None
+
+    if not is_master:
+        board_order = get_board_order(board_id)
+        for p in top200:
+            p["_board_pos"] = board_order.get(p["id"], p["rank"])
+        top200.sort(key=lambda p: p["_board_pos"])
+    # else: already sorted by rank (formula order)
+
     for i, p in enumerate(top200):
         p["_display_pos"] = i + 1
 
@@ -296,6 +393,8 @@ def bigboard():
         players=top200, wl_ids=wl_ids,
         tier_labels=TIER_LABELS, profiles=PROFILES,
         fmt_stat=fmt_stat,
+        boards=boards, current_board=current_board,
+        is_master=is_master, board_id=board_id,
     )
 
 @app.route("/watchlist")
@@ -367,6 +466,85 @@ def needs():
         arch_desc=ARCHETYPE_DESCRIPTIONS,
     )
 
+@app.route("/ranking")
+def ranking():
+    # Build score breakdowns for the top 10 players as live examples
+    examples = []
+    top10 = sorted(PLAYERS, key=lambda p: p["rank"])[:10]
+    for p in top10:
+        s = p.get("stats", {})
+        a = p.get("advanced", {})
+        pos = p.get("pos", "")
+        is_g = pos == "G"
+        is_c = pos == "C"
+
+        ppg = _s(s, "PPG"); rpg = _s(s, "RPG"); apg = _s(s, "APG")
+        spg = _s(s, "SPG"); bpg = _s(s, "BPG")
+
+        if is_g:
+            ppg_cap, rpg_cap, apg_cap = 23.0, 6.0, 8.0
+        elif is_c:
+            ppg_cap, rpg_cap, apg_cap = 19.0, 12.0, 4.0
+        else:
+            ppg_cap, rpg_cap, apg_cap = 23.0, 9.0, 5.0
+
+        prod = (min(ppg/ppg_cap, 1.0)*50 + min(rpg/rpg_cap, 1.0)*15 +
+                min(apg/apg_cap, 1.0)*25 + min(spg/2.5, 1.0)*10 + min(bpg/2.5, 1.0)*10)
+
+        per = _s(a, "PER"); ts = _s(a, "TS%"); efg = _s(a, "eFG%")
+        bpm = _s(a, "BPM"); fg_pct = _s(s, "FG%"); tp_pct = _s(s, "3P%")
+        tpa = _s(s, "3PA"); usg = _s(a, "USG%")
+        eff = 0
+        if per > 0: eff += min(per/30.0, 1.0)*28
+        if ts > 0: eff += min((ts-40)/25.0, 1.0)*8
+        if bpm != 0 or _s(a, "Win Shares") > 0: eff += min((bpm+5)/15.0, 1.0)*8
+        if efg > 0: eff += min((efg-35)/25.0, 1.0)*12
+        if fg_pct > 0: eff += min((fg_pct-35)/25.0, 1.0)*6
+        if tp_pct > 0 and tpa > 1:
+            tp_weight = 6 if is_c else 22
+            eff += min((tp_pct-25)/15.0, 1.0)*tp_weight
+        if usg > 24 and ts > 56: eff += min((usg-24)/10.0, 1.0)*20
+
+        ws = _s(a, "Win Shares"); ws40 = _s(a, "WS/40")
+        impact = 0
+        if ws > 0: impact += min(ws/7.0, 1.0)*60
+        if ws40 > 0: impact += min(ws40/0.25, 1.0)*40
+
+        dbpm = _s(a, "DBPM"); dws = _s(a, "DWS")
+        two_way = 0
+        if dbpm != 0: two_way += min((dbpm+3)/8.0, 1.0)*40
+        if dws > 0: two_way += min(dws/3.0, 1.0)*30
+        two_way += min((spg+bpg)/3.5, 1.0)*30
+
+        raw = prod*0.38 + eff*0.25 + impact*0.15 + two_way*0.10
+
+        year = p.get("year", "Unknown")
+        conf = p.get("conference", "")
+        age_mult = _CLASS_BONUS.get(year, 0.97)
+        conf_mult = _CONF_MULTIPLIER.get(conf, 0.93)
+
+        examples.append({
+            "id": p["id"], "rank": p["rank"], "name": p["name"],
+            "pos": pos, "school": p["school"], "year": year, "conf": conf,
+            "prod": prod, "eff": eff, "impact": impact, "two_way": two_way,
+            "raw": raw, "age_mult": age_mult, "conf_mult": conf_mult,
+            "final": p.get("draft_score", 0),
+        })
+
+    class_bonuses = sorted(_CLASS_BONUS.items(),
+                           key=lambda x: x[1], reverse=True)
+    conf_multipliers = sorted(_CONF_MULTIPLIER.items(),
+                              key=lambda x: x[1], reverse=True)
+    pos_values = sorted(_POS_VALUE.items(),
+                        key=lambda x: x[1], reverse=True)
+
+    return render_template("ranking.html",
+        examples=examples,
+        class_bonuses=class_bonuses,
+        conf_multipliers=conf_multipliers,
+        pos_values=pos_values,
+    )
+
 # ─── API Endpoints ────────────────────────────────────────────────────────────
 
 @app.route("/api/players")
@@ -412,21 +590,50 @@ def api_watchlist(pid):
     db.commit()
     return jsonify({"ok": True, "action": "removed"})
 
-@app.route("/api/board/reorder", methods=["POST"])
-def api_board_reorder():
+@app.route("/api/boards", methods=["POST"])
+def api_board_create():
+    data = request.get_json()
+    name = data.get("name", "").strip()
+    if not name:
+        return jsonify({"ok": False, "error": "Name required"}), 400
+    db = get_db()
+    cur = db.execute("INSERT INTO boards (name) VALUES (?)", (name,))
+    db.commit()
+    return jsonify({"ok": True, "id": cur.lastrowid, "name": name})
+
+@app.route("/api/boards/<int:bid>", methods=["PUT", "DELETE"])
+def api_board_update(bid):
+    db = get_db()
+    if request.method == "DELETE":
+        db.execute("DELETE FROM board_order WHERE board_id=?", (bid,))
+        db.execute("DELETE FROM boards WHERE id=?", (bid,))
+        db.commit()
+        return jsonify({"ok": True})
+    data = request.get_json()
+    name = data.get("name", "").strip()
+    if not name:
+        return jsonify({"ok": False, "error": "Name required"}), 400
+    db.execute("UPDATE boards SET name=? WHERE id=?", (name, bid))
+    db.commit()
+    return jsonify({"ok": True})
+
+@app.route("/api/board/<int:bid>/reorder", methods=["POST"])
+def api_board_reorder(bid):
     data = request.get_json()
     order = data.get("order", [])
     db = get_db()
-    db.execute("DELETE FROM board_order")
+    db.execute("DELETE FROM board_order WHERE board_id=?", (bid,))
     for i, pid in enumerate(order):
-        db.execute("INSERT INTO board_order (player_id, position) VALUES (?, ?)", (pid, i + 1))
+        db.execute("INSERT INTO board_order (board_id, player_id, position) VALUES (?, ?, ?)",
+                   (bid, pid, i + 1))
     db.commit()
     return jsonify({"ok": True})
 
 @app.route("/api/export/bigboard.csv")
 def export_bigboard():
     top200 = sorted(PLAYERS, key=lambda p: p["rank"])[:200]
-    board_order = get_board_order()
+    board_id = request.args.get("board_id", type=int)
+    board_order = get_board_order(board_id)
     for p in top200:
         p["_board_pos"] = board_order.get(p["id"], p["rank"])
     top200.sort(key=lambda p: p["_board_pos"])

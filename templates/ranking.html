@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% set active_page = "ranking" %}
+{% block title %}Ranking System — NCAA Draft Scout{% endblock %}
+
+{% block content %}
+<h4 class="mb-1">Draft Score Methodology</h4>
+<p class="text-secondary small">How we calculate composite draft scores to rank every D1 player. Higher score = higher draft pick.</p>
+
+<!-- Overview -->
+<div class="section-hdr">Score Composition</div>
+<div class="row g-3 mb-4">
+    <div class="col-md-4 col-lg-2">
+        <div class="stat-card">
+            <div class="stat-value" style="color:#f59e0b">38%</div>
+            <div class="stat-label">Production</div>
+            <div class="stat-sub">PPG, RPG, APG, SPG, BPG</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-2">
+        <div class="stat-card">
+            <div class="stat-value" style="color:#3b82f6">25%</div>
+            <div class="stat-label">Efficiency</div>
+            <div class="stat-sub">PER, TS%, eFG%, BPM, FG%, 3P%</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-2">
+        <div class="stat-card">
+            <div class="stat-value" style="color:#10b981">15%</div>
+            <div class="stat-label">Impact</div>
+            <div class="stat-sub">Win Shares, WS/40</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-2">
+        <div class="stat-card">
+            <div class="stat-value" style="color:#8b5cf6">10%</div>
+            <div class="stat-label">Two-Way</div>
+            <div class="stat-sub">DBPM, DWS, Stocks</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-2">
+        <div class="stat-card">
+            <div class="stat-value" style="color:#ec4899">~12%</div>
+            <div class="stat-label">Multipliers</div>
+            <div class="stat-sub">Age, Conference, Position</div>
+        </div>
+    </div>
+</div>
+
+<!-- Formula: Production -->
+<div class="section-hdr">Production Score (0–100)</div>
+<div class="info-card mb-3">
+    <p class="mb-2" style="color:#94a3b8">Measures raw counting stats, scaled to position-specific caps so guards and bigs are compared fairly.</p>
+    <table class="table table-scout table-sm mb-0">
+        <thead><tr><th>Component</th><th>Weight</th><th>Cap (Guard)</th><th>Cap (Forward)</th><th>Cap (Center)</th><th>How It Works</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Scoring (PPG)</strong></td><td>50 pts</td><td>23.0</td><td>23.0</td><td>19.0</td><td>PPG / Cap, maxed at 1.0, then x50</td></tr>
+            <tr><td><strong>Playmaking (APG)</strong></td><td>25 pts</td><td>8.0</td><td>5.0</td><td>4.0</td><td>APG / Cap, maxed at 1.0, then x25</td></tr>
+            <tr><td><strong>Rebounding (RPG)</strong></td><td>15 pts</td><td>6.0</td><td>9.0</td><td>12.0</td><td>RPG / Cap, maxed at 1.0, then x15</td></tr>
+            <tr><td><strong>Steals (SPG)</strong></td><td>10 pts</td><td colspan="3">2.5 (all positions)</td><td>SPG / 2.5, maxed at 1.0, then x10</td></tr>
+            <tr><td><strong>Blocks (BPG)</strong></td><td>10 pts</td><td colspan="3">2.5 (all positions)</td><td>BPG / 2.5, maxed at 1.0, then x10</td></tr>
+        </tbody>
+    </table>
+    <p class="small text-secondary mt-2 mb-0">Example: A guard with 20 PPG, 6 APG, 4 RPG, 1.5 SPG, 0.5 BPG → (20/23)x50 + (6/8)x25 + (4/6)x15 + (1.5/2.5)x10 + (0.5/2.5)x10 = 43.5 + 18.8 + 10.0 + 6.0 + 2.0 = <strong>80.3</strong></p>
+</div>
+
+<!-- Formula: Efficiency -->
+<div class="section-hdr">Efficiency Score (0–100+)</div>
+<div class="info-card mb-3">
+    <p class="mb-2" style="color:#94a3b8">Rewards players who produce efficiently. Includes a usage-efficiency bonus for high-volume shot creators.</p>
+    <table class="table table-scout table-sm mb-0">
+        <thead><tr><th>Component</th><th>Weight</th><th>How It Works</th></tr></thead>
+        <tbody>
+            <tr><td><strong>PER</strong></td><td>28 pts</td><td>PER / 30, maxed at 1.0, then x28</td></tr>
+            <tr><td><strong>eFG%</strong></td><td>12 pts</td><td>(eFG% – 35) / 25, maxed at 1.0, then x12</td></tr>
+            <tr><td><strong>TS%</strong></td><td>8 pts</td><td>(TS% – 40) / 25, maxed at 1.0, then x8</td></tr>
+            <tr><td><strong>BPM</strong></td><td>8 pts</td><td>(BPM + 5) / 15, maxed at 1.0, then x8</td></tr>
+            <tr><td><strong>FG%</strong></td><td>6 pts</td><td>(FG% – 35) / 25, maxed at 1.0, then x6</td></tr>
+            <tr><td><strong>3P%</strong></td><td>22 pts (6 for C)</td><td>(3P% – 25) / 15, maxed at 1.0. Guards/wings weighted heavily; centers less so</td></tr>
+            <tr><td><strong>Usage-Efficiency Bonus</strong></td><td>up to 20 pts</td><td>If USG% > 24 AND TS% > 56: (USG% – 24) / 10 x 20. Rewards high-volume efficient scorers</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Formula: Impact -->
+<div class="section-hdr">Impact Score (0–100)</div>
+<div class="info-card mb-3">
+    <p class="mb-2" style="color:#94a3b8">Measures overall winning contribution using advanced impact metrics.</p>
+    <table class="table table-scout table-sm mb-0">
+        <thead><tr><th>Component</th><th>Weight</th><th>How It Works</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Win Shares</strong></td><td>60 pts</td><td>WS / 7, maxed at 1.0, then x60</td></tr>
+            <tr><td><strong>WS/40</strong></td><td>40 pts</td><td>WS/40 / 0.25, maxed at 1.0, then x40</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Formula: Two-Way -->
+<div class="section-hdr">Two-Way Score (0–100)</div>
+<div class="info-card mb-3">
+    <p class="mb-2" style="color:#94a3b8">Values defensive contribution — the NBA wants players who impact both ends.</p>
+    <table class="table table-scout table-sm mb-0">
+        <thead><tr><th>Component</th><th>Weight</th><th>How It Works</th></tr></thead>
+        <tbody>
+            <tr><td><strong>DBPM</strong></td><td>40 pts</td><td>(DBPM + 3) / 8, maxed at 1.0, then x40</td></tr>
+            <tr><td><strong>DWS</strong></td><td>30 pts</td><td>DWS / 3, maxed at 1.0, then x30</td></tr>
+            <tr><td><strong>Stocks (SPG + BPG)</strong></td><td>30 pts</td><td>(SPG + BPG) / 3.5, maxed at 1.0, then x30</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Bonuses & Penalties -->
+<div class="section-hdr">Bonuses &amp; Penalties</div>
+<div class="info-card mb-3">
+    <table class="table table-scout table-sm mb-0">
+        <thead><tr><th>Factor</th><th>Value</th><th>Condition</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Playmaking Bonus</strong></td><td>up to +5</td><td>APG > 4 and AST% > 20</td></tr>
+            <tr><td><strong>Free Throw Bonus</strong></td><td>+3</td><td>FTA > 5 and FT% > 75</td></tr>
+            <tr><td><strong>Minutes Bonus</strong></td><td>+4</td><td>MPG &ge; 34 (heavy starter)</td></tr>
+            <tr><td><strong>Minutes Bonus</strong></td><td>+2</td><td>MPG &ge; 30 (solid starter)</td></tr>
+            <tr><td><strong>Minutes Penalty</strong></td><td>-3</td><td>MPG < 25 (limited minutes — stats may be inflated)</td></tr>
+            <tr><td><strong>Turnover Penalty</strong></td><td>up to -6+</td><td>TOV > 3: (TOV–3) x 2. Also TOV% > 20: (TOV%–20) x 0.5</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Multipliers -->
+<div class="section-hdr">Multipliers</div>
+<div class="row g-3 mb-4">
+    <!-- Age/Class -->
+    <div class="col-md-4">
+        <div class="info-card h-100">
+            <h6 style="color:#f59e0b">Class Year (Age)</h6>
+            <p class="small text-secondary mb-2">Younger players get a boost for upside; older players are slightly penalized. Applied as a multiplier to the raw score.</p>
+            <table class="table table-scout table-sm mb-0">
+                <thead><tr><th>Year</th><th>Multiplier</th><th>Effect</th></tr></thead>
+                <tbody>
+                    {% for year, mult in class_bonuses %}
+                    <tr>
+                        <td><strong>{{ year }}</strong></td>
+                        <td>{{ mult }}x</td>
+                        <td>
+                            {% if mult > 1.0 %}
+                                <span style="color:#34d399">+{{ ((mult - 1) * 100)|round(0)|int }}%</span>
+                            {% elif mult < 1.0 %}
+                                <span style="color:#f87171">{{ ((mult - 1) * 100)|round(0)|int }}%</span>
+                            {% else %}
+                                <span style="color:#94a3b8">baseline</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Conference -->
+    <div class="col-md-4">
+        <div class="info-card h-100">
+            <h6 style="color:#3b82f6">Conference Strength</h6>
+            <p class="small text-secondary mb-2">Power conference players get a boost. Non-listed conferences default to 0.93x.</p>
+            <table class="table table-scout table-sm mb-0">
+                <thead><tr><th>Conference</th><th>Multiplier</th></tr></thead>
+                <tbody>
+                    {% for conf, mult in conf_multipliers %}
+                    <tr>
+                        <td><strong>{{ conf }}</strong></td>
+                        <td>{{ mult }}x</td>
+                    </tr>
+                    {% endfor %}
+                    <tr><td style="color:#64748b">All others</td><td style="color:#64748b">0.93x</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Position -->
+    <div class="col-md-4">
+        <div class="info-card h-100">
+            <h6 style="color:#10b981">Position Value</h6>
+            <p class="small text-secondary mb-2">Modern NBA slightly favors wings and guards over traditional centers.</p>
+            <table class="table table-scout table-sm mb-0">
+                <thead><tr><th>Position</th><th>Multiplier</th></tr></thead>
+                <tbody>
+                    {% for pos, mult in pos_values %}
+                    <tr>
+                        <td><strong>{{ pos }}</strong></td>
+                        <td>{{ mult }}x</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Height Bonus -->
+<div class="section-hdr">Height Bonus / Penalty</div>
+<div class="info-card mb-3">
+    <p class="mb-2" style="color:#94a3b8">Compared to position average height. Applied as a flat bonus/penalty <em>after</em> multipliers.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-scout table-sm mb-2">
+                <thead><tr><th>Position</th><th>Average Height</th></tr></thead>
+                <tbody>
+                    <tr><td>Guard (G)</td><td>6'3" (75")</td></tr>
+                    <tr><td>Forward (F)</td><td>6'8" (80")</td></tr>
+                    <tr><td>Center (C)</td><td>6'11" (83")</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-scout table-sm mb-0">
+                <thead><tr><th>Difference</th><th>Bonus</th></tr></thead>
+                <tbody>
+                    <tr><td>3+ inches taller</td><td style="color:#34d399">+3.5</td></tr>
+                    <tr><td>2 inches taller</td><td style="color:#34d399">+2.0</td></tr>
+                    <tr><td>1 inch taller</td><td style="color:#34d399">+1.0</td></tr>
+                    <tr><td>Average</td><td style="color:#94a3b8">0</td></tr>
+                    <tr><td>1 inch shorter</td><td style="color:#f87171">-2.5</td></tr>
+                    <tr><td>2 inches shorter</td><td style="color:#f87171">-5.0</td></tr>
+                    <tr><td>3+ inches shorter</td><td style="color:#f87171">-8.0</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Final Formula -->
+<div class="section-hdr">Final Formula</div>
+<div class="info-card mb-3">
+    <div style="font-family: monospace; font-size: 14px; color: #f1f5f9; line-height: 2;">
+        <span style="color:#64748b">raw</span> = <span style="color:#f59e0b">Production</span> x 0.38
+            + <span style="color:#3b82f6">Efficiency</span> x 0.25
+            + <span style="color:#10b981">Impact</span> x 0.15
+            + <span style="color:#8b5cf6">Two-Way</span> x 0.10
+            + bonuses - penalties<br>
+        <span style="color:#64748b">final</span> = (<span style="color:#64748b">raw</span>
+            x <span style="color:#f59e0b">class_mult</span>
+            x <span style="color:#3b82f6">conf_mult</span>
+            x <span style="color:#10b981">pos_mult</span>)
+            + <span style="color:#ec4899">height_bonus</span>
+    </div>
+</div>
+
+<!-- Tier Assignment -->
+<div class="section-hdr">Tier Assignment</div>
+<div class="info-card mb-4">
+    <p class="mb-2" style="color:#94a3b8">After all players are scored, they are sorted by final draft score. Tiers are assigned by rank position:</p>
+    <div class="d-flex gap-3 flex-wrap">
+        <div><span class="tier-1">Tier 1 — Lottery</span> Ranks 1–15</div>
+        <div><span class="tier-2">Tier 2 — Late 1st</span> Ranks 16–45</div>
+        <div><span class="tier-3">Tier 3 — 2nd Round</span> Ranks 46+</div>
+    </div>
+</div>
+
+<!-- Live Examples -->
+{% if examples %}
+<div class="section-hdr">Live Examples from Current Data</div>
+<div class="table-responsive">
+    <table class="table table-scout table-sm">
+        <thead>
+            <tr>
+                <th>Rank</th><th>Player</th><th>Pos</th><th>School</th><th>Year</th><th>Conf</th>
+                <th style="color:#f59e0b">Prod</th><th style="color:#3b82f6">Eff</th>
+                <th style="color:#10b981">Impact</th><th style="color:#8b5cf6">2-Way</th>
+                <th>Raw</th><th>Age Mult</th><th>Conf Mult</th><th>Final Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ex in examples %}
+            <tr>
+                <td><strong>{{ ex.rank }}</strong></td>
+                <td><a href="/scouting?player_id={{ ex.id }}" class="text-info text-decoration-none">{{ ex.name }}</a></td>
+                <td>{{ ex.pos }}</td>
+                <td>{{ ex.school }}</td>
+                <td>{{ ex.year }}</td>
+                <td>{{ ex.conf }}</td>
+                <td>{{ "%.1f"|format(ex.prod) }}</td>
+                <td>{{ "%.1f"|format(ex.eff) }}</td>
+                <td>{{ "%.1f"|format(ex.impact) }}</td>
+                <td>{{ "%.1f"|format(ex.two_way) }}</td>
+                <td>{{ "%.1f"|format(ex.raw) }}</td>
+                <td>{{ ex.age_mult }}x</td>
+                <td>{{ ex.conf_mult }}x</td>
+                <td><strong>{{ ex.final }}</strong></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% endblock %}

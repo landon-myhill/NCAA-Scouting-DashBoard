@@ -4,12 +4,12 @@
 
 {% block content %}
 <h4 class="mb-1">Archetype Scarcity</h4>
-<p class="text-secondary small">Draft class depth by player archetype — find the thin spots and the deep pools. Top 200 prospects.</p>
+<p class="text-secondary small">Draft class depth by player archetype — find the thin spots and the deep pools. Players are counted for <strong>every</strong> archetype they qualify for, not just their primary. Top 200 prospects.</p>
 
 <!-- Archetype Guide -->
 <div class="mb-3">
     <a data-bs-toggle="collapse" href="#archGuide" class="btn btn-sm btn-outline-secondary">
-        🔍 Archetype Guide
+        Archetype Guide
     </a>
 </div>
 <div class="collapse" id="archGuide">
@@ -19,8 +19,12 @@
     {% set off_counts = {} %}
     {% set def_counts = {} %}
     {% for p in scarcity.players %}
-        {% if p.archetype %}{% if off_counts.update({p.archetype: off_counts.get(p.archetype, 0) + 1}) %}{% endif %}{% endif %}
-        {% if p.defensive_archetype %}{% if def_counts.update({p.defensive_archetype: def_counts.get(p.defensive_archetype, 0) + 1}) %}{% endif %}{% endif %}
+        {% for a in p.get('all_offensive', []) %}
+            {% if a %}{% if off_counts.update({a: off_counts.get(a, 0) + 1}) %}{% endif %}{% endif %}
+        {% endfor %}
+        {% for a in p.get('all_defensive', []) %}
+            {% if a %}{% if def_counts.update({a: def_counts.get(a, 0) + 1}) %}{% endif %}{% endif %}
+        {% endfor %}
     {% endfor %}
 
     <h6 class="text-secondary">Offensive Archetypes</h6>
@@ -53,18 +57,32 @@
 <div class="filter-bar d-flex gap-3 flex-wrap">
     <div>
         <label class="form-label small text-secondary mb-0">Offensive</label>
-        <select id="browseOff" class="form-select form-select-sm" data-col="off" style="min-width:160px">
+        <select id="browseOff" class="form-select form-select-sm" style="min-width:160px">
             <option value="All">All</option>
-            {% set off_archs = scarcity.players|map(attribute='archetype')|select('string')|unique|sort %}
-            {% for a in off_archs %}{% if a %}<option>{{ a }}</option>{% endif %}{% endfor %}
+            {% set all_off = [] %}
+            {% for p in scarcity.players %}
+                {% for a in p.get('all_offensive', []) %}
+                    {% if a and a not in all_off %}{% if all_off.append(a) %}{% endif %}{% endif %}
+                {% endfor %}
+            {% endfor %}
+            {% for a in all_off|sort %}
+            <option>{{ a }}</option>
+            {% endfor %}
         </select>
     </div>
     <div>
         <label class="form-label small text-secondary mb-0">Defensive</label>
-        <select id="browseDef" class="form-select form-select-sm" data-col="def" style="min-width:160px">
+        <select id="browseDef" class="form-select form-select-sm" style="min-width:160px">
             <option value="All">All</option>
-            {% set def_archs = scarcity.players|map(attribute='defensive_archetype')|select('string')|unique|sort %}
-            {% for a in def_archs %}{% if a %}<option>{{ a }}</option>{% endif %}{% endfor %}
+            {% set all_def = [] %}
+            {% for p in scarcity.players %}
+                {% for a in p.get('all_defensive', []) %}
+                    {% if a and a not in all_def %}{% if all_def.append(a) %}{% endif %}{% endif %}
+                {% endfor %}
+            {% endfor %}
+            {% for a in all_def|sort %}
+            <option>{{ a }}</option>
+            {% endfor %}
         </select>
     </div>
     <div>
@@ -87,23 +105,33 @@
         <thead>
             <tr>
                 <th>Rank</th><th>Name</th><th>Pos</th><th>School</th><th>Conf</th>
-                <th>Year</th><th>Tier</th><th>Score</th><th>Offensive</th><th>Defensive</th>
+                <th>Year</th><th>Tier</th><th>Score</th><th>Offensive Archetypes</th><th>Defensive Archetypes</th>
                 <th>PPG</th><th>RPG</th><th>APG</th>
             </tr>
         </thead>
         <tbody>
             {% for p in scarcity.players %}
-            <tr data-off="{{ p.archetype or '' }}" data-def="{{ p.defensive_archetype or '' }}">
+            <tr data-off="{{ p.get('all_offensive', [])|join(',') }}" data-def="{{ p.get('all_defensive', [])|join(',') }}">
                 <td>{{ p.rank }}</td>
                 <td><a href="/scouting?player_id={{ p.rank }}" class="text-info text-decoration-none">{{ p.name }}</a></td>
-                <td data-col="pos">{{ p.pos }}</td>
+                <td>{{ p.pos }}</td>
                 <td>{{ p.school }}</td>
                 <td>{{ p.conference }}</td>
                 <td>{{ p.year }}</td>
                 <td><span class="tier-{{ p.tier }}">{{ tier_labels.get(p.tier, '') }}</span></td>
                 <td>{{ p.draft_score }}</td>
-                <td data-col="off">{{ p.archetype or '—' }}</td>
-                <td data-col="def">{{ p.defensive_archetype or '—' }}</td>
+                <td>
+                    {% for a in p.get('all_offensive', []) %}
+                        {% if a %}<span class="arch-off" style="font-size:11px;padding:3px 10px;margin:1px;">{{ a }}</span>{% endif %}
+                    {% endfor %}
+                    {% if not p.get('all_offensive', []) %}—{% endif %}
+                </td>
+                <td>
+                    {% for a in p.get('all_defensive', []) %}
+                        {% if a %}<span class="arch-def" style="font-size:11px;padding:3px 10px;margin:1px;">{{ a }}</span>{% endif %}
+                    {% endfor %}
+                    {% if not p.get('all_defensive', []) %}—{% endif %}
+                </td>
                 <td>{{ "%.1f"|format(p.ppg or 0) }}</td>
                 <td>{{ "%.1f"|format(p.rpg or 0) }}</td>
                 <td>{{ "%.1f"|format(p.apg or 0) }}</td>
@@ -114,19 +142,30 @@
 </div>
 
 <!-- Charts -->
-<div class="section-hdr mt-4">Archetype Depth by Tier</div>
-<div id="depthChart"></div>
+<div class="section-hdr mt-4">Offensive Archetype Depth by Tier</div>
+<div id="depthChartOff"></div>
+
+<div class="section-hdr mt-4">Defensive Archetype Depth by Tier</div>
+<div id="depthChartDef"></div>
 
 <div class="section-hdr mt-4">Archetype Depth Table</div>
+<p class="text-secondary small">Players are counted for every archetype they qualify for. A versatile player may appear under 3+ archetypes.</p>
 <div class="table-responsive">
     <table class="table table-scout table-sm">
         <thead>
-            <tr><th>Archetype</th><th>Total</th><th>Lottery</th><th>Late 1st</th><th>2nd Rd</th><th>Avg Score</th><th>Top Prospect</th><th>Depth</th></tr>
+            <tr><th>Type</th><th>Archetype</th><th>Total</th><th>Lottery</th><th>Late 1st</th><th>2nd Rd</th><th>Avg Score</th><th>Top Prospect</th><th>Depth</th></tr>
         </thead>
         <tbody>
             {% set signals = {'Very Scarce':'🔴','Scarce':'🟠','Moderate':'🟡','Deep':'🟢'} %}
             {% for d in scarcity.depth %}
             <tr>
+                <td>
+                    {% if d.get('arch_side') == 'defensive' %}
+                        <span class="arch-def" style="font-size:10px;padding:2px 8px;">DEF</span>
+                    {% else %}
+                        <span class="arch-off" style="font-size:10px;padding:2px 8px;">OFF</span>
+                    {% endif %}
+                </td>
                 <td><strong>{{ d.archetype }}</strong></td>
                 <td>{{ d.total }}</td>
                 <td>{{ d.lottery }}</td>
@@ -147,6 +186,7 @@
 <!-- Positional Gaps -->
 <div class="section-hdr mt-4">Positional Gaps</div>
 {% if scarcity.gaps %}
+<p class="text-secondary small">Position + archetype combos with 3 or fewer players in the top 200.</p>
 <div class="table-responsive">
     <table class="table table-scout table-sm">
         <thead><tr><th>Position</th><th>Archetype</th><th>Total</th><th>In Lottery</th><th>Best Rank</th><th>Alert</th></tr></thead>
@@ -185,31 +225,39 @@
 
 {% block scripts %}
 <script>
-// Depth stacked bar chart
 const depthData = {{ scarcity.depth|tojson }};
-const archetypes = depthData.map(d => d.archetype);
 
-const tier1 = depthData.map(d => d.tier_counts['1'] || 0);
-const tier2 = depthData.map(d => d.tier_counts['2'] || 0);
-const tier3 = depthData.map(d => d.tier_counts['3'] || 0);
+// Split into offensive and defensive
+const offData = depthData.filter(d => d.arch_side !== 'defensive');
+const defData = depthData.filter(d => d.arch_side === 'defensive');
 
-Plotly.newPlot('depthChart', [
-    {name: 'Lottery', x: archetypes, y: tier1, type: 'bar', marker: {color: '#f59e0b'}},
-    {name: 'Late 1st', x: archetypes, y: tier2, type: 'bar', marker: {color: '#3b82f6'}},
-    {name: '2nd Round', x: archetypes, y: tier3, type: 'bar', marker: {color: '#6b7280'}},
-], {
-    barmode: 'stack',
-    paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
-    margin: {l: 40, r: 10, t: 10, b: 100},
-    height: 380,
-    legend: {orientation: 'h', y: -0.3, x: 0.5, xanchor: 'center', font: {color: '#94a3b8'}},
-    yaxis: {gridcolor: 'rgba(128,128,128,0.15)', title: '# of prospects', color: '#94a3b8'},
-    xaxis: {tickangle: -45, color: '#94a3b8'},
-    font: {color: '#94a3b8'},
-}, {responsive: true, displayModeBar: false});
+function makeDepthChart(divId, data, barColor) {
+    const archetypes = data.map(d => d.archetype);
+    const tier1 = data.map(d => d.tier_counts['1'] || 0);
+    const tier2 = data.map(d => d.tier_counts['2'] || 0);
+    const tier3 = data.map(d => d.tier_counts['3'] || 0);
 
-// Box plot
-const boxTraces = depthData.filter(d => d.scores.length >= 3).map(d => ({
+    Plotly.newPlot(divId, [
+        {name: 'Lottery', x: archetypes, y: tier1, type: 'bar', marker: {color: '#f59e0b'}},
+        {name: 'Late 1st', x: archetypes, y: tier2, type: 'bar', marker: {color: '#3b82f6'}},
+        {name: '2nd Round', x: archetypes, y: tier3, type: 'bar', marker: {color: '#6b7280'}},
+    ], {
+        barmode: 'stack',
+        paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
+        margin: {l: 40, r: 10, t: 10, b: 120},
+        height: 380,
+        legend: {orientation: 'h', y: -0.35, x: 0.5, xanchor: 'center', font: {color: '#94a3b8'}},
+        yaxis: {gridcolor: 'rgba(128,128,128,0.15)', title: '# of prospects', color: '#94a3b8'},
+        xaxis: {tickangle: -45, color: '#94a3b8'},
+        font: {color: '#94a3b8'},
+    }, {responsive: true, displayModeBar: false});
+}
+
+makeDepthChart('depthChartOff', offData);
+makeDepthChart('depthChartDef', defData);
+
+// Box plot (offensive only to keep it readable)
+const boxTraces = offData.filter(d => d.scores.length >= 3).map(d => ({
     y: d.scores, name: d.archetype, type: 'box',
     boxpoints: 'outliers', marker: {color: '#f59e0b'},
 }));
@@ -222,7 +270,7 @@ Plotly.newPlot('boxChart', boxTraces, {
     font: {color: '#94a3b8'},
 }, {responsive: true, displayModeBar: false});
 
-// Browse filters (client-side)
+// Browse filters — now checks against comma-separated list of all archetypes
 const browseOff = document.getElementById('browseOff');
 const browseDef = document.getElementById('browseDef');
 const browseLimit = document.getElementById('browseLimit');
@@ -236,10 +284,12 @@ function applyBrowseFilters() {
     let count = 0;
     browseRows.forEach(row => {
         const rank = parseInt(row.children[0].textContent);
+        const offArchs = (row.dataset.off || '').split(',');
+        const defArchs = (row.dataset.def || '').split(',');
         let show = true;
         if (rank > limit) show = false;
-        if (offVal !== 'All' && row.dataset.off !== offVal) show = false;
-        if (defVal !== 'All' && row.dataset.def !== defVal) show = false;
+        if (offVal !== 'All' && !offArchs.includes(offVal)) show = false;
+        if (defVal !== 'All' && !defArchs.includes(defVal)) show = false;
         row.style.display = show ? '' : 'none';
         if (show) count++;
     });

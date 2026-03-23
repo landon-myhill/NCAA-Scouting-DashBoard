@@ -60,21 +60,43 @@ def main():
     print("Building scarcity data...")
     top200 = players[:200]
 
+    # Count ALL archetypes each player qualifies for (not just primary)
     arch_counts = {}   # archetype → {1: n, 2: n, 3: n}
     arch_scores = {}   # archetype → [scores]
     arch_top = {}      # archetype → best player name/rank
+    arch_type = {}     # archetype → "offensive" or "defensive"
 
     for p in top200:
-        arch = p["archetype"]
         t = p["tier"]
-        if arch not in arch_counts:
-            arch_counts[arch] = {1: 0, 2: 0, 3: 0}
-            arch_scores[arch] = []
-            arch_top[arch] = {"rank": p["rank"], "name": p["name"]}
-        arch_counts[arch][t] += 1
-        arch_scores[arch].append(p.get("draft_score", 0))
-        if p["rank"] < arch_top[arch]["rank"]:
-            arch_top[arch] = {"rank": p["rank"], "name": p["name"]}
+        score = p.get("draft_score", 0)
+
+        # Count all offensive archetypes
+        for arch in p.get("all_offensive", []):
+            if not arch:
+                continue
+            if arch not in arch_counts:
+                arch_counts[arch] = {1: 0, 2: 0, 3: 0}
+                arch_scores[arch] = []
+                arch_top[arch] = {"rank": p["rank"], "name": p["name"]}
+                arch_type[arch] = "offensive"
+            arch_counts[arch][t] += 1
+            arch_scores[arch].append(score)
+            if p["rank"] < arch_top[arch]["rank"]:
+                arch_top[arch] = {"rank": p["rank"], "name": p["name"]}
+
+        # Count all defensive archetypes
+        for arch in p.get("all_defensive", []):
+            if not arch:
+                continue
+            if arch not in arch_counts:
+                arch_counts[arch] = {1: 0, 2: 0, 3: 0}
+                arch_scores[arch] = []
+                arch_top[arch] = {"rank": p["rank"], "name": p["name"]}
+                arch_type[arch] = "defensive"
+            arch_counts[arch][t] += 1
+            arch_scores[arch].append(score)
+            if p["rank"] < arch_top[arch]["rank"]:
+                arch_top[arch] = {"rank": p["rank"], "name": p["name"]}
 
     # Depth table rows
     depth_rows = []
@@ -101,6 +123,7 @@ def main():
         top = arch_top[arch]
         depth_rows.append({
             "archetype": arch,
+            "arch_side": arch_type.get(arch, "offensive"),
             "total": total,
             "lottery": lottery,
             "late_1st": late1,
@@ -113,45 +136,49 @@ def main():
             "tier_counts": {str(k): v for k, v in c.items()},
         })
 
-    # Positional gaps
+    # Positional gaps — count across all archetypes
     gap_data = {}
     for p in top200:
-        key = f"{p['pos']}|{p['archetype']}"
-        if key not in gap_data:
-            gap_data[key] = {"pos": p["pos"], "archetype": p["archetype"],
-                             "total": 0, "lottery": 0, "best_rank": 9999}
-        gap_data[key]["total"] += 1
-        if p["tier"] == 1:
-            gap_data[key]["lottery"] += 1
-        gap_data[key]["best_rank"] = min(gap_data[key]["best_rank"], p["rank"])
+        for arch in p.get("all_offensive", []) + p.get("all_defensive", []):
+            if not arch:
+                continue
+            key = f"{p['pos']}|{arch}"
+            if key not in gap_data:
+                gap_data[key] = {"pos": p["pos"], "archetype": arch,
+                                 "total": 0, "lottery": 0, "best_rank": 9999}
+            gap_data[key]["total"] += 1
+            if p["tier"] == 1:
+                gap_data[key]["lottery"] += 1
+            gap_data[key]["best_rank"] = min(gap_data[key]["best_rank"], p["rank"])
 
     gap_rows = [v for v in gap_data.values() if v["total"] <= 3]
     gap_rows.sort(key=lambda x: x["total"])
 
-    # Conference archetype production
+    # Conference archetype production — count all archetypes
     conf_arch = {}
     for p in top200:
         conf = p.get("conference", "Other")
-        arch = p["archetype"]
         if conf not in conf_arch:
             conf_arch[conf] = {}
-        conf_arch[conf][arch] = conf_arch[conf].get(arch, 0) + 1
+        for arch in p.get("all_offensive", []):
+            if arch:
+                conf_arch[conf][arch] = conf_arch[conf].get(arch, 0) + 1
 
     conf_rows = []
     for conf in sorted(conf_arch.keys()):
         dist = conf_arch[conf]
-        total = sum(dist.values())
+        total_players = len([p for p in top200 if p.get("conference") == conf])
         top3 = sorted(dist.items(), key=lambda x: x[1], reverse=True)[:3]
         top_player = min([p for p in top200 if p.get("conference") == conf], key=lambda x: x["rank"])
         conf_rows.append({
             "conference": conf,
-            "prospects": total,
+            "prospects": total_players,
             "top_archetypes": ", ".join(f"{a} ({n})" for a, n in top3),
             "top_prospect_rank": top_player["rank"],
             "top_prospect_name": top_player["name"],
         })
 
-    # Browse table (all 200 players with archetype info)
+    # Browse table (all 200 players with all archetype info)
     browse_rows = []
     for p in top200:
         browse_rows.append({
@@ -166,6 +193,8 @@ def main():
             "draft_score": round(p.get("draft_score", 0), 1),
             "archetype": p["archetype"],
             "defensive_archetype": p.get("defensive_archetype", ""),
+            "all_offensive": p.get("all_offensive", []),
+            "all_defensive": p.get("all_defensive", []),
             "ppg": p["stats"].get("PPG"),
             "rpg": p["stats"].get("RPG"),
             "apg": p["stats"].get("APG"),

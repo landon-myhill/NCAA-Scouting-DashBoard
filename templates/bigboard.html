@@ -4,14 +4,53 @@
 
 {% block head %}
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+<style>
+.board-tab {
+    padding: 6px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;
+    cursor: pointer; border: 1px solid #334155; background: #1e293b; color: #94a3b8;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    transition: all .15s;
+}
+.board-tab:hover { background: #334155; color: #f1f5f9; }
+.board-tab.active { background: #f59e0b; color: #000; border-color: #f59e0b; }
+.board-tab.master { background: #1e293b; }
+.board-tab.master.active { background: #3b82f6; color: #fff; border-color: #3b82f6; }
+.board-tab .tab-x {
+    font-size: 14px; opacity: 0.6; margin-left: 2px; cursor: pointer;
+    background: none; border: none; color: inherit; padding: 0; line-height: 1;
+}
+.board-tab .tab-x:hover { opacity: 1; }
+.board-actions { display: inline-flex; gap: 6px; align-items: center; }
+</style>
 {% endblock %}
 
 {% block content %}
-<div class="d-flex justify-content-between align-items-center mb-3">
+<div class="d-flex justify-content-between align-items-center mb-2">
     <h4 class="mb-0">Big Board — Top 200</h4>
-    <a href="/api/export/bigboard.csv" class="btn btn-sm btn-outline-secondary">📥 Export CSV</a>
+    <div class="d-flex gap-2">
+        <a href="/api/export/bigboard.csv{% if board_id %}?board_id={{ board_id }}{% endif %}" class="btn btn-sm btn-outline-secondary">Export CSV</a>
+    </div>
 </div>
-<p class="text-secondary small">Drag players to reorder. Tier boundaries update automatically.</p>
+
+<!-- Board Tabs -->
+<div class="d-flex gap-2 flex-wrap align-items-center mb-3">
+    <a href="/bigboard" class="board-tab master {% if is_master %}active{% endif %}">
+        Master Board
+    </a>
+    {% for b in boards %}
+    <a href="/bigboard?board_id={{ b.id }}" class="board-tab {% if current_board and current_board.id == b.id %}active{% endif %}" data-board-id="{{ b.id }}">
+        <span class="board-tab-name">{{ b.name }}</span>
+        <button class="tab-x" onclick="event.preventDefault();event.stopPropagation();deleteBoard({{ b.id }},'{{ b.name }}')" title="Delete board">&times;</button>
+    </a>
+    {% endfor %}
+    <button class="board-tab" onclick="createBoard()" style="border-style:dashed">+ New Board</button>
+</div>
+
+{% if is_master %}
+<p class="text-secondary small">Pure formula ranking — no manual reordering. Create a custom board to rearrange players.</p>
+{% else %}
+<p class="text-secondary small">Drag players to reorder on <strong>{{ current_board.name }}</strong>. Changes save automatically.</p>
+{% endif %}
 
 <!-- Filters -->
 <div class="filter-bar d-flex gap-3 flex-wrap">
@@ -32,6 +71,32 @@
         </select>
     </div>
     <div>
+        <label class="form-label small text-secondary mb-0">Offensive Archetype</label>
+        <select id="bbFilterOffArch" class="form-select form-select-sm" style="min-width:160px">
+            <option value="All">All</option>
+            {% set all_off_archs = [] %}
+            {% for p in players %}
+                {% for a in profiles.get(p.id, {}).get('all_offensive', []) %}
+                    {% if a and a not in all_off_archs %}{% if all_off_archs.append(a) %}{% endif %}{% endif %}
+                {% endfor %}
+            {% endfor %}
+            {% for a in all_off_archs|sort %}<option>{{ a }}</option>{% endfor %}
+        </select>
+    </div>
+    <div>
+        <label class="form-label small text-secondary mb-0">Defensive Archetype</label>
+        <select id="bbFilterDefArch" class="form-select form-select-sm" style="min-width:160px">
+            <option value="All">All</option>
+            {% set all_def_archs = [] %}
+            {% for p in players %}
+                {% for a in profiles.get(p.id, {}).get('all_defensive', []) %}
+                    {% if a and a not in all_def_archs %}{% if all_def_archs.append(a) %}{% endif %}{% endif %}
+                {% endfor %}
+            {% endfor %}
+            {% for a in all_def_archs|sort %}<option>{{ a }}</option>{% endfor %}
+        </select>
+    </div>
+    <div>
         <label class="form-label small text-secondary mb-0">Show top</label>
         <select id="bbFilterLimit" class="form-select form-select-sm" style="min-width:90px">
             <option value="15">15</option>
@@ -40,6 +105,9 @@
             <option value="100">100</option>
             <option value="200" selected>200</option>
         </select>
+    </div>
+    <div class="align-self-end">
+        <span id="bbFilterCount" class="text-secondary small"></span>
     </div>
 </div>
 
@@ -58,12 +126,14 @@
     <div class="tier-header tier-header-3" data-tier-header="3">Tier 3 — 2nd Round (46+)</div>
     {% endif %}
 
-    <div class="bb-row" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}">
+    <div class="bb-row" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}"
+         data-off-arch="{{ prof.get('all_offensive', [])|join(',') }}" data-def-arch="{{ prof.get('all_defensive', [])|join(',') }}"
+         {% if is_master %}style="cursor:default"{% endif %}>
         <div class="bb-pos">{{ pos_num }}</div>
+        {% if not is_master %}<div style="color:#475569;font-size:18px;cursor:grab" class="me-1">&#x2630;</div>{% endif %}
         <div class="bb-name">
-            {{ '★' if p.id in wl_ids else '' }}
             {{ p.name }}
-            <span class="bb-meta ms-2">{{ p.pos }} · {{ p.school }}{% if p.conference %} · {{ p.conference }}{% endif %}</span>
+            <span class="bb-meta ms-2">{{ p.pos }} · {{ p.school }}{% if p.conference %} · {{ p.conference }}{% endif %} · {{ p.year }}</span>
         </div>
         <div class="bb-archetypes">
             {% for a in prof.get('all_offensive', []) %}
@@ -75,6 +145,9 @@
         </div>
         <div class="bb-stat">{{ fmt_stat(p.stats.get('PPG'), 'PPG') }} <span class="text-secondary" style="font-size:10px">PPG</span></div>
         <div class="bb-stat">{{ "%.1f"|format(p.draft_score or 0) }} <span class="text-secondary" style="font-size:10px">Score</span></div>
+        {% if not is_master %}
+        <div class="bb-stat" style="color:#475569;font-size:11px">#{{ p.rank }} <span style="font-size:9px">formula</span></div>
+        {% endif %}
         <div class="bb-stat">
             <a href="/scouting?player_id={{ p.id }}" class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
         </div>
@@ -85,28 +158,32 @@
 
 {% block scripts %}
 <script>
-// Drag and drop
+const isMaster = {{ 'true' if is_master else 'false' }};
+const boardId = {{ board_id if board_id else 'null' }};
 const boardList = document.getElementById('boardList');
-const sortable = new Sortable(boardList, {
-    animation: 150,
-    ghostClass: 'dragging',
-    filter: '[data-tier-header]',
-    onEnd: async function() {
-        updatePositions();
-        const rows = boardList.querySelectorAll('.bb-row');
-        const order = Array.from(rows).map(r => parseInt(r.dataset.id));
-        await fetch('/api/board/reorder', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({order})
-        });
-    }
-});
+
+// Drag and drop — only on custom boards
+if (!isMaster && boardId) {
+    const sortable = new Sortable(boardList, {
+        animation: 150,
+        ghostClass: 'dragging',
+        handle: '.bb-row',
+        filter: '[data-tier-header]',
+        onEnd: async function() {
+            updatePositions();
+            const rows = boardList.querySelectorAll('.bb-row');
+            const order = Array.from(rows).map(r => parseInt(r.dataset.id));
+            await fetch(`/api/board/${boardId}/reorder`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({order})
+            });
+        }
+    });
+}
 
 function updatePositions() {
-    // Remove old tier headers
     boardList.querySelectorAll('[data-tier-header]').forEach(h => h.remove());
-
     const rows = boardList.querySelectorAll('.bb-row');
     let inserted = {1: false, 16: false, 46: false};
 
@@ -114,7 +191,6 @@ function updatePositions() {
         const pos = i + 1;
         row.querySelector('.bb-pos').textContent = pos;
 
-        // Insert tier headers
         if (pos === 1 && !inserted[1]) {
             const h = document.createElement('div');
             h.className = 'tier-header tier-header-1';
@@ -140,23 +216,54 @@ function updatePositions() {
     });
 }
 
+// Board management
+async function createBoard() {
+    const name = prompt('Board name:');
+    if (!name || !name.trim()) return;
+    const res = await fetch('/api/boards', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({name: name.trim()})
+    });
+    const data = await res.json();
+    if (data.ok) {
+        window.location.href = `/bigboard?board_id=${data.id}`;
+    }
+}
+
+async function deleteBoard(id, name) {
+    if (!confirm(`Delete board "${name}"? This cannot be undone.`)) return;
+    await fetch(`/api/boards/${id}`, {method: 'DELETE'});
+    window.location.href = '/bigboard';
+}
+
 // Filters
-document.getElementById('bbFilterPos').addEventListener('change', applyBBFilters);
-document.getElementById('bbFilterConf').addEventListener('change', applyBBFilters);
-document.getElementById('bbFilterLimit').addEventListener('change', applyBBFilters);
+['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', applyBBFilters);
+});
 
 function applyBBFilters() {
     const posVal = document.getElementById('bbFilterPos').value;
     const confVal = document.getElementById('bbFilterConf').value;
+    const offArchVal = document.getElementById('bbFilterOffArch').value;
+    const defArchVal = document.getElementById('bbFilterDefArch').value;
     const limit = parseInt(document.getElementById('bbFilterLimit').value);
+    let count = 0;
     boardList.querySelectorAll('.bb-row').forEach(row => {
         const rank = parseInt(row.querySelector('.bb-pos').textContent);
+        const offArchs = (row.dataset.offArch || '').split(',');
+        const defArchs = (row.dataset.defArch || '').split(',');
         let show = true;
         if (rank > limit) show = false;
         if (posVal !== 'All' && row.dataset.pos !== posVal) show = false;
         if (confVal !== 'All' && row.dataset.conf !== confVal) show = false;
+        if (offArchVal !== 'All' && !offArchs.includes(offArchVal)) show = false;
+        if (defArchVal !== 'All' && !defArchs.includes(defArchVal)) show = false;
         row.style.display = show ? '' : 'none';
+        if (show) count++;
     });
+    document.getElementById('bbFilterCount').textContent = `${count} player${count !== 1 ? 's' : ''}`;
 }
 </script>
 {% endblock %}
