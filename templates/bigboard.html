@@ -21,6 +21,17 @@
 }
 .board-tab .tab-x:hover { opacity: 1; }
 .board-actions { display: inline-flex; gap: 6px; align-items: center; }
+.draft-toggle {
+    background: transparent; border: 1px solid #334155; color: #64748b;
+    border-radius: 6px; padding: 2px 8px; font-size: 13px; cursor: pointer;
+    line-height: 1.4; transition: all .15s;
+}
+.draft-toggle:hover { border-color: #f59e0b; color: #f59e0b; }
+.draft-toggle.in-draft {
+    background: #f59e0b; border-color: #f59e0b; color: #0f172a; font-weight: 600;
+}
+.draft-toggle.in-draft:hover { background: #fbbf24; }
+.bb-row.declared { background: rgba(245,158,11,0.05); }
 </style>
 {% endblock %}
 
@@ -107,6 +118,12 @@
         </select>
     </div>
     <div class="align-self-end">
+        <label class="form-check-label small text-secondary" style="cursor:pointer;user-select:none">
+            <input type="checkbox" id="bbFilterDraftOnly" class="form-check-input me-1" style="vertical-align:middle">
+            Draft only
+        </label>
+    </div>
+    <div class="align-self-end">
         <span id="bbFilterCount" class="text-secondary small"></span>
     </div>
 </div>
@@ -126,8 +143,10 @@
     <div class="tier-header tier-header-3" data-tier-header="3">Tier 3 — 2nd Round (46+)</div>
     {% endif %}
 
-    <div class="bb-row" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}"
+    {% set in_draft = p.id in draft_ids %}
+    <div class="bb-row {% if in_draft %}declared{% endif %}" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}"
          data-off-arch="{{ prof.get('all_offensive', [])|join(',') }}" data-def-arch="{{ prof.get('all_defensive', [])|join(',') }}"
+         data-in-draft="{{ '1' if in_draft else '0' }}"
          {% if is_master %}style="cursor:default"{% endif %}>
         <div class="bb-pos">{{ pos_num }}</div>
         {% if not is_master %}<div style="color:#475569;font-size:18px;cursor:grab" class="me-1">&#x2630;</div>{% endif %}
@@ -148,6 +167,13 @@
         {% if not is_master %}
         <div class="bb-stat" style="color:#475569;font-size:11px">#{{ p.rank }} <span style="font-size:9px">formula</span></div>
         {% endif %}
+        <div class="bb-stat">
+            <button class="draft-toggle {% if in_draft %}in-draft{% endif %}"
+                    onclick="toggleDraft(this, {{ p.id }})"
+                    title="Mark as declared for the NBA Draft">
+                {% if in_draft %}✓ In Draft{% else %}+ Draft{% endif %}
+            </button>
+        </div>
         <div class="bb-stat">
             <a href="/scouting?player_id={{ p.id }}" class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
         </div>
@@ -238,7 +264,7 @@ async function deleteBoard(id, name) {
 }
 
 // Filters
-['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch'].forEach(id => {
+['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch','bbFilterDraftOnly'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('change', applyBBFilters);
 });
@@ -249,6 +275,7 @@ function applyBBFilters() {
     const offArchVal = document.getElementById('bbFilterOffArch').value;
     const defArchVal = document.getElementById('bbFilterDefArch').value;
     const limit = parseInt(document.getElementById('bbFilterLimit').value);
+    const draftOnly = document.getElementById('bbFilterDraftOnly').checked;
     let count = 0;
     boardList.querySelectorAll('.bb-row').forEach(row => {
         const rank = parseInt(row.querySelector('.bb-pos').textContent);
@@ -260,10 +287,39 @@ function applyBBFilters() {
         if (confVal !== 'All' && row.dataset.conf !== confVal) show = false;
         if (offArchVal !== 'All' && !offArchs.includes(offArchVal)) show = false;
         if (defArchVal !== 'All' && !defArchs.includes(defArchVal)) show = false;
+        if (draftOnly && row.dataset.inDraft !== '1') show = false;
         row.style.display = show ? '' : 'none';
         if (show) count++;
     });
     document.getElementById('bbFilterCount').textContent = `${count} player${count !== 1 ? 's' : ''}`;
+}
+
+async function toggleDraft(btn, pid) {
+    const row = btn.closest('.bb-row');
+    const isIn = btn.classList.contains('in-draft');
+    const method = isIn ? 'DELETE' : 'POST';
+    btn.disabled = true;
+    try {
+        const res = await fetch(`/api/draft/${pid}`, {method});
+        const data = await res.json();
+        if (!data.ok) throw new Error('toggle failed');
+        if (isIn) {
+            btn.classList.remove('in-draft');
+            btn.textContent = '+ Draft';
+            row.classList.remove('declared');
+            row.dataset.inDraft = '0';
+        } else {
+            btn.classList.add('in-draft');
+            btn.textContent = '✓ In Draft';
+            row.classList.add('declared');
+            row.dataset.inDraft = '1';
+        }
+        applyBBFilters();
+    } catch (e) {
+        alert('Could not update draft status: ' + e.message);
+    } finally {
+        btn.disabled = false;
+    }
 }
 </script>
 {% endblock %}

@@ -35,13 +35,13 @@ _POWER_CONFS = {"ACC", "SEC", "Big Ten", "Big 12", "Big East", "Pac-12"}
 
 # ── Age/class year draft value multiplier ────────────────────────────────────
 _CLASS_BONUS = {
-    "Freshman": 1.12,
-    "Sophomore": 1.06,
-    "Junior": 1.0,
-    "Senior": 0.92,
-    "Graduate": 0.86,
-    "5th Year": 0.82,
-    "Unknown": 0.97,
+    "Freshman": 1.05,
+    "Sophomore": 1.02,
+    "Junior": 1.00,
+    "Senior": 0.97,
+    "Graduate": 0.94,
+    "5th Year": 0.92,
+    "Unknown": 0.98,
 }
 
 # ── Conference strength multiplier ───────────────────────────────────────────
@@ -151,6 +151,17 @@ def draft_score(player: dict) -> float:
         two_way += min(dws / 3.0, 1.0) * 30           # DWS
     two_way += min((spg + bpg) / 3.5, 1.0) * 30       # stocks
 
+    # Blend with scout defense grade (0-100). DBPM/DWS are noisy at college level
+    # and credit team defense + minutes; the hand-scouted grade is more reliable
+    # for individual defense, so we weight it 60/40 against the stat-based score.
+    # Exception: when DBPM and DWS both signal elite defense, the on-court
+    # impact is too strong to override — a borderline scout grade shouldn't
+    # bury a clearly-elite defender (e.g. Burries: DBPM 5.7, scout grade 41).
+    skill_def = player.get("skills", {}).get("Defense")
+    elite_def_stats = dbpm > 2.5 and dws > 1.5
+    if isinstance(skill_def, (int, float)) and skill_def > 0 and not elite_def_stats:
+        two_way = 0.4 * two_way + 0.6 * skill_def
+
     # ── Playmaking bonus (guards who create for others) ──────────────────────
     ast_pct = _s(a, "AST%")
     play_bonus = 0
@@ -211,17 +222,17 @@ def draft_score(player: dict) -> float:
     if ht > 0:
         diff = ht - avg_ht  # positive = taller than avg for position
         if diff >= 3:
-            size_bonus = 3.5
+            size_bonus = 4.0
         elif diff >= 2:
-            size_bonus = 2.0
+            size_bonus = 2.5
         elif diff >= 1:
             size_bonus = 1.0
         elif diff <= -3:
-            size_bonus = -8.0
+            size_bonus = -4.0
         elif diff <= -2:
-            size_bonus = -5.0
-        elif diff <= -1:
             size_bonus = -2.5
+        elif diff <= -1:
+            size_bonus = -1.0
 
     final = (raw * age_mult * conf_mult * pos_mult) + size_bonus
 
@@ -407,6 +418,33 @@ def classify(player: dict) -> dict:
         all_defensive = [a for a in all_defensive if a not in ("Paint Presence", "Weak Side Shot Blocker")]
     if "Defensive Liability" not in _def_set and dbpm < -1 and spg < 0.8 and bpg < 0.5:
         all_defensive.append("No Defense")
+
+    # Scout-grade defense override. The hand-scouted Defense rating is more
+    # reliable than stocks (which can come from gambling) or DBPM (which rides
+    # team defense). When the scout flags a weak defender, strip out the
+    # positive stat-based defensive archetypes AND the "Two-Way" offensive
+    # labels that imply defensive ability — otherwise we'd label the same
+    # player both "Perimeter Pest" and "Below-Average Defender".
+    _POSITIVE_DEF = {
+        "Defensive Anchor", "Point of Attack Defender", "Perimeter Pest",
+        "Wing Stopper", "Versatile Defender", "Paint Presence",
+        "Weak Side Shot Blocker", "Help Defender",
+    }
+    skill_def = player.get("skills", {}).get("Defense")
+    # Stat veto: if on-court defensive impact is clearly elite, the scout
+    # grade can't override it (it's likely just an inaccurate/stale grade).
+    elite_def_stats = dbpm > 2.5 and dws > 1.5
+    if isinstance(skill_def, (int, float)) and not elite_def_stats:
+        if skill_def < 30:
+            all_defensive = [a for a in all_defensive if a not in _POSITIVE_DEF]
+            all_offensive = [a for a in all_offensive if a not in ("Two-Way Star", "Two-Way Wing")]
+            if "Defensive Liability" not in all_defensive and "No Defense" not in all_defensive:
+                all_defensive.append("Defensive Liability")
+        elif skill_def < 45:
+            all_defensive = [a for a in all_defensive if a not in _POSITIVE_DEF]
+            all_offensive = [a for a in all_offensive if a not in ("Two-Way Star", "Two-Way Wing")]
+            if "Defensive Liability" not in all_defensive:
+                all_defensive.append("Below-Average Defender")
 
     # Average Defender: fallback for players who don't qualify for anything else
     if not all_defensive:

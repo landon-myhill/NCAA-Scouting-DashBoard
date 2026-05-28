@@ -157,6 +157,10 @@ def init_db():
             player_id INTEGER PRIMARY KEY,
             added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
+        CREATE TABLE IF NOT EXISTS draft_entrants (
+            player_id INTEGER PRIMARY KEY,
+            added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
         CREATE TABLE IF NOT EXISTS boards (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
@@ -240,6 +244,11 @@ def fmt_stat(val, label):
 def get_watchlist_ids():
     db = get_db()
     rows = db.execute("SELECT player_id FROM watchlist").fetchall()
+    return {r["player_id"] for r in rows}
+
+def get_draft_entrant_ids():
+    db = get_db()
+    rows = db.execute("SELECT player_id FROM draft_entrants").fetchall()
     return {r["player_id"] for r in rows}
 
 def get_notes_map():
@@ -362,6 +371,7 @@ def compare():
 def bigboard():
     top200 = sorted(PLAYERS, key=lambda p: p["rank"])[:200]
     wl_ids = get_watchlist_ids()
+    draft_ids = get_draft_entrant_ids()
     boards = get_all_boards()
 
     # Which board are we viewing? None = master (formula ranking)
@@ -390,7 +400,7 @@ def bigboard():
         p["_display_pos"] = i + 1
 
     return render_template("bigboard.html",
-        players=top200, wl_ids=wl_ids,
+        players=top200, wl_ids=wl_ids, draft_ids=draft_ids,
         tier_labels=TIER_LABELS, profiles=PROFILES,
         fmt_stat=fmt_stat,
         boards=boards, current_board=current_board,
@@ -587,6 +597,17 @@ def api_watchlist(pid):
         db.commit()
         return jsonify({"ok": True, "action": "added"})
     db.execute("DELETE FROM watchlist WHERE player_id=?", (pid,))
+    db.commit()
+    return jsonify({"ok": True, "action": "removed"})
+
+@app.route("/api/draft/<int:pid>", methods=["POST", "DELETE"])
+def api_draft_entrant(pid):
+    db = get_db()
+    if request.method == "POST":
+        db.execute("INSERT OR IGNORE INTO draft_entrants (player_id) VALUES (?)", (pid,))
+        db.commit()
+        return jsonify({"ok": True, "action": "added"})
+    db.execute("DELETE FROM draft_entrants WHERE player_id=?", (pid,))
     db.commit()
     return jsonify({"ok": True, "action": "removed"})
 
