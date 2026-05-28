@@ -8,10 +8,43 @@ Usage:
 """
 
 import json
+import re
+import unicodedata
 from pathlib import Path
 from archetypes import draft_score, classify
 
 PLAYERS_FILE = Path(__file__).parent / "players.json"
+DRAFT_FILE = Path(__file__).parent / "draft_eligible.json"
+
+_AUTO_ELIGIBLE_YEARS = {"Senior", "Graduate", "5th Year"}
+
+
+def _norm_name(name: str) -> str:
+    name = unicodedata.normalize("NFKD", name)
+    name = "".join(c for c in name if not unicodedata.combining(c))
+    name = name.lower().strip()
+    name = re.sub(r"\s+(jr|sr|ii|iii|iv|v)\.?$", "", name)
+    name = re.sub(r"[^\w\s]", "", name)
+    name = re.sub(r"\s+", " ", name)
+    return name
+
+
+def _load_draft_status() -> list[dict]:
+    """Return the raw list of scraped draft entries."""
+    if not DRAFT_FILE.exists():
+        return []
+    return json.loads(DRAFT_FILE.read_text(encoding="utf-8"))
+
+
+def _name_keys(name: str) -> tuple[str, str]:
+    """Return (full_norm, last_initial_norm). The second is a nickname-tolerant
+    fallback like 'l hutchinson' that matches both 'Lou Hutchinson' and 'Louis
+    Hutchinson'."""
+    full = _norm_name(name)
+    parts = full.split()
+    if len(parts) >= 2:
+        return full, f"{parts[0][0]} {parts[-1]}"
+    return full, full
 
 
 def main():
@@ -45,6 +78,55 @@ def main():
         p["all_defensive"] = profile["all_defensive"]
         p["tags"] = profile["tags"]
         p["red_flags"] = profile["red_flags"]
+
+    # Apply draft status from draft_eligible.json + senior auto-eligibility.
+    # Drive matching from the scraped side: for each scraped entry, find the
+    # best single player in players.json. Try exact normalized match first;
+    # fall back to "first_initial + last_name" only when the scraped first
+    # name is short (≤4 chars, likely nickname) AND there's exactly one
+    # candidate — this catches "Lou Hutchinson" → "Louis Hutchinson" without
+    # the false positives that come from common-name initial collisions.
+    scraped = _load_draft_status()
+    players_by_full: dict[str, list[dict]] = {}
+    for p in players:
+        players_by_full.setdefault(_norm_name(p["name"]), []).append(p)
+    for p in players:
+        p["draft_status"] = None  # initialize
+
+    print(f"Applying draft status ({len(scraped)} scraped entries)...")
+    unmatched: list[dict] = []
+    n_scraped = 0
+    for entry in scraped:
+        full = entry.get("norm_name") or _norm_name(entry["name"])
+        candidates = players_by_full.get(full, [])
+        if not candidates:
+            parts = full.split()
+            if len(parts) >= 2 and len(parts[0]) <= 4:
+                first_letter, last = parts[0][0], parts[-1]
+                candidates = [
+                    p for p in players
+                    if _norm_name(p["name"]).endswith(" " + last)
+                    and _norm_name(p["name"]).split()[0].startswith(first_letter)
+                ]
+        if len(candidates) == 1:
+            candidates[0]["draft_status"] = entry["status"]
+            n_scraped += 1
+        else:
+            unmatched.append(entry)
+
+    # Auto-eligible: any senior/grad who didn't get a scraped status
+    n_auto = 0
+    for p in players:
+        if p["draft_status"] is None and p.get("year") in _AUTO_ELIGIBLE_YEARS:
+            p["draft_status"] = "auto_eligible"
+            n_auto += 1
+    print(f"  -> {n_scraped} matched from scraper, {n_auto} flagged auto_eligible by year")
+
+    if unmatched:
+        print(f"\n{len(unmatched)} scraped names did NOT match any player in players.json:")
+        for e in unmatched:
+            tag = " (international, expected)" if e["type"] == "international" else ""
+            print(f"  - [{e['status']}] {e['name']}{tag}")
 
     raw["players"] = players
 

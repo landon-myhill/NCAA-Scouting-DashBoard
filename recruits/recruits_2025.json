@@ -1,0 +1,456 @@
+{
+  "hs_class_year": 2025,
+  "count": 50,
+  "recruits": [
+    {
+      "name": "AJ Dybantsa",
+      "norm_name": "aj dybantsa",
+      "espn_rank": 1,
+      "position": "SF",
+      "college_commit": "BYU",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Darryn Peterson",
+      "norm_name": "darryn peterson",
+      "espn_rank": 2,
+      "position": "CG",
+      "college_commit": "Kansas",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Cameron Boozer",
+      "norm_name": "cameron boozer",
+      "espn_rank": 3,
+      "position": "PF",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Nate Ament",
+      "norm_name": "nate ament",
+      "espn_rank": 4,
+      "position": "PF",
+      "college_commit": "Tennessee",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Caleb Wilson",
+      "norm_name": "caleb wilson",
+      "espn_rank": 5,
+      "position": "PF",
+      "college_commit": "North Carolina",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Chris Cenac Jr.",
+      "norm_name": "chris cenac",
+      "espn_rank": 6,
+      "position": "C",
+      "college_commit": "Houston",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Alijah Arenas",
+      "norm_name": "alijah arenas",
+      "espn_rank": 7,
+      "position": "SG",
+      "college_commit": "USC",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Mikel Brown Jr.",
+      "norm_name": "mikel brown",
+      "espn_rank": 8,
+      "position": "PG",
+      "college_commit": "Louisville",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Koa Peat",
+      "norm_name": "koa peat",
+      "espn_rank": 9,
+      "position": "PF",
+      "college_commit": "Arizona",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Brayden Burries",
+      "norm_name": "brayden burries",
+      "espn_rank": 10,
+      "position": "CG",
+      "college_commit": "Arizona",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Darius Acuff Jr.",
+      "norm_name": "darius acuff",
+      "espn_rank": 11,
+      "position": "PG",
+      "college_commit": "Arkansas",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Meleek Thomas",
+      "norm_name": "meleek thomas",
+      "espn_rank": 12,
+      "position": "SG",
+      "college_commit": "Arkansas",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Isiah Harwell",
+      "norm_name": "isiah harwell",
+      "espn_rank": 13,
+      "position": "SG",
+      "college_commit": "Houston",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Tounde Yessoufou",
+      "norm_name": "tounde yessoufou",
+      "espn_rank": 14,
+      "position": "SF",
+      "college_commit": "Baylor",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Braylon Mullins",
+      "norm_name": "braylon mullins",
+      "espn_rank": 15,
+      "position": "SG",
+      "college_commit": "UConn",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Kingston Flemings",
+      "norm_name": "kingston flemings",
+      "espn_rank": 16,
+      "position": "PG",
+      "college_commit": "Houston",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Jalen Haralson",
+      "norm_name": "jalen haralson",
+      "espn_rank": 17,
+      "position": "SF",
+      "college_commit": "Notre Dame",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Trey McKenney",
+      "norm_name": "trey mckenney",
+      "espn_rank": 18,
+      "position": "CG",
+      "college_commit": "Michigan",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Nikolas Khamenia",
+      "norm_name": "nikolas khamenia",
+      "espn_rank": 19,
+      "position": "SF",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Cayden Boozer",
+      "norm_name": "cayden boozer",
+      "espn_rank": 20,
+      "position": "PG",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Jasper Johnson",
+      "norm_name": "jasper johnson",
+      "espn_rank": 21,
+      "position": "SG",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Shon Abaev",
+      "norm_name": "shon abaev",
+      "espn_rank": 22,
+      "position": "SF",
+      "college_commit": "Cincinnati",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Shelton Henderson",
+      "norm_name": "shelton henderson",
+      "espn_rank": 23,
+      "position": "SF",
+      "college_commit": "Miami",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Dwayne Aristode",
+      "norm_name": "dwayne aristode",
+      "espn_rank": 24,
+      "position": "SF",
+      "college_commit": "Arizona",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Malachi Moreno",
+      "norm_name": "malachi moreno",
+      "espn_rank": 25,
+      "position": "C",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Matt Able",
+      "norm_name": "matt able",
+      "espn_rank": 26,
+      "position": "SG",
+      "college_commit": "NC State",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Darius Adams",
+      "norm_name": "darius adams",
+      "espn_rank": 27,
+      "position": "CG",
+      "college_commit": "Maryland",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Eric Reibe",
+      "norm_name": "eric reibe",
+      "espn_rank": 28,
+      "position": "C",
+      "college_commit": "UConn",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "CJ Ingram",
+      "norm_name": "cj ingram",
+      "espn_rank": 29,
+      "position": "SF",
+      "college_commit": "Florida",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Sadiq White Jr.",
+      "norm_name": "sadiq white",
+      "espn_rank": 30,
+      "position": "PF",
+      "college_commit": "Syracuse",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Niko Bundalo",
+      "norm_name": "niko bundalo",
+      "espn_rank": 31,
+      "position": "PF",
+      "college_commit": "Ole Miss",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Dame Sarr",
+      "norm_name": "dame sarr",
+      "espn_rank": 32,
+      "position": "SG",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Acaden Lewis",
+      "norm_name": "acaden lewis",
+      "espn_rank": 33,
+      "position": "PG",
+      "college_commit": "Villanova",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Kiyan Anthony",
+      "norm_name": "kiyan anthony",
+      "espn_rank": 34,
+      "position": "SG",
+      "college_commit": "Syracuse",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Sebastian Wilkins",
+      "norm_name": "sebastian wilkins",
+      "espn_rank": 35,
+      "position": "PF",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Xavion Staton",
+      "norm_name": "xavion staton",
+      "espn_rank": 36,
+      "position": "C",
+      "college_commit": "BYU",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Kayden Mingo",
+      "norm_name": "kayden mingo",
+      "espn_rank": 37,
+      "position": "CG",
+      "college_commit": "Penn State",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "London Jemison",
+      "norm_name": "london jemison",
+      "espn_rank": 38,
+      "position": "PF",
+      "college_commit": "Alabama",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Davis Fogle",
+      "norm_name": "davis fogle",
+      "espn_rank": 39,
+      "position": "SF",
+      "college_commit": "Gonzaga",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Jamier Jones",
+      "norm_name": "jamier jones",
+      "espn_rank": 40,
+      "position": "PF",
+      "college_commit": "Providence",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Jaden Toombs",
+      "norm_name": "jaden toombs",
+      "espn_rank": 41,
+      "position": "C",
+      "college_commit": "SMU",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Alex Lloyd",
+      "norm_name": "alex lloyd",
+      "espn_rank": 42,
+      "position": "SG",
+      "college_commit": "SMU",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Jerry Easter II",
+      "norm_name": "jerry easter",
+      "espn_rank": 43,
+      "position": "CG",
+      "college_commit": "USC",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Derek Dixon",
+      "norm_name": "derek dixon",
+      "espn_rank": 44,
+      "position": "CG",
+      "college_commit": "North Carolina",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Jacob Wilkins",
+      "norm_name": "jacob wilkins",
+      "espn_rank": 45,
+      "position": "SF",
+      "college_commit": "Georgia",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Davion Hannah",
+      "norm_name": "davion hannah",
+      "espn_rank": 46,
+      "position": "SG",
+      "college_commit": "Alabama",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Hudson Greer",
+      "norm_name": "hudson greer",
+      "espn_rank": 47,
+      "position": "SF",
+      "college_commit": "Creighton",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Sebastian Williams-Adams",
+      "norm_name": "sebastian williamsadams",
+      "espn_rank": 48,
+      "position": "PF",
+      "college_commit": "Auburn",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Billy White III",
+      "norm_name": "billy white",
+      "espn_rank": 49,
+      "position": "SF",
+      "college_commit": "SMU",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    },
+    {
+      "name": "Neoklis Avdalas",
+      "norm_name": "neoklis avdalas",
+      "espn_rank": 50,
+      "position": "SG",
+      "college_commit": "Virginia Tech",
+      "source": "247sports_composite",
+      "hs_class_year": 2025
+    }
+  ]
+}

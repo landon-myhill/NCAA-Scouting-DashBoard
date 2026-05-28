@@ -92,22 +92,40 @@ def draft_score(player: dict) -> float:
     tov_pct = _s(a, "TOV%")
 
     # ── Production score (0-100 scale, position-specific caps) ──────────────
+    # Per-36 normalization: NBA scouts evaluate per-minute production, not raw
+    # per-game volume. A freshman big on a deep team (Cenac, Quaintance) gets
+    # buried by per-game stats but shines per-36. Floor MPG at 15 so garbage-
+    # time bursts don't get extrapolated wildly.
     pos = player.get("pos", "")
     is_g = pos == "G"
     is_c = pos == "C"
+    # Position-specific caps AND weights. The old formula used the same 50/15/25/10/10
+    # weights for every position, which over-rewarded a center for passing he's not
+    # asked to do. Centers now get more credit for rebounds and blocks, less for assists.
     if is_g:
         ppg_cap, rpg_cap, apg_cap = 23.0, 6.0, 8.0
+        w_ppg, w_rpg, w_apg, w_spg, w_bpg = 50, 10, 25, 10, 5
     elif is_c:
         ppg_cap, rpg_cap, apg_cap = 19.0, 12.0, 4.0
+        w_ppg, w_rpg, w_apg, w_spg, w_bpg = 40, 30, 10, 5, 15
     else:  # SF, PF, F
         ppg_cap, rpg_cap, apg_cap = 23.0, 9.0, 5.0
+        w_ppg, w_rpg, w_apg, w_spg, w_bpg = 45, 20, 15, 10, 10
+
+    mpg = _s(s, "MPG")
+    scale = 36.0 / max(mpg, 15.0) if mpg > 0 else 1.0
+    ppg36 = ppg * scale
+    rpg36 = rpg * scale
+    apg36 = apg * scale
+    spg36 = spg * scale
+    bpg36 = bpg * scale
 
     prod = (
-        min(ppg / ppg_cap, 1.0) * 50 +    # scoring
-        min(rpg / rpg_cap, 1.0) * 15 +    # rebounding
-        min(apg / apg_cap, 1.0) * 25 +    # playmaking
-        min(spg / 2.5, 1.0) * 10 +        # steals
-        min(bpg / 2.5, 1.0) * 10          # blocks
+        min(ppg36 / ppg_cap, 1.0) * w_ppg +
+        min(rpg36 / rpg_cap, 1.0) * w_rpg +
+        min(apg36 / apg_cap, 1.0) * w_apg +
+        min(spg36 / 2.5, 1.0) * w_spg +
+        min(bpg36 / 2.5, 1.0) * w_bpg
     )
 
     # ── Efficiency score (0-100 scale) ───────────────────────────────────────
@@ -123,8 +141,18 @@ def draft_score(player: dict) -> float:
         eff += min((ts - 40) / 25.0, 1.0) * 8   # TS% (lowered)
     if bpm != 0 or ws > 0:
         eff += min((bpm + 5) / 15.0, 1.0) * 8   # BPM (lowered)
-    if efg > 0:
-        eff += min((efg - 35) / 25.0, 1.0) * 12  # eFG% (raised)
+    # eFG% is missing for many players in the dataset; fall back to a
+    # computed approximation from FG%/3P data so we don't penalize them.
+    efg_use = efg
+    if efg_use <= 0:
+        fg_p = _s(s, "FG%")
+        tp_p = _s(s, "3P%")
+        tp_att = _s(s, "3PA")
+        fg_att = _s(s, "FGA")
+        if fg_p > 0 and fg_att > 0:
+            efg_use = fg_p + 50.0 * (tp_p / 100.0) * (tp_att / fg_att)
+    if efg_use > 0:
+        eff += min((efg_use - 35) / 25.0, 1.0) * 12  # eFG% (raised)
     # Shooting: FG% and 3P%
     if fg_pct > 0:
         eff += min((fg_pct - 35) / 25.0, 1.0) * 6    # FG% (lowered)
@@ -132,16 +160,30 @@ def draft_score(player: dict) -> float:
     if tp_pct > 0 and tpa > 1:
         tp_weight = 6 if is_c else 22
         eff += min((tp_pct - 25) / 15.0, 1.0) * tp_weight
-    # Usage-efficiency bonus: high usage + high TS% = shot creator
+    # Usage-efficiency bonus: high usage + high TS% = shot creator.
+    # Reduced from +20 to +8 max: USG% alone has a negative trait signal
+    # (-0.21) — high-USG college players don't reliably become NBA stars
+    # (often "best on a bad team" types). We keep a small bonus for the
+    # specific combo of high USG with elite efficiency.
     if usg > 24 and ts > 56:
-        eff += min((usg - 24) / 10.0, 1.0) * 20
+        eff += min((usg - 24) / 10.0, 1.0) * 8
+
+    # Elite shooter bonus (Bane archetype: senior knockdown shooter).
+    # Softened: star-list analysis showed star wings averaged only 35% from
+    # 3 in college. Pure college shooting is overrated as a star predictor.
+    # Reduced bonus from +10 max to +5 max — still rewards genuine snipers
+    # but doesn't elevate pure-shooter specialists too aggressively.
+    if tpa > 5 and tp_pct > 38:
+        eff += 3 + min((tp_pct - 38) * 0.25, 2)
 
     # ── Impact score (0-100 scale) ───────────────────────────────────────────
+    # WS is the strongest individual signal among advanced volume metrics in
+    # our trait analysis (signal +0.32), so we lean into it slightly more.
     impact = 0
     if ws > 0:
-        impact += min(ws / 7.0, 1.0) * 60       # Win Shares
+        impact += min(ws / 7.0, 1.0) * 70       # Win Shares (was 60)
     if ws40 > 0:
-        impact += min(ws40 / 0.25, 1.0) * 40    # WS/40
+        impact += min(ws40 / 0.25, 1.0) * 30    # WS/40 (was 40)
 
     # ── Two-way score (0-100 scale) ──────────────────────────────────────────
     two_way = 0
@@ -162,41 +204,63 @@ def draft_score(player: dict) -> float:
     if isinstance(skill_def, (int, float)) and skill_def > 0 and not elite_def_stats:
         two_way = 0.4 * two_way + 0.6 * skill_def
 
-    # ── Playmaking bonus (guards who create for others) ──────────────────────
+    # ── Playmaking bonus (the strongest star-vs-starter differentiator) ────
+    # Trait analysis of confirmed NBA stars (Mobley, Haliburton, Bane, Edwards,
+    # Barnes, Maxey) showed APG is the LARGEST positive gap between stars and
+    # starters in college (+1.51 APG on average). Bigs/wings with playmaking
+    # are especially predictive (Mobley, Cade Cunningham, Scottie Barnes).
     ast_pct = _s(a, "AST%")
     play_bonus = 0
-    if apg > 4 and ast_pct > 20:
-        play_bonus = min((apg - 4) / 5.0, 1.0) * 5
+    if apg > 3.5:
+        play_bonus += min((apg - 3.5), 3.5) * 1.5      # up to +5 for high APG
+    if apg > 6:
+        play_bonus += 3                                 # elite distributor
+    # Big/wing playmaking — Mobley, Cade, Barnes, future Banchero types
+    if pos in ("F", "C") and apg > 3:
+        play_bonus += 3
+        if apg > 4:
+            play_bonus += 2  # truly rare bigman creation
 
-    # ── Minutes bonus/penalty ────────────────────────────────────────────────
-    mpg = _s(s, "MPG")
+    # ── Minutes floor ────────────────────────────────────────────────────────
+    # With per-36 production above, MPG no longer biases the rate stats.
+    # We only penalize *truly* limited roles (<15 MPG) where the sample is
+    # too small to trust regardless of normalization. No more starter bonus
+    # — per-36 already captures per-minute impact.
     min_bonus = 0
-    if mpg >= 34:
-        min_bonus = 4       # starter, heavy minutes
-    elif mpg >= 30:
-        min_bonus = 2       # solid starter
-    elif mpg >= 25:
-        min_bonus = 0       # rotation player
-    elif mpg > 0:
-        min_bonus = -3      # limited minutes, stats inflated
+    if mpg > 0 and mpg < 15:
+        min_bonus = -4
 
-    # ── Turnover penalty ─────────────────────────────────────────────────────
+    # ── Turnover penalty (TOV% is our strongest single predictor) ────────────
+    # Trait analysis: TOV% signal is -0.50, by far the largest of any stat.
+    # Median TOV% across drafted players is ~14%. We scale from there.
     tov_pen = 0
-    if tov > 3:
-        tov_pen += (tov - 3) * 2
-    if tov_pct > 20:
-        tov_pen += (tov_pct - 20) * 0.5
+    if tov_pct > 0:
+        tov_pen = max(0, (tov_pct - 14) * 1.2)
+    if tov > 3.5:
+        tov_pen += (tov - 3.5) * 1.0
 
-    # ── Free throw bonus (NBA values getting to the line efficiently) ────────
+    # ── Free throw signal (continuous, signal +0.33) ─────────────────────────
+    # FT% is a meaningful skill predictor — touch + composure transfer to the
+    # NBA. Replace the binary FT bonus with a continuous bonus/penalty
+    # centered on 75% (decent college FT%), only counted if they actually
+    # got to the line enough to be informative.
+    ft_pct = _s(s, "FT%")
     ft_bonus = 0
-    if fta > 5 and _s(s, "FT%") > 75:
-        ft_bonus = 3
+    if fta > 2 and ft_pct > 0:
+        if ft_pct > 75:
+            ft_bonus = min(6.0, (ft_pct - 75) * 0.4)
+        else:
+            ft_bonus = max(-6.0, (ft_pct - 75) * 0.5)
 
     # ── Weighted composite ───────────────────────────────────────────────────
+    # Star-list analysis (n=42 NBA stars) revealed: bigs become stars with
+    # modest PPG (~10) but ELITE advanced metrics (BPM 8.3, PER 25.2, WS/40
+    # 0.20). Across positions, advanced metrics discriminated stars from
+    # busts better than volume. Production weight down, impact weight up.
     raw = (
-        prod * 0.38 +
-        eff * 0.25 +
-        impact * 0.15 +
+        prod * 0.27 +
+        eff * 0.28 +
+        impact * 0.25 +
         two_way * 0.10 +
         play_bonus +
         ft_bonus +
@@ -215,8 +279,12 @@ def draft_score(player: dict) -> float:
     # ── Size bonus (reduced — only for 6'10"+) ──────────────────────────────
     # ── Height bonus/penalty (position-relative, per inch from average) ─────
     # Average heights: PG=75(6'3"), SG=77(6'5"), SF=79(6'7"), PF=81(6'9"), C=83(6'11")
+    # Prefer combine-measured with-shoes height (the standard the position
+    # averages were calibrated against); fall back to college-listed height.
     _POS_AVG_HT = {"G": 75, "F": 80, "C": 83}
-    ht = _height_inches(player.get("height", ""))
+    combine = player.get("combine") or {}
+    ht_combine = combine.get("height_w_shoes_in")
+    ht = ht_combine if ht_combine else _height_inches(player.get("height", ""))
     avg_ht = _POS_AVG_HT.get(pos, 79)
     size_bonus = 0
     if ht > 0:
@@ -234,7 +302,69 @@ def draft_score(player: dict) -> float:
         elif diff <= -1:
             size_bonus = -1.0
 
-    final = (raw * age_mult * conf_mult * pos_mult) + size_bonus
+    # Hand-crafted "prospect bonuses" (freshman size premium, young creator
+    # allowance, defensive prospect bonus, power-conference freshman ceiling)
+    # were removed. They retro-fit known stars into the formula instead of
+    # letting college stats + combine measurements speak for themselves.
+    # Youth is still rewarded via the age multiplier below; size is rewarded
+    # via the position-relative size_bonus and combine anthro_bonus.
+    prospect_size = 0
+    prospect_bonus = 0
+
+    # ── Elite advanced metrics (true star signal) ──────────────────────────
+    # Star-list analysis: NBA-star BIGS averaged BPM 8.3, PER 25.2, WS/40
+    # 0.20 in college (modest counting stats but elite efficiency/impact).
+    # Use position-specific thresholds — bigs become stars at lower BPM
+    # because they don't carry the offensive load in college.
+    elite_metrics = 0
+    if is_c or (pos == "F" and not is_g):  # bigs and forwards: lower bar
+        if bpm > 10:    elite_metrics += 5
+        elif bpm > 8:   elite_metrics += 3
+        if per > 24:    elite_metrics += 3
+        elif per > 21:  elite_metrics += 1.5
+        if ws40 > 0.20: elite_metrics += 3
+        elif ws40 > 0.17: elite_metrics += 1.5
+    else:  # guards: need higher metrics since they carry more usage
+        if bpm > 12:    elite_metrics += 5
+        elif bpm > 10:  elite_metrics += 3
+        if per > 25:    elite_metrics += 3
+        elif per > 22:  elite_metrics += 1.5
+        if ws40 > 0.22: elite_metrics += 3
+        elif ws40 > 0.18: elite_metrics += 1.5
+
+    # ── HS recruit-rank bonus ───────────────────────────────────────────────
+    # The single biggest gap in pure-stats prediction: scouts had YEARS of
+    # pre-college data on Edwards (#5 ESPN recruit), Maxey (#11), Barnes
+    # (#4 recruit class 2020) that the college box score couldn't see.
+    # Top-24 McDonald's All-American players become NBA contributors at a
+    # dramatically higher rate than unranked recruits. This bonus encodes
+    # the pre-college consensus that no other input captures.
+    recruit_bonus = 0
+    rr = player.get("recruit_rank")
+    if rr is not None:
+        if rr <= 3:    recruit_bonus = 14   # generational tier
+        elif rr <= 8:  recruit_bonus = 10   # top recruit
+        elif rr <= 15: recruit_bonus = 7    # high-major lock
+        elif rr <= 24: recruit_bonus = 4    # McDonald's-tier
+
+    # ── Combine anthro bonus ────────────────────────────────────────────────
+    # Trait analysis of drafted players (n=79) showed real signal:
+    #   wingspan signal = +0.35,  hand_length signal = +0.41
+    # Athletic-test results (vertical, sprint, agility) had near-zero signal
+    # so they are deliberately excluded — workout warriors don't translate.
+    # Plus-length (wingspan - height) was a wash; raw wingspan is what matters.
+    anthro_bonus = 0
+    wingspan = combine.get("wingspan_in")
+    hand_length = combine.get("hand_length_in")
+    if wingspan:
+        if wingspan >= 86:    anthro_bonus += 4    # 7'2"+, elite length
+        elif wingspan >= 84:  anthro_bonus += 2.5  # 7'0"+
+        elif wingspan >= 82:  anthro_bonus += 1    # 6'10"+
+    if hand_length:
+        if hand_length >= 9.5:   anthro_bonus += 2
+        elif hand_length >= 9.0: anthro_bonus += 1
+
+    final = (raw * age_mult * conf_mult * pos_mult) + size_bonus + prospect_size + prospect_bonus + anthro_bonus + elite_metrics + recruit_bonus
 
     return round(final, 2)
 

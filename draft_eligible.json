@@ -1,0 +1,513 @@
+[
+  {
+    "name": "AJ Dybantsa",
+    "norm_name": "aj dybantsa",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Acaden Lewis",
+    "norm_name": "acaden lewis",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Aday Mara",
+    "norm_name": "aday mara",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Aiden Tobiason",
+    "norm_name": "aiden tobiason",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Alex Samodurov",
+    "norm_name": "alex samodurov",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Alexandros Samodurov",
+    "norm_name": "alexandros samodurov",
+    "status": "international",
+    "type": "international",
+    "source": "wikipedia"
+  },
+  {
+    "name": "Alijah Arenas",
+    "norm_name": "alijah arenas",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Allen Graves",
+    "norm_name": "allen graves",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Amari Allen",
+    "norm_name": "amari allen",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Andrej Stojakovic",
+    "norm_name": "andrej stojakovic",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Anton Bonke",
+    "norm_name": "anton bonke",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Bassala Bagayoko",
+    "norm_name": "bassala bagayoko",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Billy Richmond",
+    "norm_name": "billy richmond",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Brayden Burries",
+    "norm_name": "brayden burries",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Bryson Tucker",
+    "norm_name": "bryson tucker",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Caleb Wilson",
+    "norm_name": "caleb wilson",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Cameron Boozer",
+    "norm_name": "cameron boozer",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Cameron Carr",
+    "norm_name": "cameron carr",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Chris Cenac",
+    "norm_name": "chris cenac",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Christian Anderson",
+    "norm_name": "christian anderson",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Colby Garland",
+    "norm_name": "colby garland",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Cruz Davis",
+    "norm_name": "cruz davis",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Dailyn Swain",
+    "norm_name": "dailyn swain",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Darius Acuff",
+    "norm_name": "darius acuff",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Darryn Peterson",
+    "norm_name": "darryn peterson",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Dennis Parker",
+    "norm_name": "dennis parker",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Ebuka Okorie",
+    "norm_name": "ebuka okorie",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Eian Elmer",
+    "norm_name": "eian elmer",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Elliot Cadeau",
+    "norm_name": "elliot cadeau",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Finley Bizjack",
+    "norm_name": "finley bizjack",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Flory Bidunga",
+    "norm_name": "flory bidunga",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Francesco Ferrari",
+    "norm_name": "francesco ferrari",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Gabe Dynes",
+    "norm_name": "gabe dynes",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Hannes Steinbach",
+    "norm_name": "hannes steinbach",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Henri Veesaar",
+    "norm_name": "henri veesaar",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Isaiah Evans",
+    "norm_name": "isaiah evans",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Isiah Harwell",
+    "norm_name": "isiah harwell",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Jack Kayil",
+    "norm_name": "jack kayil",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Jacob Cofie",
+    "norm_name": "jacob cofie",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Jayden Quaintance",
+    "norm_name": "jayden quaintance",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Jeremy Fears",
+    "norm_name": "jeremy fears",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "John Blackwell",
+    "norm_name": "john blackwell",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Juke Harris",
+    "norm_name": "juke harris",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Karim Lopez",
+    "norm_name": "karim lopez",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Keanu Dawes",
+    "norm_name": "keanu dawes",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Keaton Wagler",
+    "norm_name": "keaton wagler",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Kennard Davis",
+    "norm_name": "kennard davis",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Kingston Flemings",
+    "norm_name": "kingston flemings",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Koa Peat",
+    "norm_name": "koa peat",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Labaron Philon",
+    "norm_name": "labaron philon",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "LeJuan Watts",
+    "norm_name": "lejuan watts",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Lou Hutchinson",
+    "norm_name": "lou hutchinson",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "wikipedia"
+  },
+  {
+    "name": "Louis Hutchinson",
+    "norm_name": "louis hutchinson",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Luigi Suigo",
+    "norm_name": "luigi suigo",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Malachi Moreno",
+    "norm_name": "malachi moreno",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Marc-Owen Fodzo Dada",
+    "norm_name": "marcowen fodzo dada",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Matt Able",
+    "norm_name": "matt able",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Meleek Thomas",
+    "norm_name": "meleek thomas",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Mikel Brown Jr.",
+    "norm_name": "mikel brown",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Milan Momcilovic",
+    "norm_name": "milan momcilovic",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Mohammad Amini",
+    "norm_name": "mohammad amini",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Morez Johnson",
+    "norm_name": "morez johnson",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Nate Ament",
+    "norm_name": "nate ament",
+    "status": "in_draft",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Paulius Murauskas",
+    "norm_name": "paulius murauskas",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Pavle Backo",
+    "norm_name": "pavle backo",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Rowan Brumbaugh",
+    "norm_name": "rowan brumbaugh",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Rueben Chinyelu",
+    "norm_name": "rueben chinyelu",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Sebastian Rancik",
+    "norm_name": "sebastian rancik",
+    "status": "testing_waters",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Sergio De Larrea",
+    "norm_name": "sergio de larrea",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Shane Blakeney",
+    "norm_name": "shane blakeney",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Tounde Yessoufou",
+    "norm_name": "tounde yessoufou",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Tyler Tanner",
+    "norm_name": "tyler tanner",
+    "status": "withdrawn",
+    "type": "early_entrant",
+    "source": "hoopsrumors"
+  },
+  {
+    "name": "Vsevolod Ishchenko",
+    "norm_name": "vsevolod ishchenko",
+    "status": "international",
+    "type": "international",
+    "source": "hoopsrumors"
+  }
+]

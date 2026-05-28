@@ -147,11 +147,16 @@ def derive_skills(ppg, rpg, apg, spg, bpg, fg, three, ft,
 
 # ── School list ───────────────────────────────────────────────────────────────
 
-def get_school_urls() -> list[tuple[str, str]]:
-    """Return list of (url, school_name) tuples for all D1 schools."""
-    print(f"  Fetching D1 school list for {YEAR}...")
-    soup = BeautifulSoup(get(f"{BASE}/cbb/seasons/men/{YEAR}-school-stats.html").text, "html.parser")
-    links = soup.find_all("a", href=re.compile(rf"/cbb/schools/.+/men/{YEAR}\.html"))
+def get_school_urls(year: int = None) -> list[tuple[str, str]]:
+    """Return list of (url, school_name) tuples for all D1 schools.
+
+    `year` defaults to the module-level YEAR constant (current season). Pass
+    an explicit year to scrape a historical season — used by scrape_history.py.
+    """
+    y = year if year is not None else YEAR
+    print(f"  Fetching D1 school list for {y}...")
+    soup = BeautifulSoup(get(f"{BASE}/cbb/seasons/men/{y}-school-stats.html").text, "html.parser")
+    links = soup.find_all("a", href=re.compile(rf"/cbb/schools/.+/men/{y}\.html"))
     seen = set()
     result = []
     for a in links:
@@ -290,19 +295,31 @@ def scrape_school(url: str, school_name: str) -> list[dict]:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
-def main():
-    print(f"\nNCAA Basketball Scraper — {YEAR - 1}-{str(YEAR)[2:]} Season")
+def scrape_year(year: int, out_file: Path, skip_if_exists: bool = False,
+                stop_on_error: bool = False) -> int:
+    """Scrape one full NCAA season and write results to `out_file`.
+
+    Returns the number of players collected. Used by both this script's main()
+    and scrape_history.py for historical backfill.
+    """
+    if skip_if_exists and out_file.exists():
+        existing = json.loads(out_file.read_text(encoding="utf-8"))
+        n = existing.get("player_count", len(existing.get("players", [])))
+        print(f"Skipping {year}: {out_file.name} already exists ({n} players)")
+        return n
+
+    print(f"\nNCAA Basketball Scraper — {year - 1}-{str(year)[2:]} Season")
     print("=" * 54)
 
     time.sleep(DELAY)
-    schools = get_school_urls()
+    schools = get_school_urls(year)
     total   = len(schools)
 
     print(f"\nScraping {total} school pages (~{round(total * DELAY / 60, 1)} min)...")
     print("-" * 54)
 
     all_players: list[dict] = []
-    errors = 0
+    school_errors = 0
 
     for i, (url, name) in enumerate(schools, 1):
         bar = "#" * int(i / total * 20) + "-" * (20 - int(i / total * 20))
@@ -310,12 +327,14 @@ def main():
         try:
             all_players.extend(scrape_school(url, name))
         except Exception as e:
-            print(f"\n\n  ERROR on {name}: {e}")
-            print(f"  Stopping. {len(all_players)} players collected so far.")
-            break
+            school_errors += 1
+            print(f"\n  WARNING on {name}: {e}")
+            if stop_on_error:
+                print(f"  stop_on_error=True; aborting after {len(all_players)} players")
+                break
         time.sleep(DELAY)
 
-    print(f"\n\nCollected {len(all_players)} players ({errors} school errors)")
+    print(f"\n\nCollected {len(all_players)} players ({school_errors} school errors)")
 
     # Sort by composite draft score, assign IDs/ranks/tiers
     for p in all_players:
@@ -328,17 +347,25 @@ def main():
 
     output = {
         "scraped_at":   datetime.now().isoformat(),
-        "season":       f"{YEAR - 1}-{str(YEAR)[2:]}",
+        "season":       f"{year - 1}-{str(year)[2:]}",
+        "season_year":  year,
         "player_count": len(all_players),
+        "school_errors": school_errors,
         "players":      all_players,
     }
 
-    with open(OUT_FILE, "w", encoding="utf-8") as f:
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_file, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"Saved {len(all_players)} players to {OUT_FILE.name}")
+    print(f"Saved {len(all_players)} players to {out_file.name}")
     print(f"Top 5: {', '.join(p['name'] for p in all_players[:5])}")
     print(f"Done:  {output['scraped_at']}")
+    return len(all_players)
+
+
+def main():
+    scrape_year(YEAR, OUT_FILE, stop_on_error=True)
 
 
 if __name__ == "__main__":

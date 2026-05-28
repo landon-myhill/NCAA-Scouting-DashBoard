@@ -1,0 +1,456 @@
+{
+  "hs_class_year": 2020,
+  "count": 50,
+  "recruits": [
+    {
+      "name": "Cade Cunningham",
+      "norm_name": "cade cunningham",
+      "espn_rank": 1,
+      "position": "PG",
+      "college_commit": "Oklahoma State",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jalen Green",
+      "norm_name": "jalen green",
+      "espn_rank": 2,
+      "position": "CG",
+      "college_commit": "Pro",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Evan Mobley",
+      "norm_name": "evan mobley",
+      "espn_rank": 3,
+      "position": "C",
+      "college_commit": "USC",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jonathan Kuminga",
+      "norm_name": "jonathan kuminga",
+      "espn_rank": 4,
+      "position": "SF",
+      "college_commit": "Pro",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Brandon Boston Jr.",
+      "norm_name": "brandon boston",
+      "espn_rank": 5,
+      "position": "SG",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Ziaire Williams",
+      "norm_name": "ziaire williams",
+      "espn_rank": 6,
+      "position": "SF",
+      "college_commit": "Stanford",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Scottie Barnes",
+      "norm_name": "scottie barnes",
+      "espn_rank": 7,
+      "position": "PF",
+      "college_commit": "Florida State",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Terrence Clarke",
+      "norm_name": "terrence clarke",
+      "espn_rank": 8,
+      "position": "SG",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Moussa Cisse",
+      "norm_name": "moussa cisse",
+      "espn_rank": 9,
+      "position": "C",
+      "college_commit": "Memphis",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Greg Brown III",
+      "norm_name": "greg brown",
+      "espn_rank": 9,
+      "position": "PF",
+      "college_commit": "Texas",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jalen Suggs",
+      "norm_name": "jalen suggs",
+      "espn_rank": 11,
+      "position": "CG",
+      "college_commit": "Gonzaga",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Josh Christopher",
+      "norm_name": "josh christopher",
+      "espn_rank": 12,
+      "position": "SG",
+      "college_commit": "Arizona State",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jalen Johnson",
+      "norm_name": "jalen johnson",
+      "espn_rank": 13,
+      "position": "SF",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Caleb Love",
+      "norm_name": "caleb love",
+      "espn_rank": 14,
+      "position": "PG",
+      "college_commit": "North Carolina",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Day'Ron Sharpe",
+      "norm_name": "dayron sharpe",
+      "espn_rank": 15,
+      "position": "C",
+      "college_commit": "North Carolina",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jaden Springer",
+      "norm_name": "jaden springer",
+      "espn_rank": 16,
+      "position": "CG",
+      "college_commit": "Tennessee",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Daishen Nix",
+      "norm_name": "daishen nix",
+      "espn_rank": 17,
+      "position": "PG",
+      "college_commit": "Pro",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Makur Maker",
+      "norm_name": "makur maker",
+      "espn_rank": 18,
+      "position": "C",
+      "college_commit": "Howard",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Keon Johnson",
+      "norm_name": "keon johnson",
+      "espn_rank": 19,
+      "position": "SG",
+      "college_commit": "Tennessee",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Isaiah Todd",
+      "norm_name": "isaiah todd",
+      "espn_rank": 20,
+      "position": "PF",
+      "college_commit": "Pro",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Bryce Thompson",
+      "norm_name": "bryce thompson",
+      "espn_rank": 21,
+      "position": "CG",
+      "college_commit": "Kansas",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Walker Kessler",
+      "norm_name": "walker kessler",
+      "espn_rank": 22,
+      "position": "C",
+      "college_commit": "North Carolina",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jeremy Roach",
+      "norm_name": "jeremy roach",
+      "espn_rank": 23,
+      "position": "PG",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Sharife Cooper",
+      "norm_name": "sharife cooper",
+      "espn_rank": 24,
+      "position": "PG",
+      "college_commit": "Auburn",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Cameron Thomas",
+      "norm_name": "cameron thomas",
+      "espn_rank": 25,
+      "position": "SG",
+      "college_commit": "LSU",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "DJ Steward",
+      "norm_name": "dj steward",
+      "espn_rank": 26,
+      "position": "CG",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Khristian Lander",
+      "norm_name": "khristian lander",
+      "espn_rank": 27,
+      "position": "PG",
+      "college_commit": "Indiana",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Mark Williams",
+      "norm_name": "mark williams",
+      "espn_rank": 28,
+      "position": "C",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Marcus Bagley",
+      "norm_name": "marcus bagley",
+      "espn_rank": 29,
+      "position": "SF",
+      "college_commit": "Arizona State",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Isaiah Jackson",
+      "norm_name": "isaiah jackson",
+      "espn_rank": 30,
+      "position": "C",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Josh Hall",
+      "norm_name": "josh hall",
+      "espn_rank": 31,
+      "position": "SF",
+      "college_commit": "Pro",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Devin Askew",
+      "norm_name": "devin askew",
+      "espn_rank": 32,
+      "position": "PG",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Adam Miller",
+      "norm_name": "adam miller",
+      "espn_rank": 33,
+      "position": "SG",
+      "college_commit": "Illinois",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Nimari Burnett",
+      "norm_name": "nimari burnett",
+      "espn_rank": 34,
+      "position": "CG",
+      "college_commit": "Texas Tech",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Earl Timberlake",
+      "norm_name": "earl timberlake",
+      "espn_rank": 35,
+      "position": "SG",
+      "college_commit": "Miami",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Franck Kepnang",
+      "norm_name": "franck kepnang",
+      "espn_rank": 36,
+      "position": "C",
+      "college_commit": "Oregon",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Dawson Garcia",
+      "norm_name": "dawson garcia",
+      "espn_rank": 37,
+      "position": "PF",
+      "college_commit": "Marquette",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jabri Abdur-Rahim",
+      "norm_name": "jabri abdurrahim",
+      "espn_rank": 38,
+      "position": "SF",
+      "college_commit": "Virginia",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Lance Ware",
+      "norm_name": "lance ware",
+      "espn_rank": 39,
+      "position": "PF",
+      "college_commit": "Kentucky",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Matthew Murrell",
+      "norm_name": "matthew murrell",
+      "espn_rank": 40,
+      "position": "SG",
+      "college_commit": "Ole Miss",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Mady Sissoko",
+      "norm_name": "mady sissoko",
+      "espn_rank": 41,
+      "position": "C",
+      "college_commit": "Michigan State",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Jaemyn Brakefield",
+      "norm_name": "jaemyn brakefield",
+      "espn_rank": 42,
+      "position": "PF",
+      "college_commit": "Duke",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Hunter Dickinson",
+      "norm_name": "hunter dickinson",
+      "espn_rank": 43,
+      "position": "C",
+      "college_commit": "Michigan",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Trey Patterson",
+      "norm_name": "trey patterson",
+      "espn_rank": 44,
+      "position": "PF",
+      "college_commit": "Villanova",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Micah Peavy",
+      "norm_name": "micah peavy",
+      "espn_rank": 45,
+      "position": "SF",
+      "college_commit": "Texas Tech",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Moses Moody",
+      "norm_name": "moses moody",
+      "espn_rank": 46,
+      "position": "SG",
+      "college_commit": "Arkansas",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Andre Curbelo",
+      "norm_name": "andre curbelo",
+      "espn_rank": 47,
+      "position": "PG",
+      "college_commit": "Illinois",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Samson Ruzhentsev",
+      "norm_name": "samson ruzhentsev",
+      "espn_rank": 48,
+      "position": "SF",
+      "college_commit": "Florida",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "Mac Etienne",
+      "norm_name": "mac etienne",
+      "espn_rank": 49,
+      "position": "C",
+      "college_commit": "UCLA",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    },
+    {
+      "name": "R.J. Davis",
+      "norm_name": "rj davis",
+      "espn_rank": 50,
+      "position": "CG",
+      "college_commit": "North Carolina",
+      "source": "247sports_composite",
+      "hs_class_year": 2020
+    }
+  ]
+}

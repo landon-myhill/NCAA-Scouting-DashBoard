@@ -13,6 +13,45 @@
 .pctl-avg { color:#94a3b8; }
 .pctl-below { color:#f87171; }
 
+/* Combine card */
+.combine-card {
+    background: linear-gradient(180deg, #1a2030 0%, #1e293b 100%);
+    border: 1px solid #334155; border-radius: 12px; padding: 18px;
+}
+.combine-card .combine-hdr {
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #334155;
+}
+.combine-card .combine-hdr-title {
+    font-size: 12px; font-weight: 700; letter-spacing: 1px;
+    color: #94a3b8; text-transform: uppercase;
+}
+.combine-card .combine-hdr-tag {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.5px;
+    color: #cbd5e1; background: #334155; padding: 2px 8px; border-radius: 4px;
+}
+.combine-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.combine-cell {
+    background: rgba(15,23,42,0.5); border-radius: 8px; padding: 8px 10px;
+}
+.combine-cell .lbl {
+    font-size: 9px; color: #64748b; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+}
+.combine-cell .val { font-size: 16px; font-weight: 700; color: #f1f5f9; margin-top: 2px; }
+.combine-cell.elite { background: rgba(52,211,153,0.08); border: 1px solid rgba(52,211,153,0.3); }
+.combine-cell.elite .val { color: #34d399; }
+.combine-cell.plus { background: rgba(96,165,250,0.06); border: 1px solid rgba(96,165,250,0.2); }
+.combine-cell.plus .val { color: #60a5fa; }
+.combine-section { margin-top: 10px; }
+.combine-section-title {
+    font-size: 10px; color: #64748b; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;
+}
+.no-combine {
+    font-size: 11px; color: #64748b; font-style: italic; padding: 8px 0;
+}
+
 /* Compare panel */
 .cmp-panel { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px; }
 .cmp-search-wrap { position:relative; }
@@ -121,6 +160,126 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Combine Measurements Card -->
+{% macro fmt_height_in(inches) %}{% if inches %}{{ (inches // 12)|int }}'{{ '%.1f'|format(inches % 12) }}"{% else %}—{% endif %}{% endmacro %}
+{% set combine = player.combine or {} %}
+<div class="row g-3 mt-1">
+    <div class="col-12">
+        <div class="section-hdr">NBA Draft Combine</div>
+        <div class="combine-card">
+            {% if combine and combine.values()|select|list|length > 0 %}
+            <div class="combine-hdr">
+                <span class="combine-hdr-title">Anthropometric Measurements</span>
+                <span class="combine-hdr-tag">measured</span>
+            </div>
+
+            {# Anthro grid #}
+            {% set ws = combine.get('wingspan_in') %}
+            {% set h_no = combine.get('height_no_shoes_in') %}
+            {% set h_w = combine.get('height_w_shoes_in') %}
+            {% set reach = combine.get('standing_reach_in') %}
+            {% set hand_l = combine.get('hand_length_in') %}
+            {% set hand_w = combine.get('hand_width_in') %}
+            {% set wt = combine.get('weight_lbs') %}
+            {% set bf = combine.get('body_fat_pct') %}
+            {# elite-tier markers based on positional norms #}
+            {% set ws_class = 'elite' if ws and ws >= 86 else ('plus' if ws and ws >= 82 else '') %}
+            {% set reach_class = 'elite' if reach and reach >= 108 else ('plus' if reach and reach >= 104 else '') %}
+            {% set hand_class = 'elite' if hand_l and hand_l >= 9.5 else ('plus' if hand_l and hand_l >= 9.0 else '') %}
+            <div class="combine-grid">
+                <div class="combine-cell">
+                    <div class="lbl">Height (no shoes)</div>
+                    <div class="val">{{ fmt_height_in(h_no) }}</div>
+                </div>
+                <div class="combine-cell">
+                    <div class="lbl">Height (with shoes)</div>
+                    <div class="val">{{ fmt_height_in(h_w) }}</div>
+                </div>
+                <div class="combine-cell {{ ws_class }}">
+                    <div class="lbl">Wingspan{% if ws and h_no %} (+{{ '%.1f'|format(ws - h_no) }}"){% endif %}</div>
+                    <div class="val">{{ fmt_height_in(ws) }}</div>
+                </div>
+                <div class="combine-cell {{ reach_class }}">
+                    <div class="lbl">Standing Reach</div>
+                    <div class="val">{{ fmt_height_in(reach) }}</div>
+                </div>
+                <div class="combine-cell">
+                    <div class="lbl">Weight</div>
+                    <div class="val">{% if wt %}{{ '%.1f'|format(wt) }} lbs{% else %}—{% endif %}</div>
+                </div>
+                <div class="combine-cell">
+                    <div class="lbl">Body Fat</div>
+                    <div class="val">{% if bf %}{{ '%.1f'|format(bf) }}%{% else %}—{% endif %}</div>
+                </div>
+                <div class="combine-cell {{ hand_class }}">
+                    <div class="lbl">Hand Length</div>
+                    <div class="val">{% if hand_l %}{{ '%.2f'|format(hand_l) }}"{% else %}—{% endif %}</div>
+                </div>
+                <div class="combine-cell">
+                    <div class="lbl">Hand Width</div>
+                    <div class="val">{% if hand_w %}{{ '%.2f'|format(hand_w) }}"{% else %}—{% endif %}</div>
+                </div>
+                {% if ws and h_no %}
+                <div class="combine-cell {{ 'plus' if (ws - h_no) >= 4 else '' }}">
+                    <div class="lbl">Length (wing-height)</div>
+                    <div class="val">+{{ '%.1f'|format(ws - h_no) }}"</div>
+                </div>
+                {% endif %}
+            </div>
+
+            {# Athletic testing #}
+            {% set vert = combine.get('max_vert_in') %}
+            {% set svert = combine.get('standing_vert_in') %}
+            {% set sprint = combine.get('three_quarter_sprint_s') %}
+            {% set agility = combine.get('lane_agility_s') %}
+            {% set shuttle = combine.get('shuttle_run_s') %}
+            {% set bench = combine.get('max_bench_reps') %}
+            {% if vert or sprint or agility %}
+            <div class="combine-section">
+                <div class="combine-section-title">Athletic Testing</div>
+                <div class="combine-grid">
+                    <div class="combine-cell {{ 'elite' if vert and vert >= 40 else ('plus' if vert and vert >= 37 else '') }}">
+                        <div class="lbl">Max Vertical</div>
+                        <div class="val">{% if vert %}{{ vert }}"{% else %}—{% endif %}</div>
+                    </div>
+                    <div class="combine-cell">
+                        <div class="lbl">Standing Vertical</div>
+                        <div class="val">{% if svert %}{{ svert }}"{% else %}—{% endif %}</div>
+                    </div>
+                    <div class="combine-cell {{ 'elite' if sprint and sprint <= 3.1 else ('plus' if sprint and sprint <= 3.2 else '') }}">
+                        <div class="lbl">¾-Court Sprint</div>
+                        <div class="val">{% if sprint %}{{ sprint }}s{% else %}—{% endif %}</div>
+                    </div>
+                    <div class="combine-cell {{ 'elite' if agility and agility <= 10.6 else ('plus' if agility and agility <= 10.9 else '') }}">
+                        <div class="lbl">Lane Agility</div>
+                        <div class="val">{% if agility %}{{ agility }}s{% else %}—{% endif %}</div>
+                    </div>
+                    <div class="combine-cell">
+                        <div class="lbl">Shuttle Run</div>
+                        <div class="val">{% if shuttle %}{{ shuttle }}s{% else %}—{% endif %}</div>
+                    </div>
+                    <div class="combine-cell">
+                        <div class="lbl">Bench Press</div>
+                        <div class="val">{% if bench %}{{ bench|int }} reps{% else %}—{% endif %}</div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="text-secondary mt-2" style="font-size:10px;line-height:1.4">
+                <span style="color:#34d399">Elite</span> markers: wingspan ≥ 7'2", reach ≥ 9'0",
+                hand length ≥ 9.5", vert ≥ 40". Anthro trait signal +0.42 (best non-stat predictor of NBA success).
+            </div>
+            {% else %}
+            <div class="no-combine">
+                No NBA Draft Combine measurements on file. The player either skipped the combine,
+                wasn't invited, or measurements weren't published. Anthro bonus = 0 for this player.
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

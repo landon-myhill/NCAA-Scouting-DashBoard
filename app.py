@@ -23,6 +23,11 @@ DB_PATH = BASE_DIR / "scouting.db"
 
 # ─── Data Loading (once at startup) ──────────────────────────────────────────
 
+import re as _re
+
+CURRENT_SEASON_YEAR = 2026  # 2025-26 season — the active draft cycle
+HISTORY_DIR = BASE_DIR / "history"
+
 def _load_players():
     path = BASE_DIR / "players.json"
     if not path.exists():
@@ -36,9 +41,37 @@ def _load_scarcity():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
 
+def _load_history_year(year: int):
+    """Load a historical season's players list (or None if not scraped yet)."""
+    path = HISTORY_DIR / f"players_{year}.json"
+    if not path.exists():
+        return None, None
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    return raw.get("players", []), raw.get("season", f"{year-1}-{str(year)[2:]}")
+
+def _available_years():
+    """Return [(year, label, is_current), ...] in descending order. Current
+    season is always first; historical years are listed only if scraped."""
+    out = [(CURRENT_SEASON_YEAR, f"{CURRENT_SEASON_YEAR-1}-{str(CURRENT_SEASON_YEAR)[2:]} (current)", True)]
+    if HISTORY_DIR.exists():
+        years = []
+        for f in HISTORY_DIR.glob("players_*.json"):
+            m = _re.search(r"players_(\d{4})\.json", f.name)
+            if m:
+                y = int(m.group(1))
+                if y != CURRENT_SEASON_YEAR:
+                    years.append(y)
+        for y in sorted(years, reverse=True):
+            out.append((y, f"{y-1}-{str(y)[2:]}", False))
+    return out
+
 PLAYERS = _load_players()
 PLAYERS_BY_ID = {p["id"]: p for p in PLAYERS}
 SCARCITY = _load_scarcity()
+
+# Cache of historical years loaded on demand. Each entry holds the players
+# list and a {id: profile} map so we don't reclassify on every request.
+_YEAR_CACHE: dict[int, dict] = {}
 
 # Build profiles from precomputed data
 def _get_profile(p):
@@ -54,6 +87,74 @@ def _get_profile(p):
     return classify(p)
 
 PROFILES = {p["id"]: _get_profile(p) for p in PLAYERS}
+
+
+def _get_year_data(year):
+    """Return (players_list, profiles_map, season_label).
+
+    `year` accepts an int (specific season) or the string "all" (combined
+    cross-year master board). Returns (None, None, None) if the year hasn't
+    been scraped yet.
+    """
+    if year == "all":
+        return _get_all_years_data()
+    if year is None or year == CURRENT_SEASON_YEAR:
+        return PLAYERS, PROFILES, f"{CURRENT_SEASON_YEAR-1}-{str(CURRENT_SEASON_YEAR)[2:]}"
+    if year in _YEAR_CACHE:
+        c = _YEAR_CACHE[year]
+        return c["players"], c["profiles"], c["season"]
+    players, season = _load_history_year(year)
+    if players is None:
+        return None, None, None
+    profiles = {p["id"]: _get_profile(p) for p in players}
+    _YEAR_CACHE[year] = {"players": players, "profiles": profiles, "season": season}
+    return players, profiles, season
+
+
+def _get_all_years_data():
+    """Combine all available seasons into one ranked list, tagging each
+    player with their season year and giving them a synthetic cross-year
+    id (`<year>-<id>`) so the template can distinguish identical IDs from
+    different scrapes.
+
+    Not cached at the combined level — `_available_years()` may grow while
+    a background scrape is running, and we want each request to pick up
+    any newly-finished seasons. The per-year cache makes the combine cheap.
+    """
+    combined: list[dict] = []
+    profiles: dict = {}
+
+    # Current season first
+    for p in PLAYERS:
+        clone = dict(p)
+        clone["_season_year"] = CURRENT_SEASON_YEAR
+        clone["_xkey"] = f"{CURRENT_SEASON_YEAR}-{p['id']}"
+        combined.append(clone)
+        profiles[clone["_xkey"]] = PROFILES.get(p["id"], _get_profile(p))
+
+    # Then each historical year
+    for y, _label, _is_cur in _available_years():
+        if y == CURRENT_SEASON_YEAR:
+            continue
+        players, season = _load_history_year(y)
+        if players is None:
+            continue
+        for p in players:
+            clone = dict(p)
+            clone["_season_year"] = y
+            clone["_xkey"] = f"{y}-{p['id']}"
+            combined.append(clone)
+            profiles[clone["_xkey"]] = _get_profile(p)
+
+    combined.sort(key=lambda p: p.get("draft_score", 0), reverse=True)
+    for i, p in enumerate(combined):
+        p["rank"] = i + 1
+        # The template keys profiles by p["id"]; remap so it finds them.
+        p["id"] = p["_xkey"]
+
+    label = "All Years"
+    _YEAR_CACHE["_all_cache"] = {"players": combined, "profiles": profiles, "season": label}
+    return combined, profiles, label
 
 # ─── Percentile computation (once at startup) ────────────────────────────────
 
@@ -369,18 +470,37 @@ def compare():
 
 @app.route("/bigboard")
 def bigboard():
-    top200 = sorted(PLAYERS, key=lambda p: p["rank"])[:200]
-    wl_ids = get_watchlist_ids()
-    draft_ids = get_draft_entrant_ids()
-    boards = get_all_boards()
+    # Which season are we viewing? Accept "all" or an int year.
+    year_q = request.args.get("year", default="")
+    if year_q == "all":
+        year = "all"
+    elif year_q.isdigit():
+        year = int(year_q)
+    else:
+        year = CURRENT_SEASON_YEAR
 
-    # Which board are we viewing? None = master (formula ranking)
-    board_id = request.args.get("board_id", type=int)
+    players, profiles, season_label = _get_year_data(year)
+    if players is None:
+        year = CURRENT_SEASON_YEAR
+        players, profiles, season_label = _get_year_data(year)
+
+    # "Historical" means anything that isn't the live current season —
+    # disables manual draft toggle, watchlist, custom boards.
+    is_historical = year != CURRENT_SEASON_YEAR
+
+    top200 = sorted(players, key=lambda p: p["rank"])[:200]
+    # Watchlist + manual draft toggles only apply to the current season —
+    # historical player IDs reference different people each year.
+    wl_ids = get_watchlist_ids() if not is_historical else set()
+    draft_ids = get_draft_entrant_ids() if not is_historical else set()
+    boards = get_all_boards() if not is_historical else []
+
+    # Custom boards (with manual ordering) only make sense for current season
+    board_id = request.args.get("board_id", type=int) if not is_historical else None
     current_board = None
     is_master = board_id is None
 
     if board_id is not None:
-        # Verify board exists
         db = get_db()
         row = db.execute("SELECT id, name FROM boards WHERE id=?", (board_id,)).fetchone()
         if row:
@@ -394,17 +514,18 @@ def bigboard():
         for p in top200:
             p["_board_pos"] = board_order.get(p["id"], p["rank"])
         top200.sort(key=lambda p: p["_board_pos"])
-    # else: already sorted by rank (formula order)
 
     for i, p in enumerate(top200):
         p["_display_pos"] = i + 1
 
     return render_template("bigboard.html",
         players=top200, wl_ids=wl_ids, draft_ids=draft_ids,
-        tier_labels=TIER_LABELS, profiles=PROFILES,
+        tier_labels=TIER_LABELS, profiles=profiles,
         fmt_stat=fmt_stat,
         boards=boards, current_board=current_board,
         is_master=is_master, board_id=board_id,
+        available_years=_available_years(), current_year=year,
+        season_label=season_label, is_historical=is_historical,
     )
 
 @app.route("/watchlist")
