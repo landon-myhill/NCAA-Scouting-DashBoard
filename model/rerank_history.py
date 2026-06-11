@@ -17,6 +17,8 @@ import sys
 from core import HISTORY_DIR, load_json, save_json
 from data.scrape import assign_ids_ranks
 from model.archetypes import draft_score
+from model.boards import load_board
+from model.strengths import compute_fits, compute_strengths
 
 
 def rerank_one(year: int) -> bool:
@@ -28,8 +30,18 @@ def rerank_one(year: int) -> bool:
     players = data["players"]
     for p in players:
         p["draft_score"] = draft_score(p)
+        for k in ("archetype", "defensive_archetype", "all_offensive",
+                  "all_defensive", "fits", "strengths", "strengths_abs"):
+            p.pop(k, None)  # clear stale legacy labels
     players.sort(key=lambda p: p["draft_score"], reverse=True)
     assign_ids_ranks(players)  # stable ids + rank/tier
+    # v2 strength-based archetypes for this class's eligible pool
+    pool_ids, _ = load_board(year, players)
+    if pool_ids:
+        pool = sorted((p for p in players if p["id"] in pool_ids),
+                      key=lambda p: p["rank"])
+        compute_strengths(pool, reference=pool)
+        compute_fits(pool, reference=pool)
     data["players"] = players
     save_json(path, data)
     print(f"  {year}: re-scored {len(players)} players, top5 = " +

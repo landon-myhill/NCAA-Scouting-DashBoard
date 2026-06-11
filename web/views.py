@@ -25,13 +25,15 @@ def scouting():
     pid = request.args.get("player_id", type=int)
     if pid and pid in store.PLAYERS_BY_ID:
         player = store.PLAYERS_BY_ID[pid]
+    elif pid and pid < 0:  # no-NCAA stub (international / G-League / injured)
+        player = store.get_stub(pid) or (store.PLAYERS[0] if store.PLAYERS else None)
     else:
         player = store.PLAYERS[0] if store.PLAYERS else None
 
     if not player:
         return "No player data loaded.", 500
 
-    profile = store.PROFILES.get(player["id"], {})
+    profile = store.PROFILES.get(player["id"]) or store.get_profile(player)
     wl_ids = get_watchlist_ids()
     notes = get_notes_map()
     percentiles = store.get_percentiles(player)
@@ -219,8 +221,10 @@ def scarcity():
 
 @views_bp.route("/needs")
 def needs():
-    # Build list of all archetypes that exist in the top 200
-    top200 = sorted(store.PLAYERS, key=lambda p: p["rank"])[:200]
+    # Archetypes that exist in the ELIGIBLE class pool (v2 labels live there)
+    pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
+                                    with_stubs=False)
+    top200 = sorted(pool, key=lambda p: p.get("sm_rank") or 999)[:200]
     off_archetypes = sorted(set(
         a for p in top200
         for a in store.PROFILES.get(p["id"], {}).get("all_offensive", []) if a
@@ -308,6 +312,9 @@ def archetypes():
                 "side": "offensive" if name in OFFENSE_RECIPES else "defensive",
                 "members": members[:15],
                 "total": len(members),
+                "n_primary": sum(1 for p in pool
+                                 if p.get("archetype") == name
+                                 or p.get("defensive_archetype") == name),
             })
 
     return render_template("archetypes.html",

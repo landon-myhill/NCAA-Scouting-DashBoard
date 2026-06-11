@@ -95,16 +95,16 @@ def get_profile(p: dict) -> dict:
     if p.get("_intl_stub"):
         return {"primary": "", "defensive": "", "all_offensive": [],
                 "all_defensive": [], "tags": [], "red_flags": []}
-    if "archetype" in p:
-        return {
-            "primary": p["archetype"],
-            "defensive": p.get("defensive_archetype", ""),
-            "all_offensive": p.get("all_offensive", [p["archetype"]]),
-            "all_defensive": p.get("all_defensive", [p.get("defensive_archetype", "")]),
-            "tags": p.get("tags", []),
-            "red_flags": p.get("red_flags", []),
-        }
-    return classify(p)
+    # No live classify() fallback — legacy heuristic labels are retired.
+    # Pool players carry v2 badges; everyone else just shows tags/red flags.
+    return {
+        "primary": p.get("archetype", ""),
+        "defensive": p.get("defensive_archetype", ""),
+        "all_offensive": p.get("all_offensive", []),
+        "all_defensive": p.get("all_defensive", []),
+        "tags": p.get("tags", []),
+        "red_flags": p.get("red_flags", []),
+    }
 
 
 PROFILES = {p["id"]: get_profile(p) for p in PLAYERS}
@@ -188,55 +188,8 @@ def _get_all_years_data():
 # they're never silently dropped.
 
 def _load_board_list(year, players):
-    """Return (set_of_ids, unmatched_names) for a season's curated list,
-    or (None, []) when no list file exists for that year."""
-    path = BOARD_LISTS_DIR / f"board_{year}.txt"
-    if not path.exists():
-        return None, []
-    by_norm: dict = {}
-    by_initial: dict = {}
-    for p in players:
-        full, initial = name_keys(p["name"])
-        by_norm.setdefault(full, []).append(p)
-        by_initial.setdefault(initial, []).append(p)
-
-    def _school_scope(cands, school):
-        sc = normalize_name(school)
-        scoped = [p for p in cands
-                  if sc in normalize_name(p.get("school", ""))
-                  or normalize_name(p.get("school", "")) in sc]
-        return scoped or cands
-
-    ids, unmatched = set(), []
-    mock_rank = 0  # the list's line order IS the consensus mock ranking
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.split("#")[0].strip()
-        if not line:
-            continue
-        mock_rank += 1
-        name, _, school = (s.strip() for s in line.partition("|"))
-        cands = by_norm.get(normalize_name(name), [])
-        if not cands:  # nickname-tolerant fallback: first initial + last name
-            _, initial = name_keys(name)
-            cands = by_initial.get(initial, [])
-            # A fallback hit is a weaker claim — when the list names a school,
-            # demand agreement, or "Malique Lewis (NBL)" grabs Mikey Lewis
-            # (Saint Mary's) and a stranger ends up on the board.
-            if cands and school:
-                sc = normalize_name(school)
-                cands = [p for p in cands
-                         if sc in normalize_name(p.get("school", ""))
-                         or normalize_name(p.get("school", "")) in sc]
-        if len(cands) > 1 and school:
-            cands = _school_scope(cands, school)
-        if cands:
-            # if still ambiguous, take the most prominent (best-ranked) match
-            best = min(cands, key=lambda p: p["rank"])
-            best["_mock_rank"] = mock_rank
-            ids.add(best["id"])
-        else:
-            unmatched.append((name, school, mock_rank))
-    return ids, unmatched
+    from model.boards import load_board
+    return load_board(year, players)
 
 
 # Draft outcomes per year (for stub rows): {norm_name: {pick, tier}} or None
@@ -373,6 +326,17 @@ def _stamp_model_rank(pool: list[dict]) -> None:
             p["sm_band"] = band  # [5th, 95th] percentile rank across bootstraps
     for i, p in enumerate(sorted(pool, key=lambda p: -p["sm_score"]), 1):
         p["sm_rank"] = i
+
+
+def get_stub(pid):
+    """Resolve a no-NCAA stub (negative id) from the current class pool, so
+    every listed prospect — international, G-League, injured — has a
+    scouting card built from whatever data we hold on them."""
+    pool, _, _ = board_filter(PLAYERS, CURRENT_SEASON_YEAR)
+    for p in pool:
+        if p.get("_intl_stub") and p["id"] == pid:
+            return p
+    return None
 
 
 # ── Raw college production score ─────────────────────────────────────────────

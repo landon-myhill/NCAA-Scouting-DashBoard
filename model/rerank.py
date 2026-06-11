@@ -9,11 +9,13 @@ Usage:
 
 import json
 
-from core import PLAYERS_FILE, SCARCITY_FILE
+from core import PLAYERS_FILE, SCARCITY_FILE, SEASON_YEAR
 from core.config import DRAFT_ELIGIBLE_FILE as DRAFT_FILE
 from core.names import normalize_name as _norm_name
 from data.scrape import assign_ids_ranks
 from model.archetypes import classify, draft_score
+from model.boards import load_board
+from model.strengths import compute_fits, compute_strengths
 
 _AUTO_ELIGIBLE_YEARS = {"Senior", "Graduate", "5th Year"}
 
@@ -43,16 +45,25 @@ def main():
     # Stable identity ids + positional rank/tier (see scrape.assign_ids_ranks).
     assign_ids_ranks(players)
 
-    # Pre-compute archetype profiles so the app doesn't need to classify at runtime
-    print("Classifying player archetypes...")
+    # Tags/red flags come from the heuristic classifier (flavor layer).
+    # Archetype LABELS are v2 — strength-based fits, computed for the
+    # ELIGIBLE class pool only. Stale legacy labels are cleared from everyone.
+    print("Stamping tags + v2 strength-based archetypes...")
     for p in players:
-        profile = classify(p)
-        p["archetype"] = profile["primary"]
-        p["defensive_archetype"] = profile["defensive"]
-        p["all_offensive"] = profile["all_offensive"]
-        p["all_defensive"] = profile["all_defensive"]
-        p["tags"] = profile["tags"]
-        p["red_flags"] = profile["red_flags"]
+        prof = classify(p)
+        p["tags"] = prof["tags"]
+        p["red_flags"] = prof["red_flags"]
+        for k in ("archetype", "defensive_archetype", "all_offensive",
+                  "all_defensive", "fits", "strengths", "strengths_abs"):
+            p.pop(k, None)
+    pool_ids, _ = load_board(SEASON_YEAR, players)
+    pool = []
+    if pool_ids:
+        pool = sorted((p for p in players if p["id"] in pool_ids),
+                      key=lambda p: p["rank"])
+        compute_strengths(pool, reference=pool)
+        compute_fits(pool, reference=pool)
+        print(f"  -> v2 fits + badges stamped for {len(pool)} eligible players")
 
     # Apply draft status from draft_eligible.json + senior auto-eligibility.
     # Drive matching from the scraped side: for each scraped entry, find the
@@ -111,11 +122,11 @@ def main():
     print(f"Done! Top 10:")
     for p in players[:10]:
         print(f"  #{p['rank']:>4}  {p['draft_score']:>6.1f}  {p['name']:<25} {p['pos']}  {p['school']} ({p.get('conference','')})")
-        print(f"         {p['archetype']} / {p['defensive_archetype']}")
+        print(f"         {p.get('archetype', '—')} / {p.get('defensive_archetype', '—')}")
 
-    # ── Pre-compute scarcity data for top 200 ─────────────────────────────────
+    # ── Scarcity: archetype depth across the ELIGIBLE class pool ─────────────
     print("Building scarcity data...")
-    top200 = players[:200]
+    top200 = pool if pool else players[:200]
 
     # Count ALL archetypes each player qualifies for (not just primary)
     arch_counts = {}   # archetype → {1: n, 2: n, 3: n}

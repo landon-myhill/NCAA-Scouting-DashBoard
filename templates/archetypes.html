@@ -66,8 +66,11 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
 </div>
 {% endif %}
 
-<div class="row g-3" {% if detail %}style="display:none"{% endif %}>
-    {% for g in groups %}
+{% if not detail %}
+{% for side, label in [('offensive', 'Offense'), ('defensive', 'Defense')] %}
+<div class="section-hdr mt-2">{{ label }}</div>
+<div class="row g-3 mb-3">
+    {% for g in groups if g.side == side %}
     <div class="col-lg-4 col-md-6">
         <div class="info-card h-100">
             <div class="d-flex justify-content-between align-items-baseline">
@@ -76,12 +79,13 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
                 <a href="/archetypes?year={{ current_year }}&arch={{ g.name|urlencode }}"
                    class="text-secondary" style="font-size:11px;text-decoration:none">view all {{ g.total }} →</a>
             </div>
-            <table class="mt-2 w-100" style="font-size:12px">
-                {% for p in g.members %}
+            <div class="text-secondary mb-1" style="font-size:10px">{{ g.n_primary }} wear this as their primary badge</div>
+            <table class="mt-1 w-100" style="font-size:12px">
+                {% for p in g.members[:6] %}
                 <tr>
                     <td style="width:22px;color:#475569">{{ loop.index }}</td>
                     <td><a href="/scouting?player_id={{ p.id }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
-                        <span class="text-secondary" style="font-size:10px">{{ p.pos }} · {{ p.school }}{% if p.get('sm_rank') %} · <span title="draft rank (strengths model)">#{{ p.sm_rank }}</span>{% endif %}</span></td>
+                        <span class="text-secondary" style="font-size:10px">{{ p.pos }}{% if p.get('sm_rank') %} · <span title="draft rank (strengths model)">#{{ p.sm_rank }}</span>{% endif %}</span></td>
                     <td style="width:36px;text-align:right;font-weight:600;color:{{ '#10b981' if p.fits[g.name] >= 80 else '#60a5fa' if p.fits[g.name] >= 55 else '#94a3b8' }}">{{ p.fits[g.name] }}</td>
                 </tr>
                 {% endfor %}
@@ -90,4 +94,6 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
     </div>
     {% endfor %}
 </div>
+{% endfor %}
+{% endif %}
 {% endblock %}
