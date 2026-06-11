@@ -209,16 +209,11 @@ def _collect_entries(years):
     return entries
 
 
-def main():
-    rescore = "--rescore" in sys.argv
-    years = [y for y in MATURE_DRAFT_YEARS]
-    entries = _collect_entries(years)
-    print(f"Pooled {len(entries)} careers across {years} "
-          f"({sum(1 for e in entries if e['kind'] == 'undrafted')} undrafted)")
+YOUNG_CLASSES = (2024, 2025)
 
+
+def _grade(entries, rescore, changes):
     attach_position_value(entries)
-
-    changes = []
     for e in entries:
         old = e["row"].get("career_tier", "?")
         new = value_tier(e.get("nba_value"), e["career"])
@@ -228,15 +223,36 @@ def main():
         if old != new:
             changes.append((e["year"], e["row"].get("player"), e["pos"], old, new,
                             e.get("nba_value")))
+    return entries
 
-    print(f"\nTier changes under position-relative value: {len(changes)}")
+
+def main():
+    rescore = "--rescore" in sys.argv
+    changes, all_entries = [], []
+
+    # Mature classes: pooled percentiles (careers of comparable length)
+    entries = _collect_entries(list(MATURE_DRAFT_YEARS))
+    print(f"Pooled {len(entries)} mature careers "
+          f"({sum(1 for e in entries if e['kind'] == 'undrafted')} undrafted)")
+    all_entries += _grade(entries, rescore, changes)
+
+    # Young classes: graded WITHIN their own class — a 1-season career can't
+    # pool with 6-season ones, but vs his own class peers the comparison is
+    # honest, so Flagg-types get a real tier instead of "early career".
+    for y in YOUNG_CLASSES:
+        e = _collect_entries([y])
+        if e:
+            print(f"{y}: {len(e)} careers graded within-class")
+            all_entries += _grade(e, rescore, changes)
+
+    print(f"\nTier changes: {len(changes)}")
     for y, name, pos, old, new, val in sorted(changes, key=lambda c: -(c[5] or 0)):
         v = f"{val:.2f}" if val is not None else " n/a"
         print(f"  {y} {name:<26} {pos or '?'}  {old:>9} -> {new:<9} (value {v})")
 
     if rescore:
-        for path in {str(e["file"]) for e in entries}:
-            datas = [e["data"] for e in entries if str(e["file"]) == path]
+        for path in {str(e["file"]) for e in all_entries}:
+            datas = [e["data"] for e in all_entries if str(e["file"]) == path]
             save_json(HISTORY_DIR / path.split("\\")[-1].split("/")[-1], datas[0])
         print(f"\nRewrote career_tier + nba_value in {len({str(e['file']) for e in entries})} files.")
     else:

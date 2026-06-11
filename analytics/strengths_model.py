@@ -164,7 +164,7 @@ def _bagged_fit(X, y, lam, b=B_BOOT, seed=SEED):
 
 
 def build_training():
-    rows = load_matched(include_undrafted=True)
+    rows = load_matched(years=(2020, 2021, 2022, 2023, 2024, 2025), include_undrafted=True)  # young classes join training (held-out unchanged)
     attach_value_target(rows)
     rows = [r for r in rows if r.get("target") is not None]
     for yr in sorted({r["year"] for r in rows}):

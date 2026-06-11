@@ -231,15 +231,11 @@
             {% if is_historical %}
             {# Hindsight: what actually happened to this prospect #}
             {% set nba = p.get('nba') %}
-            {% if nba and nba.mature %}
+            {% if nba %}
                 {% set tier_colors = {'star': '#fbbf24', 'starter': '#10b981', 'rotation': '#60a5fa', 'bench': '#94a3b8', 'no_nba': '#ef4444'} %}
                 <span style="font-size:10px;color:{{ tier_colors.get(nba.tier, '#94a3b8') }}"
-                      title="Actual outcome: drafted #{{ nba.pick }} overall — career tier: {{ (nba.tier or '?')|replace('_',' ') }}">
+                      title="Actual outcome: drafted #{{ nba.pick }} overall — career tier: {{ (nba.tier or '?')|replace('_',' ') }}{% if not nba.mature %} (early career — graded against his own draft class){% endif %}">
                     NBA #{{ nba.pick }} · {{ (nba.tier or '?')|replace('_',' ') }}</span>
-            {% elif nba %}
-                <span style="font-size:10px;color:#60a5fa"
-                      title="Drafted #{{ nba.pick }} overall — career too young to grade (tiers need 3+ NBA seasons)">
-                    NBA #{{ nba.pick }} · early career</span>
             {% elif p.get('_draft_complete') %}
                 <span class="text-secondary" style="font-size:10px" title="Not drafted">undrafted</span>
             {% endif %}

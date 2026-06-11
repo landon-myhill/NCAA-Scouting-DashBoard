@@ -24,7 +24,8 @@
         "RPG": 6.7,
         "APG": 4.5
       },
-      "career_tier": "rotation"
+      "career_tier": "star",
+      "nba_value": 0.979
     },
     {
       "year": 2025,
@@ -48,7 +49,8 @@
         "RPG": 3.4,
         "APG": 3.9
       },
-      "career_tier": "rotation"
+      "career_tier": "starter",
+      "nba_value": 0.798
     },
     {
       "year": 2025,
@@ -72,7 +74,8 @@
         "RPG": 5.6,
         "APG": 4.2
       },
-      "career_tier": "rotation"
+      "career_tier": "star",
+      "nba_value": 0.973
     },
     {
       "year": 2025,
@@ -96,7 +99,8 @@
         "RPG": 5.3,
         "APG": 3.4
       },
-      "career_tier": "rotation"
+      "career_tier": "star",
+      "nba_value": 0.951
     },
     {
       "year": 2025,
@@ -120,7 +124,8 @@
         "RPG": 4.2,
         "APG": 1.8
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.84
     },
     {
       "year": 2025,
@@ -144,7 +149,8 @@
         "RPG": 2.8,
         "APG": 2.0
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.741
     },
     {
       "year": 2025,
@@ -168,7 +174,8 @@
         "RPG": 3.7,
         "APG": 3.4
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.893
     },
     {
       "year": 2025,
@@ -192,7 +199,8 @@
         "RPG": 3.2,
         "APG": 3.3
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.782
     },
     {
       "year": 2025,
@@ -216,7 +224,8 @@
         "RPG": 5.0,
         "APG": 1.9
       },
-      "career_tier": "rotation"
+      "career_tier": "rotation",
+      "nba_value": 0.705
     },
     {
       "year": 2025,
@@ -240,7 +249,8 @@
         "RPG": 2.9,
         "APG": 0.1
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -264,7 +274,8 @@
         "RPG": 5.9,
         "APG": 2.8
       },
-      "career_tier": "rotation"
+      "career_tier": "starter",
+      "nba_value": 0.893
     },
     {
       "year": 2025,
@@ -288,7 +299,8 @@
         "RPG": 0.0,
         "APG": 0.0
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -312,7 +324,8 @@
         "RPG": 7.1,
         "APG": 3.7
       },
-      "career_tier": "rotation"
+      "career_tier": "starter",
+      "nba_value": 1.0
     },
     {
       "year": 2025,
@@ -336,7 +349,8 @@
         "RPG": 2.5,
         "APG": 0.7
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.347
     },
     {
       "year": 2025,
@@ -360,7 +374,8 @@
         "RPG": null,
         "APG": null
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -384,7 +399,8 @@
         "RPG": 1.5,
         "APG": 0.5
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.132
     },
     {
       "year": 2025,
@@ -408,7 +424,8 @@
         "RPG": 2.3,
         "APG": 0.3
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.224
     },
     {
       "year": 2025,
@@ -432,7 +449,8 @@
         "RPG": 2.0,
         "APG": 4.0
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.676
     },
     {
       "year": 2025,
@@ -456,7 +474,8 @@
         "RPG": 1.8,
         "APG": 3.8
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.686
     },
     {
       "year": 2025,
@@ -480,7 +499,8 @@
         "RPG": 2.6,
         "APG": 2.6
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.544
     },
     {
       "year": 2025,
@@ -504,7 +524,8 @@
         "RPG": 2.9,
         "APG": 2.0
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.76
     },
     {
       "year": 2025,
@@ -528,7 +549,8 @@
         "RPG": 1.8,
         "APG": 1.4
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.552
     },
     {
       "year": 2025,
@@ -552,7 +574,8 @@
         "RPG": 2.2,
         "APG": 0.6
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.395
     },
     {
       "year": 2025,
@@ -576,7 +599,8 @@
         "RPG": 3.8,
         "APG": 2.4
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.79
     },
     {
       "year": 2025,
@@ -600,7 +624,8 @@
         "RPG": 1.2,
         "APG": 1.1
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.296
     },
     {
       "year": 2025,
@@ -624,7 +649,8 @@
         "RPG": 2.1,
         "APG": 3.3
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.575
     },
     {
       "year": 2025,
@@ -648,7 +674,8 @@
         "RPG": 4.9,
         "APG": 2.2
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.725
     },
     {
       "year": 2025,
@@ -672,7 +699,8 @@
         "RPG": 3.3,
         "APG": 0.5
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.477
     },
     {
       "year": 2025,
@@ -696,7 +724,8 @@
         "RPG": 2.4,
         "APG": 0.8
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.38
     },
     {
       "year": 2025,
@@ -720,7 +749,8 @@
         "RPG": 2.9,
         "APG": 0.3
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.327
     },
     {
       "year": 2025,
@@ -744,7 +774,8 @@
         "RPG": 2.3,
         "APG": 0.3
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.37
     },
     {
       "year": 2025,
@@ -768,7 +799,8 @@
         "RPG": 3.2,
         "APG": 1.2
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.449
     },
     {
       "year": 2025,
@@ -792,7 +824,8 @@
         "RPG": 3.5,
         "APG": 2.0
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.646
     },
     {
       "year": 2025,
@@ -816,7 +849,8 @@
         "RPG": 5.5,
         "APG": 0.8
       },
-      "career_tier": "rotation"
+      "career_tier": "rotation",
+      "nba_value": 0.5
     },
     {
       "year": 2025,
@@ -840,7 +874,8 @@
         "RPG": 1.5,
         "APG": 0.4
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.032
     },
     {
       "year": 2025,
@@ -864,7 +899,8 @@
         "RPG": 1.1,
         "APG": 0.4
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.077
     },
     {
       "year": 2025,
@@ -888,7 +924,8 @@
         "RPG": 0.7,
         "APG": 0.5
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.135
     },
     {
       "year": 2025,
@@ -912,7 +949,8 @@
         "RPG": 1.6,
         "APG": 3.2
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.402
     },
     {
       "year": 2025,
@@ -936,7 +974,8 @@
         "RPG": 0.9,
         "APG": 0.5
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.099
     },
     {
       "year": 2025,
@@ -960,7 +999,8 @@
         "RPG": 1.9,
         "APG": 1.0
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.342
     },
     {
       "year": 2025,
@@ -984,7 +1024,8 @@
         "RPG": 0.7,
         "APG": 0.8
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.143
     },
     {
       "year": 2025,
@@ -1008,7 +1049,8 @@
         "RPG": 7.5,
         "APG": 1.4
       },
-      "career_tier": "bench"
+      "career_tier": "starter",
+      "nba_value": 0.893
     },
     {
       "year": 2025,
@@ -1032,7 +1074,8 @@
         "RPG": 3.9,
         "APG": 1.3
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.586
     },
     {
       "year": 2025,
@@ -1056,7 +1099,8 @@
         "RPG": 2.0,
         "APG": 0.6
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.182
     },
     {
       "year": 2025,
@@ -1080,7 +1124,8 @@
         "RPG": 2.8,
         "APG": 0.4
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -1104,7 +1149,8 @@
         "RPG": 1.8,
         "APG": 0.5
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.094
     },
     {
       "year": 2025,
@@ -1128,7 +1174,8 @@
         "RPG": null,
         "APG": null
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -1152,7 +1199,8 @@
         "RPG": 3.1,
         "APG": 3.7
       },
-      "career_tier": "rotation"
+      "career_tier": "rotation",
+      "nba_value": 0.69
     },
     {
       "year": 2025,
@@ -1176,7 +1224,8 @@
         "RPG": 1.3,
         "APG": 1.5
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.364
     },
     {
       "year": 2025,
@@ -1200,7 +1249,8 @@
         "RPG": 2.3,
         "APG": 1.6
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.565
     },
     {
       "year": 2025,
@@ -1224,7 +1274,8 @@
         "RPG": 1.4,
         "APG": 0.8
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.256
     },
     {
       "year": 2025,
@@ -1248,7 +1299,8 @@
         "RPG": null,
         "APG": null
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -1272,7 +1324,8 @@
         "RPG": 1.0,
         "APG": 0.3
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -1296,7 +1349,8 @@
         "RPG": 1.6,
         "APG": 1.1
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.34
     },
     {
       "year": 2025,
@@ -1320,7 +1374,8 @@
         "RPG": 3.0,
         "APG": 1.1
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.281
     },
     {
       "year": 2025,
@@ -1344,7 +1399,8 @@
         "RPG": 2.5,
         "APG": 1.3
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.547
     },
     {
       "year": 2025,
@@ -1368,7 +1424,8 @@
         "RPG": 0.5,
         "APG": 0.2
       },
-      "career_tier": "bench"
+      "career_tier": "bench",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -1392,7 +1449,8 @@
         "RPG": null,
         "APG": null
       },
-      "career_tier": "no_nba"
+      "career_tier": "no_nba",
+      "nba_value": 0.0
     },
     {
       "year": 2025,
@@ -1416,7 +1474,8 @@
         "RPG": 2.6,
         "APG": 2.2
       },
-      "career_tier": "bench"
+      "career_tier": "rotation",
+      "nba_value": 0.563
     }
   ]
 }

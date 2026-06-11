@@ -178,7 +178,7 @@ def train_final(rows):
 
 def main():
     dry = "--dry-run" in sys.argv
-    rows = load_matched(include_undrafted=True)
+    rows = load_matched(years=(2020, 2021, 2022, 2023, 2024, 2025), include_undrafted=True)  # young classes join training (held-out unchanged)
     attach_value_target(rows)
     rows = [r for r in rows if r.get("target") is not None]
     ys, yb = _labels(rows)
