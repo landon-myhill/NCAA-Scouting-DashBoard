@@ -60,7 +60,7 @@
       "weaknesses": [],
       "comps": [],
       "injury": "Clean",
-      "draft_score": 156.77,
+      "draft_score": 155.61,
       "id": 244010080,
       "rank": 1,
       "tier": 1,
@@ -162,6 +162,82 @@
       }
     },
     {
+      "name": "Tyler Bey",
+      "pos": "G",
+      "school": "Colorado",
+      "conference": "Pac-12",
+      "year": "Junior",
+      "height": "6'7\"",
+      "weight": "218 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 13.8,
+        "RPG": 9.0,
+        "APG": 1.5,
+        "SPG": 1.5,
+        "BPG": 1.2,
+        "FG%": 53.0,
+        "3P%": 41.9,
+        "FT%": 74.3,
+        "MPG": 29.0,
+        "GS": null,
+        "TOV": 2.4,
+        "FTA": 5.9,
+        "OREB": 2.0,
+        "DREB": 7.0,
+        "3PA": 1.0,
+        "FGA": 8.5,
+        "PF": 1.9
+      },
+      "advanced": {
+        "PER": 26.7,
+        "TS%": 61.1,
+        "eFG%": null,
+        "USG%": 24.4,
+        "AST%": 11.5,
+        "TOV%": 17.6,
+        "BPM": 10.1,
+        "OBPM": 5.2,
+        "DBPM": 5.0,
+        "OWS": 2.6,
+        "DWS": 2.5,
+        "Win Shares": 5.1,
+        "WS/40": 0.228
+      },
+      "skills": {
+        "Athleticism": 51,
+        "Defense": 68,
+        "Shooting": 66,
+        "Ball Handling": 7,
+        "IQ": 43,
+        "Leadership": 48
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 135.93,
+      "id": 291652538,
+      "rank": 3,
+      "tier": 1,
+      "combine": {
+        "wingspan_in": 85.25,
+        "height_no_shoes_in": 78.0,
+        "height_w_shoes_in": 79.0,
+        "standing_reach_in": 105.5,
+        "hand_length_in": 8.5,
+        "hand_width_in": 9.0,
+        "weight_lbs": 212.8,
+        "body_fat_pct": 5.0,
+        "max_vert_in": 43.5,
+        "standing_vert_in": 37.0,
+        "lane_agility_s": 11.35,
+        "shuttle_run_s": 2.75,
+        "three_quarter_sprint_s": 3.17,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Vernon Carey Jr.",
       "pos": "C",
       "school": "Duke",
@@ -218,7 +294,7 @@
       "injury": "Clean",
       "draft_score": 134.21,
       "id": 1276023614,
-      "rank": 3,
+      "rank": 4,
       "tier": 1,
       "recruit_rank": 6,
       "recruit_class_year": 2019
@@ -280,7 +356,7 @@
       "injury": "Clean",
       "draft_score": 133.48,
       "id": 1673716066,
-      "rank": 4,
+      "rank": 5,
       "tier": 1,
       "recruit_rank": 21,
       "recruit_class_year": 2018,
@@ -298,158 +374,6 @@
         "lane_agility_s": 10.44,
         "shuttle_run_s": 2.22,
         "three_quarter_sprint_s": 3.02,
-        "max_bench_reps": null
-      }
-    },
-    {
-      "name": "Tyler Bey",
-      "pos": "G",
-      "school": "Colorado",
-      "conference": "Pac-12",
-      "year": "Junior",
-      "height": "6'7\"",
-      "weight": "218 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 13.8,
-        "RPG": 9.0,
-        "APG": 1.5,
-        "SPG": 1.5,
-        "BPG": 1.2,
-        "FG%": 53.0,
-        "3P%": 41.9,
-        "FT%": 74.3,
-        "MPG": 29.0,
-        "GS": null,
-        "TOV": 2.4,
-        "FTA": 5.9,
-        "OREB": 2.0,
-        "DREB": 7.0,
-        "3PA": 1.0,
-        "FGA": 8.5,
-        "PF": 1.9
-      },
-      "advanced": {
-        "PER": 26.7,
-        "TS%": 61.1,
-        "eFG%": null,
-        "USG%": 24.4,
-        "AST%": 11.5,
-        "TOV%": 17.6,
-        "BPM": 10.1,
-        "OBPM": 5.2,
-        "DBPM": 5.0,
-        "OWS": 2.6,
-        "DWS": 2.5,
-        "Win Shares": 5.1,
-        "WS/40": 0.228
-      },
-      "skills": {
-        "Athleticism": 51,
-        "Defense": 68,
-        "Shooting": 66,
-        "Ball Handling": 7,
-        "IQ": 43,
-        "Leadership": 48
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 130.4,
-      "id": 291652538,
-      "rank": 5,
-      "tier": 1,
-      "combine": {
-        "wingspan_in": 85.25,
-        "height_no_shoes_in": 78.0,
-        "height_w_shoes_in": 79.0,
-        "standing_reach_in": 105.5,
-        "hand_length_in": 8.5,
-        "hand_width_in": 9.0,
-        "weight_lbs": 212.8,
-        "body_fat_pct": 5.0,
-        "max_vert_in": 43.5,
-        "standing_vert_in": 37.0,
-        "lane_agility_s": 11.35,
-        "shuttle_run_s": 2.75,
-        "three_quarter_sprint_s": 3.17,
-        "max_bench_reps": null
-      }
-    },
-    {
-      "name": "Xavier Tillman",
-      "pos": "F",
-      "school": "Michigan State",
-      "conference": "Big Ten",
-      "year": "Junior",
-      "height": "6'8\"",
-      "weight": "245 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 13.7,
-        "RPG": 10.3,
-        "APG": 3.0,
-        "SPG": 1.2,
-        "BPG": 2.1,
-        "FG%": 55.0,
-        "3P%": 26.0,
-        "FT%": 66.7,
-        "MPG": 32.1,
-        "GS": null,
-        "TOV": 2.0,
-        "FTA": 4.0,
-        "OREB": 2.7,
-        "DREB": 7.6,
-        "3PA": 1.6,
-        "FGA": 9.7,
-        "PF": 2.6
-      },
-      "advanced": {
-        "PER": 26.5,
-        "TS%": 59.3,
-        "eFG%": null,
-        "USG%": 21.0,
-        "AST%": 18.1,
-        "TOV%": 14.5,
-        "BPM": 12.6,
-        "OBPM": 6.3,
-        "DBPM": 6.2,
-        "OWS": 3.1,
-        "DWS": 2.7,
-        "Win Shares": 5.8,
-        "WS/40": 0.234
-      },
-      "skills": {
-        "Athleticism": 46,
-        "Defense": 69,
-        "Shooting": 43,
-        "Ball Handling": 28,
-        "IQ": 54,
-        "Leadership": 55
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 125.97,
-      "id": 1103942871,
-      "rank": 6,
-      "tier": 1,
-      "combine": {
-        "wingspan_in": 86.0,
-        "height_no_shoes_in": 79.5,
-        "height_w_shoes_in": 80.5,
-        "standing_reach_in": 106.0,
-        "hand_length_in": 10.25,
-        "hand_width_in": 11.0,
-        "weight_lbs": 266.5,
-        "body_fat_pct": 8.5,
-        "max_vert_in": 32.5,
-        "standing_vert_in": 26.0,
-        "lane_agility_s": 11.8,
-        "shuttle_run_s": 3.01,
-        "three_quarter_sprint_s": 3.49,
         "max_bench_reps": null
       }
     },
@@ -510,10 +434,86 @@
       "injury": "Clean",
       "draft_score": 125.3,
       "id": 1867422300,
-      "rank": 7,
+      "rank": 6,
       "tier": 1,
       "recruit_rank": 25,
       "recruit_class_year": 2019
+    },
+    {
+      "name": "Xavier Tillman",
+      "pos": "F",
+      "school": "Michigan State",
+      "conference": "Big Ten",
+      "year": "Junior",
+      "height": "6'8\"",
+      "weight": "245 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 13.7,
+        "RPG": 10.3,
+        "APG": 3.0,
+        "SPG": 1.2,
+        "BPG": 2.1,
+        "FG%": 55.0,
+        "3P%": 26.0,
+        "FT%": 66.7,
+        "MPG": 32.1,
+        "GS": null,
+        "TOV": 2.0,
+        "FTA": 4.0,
+        "OREB": 2.7,
+        "DREB": 7.6,
+        "3PA": 1.6,
+        "FGA": 9.7,
+        "PF": 2.6
+      },
+      "advanced": {
+        "PER": 26.5,
+        "TS%": 59.3,
+        "eFG%": null,
+        "USG%": 21.0,
+        "AST%": 18.1,
+        "TOV%": 14.5,
+        "BPM": 12.6,
+        "OBPM": 6.3,
+        "DBPM": 6.2,
+        "OWS": 3.1,
+        "DWS": 2.7,
+        "Win Shares": 5.8,
+        "WS/40": 0.234
+      },
+      "skills": {
+        "Athleticism": 46,
+        "Defense": 69,
+        "Shooting": 43,
+        "Ball Handling": 28,
+        "IQ": 54,
+        "Leadership": 55
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 122.56,
+      "id": 1103942871,
+      "rank": 7,
+      "tier": 1,
+      "combine": {
+        "wingspan_in": 86.0,
+        "height_no_shoes_in": 79.5,
+        "height_w_shoes_in": 80.5,
+        "standing_reach_in": 106.0,
+        "hand_length_in": 10.25,
+        "hand_width_in": 11.0,
+        "weight_lbs": 266.5,
+        "body_fat_pct": 8.5,
+        "max_vert_in": 32.5,
+        "standing_vert_in": 26.0,
+        "lane_agility_s": 11.8,
+        "shuttle_run_s": 3.01,
+        "three_quarter_sprint_s": 3.49,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Devin Vassell",
@@ -638,6 +638,82 @@
       "recruit_class_year": 2018
     },
     {
+      "name": "Mason Jones",
+      "pos": "G",
+      "school": "Arkansas",
+      "conference": "SEC",
+      "year": "Junior",
+      "height": "6'5\"",
+      "weight": "200 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 22.0,
+        "RPG": 5.5,
+        "APG": 3.4,
+        "SPG": 1.6,
+        "BPG": 0.2,
+        "FG%": 45.3,
+        "3P%": 35.1,
+        "FT%": 82.6,
+        "MPG": 33.9,
+        "GS": null,
+        "TOV": 3.2,
+        "FTA": 9.1,
+        "OREB": 0.7,
+        "DREB": 4.7,
+        "3PA": 6.3,
+        "FGA": 13.6,
+        "PF": 3.3
+      },
+      "advanced": {
+        "PER": 27.3,
+        "TS%": 61.4,
+        "eFG%": null,
+        "USG%": 31.6,
+        "AST%": 23.0,
+        "TOV%": 15.1,
+        "BPM": 9.4,
+        "OBPM": 6.8,
+        "DBPM": 2.6,
+        "OWS": 4.2,
+        "DWS": 1.8,
+        "Win Shares": 6.1,
+        "WS/40": 0.231
+      },
+      "skills": {
+        "Athleticism": 69,
+        "Defense": 44,
+        "Shooting": 55,
+        "Ball Handling": 20,
+        "IQ": 46,
+        "Leadership": 57
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 120.58,
+      "id": 350155176,
+      "rank": 10,
+      "tier": 1,
+      "combine": {
+        "wingspan_in": 79.0,
+        "height_no_shoes_in": 75.75,
+        "height_w_shoes_in": 77.75,
+        "standing_reach_in": 102.5,
+        "hand_length_in": 8.75,
+        "hand_width_in": 8.5,
+        "weight_lbs": 207.2,
+        "body_fat_pct": 8.9,
+        "max_vert_in": 31.0,
+        "standing_vert_in": 24.0,
+        "lane_agility_s": 10.6,
+        "shuttle_run_s": 2.49,
+        "three_quarter_sprint_s": 3.33,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Luka Garza",
       "pos": "F",
       "school": "Iowa",
@@ -694,86 +770,8 @@
       "injury": "Clean",
       "draft_score": 118.92,
       "id": 475698185,
-      "rank": 10,
-      "tier": 1
-    },
-    {
-      "name": "Nick Richards",
-      "pos": "F",
-      "school": "Kentucky",
-      "conference": "SEC",
-      "year": "Junior",
-      "height": "6'11\"",
-      "weight": "247 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 14.0,
-        "RPG": 7.8,
-        "APG": 0.2,
-        "SPG": 0.1,
-        "BPG": 2.1,
-        "FG%": 64.2,
-        "3P%": null,
-        "FT%": 75.2,
-        "MPG": 29.6,
-        "GS": null,
-        "TOV": 1.6,
-        "FTA": 4.7,
-        "OREB": 2.6,
-        "DREB": 5.2,
-        "3PA": 0.0,
-        "FGA": 8.2,
-        "PF": 3.2
-      },
-      "advanced": {
-        "PER": 25.8,
-        "TS%": 67.4,
-        "eFG%": null,
-        "USG%": 20.7,
-        "AST%": 1.7,
-        "TOV%": 13.2,
-        "BPM": 7.0,
-        "OBPM": 4.6,
-        "DBPM": 2.4,
-        "OWS": 3.4,
-        "DWS": 1.6,
-        "Win Shares": 5.1,
-        "WS/40": 0.222
-      },
-      "skills": {
-        "Athleticism": 29,
-        "Defense": 48,
-        "Shooting": 32,
-        "Ball Handling": 1,
-        "IQ": 44,
-        "Leadership": 43
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 117.77,
-      "id": 367520464,
       "rank": 11,
-      "tier": 1,
-      "recruit_rank": 17,
-      "recruit_class_year": 2017,
-      "combine": {
-        "wingspan_in": 86.25,
-        "height_no_shoes_in": 82.5,
-        "height_w_shoes_in": 83.5,
-        "standing_reach_in": 110.0,
-        "hand_length_in": 9.0,
-        "hand_width_in": 9.0,
-        "weight_lbs": 241.6,
-        "body_fat_pct": 8.5,
-        "max_vert_in": 34.0,
-        "standing_vert_in": 30.0,
-        "lane_agility_s": 11.42,
-        "shuttle_run_s": 2.92,
-        "three_quarter_sprint_s": 3.25,
-        "max_bench_reps": null
-      }
+      "tier": 1
     },
     {
       "name": "Udoka Azubuike",
@@ -852,78 +850,80 @@
       }
     },
     {
-      "name": "Mason Jones",
-      "pos": "G",
-      "school": "Arkansas",
+      "name": "Nick Richards",
+      "pos": "F",
+      "school": "Kentucky",
       "conference": "SEC",
       "year": "Junior",
-      "height": "6'5\"",
-      "weight": "200 lbs",
+      "height": "6'11\"",
+      "weight": "247 lbs",
       "hometown": "—",
       "stats": {
-        "PPG": 22.0,
-        "RPG": 5.5,
-        "APG": 3.4,
-        "SPG": 1.6,
-        "BPG": 0.2,
-        "FG%": 45.3,
-        "3P%": 35.1,
-        "FT%": 82.6,
-        "MPG": 33.9,
+        "PPG": 14.0,
+        "RPG": 7.8,
+        "APG": 0.2,
+        "SPG": 0.1,
+        "BPG": 2.1,
+        "FG%": 64.2,
+        "3P%": null,
+        "FT%": 75.2,
+        "MPG": 29.6,
         "GS": null,
-        "TOV": 3.2,
-        "FTA": 9.1,
-        "OREB": 0.7,
-        "DREB": 4.7,
-        "3PA": 6.3,
-        "FGA": 13.6,
-        "PF": 3.3
+        "TOV": 1.6,
+        "FTA": 4.7,
+        "OREB": 2.6,
+        "DREB": 5.2,
+        "3PA": 0.0,
+        "FGA": 8.2,
+        "PF": 3.2
       },
       "advanced": {
-        "PER": 27.3,
-        "TS%": 61.4,
+        "PER": 25.8,
+        "TS%": 67.4,
         "eFG%": null,
-        "USG%": 31.6,
-        "AST%": 23.0,
-        "TOV%": 15.1,
-        "BPM": 9.4,
-        "OBPM": 6.8,
-        "DBPM": 2.6,
-        "OWS": 4.2,
-        "DWS": 1.8,
-        "Win Shares": 6.1,
-        "WS/40": 0.231
+        "USG%": 20.7,
+        "AST%": 1.7,
+        "TOV%": 13.2,
+        "BPM": 7.0,
+        "OBPM": 4.6,
+        "DBPM": 2.4,
+        "OWS": 3.4,
+        "DWS": 1.6,
+        "Win Shares": 5.1,
+        "WS/40": 0.222
       },
       "skills": {
-        "Athleticism": 69,
-        "Defense": 44,
-        "Shooting": 55,
-        "Ball Handling": 20,
-        "IQ": 46,
-        "Leadership": 57
+        "Athleticism": 29,
+        "Defense": 48,
+        "Shooting": 32,
+        "Ball Handling": 1,
+        "IQ": 44,
+        "Leadership": 43
       },
       "strengths": [],
       "weaknesses": [],
       "comps": [],
       "injury": "Clean",
-      "draft_score": 113.68,
-      "id": 350155176,
+      "draft_score": 114.35,
+      "id": 367520464,
       "rank": 13,
       "tier": 1,
+      "recruit_rank": 17,
+      "recruit_class_year": 2017,
       "combine": {
-        "wingspan_in": 79.0,
-        "height_no_shoes_in": 75.75,
-        "height_w_shoes_in": 77.75,
-        "standing_reach_in": 102.5,
-        "hand_length_in": 8.75,
-        "hand_width_in": 8.5,
-        "weight_lbs": 207.2,
-        "body_fat_pct": 8.9,
-        "max_vert_in": 31.0,
-        "standing_vert_in": 24.0,
-        "lane_agility_s": 10.6,
-        "shuttle_run_s": 2.49,
-        "three_quarter_sprint_s": 3.33,
+        "wingspan_in": 86.25,
+        "height_no_shoes_in": 82.5,
+        "height_w_shoes_in": 83.5,
+        "standing_reach_in": 110.0,
+        "hand_length_in": 9.0,
+        "hand_width_in": 9.0,
+        "weight_lbs": 241.6,
+        "body_fat_pct": 8.5,
+        "max_vert_in": 34.0,
+        "standing_vert_in": 30.0,
+        "lane_agility_s": 11.42,
+        "shuttle_run_s": 2.92,
+        "three_quarter_sprint_s": 3.25,
         "max_bench_reps": null
       }
     },
@@ -1172,6 +1172,84 @@
       "recruit_class_year": 2019
     },
     {
+      "name": "Josh Green",
+      "pos": "G",
+      "school": "Arizona",
+      "conference": "Pac-12",
+      "year": "Freshman",
+      "height": "6'6\"",
+      "weight": "210 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 12.0,
+        "RPG": 4.6,
+        "APG": 2.6,
+        "SPG": 1.5,
+        "BPG": 0.4,
+        "FG%": 42.4,
+        "3P%": 36.1,
+        "FT%": 78.0,
+        "MPG": 30.9,
+        "GS": null,
+        "TOV": 1.6,
+        "FTA": 3.6,
+        "OREB": 1.3,
+        "DREB": 3.3,
+        "3PA": 2.8,
+        "FGA": 9.6,
+        "PF": 2.4
+      },
+      "advanced": {
+        "PER": 17.9,
+        "TS%": 52.8,
+        "eFG%": null,
+        "USG%": 20.7,
+        "AST%": 16.0,
+        "TOV%": 12.6,
+        "BPM": 6.9,
+        "OBPM": 2.8,
+        "DBPM": 4.1,
+        "OWS": 2.0,
+        "DWS": 1.9,
+        "Win Shares": 3.8,
+        "WS/40": 0.166
+      },
+      "skills": {
+        "Athleticism": 48,
+        "Defense": 39,
+        "Shooting": 48,
+        "Ball Handling": 27,
+        "IQ": 47,
+        "Leadership": 37
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 106.65,
+      "id": 1768724718,
+      "rank": 18,
+      "tier": 2,
+      "recruit_rank": 13,
+      "recruit_class_year": 2019,
+      "combine": {
+        "wingspan_in": 81.75,
+        "height_no_shoes_in": 76.5,
+        "height_w_shoes_in": 77.5,
+        "standing_reach_in": 101.5,
+        "hand_length_in": 8.0,
+        "hand_width_in": 8.75,
+        "weight_lbs": 214.0,
+        "body_fat_pct": 6.8,
+        "max_vert_in": 39.5,
+        "standing_vert_in": 30.5,
+        "lane_agility_s": 10.64,
+        "shuttle_run_s": 2.28,
+        "three_quarter_sprint_s": 3.12,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Obi Toppin",
       "pos": "F",
       "school": "Dayton",
@@ -1228,7 +1306,7 @@
       "injury": "Clean",
       "draft_score": 105.69,
       "id": 1681090800,
-      "rank": 18,
+      "rank": 19,
       "tier": 2
     },
     {
@@ -1288,164 +1366,86 @@
       "injury": "Clean",
       "draft_score": 104.06,
       "id": 989903971,
-      "rank": 19,
+      "rank": 20,
       "tier": 2,
       "recruit_rank": 50,
       "recruit_class_year": 2018
     },
     {
-      "name": "Zeke Nnaji",
-      "pos": "F",
-      "school": "Arizona",
-      "conference": "Pac-12",
-      "year": "Freshman",
-      "height": "6'11\"",
-      "weight": "240 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 16.1,
-        "RPG": 8.6,
-        "APG": 0.8,
-        "SPG": 0.7,
-        "BPG": 0.9,
-        "FG%": 57.0,
-        "3P%": 29.4,
-        "FT%": 76.0,
-        "MPG": 30.7,
-        "GS": null,
-        "TOV": 2.2,
-        "FTA": 6.3,
-        "OREB": 3.1,
-        "DREB": 5.5,
-        "3PA": 0.5,
-        "FGA": 9.8,
-        "PF": 2.4
-      },
-      "advanced": {
-        "PER": 25.7,
-        "TS%": 63.0,
-        "eFG%": null,
-        "USG%": 24.1,
-        "AST%": 5.8,
-        "TOV%": 14.6,
-        "BPM": 8.0,
-        "OBPM": 5.6,
-        "DBPM": 2.3,
-        "OWS": 3.5,
-        "DWS": 2.1,
-        "Win Shares": 5.6,
-        "WS/40": 0.229
-      },
-      "skills": {
-        "Athleticism": 43,
-        "Defense": 44,
-        "Shooting": 58,
-        "Ball Handling": 1,
-        "IQ": 41,
-        "Leadership": 50
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 101.22,
-      "id": 700113111,
-      "rank": 20,
-      "tier": 2,
-      "recruit_rank": 40,
-      "recruit_class_year": 2019,
-      "combine": {
-        "wingspan_in": 86.0,
-        "height_no_shoes_in": 81.25,
-        "height_w_shoes_in": 82.5,
-        "standing_reach_in": 105.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 10.5,
-        "weight_lbs": 246.8,
-        "body_fat_pct": 5.9,
-        "max_vert_in": 38.0,
-        "standing_vert_in": 33.0,
-        "lane_agility_s": 10.94,
-        "shuttle_run_s": 2.72,
-        "three_quarter_sprint_s": 3.2,
-        "max_bench_reps": null
-      }
-    },
-    {
-      "name": "Josh Green",
+      "name": "Ashton Hagans",
       "pos": "G",
-      "school": "Arizona",
-      "conference": "Pac-12",
-      "year": "Freshman",
-      "height": "6'6\"",
-      "weight": "210 lbs",
+      "school": "Kentucky",
+      "conference": "SEC",
+      "year": "Sophomore",
+      "height": "6'3\"",
+      "weight": "198 lbs",
       "hometown": "—",
       "stats": {
-        "PPG": 12.0,
-        "RPG": 4.6,
-        "APG": 2.6,
-        "SPG": 1.5,
-        "BPG": 0.4,
-        "FG%": 42.4,
-        "3P%": 36.1,
-        "FT%": 78.0,
-        "MPG": 30.9,
+        "PPG": 11.5,
+        "RPG": 3.9,
+        "APG": 6.4,
+        "SPG": 1.9,
+        "BPG": 0.2,
+        "FG%": 40.4,
+        "3P%": 25.8,
+        "FT%": 81.0,
+        "MPG": 33.1,
         "GS": null,
-        "TOV": 1.6,
-        "FTA": 3.6,
-        "OREB": 1.3,
-        "DREB": 3.3,
-        "3PA": 2.8,
-        "FGA": 9.6,
-        "PF": 2.4
+        "TOV": 3.4,
+        "FTA": 4.7,
+        "OREB": 0.2,
+        "DREB": 3.7,
+        "3PA": 2.1,
+        "FGA": 8.8,
+        "PF": 2.6
       },
       "advanced": {
-        "PER": 17.9,
-        "TS%": 52.8,
+        "PER": 17.3,
+        "TS%": 51.9,
         "eFG%": null,
-        "USG%": 20.7,
-        "AST%": 16.0,
-        "TOV%": 12.6,
-        "BPM": 6.9,
-        "OBPM": 2.8,
-        "DBPM": 4.1,
-        "OWS": 2.0,
-        "DWS": 1.9,
-        "Win Shares": 3.8,
-        "WS/40": 0.166
+        "USG%": 22.4,
+        "AST%": 36.4,
+        "TOV%": 23.7,
+        "BPM": 4.7,
+        "OBPM": 1.9,
+        "DBPM": 2.8,
+        "OWS": 1.5,
+        "DWS": 1.8,
+        "Win Shares": 3.3,
+        "WS/40": 0.132
       },
       "skills": {
-        "Athleticism": 48,
-        "Defense": 39,
-        "Shooting": 48,
-        "Ball Handling": 27,
-        "IQ": 47,
-        "Leadership": 37
+        "Athleticism": 53,
+        "Defense": 43,
+        "Shooting": 36,
+        "Ball Handling": 52,
+        "IQ": 60,
+        "Leadership": 43
       },
       "strengths": [],
       "weaknesses": [],
       "comps": [],
       "injury": "Clean",
-      "draft_score": 100.84,
-      "id": 1768724718,
+      "draft_score": 99.27,
+      "id": 1175077322,
       "rank": 21,
       "tier": 2,
-      "recruit_rank": 13,
-      "recruit_class_year": 2019,
+      "recruit_rank": 12,
+      "recruit_class_year": 2018,
       "combine": {
-        "wingspan_in": 81.75,
-        "height_no_shoes_in": 76.5,
-        "height_w_shoes_in": 77.5,
-        "standing_reach_in": 101.5,
-        "hand_length_in": 8.0,
-        "hand_width_in": 8.75,
-        "weight_lbs": 214.0,
-        "body_fat_pct": 6.8,
-        "max_vert_in": 39.5,
-        "standing_vert_in": 30.5,
-        "lane_agility_s": 10.64,
-        "shuttle_run_s": 2.28,
-        "three_quarter_sprint_s": 3.12,
+        "wingspan_in": 80.0,
+        "height_no_shoes_in": 73.5,
+        "height_w_shoes_in": 74.5,
+        "standing_reach_in": 99.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 9.0,
+        "weight_lbs": 193.0,
+        "body_fat_pct": 4.1,
+        "max_vert_in": 36.5,
+        "standing_vert_in": 29.5,
+        "lane_agility_s": 10.82,
+        "shuttle_run_s": 2.5,
+        "three_quarter_sprint_s": 3.13,
         "max_bench_reps": null
       }
     },
@@ -1510,6 +1510,84 @@
       "tier": 2
     },
     {
+      "name": "Zeke Nnaji",
+      "pos": "F",
+      "school": "Arizona",
+      "conference": "Pac-12",
+      "year": "Freshman",
+      "height": "6'11\"",
+      "weight": "240 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 16.1,
+        "RPG": 8.6,
+        "APG": 0.8,
+        "SPG": 0.7,
+        "BPG": 0.9,
+        "FG%": 57.0,
+        "3P%": 29.4,
+        "FT%": 76.0,
+        "MPG": 30.7,
+        "GS": null,
+        "TOV": 2.2,
+        "FTA": 6.3,
+        "OREB": 3.1,
+        "DREB": 5.5,
+        "3PA": 0.5,
+        "FGA": 9.8,
+        "PF": 2.4
+      },
+      "advanced": {
+        "PER": 25.7,
+        "TS%": 63.0,
+        "eFG%": null,
+        "USG%": 24.1,
+        "AST%": 5.8,
+        "TOV%": 14.6,
+        "BPM": 8.0,
+        "OBPM": 5.6,
+        "DBPM": 2.3,
+        "OWS": 3.5,
+        "DWS": 2.1,
+        "Win Shares": 5.6,
+        "WS/40": 0.229
+      },
+      "skills": {
+        "Athleticism": 43,
+        "Defense": 44,
+        "Shooting": 58,
+        "Ball Handling": 1,
+        "IQ": 41,
+        "Leadership": 50
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 97.77,
+      "id": 700113111,
+      "rank": 23,
+      "tier": 2,
+      "recruit_rank": 40,
+      "recruit_class_year": 2019,
+      "combine": {
+        "wingspan_in": 86.0,
+        "height_no_shoes_in": 81.25,
+        "height_w_shoes_in": 82.5,
+        "standing_reach_in": 105.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 10.5,
+        "weight_lbs": 246.8,
+        "body_fat_pct": 5.9,
+        "max_vert_in": 38.0,
+        "standing_vert_in": 33.0,
+        "lane_agility_s": 10.94,
+        "shuttle_run_s": 2.72,
+        "three_quarter_sprint_s": 3.2,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Desmond Bane",
       "pos": "G",
       "school": "Texas Christian",
@@ -1566,7 +1644,7 @@
       "injury": "Clean",
       "draft_score": 97.48,
       "id": 501068993,
-      "rank": 23,
+      "rank": 24,
       "tier": 2
     },
     {
@@ -1626,86 +1704,8 @@
       "injury": "Clean",
       "draft_score": 96.32,
       "id": 1615100044,
-      "rank": 24,
-      "tier": 2
-    },
-    {
-      "name": "Precious Achiuwa",
-      "pos": "F",
-      "school": "Memphis",
-      "conference": "AAC",
-      "year": "Freshman",
-      "height": "6'9\"",
-      "weight": "225 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 15.8,
-        "RPG": 10.8,
-        "APG": 1.0,
-        "SPG": 1.1,
-        "BPG": 1.9,
-        "FG%": 49.3,
-        "3P%": 32.5,
-        "FT%": 59.9,
-        "MPG": 30.4,
-        "GS": null,
-        "TOV": 2.8,
-        "FTA": 6.0,
-        "OREB": 3.0,
-        "DREB": 7.8,
-        "3PA": 1.3,
-        "FGA": 11.9,
-        "PF": 2.4
-      },
-      "advanced": {
-        "PER": 23.3,
-        "TS%": 53.4,
-        "eFG%": null,
-        "USG%": 27.7,
-        "AST%": 7.5,
-        "TOV%": 16.0,
-        "BPM": 5.8,
-        "OBPM": 2.5,
-        "DBPM": 3.4,
-        "OWS": 1.5,
-        "DWS": 2.9,
-        "Win Shares": 4.4,
-        "WS/40": 0.187
-      },
-      "skills": {
-        "Athleticism": 49,
-        "Defense": 67,
-        "Shooting": 38,
-        "Ball Handling": 0,
-        "IQ": 37,
-        "Leadership": 55
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 96.18,
-      "id": 1458307503,
       "rank": 25,
-      "tier": 2,
-      "recruit_rank": 15,
-      "recruit_class_year": 2019,
-      "combine": {
-        "wingspan_in": 84.75,
-        "height_no_shoes_in": 79.5,
-        "height_w_shoes_in": 80.75,
-        "standing_reach_in": 108.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 10.0,
-        "weight_lbs": 234.0,
-        "body_fat_pct": 6.7,
-        "max_vert_in": null,
-        "standing_vert_in": null,
-        "lane_agility_s": null,
-        "shuttle_run_s": null,
-        "three_quarter_sprint_s": null,
-        "max_bench_reps": null
-      }
+      "tier": 2
     },
     {
       "name": "Sam Merrill",
@@ -1768,160 +1768,6 @@
       "tier": 2
     },
     {
-      "name": "Paul Reed",
-      "pos": "F",
-      "school": "DePaul",
-      "conference": "Big East",
-      "year": "Junior",
-      "height": "6'9\"",
-      "weight": "220 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 15.1,
-        "RPG": 10.7,
-        "APG": 1.6,
-        "SPG": 1.9,
-        "BPG": 2.6,
-        "FG%": 51.6,
-        "3P%": 30.8,
-        "FT%": 73.8,
-        "MPG": 31.7,
-        "GS": null,
-        "TOV": 2.3,
-        "FTA": 2.8,
-        "OREB": 3.3,
-        "DREB": 7.4,
-        "3PA": 1.8,
-        "FGA": 12.2,
-        "PF": 3.0
-      },
-      "advanced": {
-        "PER": 27.5,
-        "TS%": 56.1,
-        "eFG%": null,
-        "USG%": 24.0,
-        "AST%": 11.5,
-        "TOV%": 14.4,
-        "BPM": 9.2,
-        "OBPM": 4.9,
-        "DBPM": 4.2,
-        "OWS": 2.2,
-        "DWS": 2.3,
-        "Win Shares": 4.5,
-        "WS/40": 0.194
-      },
-      "skills": {
-        "Athleticism": 60,
-        "Defense": 88,
-        "Shooting": 51,
-        "Ball Handling": 9,
-        "IQ": 43,
-        "Leadership": 55
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 94.6,
-      "id": 719634761,
-      "rank": 27,
-      "tier": 2,
-      "combine": {
-        "wingspan_in": 86.0,
-        "height_no_shoes_in": 80.5,
-        "height_w_shoes_in": 81.25,
-        "standing_reach_in": 109.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 8.75,
-        "weight_lbs": 219.2,
-        "body_fat_pct": 6.83,
-        "max_vert_in": 37.5,
-        "standing_vert_in": 26.5,
-        "lane_agility_s": 12.29,
-        "shuttle_run_s": 2.67,
-        "three_quarter_sprint_s": 3.45,
-        "max_bench_reps": null
-      }
-    },
-    {
-      "name": "Ashton Hagans",
-      "pos": "G",
-      "school": "Kentucky",
-      "conference": "SEC",
-      "year": "Sophomore",
-      "height": "6'3\"",
-      "weight": "198 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 11.5,
-        "RPG": 3.9,
-        "APG": 6.4,
-        "SPG": 1.9,
-        "BPG": 0.2,
-        "FG%": 40.4,
-        "3P%": 25.8,
-        "FT%": 81.0,
-        "MPG": 33.1,
-        "GS": null,
-        "TOV": 3.4,
-        "FTA": 4.7,
-        "OREB": 0.2,
-        "DREB": 3.7,
-        "3PA": 2.1,
-        "FGA": 8.8,
-        "PF": 2.6
-      },
-      "advanced": {
-        "PER": 17.3,
-        "TS%": 51.9,
-        "eFG%": null,
-        "USG%": 22.4,
-        "AST%": 36.4,
-        "TOV%": 23.7,
-        "BPM": 4.7,
-        "OBPM": 1.9,
-        "DBPM": 2.8,
-        "OWS": 1.5,
-        "DWS": 1.8,
-        "Win Shares": 3.3,
-        "WS/40": 0.132
-      },
-      "skills": {
-        "Athleticism": 53,
-        "Defense": 43,
-        "Shooting": 36,
-        "Ball Handling": 52,
-        "IQ": 60,
-        "Leadership": 43
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 94.58,
-      "id": 1175077322,
-      "rank": 28,
-      "tier": 2,
-      "recruit_rank": 12,
-      "recruit_class_year": 2018,
-      "combine": {
-        "wingspan_in": 80.0,
-        "height_no_shoes_in": 73.5,
-        "height_w_shoes_in": 74.5,
-        "standing_reach_in": 99.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 9.0,
-        "weight_lbs": 193.0,
-        "body_fat_pct": 4.1,
-        "max_vert_in": 36.5,
-        "standing_vert_in": 29.5,
-        "lane_agility_s": 10.82,
-        "shuttle_run_s": 2.5,
-        "three_quarter_sprint_s": 3.13,
-        "max_bench_reps": null
-      }
-    },
-    {
       "name": "Jay Huff",
       "pos": "F",
       "school": "Virginia",
@@ -1978,7 +1824,7 @@
       "injury": "Clean",
       "draft_score": 94.46,
       "id": 2056343657,
-      "rank": 29,
+      "rank": 27,
       "tier": 2
     },
     {
@@ -2038,8 +1884,86 @@
       "injury": "Clean",
       "draft_score": 93.0,
       "id": 971558799,
-      "rank": 30,
+      "rank": 28,
       "tier": 2
+    },
+    {
+      "name": "Precious Achiuwa",
+      "pos": "F",
+      "school": "Memphis",
+      "conference": "AAC",
+      "year": "Freshman",
+      "height": "6'9\"",
+      "weight": "225 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 15.8,
+        "RPG": 10.8,
+        "APG": 1.0,
+        "SPG": 1.1,
+        "BPG": 1.9,
+        "FG%": 49.3,
+        "3P%": 32.5,
+        "FT%": 59.9,
+        "MPG": 30.4,
+        "GS": null,
+        "TOV": 2.8,
+        "FTA": 6.0,
+        "OREB": 3.0,
+        "DREB": 7.8,
+        "3PA": 1.3,
+        "FGA": 11.9,
+        "PF": 2.4
+      },
+      "advanced": {
+        "PER": 23.3,
+        "TS%": 53.4,
+        "eFG%": null,
+        "USG%": 27.7,
+        "AST%": 7.5,
+        "TOV%": 16.0,
+        "BPM": 5.8,
+        "OBPM": 2.5,
+        "DBPM": 3.4,
+        "OWS": 1.5,
+        "DWS": 2.9,
+        "Win Shares": 4.4,
+        "WS/40": 0.187
+      },
+      "skills": {
+        "Athleticism": 49,
+        "Defense": 67,
+        "Shooting": 38,
+        "Ball Handling": 0,
+        "IQ": 37,
+        "Leadership": 55
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 92.96,
+      "id": 1458307503,
+      "rank": 29,
+      "tier": 2,
+      "recruit_rank": 15,
+      "recruit_class_year": 2019,
+      "combine": {
+        "wingspan_in": 84.75,
+        "height_no_shoes_in": 79.5,
+        "height_w_shoes_in": 80.75,
+        "standing_reach_in": 108.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 10.0,
+        "weight_lbs": 234.0,
+        "body_fat_pct": 6.7,
+        "max_vert_in": null,
+        "standing_vert_in": null,
+        "lane_agility_s": null,
+        "shuttle_run_s": null,
+        "three_quarter_sprint_s": null,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Ron Harper Jr.",
@@ -2098,7 +2022,7 @@
       "injury": "Clean",
       "draft_score": 92.64,
       "id": 1770050692,
-      "rank": 31,
+      "rank": 30,
       "tier": 2
     },
     {
@@ -2158,7 +2082,7 @@
       "injury": "Clean",
       "draft_score": 92.32,
       "id": 750827156,
-      "rank": 32,
+      "rank": 31,
       "tier": 2,
       "combine": {
         "wingspan_in": 80.0,
@@ -2234,7 +2158,7 @@
       "injury": "Clean",
       "draft_score": 92.15,
       "id": 569424370,
-      "rank": 33,
+      "rank": 32,
       "tier": 2,
       "recruit_rank": 31,
       "recruit_class_year": 2019
@@ -2296,8 +2220,84 @@
       "injury": "Clean",
       "draft_score": 91.43,
       "id": 1900491834,
-      "rank": 34,
+      "rank": 33,
       "tier": 2
+    },
+    {
+      "name": "Paul Reed",
+      "pos": "F",
+      "school": "DePaul",
+      "conference": "Big East",
+      "year": "Junior",
+      "height": "6'9\"",
+      "weight": "220 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 15.1,
+        "RPG": 10.7,
+        "APG": 1.6,
+        "SPG": 1.9,
+        "BPG": 2.6,
+        "FG%": 51.6,
+        "3P%": 30.8,
+        "FT%": 73.8,
+        "MPG": 31.7,
+        "GS": null,
+        "TOV": 2.3,
+        "FTA": 2.8,
+        "OREB": 3.3,
+        "DREB": 7.4,
+        "3PA": 1.8,
+        "FGA": 12.2,
+        "PF": 3.0
+      },
+      "advanced": {
+        "PER": 27.5,
+        "TS%": 56.1,
+        "eFG%": null,
+        "USG%": 24.0,
+        "AST%": 11.5,
+        "TOV%": 14.4,
+        "BPM": 9.2,
+        "OBPM": 4.9,
+        "DBPM": 4.2,
+        "OWS": 2.2,
+        "DWS": 2.3,
+        "Win Shares": 4.5,
+        "WS/40": 0.194
+      },
+      "skills": {
+        "Athleticism": 60,
+        "Defense": 88,
+        "Shooting": 51,
+        "Ball Handling": 9,
+        "IQ": 43,
+        "Leadership": 55
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 91.31,
+      "id": 719634761,
+      "rank": 34,
+      "tier": 2,
+      "combine": {
+        "wingspan_in": 86.0,
+        "height_no_shoes_in": 80.5,
+        "height_w_shoes_in": 81.25,
+        "standing_reach_in": 109.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 8.75,
+        "weight_lbs": 219.2,
+        "body_fat_pct": 6.83,
+        "max_vert_in": 37.5,
+        "standing_vert_in": 26.5,
+        "lane_agility_s": 12.29,
+        "shuttle_run_s": 2.67,
+        "three_quarter_sprint_s": 3.45,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Freddie Gillespie",
@@ -2422,84 +2422,6 @@
       "recruit_class_year": 2019
     },
     {
-      "name": "Reggie Perry",
-      "pos": "F",
-      "school": "Mississippi State",
-      "conference": "SEC",
-      "year": "Sophomore",
-      "height": "6'10\"",
-      "weight": "250 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 17.4,
-        "RPG": 10.1,
-        "APG": 2.3,
-        "SPG": 0.8,
-        "BPG": 1.2,
-        "FG%": 50.0,
-        "3P%": 32.4,
-        "FT%": 76.8,
-        "MPG": 31.1,
-        "GS": null,
-        "TOV": 2.9,
-        "FTA": 6.3,
-        "OREB": 3.1,
-        "DREB": 6.9,
-        "3PA": 2.3,
-        "FGA": 11.8,
-        "PF": 3.1
-      },
-      "advanced": {
-        "PER": 28.5,
-        "TS%": 58.7,
-        "eFG%": null,
-        "USG%": 28.6,
-        "AST%": 16.4,
-        "TOV%": 16.4,
-        "BPM": 8.5,
-        "OBPM": 6.7,
-        "DBPM": 1.8,
-        "OWS": 3.7,
-        "DWS": 1.6,
-        "Win Shares": 5.2,
-        "WS/40": 0.218
-      },
-      "skills": {
-        "Athleticism": 47,
-        "Defense": 55,
-        "Shooting": 53,
-        "Ball Handling": 11,
-        "IQ": 44,
-        "Leadership": 59
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 90.21,
-      "id": 784293838,
-      "rank": 37,
-      "tier": 2,
-      "recruit_rank": 31,
-      "recruit_class_year": 2018,
-      "combine": {
-        "wingspan_in": 84.25,
-        "height_no_shoes_in": 80.25,
-        "height_w_shoes_in": 81.25,
-        "standing_reach_in": 106.5,
-        "hand_length_in": 9.25,
-        "hand_width_in": 11.0,
-        "weight_lbs": 249.6,
-        "body_fat_pct": 8.4,
-        "max_vert_in": 33.5,
-        "standing_vert_in": 30.0,
-        "lane_agility_s": 11.26,
-        "shuttle_run_s": 2.57,
-        "three_quarter_sprint_s": 3.25,
-        "max_bench_reps": null
-      }
-    },
-    {
       "name": "Caleb Homesley",
       "pos": "G",
       "school": "Liberty",
@@ -2556,7 +2478,7 @@
       "injury": "Clean",
       "draft_score": 90.15,
       "id": 1205807777,
-      "rank": 38,
+      "rank": 37,
       "tier": 2
     },
     {
@@ -2616,7 +2538,7 @@
       "injury": "Clean",
       "draft_score": 89.42,
       "id": 1721589092,
-      "rank": 39,
+      "rank": 38,
       "tier": 2,
       "combine": {
         "wingspan_in": 87.75,
@@ -2692,7 +2614,7 @@
       "injury": "Clean",
       "draft_score": 89.37,
       "id": 2033413807,
-      "rank": 40,
+      "rank": 39,
       "tier": 2
     },
     {
@@ -2752,7 +2674,7 @@
       "injury": "Clean",
       "draft_score": 89.13,
       "id": 1118971101,
-      "rank": 41,
+      "rank": 40,
       "tier": 2
     },
     {
@@ -2812,7 +2734,7 @@
       "injury": "Clean",
       "draft_score": 87.1,
       "id": 1497204181,
-      "rank": 42,
+      "rank": 41,
       "tier": 2
     },
     {
@@ -2872,82 +2794,84 @@
       "injury": "Clean",
       "draft_score": 86.95,
       "id": 2031124903,
-      "rank": 43,
+      "rank": 42,
       "tier": 2
     },
     {
-      "name": "Nathan Knight",
+      "name": "Reggie Perry",
       "pos": "F",
-      "school": "William & Mary",
-      "conference": "CAA",
-      "year": "Senior",
+      "school": "Mississippi State",
+      "conference": "SEC",
+      "year": "Sophomore",
       "height": "6'10\"",
-      "weight": "253 lbs",
+      "weight": "250 lbs",
       "hometown": "—",
       "stats": {
-        "PPG": 20.7,
-        "RPG": 10.5,
-        "APG": 1.8,
+        "PPG": 17.4,
+        "RPG": 10.1,
+        "APG": 2.3,
         "SPG": 0.8,
-        "BPG": 1.5,
-        "FG%": 52.4,
-        "3P%": 30.5,
-        "FT%": 77.3,
-        "MPG": 29.6,
+        "BPG": 1.2,
+        "FG%": 50.0,
+        "3P%": 32.4,
+        "FT%": 76.8,
+        "MPG": 31.1,
         "GS": null,
-        "TOV": 2.6,
-        "FTA": 7.3,
-        "OREB": 2.7,
-        "DREB": 7.8,
-        "3PA": 3.0,
-        "FGA": 13.5,
-        "PF": 3.0
+        "TOV": 2.9,
+        "FTA": 6.3,
+        "OREB": 3.1,
+        "DREB": 6.9,
+        "3PA": 2.3,
+        "FGA": 11.8,
+        "PF": 3.1
       },
       "advanced": {
-        "PER": 35.0,
-        "TS%": 61.0,
+        "PER": 28.5,
+        "TS%": 58.7,
         "eFG%": null,
-        "USG%": 34.7,
-        "AST%": 14.7,
-        "TOV%": 13.1,
-        "BPM": 7.2,
+        "USG%": 28.6,
+        "AST%": 16.4,
+        "TOV%": 16.4,
+        "BPM": 8.5,
         "OBPM": 6.7,
-        "DBPM": 0.5,
-        "OWS": 4.5,
-        "DWS": 1.8,
-        "Win Shares": 6.3,
-        "WS/40": 0.266
+        "DBPM": 1.8,
+        "OWS": 3.7,
+        "DWS": 1.6,
+        "Win Shares": 5.2,
+        "WS/40": 0.218
       },
       "skills": {
-        "Athleticism": 54,
-        "Defense": 63,
-        "Shooting": 54,
-        "Ball Handling": 9,
-        "IQ": 43,
-        "Leadership": 64
+        "Athleticism": 47,
+        "Defense": 55,
+        "Shooting": 53,
+        "Ball Handling": 11,
+        "IQ": 44,
+        "Leadership": 59
       },
       "strengths": [],
       "weaknesses": [],
       "comps": [],
       "injury": "Clean",
-      "draft_score": 86.67,
-      "id": 422293282,
-      "rank": 44,
+      "draft_score": 86.73,
+      "id": 784293838,
+      "rank": 43,
       "tier": 2,
+      "recruit_rank": 31,
+      "recruit_class_year": 2018,
       "combine": {
-        "wingspan_in": 86.0,
-        "height_no_shoes_in": 80.0,
-        "height_w_shoes_in": 81.75,
-        "standing_reach_in": 109.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 9.5,
-        "weight_lbs": 235.0,
-        "body_fat_pct": 8.2,
-        "max_vert_in": 31.5,
-        "standing_vert_in": 23.0,
-        "lane_agility_s": 11.56,
-        "shuttle_run_s": 2.96,
-        "three_quarter_sprint_s": 3.31,
+        "wingspan_in": 84.25,
+        "height_no_shoes_in": 80.25,
+        "height_w_shoes_in": 81.25,
+        "standing_reach_in": 106.5,
+        "hand_length_in": 9.25,
+        "hand_width_in": 11.0,
+        "weight_lbs": 249.6,
+        "body_fat_pct": 8.4,
+        "max_vert_in": 33.5,
+        "standing_vert_in": 30.0,
+        "lane_agility_s": 11.26,
+        "shuttle_run_s": 2.57,
+        "three_quarter_sprint_s": 3.25,
         "max_bench_reps": null
       }
     },
@@ -3008,7 +2932,7 @@
       "injury": "Clean",
       "draft_score": 86.06,
       "id": 673574189,
-      "rank": 45,
+      "rank": 44,
       "tier": 2,
       "combine": {
         "wingspan_in": 87.5,
@@ -3084,8 +3008,8 @@
       "injury": "Clean",
       "draft_score": 85.7,
       "id": 1493226565,
-      "rank": 46,
-      "tier": 3
+      "rank": 45,
+      "tier": 2
     },
     {
       "name": "Paul Atkinson",
@@ -3144,7 +3068,7 @@
       "injury": "Clean",
       "draft_score": 85.38,
       "id": 257255000,
-      "rank": 47,
+      "rank": 46,
       "tier": 3
     },
     {
@@ -3204,7 +3128,7 @@
       "injury": "Clean",
       "draft_score": 85.01,
       "id": 111561360,
-      "rank": 48,
+      "rank": 47,
       "tier": 3
     },
     {
@@ -3264,7 +3188,7 @@
       "injury": "Clean",
       "draft_score": 84.4,
       "id": 280922362,
-      "rank": 49,
+      "rank": 48,
       "tier": 3
     },
     {
@@ -3324,8 +3248,84 @@
       "injury": "Clean",
       "draft_score": 84.01,
       "id": 665126172,
-      "rank": 50,
+      "rank": 49,
       "tier": 3
+    },
+    {
+      "name": "Nathan Knight",
+      "pos": "F",
+      "school": "William & Mary",
+      "conference": "CAA",
+      "year": "Senior",
+      "height": "6'10\"",
+      "weight": "253 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 20.7,
+        "RPG": 10.5,
+        "APG": 1.8,
+        "SPG": 0.8,
+        "BPG": 1.5,
+        "FG%": 52.4,
+        "3P%": 30.5,
+        "FT%": 77.3,
+        "MPG": 29.6,
+        "GS": null,
+        "TOV": 2.6,
+        "FTA": 7.3,
+        "OREB": 2.7,
+        "DREB": 7.8,
+        "3PA": 3.0,
+        "FGA": 13.5,
+        "PF": 3.0
+      },
+      "advanced": {
+        "PER": 35.0,
+        "TS%": 61.0,
+        "eFG%": null,
+        "USG%": 34.7,
+        "AST%": 14.7,
+        "TOV%": 13.1,
+        "BPM": 7.2,
+        "OBPM": 6.7,
+        "DBPM": 0.5,
+        "OWS": 4.5,
+        "DWS": 1.8,
+        "Win Shares": 6.3,
+        "WS/40": 0.266
+      },
+      "skills": {
+        "Athleticism": 54,
+        "Defense": 63,
+        "Shooting": 54,
+        "Ball Handling": 9,
+        "IQ": 43,
+        "Leadership": 64
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 83.82,
+      "id": 422293282,
+      "rank": 50,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 86.0,
+        "height_no_shoes_in": 80.0,
+        "height_w_shoes_in": 81.75,
+        "standing_reach_in": 109.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 9.5,
+        "weight_lbs": 235.0,
+        "body_fat_pct": 8.2,
+        "max_vert_in": 31.5,
+        "standing_vert_in": 23.0,
+        "lane_agility_s": 11.56,
+        "shuttle_run_s": 2.96,
+        "three_quarter_sprint_s": 3.31,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Jared Butler",
@@ -3992,6 +3992,82 @@
       "tier": 3
     },
     {
+      "name": "Robert Woodard",
+      "pos": "G",
+      "school": "Mississippi State",
+      "conference": "SEC",
+      "year": "Sophomore",
+      "height": "6'7\"",
+      "weight": "230 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 11.4,
+        "RPG": 6.5,
+        "APG": 1.3,
+        "SPG": 1.1,
+        "BPG": 1.0,
+        "FG%": 49.5,
+        "3P%": 42.9,
+        "FT%": 64.1,
+        "MPG": 33.1,
+        "GS": null,
+        "TOV": 1.9,
+        "FTA": 2.5,
+        "OREB": 2.2,
+        "DREB": 4.4,
+        "3PA": 2.3,
+        "FGA": 8.9,
+        "PF": 1.9
+      },
+      "advanced": {
+        "PER": 18.1,
+        "TS%": 56.4,
+        "eFG%": null,
+        "USG%": 18.2,
+        "AST%": 7.6,
+        "TOV%": 15.7,
+        "BPM": 6.0,
+        "OBPM": 4.1,
+        "DBPM": 1.9,
+        "OWS": 2.0,
+        "DWS": 1.3,
+        "Win Shares": 3.3,
+        "WS/40": 0.128
+      },
+      "skills": {
+        "Athleticism": 40,
+        "Defense": 44,
+        "Shooting": 54,
+        "Ball Handling": 10,
+        "IQ": 42,
+        "Leadership": 38
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 80.86,
+      "id": 236261621,
+      "rank": 62,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 86.0,
+        "height_no_shoes_in": 77.5,
+        "height_w_shoes_in": 79.0,
+        "standing_reach_in": 105.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 10.75,
+        "weight_lbs": 230.2,
+        "body_fat_pct": 4.5,
+        "max_vert_in": 38.0,
+        "standing_vert_in": 32.0,
+        "lane_agility_s": 11.1,
+        "shuttle_run_s": 2.49,
+        "three_quarter_sprint_s": 3.18,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Michael Hughes",
       "pos": "C",
       "school": "Duquesne",
@@ -4048,7 +4124,7 @@
       "injury": "Clean",
       "draft_score": 80.83,
       "id": 611990234,
-      "rank": 62,
+      "rank": 63,
       "tier": 3
     },
     {
@@ -4108,7 +4184,7 @@
       "injury": "Clean",
       "draft_score": 80.72,
       "id": 492881997,
-      "rank": 63,
+      "rank": 64,
       "tier": 3
     },
     {
@@ -4168,7 +4244,7 @@
       "injury": "Clean",
       "draft_score": 80.62,
       "id": 1943994762,
-      "rank": 64,
+      "rank": 65,
       "tier": 3,
       "combine": {
         "wingspan_in": 78.0,
@@ -4244,7 +4320,7 @@
       "injury": "Clean",
       "draft_score": 80.61,
       "id": 356843842,
-      "rank": 65,
+      "rank": 66,
       "tier": 3
     },
     {
@@ -4304,7 +4380,7 @@
       "injury": "Clean",
       "draft_score": 80.54,
       "id": 31555416,
-      "rank": 66,
+      "rank": 67,
       "tier": 3
     },
     {
@@ -4364,7 +4440,7 @@
       "injury": "Clean",
       "draft_score": 80.24,
       "id": 1230503705,
-      "rank": 67,
+      "rank": 68,
       "tier": 3
     },
     {
@@ -4424,10 +4500,86 @@
       "injury": "Clean",
       "draft_score": 80.05,
       "id": 303195357,
-      "rank": 68,
+      "rank": 69,
       "tier": 3,
       "recruit_rank": 9,
       "recruit_class_year": 2018
+    },
+    {
+      "name": "Cassius Winston",
+      "pos": "G",
+      "school": "Michigan State",
+      "conference": "Big Ten",
+      "year": "Senior",
+      "height": "6'1\"",
+      "weight": "185 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 18.6,
+        "RPG": 2.5,
+        "APG": 5.9,
+        "SPG": 1.2,
+        "BPG": 0.0,
+        "FG%": 44.8,
+        "3P%": 43.2,
+        "FT%": 85.2,
+        "MPG": 32.7,
+        "GS": null,
+        "TOV": 3.2,
+        "FTA": 4.5,
+        "OREB": 0.2,
+        "DREB": 2.3,
+        "3PA": 5.6,
+        "FGA": 13.8,
+        "PF": 2.0
+      },
+      "advanced": {
+        "PER": 23.0,
+        "TS%": 58.5,
+        "eFG%": null,
+        "USG%": 29.1,
+        "AST%": 36.5,
+        "TOV%": 16.8,
+        "BPM": 8.9,
+        "OBPM": 7.0,
+        "DBPM": 1.9,
+        "OWS": 3.5,
+        "DWS": 1.5,
+        "Win Shares": 5.0,
+        "WS/40": 0.204
+      },
+      "skills": {
+        "Athleticism": 56,
+        "Defense": 25,
+        "Shooting": 66,
+        "Ball Handling": 48,
+        "IQ": 60,
+        "Leadership": 50
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 79.99,
+      "id": 320310741,
+      "rank": 70,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 78.0,
+        "height_no_shoes_in": 72.5,
+        "height_w_shoes_in": 73.5,
+        "standing_reach_in": 97.0,
+        "hand_length_in": 8.75,
+        "hand_width_in": 8.25,
+        "weight_lbs": 196.0,
+        "body_fat_pct": 9.0,
+        "max_vert_in": 28.0,
+        "standing_vert_in": 24.0,
+        "lane_agility_s": 11.15,
+        "shuttle_run_s": 2.74,
+        "three_quarter_sprint_s": 3.61,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Justin Champagnie",
@@ -4486,7 +4638,7 @@
       "injury": "Clean",
       "draft_score": 79.74,
       "id": 2021350998,
-      "rank": 69,
+      "rank": 71,
       "tier": 3
     },
     {
@@ -4546,7 +4698,7 @@
       "injury": "Clean",
       "draft_score": 79.49,
       "id": 1200079787,
-      "rank": 70,
+      "rank": 72,
       "tier": 3
     },
     {
@@ -4606,7 +4758,7 @@
       "injury": "Clean",
       "draft_score": 79.4,
       "id": 1291249895,
-      "rank": 71,
+      "rank": 73,
       "tier": 3,
       "recruit_rank": 10,
       "recruit_class_year": 2019
@@ -4668,7 +4820,7 @@
       "injury": "Clean",
       "draft_score": 79.19,
       "id": 150912964,
-      "rank": 72,
+      "rank": 74,
       "tier": 3
     },
     {
@@ -4728,7 +4880,7 @@
       "injury": "Clean",
       "draft_score": 78.83,
       "id": 178746944,
-      "rank": 73,
+      "rank": 75,
       "tier": 3
     },
     {
@@ -4788,84 +4940,8 @@
       "injury": "Clean",
       "draft_score": 78.76,
       "id": 197124011,
-      "rank": 74,
+      "rank": 76,
       "tier": 3
-    },
-    {
-      "name": "Robert Woodard",
-      "pos": "G",
-      "school": "Mississippi State",
-      "conference": "SEC",
-      "year": "Sophomore",
-      "height": "6'7\"",
-      "weight": "230 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 11.4,
-        "RPG": 6.5,
-        "APG": 1.3,
-        "SPG": 1.1,
-        "BPG": 1.0,
-        "FG%": 49.5,
-        "3P%": 42.9,
-        "FT%": 64.1,
-        "MPG": 33.1,
-        "GS": null,
-        "TOV": 1.9,
-        "FTA": 2.5,
-        "OREB": 2.2,
-        "DREB": 4.4,
-        "3PA": 2.3,
-        "FGA": 8.9,
-        "PF": 1.9
-      },
-      "advanced": {
-        "PER": 18.1,
-        "TS%": 56.4,
-        "eFG%": null,
-        "USG%": 18.2,
-        "AST%": 7.6,
-        "TOV%": 15.7,
-        "BPM": 6.0,
-        "OBPM": 4.1,
-        "DBPM": 1.9,
-        "OWS": 2.0,
-        "DWS": 1.3,
-        "Win Shares": 3.3,
-        "WS/40": 0.128
-      },
-      "skills": {
-        "Athleticism": 40,
-        "Defense": 44,
-        "Shooting": 54,
-        "Ball Handling": 10,
-        "IQ": 42,
-        "Leadership": 38
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 78.52,
-      "id": 236261621,
-      "rank": 75,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 86.0,
-        "height_no_shoes_in": 77.5,
-        "height_w_shoes_in": 79.0,
-        "standing_reach_in": 105.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 10.75,
-        "weight_lbs": 230.2,
-        "body_fat_pct": 4.5,
-        "max_vert_in": 38.0,
-        "standing_vert_in": 32.0,
-        "lane_agility_s": 11.1,
-        "shuttle_run_s": 2.49,
-        "three_quarter_sprint_s": 3.18,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Oscar Da Silva",
@@ -4924,7 +5000,7 @@
       "injury": "Clean",
       "draft_score": 78.51,
       "id": 860645470,
-      "rank": 76,
+      "rank": 77,
       "tier": 3
     },
     {
@@ -4984,7 +5060,7 @@
       "injury": "Clean",
       "draft_score": 78.4,
       "id": 844057275,
-      "rank": 77,
+      "rank": 78,
       "tier": 3
     },
     {
@@ -5044,7 +5120,7 @@
       "injury": "Clean",
       "draft_score": 78.14,
       "id": 756086798,
-      "rank": 78,
+      "rank": 79,
       "tier": 3,
       "recruit_rank": 4,
       "recruit_class_year": 2019
@@ -5106,7 +5182,7 @@
       "injury": "Clean",
       "draft_score": 77.46,
       "id": 2022480194,
-      "rank": 79,
+      "rank": 80,
       "tier": 3
     },
     {
@@ -5166,7 +5242,7 @@
       "injury": "Clean",
       "draft_score": 77.41,
       "id": 1882552476,
-      "rank": 80,
+      "rank": 81,
       "tier": 3
     },
     {
@@ -5226,7 +5302,7 @@
       "injury": "Clean",
       "draft_score": 77.25,
       "id": 158901339,
-      "rank": 81,
+      "rank": 82,
       "tier": 3
     },
     {
@@ -5286,8 +5362,86 @@
       "injury": "Clean",
       "draft_score": 77.19,
       "id": 990444674,
-      "rank": 82,
+      "rank": 83,
       "tier": 3
+    },
+    {
+      "name": "Immanuel Quickley",
+      "pos": "G",
+      "school": "Kentucky",
+      "conference": "SEC",
+      "year": "Sophomore",
+      "height": "6'3\"",
+      "weight": "188 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 16.1,
+        "RPG": 4.2,
+        "APG": 1.9,
+        "SPG": 0.9,
+        "BPG": 0.1,
+        "FG%": 41.7,
+        "3P%": 42.8,
+        "FT%": 92.3,
+        "MPG": 33.0,
+        "GS": null,
+        "TOV": 1.6,
+        "FTA": 5.2,
+        "OREB": 0.5,
+        "DREB": 3.7,
+        "3PA": 4.8,
+        "FGA": 11.0,
+        "PF": 2.3
+      },
+      "advanced": {
+        "PER": 20.4,
+        "TS%": 59.5,
+        "eFG%": null,
+        "USG%": 23.4,
+        "AST%": 11.4,
+        "TOV%": 10.6,
+        "BPM": 7.3,
+        "OBPM": 5.3,
+        "DBPM": 2.0,
+        "OWS": 3.4,
+        "DWS": 1.4,
+        "Win Shares": 4.8,
+        "WS/40": 0.192
+      },
+      "skills": {
+        "Athleticism": 46,
+        "Defense": 28,
+        "Shooting": 68,
+        "Ball Handling": 20,
+        "IQ": 43,
+        "Leadership": 41
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 76.86,
+      "id": 1574430062,
+      "rank": 84,
+      "tier": 3,
+      "recruit_rank": 22,
+      "recruit_class_year": 2018,
+      "combine": {
+        "wingspan_in": 80.25,
+        "height_no_shoes_in": 74.0,
+        "height_w_shoes_in": 75.0,
+        "standing_reach_in": 99.0,
+        "hand_length_in": 8.0,
+        "hand_width_in": 8.75,
+        "weight_lbs": 185.8,
+        "body_fat_pct": 8.2,
+        "max_vert_in": 35.5,
+        "standing_vert_in": 29.5,
+        "lane_agility_s": 11.21,
+        "shuttle_run_s": 2.46,
+        "three_quarter_sprint_s": 3.17,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Jaime Echenique",
@@ -5346,7 +5500,7 @@
       "injury": "Clean",
       "draft_score": 76.74,
       "id": 219491588,
-      "rank": 83,
+      "rank": 85,
       "tier": 3
     },
     {
@@ -5406,7 +5560,7 @@
       "injury": "Clean",
       "draft_score": 76.72,
       "id": 1812197448,
-      "rank": 84,
+      "rank": 86,
       "tier": 3
     },
     {
@@ -5466,7 +5620,7 @@
       "injury": "Clean",
       "draft_score": 76.11,
       "id": 413555768,
-      "rank": 85,
+      "rank": 87,
       "tier": 3
     },
     {
@@ -5526,7 +5680,7 @@
       "injury": "Clean",
       "draft_score": 75.99,
       "id": 58040718,
-      "rank": 86,
+      "rank": 88,
       "tier": 3
     },
     {
@@ -5586,84 +5740,8 @@
       "injury": "Clean",
       "draft_score": 75.8,
       "id": 1646555995,
-      "rank": 87,
+      "rank": 89,
       "tier": 3
-    },
-    {
-      "name": "Cassius Winston",
-      "pos": "G",
-      "school": "Michigan State",
-      "conference": "Big Ten",
-      "year": "Senior",
-      "height": "6'1\"",
-      "weight": "185 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 18.6,
-        "RPG": 2.5,
-        "APG": 5.9,
-        "SPG": 1.2,
-        "BPG": 0.0,
-        "FG%": 44.8,
-        "3P%": 43.2,
-        "FT%": 85.2,
-        "MPG": 32.7,
-        "GS": null,
-        "TOV": 3.2,
-        "FTA": 4.5,
-        "OREB": 0.2,
-        "DREB": 2.3,
-        "3PA": 5.6,
-        "FGA": 13.8,
-        "PF": 2.0
-      },
-      "advanced": {
-        "PER": 23.0,
-        "TS%": 58.5,
-        "eFG%": null,
-        "USG%": 29.1,
-        "AST%": 36.5,
-        "TOV%": 16.8,
-        "BPM": 8.9,
-        "OBPM": 7.0,
-        "DBPM": 1.9,
-        "OWS": 3.5,
-        "DWS": 1.5,
-        "Win Shares": 5.0,
-        "WS/40": 0.204
-      },
-      "skills": {
-        "Athleticism": 56,
-        "Defense": 25,
-        "Shooting": 66,
-        "Ball Handling": 48,
-        "IQ": 60,
-        "Leadership": 50
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 75.53,
-      "id": 320310741,
-      "rank": 88,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 78.0,
-        "height_no_shoes_in": 72.5,
-        "height_w_shoes_in": 73.5,
-        "standing_reach_in": 97.0,
-        "hand_length_in": 8.75,
-        "hand_width_in": 8.25,
-        "weight_lbs": 196.0,
-        "body_fat_pct": 9.0,
-        "max_vert_in": 28.0,
-        "standing_vert_in": 24.0,
-        "lane_agility_s": 11.15,
-        "shuttle_run_s": 2.74,
-        "three_quarter_sprint_s": 3.61,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Kim Aiken Jr.",
@@ -5722,7 +5800,7 @@
       "injury": "Clean",
       "draft_score": 75.52,
       "id": 490581397,
-      "rank": 89,
+      "rank": 90,
       "tier": 3
     },
     {
@@ -5782,7 +5860,7 @@
       "injury": "Clean",
       "draft_score": 75.44,
       "id": 1310304667,
-      "rank": 90,
+      "rank": 91,
       "tier": 3
     },
     {
@@ -5842,7 +5920,7 @@
       "injury": "Clean",
       "draft_score": 75.31,
       "id": 1151431336,
-      "rank": 91,
+      "rank": 92,
       "tier": 3,
       "recruit_rank": 13,
       "recruit_class_year": 2020
@@ -5904,7 +5982,7 @@
       "injury": "Clean",
       "draft_score": 75.27,
       "id": 769742178,
-      "rank": 92,
+      "rank": 93,
       "tier": 3
     },
     {
@@ -5964,7 +6042,7 @@
       "injury": "Clean",
       "draft_score": 75.18,
       "id": 399953505,
-      "rank": 93,
+      "rank": 94,
       "tier": 3
     },
     {
@@ -6024,7 +6102,7 @@
       "injury": "Clean",
       "draft_score": 75.0,
       "id": 521125388,
-      "rank": 94,
+      "rank": 95,
       "tier": 3
     },
     {
@@ -6084,7 +6162,7 @@
       "injury": "Clean",
       "draft_score": 74.97,
       "id": 2113449826,
-      "rank": 95,
+      "rank": 96,
       "tier": 3
     },
     {
@@ -6144,7 +6222,7 @@
       "injury": "Clean",
       "draft_score": 74.9,
       "id": 2141887147,
-      "rank": 96,
+      "rank": 97,
       "tier": 3
     },
     {
@@ -6204,7 +6282,7 @@
       "injury": "Clean",
       "draft_score": 74.87,
       "id": 1417927211,
-      "rank": 97,
+      "rank": 98,
       "tier": 3
     },
     {
@@ -6264,86 +6342,8 @@
       "injury": "Clean",
       "draft_score": 74.71,
       "id": 243331431,
-      "rank": 98,
-      "tier": 3
-    },
-    {
-      "name": "Immanuel Quickley",
-      "pos": "G",
-      "school": "Kentucky",
-      "conference": "SEC",
-      "year": "Sophomore",
-      "height": "6'3\"",
-      "weight": "188 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 16.1,
-        "RPG": 4.2,
-        "APG": 1.9,
-        "SPG": 0.9,
-        "BPG": 0.1,
-        "FG%": 41.7,
-        "3P%": 42.8,
-        "FT%": 92.3,
-        "MPG": 33.0,
-        "GS": null,
-        "TOV": 1.6,
-        "FTA": 5.2,
-        "OREB": 0.5,
-        "DREB": 3.7,
-        "3PA": 4.8,
-        "FGA": 11.0,
-        "PF": 2.3
-      },
-      "advanced": {
-        "PER": 20.4,
-        "TS%": 59.5,
-        "eFG%": null,
-        "USG%": 23.4,
-        "AST%": 11.4,
-        "TOV%": 10.6,
-        "BPM": 7.3,
-        "OBPM": 5.3,
-        "DBPM": 2.0,
-        "OWS": 3.4,
-        "DWS": 1.4,
-        "Win Shares": 4.8,
-        "WS/40": 0.192
-      },
-      "skills": {
-        "Athleticism": 46,
-        "Defense": 28,
-        "Shooting": 68,
-        "Ball Handling": 20,
-        "IQ": 43,
-        "Leadership": 41
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 74.52,
-      "id": 1574430062,
       "rank": 99,
-      "tier": 3,
-      "recruit_rank": 22,
-      "recruit_class_year": 2018,
-      "combine": {
-        "wingspan_in": 80.25,
-        "height_no_shoes_in": 74.0,
-        "height_w_shoes_in": 75.0,
-        "standing_reach_in": 99.0,
-        "hand_length_in": 8.0,
-        "hand_width_in": 8.75,
-        "weight_lbs": 185.8,
-        "body_fat_pct": 8.2,
-        "max_vert_in": 35.5,
-        "standing_vert_in": 29.5,
-        "lane_agility_s": 11.21,
-        "shuttle_run_s": 2.46,
-        "three_quarter_sprint_s": 3.17,
-        "max_bench_reps": null
-      }
+      "tier": 3
     },
     {
       "name": "Shamarkus Kennedy",
@@ -6648,6 +6648,160 @@
       "tier": 3
     },
     {
+      "name": "Cassius Stanley",
+      "pos": "G",
+      "school": "Duke",
+      "conference": "ACC",
+      "year": "Freshman",
+      "height": "6'6\"",
+      "weight": "193 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 12.6,
+        "RPG": 4.9,
+        "APG": 1.0,
+        "SPG": 0.7,
+        "BPG": 0.7,
+        "FG%": 47.4,
+        "3P%": 36.0,
+        "FT%": 73.3,
+        "MPG": 27.4,
+        "GS": null,
+        "TOV": 1.9,
+        "FTA": 3.6,
+        "OREB": 1.9,
+        "DREB": 3.0,
+        "3PA": 3.0,
+        "FGA": 9.3,
+        "PF": 2.2
+      },
+      "advanced": {
+        "PER": 18.5,
+        "TS%": 56.9,
+        "eFG%": null,
+        "USG%": 21.9,
+        "AST%": 6.6,
+        "TOV%": 14.4,
+        "BPM": 5.4,
+        "OBPM": 3.6,
+        "DBPM": 1.9,
+        "OWS": 1.9,
+        "DWS": 1.4,
+        "Win Shares": 3.3,
+        "WS/40": 0.166
+      },
+      "skills": {
+        "Athleticism": 36,
+        "Defense": 32,
+        "Shooting": 51,
+        "Ball Handling": 7,
+        "IQ": 39,
+        "Leadership": 35
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 73.55,
+      "id": 1586837339,
+      "rank": 105,
+      "tier": 3,
+      "recruit_rank": 37,
+      "recruit_class_year": 2019,
+      "combine": {
+        "wingspan_in": 79.0,
+        "height_no_shoes_in": 77.0,
+        "height_w_shoes_in": 78.25,
+        "standing_reach_in": 99.5,
+        "hand_length_in": 8.25,
+        "hand_width_in": 9.0,
+        "weight_lbs": 201.6,
+        "body_fat_pct": 5.8,
+        "max_vert_in": 44.0,
+        "standing_vert_in": 34.5,
+        "lane_agility_s": 11.4,
+        "shuttle_run_s": 2.43,
+        "three_quarter_sprint_s": 3.09,
+        "max_bench_reps": null
+      }
+    },
+    {
+      "name": "Trent Forrest",
+      "pos": "G",
+      "school": "Florida State",
+      "conference": "ACC",
+      "year": "Senior",
+      "height": "6'4\"",
+      "weight": "210 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 11.6,
+        "RPG": 4.4,
+        "APG": 4.0,
+        "SPG": 1.9,
+        "BPG": 0.6,
+        "FG%": 45.9,
+        "3P%": 28.1,
+        "FT%": 82.2,
+        "MPG": 30.9,
+        "GS": null,
+        "TOV": 3.0,
+        "FTA": 3.3,
+        "OREB": 1.1,
+        "DREB": 3.3,
+        "3PA": 1.8,
+        "FGA": 9.1,
+        "PF": 1.5
+      },
+      "advanced": {
+        "PER": 19.2,
+        "TS%": 54.2,
+        "eFG%": null,
+        "USG%": 21.9,
+        "AST%": 24.0,
+        "TOV%": 21.8,
+        "BPM": 6.6,
+        "OBPM": 2.8,
+        "DBPM": 3.8,
+        "OWS": 1.7,
+        "DWS": 1.9,
+        "Win Shares": 3.6,
+        "WS/40": 0.15
+      },
+      "skills": {
+        "Athleticism": 53,
+        "Defense": 48,
+        "Shooting": 47,
+        "Ball Handling": 29,
+        "IQ": 51,
+        "Leadership": 39
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 73.41,
+      "id": 235179070,
+      "rank": 106,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 79.5,
+        "height_no_shoes_in": 75.5,
+        "height_w_shoes_in": 76.75,
+        "standing_reach_in": 102.5,
+        "hand_length_in": 9.0,
+        "hand_width_in": 9.75,
+        "weight_lbs": 203.0,
+        "body_fat_pct": 5.65,
+        "max_vert_in": 34.5,
+        "standing_vert_in": 28.0,
+        "lane_agility_s": 11.04,
+        "shuttle_run_s": 2.5,
+        "three_quarter_sprint_s": 3.18,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Akwasi Yeboah",
       "pos": "G",
       "school": "Rutgers",
@@ -6704,7 +6858,7 @@
       "injury": "Clean",
       "draft_score": 73.21,
       "id": 837690760,
-      "rank": 105,
+      "rank": 107,
       "tier": 3
     },
     {
@@ -6764,7 +6918,7 @@
       "injury": "Clean",
       "draft_score": 73.1,
       "id": 424762610,
-      "rank": 106,
+      "rank": 108,
       "tier": 3
     },
     {
@@ -6824,7 +6978,7 @@
       "injury": "Clean",
       "draft_score": 73.0,
       "id": 1473845384,
-      "rank": 107,
+      "rank": 109,
       "tier": 3
     },
     {
@@ -6884,7 +7038,7 @@
       "injury": "Clean",
       "draft_score": 72.81,
       "id": 1819322387,
-      "rank": 108,
+      "rank": 110,
       "tier": 3
     },
     {
@@ -6944,7 +7098,7 @@
       "injury": "Clean",
       "draft_score": 72.8,
       "id": 895753844,
-      "rank": 109,
+      "rank": 111,
       "tier": 3
     },
     {
@@ -7004,7 +7158,7 @@
       "injury": "Clean",
       "draft_score": 72.61,
       "id": 211428115,
-      "rank": 110,
+      "rank": 112,
       "tier": 3
     },
     {
@@ -7064,7 +7218,7 @@
       "injury": "Clean",
       "draft_score": 72.51,
       "id": 1148613266,
-      "rank": 111,
+      "rank": 113,
       "tier": 3,
       "recruit_rank": 46,
       "recruit_class_year": 2019
@@ -7126,7 +7280,7 @@
       "injury": "Clean",
       "draft_score": 72.5,
       "id": 2140288446,
-      "rank": 112,
+      "rank": 114,
       "tier": 3
     },
     {
@@ -7186,7 +7340,7 @@
       "injury": "Clean",
       "draft_score": 72.22,
       "id": 1098439198,
-      "rank": 113,
+      "rank": 115,
       "tier": 3,
       "recruit_rank": 6,
       "recruit_class_year": 2018
@@ -7248,7 +7402,7 @@
       "injury": "Clean",
       "draft_score": 72.08,
       "id": 1933690048,
-      "rank": 114,
+      "rank": 116,
       "tier": 3
     },
     {
@@ -7308,7 +7462,7 @@
       "injury": "Clean",
       "draft_score": 71.71,
       "id": 2131097730,
-      "rank": 115,
+      "rank": 117,
       "tier": 3,
       "recruit_rank": 16,
       "recruit_class_year": 2019
@@ -7370,7 +7524,7 @@
       "injury": "Clean",
       "draft_score": 71.67,
       "id": 622544758,
-      "rank": 116,
+      "rank": 118,
       "tier": 3,
       "recruit_rank": 23,
       "recruit_class_year": 2018
@@ -7432,7 +7586,7 @@
       "injury": "Clean",
       "draft_score": 71.63,
       "id": 657116467,
-      "rank": 117,
+      "rank": 119,
       "tier": 3
     },
     {
@@ -7492,7 +7646,7 @@
       "injury": "Clean",
       "draft_score": 71.33,
       "id": 1914929010,
-      "rank": 118,
+      "rank": 120,
       "tier": 3
     },
     {
@@ -7552,88 +7706,10 @@
       "injury": "Clean",
       "draft_score": 71.24,
       "id": 1617057529,
-      "rank": 119,
+      "rank": 121,
       "tier": 3,
       "recruit_rank": 22,
       "recruit_class_year": 2019
-    },
-    {
-      "name": "Cassius Stanley",
-      "pos": "G",
-      "school": "Duke",
-      "conference": "ACC",
-      "year": "Freshman",
-      "height": "6'6\"",
-      "weight": "193 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 12.6,
-        "RPG": 4.9,
-        "APG": 1.0,
-        "SPG": 0.7,
-        "BPG": 0.7,
-        "FG%": 47.4,
-        "3P%": 36.0,
-        "FT%": 73.3,
-        "MPG": 27.4,
-        "GS": null,
-        "TOV": 1.9,
-        "FTA": 3.6,
-        "OREB": 1.9,
-        "DREB": 3.0,
-        "3PA": 3.0,
-        "FGA": 9.3,
-        "PF": 2.2
-      },
-      "advanced": {
-        "PER": 18.5,
-        "TS%": 56.9,
-        "eFG%": null,
-        "USG%": 21.9,
-        "AST%": 6.6,
-        "TOV%": 14.4,
-        "BPM": 5.4,
-        "OBPM": 3.6,
-        "DBPM": 1.9,
-        "OWS": 1.9,
-        "DWS": 1.4,
-        "Win Shares": 3.3,
-        "WS/40": 0.166
-      },
-      "skills": {
-        "Athleticism": 36,
-        "Defense": 32,
-        "Shooting": 51,
-        "Ball Handling": 7,
-        "IQ": 39,
-        "Leadership": 35
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 71.18,
-      "id": 1586837339,
-      "rank": 120,
-      "tier": 3,
-      "recruit_rank": 37,
-      "recruit_class_year": 2019,
-      "combine": {
-        "wingspan_in": 79.0,
-        "height_no_shoes_in": 77.0,
-        "height_w_shoes_in": 78.25,
-        "standing_reach_in": 99.5,
-        "hand_length_in": 8.25,
-        "hand_width_in": 9.0,
-        "weight_lbs": 201.6,
-        "body_fat_pct": 5.8,
-        "max_vert_in": 44.0,
-        "standing_vert_in": 34.5,
-        "lane_agility_s": 11.4,
-        "shuttle_run_s": 2.43,
-        "three_quarter_sprint_s": 3.09,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Miles McBride",
@@ -7692,7 +7768,7 @@
       "injury": "Clean",
       "draft_score": 70.91,
       "id": 971609915,
-      "rank": 121,
+      "rank": 122,
       "tier": 3
     },
     {
@@ -7752,7 +7828,7 @@
       "injury": "Clean",
       "draft_score": 70.88,
       "id": 238826034,
-      "rank": 122,
+      "rank": 123,
       "tier": 3
     },
     {
@@ -7812,7 +7888,7 @@
       "injury": "Clean",
       "draft_score": 70.86,
       "id": 2028646495,
-      "rank": 123,
+      "rank": 124,
       "tier": 3
     },
     {
@@ -7872,7 +7948,7 @@
       "injury": "Clean",
       "draft_score": 70.66,
       "id": 126315814,
-      "rank": 124,
+      "rank": 125,
       "tier": 3
     },
     {
@@ -7932,7 +8008,7 @@
       "injury": "Clean",
       "draft_score": 70.49,
       "id": 674264278,
-      "rank": 125,
+      "rank": 126,
       "tier": 3
     },
     {
@@ -7992,7 +8068,7 @@
       "injury": "Clean",
       "draft_score": 70.35,
       "id": 1764032885,
-      "rank": 126,
+      "rank": 127,
       "tier": 3
     },
     {
@@ -8052,7 +8128,7 @@
       "injury": "Clean",
       "draft_score": 70.22,
       "id": 1470126056,
-      "rank": 127,
+      "rank": 128,
       "tier": 3
     },
     {
@@ -8112,7 +8188,7 @@
       "injury": "Clean",
       "draft_score": 70.0,
       "id": 499915514,
-      "rank": 128,
+      "rank": 129,
       "tier": 3
     },
     {
@@ -8172,7 +8248,7 @@
       "injury": "Clean",
       "draft_score": 69.84,
       "id": 1823723677,
-      "rank": 129,
+      "rank": 130,
       "tier": 3
     },
     {
@@ -8232,7 +8308,7 @@
       "injury": "Clean",
       "draft_score": 69.77,
       "id": 357965748,
-      "rank": 130,
+      "rank": 131,
       "tier": 3
     },
     {
@@ -8292,7 +8368,7 @@
       "injury": "Clean",
       "draft_score": 69.77,
       "id": 1302818749,
-      "rank": 131,
+      "rank": 132,
       "tier": 3,
       "recruit_rank": 47,
       "recruit_class_year": 2018
@@ -8354,7 +8430,7 @@
       "injury": "Clean",
       "draft_score": 69.73,
       "id": 1412628968,
-      "rank": 132,
+      "rank": 133,
       "tier": 3
     },
     {
@@ -8414,7 +8490,7 @@
       "injury": "Clean",
       "draft_score": 69.65,
       "id": 621822246,
-      "rank": 133,
+      "rank": 134,
       "tier": 3
     },
     {
@@ -8474,7 +8550,7 @@
       "injury": "Clean",
       "draft_score": 69.58,
       "id": 1866427766,
-      "rank": 134,
+      "rank": 135,
       "tier": 3
     },
     {
@@ -8534,7 +8610,7 @@
       "injury": "Clean",
       "draft_score": 69.53,
       "id": 2135077115,
-      "rank": 135,
+      "rank": 136,
       "tier": 3
     },
     {
@@ -8594,7 +8670,7 @@
       "injury": "Clean",
       "draft_score": 69.51,
       "id": 1717026785,
-      "rank": 136,
+      "rank": 137,
       "tier": 3,
       "recruit_rank": 10,
       "recruit_class_year": 2018
@@ -8656,7 +8732,7 @@
       "injury": "Clean",
       "draft_score": 69.41,
       "id": 1157038722,
-      "rank": 137,
+      "rank": 138,
       "tier": 3
     },
     {
@@ -8716,7 +8792,7 @@
       "injury": "Clean",
       "draft_score": 69.36,
       "id": 167762100,
-      "rank": 138,
+      "rank": 139,
       "tier": 3,
       "recruit_rank": 42,
       "recruit_class_year": 2018
@@ -8778,7 +8854,7 @@
       "injury": "Clean",
       "draft_score": 69.14,
       "id": 1137670696,
-      "rank": 139,
+      "rank": 140,
       "tier": 3
     },
     {
@@ -8838,84 +8914,8 @@
       "injury": "Clean",
       "draft_score": 69.04,
       "id": 1032355436,
-      "rank": 140,
-      "tier": 3
-    },
-    {
-      "name": "Trent Forrest",
-      "pos": "G",
-      "school": "Florida State",
-      "conference": "ACC",
-      "year": "Senior",
-      "height": "6'4\"",
-      "weight": "210 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 11.6,
-        "RPG": 4.4,
-        "APG": 4.0,
-        "SPG": 1.9,
-        "BPG": 0.6,
-        "FG%": 45.9,
-        "3P%": 28.1,
-        "FT%": 82.2,
-        "MPG": 30.9,
-        "GS": null,
-        "TOV": 3.0,
-        "FTA": 3.3,
-        "OREB": 1.1,
-        "DREB": 3.3,
-        "3PA": 1.8,
-        "FGA": 9.1,
-        "PF": 1.5
-      },
-      "advanced": {
-        "PER": 19.2,
-        "TS%": 54.2,
-        "eFG%": null,
-        "USG%": 21.9,
-        "AST%": 24.0,
-        "TOV%": 21.8,
-        "BPM": 6.6,
-        "OBPM": 2.8,
-        "DBPM": 3.8,
-        "OWS": 1.7,
-        "DWS": 1.9,
-        "Win Shares": 3.6,
-        "WS/40": 0.15
-      },
-      "skills": {
-        "Athleticism": 53,
-        "Defense": 48,
-        "Shooting": 47,
-        "Ball Handling": 29,
-        "IQ": 51,
-        "Leadership": 39
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 69.04,
-      "id": 235179070,
       "rank": 141,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 79.5,
-        "height_no_shoes_in": 75.5,
-        "height_w_shoes_in": 76.75,
-        "standing_reach_in": 102.5,
-        "hand_length_in": 9.0,
-        "hand_width_in": 9.75,
-        "weight_lbs": 203.0,
-        "body_fat_pct": 5.65,
-        "max_vert_in": 34.5,
-        "standing_vert_in": 28.0,
-        "lane_agility_s": 11.04,
-        "shuttle_run_s": 2.5,
-        "three_quarter_sprint_s": 3.18,
-        "max_bench_reps": null
-      }
+      "tier": 3
     },
     {
       "name": "Malik Williams",
@@ -9282,6 +9282,82 @@
       "tier": 3
     },
     {
+      "name": "Ty-Shon Alexander",
+      "pos": "G",
+      "school": "Creighton",
+      "conference": "Big East",
+      "year": "Junior",
+      "height": "6'4\"",
+      "weight": "195 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 16.9,
+        "RPG": 5.0,
+        "APG": 2.3,
+        "SPG": 1.3,
+        "BPG": 0.3,
+        "FG%": 43.1,
+        "3P%": 39.9,
+        "FT%": 86.0,
+        "MPG": 34.7,
+        "GS": null,
+        "TOV": 1.4,
+        "FTA": 4.4,
+        "OREB": 0.3,
+        "DREB": 4.8,
+        "3PA": 6.5,
+        "FGA": 12.2,
+        "PF": 1.7
+      },
+      "advanced": {
+        "PER": 21.5,
+        "TS%": 59.2,
+        "eFG%": null,
+        "USG%": 23.1,
+        "AST%": 12.3,
+        "TOV%": 8.7,
+        "BPM": 7.7,
+        "OBPM": 5.8,
+        "DBPM": 1.9,
+        "OWS": 3.4,
+        "DWS": 1.5,
+        "Win Shares": 4.8,
+        "WS/40": 0.18
+      },
+      "skills": {
+        "Athleticism": 54,
+        "Defense": 39,
+        "Shooting": 61,
+        "Ball Handling": 25,
+        "IQ": 47,
+        "Leadership": 45
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 68.1,
+      "id": 17548422,
+      "rank": 148,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 80.0,
+        "height_no_shoes_in": 74.0,
+        "height_w_shoes_in": 76.0,
+        "standing_reach_in": 100.0,
+        "hand_length_in": 8.75,
+        "hand_width_in": 8.75,
+        "weight_lbs": 200.8,
+        "body_fat_pct": 12.3,
+        "max_vert_in": 33.0,
+        "standing_vert_in": 28.0,
+        "lane_agility_s": 11.33,
+        "shuttle_run_s": 2.47,
+        "three_quarter_sprint_s": 3.26,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Lindy Waters",
       "pos": "G",
       "school": "Oklahoma State",
@@ -9338,7 +9414,7 @@
       "injury": "Clean",
       "draft_score": 67.99,
       "id": 2032120780,
-      "rank": 148,
+      "rank": 149,
       "tier": 3
     },
     {
@@ -9398,7 +9474,7 @@
       "injury": "Clean",
       "draft_score": 67.91,
       "id": 1236234430,
-      "rank": 149,
+      "rank": 150,
       "tier": 3
     },
     {
@@ -9458,7 +9534,7 @@
       "injury": "Clean",
       "draft_score": 67.76,
       "id": 519541461,
-      "rank": 150,
+      "rank": 151,
       "tier": 3
     },
     {
@@ -9518,7 +9594,7 @@
       "injury": "Clean",
       "draft_score": 67.58,
       "id": 1533680862,
-      "rank": 151,
+      "rank": 152,
       "tier": 3
     },
     {
@@ -9578,7 +9654,7 @@
       "injury": "Clean",
       "draft_score": 67.58,
       "id": 1945752155,
-      "rank": 152,
+      "rank": 153,
       "tier": 3
     },
     {
@@ -9638,7 +9714,7 @@
       "injury": "Clean",
       "draft_score": 67.55,
       "id": 1042374219,
-      "rank": 153,
+      "rank": 154,
       "tier": 3
     },
     {
@@ -9698,7 +9774,7 @@
       "injury": "Clean",
       "draft_score": 67.32,
       "id": 1717787969,
-      "rank": 154,
+      "rank": 155,
       "tier": 3
     },
     {
@@ -9758,7 +9834,7 @@
       "injury": "Clean",
       "draft_score": 67.18,
       "id": 889368800,
-      "rank": 155,
+      "rank": 156,
       "tier": 3
     },
     {
@@ -9818,8 +9894,84 @@
       "injury": "Clean",
       "draft_score": 66.82,
       "id": 751927962,
-      "rank": 156,
+      "rank": 157,
       "tier": 3
+    },
+    {
+      "name": "Markus Howard",
+      "pos": "G",
+      "school": "Marquette",
+      "conference": "Big East",
+      "year": "Senior",
+      "height": "5'11\"",
+      "weight": "180 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 27.8,
+        "RPG": 3.5,
+        "APG": 3.3,
+        "SPG": 0.9,
+        "BPG": 0.0,
+        "FG%": 42.2,
+        "3P%": 41.2,
+        "FT%": 84.7,
+        "MPG": 33.2,
+        "GS": null,
+        "TOV": 3.4,
+        "FTA": 8.6,
+        "OREB": 0.6,
+        "DREB": 2.9,
+        "3PA": 10.1,
+        "FGA": 19.3,
+        "PF": 2.4
+      },
+      "advanced": {
+        "PER": 29.2,
+        "TS%": 59.3,
+        "eFG%": null,
+        "USG%": 39.3,
+        "AST%": 26.2,
+        "TOV%": 12.6,
+        "BPM": 11.0,
+        "OBPM": 10.5,
+        "DBPM": 0.6,
+        "OWS": 4.8,
+        "DWS": 1.0,
+        "Win Shares": 5.8,
+        "WS/40": 0.24
+      },
+      "skills": {
+        "Athleticism": 70,
+        "Defense": 23,
+        "Shooting": 60,
+        "Ball Handling": 17,
+        "IQ": 44,
+        "Leadership": 62
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 66.67,
+      "id": 1117441143,
+      "rank": 158,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 72.25,
+        "height_no_shoes_in": 69.5,
+        "height_w_shoes_in": 71.0,
+        "standing_reach_in": 91.5,
+        "hand_length_in": 8.5,
+        "hand_width_in": 7.75,
+        "weight_lbs": 170.8,
+        "body_fat_pct": 9.91,
+        "max_vert_in": 35.5,
+        "standing_vert_in": 30.5,
+        "lane_agility_s": 11.21,
+        "shuttle_run_s": 3.17,
+        "three_quarter_sprint_s": 3.11,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Ruot Monyyong",
@@ -9878,7 +10030,7 @@
       "injury": "Clean",
       "draft_score": 66.66,
       "id": 1959286665,
-      "rank": 157,
+      "rank": 159,
       "tier": 3
     },
     {
@@ -9938,7 +10090,7 @@
       "injury": "Clean",
       "draft_score": 66.43,
       "id": 1129927973,
-      "rank": 158,
+      "rank": 160,
       "tier": 3
     },
     {
@@ -9998,7 +10150,7 @@
       "injury": "Clean",
       "draft_score": 66.38,
       "id": 1295199462,
-      "rank": 159,
+      "rank": 161,
       "tier": 3
     },
     {
@@ -10058,7 +10210,7 @@
       "injury": "Clean",
       "draft_score": 66.37,
       "id": 702135826,
-      "rank": 160,
+      "rank": 162,
       "tier": 3
     },
     {
@@ -10118,7 +10270,7 @@
       "injury": "Clean",
       "draft_score": 66.3,
       "id": 1529964390,
-      "rank": 161,
+      "rank": 163,
       "tier": 3,
       "combine": {
         "wingspan_in": 79.25,
@@ -10194,7 +10346,7 @@
       "injury": "Clean",
       "draft_score": 66.24,
       "id": 1602251913,
-      "rank": 162,
+      "rank": 164,
       "tier": 3
     },
     {
@@ -10254,7 +10406,7 @@
       "injury": "Clean",
       "draft_score": 66.16,
       "id": 2056220806,
-      "rank": 163,
+      "rank": 165,
       "tier": 3
     },
     {
@@ -10314,7 +10466,7 @@
       "injury": "Clean",
       "draft_score": 66.12,
       "id": 42758037,
-      "rank": 164,
+      "rank": 166,
       "tier": 3
     },
     {
@@ -10374,7 +10526,7 @@
       "injury": "Clean",
       "draft_score": 66.07,
       "id": 527237698,
-      "rank": 165,
+      "rank": 167,
       "tier": 3
     },
     {
@@ -10434,7 +10586,7 @@
       "injury": "Clean",
       "draft_score": 66.02,
       "id": 503489490,
-      "rank": 166,
+      "rank": 168,
       "tier": 3
     },
     {
@@ -10494,7 +10646,7 @@
       "injury": "Clean",
       "draft_score": 65.97,
       "id": 65176796,
-      "rank": 167,
+      "rank": 169,
       "tier": 3
     },
     {
@@ -10554,7 +10706,7 @@
       "injury": "Clean",
       "draft_score": 65.8,
       "id": 1765073672,
-      "rank": 168,
+      "rank": 170,
       "tier": 3
     },
     {
@@ -10614,7 +10766,7 @@
       "injury": "Clean",
       "draft_score": 65.71,
       "id": 2083966185,
-      "rank": 169,
+      "rank": 171,
       "tier": 3
     },
     {
@@ -10674,7 +10826,7 @@
       "injury": "Clean",
       "draft_score": 65.68,
       "id": 849425075,
-      "rank": 170,
+      "rank": 172,
       "tier": 3
     },
     {
@@ -10734,7 +10886,7 @@
       "injury": "Clean",
       "draft_score": 65.61,
       "id": 700782685,
-      "rank": 171,
+      "rank": 173,
       "tier": 3
     },
     {
@@ -10794,7 +10946,7 @@
       "injury": "Clean",
       "draft_score": 65.6,
       "id": 1952985323,
-      "rank": 172,
+      "rank": 174,
       "tier": 3
     },
     {
@@ -10854,7 +11006,7 @@
       "injury": "Clean",
       "draft_score": 65.56,
       "id": 1711128441,
-      "rank": 173,
+      "rank": 175,
       "tier": 3
     },
     {
@@ -10914,7 +11066,7 @@
       "injury": "Clean",
       "draft_score": 65.22,
       "id": 1663049075,
-      "rank": 174,
+      "rank": 176,
       "tier": 3
     },
     {
@@ -10974,7 +11126,7 @@
       "injury": "Clean",
       "draft_score": 64.97,
       "id": 1947097870,
-      "rank": 175,
+      "rank": 177,
       "tier": 3
     },
     {
@@ -11034,7 +11186,7 @@
       "injury": "Clean",
       "draft_score": 64.95,
       "id": 1463692651,
-      "rank": 176,
+      "rank": 178,
       "tier": 3
     },
     {
@@ -11094,7 +11246,7 @@
       "injury": "Clean",
       "draft_score": 64.82,
       "id": 587662099,
-      "rank": 177,
+      "rank": 179,
       "tier": 3,
       "recruit_rank": 32,
       "recruit_class_year": 2018
@@ -11156,7 +11308,7 @@
       "injury": "Clean",
       "draft_score": 64.66,
       "id": 183697357,
-      "rank": 178,
+      "rank": 180,
       "tier": 3
     },
     {
@@ -11216,84 +11368,8 @@
       "injury": "Clean",
       "draft_score": 64.54,
       "id": 1885443043,
-      "rank": 179,
+      "rank": 181,
       "tier": 3
-    },
-    {
-      "name": "Markus Howard",
-      "pos": "G",
-      "school": "Marquette",
-      "conference": "Big East",
-      "year": "Senior",
-      "height": "5'11\"",
-      "weight": "180 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 27.8,
-        "RPG": 3.5,
-        "APG": 3.3,
-        "SPG": 0.9,
-        "BPG": 0.0,
-        "FG%": 42.2,
-        "3P%": 41.2,
-        "FT%": 84.7,
-        "MPG": 33.2,
-        "GS": null,
-        "TOV": 3.4,
-        "FTA": 8.6,
-        "OREB": 0.6,
-        "DREB": 2.9,
-        "3PA": 10.1,
-        "FGA": 19.3,
-        "PF": 2.4
-      },
-      "advanced": {
-        "PER": 29.2,
-        "TS%": 59.3,
-        "eFG%": null,
-        "USG%": 39.3,
-        "AST%": 26.2,
-        "TOV%": 12.6,
-        "BPM": 11.0,
-        "OBPM": 10.5,
-        "DBPM": 0.6,
-        "OWS": 4.8,
-        "DWS": 1.0,
-        "Win Shares": 5.8,
-        "WS/40": 0.24
-      },
-      "skills": {
-        "Athleticism": 70,
-        "Defense": 23,
-        "Shooting": 60,
-        "Ball Handling": 17,
-        "IQ": 44,
-        "Leadership": 62
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 64.53,
-      "id": 1117441143,
-      "rank": 180,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 72.25,
-        "height_no_shoes_in": 69.5,
-        "height_w_shoes_in": 71.0,
-        "standing_reach_in": 91.5,
-        "hand_length_in": 8.5,
-        "hand_width_in": 7.75,
-        "weight_lbs": 170.8,
-        "body_fat_pct": 9.91,
-        "max_vert_in": 35.5,
-        "standing_vert_in": 30.5,
-        "lane_agility_s": 11.21,
-        "shuttle_run_s": 3.17,
-        "three_quarter_sprint_s": 3.11,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Davonte Gaines",
@@ -11352,7 +11428,7 @@
       "injury": "Clean",
       "draft_score": 64.52,
       "id": 1483605064,
-      "rank": 181,
+      "rank": 182,
       "tier": 3
     },
     {
@@ -11412,7 +11488,7 @@
       "injury": "Clean",
       "draft_score": 64.44,
       "id": 1646705707,
-      "rank": 182,
+      "rank": 183,
       "tier": 3
     },
     {
@@ -11472,7 +11548,7 @@
       "injury": "Clean",
       "draft_score": 64.32,
       "id": 1225914160,
-      "rank": 183,
+      "rank": 184,
       "tier": 3
     },
     {
@@ -11532,7 +11608,7 @@
       "injury": "Clean",
       "draft_score": 64.32,
       "id": 828447660,
-      "rank": 184,
+      "rank": 185,
       "tier": 3
     },
     {
@@ -11592,7 +11668,7 @@
       "injury": "Clean",
       "draft_score": 64.31,
       "id": 1654923473,
-      "rank": 185,
+      "rank": 186,
       "tier": 3
     },
     {
@@ -11652,7 +11728,7 @@
       "injury": "Clean",
       "draft_score": 64.28,
       "id": 1520951322,
-      "rank": 186,
+      "rank": 187,
       "tier": 3
     },
     {
@@ -11712,84 +11788,8 @@
       "injury": "Clean",
       "draft_score": 64.27,
       "id": 542803820,
-      "rank": 187,
-      "tier": 3
-    },
-    {
-      "name": "Naji Marshall",
-      "pos": "F",
-      "school": "Xavier",
-      "conference": "Big East",
-      "year": "Junior",
-      "height": "6'7\"",
-      "weight": "220 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 16.8,
-        "RPG": 6.3,
-        "APG": 4.0,
-        "SPG": 1.3,
-        "BPG": 0.4,
-        "FG%": 44.5,
-        "3P%": 28.6,
-        "FT%": 71.0,
-        "MPG": 35.7,
-        "GS": null,
-        "TOV": 3.4,
-        "FTA": 4.5,
-        "OREB": 1.1,
-        "DREB": 5.2,
-        "3PA": 5.0,
-        "FGA": 13.8,
-        "PF": 2.6
-      },
-      "advanced": {
-        "PER": 18.7,
-        "TS%": 53.0,
-        "eFG%": null,
-        "USG%": 26.7,
-        "AST%": 24.0,
-        "TOV%": 17.4,
-        "BPM": 6.5,
-        "OBPM": 3.5,
-        "DBPM": 3.0,
-        "OWS": 1.9,
-        "DWS": 1.9,
-        "Win Shares": 3.9,
-        "WS/40": 0.14
-      },
-      "skills": {
-        "Athleticism": 54,
-        "Defense": 41,
-        "Shooting": 36,
-        "Ball Handling": 25,
-        "IQ": 49,
-        "Leadership": 52
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 64.23,
-      "id": 2121614467,
       "rank": 188,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 84.75,
-        "height_no_shoes_in": 77.75,
-        "height_w_shoes_in": 79.0,
-        "standing_reach_in": 102.5,
-        "hand_length_in": 9.25,
-        "hand_width_in": 10.5,
-        "weight_lbs": 233.5,
-        "body_fat_pct": 8.7,
-        "max_vert_in": 35.0,
-        "standing_vert_in": 28.5,
-        "lane_agility_s": 11.77,
-        "shuttle_run_s": 2.9,
-        "three_quarter_sprint_s": 3.37,
-        "max_bench_reps": null
-      }
+      "tier": 3
     },
     {
       "name": "Michael Ballard",
@@ -12272,6 +12272,82 @@
       "tier": 3
     },
     {
+      "name": "Naji Marshall",
+      "pos": "F",
+      "school": "Xavier",
+      "conference": "Big East",
+      "year": "Junior",
+      "height": "6'7\"",
+      "weight": "220 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 16.8,
+        "RPG": 6.3,
+        "APG": 4.0,
+        "SPG": 1.3,
+        "BPG": 0.4,
+        "FG%": 44.5,
+        "3P%": 28.6,
+        "FT%": 71.0,
+        "MPG": 35.7,
+        "GS": null,
+        "TOV": 3.4,
+        "FTA": 4.5,
+        "OREB": 1.1,
+        "DREB": 5.2,
+        "3PA": 5.0,
+        "FGA": 13.8,
+        "PF": 2.6
+      },
+      "advanced": {
+        "PER": 18.7,
+        "TS%": 53.0,
+        "eFG%": null,
+        "USG%": 26.7,
+        "AST%": 24.0,
+        "TOV%": 17.4,
+        "BPM": 6.5,
+        "OBPM": 3.5,
+        "DBPM": 3.0,
+        "OWS": 1.9,
+        "DWS": 1.9,
+        "Win Shares": 3.9,
+        "WS/40": 0.14
+      },
+      "skills": {
+        "Athleticism": 54,
+        "Defense": 41,
+        "Shooting": 36,
+        "Ball Handling": 25,
+        "IQ": 49,
+        "Leadership": 52
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 63.13,
+      "id": 2121614467,
+      "rank": 197,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 84.75,
+        "height_no_shoes_in": 77.75,
+        "height_w_shoes_in": 79.0,
+        "standing_reach_in": 102.5,
+        "hand_length_in": 9.25,
+        "hand_width_in": 10.5,
+        "weight_lbs": 233.5,
+        "body_fat_pct": 8.7,
+        "max_vert_in": 35.0,
+        "standing_vert_in": 28.5,
+        "lane_agility_s": 11.77,
+        "shuttle_run_s": 2.9,
+        "three_quarter_sprint_s": 3.37,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Everett Duncan",
       "pos": "G",
       "school": "Vermont",
@@ -12328,7 +12404,7 @@
       "injury": "Clean",
       "draft_score": 63.13,
       "id": 1362893668,
-      "rank": 197,
+      "rank": 198,
       "tier": 3
     },
     {
@@ -12388,7 +12464,7 @@
       "injury": "Clean",
       "draft_score": 62.97,
       "id": 230831410,
-      "rank": 198,
+      "rank": 199,
       "tier": 3,
       "combine": {
         "wingspan_in": 73.75,
@@ -12464,7 +12540,7 @@
       "injury": "Clean",
       "draft_score": 62.95,
       "id": 880024921,
-      "rank": 199,
+      "rank": 200,
       "tier": 3,
       "recruit_rank": 39,
       "recruit_class_year": 2018
@@ -12526,7 +12602,7 @@
       "injury": "Clean",
       "draft_score": 62.86,
       "id": 1791607468,
-      "rank": 200,
+      "rank": 201,
       "tier": 3
     },
     {
@@ -12586,7 +12662,7 @@
       "injury": "Clean",
       "draft_score": 62.81,
       "id": 853243082,
-      "rank": 201,
+      "rank": 202,
       "tier": 3
     },
     {
@@ -12646,7 +12722,7 @@
       "injury": "Clean",
       "draft_score": 62.76,
       "id": 855627861,
-      "rank": 202,
+      "rank": 203,
       "tier": 3
     },
     {
@@ -12706,7 +12782,7 @@
       "injury": "Clean",
       "draft_score": 62.75,
       "id": 1234996548,
-      "rank": 203,
+      "rank": 204,
       "tier": 3
     },
     {
@@ -12766,7 +12842,7 @@
       "injury": "Clean",
       "draft_score": 62.74,
       "id": 208600262,
-      "rank": 204,
+      "rank": 205,
       "tier": 3,
       "recruit_rank": 46,
       "recruit_class_year": 2018
@@ -12828,7 +12904,7 @@
       "injury": "Clean",
       "draft_score": 62.72,
       "id": 2002697303,
-      "rank": 205,
+      "rank": 206,
       "tier": 3
     },
     {
@@ -12888,7 +12964,7 @@
       "injury": "Clean",
       "draft_score": 62.61,
       "id": 560533807,
-      "rank": 206,
+      "rank": 207,
       "tier": 3,
       "recruit_rank": 20,
       "recruit_class_year": 2019
@@ -12950,7 +13026,7 @@
       "injury": "Clean",
       "draft_score": 62.42,
       "id": 1880423384,
-      "rank": 207,
+      "rank": 208,
       "tier": 3
     },
     {
@@ -13010,7 +13086,7 @@
       "injury": "Clean",
       "draft_score": 62.36,
       "id": 1791947057,
-      "rank": 208,
+      "rank": 209,
       "tier": 3
     },
     {
@@ -13070,7 +13146,7 @@
       "injury": "Clean",
       "draft_score": 62.06,
       "id": 1847914648,
-      "rank": 209,
+      "rank": 210,
       "tier": 3
     },
     {
@@ -13130,7 +13206,7 @@
       "injury": "Clean",
       "draft_score": 61.98,
       "id": 546068223,
-      "rank": 210,
+      "rank": 211,
       "tier": 3
     },
     {
@@ -13190,7 +13266,7 @@
       "injury": "Clean",
       "draft_score": 61.85,
       "id": 402942255,
-      "rank": 211,
+      "rank": 212,
       "tier": 3
     },
     {
@@ -13250,7 +13326,7 @@
       "injury": "Clean",
       "draft_score": 61.81,
       "id": 1154077793,
-      "rank": 212,
+      "rank": 213,
       "tier": 3
     },
     {
@@ -13310,7 +13386,7 @@
       "injury": "Clean",
       "draft_score": 61.79,
       "id": 2069992400,
-      "rank": 213,
+      "rank": 214,
       "tier": 3
     },
     {
@@ -13370,7 +13446,7 @@
       "injury": "Clean",
       "draft_score": 61.75,
       "id": 1868193038,
-      "rank": 214,
+      "rank": 215,
       "tier": 3
     },
     {
@@ -13430,7 +13506,7 @@
       "injury": "Clean",
       "draft_score": 61.75,
       "id": 506471551,
-      "rank": 215,
+      "rank": 216,
       "tier": 3
     },
     {
@@ -13490,8 +13566,84 @@
       "injury": "Clean",
       "draft_score": 61.75,
       "id": 835907504,
-      "rank": 216,
+      "rank": 217,
       "tier": 3
+    },
+    {
+      "name": "Isaiah Joe",
+      "pos": "G",
+      "school": "Arkansas",
+      "conference": "SEC",
+      "year": "Sophomore",
+      "height": "6'5\"",
+      "weight": "180 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 16.9,
+        "RPG": 4.1,
+        "APG": 1.7,
+        "SPG": 1.4,
+        "BPG": 0.3,
+        "FG%": 36.7,
+        "3P%": 34.2,
+        "FT%": 89.0,
+        "MPG": 36.1,
+        "GS": null,
+        "TOV": 1.7,
+        "FTA": 3.5,
+        "OREB": 0.5,
+        "DREB": 3.6,
+        "3PA": 10.6,
+        "FGA": 13.8,
+        "PF": 1.8
+      },
+      "advanced": {
+        "PER": 17.5,
+        "TS%": 54.4,
+        "eFG%": null,
+        "USG%": 24.2,
+        "AST%": 10.0,
+        "TOV%": 10.0,
+        "BPM": 5.3,
+        "OBPM": 4.0,
+        "DBPM": 1.2,
+        "OWS": 1.8,
+        "DWS": 1.4,
+        "Win Shares": 3.2,
+        "WS/40": 0.136
+      },
+      "skills": {
+        "Athleticism": 56,
+        "Defense": 36,
+        "Shooting": 48,
+        "Ball Handling": 16,
+        "IQ": 39,
+        "Leadership": 42
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 61.75,
+      "id": 1788361716,
+      "rank": 218,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 79.5,
+        "height_no_shoes_in": 75.0,
+        "height_w_shoes_in": 76.5,
+        "standing_reach_in": 101.0,
+        "hand_length_in": 8.25,
+        "hand_width_in": 8.25,
+        "weight_lbs": 170.4,
+        "body_fat_pct": 4.7,
+        "max_vert_in": null,
+        "standing_vert_in": null,
+        "lane_agility_s": null,
+        "shuttle_run_s": null,
+        "three_quarter_sprint_s": null,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Quenton Jackson",
@@ -13550,7 +13702,7 @@
       "injury": "Clean",
       "draft_score": 61.68,
       "id": 963088570,
-      "rank": 217,
+      "rank": 219,
       "tier": 3
     },
     {
@@ -13610,7 +13762,7 @@
       "injury": "Clean",
       "draft_score": 61.61,
       "id": 1658739657,
-      "rank": 218,
+      "rank": 220,
       "tier": 3
     },
     {
@@ -13670,7 +13822,7 @@
       "injury": "Clean",
       "draft_score": 61.53,
       "id": 1253143291,
-      "rank": 219,
+      "rank": 221,
       "tier": 3
     },
     {
@@ -13730,84 +13882,8 @@
       "injury": "Clean",
       "draft_score": 61.51,
       "id": 535974353,
-      "rank": 220,
+      "rank": 222,
       "tier": 3
-    },
-    {
-      "name": "Ty-Shon Alexander",
-      "pos": "G",
-      "school": "Creighton",
-      "conference": "Big East",
-      "year": "Junior",
-      "height": "6'4\"",
-      "weight": "195 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 16.9,
-        "RPG": 5.0,
-        "APG": 2.3,
-        "SPG": 1.3,
-        "BPG": 0.3,
-        "FG%": 43.1,
-        "3P%": 39.9,
-        "FT%": 86.0,
-        "MPG": 34.7,
-        "GS": null,
-        "TOV": 1.4,
-        "FTA": 4.4,
-        "OREB": 0.3,
-        "DREB": 4.8,
-        "3PA": 6.5,
-        "FGA": 12.2,
-        "PF": 1.7
-      },
-      "advanced": {
-        "PER": 21.5,
-        "TS%": 59.2,
-        "eFG%": null,
-        "USG%": 23.1,
-        "AST%": 12.3,
-        "TOV%": 8.7,
-        "BPM": 7.7,
-        "OBPM": 5.8,
-        "DBPM": 1.9,
-        "OWS": 3.4,
-        "DWS": 1.5,
-        "Win Shares": 4.8,
-        "WS/40": 0.18
-      },
-      "skills": {
-        "Athleticism": 54,
-        "Defense": 39,
-        "Shooting": 61,
-        "Ball Handling": 25,
-        "IQ": 47,
-        "Leadership": 45
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 61.46,
-      "id": 17548422,
-      "rank": 221,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 80.0,
-        "height_no_shoes_in": 74.0,
-        "height_w_shoes_in": 76.0,
-        "standing_reach_in": 100.0,
-        "hand_length_in": 8.75,
-        "hand_width_in": 8.75,
-        "weight_lbs": 200.8,
-        "body_fat_pct": 12.3,
-        "max_vert_in": 33.0,
-        "standing_vert_in": 28.0,
-        "lane_agility_s": 11.33,
-        "shuttle_run_s": 2.47,
-        "three_quarter_sprint_s": 3.26,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Landers Nolley II",
@@ -13866,7 +13942,7 @@
       "injury": "Clean",
       "draft_score": 61.26,
       "id": 159237460,
-      "rank": 222,
+      "rank": 223,
       "tier": 3
     },
     {
@@ -13926,7 +14002,7 @@
       "injury": "Clean",
       "draft_score": 61.25,
       "id": 1867186197,
-      "rank": 223,
+      "rank": 224,
       "tier": 3
     },
     {
@@ -13986,7 +14062,7 @@
       "injury": "Clean",
       "draft_score": 61.16,
       "id": 2025059257,
-      "rank": 224,
+      "rank": 225,
       "tier": 3
     },
     {
@@ -14046,7 +14122,7 @@
       "injury": "Clean",
       "draft_score": 61.01,
       "id": 1128218940,
-      "rank": 225,
+      "rank": 226,
       "tier": 3
     },
     {
@@ -14106,7 +14182,7 @@
       "injury": "Clean",
       "draft_score": 60.96,
       "id": 1629035508,
-      "rank": 226,
+      "rank": 227,
       "tier": 3
     },
     {
@@ -14166,7 +14242,7 @@
       "injury": "Clean",
       "draft_score": 60.8,
       "id": 995228275,
-      "rank": 227,
+      "rank": 228,
       "tier": 3
     },
     {
@@ -14226,8 +14302,86 @@
       "injury": "Clean",
       "draft_score": 60.79,
       "id": 943704166,
-      "rank": 228,
+      "rank": 229,
       "tier": 3
+    },
+    {
+      "name": "Jahmi'us Ramsey",
+      "pos": "G",
+      "school": "Texas Tech",
+      "conference": "Big 12",
+      "year": "Freshman",
+      "height": "6'4\"",
+      "weight": "195 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 15.0,
+        "RPG": 4.0,
+        "APG": 2.2,
+        "SPG": 1.3,
+        "BPG": 0.7,
+        "FG%": 44.2,
+        "3P%": 42.6,
+        "FT%": 64.1,
+        "MPG": 31.2,
+        "GS": null,
+        "TOV": 2.0,
+        "FTA": 2.9,
+        "OREB": 0.7,
+        "DREB": 3.3,
+        "3PA": 5.2,
+        "FGA": 12.4,
+        "PF": 2.2
+      },
+      "advanced": {
+        "PER": 19.1,
+        "TS%": 54.6,
+        "eFG%": null,
+        "USG%": 26.2,
+        "AST%": 16.1,
+        "TOV%": 12.7,
+        "BPM": 6.7,
+        "OBPM": 4.3,
+        "DBPM": 2.4,
+        "OWS": 1.6,
+        "DWS": 1.7,
+        "Win Shares": 3.3,
+        "WS/40": 0.156
+      },
+      "skills": {
+        "Athleticism": 50,
+        "Defense": 41,
+        "Shooting": 47,
+        "Ball Handling": 19,
+        "IQ": 44,
+        "Leadership": 39
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 60.63,
+      "id": 484959455,
+      "rank": 230,
+      "tier": 3,
+      "recruit_rank": 32,
+      "recruit_class_year": 2019,
+      "combine": {
+        "wingspan_in": 78.0,
+        "height_no_shoes_in": 74.5,
+        "height_w_shoes_in": 75.75,
+        "standing_reach_in": 100.5,
+        "hand_length_in": 8.75,
+        "hand_width_in": 9.75,
+        "weight_lbs": 193.4,
+        "body_fat_pct": 3.4,
+        "max_vert_in": null,
+        "standing_vert_in": null,
+        "lane_agility_s": null,
+        "shuttle_run_s": null,
+        "three_quarter_sprint_s": null,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Grant Riller",
@@ -14286,7 +14440,7 @@
       "injury": "Clean",
       "draft_score": 60.55,
       "id": 587156018,
-      "rank": 229,
+      "rank": 231,
       "tier": 3,
       "combine": {
         "wingspan_in": 77.25,
@@ -14362,7 +14516,7 @@
       "injury": "Clean",
       "draft_score": 60.35,
       "id": 706299294,
-      "rank": 230,
+      "rank": 232,
       "tier": 3
     },
     {
@@ -14422,7 +14576,7 @@
       "injury": "Clean",
       "draft_score": 60.33,
       "id": 1722153159,
-      "rank": 231,
+      "rank": 233,
       "tier": 3
     },
     {
@@ -14482,7 +14636,7 @@
       "injury": "Clean",
       "draft_score": 60.29,
       "id": 1654459228,
-      "rank": 232,
+      "rank": 234,
       "tier": 3
     },
     {
@@ -14542,7 +14696,7 @@
       "injury": "Clean",
       "draft_score": 60.25,
       "id": 1387829763,
-      "rank": 233,
+      "rank": 235,
       "tier": 3
     },
     {
@@ -14602,7 +14756,7 @@
       "injury": "Clean",
       "draft_score": 60.16,
       "id": 303757727,
-      "rank": 234,
+      "rank": 236,
       "tier": 3
     },
     {
@@ -14662,7 +14816,7 @@
       "injury": "Clean",
       "draft_score": 59.93,
       "id": 1823566354,
-      "rank": 235,
+      "rank": 237,
       "tier": 3
     },
     {
@@ -14722,7 +14876,7 @@
       "injury": "Clean",
       "draft_score": 59.92,
       "id": 1375308190,
-      "rank": 236,
+      "rank": 238,
       "tier": 3
     },
     {
@@ -14782,7 +14936,7 @@
       "injury": "Clean",
       "draft_score": 59.68,
       "id": 1466201504,
-      "rank": 237,
+      "rank": 239,
       "tier": 3
     },
     {
@@ -14842,7 +14996,7 @@
       "injury": "Clean",
       "draft_score": 59.67,
       "id": 1251962081,
-      "rank": 238,
+      "rank": 240,
       "tier": 3
     },
     {
@@ -14902,7 +15056,7 @@
       "injury": "Clean",
       "draft_score": 59.64,
       "id": 892957923,
-      "rank": 239,
+      "rank": 241,
       "tier": 3
     },
     {
@@ -14962,7 +15116,7 @@
       "injury": "Clean",
       "draft_score": 59.62,
       "id": 745601172,
-      "rank": 240,
+      "rank": 242,
       "tier": 3
     },
     {
@@ -15022,7 +15176,7 @@
       "injury": "Clean",
       "draft_score": 59.53,
       "id": 1844076934,
-      "rank": 241,
+      "rank": 243,
       "tier": 3
     },
     {
@@ -15082,84 +15236,8 @@
       "injury": "Clean",
       "draft_score": 59.52,
       "id": 1214378366,
-      "rank": 242,
+      "rank": 244,
       "tier": 3
-    },
-    {
-      "name": "Isaiah Joe",
-      "pos": "G",
-      "school": "Arkansas",
-      "conference": "SEC",
-      "year": "Sophomore",
-      "height": "6'5\"",
-      "weight": "180 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 16.9,
-        "RPG": 4.1,
-        "APG": 1.7,
-        "SPG": 1.4,
-        "BPG": 0.3,
-        "FG%": 36.7,
-        "3P%": 34.2,
-        "FT%": 89.0,
-        "MPG": 36.1,
-        "GS": null,
-        "TOV": 1.7,
-        "FTA": 3.5,
-        "OREB": 0.5,
-        "DREB": 3.6,
-        "3PA": 10.6,
-        "FGA": 13.8,
-        "PF": 1.8
-      },
-      "advanced": {
-        "PER": 17.5,
-        "TS%": 54.4,
-        "eFG%": null,
-        "USG%": 24.2,
-        "AST%": 10.0,
-        "TOV%": 10.0,
-        "BPM": 5.3,
-        "OBPM": 4.0,
-        "DBPM": 1.2,
-        "OWS": 1.8,
-        "DWS": 1.4,
-        "Win Shares": 3.2,
-        "WS/40": 0.136
-      },
-      "skills": {
-        "Athleticism": 56,
-        "Defense": 36,
-        "Shooting": 48,
-        "Ball Handling": 16,
-        "IQ": 39,
-        "Leadership": 42
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 59.41,
-      "id": 1788361716,
-      "rank": 243,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 79.5,
-        "height_no_shoes_in": 75.0,
-        "height_w_shoes_in": 76.5,
-        "standing_reach_in": 101.0,
-        "hand_length_in": 8.25,
-        "hand_width_in": 8.25,
-        "weight_lbs": 170.4,
-        "body_fat_pct": 4.7,
-        "max_vert_in": null,
-        "standing_vert_in": null,
-        "lane_agility_s": null,
-        "shuttle_run_s": null,
-        "three_quarter_sprint_s": null,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Cameron Johnson",
@@ -15218,7 +15296,7 @@
       "injury": "Clean",
       "draft_score": 59.39,
       "id": 623492679,
-      "rank": 244,
+      "rank": 245,
       "tier": 3
     },
     {
@@ -15278,7 +15356,7 @@
       "injury": "Clean",
       "draft_score": 59.37,
       "id": 1281191062,
-      "rank": 245,
+      "rank": 246,
       "tier": 3
     },
     {
@@ -15338,7 +15416,7 @@
       "injury": "Clean",
       "draft_score": 59.21,
       "id": 695350823,
-      "rank": 246,
+      "rank": 247,
       "tier": 3
     },
     {
@@ -15398,7 +15476,7 @@
       "injury": "Clean",
       "draft_score": 59.17,
       "id": 411434983,
-      "rank": 247,
+      "rank": 248,
       "tier": 3
     },
     {
@@ -15458,7 +15536,7 @@
       "injury": "Clean",
       "draft_score": 59.13,
       "id": 1449069293,
-      "rank": 248,
+      "rank": 249,
       "tier": 3
     },
     {
@@ -15518,7 +15596,7 @@
       "injury": "Clean",
       "draft_score": 59.07,
       "id": 1676103274,
-      "rank": 249,
+      "rank": 250,
       "tier": 3,
       "recruit_rank": 36,
       "recruit_class_year": 2018
@@ -15580,7 +15658,7 @@
       "injury": "Clean",
       "draft_score": 58.93,
       "id": 1819714978,
-      "rank": 250,
+      "rank": 251,
       "tier": 3
     },
     {
@@ -15640,7 +15718,7 @@
       "injury": "Clean",
       "draft_score": 58.83,
       "id": 828545883,
-      "rank": 251,
+      "rank": 252,
       "tier": 3
     },
     {
@@ -15700,7 +15778,7 @@
       "injury": "Clean",
       "draft_score": 58.82,
       "id": 981509109,
-      "rank": 252,
+      "rank": 253,
       "tier": 3,
       "combine": {
         "wingspan_in": 81.0,
@@ -15776,7 +15854,7 @@
       "injury": "Clean",
       "draft_score": 58.76,
       "id": 1451382231,
-      "rank": 253,
+      "rank": 254,
       "tier": 3
     },
     {
@@ -15836,7 +15914,7 @@
       "injury": "Clean",
       "draft_score": 58.72,
       "id": 991517958,
-      "rank": 254,
+      "rank": 255,
       "tier": 3
     },
     {
@@ -15896,7 +15974,7 @@
       "injury": "Clean",
       "draft_score": 58.71,
       "id": 1067935124,
-      "rank": 255,
+      "rank": 256,
       "tier": 3
     },
     {
@@ -15956,7 +16034,7 @@
       "injury": "Clean",
       "draft_score": 58.62,
       "id": 1776730754,
-      "rank": 256,
+      "rank": 257,
       "tier": 3
     },
     {
@@ -16016,7 +16094,7 @@
       "injury": "Clean",
       "draft_score": 58.57,
       "id": 157472757,
-      "rank": 257,
+      "rank": 258,
       "tier": 3
     },
     {
@@ -16076,7 +16154,7 @@
       "injury": "Clean",
       "draft_score": 58.37,
       "id": 1318736745,
-      "rank": 258,
+      "rank": 259,
       "tier": 3
     },
     {
@@ -16136,7 +16214,7 @@
       "injury": "Clean",
       "draft_score": 58.25,
       "id": 1065586287,
-      "rank": 259,
+      "rank": 260,
       "tier": 3
     },
     {
@@ -16196,7 +16274,7 @@
       "injury": "Clean",
       "draft_score": 58.22,
       "id": 138563595,
-      "rank": 260,
+      "rank": 261,
       "tier": 3
     },
     {
@@ -16256,7 +16334,7 @@
       "injury": "Clean",
       "draft_score": 58.22,
       "id": 784212282,
-      "rank": 261,
+      "rank": 262,
       "tier": 3,
       "recruit_rank": 27,
       "recruit_class_year": 2019
@@ -16318,7 +16396,7 @@
       "injury": "Clean",
       "draft_score": 58.18,
       "id": 1008238165,
-      "rank": 262,
+      "rank": 263,
       "tier": 3
     },
     {
@@ -16378,7 +16456,7 @@
       "injury": "Clean",
       "draft_score": 58.16,
       "id": 329596764,
-      "rank": 263,
+      "rank": 264,
       "tier": 3
     },
     {
@@ -16438,7 +16516,7 @@
       "injury": "Clean",
       "draft_score": 57.99,
       "id": 606107396,
-      "rank": 264,
+      "rank": 265,
       "tier": 3
     },
     {
@@ -16498,7 +16576,7 @@
       "injury": "Clean",
       "draft_score": 57.97,
       "id": 1849030769,
-      "rank": 265,
+      "rank": 266,
       "tier": 3
     },
     {
@@ -16558,7 +16636,7 @@
       "injury": "Clean",
       "draft_score": 57.95,
       "id": 1969283220,
-      "rank": 266,
+      "rank": 267,
       "tier": 3,
       "recruit_rank": 19,
       "recruit_class_year": 2019
@@ -16620,7 +16698,7 @@
       "injury": "Clean",
       "draft_score": 57.95,
       "id": 324367409,
-      "rank": 267,
+      "rank": 268,
       "tier": 3
     },
     {
@@ -16680,7 +16758,7 @@
       "injury": "Clean",
       "draft_score": 57.91,
       "id": 384900676,
-      "rank": 268,
+      "rank": 269,
       "tier": 3
     },
     {
@@ -16740,7 +16818,7 @@
       "injury": "Clean",
       "draft_score": 57.86,
       "id": 1738174216,
-      "rank": 269,
+      "rank": 270,
       "tier": 3
     },
     {
@@ -16800,7 +16878,7 @@
       "injury": "Clean",
       "draft_score": 57.62,
       "id": 1007986913,
-      "rank": 270,
+      "rank": 271,
       "tier": 3
     },
     {
@@ -16860,7 +16938,7 @@
       "injury": "Clean",
       "draft_score": 57.61,
       "id": 71097455,
-      "rank": 271,
+      "rank": 272,
       "tier": 3,
       "recruit_rank": 18,
       "recruit_class_year": 2019
@@ -16922,7 +17000,7 @@
       "injury": "Clean",
       "draft_score": 57.45,
       "id": 1098150007,
-      "rank": 272,
+      "rank": 273,
       "tier": 3
     },
     {
@@ -16982,7 +17060,7 @@
       "injury": "Clean",
       "draft_score": 57.42,
       "id": 918429425,
-      "rank": 273,
+      "rank": 274,
       "tier": 3
     },
     {
@@ -17042,7 +17120,7 @@
       "injury": "Clean",
       "draft_score": 57.32,
       "id": 1122475313,
-      "rank": 274,
+      "rank": 275,
       "tier": 3
     },
     {
@@ -17102,7 +17180,7 @@
       "injury": "Clean",
       "draft_score": 57.23,
       "id": 79210449,
-      "rank": 275,
+      "rank": 276,
       "tier": 3
     },
     {
@@ -17162,7 +17240,7 @@
       "injury": "Clean",
       "draft_score": 57.23,
       "id": 838794107,
-      "rank": 276,
+      "rank": 277,
       "tier": 3
     },
     {
@@ -17222,7 +17300,7 @@
       "injury": "Clean",
       "draft_score": 57.2,
       "id": 643996187,
-      "rank": 277,
+      "rank": 278,
       "tier": 3
     },
     {
@@ -17282,7 +17360,7 @@
       "injury": "Clean",
       "draft_score": 57.07,
       "id": 665613556,
-      "rank": 278,
+      "rank": 279,
       "tier": 3
     },
     {
@@ -17342,7 +17420,7 @@
       "injury": "Clean",
       "draft_score": 57.07,
       "id": 104233844,
-      "rank": 279,
+      "rank": 280,
       "tier": 3
     },
     {
@@ -17402,7 +17480,7 @@
       "injury": "Clean",
       "draft_score": 56.98,
       "id": 377315893,
-      "rank": 280,
+      "rank": 281,
       "tier": 3
     },
     {
@@ -17462,7 +17540,7 @@
       "injury": "Clean",
       "draft_score": 56.83,
       "id": 773807992,
-      "rank": 281,
+      "rank": 282,
       "tier": 3
     },
     {
@@ -17522,7 +17600,7 @@
       "injury": "Clean",
       "draft_score": 56.8,
       "id": 696032806,
-      "rank": 282,
+      "rank": 283,
       "tier": 3
     },
     {
@@ -17582,7 +17660,7 @@
       "injury": "Clean",
       "draft_score": 56.77,
       "id": 1991480882,
-      "rank": 283,
+      "rank": 284,
       "tier": 3
     },
     {
@@ -17642,7 +17720,7 @@
       "injury": "Clean",
       "draft_score": 56.73,
       "id": 2085830916,
-      "rank": 284,
+      "rank": 285,
       "tier": 3
     },
     {
@@ -17702,7 +17780,7 @@
       "injury": "Clean",
       "draft_score": 56.63,
       "id": 1499060160,
-      "rank": 285,
+      "rank": 286,
       "tier": 3
     },
     {
@@ -17762,7 +17840,7 @@
       "injury": "Clean",
       "draft_score": 56.49,
       "id": 1088359494,
-      "rank": 286,
+      "rank": 287,
       "tier": 3
     },
     {
@@ -17822,7 +17900,7 @@
       "injury": "Clean",
       "draft_score": 56.48,
       "id": 1188044408,
-      "rank": 287,
+      "rank": 288,
       "tier": 3,
       "combine": {
         "wingspan_in": 79.5,
@@ -17898,7 +17976,7 @@
       "injury": "Clean",
       "draft_score": 56.46,
       "id": 1342508769,
-      "rank": 288,
+      "rank": 289,
       "tier": 3
     },
     {
@@ -17958,7 +18036,7 @@
       "injury": "Clean",
       "draft_score": 56.46,
       "id": 1953437220,
-      "rank": 289,
+      "rank": 290,
       "tier": 3
     },
     {
@@ -18018,7 +18096,7 @@
       "injury": "Clean",
       "draft_score": 56.22,
       "id": 1244566947,
-      "rank": 290,
+      "rank": 291,
       "tier": 3
     },
     {
@@ -18078,7 +18156,7 @@
       "injury": "Clean",
       "draft_score": 56.2,
       "id": 258122559,
-      "rank": 291,
+      "rank": 292,
       "tier": 3
     },
     {
@@ -18138,7 +18216,7 @@
       "injury": "Clean",
       "draft_score": 56.11,
       "id": 1786477679,
-      "rank": 292,
+      "rank": 293,
       "tier": 3
     },
     {
@@ -18198,7 +18276,7 @@
       "injury": "Clean",
       "draft_score": 56.0,
       "id": 961065838,
-      "rank": 293,
+      "rank": 294,
       "tier": 3
     },
     {
@@ -18258,86 +18336,8 @@
       "injury": "Clean",
       "draft_score": 55.89,
       "id": 1151856768,
-      "rank": 294,
-      "tier": 3
-    },
-    {
-      "name": "Jahmi'us Ramsey",
-      "pos": "G",
-      "school": "Texas Tech",
-      "conference": "Big 12",
-      "year": "Freshman",
-      "height": "6'4\"",
-      "weight": "195 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 15.0,
-        "RPG": 4.0,
-        "APG": 2.2,
-        "SPG": 1.3,
-        "BPG": 0.7,
-        "FG%": 44.2,
-        "3P%": 42.6,
-        "FT%": 64.1,
-        "MPG": 31.2,
-        "GS": null,
-        "TOV": 2.0,
-        "FTA": 2.9,
-        "OREB": 0.7,
-        "DREB": 3.3,
-        "3PA": 5.2,
-        "FGA": 12.4,
-        "PF": 2.2
-      },
-      "advanced": {
-        "PER": 19.1,
-        "TS%": 54.6,
-        "eFG%": null,
-        "USG%": 26.2,
-        "AST%": 16.1,
-        "TOV%": 12.7,
-        "BPM": 6.7,
-        "OBPM": 4.3,
-        "DBPM": 2.4,
-        "OWS": 1.6,
-        "DWS": 1.7,
-        "Win Shares": 3.3,
-        "WS/40": 0.156
-      },
-      "skills": {
-        "Athleticism": 50,
-        "Defense": 41,
-        "Shooting": 47,
-        "Ball Handling": 19,
-        "IQ": 44,
-        "Leadership": 39
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 55.85,
-      "id": 484959455,
       "rank": 295,
-      "tier": 3,
-      "recruit_rank": 32,
-      "recruit_class_year": 2019,
-      "combine": {
-        "wingspan_in": 78.0,
-        "height_no_shoes_in": 74.5,
-        "height_w_shoes_in": 75.75,
-        "standing_reach_in": 100.5,
-        "hand_length_in": 8.75,
-        "hand_width_in": 9.75,
-        "weight_lbs": 193.4,
-        "body_fat_pct": 3.4,
-        "max_vert_in": null,
-        "standing_vert_in": null,
-        "lane_agility_s": null,
-        "shuttle_run_s": null,
-        "three_quarter_sprint_s": null,
-        "max_bench_reps": null
-      }
+      "tier": 3
     },
     {
       "name": "A.J. Reeves",
@@ -21232,82 +21232,6 @@
       "tier": 3
     },
     {
-      "name": "Jordan Nwora",
-      "pos": "F",
-      "school": "Louisville",
-      "conference": "ACC",
-      "year": "Junior",
-      "height": "6'7\"",
-      "weight": "225 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 18.0,
-        "RPG": 7.7,
-        "APG": 1.3,
-        "SPG": 0.7,
-        "BPG": 0.3,
-        "FG%": 44.0,
-        "3P%": 40.2,
-        "FT%": 81.3,
-        "MPG": 33.1,
-        "GS": null,
-        "TOV": 2.1,
-        "FTA": 4.1,
-        "OREB": 1.7,
-        "DREB": 6.0,
-        "3PA": 6.1,
-        "FGA": 13.9,
-        "PF": 2.2
-      },
-      "advanced": {
-        "PER": 22.6,
-        "TS%": 56.8,
-        "eFG%": null,
-        "USG%": 27.8,
-        "AST%": 8.4,
-        "TOV%": 11.7,
-        "BPM": 8.2,
-        "OBPM": 6.3,
-        "DBPM": 1.9,
-        "OWS": 3.2,
-        "DWS": 2.0,
-        "Win Shares": 5.2,
-        "WS/40": 0.201
-      },
-      "skills": {
-        "Athleticism": 47,
-        "Defense": 37,
-        "Shooting": 58,
-        "Ball Handling": 8,
-        "IQ": 39,
-        "Leadership": 52
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 53.75,
-      "id": 1410491920,
-      "rank": 344,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 82.25,
-        "height_no_shoes_in": 77.75,
-        "height_w_shoes_in": 79.0,
-        "standing_reach_in": 104.0,
-        "hand_length_in": 8.5,
-        "hand_width_in": 9.25,
-        "weight_lbs": 223.0,
-        "body_fat_pct": 11.68,
-        "max_vert_in": 35.0,
-        "standing_vert_in": 29.0,
-        "lane_agility_s": 11.29,
-        "shuttle_run_s": 2.66,
-        "three_quarter_sprint_s": 3.43,
-        "max_bench_reps": null
-      }
-    },
-    {
       "name": "Malik Fitts",
       "pos": "F",
       "school": "Saint Mary's",
@@ -21364,7 +21288,7 @@
       "injury": "Clean",
       "draft_score": 53.74,
       "id": 2027189119,
-      "rank": 345,
+      "rank": 344,
       "tier": 3
     },
     {
@@ -21424,7 +21348,7 @@
       "injury": "Clean",
       "draft_score": 53.66,
       "id": 1390420750,
-      "rank": 346,
+      "rank": 345,
       "tier": 3
     },
     {
@@ -21484,7 +21408,7 @@
       "injury": "Clean",
       "draft_score": 53.62,
       "id": 1637313975,
-      "rank": 347,
+      "rank": 346,
       "tier": 3
     },
     {
@@ -21544,7 +21468,7 @@
       "injury": "Clean",
       "draft_score": 53.45,
       "id": 381434600,
-      "rank": 348,
+      "rank": 347,
       "tier": 3
     },
     {
@@ -21604,7 +21528,7 @@
       "injury": "Clean",
       "draft_score": 53.42,
       "id": 952077252,
-      "rank": 349,
+      "rank": 348,
       "tier": 3
     },
     {
@@ -21664,7 +21588,7 @@
       "injury": "Clean",
       "draft_score": 53.41,
       "id": 1965518742,
-      "rank": 350,
+      "rank": 349,
       "tier": 3
     },
     {
@@ -21724,7 +21648,7 @@
       "injury": "Clean",
       "draft_score": 53.37,
       "id": 316114627,
-      "rank": 351,
+      "rank": 350,
       "tier": 3,
       "recruit_rank": 36,
       "recruit_class_year": 2017
@@ -21786,7 +21710,7 @@
       "injury": "Clean",
       "draft_score": 53.31,
       "id": 948964148,
-      "rank": 352,
+      "rank": 351,
       "tier": 3
     },
     {
@@ -21846,7 +21770,7 @@
       "injury": "Clean",
       "draft_score": 53.3,
       "id": 501760011,
-      "rank": 353,
+      "rank": 352,
       "tier": 3
     },
     {
@@ -21906,7 +21830,7 @@
       "injury": "Clean",
       "draft_score": 53.3,
       "id": 1520725906,
-      "rank": 354,
+      "rank": 353,
       "tier": 3
     },
     {
@@ -21966,7 +21890,7 @@
       "injury": "Clean",
       "draft_score": 53.19,
       "id": 1636092461,
-      "rank": 355,
+      "rank": 354,
       "tier": 3
     },
     {
@@ -22026,7 +21950,7 @@
       "injury": "Clean",
       "draft_score": 53.18,
       "id": 605195652,
-      "rank": 356,
+      "rank": 355,
       "tier": 3
     },
     {
@@ -22086,7 +22010,7 @@
       "injury": "Clean",
       "draft_score": 53.13,
       "id": 1470102786,
-      "rank": 357,
+      "rank": 356,
       "tier": 3
     },
     {
@@ -22146,7 +22070,7 @@
       "injury": "Clean",
       "draft_score": 53.02,
       "id": 1087001915,
-      "rank": 358,
+      "rank": 357,
       "tier": 3
     },
     {
@@ -22206,7 +22130,7 @@
       "injury": "Clean",
       "draft_score": 53.02,
       "id": 1933137859,
-      "rank": 359,
+      "rank": 358,
       "tier": 3
     },
     {
@@ -22266,7 +22190,7 @@
       "injury": "Clean",
       "draft_score": 53.01,
       "id": 1833123406,
-      "rank": 360,
+      "rank": 359,
       "tier": 3
     },
     {
@@ -22326,7 +22250,7 @@
       "injury": "Clean",
       "draft_score": 52.74,
       "id": 831779743,
-      "rank": 361,
+      "rank": 360,
       "tier": 3
     },
     {
@@ -22386,7 +22310,7 @@
       "injury": "Clean",
       "draft_score": 52.65,
       "id": 283462719,
-      "rank": 362,
+      "rank": 361,
       "tier": 3
     },
     {
@@ -22446,7 +22370,7 @@
       "injury": "Clean",
       "draft_score": 52.64,
       "id": 858813137,
-      "rank": 363,
+      "rank": 362,
       "tier": 3
     },
     {
@@ -22506,7 +22430,7 @@
       "injury": "Clean",
       "draft_score": 52.55,
       "id": 403472739,
-      "rank": 364,
+      "rank": 363,
       "tier": 3
     },
     {
@@ -22566,84 +22490,8 @@
       "injury": "Clean",
       "draft_score": 52.53,
       "id": 111070526,
-      "rank": 365,
+      "rank": 364,
       "tier": 3
-    },
-    {
-      "name": "Yoeli Childs",
-      "pos": "F",
-      "school": "Brigham Young",
-      "conference": "WCC",
-      "year": "Senior",
-      "height": "6'8\"",
-      "weight": "225 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 22.2,
-        "RPG": 9.0,
-        "APG": 2.0,
-        "SPG": 0.7,
-        "BPG": 0.9,
-        "FG%": 57.4,
-        "3P%": 48.9,
-        "FT%": 53.8,
-        "MPG": 28.8,
-        "GS": null,
-        "TOV": 2.4,
-        "FTA": 4.9,
-        "OREB": 2.0,
-        "DREB": 7.0,
-        "3PA": 2.4,
-        "FGA": 16.1,
-        "PF": 2.6
-      },
-      "advanced": {
-        "PER": 33.9,
-        "TS%": 60.4,
-        "eFG%": null,
-        "USG%": 37.8,
-        "AST%": 16.8,
-        "TOV%": 11.4,
-        "BPM": 9.1,
-        "OBPM": 7.1,
-        "DBPM": 2.1,
-        "OWS": 2.1,
-        "DWS": 1.1,
-        "Win Shares": 3.2,
-        "WS/40": 0.236
-      },
-      "skills": {
-        "Athleticism": 55,
-        "Defense": 54,
-        "Shooting": 63,
-        "Ball Handling": 13,
-        "IQ": 48,
-        "Leadership": 63
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 52.48,
-      "id": 1149346956,
-      "rank": 366,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 83.5,
-        "height_no_shoes_in": 78.0,
-        "height_w_shoes_in": 79.0,
-        "standing_reach_in": 106.0,
-        "hand_length_in": 8.75,
-        "hand_width_in": 10.0,
-        "weight_lbs": 226.4,
-        "body_fat_pct": 8.2,
-        "max_vert_in": 38.5,
-        "standing_vert_in": 34.0,
-        "lane_agility_s": 10.87,
-        "shuttle_run_s": 2.42,
-        "three_quarter_sprint_s": 3.22,
-        "max_bench_reps": null
-      }
     },
     {
       "name": "Chris Vogt",
@@ -22702,7 +22550,7 @@
       "injury": "Clean",
       "draft_score": 52.41,
       "id": 1667810176,
-      "rank": 367,
+      "rank": 365,
       "tier": 3
     },
     {
@@ -22762,8 +22610,84 @@
       "injury": "Clean",
       "draft_score": 52.38,
       "id": 1850333269,
-      "rank": 368,
+      "rank": 366,
       "tier": 3
+    },
+    {
+      "name": "Myles Powell",
+      "pos": "G",
+      "school": "Seton Hall",
+      "conference": "Big East",
+      "year": "Senior",
+      "height": "6'2\"",
+      "weight": "195 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 21.0,
+        "RPG": 4.3,
+        "APG": 2.9,
+        "SPG": 1.2,
+        "BPG": 0.2,
+        "FG%": 39.8,
+        "3P%": 30.6,
+        "FT%": 79.5,
+        "MPG": 31.5,
+        "GS": null,
+        "TOV": 2.8,
+        "FTA": 5.4,
+        "OREB": 0.9,
+        "DREB": 3.4,
+        "3PA": 9.2,
+        "FGA": 17.5,
+        "PF": 2.1
+      },
+      "advanced": {
+        "PER": 22.3,
+        "TS%": 52.4,
+        "eFG%": null,
+        "USG%": 35.6,
+        "AST%": 21.3,
+        "TOV%": 12.2,
+        "BPM": 7.1,
+        "OBPM": 6.2,
+        "DBPM": 0.9,
+        "OWS": 2.3,
+        "DWS": 1.3,
+        "Win Shares": 3.6,
+        "WS/40": 0.163
+      },
+      "skills": {
+        "Athleticism": 61,
+        "Defense": 32,
+        "Shooting": 40,
+        "Ball Handling": 19,
+        "IQ": 43,
+        "Leadership": 52
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 52.36,
+      "id": 2142397999,
+      "rank": 367,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 79.0,
+        "height_no_shoes_in": 72.5,
+        "height_w_shoes_in": 73.5,
+        "standing_reach_in": 99.0,
+        "hand_length_in": 8.0,
+        "hand_width_in": 9.0,
+        "weight_lbs": 194.0,
+        "body_fat_pct": 15.8,
+        "max_vert_in": null,
+        "standing_vert_in": null,
+        "lane_agility_s": null,
+        "shuttle_run_s": null,
+        "three_quarter_sprint_s": null,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Lester Quinones",
@@ -22822,7 +22746,7 @@
       "injury": "Clean",
       "draft_score": 52.35,
       "id": 1595934903,
-      "rank": 369,
+      "rank": 368,
       "tier": 3
     },
     {
@@ -22882,7 +22806,7 @@
       "injury": "Clean",
       "draft_score": 52.35,
       "id": 862003123,
-      "rank": 370,
+      "rank": 369,
       "tier": 3
     },
     {
@@ -22942,7 +22866,7 @@
       "injury": "Clean",
       "draft_score": 52.35,
       "id": 1939738186,
-      "rank": 371,
+      "rank": 370,
       "tier": 3
     },
     {
@@ -23002,7 +22926,7 @@
       "injury": "Clean",
       "draft_score": 52.31,
       "id": 1057354255,
-      "rank": 372,
+      "rank": 371,
       "tier": 3
     },
     {
@@ -23062,7 +22986,7 @@
       "injury": "Clean",
       "draft_score": 52.3,
       "id": 1716796612,
-      "rank": 373,
+      "rank": 372,
       "tier": 3
     },
     {
@@ -23122,7 +23046,7 @@
       "injury": "Clean",
       "draft_score": 52.3,
       "id": 1101416140,
-      "rank": 374,
+      "rank": 373,
       "tier": 3,
       "recruit_rank": 49,
       "recruit_class_year": 2017
@@ -23184,7 +23108,7 @@
       "injury": "Clean",
       "draft_score": 52.29,
       "id": 316874860,
-      "rank": 375,
+      "rank": 374,
       "tier": 3
     },
     {
@@ -23244,7 +23168,7 @@
       "injury": "Clean",
       "draft_score": 52.26,
       "id": 1621938804,
-      "rank": 376,
+      "rank": 375,
       "tier": 3
     },
     {
@@ -23304,7 +23228,7 @@
       "injury": "Clean",
       "draft_score": 52.2,
       "id": 752909631,
-      "rank": 377,
+      "rank": 376,
       "tier": 3
     },
     {
@@ -23364,7 +23288,7 @@
       "injury": "Clean",
       "draft_score": 52.18,
       "id": 1019199615,
-      "rank": 378,
+      "rank": 377,
       "tier": 3
     },
     {
@@ -23424,7 +23348,7 @@
       "injury": "Clean",
       "draft_score": 52.17,
       "id": 302941768,
-      "rank": 379,
+      "rank": 378,
       "tier": 3
     },
     {
@@ -23484,7 +23408,7 @@
       "injury": "Clean",
       "draft_score": 52.06,
       "id": 1485022552,
-      "rank": 380,
+      "rank": 379,
       "tier": 3
     },
     {
@@ -23544,7 +23468,7 @@
       "injury": "Clean",
       "draft_score": 52.06,
       "id": 455894836,
-      "rank": 381,
+      "rank": 380,
       "tier": 3
     },
     {
@@ -23604,7 +23528,7 @@
       "injury": "Clean",
       "draft_score": 52.03,
       "id": 718960138,
-      "rank": 382,
+      "rank": 381,
       "tier": 3
     },
     {
@@ -23664,7 +23588,7 @@
       "injury": "Clean",
       "draft_score": 52.03,
       "id": 1829965158,
-      "rank": 383,
+      "rank": 382,
       "tier": 3
     },
     {
@@ -23724,7 +23648,7 @@
       "injury": "Clean",
       "draft_score": 51.92,
       "id": 850603909,
-      "rank": 384,
+      "rank": 383,
       "tier": 3
     },
     {
@@ -23784,7 +23708,7 @@
       "injury": "Clean",
       "draft_score": 51.91,
       "id": 1109896486,
-      "rank": 385,
+      "rank": 384,
       "tier": 3
     },
     {
@@ -23844,7 +23768,7 @@
       "injury": "Clean",
       "draft_score": 51.89,
       "id": 2102112816,
-      "rank": 386,
+      "rank": 385,
       "tier": 3
     },
     {
@@ -23904,7 +23828,7 @@
       "injury": "Clean",
       "draft_score": 51.85,
       "id": 1253531374,
-      "rank": 387,
+      "rank": 386,
       "tier": 3
     },
     {
@@ -23964,7 +23888,7 @@
       "injury": "Clean",
       "draft_score": 51.84,
       "id": 750458802,
-      "rank": 388,
+      "rank": 387,
       "tier": 3
     },
     {
@@ -24024,7 +23948,7 @@
       "injury": "Clean",
       "draft_score": 51.71,
       "id": 1255346237,
-      "rank": 389,
+      "rank": 388,
       "tier": 3
     },
     {
@@ -24084,7 +24008,7 @@
       "injury": "Clean",
       "draft_score": 51.68,
       "id": 518692793,
-      "rank": 390,
+      "rank": 389,
       "tier": 3
     },
     {
@@ -24144,7 +24068,7 @@
       "injury": "Clean",
       "draft_score": 51.68,
       "id": 1775260173,
-      "rank": 391,
+      "rank": 390,
       "tier": 3
     },
     {
@@ -24204,7 +24128,7 @@
       "injury": "Clean",
       "draft_score": 51.61,
       "id": 236041469,
-      "rank": 392,
+      "rank": 391,
       "tier": 3
     },
     {
@@ -24264,8 +24188,84 @@
       "injury": "Clean",
       "draft_score": 51.58,
       "id": 855812247,
-      "rank": 393,
+      "rank": 392,
       "tier": 3
+    },
+    {
+      "name": "Jordan Nwora",
+      "pos": "F",
+      "school": "Louisville",
+      "conference": "ACC",
+      "year": "Junior",
+      "height": "6'7\"",
+      "weight": "225 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 18.0,
+        "RPG": 7.7,
+        "APG": 1.3,
+        "SPG": 0.7,
+        "BPG": 0.3,
+        "FG%": 44.0,
+        "3P%": 40.2,
+        "FT%": 81.3,
+        "MPG": 33.1,
+        "GS": null,
+        "TOV": 2.1,
+        "FTA": 4.1,
+        "OREB": 1.7,
+        "DREB": 6.0,
+        "3PA": 6.1,
+        "FGA": 13.9,
+        "PF": 2.2
+      },
+      "advanced": {
+        "PER": 22.6,
+        "TS%": 56.8,
+        "eFG%": null,
+        "USG%": 27.8,
+        "AST%": 8.4,
+        "TOV%": 11.7,
+        "BPM": 8.2,
+        "OBPM": 6.3,
+        "DBPM": 1.9,
+        "OWS": 3.2,
+        "DWS": 2.0,
+        "Win Shares": 5.2,
+        "WS/40": 0.201
+      },
+      "skills": {
+        "Athleticism": 47,
+        "Defense": 37,
+        "Shooting": 58,
+        "Ball Handling": 8,
+        "IQ": 39,
+        "Leadership": 52
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 51.52,
+      "id": 1410491920,
+      "rank": 393,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 82.25,
+        "height_no_shoes_in": 77.75,
+        "height_w_shoes_in": 79.0,
+        "standing_reach_in": 104.0,
+        "hand_length_in": 8.5,
+        "hand_width_in": 9.25,
+        "weight_lbs": 223.0,
+        "body_fat_pct": 11.68,
+        "max_vert_in": 35.0,
+        "standing_vert_in": 29.0,
+        "lane_agility_s": 11.29,
+        "shuttle_run_s": 2.66,
+        "three_quarter_sprint_s": 3.43,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Taevion Kinsey",
@@ -25290,6 +25290,82 @@
       "tier": 3
     },
     {
+      "name": "Yoeli Childs",
+      "pos": "F",
+      "school": "Brigham Young",
+      "conference": "WCC",
+      "year": "Senior",
+      "height": "6'8\"",
+      "weight": "225 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 22.2,
+        "RPG": 9.0,
+        "APG": 2.0,
+        "SPG": 0.7,
+        "BPG": 0.9,
+        "FG%": 57.4,
+        "3P%": 48.9,
+        "FT%": 53.8,
+        "MPG": 28.8,
+        "GS": null,
+        "TOV": 2.4,
+        "FTA": 4.9,
+        "OREB": 2.0,
+        "DREB": 7.0,
+        "3PA": 2.4,
+        "FGA": 16.1,
+        "PF": 2.6
+      },
+      "advanced": {
+        "PER": 33.9,
+        "TS%": 60.4,
+        "eFG%": null,
+        "USG%": 37.8,
+        "AST%": 16.8,
+        "TOV%": 11.4,
+        "BPM": 9.1,
+        "OBPM": 7.1,
+        "DBPM": 2.1,
+        "OWS": 2.1,
+        "DWS": 1.1,
+        "Win Shares": 3.2,
+        "WS/40": 0.236
+      },
+      "skills": {
+        "Athleticism": 55,
+        "Defense": 54,
+        "Shooting": 63,
+        "Ball Handling": 13,
+        "IQ": 48,
+        "Leadership": 63
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 50.44,
+      "id": 1149346956,
+      "rank": 411,
+      "tier": 3,
+      "combine": {
+        "wingspan_in": 83.5,
+        "height_no_shoes_in": 78.0,
+        "height_w_shoes_in": 79.0,
+        "standing_reach_in": 106.0,
+        "hand_length_in": 8.75,
+        "hand_width_in": 10.0,
+        "weight_lbs": 226.4,
+        "body_fat_pct": 8.2,
+        "max_vert_in": 38.5,
+        "standing_vert_in": 34.0,
+        "lane_agility_s": 10.87,
+        "shuttle_run_s": 2.42,
+        "three_quarter_sprint_s": 3.22,
+        "max_bench_reps": null
+      }
+    },
+    {
       "name": "Marcus Santos-Silva",
       "pos": "F",
       "school": "Virginia Commonwealth",
@@ -25346,7 +25422,7 @@
       "injury": "Clean",
       "draft_score": 50.43,
       "id": 974328749,
-      "rank": 411,
+      "rank": 412,
       "tier": 3
     },
     {
@@ -25406,7 +25482,7 @@
       "injury": "Clean",
       "draft_score": 50.4,
       "id": 1860903376,
-      "rank": 412,
+      "rank": 413,
       "tier": 3
     },
     {
@@ -25466,7 +25542,7 @@
       "injury": "Clean",
       "draft_score": 50.38,
       "id": 110909569,
-      "rank": 413,
+      "rank": 414,
       "tier": 3
     },
     {
@@ -25526,7 +25602,7 @@
       "injury": "Clean",
       "draft_score": 50.38,
       "id": 2078549769,
-      "rank": 414,
+      "rank": 415,
       "tier": 3
     },
     {
@@ -25586,7 +25662,7 @@
       "injury": "Clean",
       "draft_score": 50.3,
       "id": 713079469,
-      "rank": 415,
+      "rank": 416,
       "tier": 3
     },
     {
@@ -25646,84 +25722,8 @@
       "injury": "Clean",
       "draft_score": 50.26,
       "id": 544946851,
-      "rank": 416,
-      "tier": 3
-    },
-    {
-      "name": "Myles Powell",
-      "pos": "G",
-      "school": "Seton Hall",
-      "conference": "Big East",
-      "year": "Senior",
-      "height": "6'2\"",
-      "weight": "195 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 21.0,
-        "RPG": 4.3,
-        "APG": 2.9,
-        "SPG": 1.2,
-        "BPG": 0.2,
-        "FG%": 39.8,
-        "3P%": 30.6,
-        "FT%": 79.5,
-        "MPG": 31.5,
-        "GS": null,
-        "TOV": 2.8,
-        "FTA": 5.4,
-        "OREB": 0.9,
-        "DREB": 3.4,
-        "3PA": 9.2,
-        "FGA": 17.5,
-        "PF": 2.1
-      },
-      "advanced": {
-        "PER": 22.3,
-        "TS%": 52.4,
-        "eFG%": null,
-        "USG%": 35.6,
-        "AST%": 21.3,
-        "TOV%": 12.2,
-        "BPM": 7.1,
-        "OBPM": 6.2,
-        "DBPM": 0.9,
-        "OWS": 2.3,
-        "DWS": 1.3,
-        "Win Shares": 3.6,
-        "WS/40": 0.163
-      },
-      "skills": {
-        "Athleticism": 61,
-        "Defense": 32,
-        "Shooting": 40,
-        "Ball Handling": 19,
-        "IQ": 43,
-        "Leadership": 52
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 50.22,
-      "id": 2142397999,
       "rank": 417,
-      "tier": 3,
-      "combine": {
-        "wingspan_in": 79.0,
-        "height_no_shoes_in": 72.5,
-        "height_w_shoes_in": 73.5,
-        "standing_reach_in": 99.0,
-        "hand_length_in": 8.0,
-        "hand_width_in": 9.0,
-        "weight_lbs": 194.0,
-        "body_fat_pct": 15.8,
-        "max_vert_in": null,
-        "standing_vert_in": null,
-        "lane_agility_s": null,
-        "shuttle_run_s": null,
-        "three_quarter_sprint_s": null,
-        "max_bench_reps": null
-      }
+      "tier": 3
     },
     {
       "name": "Jordan Usher",
@@ -47714,84 +47714,6 @@
       "tier": 3
     },
     {
-      "name": "Kahlil Whitney",
-      "pos": "F",
-      "school": "Kentucky",
-      "conference": "SEC",
-      "year": "Freshman",
-      "height": "6'6\"",
-      "weight": "210 lbs",
-      "hometown": "—",
-      "stats": {
-        "PPG": 3.3,
-        "RPG": 1.7,
-        "APG": 0.4,
-        "SPG": 0.3,
-        "BPG": 0.2,
-        "FG%": 37.1,
-        "3P%": 25.0,
-        "FT%": 43.5,
-        "MPG": 12.8,
-        "GS": null,
-        "TOV": 0.8,
-        "FTA": 1.3,
-        "OREB": 0.8,
-        "DREB": 0.9,
-        "3PA": 0.9,
-        "FGA": 3.4,
-        "PF": 1.3
-      },
-      "advanced": {
-        "PER": 6.6,
-        "TS%": 41.1,
-        "eFG%": null,
-        "USG%": 19.5,
-        "AST%": 6.5,
-        "TOV%": 17.1,
-        "BPM": -2.0,
-        "OBPM": -2.7,
-        "DBPM": 0.7,
-        "OWS": -0.1,
-        "DWS": 0.3,
-        "Win Shares": 0.2,
-        "WS/40": 0.031
-      },
-      "skills": {
-        "Athleticism": 11,
-        "Defense": 16,
-        "Shooting": 0,
-        "Ball Handling": 4,
-        "IQ": 36,
-        "Leadership": 10
-      },
-      "strengths": [],
-      "weaknesses": [],
-      "comps": [],
-      "injury": "Clean",
-      "draft_score": 39.87,
-      "id": 935983469,
-      "rank": 784,
-      "tier": 3,
-      "recruit_rank": 11,
-      "recruit_class_year": 2019,
-      "combine": {
-        "wingspan_in": 84.25,
-        "height_no_shoes_in": 77.5,
-        "height_w_shoes_in": 79.0,
-        "standing_reach_in": 105.5,
-        "hand_length_in": 9.25,
-        "hand_width_in": 10.25,
-        "weight_lbs": 205.0,
-        "body_fat_pct": 5.3,
-        "max_vert_in": 39.0,
-        "standing_vert_in": 29.0,
-        "lane_agility_s": 11.17,
-        "shuttle_run_s": 2.61,
-        "three_quarter_sprint_s": 3.28,
-        "max_bench_reps": null
-      }
-    },
-    {
       "name": "Kihei Clark",
       "pos": "G",
       "school": "Virginia",
@@ -47848,7 +47770,7 @@
       "injury": "Clean",
       "draft_score": 39.87,
       "id": 1992759848,
-      "rank": 785,
+      "rank": 784,
       "tier": 3
     },
     {
@@ -47908,7 +47830,7 @@
       "injury": "Clean",
       "draft_score": 39.86,
       "id": 1927492390,
-      "rank": 786,
+      "rank": 785,
       "tier": 3
     },
     {
@@ -47968,7 +47890,7 @@
       "injury": "Clean",
       "draft_score": 39.86,
       "id": 324507731,
-      "rank": 787,
+      "rank": 786,
       "tier": 3
     },
     {
@@ -48028,7 +47950,7 @@
       "injury": "Clean",
       "draft_score": 39.85,
       "id": 1628995573,
-      "rank": 788,
+      "rank": 787,
       "tier": 3
     },
     {
@@ -48088,7 +48010,7 @@
       "injury": "Clean",
       "draft_score": 39.82,
       "id": 1032323934,
-      "rank": 789,
+      "rank": 788,
       "tier": 3
     },
     {
@@ -48148,7 +48070,7 @@
       "injury": "Clean",
       "draft_score": 39.8,
       "id": 1372439312,
-      "rank": 790,
+      "rank": 789,
       "tier": 3
     },
     {
@@ -48208,7 +48130,7 @@
       "injury": "Clean",
       "draft_score": 39.79,
       "id": 1861933309,
-      "rank": 791,
+      "rank": 790,
       "tier": 3
     },
     {
@@ -48268,7 +48190,7 @@
       "injury": "Clean",
       "draft_score": 39.74,
       "id": 1523387876,
-      "rank": 792,
+      "rank": 791,
       "tier": 3
     },
     {
@@ -48328,7 +48250,7 @@
       "injury": "Clean",
       "draft_score": 39.7,
       "id": 263647801,
-      "rank": 793,
+      "rank": 792,
       "tier": 3
     },
     {
@@ -48388,7 +48310,7 @@
       "injury": "Clean",
       "draft_score": 39.7,
       "id": 609225934,
-      "rank": 794,
+      "rank": 793,
       "tier": 3
     },
     {
@@ -48448,7 +48370,7 @@
       "injury": "Clean",
       "draft_score": 39.68,
       "id": 118541113,
-      "rank": 795,
+      "rank": 794,
       "tier": 3
     },
     {
@@ -48508,7 +48430,7 @@
       "injury": "Clean",
       "draft_score": 39.68,
       "id": 1200579936,
-      "rank": 796,
+      "rank": 795,
       "tier": 3,
       "recruit_rank": 13,
       "recruit_class_year": 2020
@@ -48570,7 +48492,7 @@
       "injury": "Clean",
       "draft_score": 39.68,
       "id": 1780890919,
-      "rank": 797,
+      "rank": 796,
       "tier": 3
     },
     {
@@ -48630,7 +48552,7 @@
       "injury": "Clean",
       "draft_score": 39.68,
       "id": 1735193601,
-      "rank": 798,
+      "rank": 797,
       "tier": 3
     },
     {
@@ -48690,7 +48612,7 @@
       "injury": "Clean",
       "draft_score": 39.64,
       "id": 1720024382,
-      "rank": 799,
+      "rank": 798,
       "tier": 3
     },
     {
@@ -48750,7 +48672,7 @@
       "injury": "Clean",
       "draft_score": 39.64,
       "id": 301264103,
-      "rank": 800,
+      "rank": 799,
       "tier": 3
     },
     {
@@ -48810,7 +48732,7 @@
       "injury": "Clean",
       "draft_score": 39.63,
       "id": 1134329149,
-      "rank": 801,
+      "rank": 800,
       "tier": 3
     },
     {
@@ -48870,7 +48792,7 @@
       "injury": "Clean",
       "draft_score": 39.61,
       "id": 598239441,
-      "rank": 802,
+      "rank": 801,
       "tier": 3
     },
     {
@@ -48930,7 +48852,7 @@
       "injury": "Clean",
       "draft_score": 39.61,
       "id": 820248460,
-      "rank": 803,
+      "rank": 802,
       "tier": 3
     },
     {
@@ -48990,7 +48912,7 @@
       "injury": "Clean",
       "draft_score": 39.6,
       "id": 883872085,
-      "rank": 804,
+      "rank": 803,
       "tier": 3
     },
     {
@@ -49050,7 +48972,7 @@
       "injury": "Clean",
       "draft_score": 39.59,
       "id": 2105081857,
-      "rank": 805,
+      "rank": 804,
       "tier": 3
     },
     {
@@ -49110,7 +49032,7 @@
       "injury": "Clean",
       "draft_score": 39.56,
       "id": 1692143410,
-      "rank": 806,
+      "rank": 805,
       "tier": 3
     },
     {
@@ -49170,7 +49092,7 @@
       "injury": "Clean",
       "draft_score": 39.55,
       "id": 1243435948,
-      "rank": 807,
+      "rank": 806,
       "tier": 3,
       "recruit_rank": 41,
       "recruit_class_year": 2017
@@ -49232,7 +49154,7 @@
       "injury": "Clean",
       "draft_score": 39.54,
       "id": 98000028,
-      "rank": 808,
+      "rank": 807,
       "tier": 3
     },
     {
@@ -49292,7 +49214,7 @@
       "injury": "Clean",
       "draft_score": 39.54,
       "id": 740040268,
-      "rank": 809,
+      "rank": 808,
       "tier": 3
     },
     {
@@ -49352,7 +49274,7 @@
       "injury": "Clean",
       "draft_score": 39.51,
       "id": 1823628181,
-      "rank": 810,
+      "rank": 809,
       "tier": 3
     },
     {
@@ -49412,7 +49334,7 @@
       "injury": "Clean",
       "draft_score": 39.51,
       "id": 493775487,
-      "rank": 811,
+      "rank": 810,
       "tier": 3
     },
     {
@@ -49472,7 +49394,7 @@
       "injury": "Clean",
       "draft_score": 39.5,
       "id": 1270872531,
-      "rank": 812,
+      "rank": 811,
       "tier": 3
     },
     {
@@ -49532,7 +49454,7 @@
       "injury": "Clean",
       "draft_score": 39.46,
       "id": 262303212,
-      "rank": 813,
+      "rank": 812,
       "tier": 3
     },
     {
@@ -49592,7 +49514,7 @@
       "injury": "Clean",
       "draft_score": 39.41,
       "id": 1368211192,
-      "rank": 814,
+      "rank": 813,
       "tier": 3
     },
     {
@@ -49652,7 +49574,7 @@
       "injury": "Clean",
       "draft_score": 39.39,
       "id": 67207960,
-      "rank": 815,
+      "rank": 814,
       "tier": 3
     },
     {
@@ -49712,7 +49634,7 @@
       "injury": "Clean",
       "draft_score": 39.35,
       "id": 951520342,
-      "rank": 816,
+      "rank": 815,
       "tier": 3
     },
     {
@@ -49772,7 +49694,7 @@
       "injury": "Clean",
       "draft_score": 39.34,
       "id": 1773142930,
-      "rank": 817,
+      "rank": 816,
       "tier": 3
     },
     {
@@ -49832,7 +49754,7 @@
       "injury": "Clean",
       "draft_score": 39.28,
       "id": 826769190,
-      "rank": 818,
+      "rank": 817,
       "tier": 3
     },
     {
@@ -49892,7 +49814,7 @@
       "injury": "Clean",
       "draft_score": 39.27,
       "id": 1841272043,
-      "rank": 819,
+      "rank": 818,
       "tier": 3
     },
     {
@@ -49952,7 +49874,7 @@
       "injury": "Clean",
       "draft_score": 39.26,
       "id": 1598462803,
-      "rank": 820,
+      "rank": 819,
       "tier": 3
     },
     {
@@ -50012,7 +49934,7 @@
       "injury": "Clean",
       "draft_score": 39.21,
       "id": 2136283715,
-      "rank": 821,
+      "rank": 820,
       "tier": 3
     },
     {
@@ -50072,7 +49994,7 @@
       "injury": "Clean",
       "draft_score": 39.2,
       "id": 1572818510,
-      "rank": 822,
+      "rank": 821,
       "tier": 3
     },
     {
@@ -50132,7 +50054,7 @@
       "injury": "Clean",
       "draft_score": 39.15,
       "id": 1635719959,
-      "rank": 823,
+      "rank": 822,
       "tier": 3
     },
     {
@@ -50192,7 +50114,7 @@
       "injury": "Clean",
       "draft_score": 39.13,
       "id": 1809116867,
-      "rank": 824,
+      "rank": 823,
       "tier": 3
     },
     {
@@ -50252,7 +50174,7 @@
       "injury": "Clean",
       "draft_score": 39.08,
       "id": 10330184,
-      "rank": 825,
+      "rank": 824,
       "tier": 3
     },
     {
@@ -50312,7 +50234,7 @@
       "injury": "Clean",
       "draft_score": 39.08,
       "id": 916538081,
-      "rank": 826,
+      "rank": 825,
       "tier": 3
     },
     {
@@ -50372,7 +50294,7 @@
       "injury": "Clean",
       "draft_score": 39.08,
       "id": 692029902,
-      "rank": 827,
+      "rank": 826,
       "tier": 3
     },
     {
@@ -50432,7 +50354,7 @@
       "injury": "Clean",
       "draft_score": 39.07,
       "id": 242235924,
-      "rank": 828,
+      "rank": 827,
       "tier": 3
     },
     {
@@ -50492,7 +50414,7 @@
       "injury": "Clean",
       "draft_score": 39.04,
       "id": 1813861241,
-      "rank": 829,
+      "rank": 828,
       "tier": 3
     },
     {
@@ -50552,7 +50474,7 @@
       "injury": "Clean",
       "draft_score": 39.04,
       "id": 2114823934,
-      "rank": 830,
+      "rank": 829,
       "tier": 3
     },
     {
@@ -50612,7 +50534,7 @@
       "injury": "Clean",
       "draft_score": 39.01,
       "id": 1295545346,
-      "rank": 831,
+      "rank": 830,
       "tier": 3
     },
     {
@@ -50672,7 +50594,7 @@
       "injury": "Clean",
       "draft_score": 38.97,
       "id": 1631262789,
-      "rank": 832,
+      "rank": 831,
       "tier": 3
     },
     {
@@ -50732,7 +50654,7 @@
       "injury": "Clean",
       "draft_score": 38.95,
       "id": 1017257280,
-      "rank": 833,
+      "rank": 832,
       "tier": 3
     },
     {
@@ -50792,7 +50714,7 @@
       "injury": "Clean",
       "draft_score": 38.86,
       "id": 694249917,
-      "rank": 834,
+      "rank": 833,
       "tier": 3
     },
     {
@@ -50852,7 +50774,7 @@
       "injury": "Clean",
       "draft_score": 38.84,
       "id": 272435710,
-      "rank": 835,
+      "rank": 834,
       "tier": 3
     },
     {
@@ -50912,7 +50834,7 @@
       "injury": "Clean",
       "draft_score": 38.84,
       "id": 397160544,
-      "rank": 836,
+      "rank": 835,
       "tier": 3
     },
     {
@@ -50972,7 +50894,7 @@
       "injury": "Clean",
       "draft_score": 38.79,
       "id": 1802364200,
-      "rank": 837,
+      "rank": 836,
       "tier": 3
     },
     {
@@ -51032,7 +50954,7 @@
       "injury": "Clean",
       "draft_score": 38.77,
       "id": 480946333,
-      "rank": 838,
+      "rank": 837,
       "tier": 3
     },
     {
@@ -51092,7 +51014,7 @@
       "injury": "Clean",
       "draft_score": 38.76,
       "id": 397668696,
-      "rank": 839,
+      "rank": 838,
       "tier": 3
     },
     {
@@ -51152,7 +51074,7 @@
       "injury": "Clean",
       "draft_score": 38.73,
       "id": 1663817438,
-      "rank": 840,
+      "rank": 839,
       "tier": 3
     },
     {
@@ -51212,7 +51134,7 @@
       "injury": "Clean",
       "draft_score": 38.73,
       "id": 404792277,
-      "rank": 841,
+      "rank": 840,
       "tier": 3
     },
     {
@@ -51272,7 +51194,7 @@
       "injury": "Clean",
       "draft_score": 38.71,
       "id": 1627571270,
-      "rank": 842,
+      "rank": 841,
       "tier": 3
     },
     {
@@ -51332,7 +51254,7 @@
       "injury": "Clean",
       "draft_score": 38.69,
       "id": 1828280621,
-      "rank": 843,
+      "rank": 842,
       "tier": 3
     },
     {
@@ -51392,7 +51314,7 @@
       "injury": "Clean",
       "draft_score": 38.66,
       "id": 1976806458,
-      "rank": 844,
+      "rank": 843,
       "tier": 3
     },
     {
@@ -51452,7 +51374,7 @@
       "injury": "Clean",
       "draft_score": 38.61,
       "id": 690423939,
-      "rank": 845,
+      "rank": 844,
       "tier": 3
     },
     {
@@ -51512,7 +51434,7 @@
       "injury": "Clean",
       "draft_score": 38.57,
       "id": 2100567474,
-      "rank": 846,
+      "rank": 845,
       "tier": 3
     },
     {
@@ -51572,7 +51494,7 @@
       "injury": "Clean",
       "draft_score": 38.53,
       "id": 332030978,
-      "rank": 847,
+      "rank": 846,
       "tier": 3
     },
     {
@@ -51632,7 +51554,7 @@
       "injury": "Clean",
       "draft_score": 38.53,
       "id": 1916265694,
-      "rank": 848,
+      "rank": 847,
       "tier": 3
     },
     {
@@ -51692,7 +51614,7 @@
       "injury": "Clean",
       "draft_score": 38.5,
       "id": 253076750,
-      "rank": 849,
+      "rank": 848,
       "tier": 3
     },
     {
@@ -51752,7 +51674,7 @@
       "injury": "Clean",
       "draft_score": 38.49,
       "id": 1828899469,
-      "rank": 850,
+      "rank": 849,
       "tier": 3
     },
     {
@@ -51812,7 +51734,7 @@
       "injury": "Clean",
       "draft_score": 38.48,
       "id": 724769815,
-      "rank": 851,
+      "rank": 850,
       "tier": 3
     },
     {
@@ -51872,7 +51794,7 @@
       "injury": "Clean",
       "draft_score": 38.47,
       "id": 1583706874,
-      "rank": 852,
+      "rank": 851,
       "tier": 3
     },
     {
@@ -51932,7 +51854,7 @@
       "injury": "Clean",
       "draft_score": 38.42,
       "id": 371262506,
-      "rank": 853,
+      "rank": 852,
       "tier": 3
     },
     {
@@ -51992,7 +51914,7 @@
       "injury": "Clean",
       "draft_score": 38.4,
       "id": 775372709,
-      "rank": 854,
+      "rank": 853,
       "tier": 3
     },
     {
@@ -52052,7 +51974,7 @@
       "injury": "Clean",
       "draft_score": 38.37,
       "id": 1836482528,
-      "rank": 855,
+      "rank": 854,
       "tier": 3
     },
     {
@@ -52112,7 +52034,7 @@
       "injury": "Clean",
       "draft_score": 38.34,
       "id": 781168916,
-      "rank": 856,
+      "rank": 855,
       "tier": 3
     },
     {
@@ -52172,7 +52094,7 @@
       "injury": "Clean",
       "draft_score": 38.33,
       "id": 1657607262,
-      "rank": 857,
+      "rank": 856,
       "tier": 3
     },
     {
@@ -52232,7 +52154,7 @@
       "injury": "Clean",
       "draft_score": 38.27,
       "id": 404884972,
-      "rank": 858,
+      "rank": 857,
       "tier": 3
     },
     {
@@ -52292,7 +52214,7 @@
       "injury": "Clean",
       "draft_score": 38.26,
       "id": 1726677059,
-      "rank": 859,
+      "rank": 858,
       "tier": 3
     },
     {
@@ -52352,7 +52274,7 @@
       "injury": "Clean",
       "draft_score": 38.23,
       "id": 624843400,
-      "rank": 860,
+      "rank": 859,
       "tier": 3
     },
     {
@@ -52412,7 +52334,7 @@
       "injury": "Clean",
       "draft_score": 38.21,
       "id": 1832787355,
-      "rank": 861,
+      "rank": 860,
       "tier": 3
     },
     {
@@ -52472,7 +52394,7 @@
       "injury": "Clean",
       "draft_score": 38.21,
       "id": 850990712,
-      "rank": 862,
+      "rank": 861,
       "tier": 3
     },
     {
@@ -52532,7 +52454,7 @@
       "injury": "Clean",
       "draft_score": 38.18,
       "id": 695161519,
-      "rank": 863,
+      "rank": 862,
       "tier": 3
     },
     {
@@ -52592,7 +52514,7 @@
       "injury": "Clean",
       "draft_score": 38.17,
       "id": 977182230,
-      "rank": 864,
+      "rank": 863,
       "tier": 3
     },
     {
@@ -52652,7 +52574,7 @@
       "injury": "Clean",
       "draft_score": 38.17,
       "id": 2135672286,
-      "rank": 865,
+      "rank": 864,
       "tier": 3
     },
     {
@@ -52712,7 +52634,7 @@
       "injury": "Clean",
       "draft_score": 38.16,
       "id": 799547387,
-      "rank": 866,
+      "rank": 865,
       "tier": 3
     },
     {
@@ -52772,7 +52694,7 @@
       "injury": "Clean",
       "draft_score": 38.12,
       "id": 1403842361,
-      "rank": 867,
+      "rank": 866,
       "tier": 3
     },
     {
@@ -52832,7 +52754,7 @@
       "injury": "Clean",
       "draft_score": 38.08,
       "id": 857839135,
-      "rank": 868,
+      "rank": 867,
       "tier": 3
     },
     {
@@ -52892,7 +52814,7 @@
       "injury": "Clean",
       "draft_score": 38.07,
       "id": 995272112,
-      "rank": 869,
+      "rank": 868,
       "tier": 3
     },
     {
@@ -52952,7 +52874,7 @@
       "injury": "Clean",
       "draft_score": 38.06,
       "id": 138729662,
-      "rank": 870,
+      "rank": 869,
       "tier": 3
     },
     {
@@ -53012,7 +52934,7 @@
       "injury": "Clean",
       "draft_score": 38.02,
       "id": 1895923085,
-      "rank": 871,
+      "rank": 870,
       "tier": 3
     },
     {
@@ -53072,7 +52994,7 @@
       "injury": "Clean",
       "draft_score": 38.01,
       "id": 437928629,
-      "rank": 872,
+      "rank": 871,
       "tier": 3
     },
     {
@@ -53132,7 +53054,7 @@
       "injury": "Clean",
       "draft_score": 37.99,
       "id": 1171644522,
-      "rank": 873,
+      "rank": 872,
       "tier": 3
     },
     {
@@ -53192,7 +53114,7 @@
       "injury": "Clean",
       "draft_score": 37.98,
       "id": 1520478384,
-      "rank": 874,
+      "rank": 873,
       "tier": 3
     },
     {
@@ -53252,7 +53174,7 @@
       "injury": "Clean",
       "draft_score": 37.97,
       "id": 1203545052,
-      "rank": 875,
+      "rank": 874,
       "tier": 3,
       "recruit_rank": 33,
       "recruit_class_year": 2019
@@ -53314,7 +53236,7 @@
       "injury": "Clean",
       "draft_score": 37.95,
       "id": 1021583815,
-      "rank": 876,
+      "rank": 875,
       "tier": 3
     },
     {
@@ -53374,7 +53296,7 @@
       "injury": "Clean",
       "draft_score": 37.94,
       "id": 1209016285,
-      "rank": 877,
+      "rank": 876,
       "tier": 3
     },
     {
@@ -53434,7 +53356,7 @@
       "injury": "Clean",
       "draft_score": 37.92,
       "id": 982786013,
-      "rank": 878,
+      "rank": 877,
       "tier": 3
     },
     {
@@ -53494,7 +53416,7 @@
       "injury": "Clean",
       "draft_score": 37.92,
       "id": 138342670,
-      "rank": 879,
+      "rank": 878,
       "tier": 3,
       "recruit_rank": 36,
       "recruit_class_year": 2019
@@ -53556,7 +53478,7 @@
       "injury": "Clean",
       "draft_score": 37.85,
       "id": 511679873,
-      "rank": 880,
+      "rank": 879,
       "tier": 3
     },
     {
@@ -53616,7 +53538,7 @@
       "injury": "Clean",
       "draft_score": 37.85,
       "id": 309353601,
-      "rank": 881,
+      "rank": 880,
       "tier": 3
     },
     {
@@ -53676,7 +53598,7 @@
       "injury": "Clean",
       "draft_score": 37.84,
       "id": 417869590,
-      "rank": 882,
+      "rank": 881,
       "tier": 3
     },
     {
@@ -53736,7 +53658,7 @@
       "injury": "Clean",
       "draft_score": 37.83,
       "id": 326282627,
-      "rank": 883,
+      "rank": 882,
       "tier": 3
     },
     {
@@ -53796,7 +53718,7 @@
       "injury": "Clean",
       "draft_score": 37.83,
       "id": 2121522049,
-      "rank": 884,
+      "rank": 883,
       "tier": 3
     },
     {
@@ -53856,7 +53778,7 @@
       "injury": "Clean",
       "draft_score": 37.82,
       "id": 1775882319,
-      "rank": 885,
+      "rank": 884,
       "tier": 3
     },
     {
@@ -53916,7 +53838,7 @@
       "injury": "Clean",
       "draft_score": 37.81,
       "id": 1447262164,
-      "rank": 886,
+      "rank": 885,
       "tier": 3
     },
     {
@@ -53976,7 +53898,7 @@
       "injury": "Clean",
       "draft_score": 37.8,
       "id": 1742416255,
-      "rank": 887,
+      "rank": 886,
       "tier": 3
     },
     {
@@ -54036,7 +53958,7 @@
       "injury": "Clean",
       "draft_score": 37.78,
       "id": 982523606,
-      "rank": 888,
+      "rank": 887,
       "tier": 3
     },
     {
@@ -54096,7 +54018,7 @@
       "injury": "Clean",
       "draft_score": 37.76,
       "id": 1839979302,
-      "rank": 889,
+      "rank": 888,
       "tier": 3
     },
     {
@@ -54156,7 +54078,7 @@
       "injury": "Clean",
       "draft_score": 37.75,
       "id": 1303425476,
-      "rank": 890,
+      "rank": 889,
       "tier": 3
     },
     {
@@ -54216,7 +54138,7 @@
       "injury": "Clean",
       "draft_score": 37.73,
       "id": 1993586387,
-      "rank": 891,
+      "rank": 890,
       "tier": 3
     },
     {
@@ -54276,7 +54198,7 @@
       "injury": "Clean",
       "draft_score": 37.72,
       "id": 948099124,
-      "rank": 892,
+      "rank": 891,
       "tier": 3
     },
     {
@@ -54336,7 +54258,7 @@
       "injury": "Clean",
       "draft_score": 37.71,
       "id": 1721541843,
-      "rank": 893,
+      "rank": 892,
       "tier": 3
     },
     {
@@ -54396,7 +54318,7 @@
       "injury": "Clean",
       "draft_score": 37.69,
       "id": 1321738038,
-      "rank": 894,
+      "rank": 893,
       "tier": 3
     },
     {
@@ -54456,7 +54378,7 @@
       "injury": "Clean",
       "draft_score": 37.68,
       "id": 846984631,
-      "rank": 895,
+      "rank": 894,
       "tier": 3
     },
     {
@@ -54516,7 +54438,7 @@
       "injury": "Clean",
       "draft_score": 37.66,
       "id": 2024041637,
-      "rank": 896,
+      "rank": 895,
       "tier": 3
     },
     {
@@ -54576,7 +54498,7 @@
       "injury": "Clean",
       "draft_score": 37.64,
       "id": 110883325,
-      "rank": 897,
+      "rank": 896,
       "tier": 3
     },
     {
@@ -54636,7 +54558,7 @@
       "injury": "Clean",
       "draft_score": 37.62,
       "id": 1043462222,
-      "rank": 898,
+      "rank": 897,
       "tier": 3
     },
     {
@@ -54696,7 +54618,7 @@
       "injury": "Clean",
       "draft_score": 37.59,
       "id": 359161976,
-      "rank": 899,
+      "rank": 898,
       "tier": 3
     },
     {
@@ -54756,7 +54678,7 @@
       "injury": "Clean",
       "draft_score": 37.59,
       "id": 1630325253,
-      "rank": 900,
+      "rank": 899,
       "tier": 3
     },
     {
@@ -54816,7 +54738,7 @@
       "injury": "Clean",
       "draft_score": 37.58,
       "id": 1515334352,
-      "rank": 901,
+      "rank": 900,
       "tier": 3
     },
     {
@@ -54876,7 +54798,7 @@
       "injury": "Clean",
       "draft_score": 37.57,
       "id": 1613460349,
-      "rank": 902,
+      "rank": 901,
       "tier": 3
     },
     {
@@ -54936,7 +54858,7 @@
       "injury": "Clean",
       "draft_score": 37.55,
       "id": 1605839049,
-      "rank": 903,
+      "rank": 902,
       "tier": 3
     },
     {
@@ -54996,7 +54918,7 @@
       "injury": "Clean",
       "draft_score": 37.53,
       "id": 1900970946,
-      "rank": 904,
+      "rank": 903,
       "tier": 3
     },
     {
@@ -55056,7 +54978,7 @@
       "injury": "Clean",
       "draft_score": 37.52,
       "id": 1509496006,
-      "rank": 905,
+      "rank": 904,
       "tier": 3,
       "recruit_rank": 38,
       "recruit_class_year": 2018
@@ -55118,7 +55040,7 @@
       "injury": "Clean",
       "draft_score": 37.52,
       "id": 1204933265,
-      "rank": 906,
+      "rank": 905,
       "tier": 3
     },
     {
@@ -55178,7 +55100,7 @@
       "injury": "Clean",
       "draft_score": 37.52,
       "id": 6898378,
-      "rank": 907,
+      "rank": 906,
       "tier": 3
     },
     {
@@ -55238,7 +55160,7 @@
       "injury": "Clean",
       "draft_score": 37.5,
       "id": 437786572,
-      "rank": 908,
+      "rank": 907,
       "tier": 3
     },
     {
@@ -55298,7 +55220,7 @@
       "injury": "Clean",
       "draft_score": 37.5,
       "id": 1436597873,
-      "rank": 909,
+      "rank": 908,
       "tier": 3
     },
     {
@@ -55358,7 +55280,7 @@
       "injury": "Clean",
       "draft_score": 37.48,
       "id": 560105920,
-      "rank": 910,
+      "rank": 909,
       "tier": 3
     },
     {
@@ -55418,7 +55340,7 @@
       "injury": "Clean",
       "draft_score": 37.48,
       "id": 1328108246,
-      "rank": 911,
+      "rank": 910,
       "tier": 3
     },
     {
@@ -55478,7 +55400,7 @@
       "injury": "Clean",
       "draft_score": 37.46,
       "id": 1012302554,
-      "rank": 912,
+      "rank": 911,
       "tier": 3
     },
     {
@@ -55538,7 +55460,7 @@
       "injury": "Clean",
       "draft_score": 37.46,
       "id": 1060674059,
-      "rank": 913,
+      "rank": 912,
       "tier": 3
     },
     {
@@ -55598,7 +55520,7 @@
       "injury": "Clean",
       "draft_score": 37.43,
       "id": 46075094,
-      "rank": 914,
+      "rank": 913,
       "tier": 3
     },
     {
@@ -55658,7 +55580,7 @@
       "injury": "Clean",
       "draft_score": 37.41,
       "id": 394259198,
-      "rank": 915,
+      "rank": 914,
       "tier": 3
     },
     {
@@ -55718,7 +55640,7 @@
       "injury": "Clean",
       "draft_score": 37.36,
       "id": 1039852108,
-      "rank": 916,
+      "rank": 915,
       "tier": 3
     },
     {
@@ -55778,7 +55700,7 @@
       "injury": "Clean",
       "draft_score": 37.33,
       "id": 1740261209,
-      "rank": 917,
+      "rank": 916,
       "tier": 3
     },
     {
@@ -55838,7 +55760,7 @@
       "injury": "Clean",
       "draft_score": 37.32,
       "id": 1557229041,
-      "rank": 918,
+      "rank": 917,
       "tier": 3
     },
     {
@@ -55898,7 +55820,7 @@
       "injury": "Clean",
       "draft_score": 37.3,
       "id": 1027312591,
-      "rank": 919,
+      "rank": 918,
       "tier": 3
     },
     {
@@ -55958,7 +55880,7 @@
       "injury": "Clean",
       "draft_score": 37.3,
       "id": 1644613452,
-      "rank": 920,
+      "rank": 919,
       "tier": 3
     },
     {
@@ -56018,7 +55940,7 @@
       "injury": "Clean",
       "draft_score": 37.29,
       "id": 2103518031,
-      "rank": 921,
+      "rank": 920,
       "tier": 3
     },
     {
@@ -56078,7 +56000,7 @@
       "injury": "Clean",
       "draft_score": 37.18,
       "id": 1491722295,
-      "rank": 922,
+      "rank": 921,
       "tier": 3
     },
     {
@@ -56138,7 +56060,7 @@
       "injury": "Clean",
       "draft_score": 37.18,
       "id": 233958906,
-      "rank": 923,
+      "rank": 922,
       "tier": 3
     },
     {
@@ -56198,7 +56120,7 @@
       "injury": "Clean",
       "draft_score": 37.17,
       "id": 1423190382,
-      "rank": 924,
+      "rank": 923,
       "tier": 3
     },
     {
@@ -56258,7 +56180,7 @@
       "injury": "Clean",
       "draft_score": 37.16,
       "id": 528449553,
-      "rank": 925,
+      "rank": 924,
       "tier": 3
     },
     {
@@ -56318,7 +56240,7 @@
       "injury": "Clean",
       "draft_score": 37.06,
       "id": 1722274324,
-      "rank": 926,
+      "rank": 925,
       "tier": 3
     },
     {
@@ -56378,7 +56300,7 @@
       "injury": "Clean",
       "draft_score": 37.04,
       "id": 1437349857,
-      "rank": 927,
+      "rank": 926,
       "tier": 3
     },
     {
@@ -56438,7 +56360,7 @@
       "injury": "Clean",
       "draft_score": 37.02,
       "id": 955766899,
-      "rank": 928,
+      "rank": 927,
       "tier": 3
     },
     {
@@ -56498,7 +56420,7 @@
       "injury": "Clean",
       "draft_score": 37.0,
       "id": 1136259989,
-      "rank": 929,
+      "rank": 928,
       "tier": 3
     },
     {
@@ -56558,7 +56480,7 @@
       "injury": "Clean",
       "draft_score": 36.99,
       "id": 872014358,
-      "rank": 930,
+      "rank": 929,
       "tier": 3
     },
     {
@@ -56618,7 +56540,7 @@
       "injury": "Clean",
       "draft_score": 36.98,
       "id": 1436597036,
-      "rank": 931,
+      "rank": 930,
       "tier": 3
     },
     {
@@ -56678,7 +56600,7 @@
       "injury": "Clean",
       "draft_score": 36.98,
       "id": 365938098,
-      "rank": 932,
+      "rank": 931,
       "tier": 3
     },
     {
@@ -56738,7 +56660,7 @@
       "injury": "Clean",
       "draft_score": 36.94,
       "id": 76061792,
-      "rank": 933,
+      "rank": 932,
       "tier": 3
     },
     {
@@ -56798,7 +56720,7 @@
       "injury": "Clean",
       "draft_score": 36.92,
       "id": 1768003668,
-      "rank": 934,
+      "rank": 933,
       "tier": 3
     },
     {
@@ -56858,7 +56780,7 @@
       "injury": "Clean",
       "draft_score": 36.91,
       "id": 1812343415,
-      "rank": 935,
+      "rank": 934,
       "tier": 3
     },
     {
@@ -56918,7 +56840,7 @@
       "injury": "Clean",
       "draft_score": 36.91,
       "id": 860747437,
-      "rank": 936,
+      "rank": 935,
       "tier": 3
     },
     {
@@ -56978,7 +56900,7 @@
       "injury": "Clean",
       "draft_score": 36.9,
       "id": 1319633269,
-      "rank": 937,
+      "rank": 936,
       "tier": 3
     },
     {
@@ -57038,7 +56960,7 @@
       "injury": "Clean",
       "draft_score": 36.9,
       "id": 211001276,
-      "rank": 938,
+      "rank": 937,
       "tier": 3
     },
     {
@@ -57098,7 +57020,7 @@
       "injury": "Clean",
       "draft_score": 36.87,
       "id": 874098467,
-      "rank": 939,
+      "rank": 938,
       "tier": 3
     },
     {
@@ -57158,7 +57080,7 @@
       "injury": "Clean",
       "draft_score": 36.86,
       "id": 1709552387,
-      "rank": 940,
+      "rank": 939,
       "tier": 3
     },
     {
@@ -57218,7 +57140,7 @@
       "injury": "Clean",
       "draft_score": 36.85,
       "id": 841892305,
-      "rank": 941,
+      "rank": 940,
       "tier": 3
     },
     {
@@ -57278,7 +57200,7 @@
       "injury": "Clean",
       "draft_score": 36.85,
       "id": 1011036413,
-      "rank": 942,
+      "rank": 941,
       "tier": 3
     },
     {
@@ -57338,7 +57260,7 @@
       "injury": "Clean",
       "draft_score": 36.84,
       "id": 66820283,
-      "rank": 943,
+      "rank": 942,
       "tier": 3
     },
     {
@@ -57398,7 +57320,7 @@
       "injury": "Clean",
       "draft_score": 36.83,
       "id": 219352778,
-      "rank": 944,
+      "rank": 943,
       "tier": 3
     },
     {
@@ -57458,7 +57380,7 @@
       "injury": "Clean",
       "draft_score": 36.81,
       "id": 442675695,
-      "rank": 945,
+      "rank": 944,
       "tier": 3
     },
     {
@@ -57518,7 +57440,7 @@
       "injury": "Clean",
       "draft_score": 36.79,
       "id": 2084296141,
-      "rank": 946,
+      "rank": 945,
       "tier": 3
     },
     {
@@ -57578,7 +57500,7 @@
       "injury": "Clean",
       "draft_score": 36.78,
       "id": 147817030,
-      "rank": 947,
+      "rank": 946,
       "tier": 3
     },
     {
@@ -57638,7 +57560,7 @@
       "injury": "Clean",
       "draft_score": 36.76,
       "id": 522226855,
-      "rank": 948,
+      "rank": 947,
       "tier": 3
     },
     {
@@ -57698,7 +57620,7 @@
       "injury": "Clean",
       "draft_score": 36.75,
       "id": 957867781,
-      "rank": 949,
+      "rank": 948,
       "tier": 3
     },
     {
@@ -57758,7 +57680,7 @@
       "injury": "Clean",
       "draft_score": 36.73,
       "id": 292066907,
-      "rank": 950,
+      "rank": 949,
       "tier": 3
     },
     {
@@ -57818,7 +57740,7 @@
       "injury": "Clean",
       "draft_score": 36.73,
       "id": 527658127,
-      "rank": 951,
+      "rank": 950,
       "tier": 3
     },
     {
@@ -57878,7 +57800,7 @@
       "injury": "Clean",
       "draft_score": 36.73,
       "id": 773886323,
-      "rank": 952,
+      "rank": 951,
       "tier": 3
     },
     {
@@ -57938,7 +57860,7 @@
       "injury": "Clean",
       "draft_score": 36.64,
       "id": 141526815,
-      "rank": 953,
+      "rank": 952,
       "tier": 3
     },
     {
@@ -57998,7 +57920,7 @@
       "injury": "Clean",
       "draft_score": 36.59,
       "id": 376284892,
-      "rank": 954,
+      "rank": 953,
       "tier": 3
     },
     {
@@ -58058,7 +57980,7 @@
       "injury": "Clean",
       "draft_score": 36.56,
       "id": 159087179,
-      "rank": 955,
+      "rank": 954,
       "tier": 3
     },
     {
@@ -58118,7 +58040,7 @@
       "injury": "Clean",
       "draft_score": 36.52,
       "id": 94975836,
-      "rank": 956,
+      "rank": 955,
       "tier": 3
     },
     {
@@ -58178,7 +58100,7 @@
       "injury": "Clean",
       "draft_score": 36.52,
       "id": 862294643,
-      "rank": 957,
+      "rank": 956,
       "tier": 3
     },
     {
@@ -58238,7 +58160,7 @@
       "injury": "Clean",
       "draft_score": 36.52,
       "id": 437526514,
-      "rank": 958,
+      "rank": 957,
       "tier": 3
     },
     {
@@ -58298,7 +58220,7 @@
       "injury": "Clean",
       "draft_score": 36.49,
       "id": 338839762,
-      "rank": 959,
+      "rank": 958,
       "tier": 3
     },
     {
@@ -58358,7 +58280,7 @@
       "injury": "Clean",
       "draft_score": 36.47,
       "id": 258518252,
-      "rank": 960,
+      "rank": 959,
       "tier": 3
     },
     {
@@ -58418,7 +58340,7 @@
       "injury": "Clean",
       "draft_score": 36.47,
       "id": 1634963358,
-      "rank": 961,
+      "rank": 960,
       "tier": 3
     },
     {
@@ -58478,7 +58400,7 @@
       "injury": "Clean",
       "draft_score": 36.45,
       "id": 1007406978,
-      "rank": 962,
+      "rank": 961,
       "tier": 3
     },
     {
@@ -58538,7 +58460,7 @@
       "injury": "Clean",
       "draft_score": 36.41,
       "id": 1030278070,
-      "rank": 963,
+      "rank": 962,
       "tier": 3
     },
     {
@@ -58598,7 +58520,7 @@
       "injury": "Clean",
       "draft_score": 36.39,
       "id": 1172833942,
-      "rank": 964,
+      "rank": 963,
       "tier": 3
     },
     {
@@ -58658,7 +58580,7 @@
       "injury": "Clean",
       "draft_score": 36.38,
       "id": 1383761730,
-      "rank": 965,
+      "rank": 964,
       "tier": 3
     },
     {
@@ -58718,7 +58640,7 @@
       "injury": "Clean",
       "draft_score": 36.34,
       "id": 1664578700,
-      "rank": 966,
+      "rank": 965,
       "tier": 3
     },
     {
@@ -58778,7 +58700,7 @@
       "injury": "Clean",
       "draft_score": 36.34,
       "id": 380731833,
-      "rank": 967,
+      "rank": 966,
       "tier": 3
     },
     {
@@ -58838,7 +58760,7 @@
       "injury": "Clean",
       "draft_score": 36.33,
       "id": 1054684886,
-      "rank": 968,
+      "rank": 967,
       "tier": 3
     },
     {
@@ -58898,7 +58820,7 @@
       "injury": "Clean",
       "draft_score": 36.33,
       "id": 29467346,
-      "rank": 969,
+      "rank": 968,
       "tier": 3
     },
     {
@@ -58958,7 +58880,7 @@
       "injury": "Clean",
       "draft_score": 36.32,
       "id": 1104320331,
-      "rank": 970,
+      "rank": 969,
       "tier": 3
     },
     {
@@ -59018,7 +58940,7 @@
       "injury": "Clean",
       "draft_score": 36.31,
       "id": 1172854266,
-      "rank": 971,
+      "rank": 970,
       "tier": 3
     },
     {
@@ -59078,7 +59000,7 @@
       "injury": "Clean",
       "draft_score": 36.31,
       "id": 32630413,
-      "rank": 972,
+      "rank": 971,
       "tier": 3
     },
     {
@@ -59138,8 +59060,86 @@
       "injury": "Clean",
       "draft_score": 36.3,
       "id": 1940887233,
-      "rank": 973,
+      "rank": 972,
       "tier": 3
+    },
+    {
+      "name": "Kahlil Whitney",
+      "pos": "F",
+      "school": "Kentucky",
+      "conference": "SEC",
+      "year": "Freshman",
+      "height": "6'6\"",
+      "weight": "210 lbs",
+      "hometown": "—",
+      "stats": {
+        "PPG": 3.3,
+        "RPG": 1.7,
+        "APG": 0.4,
+        "SPG": 0.3,
+        "BPG": 0.2,
+        "FG%": 37.1,
+        "3P%": 25.0,
+        "FT%": 43.5,
+        "MPG": 12.8,
+        "GS": null,
+        "TOV": 0.8,
+        "FTA": 1.3,
+        "OREB": 0.8,
+        "DREB": 0.9,
+        "3PA": 0.9,
+        "FGA": 3.4,
+        "PF": 1.3
+      },
+      "advanced": {
+        "PER": 6.6,
+        "TS%": 41.1,
+        "eFG%": null,
+        "USG%": 19.5,
+        "AST%": 6.5,
+        "TOV%": 17.1,
+        "BPM": -2.0,
+        "OBPM": -2.7,
+        "DBPM": 0.7,
+        "OWS": -0.1,
+        "DWS": 0.3,
+        "Win Shares": 0.2,
+        "WS/40": 0.031
+      },
+      "skills": {
+        "Athleticism": 11,
+        "Defense": 16,
+        "Shooting": 0,
+        "Ball Handling": 4,
+        "IQ": 36,
+        "Leadership": 10
+      },
+      "strengths": [],
+      "weaknesses": [],
+      "comps": [],
+      "injury": "Clean",
+      "draft_score": 36.29,
+      "id": 935983469,
+      "rank": 973,
+      "tier": 3,
+      "recruit_rank": 11,
+      "recruit_class_year": 2019,
+      "combine": {
+        "wingspan_in": 84.25,
+        "height_no_shoes_in": 77.5,
+        "height_w_shoes_in": 79.0,
+        "standing_reach_in": 105.5,
+        "hand_length_in": 9.25,
+        "hand_width_in": 10.25,
+        "weight_lbs": 205.0,
+        "body_fat_pct": 5.3,
+        "max_vert_in": 39.0,
+        "standing_vert_in": 29.0,
+        "lane_agility_s": 11.17,
+        "shuttle_run_s": 2.61,
+        "three_quarter_sprint_s": 3.28,
+        "max_bench_reps": null
+      }
     },
     {
       "name": "Jaleel Lord",

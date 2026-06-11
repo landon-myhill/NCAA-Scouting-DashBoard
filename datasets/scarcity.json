@@ -3,47 +3,47 @@
     {
       "archetype": "Average Defender",
       "arch_side": "defensive",
-      "total": 74,
+      "total": 73,
       "lottery": 5,
       "late_1st": 12,
-      "second_rd": 57,
-      "avg_score": 82.4,
+      "second_rd": 56,
+      "avg_score": 82.9,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Deep",
       "scores": [
-        191.18,
-        156.57,
+        187.66,
+        164.94,
+        134.25,
         130.37,
         127.61,
-        126.2,
         118.11,
         111.26,
         104.01,
+        101.2,
         100.98,
         99.85,
-        98.97,
+        99.81,
         98.44,
         97.84,
         97.77,
+        97.32,
         95.6,
         95.56,
         95.09,
-        95.09,
         93.96,
-        91.84,
-        88.1,
         86.27,
+        85.73,
         84.07,
         83.33,
         82.86,
         82.4,
         81.92,
         80.73,
-        80.55,
-        80.4,
-        79.86,
+        79.42,
+        77.58,
         77.55,
+        77.15,
         77.12,
         76.04,
         74.25,
@@ -84,37 +84,36 @@
         64.34,
         64.13,
         64.06,
-        64.03,
-        63.3
+        64.03
       ],
       "tier_counts": {
         "1": 5,
         "2": 12,
-        "3": 57
+        "3": 56
       }
     },
     {
       "archetype": "Two-Way Wing",
       "arch_side": "offensive",
       "total": 40,
-      "lottery": 3,
-      "late_1st": 7,
+      "lottery": 4,
+      "late_1st": 6,
       "second_rd": 30,
-      "avg_score": 85.3,
+      "avg_score": 85.1,
       "top_prospect_rank": 7,
       "top_prospect_name": "Brayden Burries",
       "depth_signal": "Deep",
       "scores": [
         138.03,
-        131.9,
         130.37,
-        119.71,
-        118.41,
+        128.59,
+        120.53,
+        118.56,
         107.75,
-        107.51,
-        107.13,
         106.73,
-        102.37,
+        106.18,
+        104.56,
+        99.09,
         91.98,
         91.73,
         89.06,
@@ -147,8 +146,8 @@
         64.6
       ],
       "tier_counts": {
-        "1": 3,
-        "2": 7,
+        "1": 4,
+        "2": 6,
         "3": 30
       }
     },
@@ -159,19 +158,19 @@
       "lottery": 2,
       "late_1st": 6,
       "second_rd": 26,
-      "avg_score": 84.6,
-      "top_prospect_rank": 6,
+      "avg_score": 85.2,
+      "top_prospect_rank": 5,
       "top_prospect_name": "Kingston Flemings",
       "depth_signal": "Deep",
       "scores": [
-        145.01,
+        147.4,
         138.03,
+        110.02,
+        109.79,
         109.01,
         108.64,
         107.75,
         106.34,
-        102.06,
-        100.45,
         91.98,
         91.73,
         89.06,
@@ -180,9 +179,9 @@
         80.7,
         78.59,
         78.11,
+        77.0,
         76.15,
         75.85,
-        74.77,
         74.63,
         74.59,
         74.36,
@@ -209,24 +208,24 @@
       "archetype": "Wing Stopper",
       "arch_side": "defensive",
       "total": 31,
-      "lottery": 5,
-      "late_1st": 5,
+      "lottery": 3,
+      "late_1st": 7,
       "second_rd": 21,
-      "avg_score": 88.8,
-      "top_prospect_rank": 2,
+      "avg_score": 87.9,
+      "top_prospect_rank": 3,
       "top_prospect_name": "Caleb Wilson",
       "depth_signal": "Deep",
       "scores": [
-        170.09,
-        131.9,
-        131.05,
-        123.75,
-        121.96,
-        119.59,
+        164.23,
+        129.98,
+        128.59,
+        120.17,
+        119.78,
+        114.22,
         107.75,
-        107.51,
-        107.13,
-        98.93,
+        106.18,
+        104.56,
+        96.81,
         89.74,
         87.53,
         83.62,
@@ -250,31 +249,31 @@
         63.75
       ],
       "tier_counts": {
-        "1": 5,
-        "2": 5,
+        "1": 3,
+        "2": 7,
         "3": 21
       }
     },
     {
       "archetype": "Below-Average Defender",
       "arch_side": "defensive",
-      "total": 30,
+      "total": 31,
       "lottery": 1,
-      "late_1st": 1,
+      "late_1st": 2,
       "second_rd": 28,
-      "avg_score": 75.1,
-      "top_prospect_rank": 5,
+      "avg_score": 75.4,
+      "top_prospect_rank": 4,
       "top_prospect_name": "AJ Dybantsa",
       "depth_signal": "Deep",
       "scores": [
         148.18,
         96.68,
+        96.55,
+        94.61,
         93.21,
-        89.87,
-        89.86,
         82.39,
+        80.16,
         79.8,
-        77.84,
         77.83,
         76.89,
         75.06,
@@ -284,8 +283,10 @@
         70.35,
         67.96,
         67.92,
+        67.9,
         66.81,
         66.74,
+        66.45,
         66.04,
         65.1,
         64.86,
@@ -293,14 +294,13 @@
         64.28,
         64.12,
         63.68,
-        63.52,
         63.41,
         63.4,
         63.32
       ],
       "tier_counts": {
         "1": 1,
-        "2": 1,
+        "2": 2,
         "3": 28
       }
     },
@@ -309,35 +309,35 @@
       "arch_side": "offensive",
       "total": 29,
       "lottery": 5,
-      "late_1st": 7,
-      "second_rd": 17,
-      "avg_score": 96.6,
+      "late_1st": 9,
+      "second_rd": 15,
+      "avg_score": 97.9,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Deep",
       "scores": [
-        191.18,
-        156.57,
-        145.01,
+        187.66,
+        164.94,
+        147.4,
         127.61,
-        121.96,
-        118.98,
+        121.39,
+        119.78,
+        109.79,
         109.01,
         108.64,
-        102.06,
-        98.97,
-        96.15,
+        101.2,
+        99.81,
+        97.32,
+        96.55,
         95.6,
-        95.09,
-        91.84,
-        91.34,
-        89.87,
-        89.86,
+        94.61,
+        93.69,
+        92.9,
         82.98,
         82.39,
         81.16,
-        79.86,
-        77.84,
+        80.16,
+        77.58,
         70.35,
         70.14,
         66.81,
@@ -348,8 +348,8 @@
       ],
       "tier_counts": {
         "1": 5,
-        "2": 7,
-        "3": 17
+        "2": 9,
+        "3": 15
       }
     },
     {
@@ -359,27 +359,27 @@
       "lottery": 2,
       "late_1st": 5,
       "second_rd": 22,
-      "avg_score": 85.1,
-      "top_prospect_rank": 6,
+      "avg_score": 85.5,
+      "top_prospect_rank": 5,
       "top_prospect_name": "Kingston Flemings",
       "depth_signal": "Deep",
       "scores": [
-        145.01,
+        147.4,
         138.03,
+        109.79,
         109.01,
         108.64,
         107.75,
         106.34,
-        102.06,
         91.73,
         89.06,
         87.53,
         82.98,
         78.59,
         78.11,
+        77.0,
         76.15,
         75.85,
-        74.77,
         74.63,
         74.59,
         74.36,
@@ -404,29 +404,29 @@
       "archetype": "Sharpshooter",
       "arch_side": "offensive",
       "total": 28,
-      "lottery": 2,
-      "late_1st": 5,
-      "second_rd": 21,
-      "avg_score": 85.1,
-      "top_prospect_rank": 3,
+      "lottery": 3,
+      "late_1st": 7,
+      "second_rd": 18,
+      "avg_score": 86.6,
+      "top_prospect_rank": 2,
       "top_prospect_name": "Darryn Peterson",
       "depth_signal": "Deep",
       "scores": [
-        156.57,
+        164.94,
         127.61,
-        118.98,
+        121.39,
+        109.79,
         108.64,
-        102.06,
-        98.97,
+        101.2,
+        99.81,
         97.77,
-        95.09,
+        97.32,
+        96.55,
+        93.69,
         93.21,
-        91.84,
-        91.34,
-        89.86,
         82.86,
         82.39,
-        77.84,
+        80.16,
         71.4,
         70.92,
         70.67,
@@ -442,43 +442,43 @@
         63.32
       ],
       "tier_counts": {
-        "1": 2,
-        "2": 5,
-        "3": 21
+        "1": 3,
+        "2": 7,
+        "3": 18
       }
     },
     {
       "archetype": "Rim Protector",
       "arch_side": "offensive",
       "total": 25,
-      "lottery": 3,
-      "late_1st": 4,
+      "lottery": 4,
+      "late_1st": 3,
       "second_rd": 18,
-      "avg_score": 88.3,
-      "top_prospect_rank": 4,
+      "avg_score": 87.5,
+      "top_prospect_rank": 6,
       "top_prospect_name": "Aday Mara",
       "depth_signal": "Deep",
       "scores": [
-        152.21,
-        131.05,
+        146.74,
+        129.98,
         125.91,
-        119.71,
-        118.41,
+        120.53,
+        118.56,
         116.05,
-        107.51,
+        104.56,
         91.39,
         86.13,
         84.38,
-        83.93,
         83.62,
         83.18,
         81.79,
+        78.19,
         72.94,
-        71.93,
         71.02,
         68.23,
         67.39,
         67.15,
+        66.12,
         65.26,
         65.09,
         64.6,
@@ -486,8 +486,8 @@
         63.75
       ],
       "tier_counts": {
-        "1": 3,
-        "2": 4,
+        "1": 4,
+        "2": 3,
         "3": 18
       }
     },
@@ -495,43 +495,43 @@
       "archetype": "Two-Way Star",
       "arch_side": "offensive",
       "total": 24,
-      "lottery": 7,
-      "late_1st": 6,
-      "second_rd": 11,
-      "avg_score": 105.6,
+      "lottery": 5,
+      "late_1st": 9,
+      "second_rd": 10,
+      "avg_score": 106.3,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Deep",
       "scores": [
-        191.18,
-        170.09,
-        156.57,
-        145.01,
-        131.05,
-        123.75,
-        121.96,
+        187.66,
+        164.94,
+        164.23,
+        147.4,
+        129.98,
+        120.17,
+        119.78,
+        110.02,
+        109.79,
         109.01,
         108.64,
-        102.06,
-        100.45,
-        96.15,
+        99.81,
+        97.32,
         95.6,
-        95.09,
-        91.84,
+        92.9,
         89.74,
         82.98,
         81.79,
-        79.86,
-        74.77,
+        77.58,
+        77.0,
         74.63,
         74.36,
         73.5,
         63.4
       ],
       "tier_counts": {
-        "1": 7,
-        "2": 6,
-        "3": 11
+        "1": 5,
+        "2": 9,
+        "3": 10
       }
     },
     {
@@ -539,28 +539,28 @@
       "arch_side": "offensive",
       "total": 23,
       "lottery": 3,
-      "late_1st": 9,
-      "second_rd": 11,
-      "avg_score": 97.5,
+      "late_1st": 7,
+      "second_rd": 13,
+      "avg_score": 96.5,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Deep",
       "scores": [
-        191.18,
-        170.09,
-        123.75,
-        119.71,
-        118.41,
+        187.66,
+        164.23,
+        120.53,
+        120.17,
+        118.56,
         116.05,
-        107.51,
-        107.13,
-        102.37,
-        96.15,
+        106.18,
+        104.56,
+        99.09,
         95.6,
         95.09,
+        92.9,
         86.13,
         81.79,
-        80.55,
+        79.42,
         74.92,
         74.25,
         71.4,
@@ -572,31 +572,31 @@
       ],
       "tier_counts": {
         "1": 3,
-        "2": 9,
-        "3": 11
+        "2": 7,
+        "3": 13
       }
     },
     {
       "archetype": "Versatile Defender",
       "arch_side": "defensive",
       "total": 20,
-      "lottery": 5,
-      "late_1st": 4,
+      "lottery": 3,
+      "late_1st": 6,
       "second_rd": 11,
-      "avg_score": 98.1,
-      "top_prospect_rank": 2,
+      "avg_score": 96.9,
+      "top_prospect_rank": 3,
       "top_prospect_name": "Caleb Wilson",
       "depth_signal": "Deep",
       "scores": [
-        170.09,
-        131.9,
-        131.05,
-        123.75,
-        121.96,
-        119.59,
+        164.23,
+        129.98,
+        128.59,
+        120.17,
+        119.78,
+        114.22,
         107.75,
-        107.51,
-        107.13,
+        106.18,
+        104.56,
         89.74,
         87.53,
         83.62,
@@ -610,8 +610,8 @@
         63.75
       ],
       "tier_counts": {
-        "1": 5,
-        "2": 4,
+        "1": 3,
+        "2": 6,
         "3": 11
       }
     },
@@ -619,73 +619,74 @@
       "archetype": "Scoring Guard",
       "arch_side": "offensive",
       "total": 19,
-      "lottery": 1,
-      "late_1st": 3,
-      "second_rd": 15,
-      "avg_score": 88.7,
-      "top_prospect_rank": 3,
+      "lottery": 2,
+      "late_1st": 5,
+      "second_rd": 12,
+      "avg_score": 90.8,
+      "top_prospect_rank": 2,
       "top_prospect_name": "Darryn Peterson",
       "depth_signal": "Deep",
       "scores": [
-        156.57,
-        118.98,
+        164.94,
+        121.39,
         108.64,
+        99.81,
+        97.32,
         96.68,
-        95.09,
+        96.55,
+        94.61,
+        93.69,
         91.98,
-        91.84,
-        91.34,
-        89.87,
-        89.86,
         82.39,
         81.16,
-        74.77,
+        77.0,
         74.63,
         74.46,
         70.35,
+        67.9,
         66.74,
-        65.81,
-        63.52
+        65.81
       ],
       "tier_counts": {
-        "1": 1,
-        "2": 3,
-        "3": 15
+        "1": 2,
+        "2": 5,
+        "3": 12
       }
     },
     {
       "archetype": "Combo Guard",
       "arch_side": "offensive",
-      "total": 18,
-      "lottery": 2,
+      "total": 19,
+      "lottery": 3,
       "late_1st": 5,
       "second_rd": 11,
-      "avg_score": 94.4,
-      "top_prospect_rank": 6,
+      "avg_score": 93.6,
+      "top_prospect_rank": 5,
       "top_prospect_name": "Kingston Flemings",
       "depth_signal": "Deep",
       "scores": [
-        145.01,
+        147.4,
         127.61,
-        118.98,
+        121.39,
         118.11,
         109.01,
         108.64,
+        97.32,
         96.68,
-        95.09,
+        93.69,
         91.98,
-        91.34,
         81.16,
-        77.84,
+        80.16,
         76.89,
         74.63,
         74.46,
         73.5,
         72.02,
-        66.74
+        66.74,
+        66.45
       ],
       "tier_counts": {
-        "1": 2,
+        "1": 3,
         "2": 5,
         "3": 11
       }
@@ -697,26 +698,26 @@
       "lottery": 0,
       "late_1st": 2,
       "second_rd": 15,
-      "avg_score": 79.2,
-      "top_prospect_rank": 21,
+      "avg_score": 78.4,
+      "top_prospect_rank": 20,
       "top_prospect_name": "Motiejus Krivas",
       "depth_signal": "Deep",
       "scores": [
         116.05,
-        107.51,
+        104.56,
         91.39,
         84.38,
-        83.93,
         83.62,
         83.18,
         81.79,
+        78.19,
         72.94,
-        71.93,
         71.02,
         68.23,
         68.04,
         67.39,
         67.15,
+        66.12,
         64.6,
         63.93
       ],
@@ -730,25 +731,25 @@
       "archetype": "Post Scorer",
       "arch_side": "offensive",
       "total": 16,
-      "lottery": 4,
+      "lottery": 3,
       "late_1st": 5,
-      "second_rd": 7,
-      "avg_score": 100.1,
+      "second_rd": 8,
+      "avg_score": 98.8,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Deep",
       "scores": [
-        191.18,
-        131.9,
-        131.05,
-        123.75,
-        107.51,
-        107.13,
+        187.66,
+        129.98,
+        128.59,
+        120.17,
         106.73,
-        96.15,
+        106.18,
+        104.56,
         95.6,
+        92.9,
         81.79,
-        79.86,
+        77.58,
         74.25,
         71.62,
         71.27,
@@ -756,65 +757,65 @@
         64.6
       ],
       "tier_counts": {
-        "1": 4,
+        "1": 3,
         "2": 5,
-        "3": 7
+        "3": 8
       }
     },
     {
       "archetype": "Modern Big",
       "arch_side": "offensive",
       "total": 14,
-      "lottery": 5,
+      "lottery": 4,
       "late_1st": 3,
-      "second_rd": 6,
-      "avg_score": 105.3,
+      "second_rd": 7,
+      "avg_score": 104.1,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Deep",
       "scores": [
-        191.18,
+        187.66,
         148.18,
-        131.9,
-        131.05,
-        121.96,
+        129.98,
+        128.59,
+        119.78,
         111.26,
-        96.15,
         95.6,
-        88.1,
-        79.86,
+        92.9,
+        85.73,
+        77.58,
         77.55,
         69.3,
         68.04,
         64.6
       ],
       "tier_counts": {
-        "1": 5,
+        "1": 4,
         "2": 3,
-        "3": 6
+        "3": 7
       }
     },
     {
       "archetype": "Defensive Liability",
       "arch_side": "defensive",
       "total": 14,
-      "lottery": 0,
-      "late_1st": 1,
+      "lottery": 1,
+      "late_1st": 0,
       "second_rd": 13,
-      "avg_score": 76.9,
-      "top_prospect_rank": 18,
+      "avg_score": 77.5,
+      "top_prospect_rank": 14,
       "top_prospect_name": "Darius Acuff Jr.",
       "depth_signal": "Deep",
       "scores": [
-        118.98,
-        91.34,
+        121.39,
+        93.69,
         86.89,
         81.16,
         81.13,
         80.03,
+        73.49,
         69.49,
         69.37,
-        68.89,
         68.4,
         66.54,
         65.81,
@@ -822,22 +823,22 @@
         63.47
       ],
       "tier_counts": {
-        "1": 0,
-        "2": 1,
+        "1": 1,
+        "2": 0,
         "3": 13
       }
     },
     {
       "archetype": "3-and-D Guard",
       "arch_side": "offensive",
-      "total": 10,
+      "total": 11,
       "lottery": 0,
       "late_1st": 1,
-      "second_rd": 9,
-      "avg_score": 74.7,
+      "second_rd": 10,
+      "avg_score": 74.0,
       "top_prospect_rank": 29,
       "top_prospect_name": "Silas Demary Jr.",
-      "depth_signal": "Moderate",
+      "depth_signal": "Deep",
       "scores": [
         106.34,
         83.33,
@@ -847,40 +848,14 @@
         69.3,
         68.04,
         67.58,
+        66.45,
         66.24,
         65.35
       ],
       "tier_counts": {
         "1": 0,
         "2": 1,
-        "3": 9
-      }
-    },
-    {
-      "archetype": "Defensive Anchor",
-      "arch_side": "defensive",
-      "total": 8,
-      "lottery": 3,
-      "late_1st": 2,
-      "second_rd": 3,
-      "avg_score": 108.0,
-      "top_prospect_rank": 4,
-      "top_prospect_name": "Aday Mara",
-      "depth_signal": "Moderate",
-      "scores": [
-        152.21,
-        131.05,
-        125.91,
-        119.71,
-        118.41,
-        86.13,
-        65.26,
-        65.09
-      ],
-      "tier_counts": {
-        "1": 3,
-        "2": 2,
-        "3": 3
+        "3": 10
       }
     },
     {
@@ -890,12 +865,12 @@
       "lottery": 1,
       "late_1st": 1,
       "second_rd": 6,
-      "avg_score": 85.4,
-      "top_prospect_rank": 6,
+      "avg_score": 85.7,
+      "top_prospect_rank": 5,
       "top_prospect_name": "Kingston Flemings",
       "depth_signal": "Moderate",
       "scores": [
-        145.01,
+        147.4,
         108.64,
         76.89,
         74.63,
@@ -911,30 +886,57 @@
       }
     },
     {
+      "archetype": "Defensive Anchor",
+      "arch_side": "defensive",
+      "total": 8,
+      "lottery": 4,
+      "late_1st": 1,
+      "second_rd": 3,
+      "avg_score": 107.3,
+      "top_prospect_rank": 6,
+      "top_prospect_name": "Aday Mara",
+      "depth_signal": "Moderate",
+      "scores": [
+        146.74,
+        129.98,
+        125.91,
+        120.53,
+        118.56,
+        86.13,
+        65.26,
+        65.09
+      ],
+      "tier_counts": {
+        "1": 4,
+        "2": 1,
+        "3": 3
+      }
+    },
+    {
       "archetype": "Help Defender",
       "arch_side": "defensive",
       "total": 8,
       "lottery": 0,
-      "late_1st": 5,
-      "second_rd": 3,
-      "avg_score": 95.7,
-      "top_prospect_rank": 16,
+      "late_1st": 4,
+      "second_rd": 4,
+      "avg_score": 94.7,
+      "top_prospect_rank": 18,
       "top_prospect_name": "Flory Bidunga",
       "depth_signal": "Moderate",
       "scores": [
-        119.71,
+        118.56,
         116.05,
         106.73,
-        102.37,
-        96.15,
+        99.09,
+        92.9,
         86.13,
         74.92,
         63.4
       ],
       "tier_counts": {
         "1": 0,
-        "2": 5,
-        "3": 3
+        "2": 4,
+        "3": 4
       }
     },
     {
@@ -944,15 +946,15 @@
       "lottery": 0,
       "late_1st": 1,
       "second_rd": 4,
-      "avg_score": 83.8,
+      "avg_score": 84.3,
       "top_prospect_rank": 29,
       "top_prospect_name": "Silas Demary Jr.",
       "depth_signal": "Scarce",
       "scores": [
         106.34,
         91.73,
+        80.16,
         78.11,
-        77.84,
         65.1
       ],
       "tier_counts": {
@@ -965,22 +967,22 @@
       "archetype": "Point Forward",
       "arch_side": "offensive",
       "total": 4,
-      "lottery": 3,
-      "late_1st": 1,
+      "lottery": 2,
+      "late_1st": 2,
       "second_rd": 0,
-      "avg_score": 140.9,
+      "avg_score": 138.7,
       "top_prospect_rank": 1,
       "top_prospect_name": "Cameron Boozer",
       "depth_signal": "Moderate (top-heavy)",
       "scores": [
-        191.18,
+        187.66,
         148.18,
-        121.96,
-        102.37
+        119.78,
+        99.09
       ],
       "tier_counts": {
-        "1": 3,
-        "2": 1,
+        "1": 2,
+        "2": 2,
         "3": 0
       }
     },
@@ -988,22 +990,22 @@
       "archetype": "Old School Big",
       "arch_side": "offensive",
       "total": 4,
-      "lottery": 0,
-      "late_1st": 3,
+      "lottery": 1,
+      "late_1st": 2,
       "second_rd": 1,
-      "avg_score": 105.0,
-      "top_prospect_rank": 16,
-      "top_prospect_name": "Flory Bidunga",
-      "depth_signal": "Scarce",
+      "avg_score": 104.5,
+      "top_prospect_rank": 15,
+      "top_prospect_name": "Tarris Reed Jr.",
+      "depth_signal": "Moderate",
       "scores": [
-        119.71,
-        118.41,
-        107.51,
+        120.53,
+        118.56,
+        104.56,
         74.25
       ],
       "tier_counts": {
-        "1": 0,
-        "2": 3,
+        "1": 1,
+        "2": 2,
         "3": 1
       }
     },
@@ -1015,7 +1017,7 @@
       "late_1st": 0,
       "second_rd": 4,
       "avg_score": 72.4,
-      "top_prospect_rank": 78,
+      "top_prospect_rank": 77,
       "top_prospect_name": "Jason Rivera-Torres",
       "depth_signal": "Scarce",
       "scores": [
@@ -1034,21 +1036,21 @@
       "archetype": "Elite Floor General",
       "arch_side": "offensive",
       "total": 3,
-      "lottery": 0,
-      "late_1st": 2,
+      "lottery": 1,
+      "late_1st": 1,
       "second_rd": 1,
-      "avg_score": 101.3,
-      "top_prospect_rank": 18,
+      "avg_score": 102.1,
+      "top_prospect_rank": 14,
       "top_prospect_name": "Darius Acuff Jr.",
-      "depth_signal": "Scarce",
+      "depth_signal": "Moderate",
       "scores": [
-        118.98,
+        121.39,
         118.11,
         66.74
       ],
       "tier_counts": {
-        "1": 0,
-        "2": 2,
+        "1": 1,
+        "2": 1,
         "3": 1
       }
     },
@@ -1060,7 +1062,7 @@
       "late_1st": 0,
       "second_rd": 1,
       "avg_score": 108.7,
-      "top_prospect_rank": 5,
+      "top_prospect_rank": 4,
       "top_prospect_name": "AJ Dybantsa",
       "depth_signal": "Moderate",
       "scores": [
@@ -1081,7 +1083,7 @@
       "late_1st": 0,
       "second_rd": 2,
       "avg_score": 77.7,
-      "top_prospect_rank": 52,
+      "top_prospect_rank": 55,
       "top_prospect_name": "Zvonimir Ivisic",
       "depth_signal": "Very Scarce",
       "scores": [
@@ -1101,12 +1103,12 @@
       "lottery": 0,
       "late_1st": 0,
       "second_rd": 1,
-      "avg_score": 79.9,
-      "top_prospect_rank": 82,
+      "avg_score": 77.6,
+      "top_prospect_rank": 87,
       "top_prospect_name": "Dailyn Swain",
       "depth_signal": "Very Scarce",
       "scores": [
-        79.86
+        77.58
       ],
       "tier_counts": {
         "1": 0,
@@ -1122,7 +1124,7 @@
       "late_1st": 0,
       "second_rd": 1,
       "avg_score": 68.0,
-      "top_prospect_rank": 142,
+      "top_prospect_rank": 141,
       "top_prospect_name": "Nathan Bittle",
       "depth_signal": "Very Scarce",
       "scores": [
@@ -1141,21 +1143,21 @@
       "archetype": "Defensive Anchor",
       "total": 1,
       "lottery": 1,
-      "best_rank": 4
+      "best_rank": 6
     },
     {
       "pos": "C",
       "archetype": "Help Defender",
       "total": 1,
       "lottery": 0,
-      "best_rank": 21
+      "best_rank": 20
     },
     {
       "pos": "F",
       "archetype": "Small Ball Five",
       "total": 1,
       "lottery": 0,
-      "best_rank": 82
+      "best_rank": 87
     },
     {
       "pos": "C",
@@ -1176,35 +1178,35 @@
       "archetype": "Stretch Five",
       "total": 1,
       "lottery": 0,
-      "best_rank": 142
+      "best_rank": 141
     },
     {
       "pos": "G",
       "archetype": "Rim Protector",
       "total": 1,
       "lottery": 0,
-      "best_rank": 192
+      "best_rank": 194
     },
     {
       "pos": "F",
       "archetype": "Volume Scorer",
       "total": 2,
       "lottery": 1,
-      "best_rank": 5
+      "best_rank": 4
     },
     {
       "pos": "F",
       "archetype": "Weak Side Shot Blocker",
       "total": 2,
       "lottery": 0,
-      "best_rank": 52
+      "best_rank": 55
     },
     {
       "pos": "C",
       "archetype": "Modern Big",
       "total": 2,
       "lottery": 0,
-      "best_rank": 89
+      "best_rank": 88
     },
     {
       "pos": "C",
@@ -1214,32 +1216,32 @@
       "best_rank": 104
     },
     {
-      "pos": "F",
-      "archetype": "Old School Big",
-      "total": 3,
-      "lottery": 0,
-      "best_rank": 16
-    },
-    {
       "pos": "G",
       "archetype": "Elite Floor General",
       "total": 3,
-      "lottery": 0,
-      "best_rank": 18
+      "lottery": 1,
+      "best_rank": 14
+    },
+    {
+      "pos": "F",
+      "archetype": "Old School Big",
+      "total": 3,
+      "lottery": 1,
+      "best_rank": 15
     },
     {
       "pos": "F",
       "archetype": "Sharpshooter",
       "total": 3,
       "lottery": 0,
-      "best_rank": 70
+      "best_rank": 69
     },
     {
       "pos": "F",
       "archetype": "Defensive Liability",
       "total": 3,
       "lottery": 0,
-      "best_rank": 81
+      "best_rank": 79
     }
   ],
   "conferences": [
@@ -1247,7 +1249,7 @@
       "conference": "A-10",
       "prospects": 6,
       "top_archetypes": "Two-Way Wing (2), Post Scorer (1), Glass Cleaner (1)",
-      "top_prospect_rank": 26,
+      "top_prospect_rank": 31,
       "top_prospect_name": "Rafael Castro"
     },
     {
@@ -1268,21 +1270,21 @@
       "conference": "American",
       "prospects": 6,
       "top_archetypes": "Glass Cleaner (2), Two-Way Wing (1), Post Scorer (1)",
-      "top_prospect_rank": 27,
+      "top_prospect_rank": 30,
       "top_prospect_name": "Izaiyah Nelson"
     },
     {
       "conference": "Big 12",
-      "prospects": 35,
+      "prospects": 34,
       "top_archetypes": "Two-Way Star (7), Sharpshooter (7), Three-Level Scorer (6)",
-      "top_prospect_rank": 3,
+      "top_prospect_rank": 2,
       "top_prospect_name": "Darryn Peterson"
     },
     {
       "conference": "Big East",
       "prospects": 11,
       "top_archetypes": "Two-Way Wing (3), Rim Protector (2), Two-Way Star (1)",
-      "top_prospect_rank": 9,
+      "top_prospect_rank": 10,
       "top_prospect_name": "Zuby Ejiofor"
     },
     {
@@ -1296,21 +1298,21 @@
       "conference": "Big Ten",
       "prospects": 32,
       "top_archetypes": "Sharpshooter (8), Two-Way Wing (6), Three-Level Scorer (6)",
-      "top_prospect_rank": 4,
+      "top_prospect_rank": 6,
       "top_prospect_name": "Aday Mara"
     },
     {
       "conference": "Big West",
       "prospects": 3,
       "top_archetypes": "Two-Way Wing (2), Glass Cleaner (1), Rim Protector (1)",
-      "top_prospect_rank": 62,
+      "top_prospect_rank": 61,
       "top_prospect_name": "Kyle Evans"
     },
     {
       "conference": "CAA",
       "prospects": 4,
       "top_archetypes": "Two-Way Wing (1), Rebounder (1), Glass Cleaner (1)",
-      "top_prospect_rank": 78,
+      "top_prospect_rank": 77,
       "top_prospect_name": "Jason Rivera-Torres"
     },
     {
@@ -1324,13 +1326,13 @@
       "conference": "MAAC",
       "prospects": 1,
       "top_archetypes": "",
-      "top_prospect_rank": 88,
+      "top_prospect_rank": 86,
       "top_prospect_name": "Gavin Doty"
     },
     {
       "conference": "MAC",
-      "prospects": 1,
-      "top_archetypes": "Scoring Guard (1), Combo Guard (1), Two-Way Star (1)",
+      "prospects": 2,
+      "top_archetypes": "Combo Guard (2), Scoring Guard (1), Two-Way Star (1)",
       "top_prospect_rank": 100,
       "top_prospect_name": "Javontae Campbell"
     },
@@ -1338,7 +1340,7 @@
       "conference": "MEAC",
       "prospects": 2,
       "top_archetypes": "Two-Way Wing (2), Three-Level Scorer (1)",
-      "top_prospect_rank": 115,
+      "top_prospect_rank": 116,
       "top_prospect_name": "Cedric Taylor III"
     },
     {
@@ -1352,7 +1354,7 @@
       "conference": "MWC",
       "prospects": 5,
       "top_archetypes": "Three-Level Scorer (2), Two-Way Star (2), Two-Way Wing (1)",
-      "top_prospect_rank": 59,
+      "top_prospect_rank": 58,
       "top_prospect_name": "Miles Byrd"
     },
     {
@@ -1373,28 +1375,28 @@
       "conference": "SEC",
       "prospects": 30,
       "top_archetypes": "Sharpshooter (7), Three-Level Scorer (6), Two-Way Star (6)",
-      "top_prospect_rank": 18,
+      "top_prospect_rank": 14,
       "top_prospect_name": "Darius Acuff Jr."
     },
     {
       "conference": "Southern",
       "prospects": 1,
       "top_archetypes": "Two-Way Star (1), Glass Cleaner (1)",
-      "top_prospect_rank": 198,
+      "top_prospect_rank": 199,
       "top_prospect_name": "Dylan Faulkner"
     },
     {
       "conference": "Southland",
       "prospects": 4,
       "top_archetypes": "Sharpshooter (1), Two-Way Wing (1), Rim Protector (1)",
-      "top_prospect_rank": 97,
+      "top_prospect_rank": 98,
       "top_prospect_name": "Larry Johnson"
     },
     {
       "conference": "Summit",
       "prospects": 1,
       "top_archetypes": "Scoring Guard (1), Combo Guard (1), Two-Way Wing (1)",
-      "top_prospect_rank": 49,
+      "top_prospect_rank": 53,
       "top_prospect_name": "Nolan Minessale"
     },
     {
@@ -1408,14 +1410,14 @@
       "conference": "WAC",
       "prospects": 3,
       "top_archetypes": "Two-Way Wing (1), 3-and-D Guard (1), Playmaker (1)",
-      "top_prospect_rank": 25,
+      "top_prospect_rank": 27,
       "top_prospect_name": "Jackson Holcombe"
     },
     {
       "conference": "WCC",
       "prospects": 10,
       "top_archetypes": "Modern Big (2), 3-and-D Guard (2), Three-Level Scorer (1)",
-      "top_prospect_rank": 17,
+      "top_prospect_rank": 21,
       "top_prospect_name": "Allen Graves"
     }
   ],
@@ -1429,7 +1431,7 @@
       "year": "Freshman",
       "height": "6'9\"",
       "tier": 1,
-      "draft_score": 191.2,
+      "draft_score": 187.7,
       "archetype": "Three-Level Scorer",
       "defensive_archetype": "Average Defender",
       "all_offensive": [
@@ -1449,30 +1451,6 @@
     },
     {
       "rank": 2,
-      "name": "Caleb Wilson",
-      "pos": "F",
-      "school": "North Carolina",
-      "conference": "ACC",
-      "year": "Freshman",
-      "height": "6'10\"",
-      "tier": 1,
-      "draft_score": 170.1,
-      "archetype": "Two-Way Star",
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [
-        "Two-Way Star",
-        "Glass Cleaner"
-      ],
-      "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
-      ],
-      "ppg": 19.8,
-      "rpg": 9.4,
-      "apg": 2.7
-    },
-    {
-      "rank": 3,
       "name": "Darryn Peterson",
       "pos": "G",
       "school": "Kansas",
@@ -1480,7 +1458,7 @@
       "year": "Freshman",
       "height": "6'5\"",
       "tier": 1,
-      "draft_score": 156.6,
+      "draft_score": 164.9,
       "archetype": "Scoring Guard",
       "defensive_archetype": "Average Defender",
       "all_offensive": [
@@ -1497,29 +1475,31 @@
       "apg": 1.7
     },
     {
-      "rank": 4,
-      "name": "Aday Mara",
-      "pos": "C",
-      "school": "Michigan",
-      "conference": "Big Ten",
-      "year": "Junior",
-      "height": "7'3\"",
+      "rank": 3,
+      "name": "Caleb Wilson",
+      "pos": "F",
+      "school": "North Carolina",
+      "conference": "ACC",
+      "year": "Freshman",
+      "height": "6'10\"",
       "tier": 1,
-      "draft_score": 152.2,
-      "archetype": "Rim Protector",
-      "defensive_archetype": "Defensive Anchor",
+      "draft_score": 164.2,
+      "archetype": "Two-Way Star",
+      "defensive_archetype": "Wing Stopper",
       "all_offensive": [
-        "Rim Protector"
+        "Two-Way Star",
+        "Glass Cleaner"
       ],
       "all_defensive": [
-        "Defensive Anchor"
+        "Wing Stopper",
+        "Versatile Defender"
       ],
-      "ppg": 11.9,
-      "rpg": 6.9,
-      "apg": 2.4
+      "ppg": 19.8,
+      "rpg": 9.4,
+      "apg": 2.7
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "AJ Dybantsa",
       "pos": "F",
       "school": "Brigham Young",
@@ -1543,7 +1523,7 @@
       "apg": 3.7
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Kingston Flemings",
       "pos": "G",
       "school": "Houston",
@@ -1551,7 +1531,7 @@
       "year": "Freshman",
       "height": "6'4\"",
       "tier": 1,
-      "draft_score": 145.0,
+      "draft_score": 147.4,
       "archetype": "Combo Guard",
       "defensive_archetype": "Point of Attack Defender",
       "all_offensive": [
@@ -1567,6 +1547,28 @@
       "ppg": 16.4,
       "rpg": 4.0,
       "apg": 5.3
+    },
+    {
+      "rank": 6,
+      "name": "Aday Mara",
+      "pos": "C",
+      "school": "Michigan",
+      "conference": "Big Ten",
+      "year": "Junior",
+      "height": "7'3\"",
+      "tier": 1,
+      "draft_score": 146.7,
+      "archetype": "Rim Protector",
+      "defensive_archetype": "Defensive Anchor",
+      "all_offensive": [
+        "Rim Protector"
+      ],
+      "all_defensive": [
+        "Defensive Anchor"
+      ],
+      "ppg": 11.9,
+      "rpg": 6.9,
+      "apg": 2.4
     },
     {
       "rank": 7,
@@ -1593,58 +1595,26 @@
     },
     {
       "rank": 8,
-      "name": "Yaxel Lendeborg",
-      "pos": "F",
-      "school": "Michigan",
-      "conference": "Big Ten",
-      "year": "Senior",
-      "height": "6'9\"",
+      "name": "Isaiah Evans",
+      "pos": "G",
+      "school": "Duke",
+      "conference": "ACC",
+      "year": "Sophomore",
+      "height": "6'6\"",
       "tier": 1,
-      "draft_score": 131.9,
-      "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [
-        "Two-Way Wing",
-        "Modern Big",
-        "Post Scorer"
-      ],
+      "draft_score": 134.2,
+      "archetype": null,
+      "defensive_archetype": "Average Defender",
+      "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
-      "ppg": 14.4,
-      "rpg": 6.9,
-      "apg": 3.3
+      "ppg": 14.9,
+      "rpg": 3.3,
+      "apg": 1.3
     },
     {
       "rank": 9,
-      "name": "Zuby Ejiofor",
-      "pos": "F",
-      "school": "St. John's (NY)",
-      "conference": "Big East",
-      "year": "Senior",
-      "height": "6'9\"",
-      "tier": 1,
-      "draft_score": 131.1,
-      "archetype": "Two-Way Star",
-      "defensive_archetype": "Defensive Anchor",
-      "all_offensive": [
-        "Two-Way Star",
-        "Modern Big",
-        "Post Scorer",
-        "Rim Protector"
-      ],
-      "all_defensive": [
-        "Defensive Anchor",
-        "Wing Stopper",
-        "Versatile Defender"
-      ],
-      "ppg": 16.3,
-      "rpg": 7.1,
-      "apg": 3.5
-    },
-    {
-      "rank": 10,
       "name": "Morez Johnson Jr.",
       "pos": "F",
       "school": "Michigan",
@@ -1666,7 +1636,59 @@
       "apg": 1.1
     },
     {
+      "rank": 10,
+      "name": "Zuby Ejiofor",
+      "pos": "F",
+      "school": "St. John's (NY)",
+      "conference": "Big East",
+      "year": "Senior",
+      "height": "6'9\"",
+      "tier": 1,
+      "draft_score": 130.0,
+      "archetype": "Two-Way Star",
+      "defensive_archetype": "Defensive Anchor",
+      "all_offensive": [
+        "Two-Way Star",
+        "Modern Big",
+        "Post Scorer",
+        "Rim Protector"
+      ],
+      "all_defensive": [
+        "Defensive Anchor",
+        "Wing Stopper",
+        "Versatile Defender"
+      ],
+      "ppg": 16.3,
+      "rpg": 7.1,
+      "apg": 3.5
+    },
+    {
       "rank": 11,
+      "name": "Yaxel Lendeborg",
+      "pos": "F",
+      "school": "Michigan",
+      "conference": "Big Ten",
+      "year": "Senior",
+      "height": "6'9\"",
+      "tier": 1,
+      "draft_score": 128.6,
+      "archetype": "Two-Way Wing",
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [
+        "Two-Way Wing",
+        "Modern Big",
+        "Post Scorer"
+      ],
+      "all_defensive": [
+        "Wing Stopper",
+        "Versatile Defender"
+      ],
+      "ppg": 14.4,
+      "rpg": 6.9,
+      "apg": 3.3
+    },
+    {
+      "rank": 12,
       "name": "Keaton Wagler",
       "pos": "G",
       "school": "Illinois",
@@ -1688,26 +1710,6 @@
       "ppg": 17.9,
       "rpg": 4.9,
       "apg": 4.5
-    },
-    {
-      "rank": 12,
-      "name": "Isaiah Evans",
-      "pos": "G",
-      "school": "Duke",
-      "conference": "ACC",
-      "year": "Sophomore",
-      "height": "6'6\"",
-      "tier": 1,
-      "draft_score": 126.2,
-      "archetype": null,
-      "defensive_archetype": "Average Defender",
-      "all_offensive": [],
-      "all_defensive": [
-        "Average Defender"
-      ],
-      "ppg": 14.9,
-      "rpg": 3.3,
-      "apg": 1.3
     },
     {
       "rank": 13,
@@ -1733,112 +1735,14 @@
     },
     {
       "rank": 14,
-      "name": "Hannes Steinbach",
-      "pos": "F",
-      "school": "Washington",
-      "conference": "Big Ten",
-      "year": "Freshman",
-      "height": "6'11\"",
-      "tier": 1,
-      "draft_score": 123.8,
-      "archetype": "Two-Way Star",
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [
-        "Two-Way Star",
-        "Post Scorer",
-        "Glass Cleaner"
-      ],
-      "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
-      ],
-      "ppg": 18.5,
-      "rpg": 11.8,
-      "apg": 1.6
-    },
-    {
-      "rank": 15,
-      "name": "Joshua Jefferson",
-      "pos": "F",
-      "school": "Iowa State",
-      "conference": "Big 12",
-      "year": "Senior",
-      "height": "6'8\"",
-      "tier": 1,
-      "draft_score": 122.0,
-      "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [
-        "Three-Level Scorer",
-        "Two-Way Star",
-        "Point Forward",
-        "Modern Big"
-      ],
-      "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
-      ],
-      "ppg": 16.9,
-      "rpg": 7.6,
-      "apg": 4.9
-    },
-    {
-      "rank": 16,
-      "name": "Flory Bidunga",
-      "pos": "F",
-      "school": "Kansas",
-      "conference": "Big 12",
-      "year": "Sophomore",
-      "height": "6'9\"",
-      "tier": 2,
-      "draft_score": 119.7,
-      "archetype": "Two-Way Wing",
-      "defensive_archetype": "Defensive Anchor",
-      "all_offensive": [
-        "Two-Way Wing",
-        "Glass Cleaner",
-        "Old School Big",
-        "Rim Protector"
-      ],
-      "all_defensive": [
-        "Defensive Anchor",
-        "Help Defender"
-      ],
-      "ppg": 13.5,
-      "rpg": 9.2,
-      "apg": 1.5
-    },
-    {
-      "rank": 17,
-      "name": "Allen Graves",
-      "pos": "F",
-      "school": "Santa Clara",
-      "conference": "WCC",
-      "year": "Sophomore",
-      "height": "6'9\"",
-      "tier": 2,
-      "draft_score": 119.6,
-      "archetype": null,
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [],
-      "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
-      ],
-      "ppg": 11.6,
-      "rpg": 6.5,
-      "apg": 1.8
-    },
-    {
-      "rank": 18,
       "name": "Darius Acuff Jr.",
       "pos": "G",
       "school": "Arkansas",
       "conference": "SEC",
       "year": "Freshman",
       "height": "6'3\"",
-      "tier": 2,
-      "draft_score": 119.0,
+      "tier": 1,
+      "draft_score": 121.4,
       "archetype": "Elite Floor General",
       "defensive_archetype": "Defensive Liability",
       "all_offensive": [
@@ -1856,15 +1760,15 @@
       "apg": 6.6
     },
     {
-      "rank": 19,
+      "rank": 15,
       "name": "Tarris Reed Jr.",
       "pos": "F",
       "school": "Connecticut",
       "conference": "Big East",
       "year": "Senior",
       "height": "6'10\"",
-      "tier": 2,
-      "draft_score": 118.4,
+      "tier": 1,
+      "draft_score": 120.5,
       "archetype": "Two-Way Wing",
       "defensive_archetype": "Defensive Anchor",
       "all_offensive": [
@@ -1881,7 +1785,84 @@
       "apg": 2.3
     },
     {
-      "rank": 20,
+      "rank": 16,
+      "name": "Hannes Steinbach",
+      "pos": "F",
+      "school": "Washington",
+      "conference": "Big Ten",
+      "year": "Freshman",
+      "height": "6'11\"",
+      "tier": 2,
+      "draft_score": 120.2,
+      "archetype": "Two-Way Star",
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [
+        "Two-Way Star",
+        "Post Scorer",
+        "Glass Cleaner"
+      ],
+      "all_defensive": [
+        "Wing Stopper",
+        "Versatile Defender"
+      ],
+      "ppg": 18.5,
+      "rpg": 11.8,
+      "apg": 1.6
+    },
+    {
+      "rank": 17,
+      "name": "Joshua Jefferson",
+      "pos": "F",
+      "school": "Iowa State",
+      "conference": "Big 12",
+      "year": "Senior",
+      "height": "6'8\"",
+      "tier": 2,
+      "draft_score": 119.8,
+      "archetype": "Three-Level Scorer",
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [
+        "Three-Level Scorer",
+        "Two-Way Star",
+        "Point Forward",
+        "Modern Big"
+      ],
+      "all_defensive": [
+        "Wing Stopper",
+        "Versatile Defender"
+      ],
+      "ppg": 16.9,
+      "rpg": 7.6,
+      "apg": 4.9
+    },
+    {
+      "rank": 18,
+      "name": "Flory Bidunga",
+      "pos": "F",
+      "school": "Kansas",
+      "conference": "Big 12",
+      "year": "Sophomore",
+      "height": "6'9\"",
+      "tier": 2,
+      "draft_score": 118.6,
+      "archetype": "Two-Way Wing",
+      "defensive_archetype": "Defensive Anchor",
+      "all_offensive": [
+        "Two-Way Wing",
+        "Glass Cleaner",
+        "Old School Big",
+        "Rim Protector"
+      ],
+      "all_defensive": [
+        "Defensive Anchor",
+        "Help Defender"
+      ],
+      "ppg": 13.5,
+      "rpg": 9.2,
+      "apg": 1.5
+    },
+    {
+      "rank": 19,
       "name": "Jeremy Fears Jr.",
       "pos": "G",
       "school": "Michigan State",
@@ -1904,7 +1885,7 @@
       "apg": 9.2
     },
     {
-      "rank": 21,
+      "rank": 20,
       "name": "Motiejus Krivas",
       "pos": "C",
       "school": "Arizona",
@@ -1926,6 +1907,27 @@
       "ppg": 10.5,
       "rpg": 8.1,
       "apg": 1.0
+    },
+    {
+      "rank": 21,
+      "name": "Allen Graves",
+      "pos": "F",
+      "school": "Santa Clara",
+      "conference": "WCC",
+      "year": "Sophomore",
+      "height": "6'9\"",
+      "tier": 2,
+      "draft_score": 114.2,
+      "archetype": null,
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [],
+      "all_defensive": [
+        "Wing Stopper",
+        "Versatile Defender"
+      ],
+      "ppg": 11.6,
+      "rpg": 6.5,
+      "apg": 1.8
     },
     {
       "rank": 22,
@@ -1951,6 +1953,53 @@
     },
     {
       "rank": 23,
+      "name": "Tounde Yessoufou",
+      "pos": "G",
+      "school": "Baylor",
+      "conference": "Big 12",
+      "year": "Freshman",
+      "height": "6'5\"",
+      "tier": 2,
+      "draft_score": 110.0,
+      "archetype": "Two-Way Star",
+      "defensive_archetype": "Perimeter Pest",
+      "all_offensive": [
+        "Two-Way Star"
+      ],
+      "all_defensive": [
+        "Perimeter Pest"
+      ],
+      "ppg": 17.8,
+      "rpg": 5.8,
+      "apg": 1.6
+    },
+    {
+      "rank": 24,
+      "name": "Richie Saunders",
+      "pos": "G",
+      "school": "Brigham Young",
+      "conference": "Big 12",
+      "year": "Senior",
+      "height": "6'5\"",
+      "tier": 2,
+      "draft_score": 109.8,
+      "archetype": "Three-Level Scorer",
+      "defensive_archetype": "Point of Attack Defender",
+      "all_offensive": [
+        "Three-Level Scorer",
+        "Two-Way Star",
+        "Sharpshooter"
+      ],
+      "all_defensive": [
+        "Point of Attack Defender",
+        "Perimeter Pest"
+      ],
+      "ppg": 18.0,
+      "rpg": 5.8,
+      "apg": 2.1
+    },
+    {
+      "rank": 25,
       "name": "Duke Miles",
       "pos": "G",
       "school": "Vanderbilt",
@@ -1975,7 +2024,7 @@
       "apg": 4.4
     },
     {
-      "rank": 24,
+      "rank": 26,
       "name": "Tyler Tanner",
       "pos": "G",
       "school": "Vanderbilt",
@@ -2003,7 +2052,7 @@
       "apg": 5.1
     },
     {
-      "rank": 25,
+      "rank": 27,
       "name": "Jackson Holcombe",
       "pos": "G",
       "school": "Utah Valley",
@@ -2026,59 +2075,6 @@
       "ppg": 16.0,
       "rpg": 7.0,
       "apg": 3.6
-    },
-    {
-      "rank": 26,
-      "name": "Rafael Castro",
-      "pos": "F",
-      "school": "George Washington",
-      "conference": "A-10",
-      "year": "Senior",
-      "height": "6'10\"",
-      "tier": 2,
-      "draft_score": 107.5,
-      "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [
-        "Two-Way Wing",
-        "Post Scorer",
-        "Glass Cleaner",
-        "Old School Big",
-        "Rim Protector"
-      ],
-      "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender",
-        "Paint Presence"
-      ],
-      "ppg": 15.6,
-      "rpg": 8.9,
-      "apg": 1.6
-    },
-    {
-      "rank": 27,
-      "name": "Izaiyah Nelson",
-      "pos": "F",
-      "school": "South Florida",
-      "conference": "American",
-      "year": "Senior",
-      "height": "6'10\"",
-      "tier": 2,
-      "draft_score": 107.1,
-      "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [
-        "Two-Way Wing",
-        "Post Scorer",
-        "Glass Cleaner"
-      ],
-      "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
-      ],
-      "ppg": 15.9,
-      "rpg": 9.6,
-      "apg": 1.2
     },
     {
       "rank": 28,
@@ -2129,6 +2125,59 @@
     },
     {
       "rank": 30,
+      "name": "Izaiyah Nelson",
+      "pos": "F",
+      "school": "South Florida",
+      "conference": "American",
+      "year": "Senior",
+      "height": "6'10\"",
+      "tier": 2,
+      "draft_score": 106.2,
+      "archetype": "Two-Way Wing",
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [
+        "Two-Way Wing",
+        "Post Scorer",
+        "Glass Cleaner"
+      ],
+      "all_defensive": [
+        "Wing Stopper",
+        "Versatile Defender"
+      ],
+      "ppg": 15.9,
+      "rpg": 9.6,
+      "apg": 1.2
+    },
+    {
+      "rank": 31,
+      "name": "Rafael Castro",
+      "pos": "F",
+      "school": "George Washington",
+      "conference": "A-10",
+      "year": "Senior",
+      "height": "6'10\"",
+      "tier": 2,
+      "draft_score": 104.6,
+      "archetype": "Two-Way Wing",
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [
+        "Two-Way Wing",
+        "Post Scorer",
+        "Glass Cleaner",
+        "Old School Big",
+        "Rim Protector"
+      ],
+      "all_defensive": [
+        "Wing Stopper",
+        "Versatile Defender",
+        "Paint Presence"
+      ],
+      "ppg": 15.6,
+      "rpg": 8.9,
+      "apg": 1.6
+    },
+    {
+      "rank": 32,
       "name": "Davis Fogle",
       "pos": "G",
       "school": "Gonzaga",
@@ -2148,56 +2197,30 @@
       "apg": 1.3
     },
     {
-      "rank": 31,
-      "name": "Baba Miller",
-      "pos": "F",
-      "school": "Cincinnati",
-      "conference": "Big 12",
-      "year": "Senior",
-      "height": "6'11\"",
-      "tier": 2,
-      "draft_score": 102.4,
-      "archetype": "Point Forward",
-      "defensive_archetype": "Help Defender",
-      "all_offensive": [
-        "Point Forward",
-        "Two-Way Wing",
-        "Glass Cleaner"
-      ],
-      "all_defensive": [
-        "Help Defender"
-      ],
-      "ppg": 13.0,
-      "rpg": 10.3,
-      "apg": 3.7
-    },
-    {
-      "rank": 32,
-      "name": "Richie Saunders",
+      "rank": 33,
+      "name": "Bruce Thornton",
       "pos": "G",
-      "school": "Brigham Young",
-      "conference": "Big 12",
+      "school": "Ohio State",
+      "conference": "Big Ten",
       "year": "Senior",
-      "height": "6'5\"",
+      "height": "6'2\"",
       "tier": 2,
-      "draft_score": 102.1,
+      "draft_score": 101.2,
       "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Average Defender",
       "all_offensive": [
         "Three-Level Scorer",
-        "Two-Way Star",
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest"
+        "Average Defender"
       ],
-      "ppg": 18.0,
-      "rpg": 5.8,
-      "apg": 2.1
+      "ppg": 19.9,
+      "rpg": 5.1,
+      "apg": 3.9
     },
     {
-      "rank": 33,
+      "rank": 34,
       "name": "Kellen Thames",
       "pos": "G",
       "school": "Saint Louis",
@@ -2215,28 +2238,6 @@
       "ppg": 9.9,
       "rpg": 4.7,
       "apg": 1.8
-    },
-    {
-      "rank": 34,
-      "name": "Tounde Yessoufou",
-      "pos": "G",
-      "school": "Baylor",
-      "conference": "Big 12",
-      "year": "Freshman",
-      "height": "6'5\"",
-      "tier": 2,
-      "draft_score": 100.5,
-      "archetype": "Two-Way Star",
-      "defensive_archetype": "Perimeter Pest",
-      "all_offensive": [
-        "Two-Way Star"
-      ],
-      "all_defensive": [
-        "Perimeter Pest"
-      ],
-      "ppg": 17.8,
-      "rpg": 5.8,
-      "apg": 1.6
     },
     {
       "rank": 35,
@@ -2260,46 +2261,52 @@
     },
     {
       "rank": 36,
-      "name": "Bruce Thornton",
+      "name": "Cameron Carr",
       "pos": "G",
-      "school": "Ohio State",
-      "conference": "Big Ten",
-      "year": "Senior",
-      "height": "6'2\"",
+      "school": "Baylor",
+      "conference": "Big 12",
+      "year": "Junior",
+      "height": "6'5\"",
       "tier": 2,
-      "draft_score": 99.0,
-      "archetype": "Three-Level Scorer",
+      "draft_score": 99.8,
+      "archetype": "Scoring Guard",
       "defensive_archetype": "Average Defender",
       "all_offensive": [
+        "Scoring Guard",
         "Three-Level Scorer",
+        "Two-Way Star",
         "Sharpshooter"
       ],
       "all_defensive": [
         "Average Defender"
       ],
-      "ppg": 19.9,
-      "rpg": 5.1,
-      "apg": 3.9
+      "ppg": 19.2,
+      "rpg": 5.5,
+      "apg": 2.7
     },
     {
       "rank": 37,
-      "name": "Dillon Mitchell",
+      "name": "Baba Miller",
       "pos": "F",
-      "school": "St. John's (NY)",
-      "conference": "Big East",
+      "school": "Cincinnati",
+      "conference": "Big 12",
       "year": "Senior",
-      "height": "6'8\"",
+      "height": "6'11\"",
       "tier": 2,
-      "draft_score": 98.9,
-      "archetype": null,
-      "defensive_archetype": "Wing Stopper",
-      "all_offensive": [],
-      "all_defensive": [
-        "Wing Stopper"
+      "draft_score": 99.1,
+      "archetype": "Point Forward",
+      "defensive_archetype": "Help Defender",
+      "all_offensive": [
+        "Point Forward",
+        "Two-Way Wing",
+        "Glass Cleaner"
       ],
-      "ppg": 8.2,
-      "rpg": 7.0,
-      "apg": 3.1
+      "all_defensive": [
+        "Help Defender"
+      ],
+      "ppg": 13.0,
+      "rpg": 10.3,
+      "apg": 3.7
     },
     {
       "rank": 38,
@@ -2365,6 +2372,52 @@
     },
     {
       "rank": 41,
+      "name": "Bennett Stirtz",
+      "pos": "G",
+      "school": "Iowa",
+      "conference": "Big Ten",
+      "year": "Senior",
+      "height": "6'4\"",
+      "tier": 2,
+      "draft_score": 97.3,
+      "archetype": "Scoring Guard",
+      "defensive_archetype": "Average Defender",
+      "all_offensive": [
+        "Scoring Guard",
+        "Combo Guard",
+        "Three-Level Scorer",
+        "Two-Way Star",
+        "Sharpshooter"
+      ],
+      "all_defensive": [
+        "Average Defender"
+      ],
+      "ppg": 20.0,
+      "rpg": 2.5,
+      "apg": 4.5
+    },
+    {
+      "rank": 42,
+      "name": "Dillon Mitchell",
+      "pos": "F",
+      "school": "St. John's (NY)",
+      "conference": "Big East",
+      "year": "Senior",
+      "height": "6'8\"",
+      "tier": 2,
+      "draft_score": 96.8,
+      "archetype": null,
+      "defensive_archetype": "Wing Stopper",
+      "all_offensive": [],
+      "all_defensive": [
+        "Wing Stopper"
+      ],
+      "ppg": 8.2,
+      "rpg": 7.0,
+      "apg": 3.1
+    },
+    {
+      "rank": 43,
       "name": "Mikel Brown Jr.",
       "pos": "G",
       "school": "Louisville",
@@ -2387,33 +2440,31 @@
       "apg": 4.7
     },
     {
-      "rank": 42,
-      "name": "Henri Veesaar",
-      "pos": "F",
-      "school": "North Carolina",
-      "conference": "ACC",
+      "rank": 44,
+      "name": "Keyshawn Hall",
+      "pos": "G",
+      "school": "Auburn",
+      "conference": "SEC",
       "year": "Senior",
-      "height": "7'0\"",
+      "height": "6'7\"",
       "tier": 2,
-      "draft_score": 96.2,
-      "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Help Defender",
+      "draft_score": 96.5,
+      "archetype": "Scoring Guard",
+      "defensive_archetype": "Below-Average Defender",
       "all_offensive": [
+        "Scoring Guard",
         "Three-Level Scorer",
-        "Two-Way Star",
-        "Modern Big",
-        "Post Scorer",
-        "Glass Cleaner"
+        "Sharpshooter"
       ],
       "all_defensive": [
-        "Help Defender"
+        "Below-Average Defender"
       ],
-      "ppg": 17.0,
-      "rpg": 8.7,
-      "apg": 2.1
+      "ppg": 19.9,
+      "rpg": 6.7,
+      "apg": 2.6
     },
     {
-      "rank": 43,
+      "rank": 45,
       "name": "Graham Ike",
       "pos": "F",
       "school": "Gonzaga",
@@ -2439,14 +2490,14 @@
       "apg": 2.3
     },
     {
-      "rank": 44,
+      "rank": 46,
       "name": "Chris Cenac Jr.",
       "pos": "C",
       "school": "Houston",
       "conference": "Big 12",
       "year": "Freshman",
       "height": "6'11\"",
-      "tier": 2,
+      "tier": 3,
       "draft_score": 95.6,
       "archetype": null,
       "defensive_archetype": "Average Defender",
@@ -2459,14 +2510,14 @@
       "apg": 0.7
     },
     {
-      "rank": 45,
+      "rank": 47,
       "name": "Rueben Chinyelu",
       "pos": "C",
       "school": "Florida",
       "conference": "SEC",
       "year": "Junior",
       "height": "6'11\"",
-      "tier": 2,
+      "tier": 3,
       "draft_score": 95.1,
       "archetype": "Glass Cleaner",
       "defensive_archetype": "Average Defender",
@@ -2481,33 +2532,30 @@
       "apg": 0.7
     },
     {
-      "rank": 46,
-      "name": "Bennett Stirtz",
+      "rank": 48,
+      "name": "Ebuka Okorie",
       "pos": "G",
-      "school": "Iowa",
-      "conference": "Big Ten",
-      "year": "Senior",
-      "height": "6'4\"",
+      "school": "Stanford",
+      "conference": "ACC",
+      "year": "Freshman",
+      "height": "6'2\"",
       "tier": 3,
-      "draft_score": 95.1,
+      "draft_score": 94.6,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Average Defender",
+      "defensive_archetype": "Below-Average Defender",
       "all_offensive": [
         "Scoring Guard",
-        "Combo Guard",
-        "Three-Level Scorer",
-        "Two-Way Star",
-        "Sharpshooter"
+        "Three-Level Scorer"
       ],
       "all_defensive": [
-        "Average Defender"
+        "Below-Average Defender"
       ],
-      "ppg": 20.0,
-      "rpg": 2.5,
-      "apg": 4.5
+      "ppg": 22.8,
+      "rpg": 3.7,
+      "apg": 3.5
     },
     {
-      "rank": 47,
+      "rank": 49,
       "name": "Jalen Warley",
       "pos": "G",
       "school": "Gonzaga",
@@ -2527,7 +2575,32 @@
       "apg": 2.0
     },
     {
-      "rank": 48,
+      "rank": 50,
+      "name": "Labaron Philon",
+      "pos": "G",
+      "school": "Alabama",
+      "conference": "SEC",
+      "year": "Sophomore",
+      "height": "6'4\"",
+      "tier": 3,
+      "draft_score": 93.7,
+      "archetype": "Scoring Guard",
+      "defensive_archetype": "Defensive Liability",
+      "all_offensive": [
+        "Scoring Guard",
+        "Combo Guard",
+        "Three-Level Scorer",
+        "Sharpshooter"
+      ],
+      "all_defensive": [
+        "Defensive Liability"
+      ],
+      "ppg": 21.7,
+      "rpg": 3.2,
+      "apg": 4.7
+    },
+    {
+      "rank": 51,
       "name": "Meleek Thomas",
       "pos": "G",
       "school": "Arkansas",
@@ -2549,7 +2622,33 @@
       "apg": 2.5
     },
     {
-      "rank": 49,
+      "rank": 52,
+      "name": "Henri Veesaar",
+      "pos": "F",
+      "school": "North Carolina",
+      "conference": "ACC",
+      "year": "Senior",
+      "height": "7'0\"",
+      "tier": 3,
+      "draft_score": 92.9,
+      "archetype": "Three-Level Scorer",
+      "defensive_archetype": "Help Defender",
+      "all_offensive": [
+        "Three-Level Scorer",
+        "Two-Way Star",
+        "Modern Big",
+        "Post Scorer",
+        "Glass Cleaner"
+      ],
+      "all_defensive": [
+        "Help Defender"
+      ],
+      "ppg": 17.0,
+      "rpg": 8.7,
+      "apg": 2.1
+    },
+    {
+      "rank": 53,
       "name": "Nolan Minessale",
       "pos": "G",
       "school": "St. Thomas",
@@ -2573,32 +2672,7 @@
       "apg": 4.3
     },
     {
-      "rank": 50,
-      "name": "Cameron Carr",
-      "pos": "G",
-      "school": "Baylor",
-      "conference": "Big 12",
-      "year": "Junior",
-      "height": "6'5\"",
-      "tier": 3,
-      "draft_score": 91.8,
-      "archetype": "Scoring Guard",
-      "defensive_archetype": "Average Defender",
-      "all_offensive": [
-        "Scoring Guard",
-        "Three-Level Scorer",
-        "Two-Way Star",
-        "Sharpshooter"
-      ],
-      "all_defensive": [
-        "Average Defender"
-      ],
-      "ppg": 19.2,
-      "rpg": 5.5,
-      "apg": 2.7
-    },
-    {
-      "rank": 51,
+      "rank": 54,
       "name": "Quadir Copeland",
       "pos": "G",
       "school": "NC State",
@@ -2622,7 +2696,7 @@
       "apg": 6.5
     },
     {
-      "rank": 52,
+      "rank": 55,
       "name": "Zvonimir Ivisic",
       "pos": "F",
       "school": "Illinois",
@@ -2643,78 +2717,6 @@
       "ppg": 7.0,
       "rpg": 4.8,
       "apg": 0.3
-    },
-    {
-      "rank": 53,
-      "name": "Labaron Philon",
-      "pos": "G",
-      "school": "Alabama",
-      "conference": "SEC",
-      "year": "Sophomore",
-      "height": "6'4\"",
-      "tier": 3,
-      "draft_score": 91.3,
-      "archetype": "Scoring Guard",
-      "defensive_archetype": "Defensive Liability",
-      "all_offensive": [
-        "Scoring Guard",
-        "Combo Guard",
-        "Three-Level Scorer",
-        "Sharpshooter"
-      ],
-      "all_defensive": [
-        "Defensive Liability"
-      ],
-      "ppg": 21.7,
-      "rpg": 3.2,
-      "apg": 4.7
-    },
-    {
-      "rank": 54,
-      "name": "Ebuka Okorie",
-      "pos": "G",
-      "school": "Stanford",
-      "conference": "ACC",
-      "year": "Freshman",
-      "height": "6'2\"",
-      "tier": 3,
-      "draft_score": 89.9,
-      "archetype": "Scoring Guard",
-      "defensive_archetype": "Below-Average Defender",
-      "all_offensive": [
-        "Scoring Guard",
-        "Three-Level Scorer"
-      ],
-      "all_defensive": [
-        "Below-Average Defender"
-      ],
-      "ppg": 22.8,
-      "rpg": 3.7,
-      "apg": 3.5
-    },
-    {
-      "rank": 55,
-      "name": "Keyshawn Hall",
-      "pos": "G",
-      "school": "Auburn",
-      "conference": "SEC",
-      "year": "Senior",
-      "height": "6'7\"",
-      "tier": 3,
-      "draft_score": 89.9,
-      "archetype": "Scoring Guard",
-      "defensive_archetype": "Below-Average Defender",
-      "all_offensive": [
-        "Scoring Guard",
-        "Three-Level Scorer",
-        "Sharpshooter"
-      ],
-      "all_defensive": [
-        "Below-Average Defender"
-      ],
-      "ppg": 19.9,
-      "rpg": 6.7,
-      "apg": 2.6
     },
     {
       "rank": 56,
@@ -2764,28 +2766,6 @@
     },
     {
       "rank": 58,
-      "name": "Koa Peat",
-      "pos": "F",
-      "school": "Arizona",
-      "conference": "Big 12",
-      "year": "Freshman",
-      "height": "6'8\"",
-      "tier": 3,
-      "draft_score": 88.1,
-      "archetype": "Modern Big",
-      "defensive_archetype": "Average Defender",
-      "all_offensive": [
-        "Modern Big"
-      ],
-      "all_defensive": [
-        "Average Defender"
-      ],
-      "ppg": 13.6,
-      "rpg": 5.3,
-      "apg": 2.7
-    },
-    {
-      "rank": 59,
       "name": "Miles Byrd",
       "pos": "G",
       "school": "San Diego State",
@@ -2808,7 +2788,7 @@
       "apg": 2.6
     },
     {
-      "rank": 60,
+      "rank": 59,
       "name": "Alijah Arenas",
       "pos": "G",
       "school": "Southern California",
@@ -2828,7 +2808,7 @@
       "apg": 2.1
     },
     {
-      "rank": 61,
+      "rank": 60,
       "name": "Isiah Harwell",
       "pos": "G",
       "school": "Houston",
@@ -2848,7 +2828,7 @@
       "apg": 0.5
     },
     {
-      "rank": 62,
+      "rank": 61,
       "name": "Kyle Evans",
       "pos": "F",
       "school": "UC Irvine",
@@ -2871,6 +2851,28 @@
       "ppg": 12.1,
       "rpg": 8.7,
       "apg": 0.9
+    },
+    {
+      "rank": 62,
+      "name": "Koa Peat",
+      "pos": "F",
+      "school": "Arizona",
+      "conference": "Big 12",
+      "year": "Freshman",
+      "height": "6'8\"",
+      "tier": 3,
+      "draft_score": 85.7,
+      "archetype": "Modern Big",
+      "defensive_archetype": "Average Defender",
+      "all_offensive": [
+        "Modern Big"
+      ],
+      "all_defensive": [
+        "Average Defender"
+      ],
+      "ppg": 13.6,
+      "rpg": 5.3,
+      "apg": 2.7
     },
     {
       "rank": 63,
@@ -2916,28 +2918,6 @@
     },
     {
       "rank": 65,
-      "name": "Malachi Moreno",
-      "pos": "C",
-      "school": "Kentucky",
-      "conference": "SEC",
-      "year": "Freshman",
-      "height": "7'0\"",
-      "tier": 3,
-      "draft_score": 83.9,
-      "archetype": "Rim Protector",
-      "defensive_archetype": "Paint Presence",
-      "all_offensive": [
-        "Rim Protector"
-      ],
-      "all_defensive": [
-        "Paint Presence"
-      ],
-      "ppg": 8.0,
-      "rpg": 6.4,
-      "apg": 1.8
-    },
-    {
-      "rank": 66,
       "name": "Trevon Brazile",
       "pos": "F",
       "school": "Arkansas",
@@ -2962,7 +2942,7 @@
       "apg": 1.5
     },
     {
-      "rank": 67,
+      "rank": 66,
       "name": "Jaden Bradley",
       "pos": "G",
       "school": "Arizona",
@@ -2985,7 +2965,7 @@
       "apg": 4.5
     },
     {
-      "rank": 68,
+      "rank": 67,
       "name": "Moustapha Thiam",
       "pos": "C",
       "school": "Cincinnati",
@@ -3007,7 +2987,7 @@
       "apg": 0.5
     },
     {
-      "rank": 69,
+      "rank": 68,
       "name": "Mason Falslev",
       "pos": "G",
       "school": "Utah State",
@@ -3031,7 +3011,7 @@
       "apg": 3.1
     },
     {
-      "rank": 70,
+      "rank": 69,
       "name": "Milan Momcilovic",
       "pos": "F",
       "school": "Iowa State",
@@ -3053,7 +3033,7 @@
       "apg": 0.9
     },
     {
-      "rank": 71,
+      "rank": 70,
       "name": "J'Vonne Hadley",
       "pos": "G",
       "school": "Louisville",
@@ -3073,7 +3053,7 @@
       "apg": 1.7
     },
     {
-      "rank": 72,
+      "rank": 71,
       "name": "Chad Baker-Mazara",
       "pos": "G",
       "school": "Southern California",
@@ -3097,7 +3077,7 @@
       "apg": 2.8
     },
     {
-      "rank": 73,
+      "rank": 72,
       "name": "Blake Buchanan",
       "pos": "F",
       "school": "Iowa State",
@@ -3117,7 +3097,7 @@
       "apg": 1.5
     },
     {
-      "rank": 74,
+      "rank": 73,
       "name": "JT Toppin",
       "pos": "F",
       "school": "Texas Tech",
@@ -3144,7 +3124,7 @@
       "apg": 2.1
     },
     {
-      "rank": 75,
+      "rank": 74,
       "name": "Nick Boyd",
       "pos": "G",
       "school": "Wisconsin",
@@ -3168,7 +3148,7 @@
       "apg": 4.3
     },
     {
-      "rank": 76,
+      "rank": 75,
       "name": "Ian Jackson",
       "pos": "G",
       "school": "St. John's (NY)",
@@ -3188,7 +3168,7 @@
       "apg": 1.2
     },
     {
-      "rank": 77,
+      "rank": 76,
       "name": "Dame Sarr",
       "pos": "G",
       "school": "Duke",
@@ -3208,7 +3188,7 @@
       "apg": 1.1
     },
     {
-      "rank": 78,
+      "rank": 77,
       "name": "Jason Rivera-Torres",
       "pos": "G",
       "school": "Monmouth",
@@ -3231,49 +3211,32 @@
       "apg": 2.9
     },
     {
-      "rank": 79,
-      "name": "Tobe Awaka",
-      "pos": "F",
-      "school": "Arizona",
+      "rank": 78,
+      "name": "Christian Anderson",
+      "pos": "G",
+      "school": "Texas Tech",
       "conference": "Big 12",
-      "year": "Junior",
-      "height": "6'8\"",
+      "year": "Sophomore",
+      "height": "6'2\"",
       "tier": 3,
-      "draft_score": 80.5,
-      "archetype": "Glass Cleaner",
-      "defensive_archetype": "Average Defender",
+      "draft_score": 80.2,
+      "archetype": "Floor General",
+      "defensive_archetype": "Below-Average Defender",
       "all_offensive": [
-        "Glass Cleaner"
+        "Floor General",
+        "Combo Guard",
+        "Three-Level Scorer",
+        "Sharpshooter"
       ],
       "all_defensive": [
-        "Average Defender"
+        "Below-Average Defender"
       ],
-      "ppg": 9.4,
-      "rpg": 9.5,
-      "apg": 0.8
+      "ppg": 18.9,
+      "rpg": 3.6,
+      "apg": 7.6
     },
     {
-      "rank": 80,
-      "name": "Maliq Brown",
-      "pos": "F",
-      "school": "Duke",
-      "conference": "ACC",
-      "year": "Senior",
-      "height": "6'8\"",
-      "tier": 3,
-      "draft_score": 80.4,
-      "archetype": null,
-      "defensive_archetype": "Average Defender",
-      "all_offensive": [],
-      "all_defensive": [
-        "Average Defender"
-      ],
-      "ppg": 4.9,
-      "rpg": 5.0,
-      "apg": 1.7
-    },
-    {
-      "rank": 81,
+      "rank": 79,
       "name": "Braden Huff",
       "pos": "F",
       "school": "Gonzaga",
@@ -3293,33 +3256,7 @@
       "apg": 1.5
     },
     {
-      "rank": 82,
-      "name": "Dailyn Swain",
-      "pos": "F",
-      "school": "Texas",
-      "conference": "SEC",
-      "year": "Junior",
-      "height": "6'7\"",
-      "tier": 3,
-      "draft_score": 79.9,
-      "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Average Defender",
-      "all_offensive": [
-        "Three-Level Scorer",
-        "Two-Way Star",
-        "Modern Big",
-        "Post Scorer",
-        "Small Ball Five"
-      ],
-      "all_defensive": [
-        "Average Defender"
-      ],
-      "ppg": 17.6,
-      "rpg": 7.5,
-      "apg": 3.5
-    },
-    {
-      "rank": 83,
+      "rank": 80,
       "name": "Xavier Booker",
       "pos": "F",
       "school": "UCLA",
@@ -3339,7 +3276,7 @@
       "apg": 0.8
     },
     {
-      "rank": 84,
+      "rank": 81,
       "name": "Joseph Tugler",
       "pos": "F",
       "school": "Houston",
@@ -3360,7 +3297,29 @@
       "apg": 1.2
     },
     {
-      "rank": 85,
+      "rank": 82,
+      "name": "Tobe Awaka",
+      "pos": "F",
+      "school": "Arizona",
+      "conference": "Big 12",
+      "year": "Junior",
+      "height": "6'8\"",
+      "tier": 3,
+      "draft_score": 79.4,
+      "archetype": "Glass Cleaner",
+      "defensive_archetype": "Average Defender",
+      "all_offensive": [
+        "Glass Cleaner"
+      ],
+      "all_defensive": [
+        "Average Defender"
+      ],
+      "ppg": 9.4,
+      "rpg": 9.5,
+      "apg": 0.8
+    },
+    {
+      "rank": 83,
       "name": "Boogie Fland",
       "pos": "G",
       "school": "Florida",
@@ -3381,7 +3340,29 @@
       "apg": 3.4
     },
     {
-      "rank": 86,
+      "rank": 84,
+      "name": "Malachi Moreno",
+      "pos": "C",
+      "school": "Kentucky",
+      "conference": "SEC",
+      "year": "Freshman",
+      "height": "7'0\"",
+      "tier": 3,
+      "draft_score": 78.2,
+      "archetype": "Rim Protector",
+      "defensive_archetype": "Paint Presence",
+      "all_offensive": [
+        "Rim Protector"
+      ],
+      "all_defensive": [
+        "Paint Presence"
+      ],
+      "ppg": 8.0,
+      "rpg": 6.4,
+      "apg": 1.8
+    },
+    {
+      "rank": 85,
       "name": "Braden Smith",
       "pos": "G",
       "school": "Purdue",
@@ -3405,32 +3386,7 @@
       "apg": 9.1
     },
     {
-      "rank": 87,
-      "name": "Christian Anderson",
-      "pos": "G",
-      "school": "Texas Tech",
-      "conference": "Big 12",
-      "year": "Sophomore",
-      "height": "6'2\"",
-      "tier": 3,
-      "draft_score": 77.8,
-      "archetype": "Floor General",
-      "defensive_archetype": "Below-Average Defender",
-      "all_offensive": [
-        "Floor General",
-        "Combo Guard",
-        "Three-Level Scorer",
-        "Sharpshooter"
-      ],
-      "all_defensive": [
-        "Below-Average Defender"
-      ],
-      "ppg": 18.9,
-      "rpg": 3.6,
-      "apg": 7.6
-    },
-    {
-      "rank": 88,
+      "rank": 86,
       "name": "Gavin Doty",
       "pos": "G",
       "school": "Siena",
@@ -3450,7 +3406,33 @@
       "apg": 2.2
     },
     {
-      "rank": 89,
+      "rank": 87,
+      "name": "Dailyn Swain",
+      "pos": "F",
+      "school": "Texas",
+      "conference": "SEC",
+      "year": "Junior",
+      "height": "6'7\"",
+      "tier": 3,
+      "draft_score": 77.6,
+      "archetype": "Three-Level Scorer",
+      "defensive_archetype": "Average Defender",
+      "all_offensive": [
+        "Three-Level Scorer",
+        "Two-Way Star",
+        "Modern Big",
+        "Post Scorer",
+        "Small Ball Five"
+      ],
+      "all_defensive": [
+        "Average Defender"
+      ],
+      "ppg": 17.6,
+      "rpg": 7.5,
+      "apg": 3.5
+    },
+    {
+      "rank": 88,
       "name": "Robbie Avila",
       "pos": "C",
       "school": "Saint Louis",
@@ -3470,6 +3452,26 @@
       "ppg": 12.9,
       "rpg": 4.6,
       "apg": 4.1
+    },
+    {
+      "rank": 89,
+      "name": "Maliq Brown",
+      "pos": "F",
+      "school": "Duke",
+      "conference": "ACC",
+      "year": "Senior",
+      "height": "6'8\"",
+      "tier": 3,
+      "draft_score": 77.2,
+      "archetype": null,
+      "defensive_archetype": "Average Defender",
+      "all_offensive": [],
+      "all_defensive": [
+        "Average Defender"
+      ],
+      "ppg": 4.9,
+      "rpg": 5.0,
+      "apg": 1.7
     },
     {
       "rank": 90,
@@ -3515,6 +3517,30 @@
     },
     {
       "rank": 92,
+      "name": "Otega Oweh",
+      "pos": "G",
+      "school": "Kentucky",
+      "conference": "SEC",
+      "year": "Senior",
+      "height": "6'5\"",
+      "tier": 3,
+      "draft_score": 77.0,
+      "archetype": "Scoring Guard",
+      "defensive_archetype": "Point of Attack Defender",
+      "all_offensive": [
+        "Scoring Guard",
+        "Two-Way Star"
+      ],
+      "all_defensive": [
+        "Point of Attack Defender",
+        "Perimeter Pest"
+      ],
+      "ppg": 18.2,
+      "rpg": 4.6,
+      "apg": 2.6
+    },
+    {
+      "rank": 93,
       "name": "Chance Westry",
       "pos": "G",
       "school": "UAB",
@@ -3537,7 +3563,7 @@
       "apg": 5.5
     },
     {
-      "rank": 93,
+      "rank": 94,
       "name": "Lajae Jones",
       "pos": "G",
       "school": "Florida State",
@@ -3560,7 +3586,7 @@
       "apg": 1.1
     },
     {
-      "rank": 94,
+      "rank": 95,
       "name": "Quandre Bullock",
       "pos": "G",
       "school": "Hawaii",
@@ -3583,7 +3609,7 @@
       "apg": 1.9
     },
     {
-      "rank": 95,
+      "rank": 96,
       "name": "Tyon Grant-Foster",
       "pos": "G",
       "school": "Gonzaga",
@@ -3603,7 +3629,7 @@
       "apg": 1.1
     },
     {
-      "rank": 96,
+      "rank": 97,
       "name": "B.J. Edwards",
       "pos": "G",
       "school": "Southern Methodist",
@@ -3627,7 +3653,7 @@
       "apg": 4.9
     },
     {
-      "rank": 97,
+      "rank": 98,
       "name": "Larry Johnson",
       "pos": "G",
       "school": "McNeese",
@@ -3647,7 +3673,7 @@
       "apg": 1.4
     },
     {
-      "rank": 98,
+      "rank": 99,
       "name": "Nolan Winter",
       "pos": "F",
       "school": "Wisconsin",
@@ -3668,30 +3694,6 @@
       "ppg": 13.1,
       "rpg": 8.5,
       "apg": 1.5
-    },
-    {
-      "rank": 99,
-      "name": "Otega Oweh",
-      "pos": "G",
-      "school": "Kentucky",
-      "conference": "SEC",
-      "year": "Senior",
-      "height": "6'5\"",
-      "tier": 3,
-      "draft_score": 74.8,
-      "archetype": "Scoring Guard",
-      "defensive_archetype": "Point of Attack Defender",
-      "all_offensive": [
-        "Scoring Guard",
-        "Two-Way Star"
-      ],
-      "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest"
-      ],
-      "ppg": 18.2,
-      "rpg": 4.6,
-      "apg": 2.6
     },
     {
       "rank": 100,
@@ -3922,6 +3924,26 @@
     },
     {
       "rank": 110,
+      "name": "Andrej Stojakovic",
+      "pos": "G",
+      "school": "Illinois",
+      "conference": "Big Ten",
+      "year": "Junior",
+      "height": "6'7\"",
+      "tier": 3,
+      "draft_score": 73.5,
+      "archetype": null,
+      "defensive_archetype": "Defensive Liability",
+      "all_offensive": [],
+      "all_defensive": [
+        "Defensive Liability"
+      ],
+      "ppg": 13.3,
+      "rpg": 4.6,
+      "apg": 1.0
+    },
+    {
+      "rank": 111,
       "name": "Tre White",
       "pos": "G",
       "school": "Kansas",
@@ -3941,7 +3963,7 @@
       "apg": 1.8
     },
     {
-      "rank": 111,
+      "rank": 112,
       "name": "David Punch",
       "pos": "F",
       "school": "Texas Christian",
@@ -3966,7 +3988,7 @@
       "apg": 2.1
     },
     {
-      "rank": 112,
+      "rank": 113,
       "name": "Blue Cain",
       "pos": "G",
       "school": "Georgia",
@@ -3986,7 +4008,7 @@
       "apg": 2.6
     },
     {
-      "rank": 113,
+      "rank": 114,
       "name": "A.J. Staton-McCray",
       "pos": "G",
       "school": "Seton Hall",
@@ -4006,7 +4028,7 @@
       "apg": 1.4
     },
     {
-      "rank": 114,
+      "rank": 115,
       "name": "Michael Ajayi",
       "pos": "G",
       "school": "Butler",
@@ -4030,7 +4052,7 @@
       "apg": 3.2
     },
     {
-      "rank": 115,
+      "rank": 116,
       "name": "Cedric Taylor III",
       "pos": "G",
       "school": "Howard",
@@ -4052,7 +4074,7 @@
       "apg": 3.1
     },
     {
-      "rank": 116,
+      "rank": 117,
       "name": "Justin Pippen",
       "pos": "G",
       "school": "California",
@@ -4075,28 +4097,6 @@
       "ppg": 14.4,
       "rpg": 3.9,
       "apg": 4.5
-    },
-    {
-      "rank": 117,
-      "name": "Jacob Cofie",
-      "pos": "F",
-      "school": "Southern California",
-      "conference": "Big Ten",
-      "year": "Sophomore",
-      "height": "6'10\"",
-      "tier": 3,
-      "draft_score": 71.9,
-      "archetype": "Rim Protector",
-      "defensive_archetype": "Paint Presence",
-      "all_offensive": [
-        "Rim Protector"
-      ],
-      "all_defensive": [
-        "Paint Presence"
-      ],
-      "ppg": 9.9,
-      "rpg": 6.8,
-      "apg": 1.9
     },
     {
       "rank": 118,
@@ -4534,26 +4534,6 @@
     },
     {
       "rank": 138,
-      "name": "Andrej Stojakovic",
-      "pos": "G",
-      "school": "Illinois",
-      "conference": "Big Ten",
-      "year": "Junior",
-      "height": "6'7\"",
-      "tier": 3,
-      "draft_score": 68.9,
-      "archetype": null,
-      "defensive_archetype": "Defensive Liability",
-      "all_offensive": [],
-      "all_defensive": [
-        "Defensive Liability"
-      ],
-      "ppg": 13.3,
-      "rpg": 4.6,
-      "apg": 1.0
-    },
-    {
-      "rank": 139,
       "name": "D.J. Wagner",
       "pos": "G",
       "school": "Arkansas",
@@ -4573,7 +4553,7 @@
       "apg": 2.4
     },
     {
-      "rank": 140,
+      "rank": 139,
       "name": "Jalen Celestine",
       "pos": "G",
       "school": "Cincinnati",
@@ -4595,7 +4575,7 @@
       "apg": 1.3
     },
     {
-      "rank": 141,
+      "rank": 140,
       "name": "Massamba Diop",
       "pos": "C",
       "school": "Arizona State",
@@ -4617,7 +4597,7 @@
       "apg": 1.1
     },
     {
-      "rank": 142,
+      "rank": 141,
       "name": "Nathan Bittle",
       "pos": "C",
       "school": "Oregon",
@@ -4640,7 +4620,7 @@
       "apg": 2.6
     },
     {
-      "rank": 143,
+      "rank": 142,
       "name": "Trevan Leonhardt",
       "pos": "G",
       "school": "Utah Valley",
@@ -4665,7 +4645,7 @@
       "apg": 6.0
     },
     {
-      "rank": 144,
+      "rank": 143,
       "name": "Jalen Washington",
       "pos": "F",
       "school": "Vanderbilt",
@@ -4685,7 +4665,7 @@
       "apg": 0.9
     },
     {
-      "rank": 145,
+      "rank": 144,
       "name": "Tyler Tejada",
       "pos": "G",
       "school": "Towson",
@@ -4705,7 +4685,7 @@
       "apg": 2.3
     },
     {
-      "rank": 146,
+      "rank": 145,
       "name": "Isaac Hawkins",
       "pos": "F",
       "school": "Utah Valley",
@@ -4723,6 +4703,28 @@
       "ppg": 7.2,
       "rpg": 3.7,
       "apg": 0.6
+    },
+    {
+      "rank": 146,
+      "name": "Ryan Conwell",
+      "pos": "G",
+      "school": "Louisville",
+      "conference": "ACC",
+      "year": "Senior",
+      "height": "6'4\"",
+      "tier": 3,
+      "draft_score": 67.9,
+      "archetype": "Scoring Guard",
+      "defensive_archetype": "Below-Average Defender",
+      "all_offensive": [
+        "Scoring Guard"
+      ],
+      "all_defensive": [
+        "Below-Average Defender"
+      ],
+      "ppg": 18.7,
+      "rpg": 4.8,
+      "apg": 2.6
     },
     {
       "rank": 147,
@@ -5038,6 +5040,29 @@
     },
     {
       "rank": 161,
+      "name": "Peter Suder",
+      "pos": "G",
+      "school": "Miami (OH)",
+      "conference": "MAC",
+      "year": "Senior",
+      "height": "6'5\"",
+      "tier": 3,
+      "draft_score": 66.5,
+      "archetype": "3-and-D Guard",
+      "defensive_archetype": "Below-Average Defender",
+      "all_offensive": [
+        "3-and-D Guard",
+        "Combo Guard"
+      ],
+      "all_defensive": [
+        "Below-Average Defender"
+      ],
+      "ppg": 14.4,
+      "rpg": 4.7,
+      "apg": 4.1
+    },
+    {
+      "rank": 162,
       "name": "Amari McCottry",
       "pos": "G",
       "school": "Saint Louis",
@@ -5057,7 +5082,7 @@
       "apg": 2.8
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "Mekhi Lowery",
       "pos": "G",
       "school": "Illinois-Chicago",
@@ -5077,7 +5102,7 @@
       "apg": 2.1
     },
     {
-      "rank": 163,
+      "rank": 164,
       "name": "Rylan Griffen",
       "pos": "G",
       "school": "Texas A&M",
@@ -5101,7 +5126,29 @@
       "apg": 2.5
     },
     {
-      "rank": 164,
+      "rank": 165,
+      "name": "Jacob Cofie",
+      "pos": "F",
+      "school": "Southern California",
+      "conference": "Big Ten",
+      "year": "Sophomore",
+      "height": "6'10\"",
+      "tier": 3,
+      "draft_score": 66.1,
+      "archetype": "Rim Protector",
+      "defensive_archetype": "Paint Presence",
+      "all_offensive": [
+        "Rim Protector"
+      ],
+      "all_defensive": [
+        "Paint Presence"
+      ],
+      "ppg": 9.9,
+      "rpg": 6.8,
+      "apg": 1.9
+    },
+    {
+      "rank": 166,
       "name": "Matt Able",
       "pos": "G",
       "school": "NC State",
@@ -5121,7 +5168,7 @@
       "apg": 0.9
     },
     {
-      "rank": 165,
+      "rank": 167,
       "name": "De'Shayne Montgomery",
       "pos": "G",
       "school": "Dayton",
@@ -5145,7 +5192,7 @@
       "apg": 2.2
     },
     {
-      "rank": 166,
+      "rank": 168,
       "name": "Keyon Kensie",
       "pos": "G",
       "school": "Portland State",
@@ -5165,7 +5212,7 @@
       "apg": 1.1
     },
     {
-      "rank": 167,
+      "rank": 169,
       "name": "Xaivian Lee",
       "pos": "G",
       "school": "Florida",
@@ -5185,7 +5232,7 @@
       "apg": 4.2
     },
     {
-      "rank": 168,
+      "rank": 170,
       "name": "KJ Lewis",
       "pos": "G",
       "school": "Georgetown",
@@ -5209,7 +5256,7 @@
       "apg": 2.5
     },
     {
-      "rank": 169,
+      "rank": 171,
       "name": "Lamar Wilkerson",
       "pos": "G",
       "school": "Indiana",
@@ -5233,7 +5280,7 @@
       "apg": 2.4
     },
     {
-      "rank": 170,
+      "rank": 172,
       "name": "Melvin Council Jr.",
       "pos": "G",
       "school": "Kansas",
@@ -5255,7 +5302,7 @@
       "apg": 5.1
     },
     {
-      "rank": 171,
+      "rank": 173,
       "name": "Elijah Fisher",
       "pos": "G",
       "school": "Seton Hall",
@@ -5275,7 +5322,7 @@
       "apg": 0.8
     },
     {
-      "rank": 172,
+      "rank": 174,
       "name": "Mario Saint-Supery",
       "pos": "G",
       "school": "Gonzaga",
@@ -5297,7 +5344,7 @@
       "apg": 3.8
     },
     {
-      "rank": 173,
+      "rank": 175,
       "name": "Will Berg",
       "pos": "C",
       "school": "Wichita State",
@@ -5319,7 +5366,7 @@
       "apg": 0.6
     },
     {
-      "rank": 174,
+      "rank": 176,
       "name": "Jerald Colonel",
       "pos": "F",
       "school": "Stephen F. Austin",
@@ -5341,7 +5388,7 @@
       "apg": 1.3
     },
     {
-      "rank": 175,
+      "rank": 177,
       "name": "Donovan Dent",
       "pos": "G",
       "school": "UCLA",
@@ -5363,7 +5410,7 @@
       "apg": 7.6
     },
     {
-      "rank": 176,
+      "rank": 178,
       "name": "William Kyle III",
       "pos": "F",
       "school": "Syracuse",
@@ -5385,7 +5432,7 @@
       "apg": 0.9
     },
     {
-      "rank": 177,
+      "rank": 179,
       "name": "Eric Reibe",
       "pos": "C",
       "school": "Connecticut",
@@ -5405,7 +5452,7 @@
       "apg": 0.5
     },
     {
-      "rank": 178,
+      "rank": 180,
       "name": "Pedro Santos",
       "pos": "G",
       "school": "Tennessee-Martin",
@@ -5425,7 +5472,7 @@
       "apg": 0.7
     },
     {
-      "rank": 179,
+      "rank": 181,
       "name": "Sam Lewis",
       "pos": "G",
       "school": "Virginia",
@@ -5447,7 +5494,7 @@
       "apg": 1.4
     },
     {
-      "rank": 180,
+      "rank": 182,
       "name": "Hank Alvey",
       "pos": "F",
       "school": "Lehigh",
@@ -5472,7 +5519,7 @@
       "apg": 2.1
     },
     {
-      "rank": 181,
+      "rank": 183,
       "name": "James Scott",
       "pos": "F",
       "school": "Mississippi",
@@ -5492,7 +5539,7 @@
       "apg": 0.6
     },
     {
-      "rank": 182,
+      "rank": 184,
       "name": "Berke Buyuktuncel",
       "pos": "F",
       "school": "Nebraska",
@@ -5512,7 +5559,7 @@
       "apg": 1.9
     },
     {
-      "rank": 183,
+      "rank": 185,
       "name": "Patrick Wessler",
       "pos": "C",
       "school": "UNC Wilmington",
@@ -5534,7 +5581,7 @@
       "apg": 1.2
     },
     {
-      "rank": 184,
+      "rank": 186,
       "name": "Amari Evans",
       "pos": "G",
       "school": "Tennessee",
@@ -5554,7 +5601,7 @@
       "apg": 0.7
     },
     {
-      "rank": 185,
+      "rank": 187,
       "name": "Pablo Tamba",
       "pos": "G",
       "school": "Louisiana State",
@@ -5574,7 +5621,7 @@
       "apg": 1.5
     },
     {
-      "rank": 186,
+      "rank": 188,
       "name": "Garwey Dual",
       "pos": "G",
       "school": "McNeese",
@@ -5594,7 +5641,7 @@
       "apg": 4.4
     },
     {
-      "rank": 187,
+      "rank": 189,
       "name": "Collin Chandler",
       "pos": "G",
       "school": "Kentucky",
@@ -5616,7 +5663,7 @@
       "apg": 2.2
     },
     {
-      "rank": 188,
+      "rank": 190,
       "name": "Elyjah Freeman",
       "pos": "G",
       "school": "Auburn",
@@ -5636,7 +5683,7 @@
       "apg": 1.2
     },
     {
-      "rank": 189,
+      "rank": 191,
       "name": "Trey McKenney",
       "pos": "G",
       "school": "Michigan",
@@ -5658,7 +5705,7 @@
       "apg": 0.9
     },
     {
-      "rank": 190,
+      "rank": 192,
       "name": "Milos Uzan",
       "pos": "G",
       "school": "Houston",
@@ -5678,7 +5725,7 @@
       "apg": 4.0
     },
     {
-      "rank": 191,
+      "rank": 193,
       "name": "Chol Machot",
       "pos": "F",
       "school": "College of Charleston",
@@ -5701,7 +5748,7 @@
       "apg": 0.2
     },
     {
-      "rank": 192,
+      "rank": 194,
       "name": "Gavin Griffiths",
       "pos": "G",
       "school": "Temple",
@@ -5724,7 +5771,7 @@
       "apg": 1.4
     },
     {
-      "rank": 193,
+      "rank": 195,
       "name": "Leon Bond III",
       "pos": "G",
       "school": "Northern Iowa",
@@ -5744,29 +5791,7 @@
       "apg": 1.5
     },
     {
-      "rank": 194,
-      "name": "Ryan Conwell",
-      "pos": "G",
-      "school": "Louisville",
-      "conference": "ACC",
-      "year": "Senior",
-      "height": "6'4\"",
-      "tier": 3,
-      "draft_score": 63.5,
-      "archetype": "Scoring Guard",
-      "defensive_archetype": "Below-Average Defender",
-      "all_offensive": [
-        "Scoring Guard"
-      ],
-      "all_defensive": [
-        "Below-Average Defender"
-      ],
-      "ppg": 18.7,
-      "rpg": 4.8,
-      "apg": 2.6
-    },
-    {
-      "rank": 195,
+      "rank": 196,
       "name": "Jalen Haralson",
       "pos": "G",
       "school": "Notre Dame",
@@ -5786,7 +5811,7 @@
       "apg": 2.6
     },
     {
-      "rank": 196,
+      "rank": 197,
       "name": "David Green",
       "pos": "G",
       "school": "Tulsa",
@@ -5809,7 +5834,7 @@
       "apg": 1.6
     },
     {
-      "rank": 197,
+      "rank": 198,
       "name": "Thijs De Ridder",
       "pos": "F",
       "school": "Virginia",
@@ -5829,7 +5854,7 @@
       "apg": 1.6
     },
     {
-      "rank": 198,
+      "rank": 199,
       "name": "Dylan Faulkner",
       "pos": "F",
       "school": "Samford",
@@ -5852,7 +5877,7 @@
       "apg": 1.8
     },
     {
-      "rank": 199,
+      "rank": 200,
       "name": "Corey Camper Jr.",
       "pos": "G",
       "school": "Nevada",
@@ -5873,26 +5898,6 @@
       "ppg": 17.0,
       "rpg": 4.5,
       "apg": 2.4
-    },
-    {
-      "rank": 200,
-      "name": "Mercy Miller",
-      "pos": "G",
-      "school": "Houston",
-      "conference": "Big 12",
-      "year": "Sophomore",
-      "height": "6'4\"",
-      "tier": 3,
-      "draft_score": 63.3,
-      "archetype": null,
-      "defensive_archetype": "Average Defender",
-      "all_offensive": [],
-      "all_defensive": [
-        "Average Defender"
-      ],
-      "ppg": 5.0,
-      "rpg": 1.8,
-      "apg": 0.4
     }
   ]
 }

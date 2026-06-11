@@ -330,22 +330,32 @@ def draft_score(player: dict, weights: dict | None = None, return_parts: bool = 
         elif rr <= 15: recruit_bonus = 7    # high-major lock
         elif rr <= 24: recruit_bonus = 4    # McDonald's-tier
 
-    # ── Combine anthro bonus ────────────────────────────────────────────────
+    # ── Combine anthro bonus (position-fair) ────────────────────────────────
     # Trait analysis of drafted players (n=79) showed real signal:
     #   wingspan signal = +0.35,  hand_length signal = +0.41
     # Athletic-test results (vertical, sprint, agility) had near-zero signal
     # so they are deliberately excluded — workout warriors don't translate.
-    # Plus-length (wingspan - height) was a wash; raw wingspan is what matters.
+    # Bars are PER POSITION GROUP, measured from combine data (guard p90
+    # wingspan = 81.8 — the old flat 82" minimum sat ABOVE it, so guards
+    # never earned length credit while half the forwards cleared mid-tier).
+    # Tiers ≈ each group's p60 / p75 / p90.
+    _ANTHRO_BARS = {
+        #      wingspan elite/good/ok    hand elite/good
+        "G": (82.0, 80.5, 79.0, 8.75, 8.5),
+        "F": (87.5, 86.0, 84.5, 9.25, 9.0),
+        "C": (91.0, 90.0, 88.5, 9.5, 9.25),
+    }
+    w_hi, w_mid, w_lo, h_hi, h_lo = _ANTHRO_BARS.get(pos, _ANTHRO_BARS["F"])
     anthro_bonus = 0
     wingspan = combine.get("wingspan_in")
     hand_length = combine.get("hand_length_in")
     if wingspan:
-        if wingspan >= 86:    anthro_bonus += 4    # 7'2"+, elite length
-        elif wingspan >= 84:  anthro_bonus += 2.5  # 7'0"+
-        elif wingspan >= 82:  anthro_bonus += 1    # 6'10"+
+        if wingspan >= w_hi:    anthro_bonus += 4    # elite length for position
+        elif wingspan >= w_mid: anthro_bonus += 2.5
+        elif wingspan >= w_lo:  anthro_bonus += 1
     if hand_length:
-        if hand_length >= 9.5:   anthro_bonus += 2
-        elif hand_length >= 9.0: anthro_bonus += 1
+        if hand_length >= h_hi:   anthro_bonus += 2
+        elif hand_length >= h_lo: anthro_bonus += 1
 
     parts = {
         # 0-100 component scores (blended pre-multiplier)
