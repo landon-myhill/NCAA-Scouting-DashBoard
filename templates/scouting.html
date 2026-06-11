@@ -86,8 +86,16 @@
                     </div>
                 </div>
                 <div class="d-flex gap-2">
+                    {% if player.get('sm_rank') %}
+                    <div class="rank-badge" style="border-color:#22d3ee" data-bs-toggle="tooltip"
+                         data-bs-title="Strengths-model draft rank{% if player.get('sm_band') %} (90% range {{ player.sm_band[0] }}–{{ player.sm_band[1] }}){% endif %} — the main ranking">
+                        <span class="badge-sub">MODEL RANK</span><span style="color:#22d3ee">#{{ player.sm_rank }}</span></div>
+                    <div class="score-badge" data-bs-toggle="tooltip"
+                         data-bs-title="Strengths-model NBA-value projection (0-100)">
+                        <span class="badge-sub">MODEL</span>{{ (player.sm_score * 100)|round|int }}</div>
+                    {% else %}
                     <div class="rank-badge"><span class="badge-sub">RANK</span>#{{ player.rank }}</div>
-                    <div class="score-badge"><span class="badge-sub">SCORE</span>{{ "%.1f"|format(player.draft_score or 0) }}</div>
+                    {% endif %}
                     {% if player.get('pred') %}
                     <div class="score-badge" style="border-color:#10b981" data-bs-toggle="tooltip"
                          data-bs-title="ML projection trained on the 2020-23 draft classes vs their real NBA careers. Boom = P(NBA starter or better); Bust = P(bench or out of the league). Calibrated for drafted-caliber prospects.">
