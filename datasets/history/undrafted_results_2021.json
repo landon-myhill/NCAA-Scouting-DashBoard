@@ -1,0 +1,844 @@
+{
+  "year": 2021,
+  "scraped_at": "2026-06-10T16:17:39.336566",
+  "top_n": 150,
+  "players": [
+    {
+      "year": 2021,
+      "player": "Jay Huff",
+      "college": "Virginia",
+      "ncaa_rank": 7,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Josiah-Jordan James",
+      "college": "Tennessee",
+      "ncaa_rank": 13,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Drew Timme",
+      "college": "Gonzaga",
+      "ncaa_rank": 14,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Matthew Mayer",
+      "college": "Baylor",
+      "ncaa_rank": 16,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Justin Champagnie",
+      "college": "Pittsburgh",
+      "ncaa_rank": 20,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Kofi Cockburn",
+      "college": "Illinois",
+      "ncaa_rank": 21,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Micah Potter",
+      "college": "Wisconsin",
+      "ncaa_rank": 22,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "McKinley Wright IV",
+      "college": "Colorado",
+      "ncaa_rank": 24,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Andersson Garcia",
+      "college": "Mississippi State",
+      "ncaa_rank": 27,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jaquori McLaughlin",
+      "college": "UC Santa Barbara",
+      "ncaa_rank": 28,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Grayson Murphy",
+      "college": "Belmont",
+      "ncaa_rank": 29,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Joel Ayayi",
+      "college": "Gonzaga",
+      "ncaa_rank": 31,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Cameron Krutwig",
+      "college": "Loyola (IL)",
+      "ncaa_rank": 32,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jordan Schakel",
+      "college": "San Diego State",
+      "ncaa_rank": 34,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "KC Ndefo",
+      "college": "Saint Peter's",
+      "ncaa_rank": 35,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Julian Champagnie",
+      "college": "St. John's (NY)",
+      "ncaa_rank": 36,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Myles Johnson",
+      "college": "Rutgers",
+      "ncaa_rank": 39,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Colin Castleton",
+      "college": "Florida",
+      "ncaa_rank": 40,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Luis Rodriguez",
+      "college": "Mississippi",
+      "ncaa_rank": 41,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Matthew Hurt",
+      "college": "Duke",
+      "ncaa_rank": 42,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Dejon Jarreau",
+      "college": "Houston",
+      "ncaa_rank": 43,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Armando Bacot",
+      "college": "North Carolina",
+      "ncaa_rank": 45,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Matt Haarms",
+      "college": "Brigham Young",
+      "ncaa_rank": 47,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "David McCormack",
+      "college": "Kansas",
+      "ncaa_rank": 48,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Connor Vanover",
+      "college": "Arkansas",
+      "ncaa_rank": 50,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Anthony Polite",
+      "college": "Florida State",
+      "ncaa_rank": 51,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Keon Ellis",
+      "college": "Alabama",
+      "ncaa_rank": 52,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Tanner Holden",
+      "college": "Wright State",
+      "ncaa_rank": 53,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Liam Robbins",
+      "college": "Minnesota",
+      "ncaa_rank": 55,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Kendric Davis",
+      "college": "Southern Methodist",
+      "ncaa_rank": 56,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "MaCio Teague",
+      "college": "Baylor",
+      "ncaa_rank": 59,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Hunter Dickinson",
+      "college": "Michigan",
+      "ncaa_rank": 60,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Donovan Gregory",
+      "college": "Appalachian State",
+      "ncaa_rank": 62,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "DeVante Jones",
+      "college": "Coastal Carolina",
+      "ncaa_rank": 63,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Nah'Shon Hyland",
+      "college": "Virginia Commonwealth",
+      "ncaa_rank": 65,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Collin Welp",
+      "college": "UC Irvine",
+      "ncaa_rank": 66,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jordan Bruner",
+      "college": "Alabama",
+      "ncaa_rank": 67,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Kyler Edwards",
+      "college": "Texas Tech",
+      "ncaa_rank": 68,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Manny Bates",
+      "college": "NC State",
+      "ncaa_rank": 70,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Terry Taylor",
+      "college": "Austin Peay",
+      "ncaa_rank": 74,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Elijah Ford",
+      "college": "Wagner",
+      "ncaa_rank": 75,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Alex Barcello",
+      "college": "Brigham Young",
+      "ncaa_rank": 76,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Gaige Prim",
+      "college": "Missouri State",
+      "ncaa_rank": 77,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jordan Brown",
+      "college": "Arizona",
+      "ncaa_rank": 78,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Osun Osunniyi",
+      "college": "St. Bonaventure",
+      "ncaa_rank": 79,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Juwan Durham",
+      "college": "Notre Dame",
+      "ncaa_rank": 80,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Moses Wright",
+      "college": "Georgia Tech",
+      "ncaa_rank": 81,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Caleb McConnell",
+      "college": "Rutgers",
+      "ncaa_rank": 82,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Marcus Garrett",
+      "college": "Kansas",
+      "ncaa_rank": 84,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Trevion Williams",
+      "college": "Purdue",
+      "ncaa_rank": 85,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "John Petty",
+      "college": "Alabama",
+      "ncaa_rank": 86,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Grant Basile",
+      "college": "Wright State",
+      "ncaa_rank": 91,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Herb Jones",
+      "college": "Alabama",
+      "ncaa_rank": 92,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Alan Griffin",
+      "college": "Syracuse",
+      "ncaa_rank": 93,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jared Rhoden",
+      "college": "Seton Hall",
+      "ncaa_rank": 94,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Matt Lewis",
+      "college": "James Madison",
+      "ncaa_rank": 95,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Leaky Black",
+      "college": "North Carolina",
+      "ncaa_rank": 96,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Trendon Watford",
+      "college": "Louisiana State",
+      "ncaa_rank": 97,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Keve Aluma",
+      "college": "Virginia Tech",
+      "ncaa_rank": 98,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Kim Aiken Jr.",
+      "college": "Eastern Washington",
+      "ncaa_rank": 99,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Brandon Rachal",
+      "college": "Tulsa",
+      "ncaa_rank": 100,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Oscar Da Silva",
+      "college": "Stanford",
+      "ncaa_rank": 102,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "D.J. Stewart",
+      "college": "Mississippi State",
+      "ncaa_rank": 105,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "LJ Figueroa",
+      "college": "Oregon",
+      "ncaa_rank": 107,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Austin Reaves",
+      "college": "Oklahoma",
+      "ncaa_rank": 108,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Ron Harper Jr.",
+      "college": "Rutgers",
+      "ncaa_rank": 109,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Marcus Bingham",
+      "college": "Michigan State",
+      "ncaa_rank": 110,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Tavin Lovan",
+      "college": "UAB",
+      "ncaa_rank": 111,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jacob Grandison",
+      "college": "Illinois",
+      "ncaa_rank": 113,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Abdul Ado",
+      "college": "Mississippi State",
+      "ncaa_rank": 115,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Asbjorn Midtgaard",
+      "college": "Grand Canyon",
+      "ncaa_rank": 116,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Johnny Juzang",
+      "college": "UCLA",
+      "ncaa_rank": 122,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Drew Peterson",
+      "college": "Southern California",
+      "ncaa_rank": 123,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Dallas Walton",
+      "college": "Colorado",
+      "ncaa_rank": 124,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Caleb Love",
+      "college": "North Carolina",
+      "ncaa_rank": 125,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Noah Williams",
+      "college": "Washington State",
+      "ncaa_rank": 127,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Isaiah Whaley",
+      "college": "Connecticut",
+      "ncaa_rank": 128,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Loudon Love",
+      "college": "Wright State",
+      "ncaa_rank": 129,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Lucas Williamson",
+      "college": "Loyola (IL)",
+      "ncaa_rank": 131,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Peter Kiss",
+      "college": "Bryant",
+      "ncaa_rank": 133,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Landers Nolley II",
+      "college": "Memphis",
+      "ncaa_rank": 134,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Jordan Usher",
+      "college": "Georgia Tech",
+      "ncaa_rank": 137,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Marek Dolezaj",
+      "college": "Syracuse",
+      "ncaa_rank": 138,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Eric Ayala",
+      "college": "Maryland",
+      "ncaa_rank": 139,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Grant Sherfield",
+      "college": "Nevada",
+      "ncaa_rank": 140,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Kolton Kohl",
+      "college": "Abilene Christian",
+      "ncaa_rank": 141,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Davion Warren",
+      "college": "Hampton",
+      "ncaa_rank": 142,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Tramon Mark",
+      "college": "Houston",
+      "ncaa_rank": 143,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Kadary Richmond",
+      "college": "Syracuse",
+      "ncaa_rank": 144,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Blake Preston",
+      "college": "Liberty",
+      "ncaa_rank": 145,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Seth Pinkney",
+      "college": "Quinnipiac",
+      "ncaa_rank": 146,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Scotty Pippen Jr.",
+      "college": "Vanderbilt",
+      "ncaa_rank": 147,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2021,
+      "player": "Zach Loveday",
+      "college": "Baylor",
+      "ncaa_rank": 149,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    }
+  ]
+}

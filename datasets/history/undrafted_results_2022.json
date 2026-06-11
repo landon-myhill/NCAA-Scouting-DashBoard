@@ -1,0 +1,880 @@
+{
+  "year": 2022,
+  "scraped_at": "2026-06-10T16:21:43.089237",
+  "top_n": 150,
+  "players": [
+    {
+      "year": 2022,
+      "player": "Oscar Tshiebwe",
+      "college": "Kentucky",
+      "ncaa_rank": 7,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Orlando Robinson",
+      "college": "Fresno State",
+      "ncaa_rank": 10,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Josiah-Jordan James",
+      "college": "Tennessee",
+      "ncaa_rank": 11,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Kofi Cockburn",
+      "college": "Illinois",
+      "ncaa_rank": 14,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Hunter Dickinson",
+      "college": "Michigan",
+      "ncaa_rank": 17,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jack Nunge",
+      "college": "Xavier",
+      "ncaa_rank": 18,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Trevion Williams",
+      "college": "Purdue",
+      "ncaa_rank": 20,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Quenton Jackson",
+      "college": "Texas A&M",
+      "ncaa_rank": 21,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Armando Bacot",
+      "college": "North Carolina",
+      "ncaa_rank": 23,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Marcus Bingham",
+      "college": "Michigan State",
+      "ncaa_rank": 24,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Matthew Mayer",
+      "college": "Baylor",
+      "ncaa_rank": 29,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Colin Castleton",
+      "college": "Florida",
+      "ncaa_rank": 31,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Malachi Smith",
+      "college": "Chattanooga",
+      "ncaa_rank": 34,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Drew Pember",
+      "college": "UNC Asheville",
+      "ncaa_rank": 35,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Santiago Vescovi",
+      "college": "Tennessee",
+      "ncaa_rank": 36,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Alex Morales",
+      "college": "Wagner",
+      "ncaa_rank": 39,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Terrell Brown Jr.",
+      "college": "Washington",
+      "ncaa_rank": 41,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "K.J. Williams",
+      "college": "Murray State",
+      "ncaa_rank": 42,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Josh Carlton",
+      "college": "Houston",
+      "ncaa_rank": 44,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Hunter Maldonado",
+      "college": "Wyoming",
+      "ncaa_rank": 45,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Drew Timme",
+      "college": "Gonzaga",
+      "ncaa_rank": 48,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Efe Abogidi",
+      "college": "Washington State",
+      "ncaa_rank": 49,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Darius Lee",
+      "college": "Houston Christian",
+      "ncaa_rank": 50,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "RJ Melendez",
+      "college": "Illinois",
+      "ncaa_rank": 53,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Julian Champagnie",
+      "college": "St. John's (NY)",
+      "ncaa_rank": 55,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Scotty Pippen Jr.",
+      "college": "Vanderbilt",
+      "ncaa_rank": 56,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jake Stephens",
+      "college": "VMI",
+      "ncaa_rank": 58,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Kadin Shedrick",
+      "college": "Virginia",
+      "ncaa_rank": 59,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Tevin Brown",
+      "college": "Murray State",
+      "ncaa_rank": 60,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Azuolas Tubelis",
+      "college": "Arizona",
+      "ncaa_rank": 62,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Keon Ellis",
+      "college": "Alabama",
+      "ncaa_rank": 65,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Davion Warren",
+      "college": "Texas Tech",
+      "ncaa_rank": 66,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Caleb McConnell",
+      "college": "Rutgers",
+      "ncaa_rank": 68,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Javon Freeman-Liberty",
+      "college": "DePaul",
+      "ncaa_rank": 69,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Tanner Holden",
+      "college": "Wright State",
+      "ncaa_rank": 70,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Alondes Williams",
+      "college": "Wake Forest",
+      "ncaa_rank": 72,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Norchad Omier",
+      "college": "Arkansas State",
+      "ncaa_rank": 73,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Reece Beekman",
+      "college": "Virginia",
+      "ncaa_rank": 74,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jamarion Sharp",
+      "college": "Western Kentucky",
+      "ncaa_rank": 75,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jamaree Bouyea",
+      "college": "San Francisco",
+      "ncaa_rank": 77,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Keve Aluma",
+      "college": "Virginia Tech",
+      "ncaa_rank": 78,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Stanley Umude",
+      "college": "Arkansas",
+      "ncaa_rank": 79,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Adonis Arms",
+      "college": "Texas Tech",
+      "ncaa_rank": 80,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jalyn Hinton",
+      "college": "Southeastern Louisiana",
+      "ncaa_rank": 81,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Hakim Hart",
+      "college": "Maryland",
+      "ncaa_rank": 82,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Caleb Love",
+      "college": "North Carolina",
+      "ncaa_rank": 83,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Tyler Robertson",
+      "college": "Portland",
+      "ncaa_rank": 86,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jules Bernard",
+      "college": "UCLA",
+      "ncaa_rank": 87,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Kameron McGusty",
+      "college": "Miami (FL)",
+      "ncaa_rank": 89,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Fardaws Aimaq",
+      "college": "Utah Valley",
+      "ncaa_rank": 90,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Ron Harper Jr.",
+      "college": "Rutgers",
+      "ncaa_rank": 91,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jared Rhoden",
+      "college": "Seton Hall",
+      "ncaa_rank": 92,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Collin Gillespie",
+      "college": "Villanova",
+      "ncaa_rank": 93,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Yauhen Massalski",
+      "college": "San Francisco",
+      "ncaa_rank": 95,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Chad Baker-Mazara",
+      "college": "San Diego State",
+      "ncaa_rank": 96,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Tucker DeVries",
+      "college": "Drake",
+      "ncaa_rank": 97,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Fabian White Jr.",
+      "college": "Houston",
+      "ncaa_rank": 98,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Matthias Tass",
+      "college": "Saint Mary's",
+      "ncaa_rank": 99,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Garrett Sturtz",
+      "college": "Drake",
+      "ncaa_rank": 101,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Au'Diese Toney",
+      "college": "Arkansas",
+      "ncaa_rank": 102,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Matt Bradley",
+      "college": "San Diego State",
+      "ncaa_rank": 104,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Aminu Mohammed",
+      "college": "Georgetown",
+      "ncaa_rank": 105,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Chuck O'Bannon Jr.",
+      "college": "Texas Christian",
+      "ncaa_rank": 106,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Josh Anderson",
+      "college": "Western Kentucky",
+      "ncaa_rank": 107,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "KC Ndefo",
+      "college": "Saint Peter's",
+      "ncaa_rank": 108,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Silvio De Sousa",
+      "college": "Chattanooga",
+      "ncaa_rank": 109,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Nathan Mensah",
+      "college": "San Diego State",
+      "ncaa_rank": 110,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Noah Kirkwood",
+      "college": "Harvard",
+      "ncaa_rank": 112,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Dylan Cardwell",
+      "college": "Auburn",
+      "ncaa_rank": 113,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Neal Quinn",
+      "college": "Lafayette",
+      "ncaa_rank": 114,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Dallas Walton",
+      "college": "Wake Forest",
+      "ncaa_rank": 115,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Isaiah Wilkins",
+      "college": "Longwood",
+      "ncaa_rank": 118,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "David McCormack",
+      "college": "Kansas",
+      "ncaa_rank": 119,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Kur Kuath",
+      "college": "Marquette",
+      "ncaa_rank": 121,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Moussa Cisse",
+      "college": "Oklahoma State",
+      "ncaa_rank": 122,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Cameron Holden",
+      "college": "Towson",
+      "ncaa_rank": 123,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Adama Sanogo",
+      "college": "Connecticut",
+      "ncaa_rank": 124,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Payton Willis",
+      "college": "Minnesota",
+      "ncaa_rank": 125,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Izaiah Brockington",
+      "college": "Iowa State",
+      "ncaa_rank": 126,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Wildens Leveque",
+      "college": "South Carolina",
+      "ncaa_rank": 128,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jordan Wright",
+      "college": "Vanderbilt",
+      "ncaa_rank": 129,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Gaige Prim",
+      "college": "Missouri State",
+      "ncaa_rank": 130,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Kyler Edwards",
+      "college": "Houston",
+      "ncaa_rank": 133,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Quan Jackson",
+      "college": "UAB",
+      "ncaa_rank": 134,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Teafale Lenard",
+      "college": "Middle Tennessee",
+      "ncaa_rank": 136,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Brandon Murray",
+      "college": "Louisiana State",
+      "ncaa_rank": 137,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Johnny Juzang",
+      "college": "UCLA",
+      "ncaa_rank": 138,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Jordan Brown",
+      "college": "Louisiana",
+      "ncaa_rank": 139,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Tyler Wahl",
+      "college": "Wisconsin",
+      "ncaa_rank": 140,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "JD Notae",
+      "college": "Arkansas",
+      "ncaa_rank": 141,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Osun Osunniyi",
+      "college": "St. Bonaventure",
+      "ncaa_rank": 142,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Javon Franklin",
+      "college": "South Alabama",
+      "ncaa_rank": 143,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Luis Rodriguez",
+      "college": "Mississippi",
+      "ncaa_rank": 144,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Justin Bean",
+      "college": "Utah State",
+      "ncaa_rank": 145,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Ricky Council IV",
+      "college": "Wichita State",
+      "ncaa_rank": 146,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Bryce Fowler",
+      "college": "Sacramento State",
+      "ncaa_rank": 148,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2022,
+      "player": "Drew Peterson",
+      "college": "Southern California",
+      "ncaa_rank": 150,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    }
+  ]
+}

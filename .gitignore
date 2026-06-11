@@ -23,3 +23,4 @@ scouting.db
 # Environment
 .env
 .env.local
+.pytest_cache/

@@ -88,6 +88,14 @@
                 <div class="d-flex gap-2">
                     <div class="rank-badge"><span class="badge-sub">RANK</span>#{{ player.rank }}</div>
                     <div class="score-badge"><span class="badge-sub">SCORE</span>{{ "%.1f"|format(player.draft_score or 0) }}</div>
+                    {% if player.get('pred') %}
+                    <div class="score-badge" style="border-color:#10b981" data-bs-toggle="tooltip"
+                         data-bs-title="ML projection trained on the 2020-23 draft classes vs their real NBA careers. Boom = P(NBA starter or better); Bust = P(bench or out of the league). Calibrated for drafted-caliber prospects.">
+                        <span class="badge-sub">BOOM / BUST</span>
+                        <span style="color:#10b981">{{ (player.pred.success * 100)|round|int }}%</span>
+                        / <span style="color:#ef4444">{{ (player.pred.bust * 100)|round|int }}%</span>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
             <div class="mt-3">

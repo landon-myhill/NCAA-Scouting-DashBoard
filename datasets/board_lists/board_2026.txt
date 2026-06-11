@@ -1,0 +1,104 @@
+# Curated big board — 2026 draft class (top 100, user-provided)
+# Format: Name | School   ('#' = comment). Order doesn't matter; the board
+# always sorts by draft score. Names with no NCAA record (international,
+# G-League) are reported in the UI, never silently dropped.
+AJ Dybantsa | BYU
+Darryn Peterson | Kansas
+Cameron Boozer | Duke
+Caleb Wilson | North Carolina
+Darius Acuff | Arkansas
+Keaton Wagler | Illinois
+Kingston Flemings | Houston
+Mikel Brown | Louisville
+Cameron Carr | Baylor
+Nate Ament | Tennessee
+Brayden Burries | Arizona
+Hannes Steinbach | Washington
+Yaxel Lendeborg | Michigan
+Allen Graves | Santa Clara
+Labaron Philon | Alabama
+Karim Lopez | Juventut Badalona
+Chris Cenac | Houston
+Morez Johnson | Michigan
+Isaiah Evans | Duke
+Meleek Thomas | Arkansas
+Bennett Stirtz | Iowa
+Joshua Jefferson | Iowa St.
+Christian Anderson | Texas Tech
+Jayden Quaintance | Kentucky
+Luigi Suigo | Olimpia Milano
+Aday Mara | Michigan
+Dailyn Swain | Texas
+Ebuka Okorie | Stanford
+Koa Peat | Arizona
+Henri Veesaar | North Carolina
+Trevon Brazile | Arkansas
+Tarris Reed | UConn
+Baba Miller | Cincinnati
+Jack Kayil | Alba Berlin
+Alex Karaban | UConn
+Sergio de Larrea | Valencia
+Zuby Ejiofor | St. Johns
+Jaden Bradley | Arizona
+Braden Smith | Purdue
+Keyshawn Hall | Auburn
+Jakobi Gillespie | Tennessee
+Jaron Pierre | SMU
+Ryan Conwell | Louisville
+Pavle Backo
+Izaiyah Nelson | South Florida
+Milos Uzan | Houston
+Otega Oweh | Kentucky
+Tobi Lawal | Virginia Tech
+Aaron Nkrumah | Tennessee State
+Tre White | Kansas
+Dillon Mitchell | St. Johns
+Felix Okpara | Tennessee
+Richie Saunders | BYU
+Ugonna Onyenso | Virginia
+Tobe Awaka | Tennessee
+Trey Kaufman-Renn | Purdue
+Emanuel Sharp | Houston
+Ernest Udeh | Miami
+Francesco Ferrari | Borgomanero
+Rafael Castro | George Washington
+Kylan Boswell | Illinois
+Donovan Atwell | Texas Tech
+Nick Martinelli | Northwestern
+Tyler Nickel | Vanderbilt
+Maliq Brown | Duke
+Peter Suder | Miami (OH)
+Seth Trimble | North Carolina
+Tyler Bilodeau | UCLA
+Nick Boyd | Wisconsin
+Tamin Lipsey | Iowa St.
+BJ Edwards | SMU
+KeShawn Murphy | Auburn
+Bruce Thornton | Ohio St.
+Malik Reneau | Miami
+Vsevolod Ishchenko
+Melvin Council | Kansas
+Roddy Gayle | Michigan
+Lamar Wilkerson | Indiana
+Riley Kugel | Mississippi St.
+Malique Ewin | Arkansas
+Nate Bittle | Oregon
+Tobias Jensen | Ratiopharm Ulm
+AJ Storr | Mississippi
+Mark Mitchell | Missouri
+Graham Ike | Gonzaga
+Tyon Grant-Foster | Grand Canyon
+Darrion Williams | NC State
+Desmond Claude | Washington
+Rylan Griffen | Kansas
+Jevon Porter | Missouri
+Bryce Hopkins | St. Johns
+Michael Ajayi | Gonzaga
+Tre Donaldson | Miami
+Keba Keita | Utah
+Cade Tyson | Minnesota
+Kevin Miller | Wake Forest
+Robert McCray | Florida St.
+Kobe Knox | South Carolina
+Mohammad Amini | Sluc Nancy
+Dylan Andrews | Boise State

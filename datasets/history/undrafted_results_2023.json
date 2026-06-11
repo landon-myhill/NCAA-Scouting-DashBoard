@@ -1,0 +1,1002 @@
+{
+  "year": 2023,
+  "scraped_at": "2026-06-10T16:34:25.312847",
+  "top_n": 150,
+  "players": [
+    {
+      "year": 2023,
+      "player": "Liam Robbins",
+      "college": "Vanderbilt",
+      "ncaa_rank": 8,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Hunter Dickinson",
+      "college": "Michigan",
+      "ncaa_rank": 12,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Oscar Tshiebwe",
+      "college": "Kentucky",
+      "ncaa_rank": 13,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Colin Castleton",
+      "college": "Florida",
+      "ncaa_rank": 15,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Azuolas Tubelis",
+      "college": "Arizona",
+      "ncaa_rank": 16,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Adama Sanogo",
+      "college": "Connecticut",
+      "ncaa_rank": 18,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "N'Faly Dante",
+      "college": "Oregon",
+      "ncaa_rank": 20,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Santiago Vescovi",
+      "college": "Tennessee",
+      "ncaa_rank": 27,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Connor Vanover",
+      "college": "Oral Roberts",
+      "ncaa_rank": 28,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "D'Moi Hodge",
+      "college": "Missouri",
+      "ncaa_rank": 30,
+      "career": {
+        "years": 1,
+        "games": 7.0,
+        "WS": 0.0,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/hodgedm01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Taevion Kinsey",
+      "college": "Marshall",
+      "ncaa_rank": 31,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/k/kinseta02.html"
+    },
+    {
+      "year": 2023,
+      "player": "Tucker DeVries",
+      "college": "Drake",
+      "ncaa_rank": 32,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Drew Pember",
+      "college": "UNC Asheville",
+      "ncaa_rank": 34,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Kadin Shedrick",
+      "college": "Virginia",
+      "ncaa_rank": 38,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Josiah-Jordan James",
+      "college": "Tennessee",
+      "ncaa_rank": 39,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/j/jamesjo01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Branden Carlson",
+      "college": "Utah",
+      "ncaa_rank": 40,
+      "career": {
+        "years": 2,
+        "games": 74.0,
+        "WS": 2.7,
+        "VORP": 0.6
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/c/carlsbr01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Jake Stephens",
+      "college": "Chattanooga",
+      "ncaa_rank": 41,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/s/stephja02.html"
+    },
+    {
+      "year": 2023,
+      "player": "Caleb McConnell",
+      "college": "Rutgers",
+      "ncaa_rank": 44,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/m/mcconca01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Drew Timme",
+      "college": "Gonzaga",
+      "ncaa_rank": 45,
+      "career": {
+        "years": 2,
+        "games": 36.0,
+        "WS": 0.5,
+        "VORP": -0.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/timmedr01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Jonas Aidoo",
+      "college": "Tennessee",
+      "ncaa_rank": 47,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/a/aidoojo01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Charles Bediako",
+      "college": "Alabama",
+      "ncaa_rank": 48,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/b/bediach01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Markquis Nowell",
+      "college": "Kansas State",
+      "ncaa_rank": 50,
+      "career": {
+        "years": 1,
+        "games": 1.0,
+        "WS": 0.1,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/n/nowelma01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Viktor Lakhin",
+      "college": "Cincinnati",
+      "ncaa_rank": 51,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/l/lakhivi01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Oumar Ballo",
+      "college": "Arizona",
+      "ncaa_rank": 53,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Matthew Mayer",
+      "college": "Illinois",
+      "ncaa_rank": 56,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/m/mayerma01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Jaelen House",
+      "college": "New Mexico",
+      "ncaa_rank": 59,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Johnell Davis",
+      "college": "Florida Atlantic",
+      "ncaa_rank": 61,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/d/davisjo08.html"
+    },
+    {
+      "year": 2023,
+      "player": "Alex Ducas",
+      "college": "Saint Mary's",
+      "ncaa_rank": 62,
+      "career": {
+        "years": 1,
+        "games": 21.0,
+        "WS": 0.3,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/d/ducasal01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Hakim Hart",
+      "college": "Maryland",
+      "ncaa_rank": 63,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Sir'Jabari Rice",
+      "college": "Texas",
+      "ncaa_rank": 64,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/r/ricesi01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Cameron Shelton",
+      "college": "Loyola Marymount",
+      "ncaa_rank": 65,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Ricky Council IV",
+      "college": "Arkansas",
+      "ncaa_rank": 66,
+      "career": {
+        "years": 2,
+        "games": 105.0,
+        "WS": 1.6,
+        "VORP": -0.5
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/c/councri01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Aaron Scott",
+      "college": "North Texas",
+      "ncaa_rank": 67,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/s/scottaa01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Joel Soriano",
+      "college": "St. John's (NY)",
+      "ncaa_rank": 68,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Tolu Smith III",
+      "college": "Mississippi State",
+      "ncaa_rank": 69,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Darius McGhee",
+      "college": "Liberty",
+      "ncaa_rank": 70,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/m/mcgheda01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Leaky Black",
+      "college": "North Carolina",
+      "ncaa_rank": 71,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Jesse Edwards",
+      "college": "Syracuse",
+      "ncaa_rank": 72,
+      "career": {
+        "years": 1,
+        "games": 2.0,
+        "WS": 0.0,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/e/edwarje01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Dillon Mitchell",
+      "college": "Texas",
+      "ncaa_rank": 73,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Deandre Williams",
+      "college": "Memphis",
+      "ncaa_rank": 74,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/w/willide08.html"
+    },
+    {
+      "year": 2023,
+      "player": "Paul Mulcahy",
+      "college": "Rutgers",
+      "ncaa_rank": 75,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Chase Audige",
+      "college": "Northwestern",
+      "ncaa_rank": 76,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/a/audigch01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Aziz Bandaogo",
+      "college": "Utah Valley",
+      "ncaa_rank": 77,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Nae'Qwan Tomlin",
+      "college": "Kansas State",
+      "ncaa_rank": 79,
+      "career": {
+        "years": 2,
+        "games": 69.0,
+        "WS": 2.4,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/tomlina01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Ja'Vier Francis",
+      "college": "Houston",
+      "ncaa_rank": 80,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/f/francja01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Desmond Cambridge Jr.",
+      "college": "Arizona State",
+      "ncaa_rank": 81,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Jahmir Young",
+      "college": "Maryland",
+      "ncaa_rank": 82,
+      "career": {
+        "years": 2,
+        "games": 20.0,
+        "WS": 0.2,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/y/youngja05.html"
+    },
+    {
+      "year": 2023,
+      "player": "J'Wan Roberts",
+      "college": "Houston",
+      "ncaa_rank": 83,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Warren Washington",
+      "college": "Arizona State",
+      "ncaa_rank": 84,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/w/washiwa01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Reece Beekman",
+      "college": "Virginia",
+      "ncaa_rank": 85,
+      "career": {
+        "years": 1,
+        "games": 36.0,
+        "WS": 0.1,
+        "VORP": -0.4
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/b/beekmre01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Tramon Mark",
+      "college": "Houston",
+      "ncaa_rank": 86,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Tristan Enaruna",
+      "college": "Cleveland State",
+      "ncaa_rank": 87,
+      "career": {
+        "years": 1,
+        "games": 9.0,
+        "WS": 0.2,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/e/enarutr01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Jack Nunge",
+      "college": "Xavier",
+      "ncaa_rank": 88,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Wade Taylor IV",
+      "college": "Texas A&M",
+      "ncaa_rank": 89,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Jack Clark",
+      "college": "NC State",
+      "ncaa_rank": 90,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Moussa Cisse",
+      "college": "Oklahoma State",
+      "ncaa_rank": 91,
+      "career": {
+        "years": 1,
+        "games": 38.0,
+        "WS": 1.3,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/cissemo01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Clifford Omoruyi",
+      "college": "Rutgers",
+      "ncaa_rank": 93,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Zakai Zeigler",
+      "college": "Tennessee",
+      "ncaa_rank": 94,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Makhi Mitchell",
+      "college": "Arkansas",
+      "ncaa_rank": 95,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "PJ Hall",
+      "college": "Clemson",
+      "ncaa_rank": 98,
+      "career": {
+        "years": 2,
+        "games": 38.0,
+        "WS": 0.8,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/hallpj01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Kadary Richmond",
+      "college": "Seton Hall",
+      "ncaa_rank": 99,
+      "career": {
+        "years": 1,
+        "games": 3.0,
+        "WS": 0.2,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/r/richmka01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Chuck O'Bannon Jr.",
+      "college": "Texas Christian",
+      "ncaa_rank": 100,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Keegan Records",
+      "college": "Colgate",
+      "ncaa_rank": 101,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Drew Peterson",
+      "college": "Southern California",
+      "ncaa_rank": 104,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Tylor Perry",
+      "college": "North Texas",
+      "ncaa_rank": 105,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Jamarion Sharp",
+      "college": "Western Kentucky",
+      "ncaa_rank": 107,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/s/sharpja01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Caleb Love",
+      "college": "North Carolina",
+      "ncaa_rank": 108,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "KC Ndefo",
+      "college": "Seton Hall",
+      "ncaa_rank": 109,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Manny Bates",
+      "college": "Butler",
+      "ncaa_rank": 114,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Vladislav Goldin",
+      "college": "Florida Atlantic",
+      "ncaa_rank": 115,
+      "career": {
+        "years": 1,
+        "games": 9.0,
+        "WS": 0.1,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/g/goldivl01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Armando Bacot",
+      "college": "North Carolina",
+      "ncaa_rank": 116,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Micah Handlogten",
+      "college": "Marshall",
+      "ncaa_rank": 118,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Teafale Lenard",
+      "college": "Middle Tennessee",
+      "ncaa_rank": 119,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Abou Ousmane",
+      "college": "North Texas",
+      "ncaa_rank": 120,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Craig Porter Jr.",
+      "college": "Wichita State",
+      "ncaa_rank": 121,
+      "career": {
+        "years": 3,
+        "games": 166.0,
+        "WS": 5.3,
+        "VORP": 2.0
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/p/portecr01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Bryan Antoine",
+      "college": "Radford",
+      "ncaa_rank": 122,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Kameron Jones",
+      "college": "Marquette",
+      "ncaa_rank": 124,
+      "career": {
+        "years": 1,
+        "games": 37.0,
+        "WS": 0.0,
+        "VORP": -0.6
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/joneska03.html"
+    },
+    {
+      "year": 2023,
+      "player": "Ethan Morton",
+      "college": "Purdue",
+      "ncaa_rank": 125,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Adrian Nelson",
+      "college": "Youngstown State",
+      "ncaa_rank": 127,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Steven Crowl",
+      "college": "Wisconsin",
+      "ncaa_rank": 128,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/c/crowlst01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Malevy Leons",
+      "college": "Bradley",
+      "ncaa_rank": 129,
+      "career": {
+        "years": 2,
+        "games": 31.0,
+        "WS": 0.5,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/l/leonsma01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Josh Cohen",
+      "college": "Saint Francis (PA)",
+      "ncaa_rank": 130,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Jordan Brown",
+      "college": "Louisiana",
+      "ncaa_rank": 131,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Demarcus Sharp",
+      "college": "Northwestern State",
+      "ncaa_rank": 132,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Lazar Stefanovic",
+      "college": "Utah",
+      "ncaa_rank": 133,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Trey Alexander",
+      "college": "Creighton",
+      "ncaa_rank": 135,
+      "career": {
+        "years": 2,
+        "games": 33.0,
+        "WS": 0.0,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/a/alexatr01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Dylan Disu",
+      "college": "Texas",
+      "ncaa_rank": 136,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/d/disudy01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Landers Nolley II",
+      "college": "Cincinnati",
+      "ncaa_rank": 137,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/n/nollela01.html"
+    },
+    {
+      "year": 2023,
+      "player": "K.J. Williams",
+      "college": "Louisiana State",
+      "ncaa_rank": 138,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Qua Grant",
+      "college": "Sam Houston",
+      "ncaa_rank": 140,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Steven Ashworth",
+      "college": "Utah State",
+      "ncaa_rank": 141,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/a/ashwost01.html"
+    },
+    {
+      "year": 2023,
+      "player": "Sam Griesel",
+      "college": "Nebraska",
+      "ncaa_rank": 142,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Michael Jankovich",
+      "college": "Kansas",
+      "ncaa_rank": 143,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Sam Vinson",
+      "college": "Northern Kentucky",
+      "ncaa_rank": 144,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Terrence Edwards",
+      "college": "James Madison",
+      "ncaa_rank": 145,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Jay Pal",
+      "college": "Campbell",
+      "ncaa_rank": 146,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "RJ Melendez",
+      "college": "Illinois",
+      "ncaa_rank": 147,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Samuell Williamson",
+      "college": "Southern Methodist",
+      "ncaa_rank": 148,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Elijah Pepper",
+      "college": "UC Davis",
+      "ncaa_rank": 149,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2023,
+      "player": "Luke O'Brien",
+      "college": "Colorado",
+      "ncaa_rank": 150,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    }
+  ]
+}

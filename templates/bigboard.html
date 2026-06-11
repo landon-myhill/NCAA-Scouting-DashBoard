@@ -21,27 +21,6 @@
 }
 .board-tab .tab-x:hover { opacity: 1; }
 .board-actions { display: inline-flex; gap: 6px; align-items: center; }
-.draft-toggle {
-    background: transparent; border: 1px solid #334155; color: #64748b;
-    border-radius: 6px; padding: 2px 8px; font-size: 13px; cursor: pointer;
-    line-height: 1.4; transition: all .15s;
-}
-.draft-toggle:hover { border-color: #f59e0b; color: #f59e0b; }
-.draft-toggle.in-draft {
-    background: #f59e0b; border-color: #f59e0b; color: #0f172a; font-weight: 600;
-}
-.draft-toggle.in-draft:hover { background: #fbbf24; }
-.bb-row.declared { background: rgba(245,158,11,0.05); }
-.status-badge {
-    display: inline-block; font-size: 9px; padding: 1px 6px; border-radius: 4px;
-    font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px;
-    margin-left: 6px; vertical-align: middle;
-}
-.status-in_draft { background: #fbbf24; color: #422006; }
-.status-testing_waters { background: #38bdf8; color: #082f49; }
-.status-withdrawn { background: #475569; color: #cbd5e1; }
-.status-auto_eligible { background: transparent; color: #64748b; border: 1px solid #334155; }
-.status-international { background: #a78bfa; color: #2e1065; }
 </style>
 {% endblock %}
 
@@ -149,16 +128,28 @@
         </select>
     </div>
     <div class="align-self-end">
-        <label class="form-check-label small text-secondary" style="cursor:pointer;user-select:none">
-            <input type="checkbox" id="bbFilterDraftOnly" class="form-check-input me-1" style="vertical-align:middle">
-            Draft only
-        </label>
+        <label class="form-label small text-secondary mb-0 d-block">Rank by</label>
+        <div class="btn-group btn-group-sm" role="group">
+            <a href="/bigboard?year={{ current_year }}&sort=score"
+               class="btn btn-outline-secondary {% if sort_mode == 'score' %}active{% endif %}"
+               title="The full draft score: college production scaled by conference / class-year / position">Adjusted</a>
+            <a href="/bigboard?year={{ current_year }}&sort=raw"
+               class="btn btn-outline-secondary {% if sort_mode == 'raw' %}active{% endif %}"
+               title="Raw college production only — same stat components, no conference/age/position adjustments, no HS recruit bonus">Raw college</a>
+        </div>
     </div>
     <div class="align-self-end">
         <span id="bbFilterCount" class="text-secondary small"></span>
     </div>
 </div>
 
+{% if is_curated %}
+<div class="info-card mb-3" style="border-left:3px solid #f472b6;padding:8px 14px;font-size:12px;color:#94a3b8">
+    Curated board — all {{ players|length }} listed prospects
+    {%- if unmatched_names %} · <span style="color:#f59e0b" title="{{ unmatched_names|join(', ') }}">{{ unmatched_names|length }} with no NCAA record (international / G-League / did not play) are listed at the bottom</span>{% endif %}.
+    Edit datasets/board_lists/board_&lt;year&gt;.txt to change the list.
+</div>
+{% endif %}
 <div id="boardList">
     {% for p in players %}
     {% set pos_num = loop.index %}
@@ -166,7 +157,9 @@
     {% set prof = profiles.get(p.id, {}) %}
 
     {# Insert tier headers #}
-    {% if pos_num == 1 %}
+    {% if p.get('_intl_stub') and (loop.first or not loop.previtem.get('_intl_stub')) %}
+    <div class="tier-header" data-tier-header="intl" style="color:#94a3b8">No NCAA Data — International / G-League / Did Not Play</div>
+    {% elif pos_num == 1 %}
     <div class="tier-header tier-header-1" data-tier-header="1">Tier 1 — Lottery (1-15)</div>
     {% elif pos_num == 16 %}
     <div class="tier-header tier-header-2" data-tier-header="2">Tier 2 — Late 1st (16-45)</div>
@@ -174,24 +167,13 @@
     <div class="tier-header tier-header-3" data-tier-header="3">Tier 3 — 2nd Round (46+)</div>
     {% endif %}
 
-    {% set status = p.get('draft_status') %}
-    {% set scraped_in = status in ('in_draft', 'testing_waters') %}
-    {% set in_draft = (p.id in draft_ids) or scraped_in %}
-    <div class="bb-row {% if in_draft %}declared{% endif %}" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}"
+    <div class="bb-row" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}"
          data-off-arch="{{ prof.get('all_offensive', [])|join(',') }}" data-def-arch="{{ prof.get('all_defensive', [])|join(',') }}"
-         data-in-draft="{{ '1' if in_draft else '0' }}"
-         data-status="{{ status or '' }}"
          {% if is_master %}style="cursor:default"{% endif %}>
         <div class="bb-pos">{{ pos_num }}</div>
         {% if not is_master %}<div style="color:#475569;font-size:18px;cursor:grab" class="me-1">&#x2630;</div>{% endif %}
         <div class="bb-name">
             {{ p.name }}
-            {% if status == 'in_draft' %}<span class="status-badge status-in_draft" title="Declared, remaining in draft">In Draft</span>
-            {% elif status == 'testing_waters' %}<span class="status-badge status-testing_waters" title="Testing the waters — may withdraw">Testing</span>
-            {% elif status == 'withdrawn' %}<span class="status-badge status-withdrawn" title="Withdrew from the draft">Withdrew</span>
-            {% elif status == 'international' %}<span class="status-badge status-international" title="International declaree">Int'l</span>
-            {% elif status == 'auto_eligible' %}<span class="status-badge status-auto_eligible" title="No remaining NCAA eligibility — automatically in the draft pool">Auto-elig.</span>
-            {% endif %}
             <span class="bb-meta ms-2">{{ p.pos }} · {{ p.school }}{% if p.conference %} · {{ p.conference }}{% endif %} · {{ p.year }}</span>
         </div>
         <div class="bb-archetypes">
@@ -203,26 +185,53 @@
             {% endfor %}
         </div>
         <div class="bb-stat">{{ fmt_stat(p.stats.get('PPG'), 'PPG') }} <span class="text-secondary" style="font-size:10px">PPG</span></div>
-        <div class="bb-stat">{{ "%.1f"|format(p.draft_score or 0) }} <span class="text-secondary" style="font-size:10px">Score</span></div>
+        <div class="bb-stat" style="line-height:1.3">{% if p.get('_intl_stub') %}— <span class="text-secondary" style="font-size:10px" title="No NCAA stats — the draft score formula only applies to NCAA players">Score</span>{% else %}{{ "%.1f"|format(p.draft_score or 0) }} <span class="text-secondary" style="font-size:10px">Score</span>{% if p.get('_raw') is not none %}<br><span style="font-size:11px;color:{{ '#f59e0b' if sort_mode == 'raw' else '#64748b' }}" title="Raw college production — same stat components, NO conference/age/position adjustments and NO HS recruit bonus">{{ p._raw }} <span style="font-size:9px">raw</span></span>{% endif %}{% endif %}</div>
+        {% if p.get('pred') %}
+        <div class="bb-stat" style="line-height:1.25"
+             title="ML projection (trained on 2020-23 draft classes vs real NBA careers): chance of becoming an NBA starter+ / chance of busting out">
+            <span style="color:#10b981;font-size:12px">{{ (p.pred.success * 100)|round|int }}%</span> <span class="text-secondary" style="font-size:9px">boom</span><br>
+            <span style="color:#ef4444;font-size:12px">{{ (p.pred.bust * 100)|round|int }}%</span> <span class="text-secondary" style="font-size:9px">bust</span>
+        </div>
+        {% endif %}
         {% if not is_master %}
         <div class="bb-stat" style="color:#475569;font-size:11px">#{{ p.rank }} <span style="font-size:9px">formula</span></div>
         {% endif %}
+        {% if p.get('_mock_rank') %}
+        <div class="bb-stat" style="line-height:1.25">
+            {% set diff = p._mock_rank - pos_num %}
+            <span style="font-size:12px;color:#94a3b8">#{{ p._mock_rank }}</span> <span class="text-secondary" style="font-size:9px">mock</span>
+            {% if not p.get('_intl_stub') %}
+                {% if diff >= 10 %}<br><span style="color:#10b981;font-size:10px" title="Model ranks him {{ diff }} spots HIGHER than the mock consensus — potential steal">▲ +{{ diff }}</span>
+                {% elif diff <= -10 %}<br><span style="color:#f59e0b;font-size:10px" title="Mock consensus is {{ -diff }} spots higher than the model — the market sees something the stats don't (or is overpaying)">▼ {{ diff }}</span>
+                {% endif %}
+            {% endif %}
+        </div>
+        {% endif %}
         <div class="bb-stat">
             {% if is_historical %}
-            {# Year-tag instead of toggle for historical views #}
-            <span class="text-secondary" style="font-size:10px">{{ p.get('_season_year','') }}</span>
-            {% elif scraped_in %}
-            <span class="draft-toggle in-draft" style="cursor:default;opacity:0.85" title="Confirmed via scraped declarees list">✓ Declared</span>
-            {% else %}
-            <button class="draft-toggle {% if p.id in draft_ids %}in-draft{% endif %}"
-                    onclick="toggleDraft(this, {{ p.id }})"
-                    title="Mark as declared for the NBA Draft">
-                {% if p.id in draft_ids %}✓ In Draft{% else %}+ Draft{% endif %}
-            </button>
+            {# Hindsight: what actually happened to this prospect #}
+            {% set nba = p.get('nba') %}
+            {% if nba and nba.mature %}
+                {% set tier_colors = {'star': '#fbbf24', 'starter': '#10b981', 'rotation': '#60a5fa', 'bench': '#94a3b8', 'no_nba': '#ef4444'} %}
+                <span style="font-size:10px;color:{{ tier_colors.get(nba.tier, '#94a3b8') }}"
+                      title="Actual outcome: drafted #{{ nba.pick }} overall — career tier: {{ (nba.tier or '?')|replace('_',' ') }}">
+                    NBA #{{ nba.pick }} · {{ (nba.tier or '?')|replace('_',' ') }}</span>
+            {% elif nba %}
+                <span style="font-size:10px;color:#60a5fa"
+                      title="Drafted #{{ nba.pick }} overall — career too young to grade (tiers need 3+ NBA seasons)">
+                    NBA #{{ nba.pick }} · early career</span>
+            {% elif p.get('_draft_complete') %}
+                <span class="text-secondary" style="font-size:10px" title="Not drafted">undrafted</span>
+            {% endif %}
+            <span class="text-secondary" style="font-size:10px"> {{ p.get('_season_year','') }}</span>
+            {% elif p.get('_intl_stub') %}
+            <span class="text-secondary" style="font-size:10px">—</span>
             {% endif %}
         </div>
         <div class="bb-stat">
+            {% if not p.get('_intl_stub') %}
             <a href="/scouting?player_id={{ p.id }}" class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
+            {% endif %}
         </div>
     </div>
     {% endfor %}
@@ -311,7 +320,7 @@ async function deleteBoard(id, name) {
 }
 
 // Filters
-['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch','bbFilterDraftOnly'].forEach(id => {
+['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('change', applyBBFilters);
 });
@@ -322,7 +331,6 @@ function applyBBFilters() {
     const offArchVal = document.getElementById('bbFilterOffArch').value;
     const defArchVal = document.getElementById('bbFilterDefArch').value;
     const limit = parseInt(document.getElementById('bbFilterLimit').value);
-    const draftOnly = document.getElementById('bbFilterDraftOnly').checked;
     let count = 0;
     boardList.querySelectorAll('.bb-row').forEach(row => {
         const rank = parseInt(row.querySelector('.bb-pos').textContent);
@@ -334,39 +342,11 @@ function applyBBFilters() {
         if (confVal !== 'All' && row.dataset.conf !== confVal) show = false;
         if (offArchVal !== 'All' && !offArchs.includes(offArchVal)) show = false;
         if (defArchVal !== 'All' && !defArchs.includes(defArchVal)) show = false;
-        if (draftOnly && row.dataset.inDraft !== '1') show = false;
         row.style.display = show ? '' : 'none';
         if (show) count++;
     });
     document.getElementById('bbFilterCount').textContent = `${count} player${count !== 1 ? 's' : ''}`;
 }
 
-async function toggleDraft(btn, pid) {
-    const row = btn.closest('.bb-row');
-    const isIn = btn.classList.contains('in-draft');
-    const method = isIn ? 'DELETE' : 'POST';
-    btn.disabled = true;
-    try {
-        const res = await fetch(`/api/draft/${pid}`, {method});
-        const data = await res.json();
-        if (!data.ok) throw new Error('toggle failed');
-        if (isIn) {
-            btn.classList.remove('in-draft');
-            btn.textContent = '+ Draft';
-            row.classList.remove('declared');
-            row.dataset.inDraft = '0';
-        } else {
-            btn.classList.add('in-draft');
-            btn.textContent = '✓ In Draft';
-            row.classList.add('declared');
-            row.dataset.inDraft = '1';
-        }
-        applyBBFilters();
-    } catch (e) {
-        alert('Could not update draft status: ' + e.message);
-    } finally {
-        btn.disabled = false;
-    }
-}
 </script>
 {% endblock %}

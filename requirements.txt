@@ -1,4 +1,9 @@
+# Runtime
 flask>=3.0.0
 plotly>=5.20.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0
+numpy>=1.26.0          # ridge-fit weight tuning (tune.py)
+
+# Dev / testing
+pytest>=8.0.0

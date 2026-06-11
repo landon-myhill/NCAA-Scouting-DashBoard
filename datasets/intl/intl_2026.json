@@ -1,0 +1,424 @@
+{
+  "year": 2026,
+  "scraped_at": "2026-06-10T15:05:50.607187",
+  "players": [
+    {
+      "name": "Karim Lopez",
+      "norm_name": "karim lopez",
+      "pos": "F",
+      "born": "2007-04-12",
+      "age_label": "Age 19",
+      "team": "New Zealand",
+      "league": "NBL",
+      "season": "2025-26",
+      "stats": {
+        "PPG": 11.9,
+        "RPG": 6.1,
+        "APG": 2.0,
+        "SPG": 1.2,
+        "BPG": 1.0,
+        "MPG": 25.8,
+        "TOV": 1.5,
+        "3PA": 3.0,
+        "FGA": 8.8,
+        "FTA": 3.0,
+        "FG%": 50.2,
+        "3P%": 32.6,
+        "FT%": 71.7,
+        "G": 31
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": "Joventut",
+          "league": "Liga ACB",
+          "g": "4",
+          "mp_per_g": "1.5",
+          "pts_per_g": "0.5"
+        },
+        {
+          "season": "2024-25",
+          "team": "New Zealand",
+          "league": "NBL",
+          "g": "25",
+          "mp_per_g": "22.9",
+          "pts_per_g": "9.6"
+        },
+        {
+          "season": "2025-26",
+          "team": "New Zealand",
+          "league": "NBL",
+          "g": "31",
+          "mp_per_g": "25.8",
+          "pts_per_g": "11.9"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/karim-lopez-1.html"
+    },
+    {
+      "name": "Luigi Suigo",
+      "norm_name": "luigi suigo",
+      "pos": "C",
+      "born": "2007-01-29",
+      "age_label": "Age 19",
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2025-26",
+      "stats": {
+        "PPG": 8.1,
+        "RPG": 5.3,
+        "APG": 0.8,
+        "SPG": 0.4,
+        "BPG": 1.1,
+        "MPG": 18.1,
+        "TOV": 0.9,
+        "3PA": 1.9,
+        "FGA": 5.9,
+        "FTA": 1.3,
+        "FG%": 56.4,
+        "3P%": 26.7,
+        "FT%": 76.2,
+        "G": 16
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": "Olimpia Milano",
+          "league": "LBA",
+          "g": "1",
+          "mp_per_g": "2.0",
+          "pts_per_g": "2.0"
+        },
+        {
+          "season": "2024-25",
+          "team": "Olimpia Milano",
+          "league": "LBA",
+          "g": "1",
+          "mp_per_g": "3.0",
+          "pts_per_g": "4.0"
+        },
+        {
+          "season": "2025-26",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "16",
+          "mp_per_g": "18.1",
+          "pts_per_g": "8.1"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/luigi-suigo-1.html"
+    },
+    {
+      "name": "Jack Kayil",
+      "norm_name": "jack kayil",
+      "pos": "G",
+      "born": "2006-01-27",
+      "age_label": "Age 20",
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2024-25",
+      "stats": {
+        "PPG": 7.7,
+        "RPG": 2.2,
+        "APG": 2.8,
+        "SPG": 1.4,
+        "BPG": 0.2,
+        "MPG": 25.7,
+        "TOV": 1.8,
+        "3PA": 4.6,
+        "FGA": 6.6,
+        "FTA": 0.9,
+        "FG%": 39.8,
+        "3P%": 35.4,
+        "FT%": 88.2,
+        "G": 18
+      },
+      "all_rows": [
+        {
+          "season": "2024-25",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "18",
+          "mp_per_g": "25.7",
+          "pts_per_g": "7.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/jack-kayil-1.html"
+    },
+    {
+      "name": "Sergio de Larrea",
+      "norm_name": "sergio de larrea",
+      "pos": "F",
+      "born": "2005-12-04",
+      "age_label": "Age 20",
+      "team": "Valencia",
+      "league": "Liga ACB",
+      "season": "2025-26",
+      "stats": {
+        "PPG": 9.7,
+        "RPG": 3.0,
+        "APG": 3.7,
+        "SPG": 0.5,
+        "BPG": 0.3,
+        "MPG": 18.3,
+        "TOV": 1.7,
+        "3PA": 3.3,
+        "FGA": 6.6,
+        "FTA": 3.0,
+        "FG%": 44.3,
+        "3P%": 40.7,
+        "FT%": 83.3,
+        "G": 28
+      },
+      "all_rows": [
+        {
+          "season": "2022-23",
+          "team": "Valencia",
+          "league": "EuroLeague",
+          "g": "2",
+          "mp_per_g": "1.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2022-23",
+          "team": "Valencia",
+          "league": "Liga ACB",
+          "g": "1",
+          "mp_per_g": "3.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2023-24",
+          "team": "Valencia",
+          "league": "EuroLeague",
+          "g": "1",
+          "mp_per_g": "17.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2023-24",
+          "team": "Valencia",
+          "league": "Liga ACB",
+          "g": "1",
+          "mp_per_g": "7.0",
+          "pts_per_g": "2.0"
+        },
+        {
+          "season": "2024-25",
+          "team": "Valencia",
+          "league": "EuroCup",
+          "g": "14",
+          "mp_per_g": "13.4",
+          "pts_per_g": "4.8"
+        },
+        {
+          "season": "2024-25",
+          "team": "Valencia",
+          "league": "Liga ACB",
+          "g": "22",
+          "mp_per_g": "12.3",
+          "pts_per_g": "6.0"
+        },
+        {
+          "season": "2025-26",
+          "team": "Valencia",
+          "league": "EuroLeague",
+          "g": "26",
+          "mp_per_g": "10.7",
+          "pts_per_g": "3.6"
+        },
+        {
+          "season": "2025-26",
+          "team": "Valencia",
+          "league": "Liga ACB",
+          "g": "28",
+          "mp_per_g": "18.3",
+          "pts_per_g": "9.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/sergio-de-larrea-1.html"
+    },
+    {
+      "name": "Francesco Ferrari",
+      "norm_name": "francesco ferrari",
+      "pos": "F",
+      "born": null,
+      "age_label": null,
+      "team": "Virtus Bologna",
+      "league": "EuroLeague",
+      "season": "2025-26",
+      "stats": {
+        "PPG": 2.3,
+        "RPG": 2.2,
+        "APG": 0.5,
+        "SPG": 0.0,
+        "BPG": 0.2,
+        "MPG": 9.6,
+        "TOV": 0.3,
+        "3PA": 0.9,
+        "FGA": 1.7,
+        "FTA": 1.1,
+        "FG%": 35.0,
+        "3P%": 18.2,
+        "FT%": 84.6,
+        "G": 12
+      },
+      "all_rows": [
+        {
+          "season": "2025-26",
+          "team": "Virtus Bologna",
+          "league": "EuroLeague",
+          "g": "12",
+          "mp_per_g": "9.6",
+          "pts_per_g": "2.3"
+        },
+        {
+          "season": "2025-26",
+          "team": "Virtus Bologna",
+          "league": "LBA",
+          "g": "11",
+          "mp_per_g": "10.2",
+          "pts_per_g": "4.4"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/francesco-ferrari-1.html"
+    },
+    {
+      "name": "Tobias Jensen",
+      "norm_name": "tobias jensen",
+      "pos": "F",
+      "born": "2004-05-08",
+      "age_label": "Age 22",
+      "team": "Ulm",
+      "league": "EuroCup",
+      "season": "2025-26",
+      "stats": {
+        "PPG": 11.0,
+        "RPG": 3.4,
+        "APG": 4.7,
+        "SPG": 1.4,
+        "BPG": 0.2,
+        "MPG": 29.1,
+        "TOV": 2.1,
+        "3PA": 4.9,
+        "FGA": 9.8,
+        "FTA": 1.2,
+        "FG%": 41.2,
+        "3P%": 39.3,
+        "FT%": 81.0,
+        "G": 18
+      },
+      "all_rows": [
+        {
+          "season": "2022-23",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "1",
+          "mp_per_g": "7.0",
+          "pts_per_g": "3.0"
+        },
+        {
+          "season": "2023-24",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "18",
+          "mp_per_g": "10.4",
+          "pts_per_g": "3.2"
+        },
+        {
+          "season": "2024-25",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "16",
+          "mp_per_g": "9.0",
+          "pts_per_g": "2.2"
+        },
+        {
+          "season": "2025-26",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "18",
+          "mp_per_g": "29.1",
+          "pts_per_g": "11.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/tobias-brahe-jensen-1.html"
+    },
+    {
+      "name": "Mohammad Amini",
+      "norm_name": "mohammad amini",
+      "pos": "G",
+      "born": "2005-04-26",
+      "age_label": "Age 21",
+      "team": "Nancy",
+      "league": "LNB Élite",
+      "season": "2025-26",
+      "stats": {
+        "PPG": 7.8,
+        "RPG": 4.1,
+        "APG": 1.8,
+        "SPG": 0.8,
+        "BPG": 0.2,
+        "MPG": 22.6,
+        "TOV": 1.4,
+        "3PA": 2.6,
+        "FGA": 4.1,
+        "FTA": 2.4,
+        "FG%": 50.0,
+        "3P%": 25.7,
+        "FT%": 62.5,
+        "G": 27
+      },
+      "all_rows": [
+        {
+          "season": "2022-23",
+          "team": "Monaco",
+          "league": "LNB Pro A",
+          "g": "1",
+          "mp_per_g": "37.0",
+          "pts_per_g": "12.0"
+        },
+        {
+          "season": "2023",
+          "team": "Iran",
+          "league": "FIBA",
+          "g": "3",
+          "mp_per_g": "28.0",
+          "pts_per_g": "12.7"
+        },
+        {
+          "season": "2023-24",
+          "team": "Monaco",
+          "league": "LNB Élite",
+          "g": "5",
+          "mp_per_g": "9.4",
+          "pts_per_g": "4.6"
+        },
+        {
+          "season": "2024-25",
+          "team": "Nancy",
+          "league": "LNB Élite",
+          "g": "30",
+          "mp_per_g": "16.7",
+          "pts_per_g": "6.3"
+        },
+        {
+          "season": "2025-26",
+          "team": "Nancy",
+          "league": "LNB Élite",
+          "g": "27",
+          "mp_per_g": "22.6",
+          "pts_per_g": "7.8"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/mohammad-amini-1.html"
+    }
+  ],
+  "missed": [
+    "Jayden Quaintance",
+    "Pavle Backo",
+    "Tobi Lawal",
+    "Vsevolod Ishchenko",
+    "Nate Bittle"
+  ]
+}

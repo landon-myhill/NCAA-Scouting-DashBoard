@@ -1,0 +1,941 @@
+{
+  "year": 2020,
+  "scraped_at": "2026-06-10T16:13:45.596217",
+  "top_n": 150,
+  "players": [
+    {
+      "year": 2020,
+      "player": "Devon Dotson",
+      "college": "Kansas",
+      "ncaa_rank": 4,
+      "career": {
+        "years": 3,
+        "games": 28.0,
+        "WS": 0.2,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/d/dotsode01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Mason Jones",
+      "college": "Arkansas",
+      "ncaa_rank": 13,
+      "career": {
+        "years": 4,
+        "games": 51.0,
+        "WS": 0.6,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/jonesma05.html"
+    },
+    {
+      "year": 2020,
+      "player": "Grayson Murphy",
+      "college": "Belmont",
+      "ncaa_rank": 16,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/m/murphgr01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Ashton Hagans",
+      "college": "Kentucky",
+      "ncaa_rank": 28,
+      "career": {
+        "years": 2,
+        "games": 21.0,
+        "WS": 0.0,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/haganas01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Jay Huff",
+      "college": "Virginia",
+      "ncaa_rank": 29,
+      "career": {
+        "years": 5,
+        "games": 177.0,
+        "WS": 6.4,
+        "VORP": 2.3
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/h/huffja01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Ron Harper Jr.",
+      "college": "Rutgers",
+      "ncaa_rank": 31,
+      "career": {
+        "years": 4,
+        "games": 40.0,
+        "WS": 0.9,
+        "VORP": 0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/harpero02.html"
+    },
+    {
+      "year": 2020,
+      "player": "Killian Tillie",
+      "college": "Gonzaga",
+      "ncaa_rank": 32,
+      "career": {
+        "years": 2,
+        "games": 54.0,
+        "WS": 0.8,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/tilliki02.html"
+    },
+    {
+      "year": 2020,
+      "player": "Oscar Tshiebwe",
+      "college": "West Virginia",
+      "ncaa_rank": 33,
+      "career": {
+        "years": 3,
+        "games": 49.0,
+        "WS": 2.5,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/tshieos01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Alan Griffin",
+      "college": "Illinois",
+      "ncaa_rank": 34,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Freddie Gillespie",
+      "college": "Baylor",
+      "ncaa_rank": 35,
+      "career": {
+        "years": 2,
+        "games": 29.0,
+        "WS": 1.1,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/g/gillefr01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Caleb Homesley",
+      "college": "Liberty",
+      "ncaa_rank": 38,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/h/homesca01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Mamadi Diakite",
+      "college": "Virginia",
+      "ncaa_rank": 39,
+      "career": {
+        "years": 4,
+        "games": 55.0,
+        "WS": 0.9,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/d/diakima01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Micah Potter",
+      "college": "Wisconsin",
+      "ncaa_rank": 40,
+      "career": {
+        "years": 5,
+        "games": 111.0,
+        "WS": 3.5,
+        "VORP": 0.4
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/p/pottemi01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Jonah Radebaugh",
+      "college": "Northern Colorado",
+      "ncaa_rank": 41,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Nate Hinton",
+      "college": "Houston",
+      "ncaa_rank": 43,
+      "career": {
+        "years": 3,
+        "games": 38.0,
+        "WS": 0.2,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/hintona01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Nathan Knight",
+      "college": "William & Mary",
+      "ncaa_rank": 44,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Kaleb Wesson",
+      "college": "Ohio State",
+      "ncaa_rank": 45,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/w/wessoka01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Christian Vital",
+      "college": "Connecticut",
+      "ncaa_rank": 46,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Paul Atkinson",
+      "college": "Yale",
+      "ncaa_rank": 47,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Trevelin Queen",
+      "college": "New Mexico State",
+      "ncaa_rank": 48,
+      "career": {
+        "years": 4,
+        "games": 62.0,
+        "WS": 0.8,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/q/queentr01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Marcus Garrett",
+      "college": "Kansas",
+      "ncaa_rank": 49,
+      "career": {
+        "years": 2,
+        "games": 16.0,
+        "WS": 0.1,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/g/garrema01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Juwan Durham",
+      "college": "Notre Dame",
+      "ncaa_rank": 50,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Terry Taylor",
+      "college": "Austin Peay",
+      "ncaa_rank": 52,
+      "career": {
+        "years": 4,
+        "games": 98.0,
+        "WS": 3.0,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/taylote01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Manny Bates",
+      "college": "NC State",
+      "ncaa_rank": 53,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Tyson Ward",
+      "college": "North Dakota State",
+      "ncaa_rank": 54,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Maik Kotsar",
+      "college": "South Carolina",
+      "ncaa_rank": 55,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Nate Reuvers",
+      "college": "Wisconsin",
+      "ncaa_rank": 56,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Tyrique Jones",
+      "college": "Xavier",
+      "ncaa_rank": 58,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jason Wade",
+      "college": "Old Dominion",
+      "ncaa_rank": 59,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Justin Bean",
+      "college": "Utah State",
+      "ncaa_rank": 61,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": "https://www.basketball-reference.com/players/b/beanju01.html"
+    },
+    {
+      "year": 2020,
+      "player": "Michael Hughes",
+      "college": "Duquesne",
+      "ncaa_rank": 62,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jermaine Haley",
+      "college": "West Virginia",
+      "ncaa_rank": 63,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "MaCio Teague",
+      "college": "Baylor",
+      "ncaa_rank": 66,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Dantez Walton",
+      "college": "Northern Kentucky",
+      "ncaa_rank": 67,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "EJ Montgomery",
+      "college": "Kentucky",
+      "ncaa_rank": 68,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Justin Champagnie",
+      "college": "Pittsburgh",
+      "ncaa_rank": 69,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Quinton Rose",
+      "college": "Temple",
+      "ncaa_rank": 70,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Gerard Andrus",
+      "college": "Prairie View A&M",
+      "ncaa_rank": 73,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Matt Dentlinger",
+      "college": "South Dakota State",
+      "ncaa_rank": 74,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Oscar Da Silva",
+      "college": "Stanford",
+      "ncaa_rank": 76,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Liam Robbins",
+      "college": "Drake",
+      "ncaa_rank": 79,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Tanner Holden",
+      "college": "Wright State",
+      "ncaa_rank": 80,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jon Teske",
+      "college": "Michigan",
+      "ncaa_rank": 81,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "KC Ndefo",
+      "college": "Saint Peter's",
+      "ncaa_rank": 82,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jaime Echenique",
+      "college": "Wichita State",
+      "ncaa_rank": 83,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "LJ Figueroa",
+      "college": "St. John's (NY)",
+      "ncaa_rank": 84,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Joel Ayayi",
+      "college": "Gonzaga",
+      "ncaa_rank": 85,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Nick Rakocevic",
+      "college": "Southern California",
+      "ncaa_rank": 86,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Austin Wiley",
+      "college": "Auburn",
+      "ncaa_rank": 87,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Kim Aiken Jr.",
+      "college": "Eastern Washington",
+      "ncaa_rank": 89,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Mike Watkins",
+      "college": "Penn State",
+      "ncaa_rank": 90,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Julian Champagnie",
+      "college": "St. John's (NY)",
+      "ncaa_rank": 92,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Romaro Gill",
+      "college": "Seton Hall",
+      "ncaa_rank": 93,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Myles Johnson",
+      "college": "Rutgers",
+      "ncaa_rank": 94,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "AJ Brodeur",
+      "college": "Pennsylvania",
+      "ncaa_rank": 95,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Matt Haarms",
+      "college": "Purdue",
+      "ncaa_rank": 96,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Brandon Rachal",
+      "college": "Tulsa",
+      "ncaa_rank": 97,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Yor Anei",
+      "college": "Oklahoma State",
+      "ncaa_rank": 98,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Shamarkus Kennedy",
+      "college": "McNeese",
+      "ncaa_rank": 100,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jake Toolson",
+      "college": "Brigham Young",
+      "ncaa_rank": 101,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Kylor Kelley",
+      "college": "Oregon State",
+      "ncaa_rank": 102,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Matthew Hurt",
+      "college": "Duke",
+      "ncaa_rank": 103,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Akwasi Yeboah",
+      "college": "Rutgers",
+      "ncaa_rank": 105,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "James Banks III",
+      "college": "Georgia Tech",
+      "ncaa_rank": 106,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Osasumwen Osaghae",
+      "college": "Florida International",
+      "ncaa_rank": 107,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jordan Bruner",
+      "college": "Yale",
+      "ncaa_rank": 108,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Alpha Diallo",
+      "college": "Providence",
+      "ncaa_rank": 109,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Tevin Mack",
+      "college": "Clemson",
+      "ncaa_rank": 110,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Kofi Cockburn",
+      "college": "Illinois",
+      "ncaa_rank": 111,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Justin Robinson",
+      "college": "Duke",
+      "ncaa_rank": 112,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Isaac Likekele",
+      "college": "Oklahoma State",
+      "ncaa_rank": 114,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Tyrece Radford",
+      "college": "Virginia Tech",
+      "ncaa_rank": 117,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Grant Golden",
+      "college": "Richmond",
+      "ncaa_rank": 118,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Josiah-Jordan James",
+      "college": "Tennessee",
+      "ncaa_rank": 119,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jacob Gilyard",
+      "college": "Richmond",
+      "ncaa_rank": 122,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Kevin Samuel",
+      "college": "Texas Christian",
+      "ncaa_rank": 124,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "K.J. Williams",
+      "college": "Murray State",
+      "ncaa_rank": 125,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Marcus Bingham",
+      "college": "Michigan State",
+      "ncaa_rank": 126,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Dru Smith",
+      "college": "Missouri",
+      "ncaa_rank": 129,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jared Rhoden",
+      "college": "Seton Hall",
+      "ncaa_rank": 130,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "David Duke",
+      "college": "Providence",
+      "ncaa_rank": 131,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Tevin Brown",
+      "college": "Murray State",
+      "ncaa_rank": 133,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Derek Culver",
+      "college": "West Virginia",
+      "ncaa_rank": 134,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Bourama Sidibe",
+      "college": "Syracuse",
+      "ncaa_rank": 135,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Cameron Krutwig",
+      "college": "Loyola (IL)",
+      "ncaa_rank": 137,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Jamal Bey",
+      "college": "Washington",
+      "ncaa_rank": 139,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Carlik Jones",
+      "college": "Radford",
+      "ncaa_rank": 140,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Trent Forrest",
+      "college": "Florida State",
+      "ncaa_rank": 141,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Malik Williams",
+      "college": "Louisville",
+      "ncaa_rank": 142,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Fatts Russell",
+      "college": "Rhode Island",
+      "ncaa_rank": 143,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "De'Riante Jenkins",
+      "college": "Virginia Commonwealth",
+      "ncaa_rank": 144,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Max Mahoney",
+      "college": "Boston University",
+      "ncaa_rank": 145,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Drew Timme",
+      "college": "Gonzaga",
+      "ncaa_rank": 146,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Javon Freeman-Liberty",
+      "college": "Valparaiso",
+      "ncaa_rank": 147,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Lindy Waters",
+      "college": "Oklahoma State",
+      "ncaa_rank": 148,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    },
+    {
+      "year": 2020,
+      "player": "Devon Daniels",
+      "college": "NC State",
+      "ncaa_rank": 150,
+      "career": {},
+      "career_tier": "no_nba",
+      "source": null
+    }
+  ]
+}
