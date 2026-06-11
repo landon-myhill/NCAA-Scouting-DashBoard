@@ -43,7 +43,7 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
                 <th class="text-end" title="recipe weight {{ (w*100)|int }}%{{ ' — absolute scale (vs everyone, not just his position)' if is_abs }}">
                     {{ comp.replace('_', ' ') }}{{ '*' if is_abs }} <span style="opacity:.6">({{ (w*100)|int }}%)</span></th>
                 {% endfor %}
-                <th class="text-end">Board</th>
+                <th class="text-end" title="Overall draft rank under the strengths model">Draft rk</th>
             </tr>
         </thead>
         <tbody>
@@ -57,7 +57,7 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
                 {% set v = (p.strengths_abs if is_abs else p.strengths).get(comp) %}
                 <td class="text-end" style="color:{{ '#10b981' if v is not none and v >= 80 else '#e2e8f0' if v is not none else '#475569' }}">{{ v if v is not none else '—' }}</td>
                 {% endfor %}
-                <td class="text-end text-secondary">#{{ p.rank }}</td>
+                <td class="text-end text-secondary" title="Strengths-model draft rank">{{ '#' + p.sm_rank|string if p.get('sm_rank') else '—' }}</td>
             </tr>
             {% endfor %}
         </tbody>
@@ -81,7 +81,7 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
                 <tr>
                     <td style="width:22px;color:#475569">{{ loop.index }}</td>
                     <td><a href="/scouting?player_id={{ p.id }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
-                        <span class="text-secondary" style="font-size:10px">{{ p.pos }} · {{ p.school }}</span></td>
+                        <span class="text-secondary" style="font-size:10px">{{ p.pos }} · {{ p.school }}{% if p.get('sm_rank') %} · <span title="draft rank (strengths model)">#{{ p.sm_rank }}</span>{% endif %}</span></td>
                     <td style="width:36px;text-align:right;font-weight:600;color:{{ '#10b981' if p.fits[g.name] >= 80 else '#60a5fa' if p.fits[g.name] >= 55 else '#94a3b8' }}">{{ p.fits[g.name] }}</td>
                 </tr>
                 {% endfor %}
