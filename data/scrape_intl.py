@@ -223,8 +223,12 @@ def _parse_player(soup: BeautifulSoup, url: str, name: str,
 
 def main():
     args = [a for a in sys.argv[1:] if a.isdigit()]
-    year = int(args[0]) if args else SEASON_YEAR
+    years = [int(a) for a in args] if args else [SEASON_YEAR]
+    for year in years:
+        run_year(year)
 
+
+def run_year(year: int):
     ncaa = _ncaa_norms(year)
     targets = [(n, club) for n, club in _board_names(year)
                if normalize_name(n) not in ncaa]
