@@ -3,300 +3,55 @@
 {% block title %}Scarcity — NCAA Draft Scout{% endblock %}
 
 {% block content %}
-<h4 class="mb-1">Archetype Scarcity</h4>
-<p class="text-secondary small">Draft class depth by player archetype — find the thin spots and the deep pools. Players are counted for <strong>every</strong> archetype they qualify for, not just their primary. Top 200 prospects.</p>
-
-<!-- Archetype Guide -->
-<div class="mb-3">
-    <a data-bs-toggle="collapse" href="#archGuide" class="btn btn-sm btn-outline-secondary">
-        Archetype Guide
-    </a>
-</div>
-<div class="collapse" id="archGuide">
-    <input type="text" id="archSearch" class="form-control form-control-sm mb-3"
-           placeholder="Search archetypes by name or keyword...">
-
-    {% set off_counts = {} %}
-    {% set def_counts = {} %}
-    {% for p in scarcity.players %}
-        {% for a in p.get('all_offensive', []) %}
-            {% if a %}{% if off_counts.update({a: off_counts.get(a, 0) + 1}) %}{% endif %}{% endif %}
-        {% endfor %}
-        {% for a in p.get('all_defensive', []) %}
-            {% if a %}{% if def_counts.update({a: def_counts.get(a, 0) + 1}) %}{% endif %}{% endif %}
-        {% endfor %}
-    {% endfor %}
-
-    <h6 class="text-secondary">Offensive Archetypes</h6>
-    {% set def_names = ['Defensive Anchor','Point of Attack Defender','Perimeter Pest','Wing Stopper','Versatile Defender','Paint Presence','Weak Side Shot Blocker','Help Defender','Defensive Liability','No Defense','Average Defender'] %}
-    {% for name, desc in arch_desc.items() %}
-    {% if name not in def_names %}
-    <div class="arch-guide arch-guide-off">
-        <span class="arch-name">{{ name }}</span>
-        <span class="arch-count">{{ off_counts.get(name, 0) }} in top 200</span>
-        <div class="arch-desc">{{ desc }}</div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h6 class="text-secondary mt-3">Defensive Archetypes</h6>
-    {% for name in def_names %}
-    {% if name in arch_desc %}
-    <div class="arch-guide arch-guide-def">
-        <span class="arch-name">{{ name }}</span>
-        <span class="arch-count">{{ def_counts.get(name, 0) }} in top 200</span>
-        <div class="arch-desc">{{ arch_desc[name] }}</div>
-    </div>
-    {% endif %}
-    {% endfor %}
-    <hr class="border-secondary">
-</div>
-
-<!-- Browse by Archetype -->
-<div class="section-hdr">Browse Players by Archetype</div>
-<div class="filter-bar d-flex gap-3 flex-wrap">
-    <div>
-        <label class="form-label small text-secondary mb-0">Offensive</label>
-        <select id="browseOff" class="form-select form-select-sm" style="min-width:160px">
-            <option value="All">All</option>
-            {% set all_off = [] %}
-            {% for p in scarcity.players %}
-                {% for a in p.get('all_offensive', []) %}
-                    {% if a and a not in all_off %}{% if all_off.append(a) %}{% endif %}{% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for a in all_off|sort %}
-            <option>{{ a }}</option>
+<div class="d-flex justify-content-between align-items-center mb-1 flex-wrap gap-2">
+    <h4 class="mb-0">Role Scarcity — {{ season_label }}</h4>
+    <form method="GET" class="d-flex align-items-center gap-2 mb-0">
+        <label for="yearSelect" class="form-label small text-secondary mb-0">Class</label>
+        <select id="yearSelect" name="year" class="form-select form-select-sm" onchange="this.form.submit()">
+            {% for y, label, is_cur in available_years %}
+            <option value="{{ y }}" {% if y == current_year %}selected{% endif %}>{{ label }}</option>
             {% endfor %}
         </select>
-    </div>
-    <div>
-        <label class="form-label small text-secondary mb-0">Defensive</label>
-        <select id="browseDef" class="form-select form-select-sm" style="min-width:160px">
-            <option value="All">All</option>
-            {% set all_def = [] %}
-            {% for p in scarcity.players %}
-                {% for a in p.get('all_defensive', []) %}
-                    {% if a and a not in all_def %}{% if all_def.append(a) %}{% endif %}{% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for a in all_def|sort %}
-            <option>{{ a }}</option>
-            {% endfor %}
-        </select>
-    </div>
-    <div>
-        <label class="form-label small text-secondary mb-0">Show top</label>
-        <select id="browseLimit" class="form-select form-select-sm" style="min-width:90px">
-            <option value="15">15</option>
-            <option value="30">30</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200" selected>200</option>
-        </select>
-    </div>
-    <div class="align-self-end">
-        <span id="browseCount" class="text-secondary small">{{ scarcity.players|length }} players</span>
-    </div>
+    </form>
 </div>
+<p class="text-secondary small mb-3">How deep is this class at each role? <strong>Elite</strong> = fit ≥ 80th
+percentile, <strong>solid</strong> = 55–79. Sorted scarcest first — if your team needs a role at the top of
+this list, you can't wait on it. Drop-off = fit gap between the #1 and #4 player in the role.</p>
 
-<div class="table-responsive">
-    <table class="table table-scout table-sm" id="browseTable">
+<div class="info-card">
+    <table class="table table-dark table-sm align-middle" style="font-size:13px">
         <thead>
-            <tr>
-                <th>Rank</th><th>Name</th><th>Pos</th><th>School</th><th>Conf</th>
-                <th>Year</th><th>Tier</th><th>Score</th><th>Offensive Archetypes</th><th>Defensive Archetypes</th>
-                <th>PPG</th><th>RPG</th><th>APG</th>
+            <tr class="text-secondary" style="font-size:11px">
+                <th>Role</th>
+                <th class="text-end">Elite</th>
+                <th class="text-end">Solid</th>
+                <th class="text-end" title="Fit gap between the #1 and #4 player — big gap = the top guys are irreplaceable">Drop-off</th>
+                <th>Signal</th>
+                <th>Best in class (fit · draft rank)</th>
             </tr>
         </thead>
         <tbody>
-            {% for p in scarcity.players %}
-            <tr data-off="{{ p.get('all_offensive', [])|join(',') }}" data-def="{{ p.get('all_defensive', [])|join(',') }}">
-                <td>{{ p.rank }}</td>
-                <td><a href="/scouting?player_id={{ p.rank }}" class="text-info text-decoration-none">{{ p.name }}</a></td>
-                <td>{{ p.pos }}</td>
-                <td>{{ p.school }}</td>
-                <td>{{ p.conference }}</td>
-                <td>{{ p.year }}</td>
-                <td><span class="tier-{{ p.tier }}">{{ tier_labels.get(p.tier, '') }}</span></td>
-                <td>{{ p.draft_score }}</td>
-                <td>
-                    {% for a in p.get('all_offensive', []) %}
-                        {% if a %}<span class="arch-off" style="font-size:11px;padding:3px 10px;margin:1px;">{{ a }}</span>{% endif %}
+            {% for r in rows %}
+            <tr>
+                <td><span class="{{ 'arch-off' if r.side == 'offensive' else 'arch-def' }}"
+                          data-bs-toggle="tooltip" data-bs-title="{{ arch_desc.get(r.name, '') }}"
+                          style="font-size:11px;padding:2px 8px">{{ r.name }}</span></td>
+                <td class="text-end fw-bold" style="color:{{ '#ef4444' if r.n_elite <= 2 else '#f59e0b' if r.n_elite <= 4 else '#10b981' }}">{{ r.n_elite }}</td>
+                <td class="text-end text-secondary">{{ r.n_solid }}</td>
+                <td class="text-end {{ 'text-warning' if r.dropoff >= 15 else 'text-secondary' }}">{{ r.dropoff }}</td>
+                <td style="font-size:11px;color:{{ '#ef4444' if 'Very' in r.signal else '#f59e0b' if r.signal == 'Scarce' else '#94a3b8' }}">{{ r.signal }}</td>
+                <td style="font-size:12px">
+                    {% for p in r.top %}
+                    <a href="/scouting?player_id={{ p.id }}&year={{ current_year }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
+                    <span class="text-secondary" style="font-size:10px">({{ p.fits[r.name] }}{% if p.get('sm_rank') %} · #{{ p.sm_rank }}{% endif %})</span>{{ ' · ' if not loop.last }}
                     {% endfor %}
-                    {% if not p.get('all_offensive', []) %}—{% endif %}
                 </td>
-                <td>
-                    {% for a in p.get('all_defensive', []) %}
-                        {% if a %}<span class="arch-def" style="font-size:11px;padding:3px 10px;margin:1px;">{{ a }}</span>{% endif %}
-                    {% endfor %}
-                    {% if not p.get('all_defensive', []) %}—{% endif %}
-                </td>
-                <td>{{ "%.1f"|format(p.ppg or 0) }}</td>
-                <td>{{ "%.1f"|format(p.rpg or 0) }}</td>
-                <td>{{ "%.1f"|format(p.apg or 0) }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
+    <div class="text-secondary" style="font-size:11px">Computed live from the measured archetype fits —
+    a player counts toward every role he grades elite/solid in, since that's how teams actually use him.
+    Full role leaderboards on the <a href="/archetypes?year={{ current_year }}">Archetypes</a> page.</div>
 </div>
-
-<!-- Charts -->
-<div class="section-hdr mt-4">Offensive Archetype Depth by Tier</div>
-<div id="depthChartOff"></div>
-
-<div class="section-hdr mt-4">Defensive Archetype Depth by Tier</div>
-<div id="depthChartDef"></div>
-
-<div class="section-hdr mt-4">Archetype Depth Table</div>
-<p class="text-secondary small">Players are counted for every archetype they qualify for. A versatile player may appear under 3+ archetypes.</p>
-<div class="table-responsive">
-    <table class="table table-scout table-sm">
-        <thead>
-            <tr><th>Type</th><th>Archetype</th><th>Total</th><th>Lottery</th><th>Late 1st</th><th>2nd Rd</th><th>Avg Score</th><th>Top Prospect</th><th>Depth</th></tr>
-        </thead>
-        <tbody>
-            {% set signals = {'Very Scarce':'🔴','Scarce':'🟠','Moderate':'🟡','Deep':'🟢'} %}
-            {% for d in scarcity.depth %}
-            <tr>
-                <td>
-                    {% if d.get('arch_side') == 'defensive' %}
-                        <span class="arch-def" style="font-size:10px;padding:2px 8px;">DEF</span>
-                    {% else %}
-                        <span class="arch-off" style="font-size:10px;padding:2px 8px;">OFF</span>
-                    {% endif %}
-                </td>
-                <td><strong>{{ d.archetype }}</strong></td>
-                <td>{{ d.total }}</td>
-                <td>{{ d.lottery }}</td>
-                <td>{{ d.late_1st }}</td>
-                <td>{{ d.second_rd }}</td>
-                <td>{{ d.avg_score }}</td>
-                <td>#{{ d.top_prospect_rank }} {{ d.top_prospect_name }}</td>
-                <td>{{ signals.get(d.depth_signal.split(' (')[0], '') }} {{ d.depth_signal }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
-
-<div class="section-hdr mt-4">Draft Score Distribution</div>
-<div id="boxChart"></div>
-
-<!-- Positional Gaps -->
-<div class="section-hdr mt-4">Positional Gaps</div>
-{% if scarcity.gaps %}
-<p class="text-secondary small">Position + archetype combos with 3 or fewer players in the top 200.</p>
-<div class="table-responsive">
-    <table class="table table-scout table-sm">
-        <thead><tr><th>Position</th><th>Archetype</th><th>Total</th><th>In Lottery</th><th>Best Rank</th><th>Alert</th></tr></thead>
-        <tbody>
-            {% for g in scarcity.gaps %}
-            <tr>
-                <td>{{ g.pos }}</td><td>{{ g.archetype }}</td><td>{{ g.total }}</td>
-                <td>{{ g.lottery }}</td><td>#{{ g.best_rank }}</td>
-                <td>{{ '🔴 Gap' if g.total == 1 else '🟠 Thin' }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
-{% else %}
-<div class="alert alert-success">No major positional gaps found.</div>
-{% endif %}
-
-<!-- Conference Production -->
-<div class="section-hdr mt-4">Conference Archetype Production</div>
-<div class="table-responsive">
-    <table class="table table-scout table-sm">
-        <thead><tr><th>Conference</th><th>Prospects</th><th>Top Archetypes</th><th>Top Prospect</th></tr></thead>
-        <tbody>
-            {% for c in scarcity.conferences|sort(attribute='prospects', reverse=true) %}
-            <tr>
-                <td>{{ c.conference }}</td><td>{{ c.prospects }}</td>
-                <td>{{ c.top_archetypes }}</td>
-                <td>#{{ c.top_prospect_rank }} {{ c.top_prospect_name }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
-{% endblock %}
-
-{% block scripts %}
-<script>
-const depthData = {{ scarcity.depth|tojson }};
-
-// Split into offensive and defensive
-const offData = depthData.filter(d => d.arch_side !== 'defensive');
-const defData = depthData.filter(d => d.arch_side === 'defensive');
-
-function makeDepthChart(divId, data, barColor) {
-    const archetypes = data.map(d => d.archetype);
-    const tier1 = data.map(d => d.tier_counts['1'] || 0);
-    const tier2 = data.map(d => d.tier_counts['2'] || 0);
-    const tier3 = data.map(d => d.tier_counts['3'] || 0);
-
-    Plotly.newPlot(divId, [
-        {name: 'Lottery', x: archetypes, y: tier1, type: 'bar', marker: {color: '#f59e0b'}},
-        {name: 'Late 1st', x: archetypes, y: tier2, type: 'bar', marker: {color: '#3b82f6'}},
-        {name: '2nd Round', x: archetypes, y: tier3, type: 'bar', marker: {color: '#6b7280'}},
-    ], {
-        barmode: 'stack',
-        paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
-        margin: {l: 40, r: 10, t: 10, b: 120},
-        height: 380,
-        legend: {orientation: 'h', y: -0.35, x: 0.5, xanchor: 'center', font: {color: '#94a3b8'}},
-        yaxis: {gridcolor: 'rgba(128,128,128,0.15)', title: '# of prospects', color: '#94a3b8'},
-        xaxis: {tickangle: -45, color: '#94a3b8'},
-        font: {color: '#94a3b8'},
-    }, {responsive: true, displayModeBar: false});
-}
-
-makeDepthChart('depthChartOff', offData);
-makeDepthChart('depthChartDef', defData);
-
-// Box plot (offensive only to keep it readable)
-const boxTraces = offData.filter(d => d.scores.length >= 3).map(d => ({
-    y: d.scores, name: d.archetype, type: 'box',
-    boxpoints: 'outliers', marker: {color: '#f59e0b'},
-}));
-Plotly.newPlot('boxChart', boxTraces, {
-    paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
-    margin: {l: 40, r: 10, t: 10, b: 100},
-    height: 350, showlegend: false,
-    yaxis: {gridcolor: 'rgba(128,128,128,0.15)', title: 'Draft Score', color: '#94a3b8'},
-    xaxis: {tickangle: -45, color: '#94a3b8'},
-    font: {color: '#94a3b8'},
-}, {responsive: true, displayModeBar: false});
-
-// Browse filters — now checks against comma-separated list of all archetypes
-const browseOff = document.getElementById('browseOff');
-const browseDef = document.getElementById('browseDef');
-const browseLimit = document.getElementById('browseLimit');
-const browseCount = document.getElementById('browseCount');
-const browseRows = document.querySelectorAll('#browseTable tbody tr');
-
-function applyBrowseFilters() {
-    const offVal = browseOff.value;
-    const defVal = browseDef.value;
-    const limit = parseInt(browseLimit.value);
-    let count = 0;
-    browseRows.forEach(row => {
-        const rank = parseInt(row.children[0].textContent);
-        const offArchs = (row.dataset.off || '').split(',');
-        const defArchs = (row.dataset.def || '').split(',');
-        let show = true;
-        if (rank > limit) show = false;
-        if (offVal !== 'All' && !offArchs.includes(offVal)) show = false;
-        if (defVal !== 'All' && !defArchs.includes(defVal)) show = false;
-        row.style.display = show ? '' : 'none';
-        if (show) count++;
-    });
-    browseCount.textContent = `${count} player${count !== 1 ? 's' : ''}`;
-}
-browseOff.addEventListener('change', applyBrowseFilters);
-browseDef.addEventListener('change', applyBrowseFilters);
-browseLimit.addEventListener('change', applyBrowseFilters);
-</script>
 {% endblock %}

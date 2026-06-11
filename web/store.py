@@ -176,6 +176,8 @@ def _get_all_years_data():
     for i, p in enumerate(combined):
         p["rank"] = i + 1
         # The template keys profiles by p["id"]; remap so it finds them.
+        # Keep the original id so Scout links can resolve the real player.
+        p["_orig_id"] = p["id"]
         p["id"] = p["_xkey"]
 
     return combined, profiles, "All Years"
@@ -329,11 +331,18 @@ def _stamp_model_rank(pool: list[dict]) -> None:
         p["sm_rank"] = i
 
 
-def get_stub(pid):
-    """Resolve a no-NCAA stub (negative id) from the current class pool, so
-    every listed prospect — international, G-League, injured — has a
-    scouting card built from whatever data we hold on them."""
-    pool, _, _ = board_filter(PLAYERS, CURRENT_SEASON_YEAR)
+def get_stub(pid, year=None):
+    """Resolve a no-NCAA stub (negative id) from a class pool, so every
+    listed prospect — international, G-League, injured — has a scouting
+    card built from whatever data we hold on them."""
+    year = year or CURRENT_SEASON_YEAR
+    if year == CURRENT_SEASON_YEAR:
+        players = PLAYERS
+    else:
+        players, _, _ = get_year_data(year)
+        if players is None:
+            return None
+    pool, _, _ = board_filter(players, year)
     for p in pool:
         if p.get("_intl_stub") and p["id"] == pid:
             return p

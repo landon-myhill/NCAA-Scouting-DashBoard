@@ -229,7 +229,8 @@
             {% endif %}
         </div>
         <div class="bb-stat">
-            <a href="/scouting?player_id={{ p.id }}" class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
+            <a href="/scouting?player_id={{ p._orig_id if p.get('_orig_id') is not none else p.id }}&year={{ p.get('_season_year', current_year) }}"
+               class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
         </div>
     </div>
     {% endfor %}

@@ -44,92 +44,38 @@
     </div>
 </form>
 
-{% if sel_off or sel_def %}
-<!-- Results -->
-<div class="section-hdr mt-4">
-    {{ results|length }} Prospect{{ 's' if results|length != 1 else '' }} Found
-    <span class="text-secondary fw-normal ms-2" style="font-size:11px">
-        Looking for: {{ (sel_off + sel_def)|join(', ') }}
-    </span>
+{% if sel %}
+<div class="section-hdr mt-3">Best fits for your needs ({{ results|length }} shown)</div>
+<div class="info-card">
+    <table class="table table-dark table-sm align-middle" style="font-size:13px">
+        <thead>
+            <tr class="text-secondary" style="font-size:11px">
+                <th style="width:34px">#</th>
+                <th>Player</th>
+                <th class="text-end" title="Average measured fit across your selected needs">Need fit</th>
+                {% for a in sel %}<th class="text-end">{{ a }}</th>{% endfor %}
+                <th class="text-end" title="Overall draft rank (strengths model)">Draft rk</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in results %}
+            <tr>
+                <td style="color:#475569">{{ loop.index }}</td>
+                <td><a href="/scouting?player_id={{ r.player.id }}" style="color:#e2e8f0;text-decoration:none">{{ r.player.name }}</a>
+                    <span class="text-secondary" style="font-size:11px">{{ r.player.pos }} · {{ r.player.school }}</span></td>
+                <td class="text-end fw-bold" style="color:{{ '#10b981' if r.fit_avg >= 80 else '#60a5fa' if r.fit_avg >= 55 else '#94a3b8' }}">{{ r.fit_avg }}</td>
+                {% for a in sel %}
+                {% set v = r.need_fits.get(a) %}
+                <td class="text-end" style="color:{{ '#10b981' if v is not none and v >= 80 else '#e2e8f0' if v is not none else '#475569' }}">{{ v if v is not none else 'n/a' }}</td>
+                {% endfor %}
+                <td class="text-end text-secondary">{{ '#' + r.player.sm_rank|string if r.player.get('sm_rank') else '—' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-secondary" style="font-size:11px">Fits are percentiles within this draft class. "n/a" = his position can't play that role (counts as 0 in the need fit).</div>
 </div>
-
-{% if not results %}
-<div class="alert alert-secondary">No prospects in the top 200 match those criteria.</div>
 {% else %}
-
-{% for r in results %}
-{% set p = r.player %}
-{% set prof = r.profile %}
-{% set tier = p.tier or 3 %}
-<div class="wl-card">
-    <div class="row align-items-start">
-        <div class="col-md-4">
-            <div class="d-flex align-items-center gap-2 mb-1">
-                <span class="rank-badge" style="font-size:14px;padding:4px 10px;min-width:auto">
-                    <span class="badge-sub">RANK</span>#{{ p.rank }}
-                </span>
-                <div>
-                    <div class="fw-bold" style="font-size:15px">{{ p.name }}</div>
-                    <div class="text-secondary small">
-                        {{ p.pos }} · {{ p.school }}{% if p.conference %} · {{ p.conference }}{% endif %}
-                    </div>
-                    <div class="text-secondary small">{{ p.year }} · {{ p.height }}</div>
-                </div>
-            </div>
-            <span class="tier-{{ tier }}" style="font-size:10px">{{ tier_labels.get(tier, '') }}</span>
-            <span class="text-secondary small ms-2">Score: {{ "%.1f"|format(p.draft_score or 0) }}</span>
-        </div>
-
-        <div class="col-md-5">
-            <!-- Archetype matches -->
-            <div class="mb-2">
-                {% for a in prof.get('all_offensive', []) %}
-                {% if a in sel_off %}
-                <span class="arch-off" style="font-size:11px;padding:3px 9px;box-shadow:0 0 8px rgba(245,158,11,0.4)">{{ a }}</span>
-                {% else %}
-                <span class="arch-off" style="font-size:10px;padding:2px 7px;opacity:0.4">{{ a }}</span>
-                {% endif %}
-                {% endfor %}
-                {% for a in prof.get('all_defensive', []) %}
-                {% if a in sel_def %}
-                <span class="arch-def" style="font-size:11px;padding:3px 9px;box-shadow:0 0 8px rgba(59,130,246,0.4)">{{ a }}</span>
-                {% else %}
-                <span class="arch-def" style="font-size:10px;padding:2px 7px;opacity:0.4">{{ a }}</span>
-                {% endif %}
-                {% endfor %}
-            </div>
-
-            <!-- Key stats -->
-            <div class="row g-1">
-                {% for lbl, key in [('PPG','PPG'),('RPG','RPG'),('APG','APG'),('FG%','FG%'),('3P%','3P%')] %}
-                <div class="col">
-                    <div class="stat-card" style="padding:6px 4px">
-                        <div class="stat-label" style="font-size:9px">{{ lbl }}</div>
-                        <div class="stat-value" style="font-size:14px">{{ fmt_stat(p.stats.get(key), key) }}</div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="col-md-3 text-end">
-            <div class="mb-2">
-                <span style="font-size:20px;font-weight:800;color:#34d399">{{ r.fit_pct }}%</span>
-                <span class="text-secondary small d-block">Fit ({{ r.total_matches }}/{{ r.total_needs }} needs)</span>
-            </div>
-            <a href="/scouting?player_id={{ p.id }}" class="btn btn-sm btn-outline-primary">Scout</a>
-            <a href="/compare?ids={{ p.id }}" class="btn btn-sm btn-outline-secondary">Compare</a>
-        </div>
-    </div>
-</div>
-{% endfor %}
-
-{% endif %}
-{% else %}
-<!-- Empty state -->
-<div class="text-center py-5">
-    <div style="font-size:48px;opacity:0.3">🎯</div>
-    <p class="text-secondary mt-2">Select the archetypes your team is missing, then hit <strong>Find Prospects</strong> to see who fits.</p>
-</div>
+<p class="text-secondary mt-3">Select the roles you need above — prospects will be ranked by measured fit for exactly those roles.</p>
 {% endif %}
 {% endblock %}

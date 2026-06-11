@@ -1,0 +1,441 @@
+{
+  "year": 2020,
+  "scraped_at": "2026-06-11T13:29:17.946878",
+  "players": [
+    {
+      "name": "LaMelo Ball",
+      "norm_name": "lamelo ball",
+      "pos": "G",
+      "born": "2001-08-22",
+      "age_label": "Age 24",
+      "team": "Hawks",
+      "league": "NBL",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 17.0,
+        "RPG": 7.6,
+        "APG": 6.8,
+        "SPG": 1.6,
+        "BPG": 0.1,
+        "MPG": 31.3,
+        "TOV": 2.5,
+        "3PA": 6.7,
+        "FGA": 16.7,
+        "FTA": 3.9,
+        "FG%": 37.5,
+        "3P%": 25.0,
+        "FT%": 72.3,
+        "G": 12
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Hawks",
+          "league": "NBL",
+          "g": "12",
+          "mp_per_g": "31.3",
+          "pts_per_g": "17.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/lamelo-ball-1.html"
+    },
+    {
+      "name": "Killian Hayes",
+      "norm_name": "killian hayes",
+      "pos": "G",
+      "born": "2001-07-27",
+      "age_label": "Age 24",
+      "team": "Ulm",
+      "league": "EuroCup",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 12.8,
+        "RPG": 2.3,
+        "APG": 6.2,
+        "SPG": 1.5,
+        "BPG": 0.2,
+        "MPG": 26.8,
+        "TOV": 3.3,
+        "3PA": 4.1,
+        "FGA": 10.1,
+        "FTA": 2.2,
+        "FG%": 45.5,
+        "3P%": 39.0,
+        "FT%": 90.9,
+        "G": 10
+      },
+      "all_rows": [
+        {
+          "season": "2017-18",
+          "team": "Cholet",
+          "league": "LNB Pro A",
+          "g": "9",
+          "mp_per_g": "9.1",
+          "pts_per_g": "2.2"
+        },
+        {
+          "season": "2018-19",
+          "team": "Cholet",
+          "league": "LNB Pro A",
+          "g": "33",
+          "mp_per_g": "19.8",
+          "pts_per_g": "7.2"
+        },
+        {
+          "season": "2019-20",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "10",
+          "mp_per_g": "26.8",
+          "pts_per_g": "12.8"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/killian-hayes-1.html"
+    },
+    {
+      "name": "Deni Avdija",
+      "norm_name": "deni avdija",
+      "pos": "G",
+      "born": "2001-01-03",
+      "age_label": "Age 25",
+      "team": "Maccabi Tel Aviv",
+      "league": "EuroLeague",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 4.0,
+        "RPG": 2.6,
+        "APG": 1.2,
+        "SPG": 0.4,
+        "BPG": 0.2,
+        "MPG": 14.3,
+        "TOV": 0.7,
+        "3PA": 1.8,
+        "FGA": 3.6,
+        "FTA": 0.7,
+        "FG%": 43.6,
+        "3P%": 27.7,
+        "FT%": 55.6,
+        "G": 26
+      },
+      "all_rows": [
+        {
+          "season": "2018-19",
+          "team": "Maccabi Tel Aviv",
+          "league": "EuroLeague",
+          "g": "8",
+          "mp_per_g": "6.4",
+          "pts_per_g": "3.9"
+        },
+        {
+          "season": "2019-20",
+          "team": "Maccabi Tel Aviv",
+          "league": "EuroLeague",
+          "g": "26",
+          "mp_per_g": "14.3",
+          "pts_per_g": "4.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/deni-avdija-1.html"
+    },
+    {
+      "name": "Aleksej Pokusevski",
+      "norm_name": "aleksej pokusevski",
+      "pos": "G",
+      "born": "2001-12-26",
+      "age_label": "Age 24",
+      "team": "Olympiacos",
+      "league": "EuroLeague",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 0.0,
+        "RPG": 0.0,
+        "APG": 0.0,
+        "SPG": 0.0,
+        "BPG": 0.0,
+        "MPG": 2.0,
+        "TOV": 1.0,
+        "3PA": 0.0,
+        "FGA": 1.0,
+        "FTA": 0.0,
+        "FG%": 0.0,
+        "3P%": null,
+        "FT%": null,
+        "G": 1
+      },
+      "all_rows": [
+        {
+          "season": "2018-19",
+          "team": "Olympiacos",
+          "league": "EuroLeague",
+          "g": "2",
+          "mp_per_g": "3.0",
+          "pts_per_g": "0.5"
+        },
+        {
+          "season": "2019-20",
+          "team": "Olympiacos",
+          "league": "EuroLeague",
+          "g": "1",
+          "mp_per_g": "2.0",
+          "pts_per_g": "0.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/aleksej-pokusevski-1.html"
+    },
+    {
+      "name": "Leandro Bolmaro",
+      "norm_name": "leandro bolmaro",
+      "pos": "F",
+      "born": "2000-09-11",
+      "age_label": "Age 25",
+      "team": "Argentina",
+      "league": "Tokyo 2020",
+      "season": "2020",
+      "stats": {
+        "PPG": 2.7,
+        "RPG": 0.3,
+        "APG": 0.3,
+        "SPG": 1.0,
+        "BPG": 0.0,
+        "MPG": 10.0,
+        "TOV": 0.7,
+        "3PA": 0.3,
+        "FGA": 2.7,
+        "FTA": 0.0,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": null,
+        "G": 3
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Barça",
+          "league": "EuroLeague",
+          "g": "6",
+          "mp_per_g": "9.2",
+          "pts_per_g": "1.8"
+        },
+        {
+          "season": "2019-20",
+          "team": "Barça",
+          "league": "Liga ACB",
+          "g": "7",
+          "mp_per_g": "13.0",
+          "pts_per_g": "4.4"
+        },
+        {
+          "season": "2020",
+          "team": "Argentina",
+          "league": "Tokyo 2020",
+          "g": "3",
+          "mp_per_g": "10.0",
+          "pts_per_g": "2.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/leandro-bolmaro-1.html"
+    },
+    {
+      "name": "R.J. Hampton",
+      "norm_name": "rj hampton",
+      "pos": "G",
+      "born": "2001-02-07",
+      "age_label": "Age 25",
+      "team": "Breakers",
+      "league": "NBL",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 8.8,
+        "RPG": 3.9,
+        "APG": 2.4,
+        "SPG": 1.1,
+        "BPG": 0.3,
+        "MPG": 20.6,
+        "TOV": 1.5,
+        "3PA": 2.9,
+        "FGA": 8.2,
+        "FTA": 1.9,
+        "FG%": 40.7,
+        "3P%": 29.5,
+        "FT%": 67.9,
+        "G": 15
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Breakers",
+          "league": "NBL",
+          "g": "15",
+          "mp_per_g": "20.6",
+          "pts_per_g": "8.8"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/rj-hampton-1.html"
+    },
+    {
+      "name": "Théo Maledon",
+      "norm_name": "theo maledon",
+      "pos": "G",
+      "born": "2001-06-12",
+      "age_label": "Age 25",
+      "team": "ASVEL",
+      "league": "EuroLeague",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 7.4,
+        "RPG": 1.8,
+        "APG": 3.1,
+        "SPG": 0.3,
+        "BPG": 0.1,
+        "MPG": 17.7,
+        "TOV": 1.9,
+        "3PA": 2.2,
+        "FGA": 5.7,
+        "FTA": 2.0,
+        "FG%": 45.6,
+        "3P%": 36.7,
+        "FT%": 68.9,
+        "G": 22
+      },
+      "all_rows": [
+        {
+          "season": "2017-18",
+          "team": "ASVEL",
+          "league": "EuroCup",
+          "g": "2",
+          "mp_per_g": "5.5",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2017-18",
+          "team": "ASVEL",
+          "league": "LNB Pro A",
+          "g": "9",
+          "mp_per_g": "3.6",
+          "pts_per_g": "0.6"
+        },
+        {
+          "season": "2018-19",
+          "team": "ASVEL",
+          "league": "EuroCup",
+          "g": "18",
+          "mp_per_g": "17.8",
+          "pts_per_g": "7.1"
+        },
+        {
+          "season": "2018-19",
+          "team": "ASVEL",
+          "league": "LNB Pro A",
+          "g": "33",
+          "mp_per_g": "17.8",
+          "pts_per_g": "7.4"
+        },
+        {
+          "season": "2019-20",
+          "team": "ASVEL",
+          "league": "EuroLeague",
+          "g": "22",
+          "mp_per_g": "17.7",
+          "pts_per_g": "7.4"
+        },
+        {
+          "season": "2019-20",
+          "team": "ASVEL",
+          "league": "LNB Pro A",
+          "g": "20",
+          "mp_per_g": "15.6",
+          "pts_per_g": "6.5"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/theo-maledon-1.html"
+    },
+    {
+      "name": "Vít Krejčí",
+      "norm_name": "vit krejci",
+      "pos": "G",
+      "born": "2000-06-19",
+      "age_label": "Age 25",
+      "team": "Zaragoza",
+      "league": "Liga ACB",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 3.2,
+        "RPG": 1.1,
+        "APG": 0.4,
+        "SPG": 0.2,
+        "BPG": 0.1,
+        "MPG": 7.6,
+        "TOV": 0.6,
+        "3PA": 0.8,
+        "FGA": 2.0,
+        "FTA": 0.7,
+        "FG%": 61.1,
+        "3P%": 33.3,
+        "FT%": 69.2,
+        "G": 18
+      },
+      "all_rows": [
+        {
+          "season": "2016-17",
+          "team": "Zaragoza",
+          "league": "Liga ACB",
+          "g": "1",
+          "mp_per_g": "0.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2019-20",
+          "team": "Zaragoza",
+          "league": "Liga ACB",
+          "g": "18",
+          "mp_per_g": "7.6",
+          "pts_per_g": "3.2"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/vit-krejci-1.html"
+    },
+    {
+      "name": "Marko Simonovic",
+      "norm_name": "marko simonovic",
+      "pos": "C",
+      "born": "1999-10-15",
+      "age_label": "Age 26",
+      "team": "Olimpija",
+      "league": "EuroCup",
+      "season": "2019-20",
+      "stats": {
+        "PPG": 10.2,
+        "RPG": 3.9,
+        "APG": 1.1,
+        "SPG": 0.8,
+        "BPG": 0.3,
+        "MPG": 22.3,
+        "TOV": 0.9,
+        "3PA": 3.6,
+        "FGA": 6.9,
+        "FTA": 2.6,
+        "FG%": 44.9,
+        "3P%": 50.0,
+        "FT%": 84.6,
+        "G": 10
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Olimpija",
+          "league": "EuroCup",
+          "g": "10",
+          "mp_per_g": "22.3",
+          "pts_per_g": "10.2"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/marko-simonovic-2.html"
+    }
+  ],
+  "missed": [
+    "James Wiseman",
+    "Yam Madar",
+    "KJ Martin",
+    "Jay Scrubb"
+  ]
+}

@@ -23,11 +23,21 @@ def index():
 @views_bp.route("/scouting")
 def scouting():
     pid = request.args.get("player_id", type=int)
-    if pid and pid in store.PLAYERS_BY_ID:
+    year_q = request.args.get("year", type=int)
+    is_hist = year_q and year_q != store.CURRENT_SEASON_YEAR
+    player = None
+    if pid and is_hist:
+        hist_players, hist_profiles, _ = store.get_year_data(year_q)
+        if hist_players is not None:
+            if pid < 0:
+                player = store.get_stub(pid, year_q)
+            else:
+                player = next((p for p in hist_players if p["id"] == pid), None)
+    elif pid and pid in store.PLAYERS_BY_ID:
         player = store.PLAYERS_BY_ID[pid]
     elif pid and pid < 0:  # no-NCAA stub (international / G-League / injured)
-        player = store.get_stub(pid) or (store.PLAYERS[0] if store.PLAYERS else None)
-    else:
+        player = store.get_stub(pid)
+    if player is None:
         player = store.PLAYERS[0] if store.PLAYERS else None
 
     if not player:
@@ -216,60 +226,88 @@ def watchlist():
 
 @views_bp.route("/scarcity")
 def scarcity():
+    """Class depth report, computed live from the fit engine: how many
+    players in this class can actually play each role, and how steep the
+    drop-off is after the top guys."""
+    year_q = request.args.get("year", default="")
+    year = int(year_q) if year_q.isdigit() else store.CURRENT_SEASON_YEAR
+    players, _, season_label = store.get_year_data(year)
+    if players is None:
+        year = store.CURRENT_SEASON_YEAR
+        players, _, season_label = store.get_year_data(year)
+    store.ensure_fits(year, players)
+    pool, _, _ = store.board_filter(players, year, with_stubs=False)
+
+    rows = []
+    for name in ALL_RECIPES:
+        members = sorted((p for p in pool if name in (p.get("fits") or {})),
+                         key=lambda p: -p["fits"][name])
+        if not members:
+            continue
+        elite = [p for p in members if p["fits"][name] >= 80]
+        solid = [p for p in members if 55 <= p["fits"][name] < 80]
+        # Drop-off: fit gap between the #1 and #4 player in the role
+        dropoff = (members[0]["fits"][name] - members[3]["fits"][name]
+                   if len(members) >= 4 else 0)
+        if len(elite) <= 2:
+            signal = "Very scarce"
+        elif len(elite) <= 4:
+            signal = "Scarce"
+        elif len(elite) <= 8:
+            signal = "Moderate"
+        else:
+            signal = "Deep"
+        rows.append({
+            "name": name,
+            "side": "offensive" if name in OFFENSE_RECIPES else "defensive",
+            "n_elite": len(elite), "n_solid": len(solid),
+            "top": members[:3], "dropoff": dropoff, "signal": signal,
+        })
+    rows.sort(key=lambda r: (r["n_elite"], r["n_solid"]))
+
     return render_template("scarcity.html",
-        scarcity=store.SCARCITY, arch_desc=ARCHETYPE_DESCRIPTIONS,
-        tier_labels=TIER_LABELS,
+        rows=rows, arch_desc=ARCHETYPE_DESCRIPTIONS,
+        available_years=store.available_years(), current_year=year,
+        season_label=season_label,
     )
 
 
 @views_bp.route("/needs")
 def needs():
-    # Archetypes that exist in the ELIGIBLE class pool (v2 labels live there)
+    """Fit-based: pick the roles your team is missing, get the class ranked
+    by MEASURED fit for exactly those roles (mean of the selected archetype
+    fit percentiles; position-ineligible counts as 0 for that need)."""
+    from model.strengths import DEFENSE_RECIPES
     pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
                                     with_stubs=False)
-    top200 = sorted(pool, key=lambda p: p.get("sm_rank") or 999)[:200]
-    off_archetypes = sorted(set(
-        a for p in top200
-        for a in store.PROFILES.get(p["id"], {}).get("all_offensive", []) if a
-    ))
-    def_archetypes = sorted(set(
-        a for p in top200
-        for a in store.PROFILES.get(p["id"], {}).get("all_defensive", []) if a
-    ))
+    off_archetypes = [n for n in OFFENSE_RECIPES]
+    def_archetypes = [n for n in DEFENSE_RECIPES]
 
     sel_off = request.args.getlist("off")
     sel_def = request.args.getlist("def")
+    sel = [a for a in sel_off + sel_def if a in ALL_RECIPES]
 
     results = []
-    if sel_off or sel_def:
-        for p in top200:
-            prof = store.PROFILES.get(p["id"], {})
-            p_off = set(prof.get("all_offensive", []))
-            p_def = set(prof.get("all_defensive", []))
-
-            off_matches = [a for a in sel_off if a in p_off]
-            def_matches = [a for a in sel_def if a in p_def]
-            total_matches = len(off_matches) + len(def_matches)
-            total_needs = len(sel_off) + len(sel_def)
-
-            if total_matches > 0:
-                results.append({
-                    "player": p,
-                    "profile": prof,
-                    "off_matches": off_matches,
-                    "def_matches": def_matches,
-                    "total_matches": total_matches,
-                    "total_needs": total_needs,
-                    "fit_pct": round(total_matches / total_needs * 100) if total_needs else 0,
-                })
-
-        results.sort(key=lambda r: (-r["total_matches"], -r["player"].get("draft_score", 0)))
+    if sel:
+        for p in pool:
+            fits = p.get("fits") or {}
+            need_fits = {a: fits.get(a) for a in sel}
+            have = [v for v in need_fits.values() if v is not None]
+            if not have:
+                continue
+            fit_avg = sum(v or 0 for v in need_fits.values()) / len(sel)
+            results.append({
+                "player": p,
+                "need_fits": need_fits,
+                "fit_avg": round(fit_avg),
+            })
+        results.sort(key=lambda r: -r["fit_avg"])
+        results = results[:50]
 
     return render_template("needs.html",
         off_archetypes=off_archetypes, def_archetypes=def_archetypes,
-        sel_off=sel_off, sel_def=sel_def,
-        results=results, profiles=store.PROFILES,
-        tier_labels=TIER_LABELS, fmt_stat=fmt_stat,
+        sel_off=sel_off, sel_def=sel_def, sel=sel,
+        results=results, fmt_stat=fmt_stat,
         arch_desc=ARCHETYPE_DESCRIPTIONS,
     )
 

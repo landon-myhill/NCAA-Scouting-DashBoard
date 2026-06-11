@@ -79,19 +79,58 @@ def _get(url: str, **kw) -> requests.Response:
 
 def _find_player_page(name: str):
     """Search bbref; return (soup, url) of the international/G-League player
-    page, or (None, None). Verifies the surname so we never grab a stranger."""
+    page, or (None, None). Verifies the surname so we never grab a stranger.
+
+    Players who later made the NBA (Wembanyama, Scoot, the Thompsons) redirect
+    to their NBA page, hiding their pre-draft pages — so we also try the
+    deterministic fallbacks: /international/players/<kebab-name>-1.html and
+    /gleague/players/<x>/<nba-slug>d.html."""
     r = _get(f"{BASE}/search/", params={"search": name})
     if "/international/players/" in r.url or "/gleague/players/" in r.url:
-        return BeautifulSoup(r.text, "html.parser"), r.url
-    # Results page: take the first international/G-League hit
+        return [(BeautifulSoup(r.text, "html.parser"), r.url)]
+
+    candidates = []
+    # Results page: international/G-League hits
     links = re.findall(r'href="(/(?:international|gleague)/players/[^"]+\.html)"', r.text)
     want_last = normalize_name(name).split()[-1]
-    for href in links:
-        if want_last in href.replace("-", " "):
-            time.sleep(DELAY)
+    candidates += [h for h in links if want_last in h.replace("-", " ")]
+    # NBA-page redirect (or NBA hits in results): derive pre-draft page URLs
+    nba_slugs = re.findall(r"/players/([a-z])/(\w+)\.html", r.url) or \
+                re.findall(r'href="/players/([a-z])/(\w+)\.html"', r.text)
+    if nba_slugs:
+        x, slug = nba_slugs[0]
+        if want_last[:5] in slug:
+            candidates.append(f"/gleague/players/{x}/{slug}d.html")
+    kebab = "-".join(normalize_name(name).split())
+    candidates.append(f"/international/players/{kebab}-1.html")
+
+    seen, pages = set(), []
+    for href in candidates:
+        if href in seen:
+            continue
+        seen.add(href)
+        time.sleep(DELAY)
+        try:
             r2 = _get(BASE + href)
-            return BeautifulSoup(r2.text, "html.parser"), r2.url
-    return None, None
+        except Exception:
+            continue
+        pages.append((BeautifulSoup(r2.text, "html.parser"), r2.url))
+    return pages
+
+
+def find_best_record(name: str, draft_year: int):
+    """Try every candidate page; return the first record with a real
+    pre-draft season (>=3 games)."""
+    pages = _find_player_page(name)
+    if pages and not isinstance(pages, list):  # direct redirect
+        pages = [pages]
+    best = None
+    for soup, url in pages or []:
+        rec = _parse_player(soup, url, name, draft_year)
+        if rec and (rec["stats"].get("G") or 0) >= 3:
+            return rec
+        best = best or rec
+    return best
 
 
 def _all_tables(soup: BeautifulSoup):
@@ -101,7 +140,8 @@ def _all_tables(soup: BeautifulSoup):
     return tables
 
 
-def _parse_player(soup: BeautifulSoup, url: str, name: str) -> dict | None:
+def _parse_player(soup: BeautifulSoup, url: str, name: str,
+                  draft_year: int | None = None) -> dict | None:
     meta = soup.find("div", id="meta")
     # bbref uses non-breaking spaces in the bio line — normalize them first
     meta_text = meta.get_text(" ", strip=True).replace("\xa0", " ") if meta else ""
@@ -118,12 +158,17 @@ def _parse_player(soup: BeautifulSoup, url: str, name: str) -> dict | None:
     if m:
         born = datetime.strptime(re.sub(r"\s+", " ", m.group(1)), "%B %d, %Y").date().isoformat()
 
-    # Regular-season per-game table (the '_p' variant is playoffs)
+    # Regular-season per-game table (the '_p'/'_post' variants are playoffs).
+    # Intl pages use 'player-stats-per_game-league-'; G-League pages use
+    # NBA-style ids — accept any per-game table with the season/points cols.
     table = None
     for t in _all_tables(soup):
-        if (t.get("id") or "").startswith("player-stats-per_game") and not (t.get("id") or "").endswith("_p"):
-            table = t
-            break
+        tid = t.get("id") or ""
+        if "per_game" in tid and not tid.endswith(("_p", "_post")):
+            head = {th.get("data-stat") for th in (t.find("thead") or t).find_all("th")}
+            if "pts_per_g" in head and ("season" in head or "year_id" in head):
+                table = t
+                break
     if table is None:
         return None
     rows = []
@@ -133,6 +178,19 @@ def _parse_player(soup: BeautifulSoup, url: str, name: str) -> dict | None:
             rows.append(row)
     if not rows:
         return None
+
+    def _end_year(season: str):
+        m = re.match(r"(\d{4})(?:-(\d{2}))?", season)
+        if not m:
+            return None
+        return int(m.group(1)[:2] + m.group(2)) if m.group(2) else int(m.group(1))
+
+    # PRE-DRAFT seasons only: NBA players' G-League pages include post-draft
+    # assignment stints (Leonard Miller showed a 2025-26 row on his 2023 card)
+    if draft_year:
+        rows = [r for r in rows if (_end_year(r["season"]) or 0) <= draft_year]
+        if not rows:
+            return None  # only post-draft stints here — honest absence beats wrong stats
     latest = max(r["season"] for r in rows)
     season_rows = [r for r in rows if r["season"] == latest]
     # Primary row = where he actually played (most total minutes)
@@ -153,8 +211,8 @@ def _parse_player(soup: BeautifulSoup, url: str, name: str) -> dict | None:
         "pos": pos,
         "born": born,
         "age_label": age_label,
-        "team": primary.get("team"),
-        "league": primary.get("league"),
+        "team": primary.get("team") or primary.get("team_id"),
+        "league": primary.get("league") or primary.get("lg_id"),
         "season": latest,
         "stats": stats,
         "all_rows": [{k: r.get(k) for k in ("season", "team", "league", "g", "mp_per_g", "pts_per_g")}
@@ -176,8 +234,7 @@ def main():
     for i, (name, club) in enumerate(targets, 1):
         print(f"  [{i}/{len(targets)}] {name} ({club or '?'}) ... ", end="", flush=True)
         try:
-            soup, url = _find_player_page(name)
-            rec = _parse_player(soup, url, name) if soup else None
+            rec = find_best_record(name, year)
             if rec:
                 s = rec["stats"]
                 print(f"{rec['season']} {rec['team']} ({rec['league']}): "
