@@ -1,63 +1,93 @@
 #!/usr/bin/env python3
 """
-analytics.strengths_model — candidate ranking built from the measured
-strengths, with explicit AGE and HEIGHT adjusters.
+analytics.strengths_model — the strengths-based ranking, hardened.
 
-Per the project owner's design:
-  - features = the 10 class-relative strength percentiles (model/strengths.py)
-    plus an age factor (class-year ordinal) and absolute height — the
-    "age +/-" and "height +/-" are LEARNED coefficients, printed openly,
-    not hand-asserted.
-  - training population = the ELIGIBLE classes (drafted + undrafted who left
-    college; returners excluded) with position-relative NBA value as target.
-  - honesty guard = leave-one-year-out CV against the current draft_score on
-    the SAME rows. Ship only on held-out merit (or as an ensemble member).
+Three layers of robustness on top of the original single ridge fit:
+
+  1. FEATURE SELECTION BY HELD-OUT MERIT — candidate feature sets (strengths
+     only; + archetype fits; + age-interaction terms) and ridge lambdas are
+     compared on leave-one-year-out CV; the winner is whatever predicts
+     UNSEEN draft classes best. (Selection uses the same 4 folds it reports,
+     so the headline number is mildly optimistic — noted, not hidden.)
+  2. BOOTSTRAP ENSEMBLE — the shipped model is the average of B=300 ridge
+     fits on resampled training sets. No handful of players can swing the
+     board; averaging linear models = averaging coefficients, so the app
+     still gets one simple coefficient vector.
+  3. UNCERTAINTY BANDS — each current-class player's rank is computed under
+     every bootstrap model; the 5th-95th percentile rank range ships with
+     the rank. The board can say "#3 (2-6)" instead of pretending precision.
+
+Features: 10 class-relative strengths, age (class-year ordinal), height,
+optionally the 16 archetype fits and age x skill interactions. Age/height
+adjusters are LEARNED, printed openly.
+
+Training population: the ELIGIBLE 2020-23 classes (drafted + undrafted who
+left college; returners excluded), target = position-relative NBA value.
 
 Usage:
-    python -m analytics.strengths_model            # validate + show 2026 board
+    python -m analytics.strengths_model            # select + validate + show
+    python -m analytics.strengths_model --save     # ...and persist for the app
 """
 
+import json
 import sys
 
 import numpy as np
 
 from analytics.backtest import MATURE_YEARS, attach_value_target, load_matched, spearman
+from core.config import DATASETS_DIR
 from core.numeric import height_inches
 from model.archetypes import draft_score
-from model.strengths import STRENGTH_KEYS, compute_strengths
+from model.strengths import ALL_RECIPES, STRENGTH_KEYS, compute_fits, compute_strengths
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 AGE_ORD = {"Freshman": 0, "Sophomore": 1, "Junior": 2, "Senior": 3,
            "Graduate": 4, "5th Year": 4}
-FEATURES = list(STRENGTH_KEYS) + ["age_ord", "height_in"]
-LAMBDA = 60.0
+FIT_KEYS = list(ALL_RECIPES)
+INTERACTIONS = ["shooting", "scoring", "playmaking", "rim_protection"]
+
+BASE = list(STRENGTH_KEYS) + ["age_ord", "height_in"]
+FEATURE_SETS = {
+    "strengths":        BASE,
+    "strengths+fits":   BASE + [f"fit:{k}" for k in FIT_KEYS],
+    "strengths+inter":  BASE + [f"age_x_{k}" for k in INTERACTIONS],
+    "full":             BASE + [f"fit:{k}" for k in FIT_KEYS]
+                             + [f"age_x_{k}" for k in INTERACTIONS],
+}
+LAMBDAS = (20.0, 60.0, 150.0)
+B_BOOT = 300
+SEED = 7  # fixed: reproducible boards
 
 
-def _stamp_class_strengths(rows) -> None:
-    """Class-relative strengths for each training class's ELIGIBLE pool."""
-    for y in sorted({r["year"] for r in rows}):
-        recs = [r["college_record"] for r in rows if r["year"] == y]
-        compute_strengths(recs, reference=recs)
-
-
-def featurize(p: dict) -> list[float]:
+def featurize(p: dict, features) -> list[float]:
     s = p.get("strengths") or {}
-    row = [s.get(k) if s.get(k) is not None else np.nan for k in STRENGTH_KEYS]
-    row.append(AGE_ORD.get(p.get("year", ""), 2))
+    fits = p.get("fits") or {}
+    age = AGE_ORD.get(p.get("year", ""), 2)
     combine = p.get("combine") or {}
     ht = combine.get("height_w_shoes_in") or height_inches(p.get("height", ""))
-    row.append(ht if ht else np.nan)
+    row = []
+    for f in features:
+        if f == "age_ord":
+            row.append(age)
+        elif f == "height_in":
+            row.append(ht if ht else np.nan)
+        elif f.startswith("fit:"):
+            row.append(fits.get(f[4:], np.nan))
+        elif f.startswith("age_x_"):
+            v = s.get(f[6:])
+            row.append(age * v if v is not None else np.nan)
+        else:
+            row.append(s.get(f) if s.get(f) is not None else np.nan)
     return row
 
 
-def _design(records):
-    X = np.array([featurize(r) for r in records], float)
-    return X
+def _design(records, features):
+    return np.array([featurize(r, features) for r in records], float)
 
 
-def _fit_ridge(X, y, lam=LAMBDA):
+def _fit_ridge(X, y, lam):
     med = np.nanmedian(X, axis=0)
     idx = np.where(np.isnan(X))
     X = X.copy(); X[idx] = np.take(med, idx[1])
@@ -68,98 +98,139 @@ def _fit_ridge(X, y, lam=LAMBDA):
     return {"coef": coef, "mu": mu, "sd": sd, "med": med, "y0": float(y.mean())}
 
 
-def _predict(model, X):
+def _predict(m, X):
     X = X.copy()
     idx = np.where(np.isnan(X))
-    X[idx] = np.take(model["med"], idx[1])
-    return (X - model["mu"]) / model["sd"] @ model["coef"] + model["y0"]
+    X[idx] = np.take(np.asarray(m["med"]), idx[1])
+    return (X - np.asarray(m["mu"])) / np.asarray(m["sd"]) @ np.asarray(m["coef"]) + m["y0"]
 
 
-def train_validate():
-    rows = load_matched(include_undrafted=True)
-    attach_value_target(rows)
-    rows = [r for r in rows if r.get("target") is not None]
-    _stamp_class_strengths(rows)
-    recs = [r["college_record"] for r in rows]
-    X = _design(recs)
-    y = np.array([r["target"] for r in rows], float)
-    years = np.array([r["year"] for r in rows])
-    n_ud = sum(1 for r in rows if r["pick"] is None)
-    print(f"Training population: {len(rows)} eligible players "
-          f"({len(rows) - n_ud} drafted + {n_ud} undrafted), classes {sorted(set(years))}")
-
-    print("\nLeave-one-year-out held-out Spearman vs NBA value (same rows):")
-    print(f"  {'year':>6}  {'strengths-model':>15}  {'draft_score':>11}")
-    sm, ds = [], []
+def _loyo(X, y, years, lam):
+    rhos = []
     for hold in MATURE_YEARS:
         tr, te = years != hold, years == hold
         if te.sum() < 5:
             continue
-        m = _fit_ridge(X[tr], y[tr])
-        pred = _predict(m, X[te])
-        rho_m = spearman(list(pred), list(y[te]))
-        rho_d = spearman([draft_score(r) for r, t in zip(recs, te) if t],
-                         list(y[te]))
-        sm.append(rho_m); ds.append(rho_d)
-        print(f"  {hold:>6}  {rho_m:>+15.3f}  {rho_d:>+11.3f}")
-    print(f"  {'MEAN':>6}  {np.mean(sm):>+15.3f}  {np.mean(ds):>+11.3f}")
-
-    final = _fit_ridge(X, y)
-    print("\nLearned adjusters (standardized ridge coefficients):")
-    order = np.argsort(-np.abs(final["coef"]))
-    for i in order:
-        print(f"    {FEATURES[i]:<18} {final['coef'][i]:>+8.4f}")
-    return final, (float(np.mean(sm)), float(np.mean(ds)))
+        m = _fit_ridge(X[tr], y[tr], lam)
+        rhos.append(spearman(list(_predict(m, X[te])), list(y[te])))
+    return float(np.mean(rhos)), rhos
 
 
-def score_current(final):
-    """Score the current curated class with the trained model."""
-    from web import store  # strengths already stamped at store import
-    pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
-                                    with_stubs=False)
-    pool = sorted(pool, key=lambda p: p["rank"])
-    X = _design(pool)
-    pred = _predict(final, X)
-    ranked = sorted(zip(pool, pred), key=lambda t: -t[1])
-    print(f"\n2026 class under the strengths model (n={len(pool)}):")
-    print(f"  {'#':>3} {'player':<24} {'pos':<3} {'age':<10} "
-          f"{'model':>6} {'board':>6} {'mock':>5}")
-    for i, (p, v) in enumerate(ranked[:25], 1):
-        print(f"  {i:>3} {p['name']:<24} {p['pos']:<3} {p.get('year','?'):<10} "
-              f"{v:>6.3f} {'#' + str(p['rank']):>6} "
-              f"{'#' + str(p.get('_mock_rank', '—')):>5}")
-    return ranked
+def _bagged_fit(X, y, lam, b=B_BOOT, seed=SEED):
+    """Bootstrap ensemble. Returns (mean-coef model, list of B models)."""
+    rng = np.random.default_rng(seed)
+    n = len(y)
+    models = []
+    for _ in range(b):
+        idx = rng.integers(0, n, n)
+        models.append(_fit_ridge(X[idx], y[idx], lam))
+    mean = {
+        "coef": np.mean([m["coef"] for m in models], axis=0),
+        "mu": np.mean([m["mu"] for m in models], axis=0),
+        "sd": np.mean([m["sd"] for m in models], axis=0),
+        "med": np.nanmedian(X, axis=0),
+        "y0": float(np.mean([m["y0"] for m in models])),
+    }
+    return mean, models
 
 
-def save_model(final, validation) -> None:
-    """Persist for the web app (datasets/strengths_model.json) — the app only
-    predicts; training/validation stays here in analytics."""
-    import json
-    from core.config import DATASETS_DIR
-    out = DATASETS_DIR / "strengths_model.json"
-    out.write_text(json.dumps({
-        "features": FEATURES,
-        "coef": [float(c) for c in final["coef"]],
-        "mu": [float(v) for v in final["mu"]],
-        "sd": [float(v) for v in final["sd"]],
-        "med": [float(v) for v in final["med"]],
-        "y0": final["y0"],
-        "validation": validation,
-    }, indent=2), encoding="utf-8")
-    print(f"\nSaved model -> {out.name}")
+def build_training():
+    rows = load_matched(include_undrafted=True)
+    attach_value_target(rows)
+    rows = [r for r in rows if r.get("target") is not None]
+    for yr in sorted({r["year"] for r in rows}):
+        recs = [r["college_record"] for r in rows if r["year"] == yr]
+        compute_strengths(recs, reference=recs)
+        compute_fits(recs, reference=recs)
+    recs = [r["college_record"] for r in rows]
+    y = np.array([r["target"] for r in rows], float)
+    years = np.array([r["year"] for r in rows])
+    n_ud = sum(1 for r in rows if r["pick"] is None)
+    print(f"Training population: {len(rows)} eligible players "
+          f"({len(rows) - n_ud} drafted + {n_ud} undrafted), classes {sorted(set(int(v) for v in years))}")
+    return recs, y, years
+
+
+def select_and_validate(recs, y, years):
+    print("\nLeave-one-year-out mean Spearman by config (selection is on these "
+          "same folds — mildly optimistic):")
+    best = None
+    for name, feats in FEATURE_SETS.items():
+        X = _design(recs, feats)
+        for lam in LAMBDAS:
+            mean_rho, per = _loyo(X, y, years, lam)
+            marker = ""
+            if best is None or mean_rho > best[0]:
+                best = (mean_rho, name, lam, per)
+                marker = "  <- best so far"
+            print(f"  {name:<16} lam={lam:>5.0f}  {mean_rho:+.3f}{marker}")
+    mean_rho, name, lam, per = best
+    ds_rho = float(np.mean([
+        spearman([draft_score(r) for r, t in zip(recs, years == hold) if t],
+                 list(y[years == hold]))
+        for hold in MATURE_YEARS if (years == hold).sum() >= 5
+    ]))
+    print(f"\nSelected: {name} (lambda {lam:.0f}) — held-out {mean_rho:+.3f} "
+          f"per-year {[round(r, 3) for r in per]}")
+    print(f"Baseline draft_score on the same rows: {ds_rho:+.3f}")
+    return name, lam, mean_rho, ds_rho
 
 
 def main():
-    final, (rho_model, rho_score) = train_validate()
-    score_current(final)
-    verdict = ("strengths model WINS held-out — candidate to lead the ranking"
-               if rho_model > rho_score + 0.02 else
-               "strengths model TIES the formula — ensemble both" if rho_model > rho_score - 0.02
-               else "strengths model LOSES held-out — keep as descriptive layer")
-    print(f"\nVerdict: {verdict} ({rho_model:+.3f} vs {rho_score:+.3f}).")
+    recs, y, years = build_training()
+    name, lam, rho_model, rho_score = select_and_validate(recs, y, years)
+    feats = FEATURE_SETS[name]
+    X = _design(recs, feats)
+    mean_model, models = _bagged_fit(X, y, lam)
+
+    print(f"\nTop learned coefficients (bootstrap-averaged, {B_BOOT} fits):")
+    order = np.argsort(-np.abs(mean_model["coef"]))[:12]
+    for i in order:
+        spread = np.std([m["coef"][i] for m in models])
+        print(f"    {feats[i]:<22} {mean_model['coef'][i]:>+8.4f}  (±{spread:.4f})")
+
+    # Current class: rank under every bootstrap model -> bands
+    from web import store
+    pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
+                                    with_stubs=False)
+    pool = sorted(pool, key=lambda p: p["rank"])
+    Xc = _design(pool, feats)
+    pred = _predict(mean_model, Xc)
+    rank_mat = np.zeros((len(models), len(pool)), int)
+    for bi, m in enumerate(models):
+        order_b = np.argsort(-_predict(m, Xc))
+        ranks = np.empty(len(pool), int)
+        ranks[order_b] = np.arange(1, len(pool) + 1)
+        rank_mat[bi] = ranks
+    lo = np.percentile(rank_mat, 5, axis=0).astype(int)
+    hi = np.percentile(rank_mat, 95, axis=0).astype(int)
+
+    ranked = sorted(zip(pool, pred, lo, hi), key=lambda t: -t[1])
+    print(f"\n2026 class — bagged strengths model (rank with 90% band):")
+    for i, (p, v, l, h) in enumerate(ranked[:20], 1):
+        print(f"  {i:>3} ({l:>2}-{h:<2}) {p['name']:<24} {p['pos']} {p.get('year', '?'):<10} "
+              f"model {v * 100:.0f}  mock #{p.get('_mock_rank', '—')}")
+
+    print(f"\nVerdict: bagged '{name}' ships at held-out {rho_model:+.3f} "
+          f"(draft_score baseline {rho_score:+.3f}).")
+
     if "--save" in sys.argv:
-        save_model(final, {"loyo_spearman_model": rho_model,
-                           "loyo_spearman_draft_score": rho_score})
+        bands = {str(p["id"]): [int(l), int(h)]
+                 for p, _, l, h in ranked}
+        out = DATASETS_DIR / "strengths_model.json"
+        out.write_text(json.dumps({
+            "config": name, "lambda": lam, "bootstraps": B_BOOT,
+            "features": feats,
+            "coef": [float(c) for c in mean_model["coef"]],
+            "mu": [float(v) for v in mean_model["mu"]],
+            "sd": [float(v) for v in mean_model["sd"]],
+            "med": [float(v) for v in mean_model["med"]],
+            "y0": mean_model["y0"],
+            "rank_bands": bands,
+            "validation": {"loyo_spearman_model": rho_model,
+                           "loyo_spearman_draft_score": rho_score},
+        }, indent=2), encoding="utf-8")
+        print(f"Saved -> {out.name}")
 
 
 if __name__ == "__main__":

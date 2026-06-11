@@ -130,15 +130,12 @@
     <div class="align-self-end">
         <label class="form-label small text-secondary mb-0 d-block">Rank by</label>
         <div class="btn-group btn-group-sm" role="group">
-            <a href="/bigboard?year={{ current_year }}&sort=score"
-               class="btn btn-outline-secondary {% if sort_mode == 'score' %}active{% endif %}"
-               title="The full draft score: college production scaled by conference / class-year / position">Adjusted</a>
-            <a href="/bigboard?year={{ current_year }}&sort=raw"
-               class="btn btn-outline-secondary {% if sort_mode == 'raw' %}active{% endif %}"
-               title="Raw college production only — same stat components, no conference/age/position adjustments, no HS recruit bonus">Raw college</a>
             <a href="/bigboard?year={{ current_year }}&sort=model"
                class="btn btn-outline-secondary {% if sort_mode == 'model' %}active{% endif %}"
-               title="Strengths model: measured strengths + learned age/height adjusters, trained on the eligible 2020-23 classes vs real NBA value (held-out +0.60 vs the formula's +0.22)">Strengths model</a>
+               title="The ranking — strengths model: measured strengths + learned age/height adjusters, trained on the eligible 2020-23 classes vs real NBA value">Strengths model</a>
+            <a href="/bigboard?year={{ current_year }}&sort=raw"
+               class="btn btn-outline-secondary {% if sort_mode == 'raw' %}active{% endif %}"
+               title="Raw college production — un-adjusted stat output, for transparency">Raw college</a>
         </div>
     </div>
     <div class="align-self-end">
@@ -188,7 +185,7 @@
             {% endfor %}
         </div>
         <div class="bb-stat">{{ fmt_stat(p.stats.get('PPG'), 'PPG') }} <span class="text-secondary" style="font-size:10px">PPG</span></div>
-        <div class="bb-stat" style="line-height:1.3">{% if p.get('_intl_stub') %}— <span class="text-secondary" style="font-size:10px" title="No NCAA stats — the draft score formula only applies to NCAA players">Score</span>{% else %}{{ "%.1f"|format(p.draft_score or 0) }} <span class="text-secondary" style="font-size:10px">Score</span>{% if p.get('_raw') is not none %}<br><span style="font-size:11px;color:{{ '#f59e0b' if sort_mode == 'raw' else '#64748b' }}" title="Raw college production — same stat components, NO conference/age/position adjustments and NO HS recruit bonus">{{ p._raw }} <span style="font-size:9px">raw</span></span>{% endif %}{% endif %}</div>
+        <div class="bb-stat" style="line-height:1.3">{% if p.get('sm_score') is not none %}<span style="color:#a78bfa">{{ (p.sm_score * 100)|round|int }}</span> <span class="text-secondary" style="font-size:10px" title="Strengths-model projection of NBA value (0-100): measured strengths + learned age/height adjusters, averaged over 300 bootstrap fits">Model</span>{% if p.get('sm_band') %}<br><span class="text-secondary" style="font-size:10px" title="90% confidence range for his rank across the 300 bootstrap models — tight band = the model is sure, wide band = could swing">rk {{ p.sm_band[0] }}–{{ p.sm_band[1] }}</span>{% endif %}{% if p.get('_raw') is not none and sort_mode == 'raw' %}<br><span style="font-size:11px;color:#f59e0b" title="Raw college production — un-adjusted stat output">{{ p._raw }} <span style="font-size:9px">raw</span></span>{% endif %}{% elif p.get('_intl_stub') %}— <span class="text-secondary" style="font-size:10px" title="No NCAA stats — the model needs an NCAA season">Model</span>{% else %}<span class="text-secondary">—</span>{% endif %}</div>
         {% if p.get('pred') %}
         <div class="bb-stat" style="line-height:1.25"
              title="ML projection (trained on 2020-23 draft classes vs real NBA careers): chance of becoming an NBA starter+ / chance of busting out">
@@ -201,7 +198,6 @@
         {% endif %}
         {% if p.get('_mock_rank') %}
         <div class="bb-stat" style="line-height:1.25">
-            {% if p.get('sm_rank') %}<span style="font-size:12px;color:#a78bfa" title="Strengths-model rank (measured strengths + learned age/height adjusters)">#{{ p.sm_rank }}</span> <span class="text-secondary" style="font-size:9px">model</span><br>{% endif %}
             {% set diff = p._mock_rank - pos_num %}
             <span style="font-size:12px;color:#94a3b8">#{{ p._mock_rank }}</span> <span class="text-secondary" style="font-size:9px">mock</span>
             {% if not p.get('_intl_stub') %}

@@ -360,12 +360,17 @@ def _stamp_model_rank(pool: list[dict]) -> None:
     import numpy as np
     from analytics.strengths_model import featurize
     m = json.loads(path.read_text(encoding="utf-8"))
-    X = np.array([featurize(p) for p in pool], float)
+    feats = m["features"]
+    X = np.array([featurize(p, feats) for p in pool], float)
     idx = np.where(np.isnan(X))
     X[idx] = np.take(np.array(m["med"]), idx[1])
     pred = (X - np.array(m["mu"])) / np.array(m["sd"]) @ np.array(m["coef"]) + m["y0"]
+    bands = m.get("rank_bands", {})
     for p, v in zip(pool, pred):
         p["sm_score"] = round(float(v), 4)
+        band = bands.get(str(p["id"]))
+        if band:
+            p["sm_band"] = band  # [5th, 95th] percentile rank across bootstraps
     for i, p in enumerate(sorted(pool, key=lambda p: -p["sm_score"]), 1):
         p["sm_rank"] = i
 
