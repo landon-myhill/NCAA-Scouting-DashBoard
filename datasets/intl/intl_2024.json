@@ -1,0 +1,704 @@
+{
+  "year": 2024,
+  "scraped_at": "2026-06-11T13:38:25.660549",
+  "players": [
+    {
+      "name": "Zaccharie Risacher",
+      "norm_name": "zaccharie risacher",
+      "pos": "F",
+      "born": "2005-04-08",
+      "age_label": "Age 21",
+      "team": "Bourg",
+      "league": "LNB Élite",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 10.1,
+        "RPG": 3.8,
+        "APG": 0.9,
+        "SPG": 0.8,
+        "BPG": 0.3,
+        "MPG": 22.0,
+        "TOV": 1.3,
+        "3PA": 3.4,
+        "FGA": 7.5,
+        "FTA": 3.1,
+        "FG%": 43.9,
+        "3P%": 35.2,
+        "FT%": 74.0,
+        "G": 32
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "ASVEL",
+          "league": "EuroLeague",
+          "g": "3",
+          "mp_per_g": "9.3",
+          "pts_per_g": "1.0"
+        },
+        {
+          "season": "2021-22",
+          "team": "ASVEL",
+          "league": "LNB Pro A",
+          "g": "2",
+          "mp_per_g": "2.5",
+          "pts_per_g": "2.0"
+        },
+        {
+          "season": "2022-23",
+          "team": "ASVEL",
+          "league": "EuroLeague",
+          "g": "18",
+          "mp_per_g": "13.2",
+          "pts_per_g": "3.2"
+        },
+        {
+          "season": "2022-23",
+          "team": "ASVEL",
+          "league": "LNB Pro A",
+          "g": "16",
+          "mp_per_g": "12.9",
+          "pts_per_g": "2.6"
+        },
+        {
+          "season": "2023-24",
+          "team": "Bourg",
+          "league": "EuroCup",
+          "g": "17",
+          "mp_per_g": "24.0",
+          "pts_per_g": "13.1"
+        },
+        {
+          "season": "2023-24",
+          "team": "Bourg",
+          "league": "LNB Élite",
+          "g": "32",
+          "mp_per_g": "22.0",
+          "pts_per_g": "10.1"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/zaccharie-risacher-1.html"
+    },
+    {
+      "name": "Alex Sarr",
+      "norm_name": "alex sarr",
+      "pos": "C",
+      "born": "2005-04-26",
+      "age_label": "Age 21",
+      "team": "Perth",
+      "league": "NBL",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 9.7,
+        "RPG": 4.4,
+        "APG": 0.9,
+        "SPG": 0.5,
+        "BPG": 1.3,
+        "MPG": 17.2,
+        "TOV": 1.1,
+        "3PA": 2.0,
+        "FGA": 7.1,
+        "FTA": 2.3,
+        "FG%": 52.0,
+        "3P%": 29.8,
+        "FT%": 71.4,
+        "G": 24
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": "Perth",
+          "league": "NBL",
+          "g": "24",
+          "mp_per_g": "17.2",
+          "pts_per_g": "9.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/alexandre-sarr-1.html"
+    },
+    {
+      "name": "Ron Holland",
+      "norm_name": "ron holland",
+      "pos": "F",
+      "born": "2005-07-07",
+      "age_label": "Age 20",
+      "team": "GLI",
+      "league": null,
+      "season": "2023-24",
+      "stats": {
+        "PPG": 20.6,
+        "RPG": 6.6,
+        "APG": 3.0,
+        "SPG": 2.5,
+        "BPG": 0.6,
+        "MPG": 33.6,
+        "TOV": 2.9,
+        "3PA": 3.6,
+        "FGA": 15.6,
+        "FTA": 5.0,
+        "FG%": 44.5,
+        "3P%": 24.0,
+        "FT%": 75.7,
+        "G": 14
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": null,
+          "league": null,
+          "g": "14",
+          "mp_per_g": "33.6",
+          "pts_per_g": "20.6"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/gleague/players/h/hollaro01d.html"
+    },
+    {
+      "name": "Tidjane Salaün",
+      "norm_name": "tidjane salaun",
+      "pos": "F",
+      "born": "2005-08-10",
+      "age_label": "Age 20",
+      "team": "Cholet",
+      "league": "LNB Élite",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 9.0,
+        "RPG": 4.0,
+        "APG": 1.0,
+        "SPG": 1.2,
+        "BPG": 0.2,
+        "MPG": 22.7,
+        "TOV": 1.5,
+        "3PA": 4.2,
+        "FGA": 7.9,
+        "FTA": 2.2,
+        "FG%": 37.3,
+        "3P%": 32.9,
+        "FT%": 76.7,
+        "G": 33
+      },
+      "all_rows": [
+        {
+          "season": "2022-23",
+          "team": "Cholet",
+          "league": "LNB Pro A",
+          "g": "3",
+          "mp_per_g": "5.7",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2023-24",
+          "team": "Cholet",
+          "league": "LNB Élite",
+          "g": "33",
+          "mp_per_g": "22.7",
+          "pts_per_g": "9.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/tidjane-salaun-1.html"
+    },
+    {
+      "name": "Matas Buzelis",
+      "norm_name": "matas buzelis",
+      "pos": "F",
+      "born": "2004-10-13",
+      "age_label": "Age 21",
+      "team": "GLI",
+      "league": null,
+      "season": "2023-24",
+      "stats": {
+        "PPG": 14.3,
+        "RPG": 6.9,
+        "APG": 2.0,
+        "SPG": 0.8,
+        "BPG": 2.1,
+        "MPG": 32.0,
+        "TOV": 2.2,
+        "3PA": 3.4,
+        "FGA": 12.1,
+        "FTA": 2.2,
+        "FG%": 44.8,
+        "3P%": 27.3,
+        "FT%": 67.9,
+        "G": 26
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": null,
+          "league": null,
+          "g": "26",
+          "mp_per_g": "32.0",
+          "pts_per_g": "14.3"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/gleague/players/b/buzelma01d.html"
+    },
+    {
+      "name": "Nikola Topić",
+      "norm_name": "nikola topic",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 18.4,
+        "RPG": 3.6,
+        "APG": 7.1,
+        "SPG": 1.0,
+        "BPG": 0.2,
+        "MPG": 33.8,
+        "TOV": 3.2,
+        "3PA": 4.5,
+        "FGA": 12.8,
+        "FTA": 4.6,
+        "FG%": 52.3,
+        "3P%": 25.9,
+        "FT%": 85.5,
+        "G": 12
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "Crvena zvezda",
+          "league": "EuroLeague",
+          "g": "1",
+          "mp_per_g": "2.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2021-22",
+          "team": "Crvena zvezda",
+          "league": "ABA",
+          "g": "2",
+          "mp_per_g": "11.5",
+          "pts_per_g": "2.0"
+        },
+        {
+          "season": "2022-23",
+          "team": "Crvena zvezda",
+          "league": "EuroLeague",
+          "g": "2",
+          "mp_per_g": "4.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2022-23",
+          "team": "Crvena zvezda",
+          "league": "ABA",
+          "g": "7",
+          "mp_per_g": "8.0",
+          "pts_per_g": "3.4"
+        },
+        {
+          "season": "2023-24",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "12",
+          "mp_per_g": "33.8",
+          "pts_per_g": "18.4"
+        },
+        {
+          "season": "2023-24",
+          "team": "Crvena zvezda",
+          "league": "ABA",
+          "g": "2",
+          "mp_per_g": "31.0",
+          "pts_per_g": "14.5"
+        },
+        {
+          "season": "2023-24",
+          "team": "Crvena zvezda",
+          "league": "EuroLeague",
+          "g": "2",
+          "mp_per_g": "15.5",
+          "pts_per_g": "3.5"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/nikola-topic-1.html"
+    },
+    {
+      "name": "AJ Johnson",
+      "norm_name": "aj johnson",
+      "pos": "G",
+      "born": "2004-12-01",
+      "age_label": "Age 21",
+      "team": "Illawarra",
+      "league": "NBL",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 2.8,
+        "RPG": 1.3,
+        "APG": 0.7,
+        "SPG": 0.2,
+        "BPG": 0.1,
+        "MPG": 7.9,
+        "TOV": 0.6,
+        "3PA": 1.1,
+        "FGA": 3.0,
+        "FTA": 0.5,
+        "FG%": 35.5,
+        "3P%": 28.6,
+        "FT%": 53.8,
+        "G": 25
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": "Illawarra",
+          "league": "NBL",
+          "g": "25",
+          "mp_per_g": "7.9",
+          "pts_per_g": "2.8"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/aj-johnson-1.html"
+    },
+    {
+      "name": "Pacôme Dadiet",
+      "norm_name": "pacome dadiet",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Ulm",
+      "league": "EuroCup",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 6.4,
+        "RPG": 1.6,
+        "APG": 0.3,
+        "SPG": 0.6,
+        "BPG": 0.2,
+        "MPG": 14.9,
+        "TOV": 0.9,
+        "3PA": 2.5,
+        "FGA": 5.2,
+        "FTA": 1.4,
+        "FG%": 45.2,
+        "3P%": 31.1,
+        "FT%": 72.0,
+        "G": 18
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "Paris",
+          "league": "LNB Pro A",
+          "g": "7",
+          "mp_per_g": "8.0",
+          "pts_per_g": "0.6"
+        },
+        {
+          "season": "2022-23",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "1",
+          "mp_per_g": "3.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2023-24",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "18",
+          "mp_per_g": "14.9",
+          "pts_per_g": "6.4"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/pacome-dadiet-1.html"
+    },
+    {
+      "name": "Tyler Smith",
+      "norm_name": "tyler smith",
+      "pos": "F",
+      "born": "1986-09-04",
+      "age_label": "Age 39",
+      "team": "Boulazac",
+      "league": "LNB Pro A",
+      "season": "2012-13",
+      "stats": {
+        "PPG": 7.2,
+        "RPG": 4.3,
+        "APG": 1.8,
+        "SPG": 0.4,
+        "BPG": 0.2,
+        "MPG": 23.3,
+        "TOV": 0.8,
+        "3PA": 0.1,
+        "FGA": 5.5,
+        "FTA": 2.2,
+        "FG%": 53.0,
+        "3P%": 0.0,
+        "FT%": 61.5,
+        "G": 12
+      },
+      "all_rows": [
+        {
+          "season": "2012-13",
+          "team": "Boulazac",
+          "league": "LNB Pro A",
+          "g": "12",
+          "mp_per_g": "23.3",
+          "pts_per_g": "7.2"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/tyler-smith-1.html"
+    },
+    {
+      "name": "Juan Nunez",
+      "norm_name": "juan nunez",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Ulm",
+      "league": "EuroCup",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 10.4,
+        "RPG": 3.8,
+        "APG": 5.8,
+        "SPG": 1.9,
+        "BPG": 0.1,
+        "MPG": 25.9,
+        "TOV": 2.9,
+        "3PA": 2.6,
+        "FGA": 7.8,
+        "FTA": 2.9,
+        "FG%": 50.5,
+        "3P%": 36.1,
+        "FT%": 53.7,
+        "G": 14
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "Real Madrid",
+          "league": "EuroLeague",
+          "g": "9",
+          "mp_per_g": "4.7",
+          "pts_per_g": "1.3"
+        },
+        {
+          "season": "2021-22",
+          "team": "Real Madrid",
+          "league": "Liga ACB",
+          "g": "15",
+          "mp_per_g": "5.7",
+          "pts_per_g": "0.7"
+        },
+        {
+          "season": "2022-23",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "18",
+          "mp_per_g": "20.4",
+          "pts_per_g": "7.1"
+        },
+        {
+          "season": "2023",
+          "team": "Spain◉",
+          "league": "FIBA",
+          "g": "3",
+          "mp_per_g": "21.7",
+          "pts_per_g": "7.0"
+        },
+        {
+          "season": "2023-24",
+          "team": "Ulm",
+          "league": "EuroCup",
+          "g": "14",
+          "mp_per_g": "25.9",
+          "pts_per_g": "10.4"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/juan-nunez-1.html"
+    },
+    {
+      "name": "Bobi Klintman",
+      "norm_name": "bobi klintman",
+      "pos": "F",
+      "born": "2003-03-06",
+      "age_label": "Age 23",
+      "team": "Cairns",
+      "league": "NBL",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 9.7,
+        "RPG": 4.8,
+        "APG": 0.7,
+        "SPG": 0.8,
+        "BPG": 0.5,
+        "MPG": 21.3,
+        "TOV": 1.6,
+        "3PA": 3.7,
+        "FGA": 7.3,
+        "FTA": 2.5,
+        "FG%": 44.3,
+        "3P%": 35.7,
+        "FT%": 79.3,
+        "G": 23
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": "Cairns",
+          "league": "NBL",
+          "g": "23",
+          "mp_per_g": "21.3",
+          "pts_per_g": "9.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/bobi-klintman-1.html"
+    },
+    {
+      "name": "Nikola Djurisic",
+      "norm_name": "nikola djurisic",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 14.4,
+        "RPG": 2.7,
+        "APG": 3.4,
+        "SPG": 1.0,
+        "BPG": 0.4,
+        "MPG": 30.7,
+        "TOV": 3.2,
+        "3PA": 3.7,
+        "FGA": 10.8,
+        "FTA": 4.6,
+        "FG%": 45.4,
+        "3P%": 33.0,
+        "FT%": 73.9,
+        "G": 26
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "2",
+          "mp_per_g": "7.5",
+          "pts_per_g": "4.0"
+        },
+        {
+          "season": "2021-22",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "19",
+          "mp_per_g": "18.6",
+          "pts_per_g": "6.1"
+        },
+        {
+          "season": "2022-23",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "22",
+          "mp_per_g": "28.3",
+          "pts_per_g": "13.3"
+        },
+        {
+          "season": "2023-24",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "26",
+          "mp_per_g": "30.7",
+          "pts_per_g": "14.4"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/nikola-djurisic-1.html"
+    },
+    {
+      "name": "Melvin Ajinça",
+      "norm_name": "melvin ajinca",
+      "pos": "F",
+      "born": "2004-06-26",
+      "age_label": "Age 21",
+      "team": "Saint-Quentin BB",
+      "league": "LNB Élite",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 9.3,
+        "RPG": 3.3,
+        "APG": 0.8,
+        "SPG": 0.5,
+        "BPG": 0.0,
+        "MPG": 24.6,
+        "TOV": 0.6,
+        "3PA": 5.3,
+        "FGA": 8.0,
+        "FTA": 2.1,
+        "FG%": 37.5,
+        "3P%": 30.9,
+        "FT%": 79.7,
+        "G": 28
+      },
+      "all_rows": [
+        {
+          "season": "2023-24",
+          "team": "Saint-Quentin BB",
+          "league": "LNB Élite",
+          "g": "28",
+          "mp_per_g": "24.6",
+          "pts_per_g": "9.3"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/melvin-ajinca-1.html"
+    },
+    {
+      "name": "Ariel Hukporti",
+      "norm_name": "ariel hukporti",
+      "pos": "C",
+      "born": "2002-04-12",
+      "age_label": "Age 24",
+      "team": "Melbourne",
+      "league": "NBL",
+      "season": "2023-24",
+      "stats": {
+        "PPG": 8.4,
+        "RPG": 7.0,
+        "APG": 0.7,
+        "SPG": 0.6,
+        "BPG": 1.5,
+        "MPG": 18.4,
+        "TOV": 1.7,
+        "3PA": 0.0,
+        "FGA": 5.4,
+        "FTA": 3.2,
+        "FG%": 59.6,
+        "3P%": null,
+        "FT%": 61.8,
+        "G": 28
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "Melbourne",
+          "league": "NBL",
+          "g": "27",
+          "mp_per_g": "15.2",
+          "pts_per_g": "7.2"
+        },
+        {
+          "season": "2023-24",
+          "team": "Melbourne",
+          "league": "NBL",
+          "g": "28",
+          "mp_per_g": "18.4",
+          "pts_per_g": "8.4"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/ariel-hukporti-1.html"
+    }
+  ],
+  "missed": [
+    "Bub Carrington",
+    "Ulrich Chomche"
+  ]
+}
