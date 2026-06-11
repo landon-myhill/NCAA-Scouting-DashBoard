@@ -77,7 +77,8 @@
           "pts_per_g": "21.6"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/victor-wembanyama-1.html"
+      "source": "https://www.basketball-reference.com/international/players/victor-wembanyama-1.html",
+      "height_in": 85.8
     },
     {
       "name": "Scoot Henderson",
@@ -114,7 +115,8 @@
           "pts_per_g": "16.5"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/h/hendesc01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/h/hendesc01d.html",
+      "height_in": 74.0
     },
     {
       "name": "Bilal Coulibaly",
@@ -151,7 +153,8 @@
           "pts_per_g": "5.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/bilal-coulibaly-1.html"
+      "source": "https://www.basketball-reference.com/international/players/bilal-coulibaly-1.html",
+      "height_in": 79.9
     },
     {
       "name": "James Nnaji",
@@ -212,7 +215,8 @@
           "pts_per_g": "4.9"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/james-nnaji-1.html"
+      "source": "https://www.basketball-reference.com/international/players/james-nnaji-1.html",
+      "height_in": 83.1
     },
     {
       "name": "Leonard Miller",
@@ -249,7 +253,8 @@
           "pts_per_g": "18.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/m/millele01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/m/millele01d.html",
+      "height_in": 81.9
     },
     {
       "name": "Rayan Rupert",
@@ -286,7 +291,8 @@
           "pts_per_g": "6.6"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/rayan-rupert-1.html"
+      "source": "https://www.basketball-reference.com/international/players/rayan-rupert-1.html",
+      "height_in": 78.0
     },
     {
       "name": "Sidy Cissoko",
@@ -323,7 +329,8 @@
           "pts_per_g": "12.8"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/c/cissosi01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/c/cissosi01d.html",
+      "height_in": 77.2
     },
     {
       "name": "Mojave King",
@@ -461,7 +468,8 @@
           "pts_per_g": "4.2"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/tarik-biberovic-1.html"
+      "source": "https://www.basketball-reference.com/international/players/tarik-biberovic-1.html",
+      "height_in": 78.0
     }
   ],
   "missed": [

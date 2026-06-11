@@ -77,7 +77,8 @@
           "pts_per_g": "10.1"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/zaccharie-risacher-1.html"
+      "source": "https://www.basketball-reference.com/international/players/zaccharie-risacher-1.html",
+      "height_in": 79.9
     },
     {
       "name": "Alex Sarr",
@@ -114,7 +115,8 @@
           "pts_per_g": "9.7"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/alexandre-sarr-1.html"
+      "source": "https://www.basketball-reference.com/international/players/alexandre-sarr-1.html",
+      "height_in": 85.0
     },
     {
       "name": "Ron Holland",
@@ -151,7 +153,8 @@
           "pts_per_g": "20.6"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/h/hollaro01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/h/hollaro01d.html",
+      "height_in": 79.9
     },
     {
       "name": "Tidjane Salaün",
@@ -196,7 +199,8 @@
           "pts_per_g": "9.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/tidjane-salaun-1.html"
+      "source": "https://www.basketball-reference.com/international/players/tidjane-salaun-1.html",
+      "height_in": 81.1
     },
     {
       "name": "Matas Buzelis",
@@ -233,7 +237,8 @@
           "pts_per_g": "14.3"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/b/buzelma01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/b/buzelma01d.html",
+      "height_in": 81.9
     },
     {
       "name": "Nikola Topić",
@@ -355,7 +360,8 @@
           "pts_per_g": "2.8"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/aj-johnson-1.html"
+      "source": "https://www.basketball-reference.com/international/players/aj-johnson-1.html",
+      "height_in": 77.2
     },
     {
       "name": "Pacôme Dadiet",
@@ -445,7 +451,8 @@
           "pts_per_g": "7.2"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/tyler-smith-1.html"
+      "source": "https://www.basketball-reference.com/international/players/tyler-smith-1.html",
+      "height_in": 79.1
     },
     {
       "name": "Juan Nunez",
@@ -551,7 +558,8 @@
           "pts_per_g": "9.7"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/bobi-klintman-1.html"
+      "source": "https://www.basketball-reference.com/international/players/bobi-klintman-1.html",
+      "height_in": 81.1
     },
     {
       "name": "Nikola Djurisic",
@@ -649,7 +657,8 @@
           "pts_per_g": "9.3"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/melvin-ajinca-1.html"
+      "source": "https://www.basketball-reference.com/international/players/melvin-ajinca-1.html",
+      "height_in": 79.1
     },
     {
       "name": "Ariel Hukporti",
@@ -694,7 +703,8 @@
           "pts_per_g": "8.4"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/ariel-hukporti-1.html"
+      "source": "https://www.basketball-reference.com/international/players/ariel-hukporti-1.html",
+      "height_in": 81.1
     }
   ],
   "missed": [

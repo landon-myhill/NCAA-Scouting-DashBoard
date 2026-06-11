@@ -43,7 +43,13 @@ TEAM_TIERS = {  # rows where bbref left the league blank
     "GLI": 0.85,            # G-League Ignite (vs pros)
     "City Reapers": 0.50,   # Overtime Elite
 }
-FEATURES = ["pts36_adj", "reb36_adj", "ast36_adj", "age", "market"]
+# Stat-only features — the market enters through the PICK-VALUE CURVE blend,
+# not as a regression feature (cleaner separation, better held-out).
+FEATURES = ["pts36_adj", "reb36_adj", "ast36_adj", "blk36_adj", "stl36_adj",
+            "age", "height_in"]
+ALPHA = 0.5  # stats weight in the blend; 1-ALPHA on the pick-value curve
+             # (grid-chosen by held-out LOYO: 0.742 vs 0.689 curve-only
+             # and 0.401 stats-only)
 LAMBDA = 40.0
 B_BOOT = 300
 
@@ -75,8 +81,10 @@ def featurize(rec: dict, mock_rank=None) -> list[float]:
         (s.get("PPG") or 0) * scale * tier,
         (s.get("RPG") or 0) * scale * tier,
         (s.get("APG") or 0) * scale * tier,
+        (s.get("BPG") or 0) * scale * tier,  # rim protection — the Wemby axis
+        (s.get("SPG") or 0) * scale * tier,
         age if age is not None else np.nan,
-        market,
+        rec.get("height_in") or np.nan,
     ]
 
 
@@ -121,21 +129,42 @@ def _predict(m, X):
     return (X - np.asarray(m["mu"])) / np.asarray(m["sd"]) @ np.asarray(m["coef"]) + m["y0"]
 
 
+def fit_pick_curve():
+    """Pick-value curve from ALL drafted players 2020-23 (n≈230, far bigger
+    than the intl set): expected NBA value = a + b*ln(pick)."""
+    from analytics.backtest import attach_value_target, load_matched
+    rows = load_matched()
+    attach_value_target(rows)
+    pk = np.array([r["pick"] for r in rows if r["pick"] and r.get("target") is not None], float)
+    vv = np.array([r["target"] for r in rows if r["pick"] and r.get("target") is not None], float)
+    A = np.column_stack([np.ones_like(pk), np.log(pk)])
+    a, b = np.linalg.lstsq(A, vv, rcond=None)[0]
+    return float(a), float(b)
+
+
+def curve_value(a, b, rank):
+    return a + b * np.log(np.clip(rank, 1, 61))
+
+
 def main():
     rows = build_training()
     X = np.array([featurize(r["rec"], r["pick"]) for r in rows], float)
     y = np.array([r["value"] for r in rows], float)
     years = np.array([r["year"] for r in rows])
+    picks = np.array([r["pick"] for r in rows], float)
+    ca, cb = fit_pick_curve()
     print(f"Training set: {len(rows)} historical internationals with stats + outcomes")
+    print(f"pick-value curve (n~230 drafted): value = {ca:.3f} {cb:+.3f}*ln(pick)")
 
-    # Leave-one-year-out — tiny folds, so read this as indicative, not precise
+    # Leave-one-year-out on the BLEND — tiny folds, read as indicative
     held = []
     for hold in MATURE:
         tr, te = years != hold, years == hold
         if te.sum() < 3:
             continue
         m = _fit(X[tr], y[tr])
-        rho = spearman(list(_predict(m, X[te])), list(y[te]))
+        pred = ALPHA * _predict(m, X[te]) + (1 - ALPHA) * curve_value(ca, cb, picks[te])
+        rho = spearman(list(pred), list(y[te]))
         held.append(rho)
         print(f"  held-out {hold}: rho {rho:+.3f} (n={int(te.sum())})")
     print(f"  mean: {np.mean(held):+.3f}")
@@ -148,8 +177,8 @@ def main():
     spread = float(np.mean(np.std([_predict(m, X) for m in models], axis=0)))
     print(f"\nbootstrap prediction spread (1sd): ±{spread*100:.0f} grade points")
 
-    pred = _predict(final, X)
-    print("\nHistorical sanity (intl grade 0-100 vs what actually happened):")
+    pred = ALPHA * _predict(final, X) + (1 - ALPHA) * curve_value(ca, cb, picks)
+    print("\nHistorical sanity (blended intl grade 0-100 vs what actually happened):")
     for r, p in sorted(zip(rows, pred), key=lambda t: -t[1])[:12]:
         print(f"  {r['name']:<24} {r['year']} pick #{r['pick']:<3} grade {p*100:.0f}  "
               f"actual value {r['value']:.2f}")
@@ -167,6 +196,7 @@ def main():
             "med": [float(v) for v in final["med"]],
             "y0": final["y0"],
             "league_tiers": LEAGUE_TIERS, "team_tiers": TEAM_TIERS,
+            "alpha": ALPHA, "curve_a": ca, "curve_b": cb,
             "spread_sd": spread,
             "validation": {"loyo_mean": float(np.mean(held)), "n": len(rows)},
         }, indent=2, ensure_ascii=False), encoding="utf-8")

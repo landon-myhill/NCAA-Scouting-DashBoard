@@ -37,7 +37,8 @@
           "pts_per_g": "17.9"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/g/greenja02d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/g/greenja02d.html",
+      "height_in": 76.0
     },
     {
       "name": "Josh Giddey",
@@ -74,7 +75,8 @@
           "pts_per_g": "10.9"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/josh-giddey-1.html"
+      "source": "https://www.basketball-reference.com/international/players/josh-giddey-1.html",
+      "height_in": 79.9
     },
     {
       "name": "Jonathan Kuminga",
@@ -111,7 +113,8 @@
           "pts_per_g": "15.8"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/k/kuminjo01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/k/kuminjo01d.html",
+      "height_in": 79.9
     },
     {
       "name": "Alperen Şengün",
@@ -148,7 +151,8 @@
           "pts_per_g": "19.2"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/alperen-sengun-1.html"
+      "source": "https://www.basketball-reference.com/international/players/alperen-sengun-1.html",
+      "height_in": 81.1
     },
     {
       "name": "Usman Garuba",
@@ -225,7 +229,8 @@
           "pts_per_g": "0.3"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/usman-garuba-1.html"
+      "source": "https://www.basketball-reference.com/international/players/usman-garuba-1.html",
+      "height_in": 79.9
     },
     {
       "name": "Isaiah Todd",
@@ -262,7 +267,8 @@
           "pts_per_g": "12.3"
         }
       ],
-      "source": "https://www.basketball-reference.com/gleague/players/t/toddis01d.html"
+      "source": "https://www.basketball-reference.com/gleague/players/t/toddis01d.html",
+      "height_in": 81.9
     },
     {
       "name": "Rokas Jokubaitis",
@@ -315,7 +321,8 @@
           "pts_per_g": "7.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/rokas-jokubaitis-1.html"
+      "source": "https://www.basketball-reference.com/international/players/rokas-jokubaitis-1.html",
+      "height_in": 76.0
     },
     {
       "name": "Herbert Jones",
@@ -421,7 +428,8 @@
           "pts_per_g": "23.6"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/filip-petrusev-1.html"
+      "source": "https://www.basketball-reference.com/international/players/filip-petrusev-1.html",
+      "height_in": 83.1
     },
     {
       "name": "Georgios Kalaitzakis",
@@ -514,7 +522,8 @@
           "pts_per_g": "3.9"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/georgios-kalaitzakis-1.html"
+      "source": "https://www.basketball-reference.com/international/players/georgios-kalaitzakis-1.html",
+      "height_in": 79.9
     }
   ],
   "missed": [

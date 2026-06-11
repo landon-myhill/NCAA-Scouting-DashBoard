@@ -37,7 +37,8 @@
           "pts_per_g": "17.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/lamelo-ball-1.html"
+      "source": "https://www.basketball-reference.com/international/players/lamelo-ball-1.html",
+      "height_in": 79.1
     },
     {
       "name": "Killian Hayes",
@@ -90,7 +91,8 @@
           "pts_per_g": "12.8"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/killian-hayes-1.html"
+      "source": "https://www.basketball-reference.com/international/players/killian-hayes-1.html",
+      "height_in": 76.0
     },
     {
       "name": "Deni Avdija",
@@ -135,7 +137,8 @@
           "pts_per_g": "4.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/deni-avdija-1.html"
+      "source": "https://www.basketball-reference.com/international/players/deni-avdija-1.html",
+      "height_in": 79.1
     },
     {
       "name": "Aleksej Pokusevski",
@@ -180,7 +183,8 @@
           "pts_per_g": "0.0"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/aleksej-pokusevski-1.html"
+      "source": "https://www.basketball-reference.com/international/players/aleksej-pokusevski-1.html",
+      "height_in": 83.1
     },
     {
       "name": "Leandro Bolmaro",
@@ -233,7 +237,8 @@
           "pts_per_g": "2.7"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/leandro-bolmaro-1.html"
+      "source": "https://www.basketball-reference.com/international/players/leandro-bolmaro-1.html",
+      "height_in": 78.0
     },
     {
       "name": "R.J. Hampton",
@@ -270,7 +275,8 @@
           "pts_per_g": "8.8"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/rj-hampton-1.html"
+      "source": "https://www.basketball-reference.com/international/players/rj-hampton-1.html",
+      "height_in": 77.2
     },
     {
       "name": "Théo Maledon",
@@ -347,7 +353,8 @@
           "pts_per_g": "6.5"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/theo-maledon-1.html"
+      "source": "https://www.basketball-reference.com/international/players/theo-maledon-1.html",
+      "height_in": 74.8
     },
     {
       "name": "Vít Krejčí",
@@ -392,7 +399,8 @@
           "pts_per_g": "3.2"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/vit-krejci-1.html"
+      "source": "https://www.basketball-reference.com/international/players/vit-krejci-1.html",
+      "height_in": 79.9
     },
     {
       "name": "Marko Simonovic",
@@ -429,7 +437,8 @@
           "pts_per_g": "10.2"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/marko-simonovic-2.html"
+      "source": "https://www.basketball-reference.com/international/players/marko-simonovic-2.html",
+      "height_in": 83.9
     }
   ],
   "missed": [

@@ -263,8 +263,15 @@ def _intl_grade(intl_rec: dict, mock_rank, year):
     x = np.array(featurize(rec, mock_rank), float)
     med = np.array(m["med"])
     x[np.isnan(x)] = med[np.isnan(x)]
-    v = float((x - np.array(m["mu"])) / np.array(m["sd"]) @ np.array(m["coef"]) + m["y0"])
-    return v
+    stat = float((x - np.array(m["mu"])) / np.array(m["sd"]) @ np.array(m["coef"]) + m["y0"])
+    # Blend with the pick-value curve at the validation-chosen weight — for
+    # internationals the market screen carries info our thin stats can't.
+    alpha = m.get("alpha", 1.0)
+    if mock_rank and "curve_a" in m:
+        import math
+        curve = m["curve_a"] + m["curve_b"] * math.log(min(max(mock_rank, 1), 61))
+        return alpha * stat + (1 - alpha) * curve
+    return stat
 
 
 def _make_stub(name: str, club: str, year, idx: int, mock_rank=None) -> dict:
