@@ -152,8 +152,13 @@ def bigboard():
     # formula 3x held-out, so it IS the ranking); the formula stays one click
     # away on the toggle.
     has_model = any(p.get("sm_score") is not None for p in pool)
+    has_outcomes = any((p.get("nba") or {}).get("value") is not None for p in pool)
     sort_mode = request.args.get("sort") or ("model" if has_model else "score")
-    if sort_mode == "raw":
+    if sort_mode == "nba" and has_outcomes:
+        # rank by what players ACTUALLY became (position-relative career value)
+        pool = sorted(pool, key=lambda p: -((p.get("nba") or {}).get("value")
+                                            if (p.get("nba") or {}).get("value") is not None else -1e9))
+    elif sort_mode == "raw":
         pool = sorted(pool, key=lambda p: -(store.raw_score(p) or -1e9))
     elif sort_mode == "model" and has_model:
         # sm_score (projected NBA value) sorts within a class identically to
@@ -207,7 +212,7 @@ def bigboard():
         available_years=store.available_years(), current_year=year,
         season_label=season_label, is_historical=is_historical,
         is_curated=is_curated, unmatched_names=unmatched_names,
-        sort_mode=sort_mode,
+        sort_mode=sort_mode, has_outcomes=has_outcomes,
     )
 
 

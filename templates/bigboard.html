@@ -127,6 +127,20 @@
             <option value="200" selected>200</option>
         </select>
     </div>
+    {% if has_outcomes %}
+    <div>
+        <label class="form-label small text-secondary mb-0">NBA outcome</label>
+        <select id="bbFilterTier" class="form-select form-select-sm" style="min-width:120px">
+            <option value="All">All</option>
+            <option value="star">Stars</option>
+            <option value="starter">Starters</option>
+            <option value="rotation">Rotation</option>
+            <option value="bench">Bench</option>
+            <option value="no_nba">No NBA</option>
+            <option value="undrafted">Undrafted</option>
+        </select>
+    </div>
+    {% endif %}
     <div class="align-self-end">
         <label class="form-label small text-secondary mb-0 d-block">Rank by</label>
         <div class="btn-group btn-group-sm" role="group">
@@ -136,6 +150,11 @@
             <a href="/bigboard?year={{ current_year }}&sort=raw"
                class="btn btn-outline-secondary {% if sort_mode == 'raw' %}active{% endif %}"
                title="Raw college production — un-adjusted stat output, for transparency">Raw college</a>
+            {% if has_outcomes %}
+            <a href="/bigboard?year={{ current_year }}&sort=nba"
+               class="btn btn-outline-secondary {% if sort_mode == 'nba' %}active{% endif %}"
+               title="Rank by what they ACTUALLY became — position-relative NBA career value">NBA value</a>
+            {% endif %}
         </div>
     </div>
     <div class="align-self-end">
@@ -169,6 +188,7 @@
 
     <div class="bb-row" data-id="{{ p.id }}" data-pos="{{ p.pos }}" data-conf="{{ p.conference or '' }}"
          data-off-arch="{{ prof.get('all_offensive', [])|join(',') }}" data-def-arch="{{ prof.get('all_defensive', [])|join(',') }}"
+         data-tier="{{ (p.get('nba') or {}).get('tier') or ('undrafted' if p.get('_draft_complete') else '') }}"
          {% if is_master %}style="cursor:default"{% endif %}>
         <div class="bb-pos">{{ pos_num }}</div>
         {% if not is_master %}<div style="color:#475569;font-size:18px;cursor:grab" class="me-1">&#x2630;</div>{% endif %}
@@ -319,7 +339,7 @@ async function deleteBoard(id, name) {
 }
 
 // Filters
-['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch'].forEach(id => {
+['bbFilterPos','bbFilterConf','bbFilterLimit','bbFilterOffArch','bbFilterDefArch','bbFilterTier'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('change', applyBBFilters);
 });
@@ -330,6 +350,8 @@ function applyBBFilters() {
     const offArchVal = document.getElementById('bbFilterOffArch').value;
     const defArchVal = document.getElementById('bbFilterDefArch').value;
     const limit = parseInt(document.getElementById('bbFilterLimit').value);
+    const tierEl = document.getElementById('bbFilterTier');
+    const tierVal = tierEl ? tierEl.value : 'All';
     let count = 0;
     boardList.querySelectorAll('.bb-row').forEach(row => {
         const rank = parseInt(row.querySelector('.bb-pos').textContent);
@@ -341,6 +363,7 @@ function applyBBFilters() {
         if (confVal !== 'All' && row.dataset.conf !== confVal) show = false;
         if (offArchVal !== 'All' && !offArchs.includes(offArchVal)) show = false;
         if (defArchVal !== 'All' && !defArchs.includes(defArchVal)) show = false;
+        if (tierVal !== 'All' && row.dataset.tier !== tierVal) show = false;
         row.style.display = show ? '' : 'none';
         if (show) count++;
     });

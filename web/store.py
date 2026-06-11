@@ -61,6 +61,7 @@ def _attach_nba_outcomes(players: list[dict], year: int) -> None:
         if rec is not None:
             rec["nba"] = {"pick": pick.get("pick_overall"),
                           "tier": pick.get("career_tier"),
+                          "value": pick.get("nba_value"),
                           "mature": mature}
 
 
@@ -211,6 +212,7 @@ def _outcome_lookup(year):
                 table[normalize_name(pick.get("player", ""))] = {
                     "pick": pick.get("pick_overall"),
                     "tier": pick.get("career_tier"),
+                    "value": pick.get("nba_value"),  # position-relative career value
                     # Tier thresholds are calibrated for 2-5 year careers; a
                     # 2024-25 draftee's "rotation" label says nothing yet.
                     "mature": year in MATURE_DRAFT_YEARS,
