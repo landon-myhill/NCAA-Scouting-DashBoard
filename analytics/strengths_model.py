@@ -49,12 +49,21 @@ FIT_KEYS = list(ALL_RECIPES)
 INTERACTIONS = ["shooting", "scoring", "playmaking", "rim_protection"]
 
 BASE = list(STRENGTH_KEYS) + ["age_ord", "height_in"]
+INTER = [f"age_x_{k}" for k in INTERACTIONS]
 FEATURE_SETS = {
     "strengths":        BASE,
     "strengths+fits":   BASE + [f"fit:{k}" for k in FIT_KEYS],
-    "strengths+inter":  BASE + [f"age_x_{k}" for k in INTERACTIONS],
-    "full":             BASE + [f"fit:{k}" for k in FIT_KEYS]
-                             + [f"age_x_{k}" for k in INTERACTIONS],
+    "strengths+inter":  BASE + INTER,
+    "full":             BASE + [f"fit:{k}" for k in FIT_KEYS] + INTER,
+    # Age-impactor fixes (the Lendeborg problem): a blanket age penalty
+    # punishes market-validated seniors, but 1st-round-caliber seniors hit
+    # at 50% — as well as 1st-round freshmen. Two remedies tested:
+    #   peak   — age x (mean of top-3 strengths): elite-skill seniors escape
+    #   market — draft slot at training / mock rank at inference: a senior
+    #            the market screens into round 1 inherits that group's
+    #            survival curve, not the undrafted-senior average
+    "inter+peak":       BASE + INTER + ["age_x_peak"],
+    "inter+market":     BASE + INTER + ["market", "age_x_market"],
 }
 LAMBDAS = (20.0, 60.0, 150.0)
 B_BOOT = 300
@@ -67,12 +76,28 @@ def featurize(p: dict, features) -> list[float]:
     age = AGE_ORD.get(p.get("year", ""), 2)
     combine = p.get("combine") or {}
     ht = combine.get("height_w_shoes_in") or height_inches(p.get("height", ""))
+    # Market validation: actual draft slot for training rows (stamped as
+    # _market_rank), consensus mock rank at inference. 60 -> 1 scale; 0 = off
+    # the market's board entirely.
+    mrank = p.get("_market_rank") or p.get("_mock_rank")
+    market = max(0.0, 61.0 - mrank) if mrank else 0.0
+    peak = None
+    vals = sorted((v for v in s.values() if v is not None), reverse=True)
+    if vals:
+        peak = sum(vals[:3]) / min(3, len(vals))
+
     row = []
     for f in features:
         if f == "age_ord":
             row.append(age)
         elif f == "height_in":
             row.append(ht if ht else np.nan)
+        elif f == "market":
+            row.append(market)
+        elif f == "age_x_market":
+            row.append(age * market)
+        elif f == "age_x_peak":
+            row.append(age * peak if peak is not None else np.nan)
         elif f.startswith("fit:"):
             row.append(fits.get(f[4:], np.nan))
         elif f.startswith("age_x_"):
@@ -142,6 +167,8 @@ def build_training():
         recs = [r["college_record"] for r in rows if r["year"] == yr]
         compute_strengths(recs, reference=recs)
         compute_fits(recs, reference=recs)
+    for r in rows:  # market validation at training time = actual draft slot
+        r["college_record"]["_market_rank"] = r["pick"]
     recs = [r["college_record"] for r in rows]
     y = np.array([r["target"] for r in rows], float)
     years = np.array([r["year"] for r in rows])
