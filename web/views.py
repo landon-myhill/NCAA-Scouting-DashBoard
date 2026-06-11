@@ -141,12 +141,15 @@ def bigboard():
     # Default order: the strengths model when this class has one (it beat the
     # formula 3x held-out, so it IS the ranking); the formula stays one click
     # away on the toggle.
-    has_model = any(p.get("sm_rank") for p in pool)
+    has_model = any(p.get("sm_score") is not None for p in pool)
     sort_mode = request.args.get("sort") or ("model" if has_model else "score")
     if sort_mode == "raw":
         pool = sorted(pool, key=lambda p: -(store.raw_score(p) or -1e9))
     elif sort_mode == "model" and has_model:
-        pool = sorted(pool, key=lambda p: p.get("sm_rank") or 9999)
+        # sm_score (projected NBA value) sorts within a class identically to
+        # sm_rank AND compares across classes on the all-years board
+        pool = sorted(pool, key=lambda p: -(p.get("sm_score")
+                                            if p.get("sm_score") is not None else -1e9))
     else:
         sort_mode = "score"
         pool = sorted(pool, key=lambda p: p["rank"])

@@ -156,11 +156,12 @@ def _get_all_years_data():
         combined.append(clone)
         profiles[clone["_xkey"]] = PROFILES.get(p["id"], get_profile(p))
 
-    # Then each historical year
+    # Then each historical year — via get_year_data so each class's pool has
+    # its strengths/fits/model scores stamped (and is cached) before cloning
     for y, _label, _is_cur in available_years():
         if y == CURRENT_SEASON_YEAR:
             continue
-        players, _season = _load_history_year(y)
+        players, _profiles, _season = get_year_data(y)
         if players is None:
             continue
         pool, _, _ = board_filter(players, y, with_stubs=False)
