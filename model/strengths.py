@@ -20,10 +20,18 @@ planned next, per the project owner.
 """
 
 from bisect import bisect_left
+from functools import lru_cache
 
 from core.numeric import height_inches, safe_stat as _s
 
 REFERENCE_N = 300          # draft-relevant population per season file
+
+# Physical measurables are graded against ALL classes pooled, not the class:
+# a 7'0 wingspan means the same thing in 2020 and 2026, class pools are small
+# (~60-100), and class composition (a guard-heavy year) shouldn't move a
+# center's size percentile. Production strengths stay class-relative —
+# dominance is always vs your actual competition.
+PHYSICAL_KEYS = ("size",)
 SECONDARY_BADGE_PCT = 75   # second offensive badge only if genuinely elite
 
 STRENGTH_KEYS = [
@@ -96,6 +104,32 @@ def _pos_group(p: dict) -> str:
     return p.get("pos") if p.get("pos") in ("G", "F", "C") else "F"
 
 
+@lru_cache(maxsize=1)
+def _pooled_physical_ref() -> dict:
+    """Sorted raw values for PHYSICAL_KEYS over every curated class pool
+    (board members across all season files + the current season). Falls back
+    to {} (class reference) if the files aren't available."""
+    try:
+        from core.config import HISTORY_DIR, PLAYERS_FILE
+        from core.jsonio import load_json
+        pool = []
+        for f in sorted(HISTORY_DIR.glob("players_*.json")):
+            pool += [p for p in load_json(f).get("players", [])
+                     if p.get("_mock_rank")]
+        cur = load_json(PLAYERS_FILE)
+        cur = cur["players"] if isinstance(cur, dict) else cur
+        pool += [p for p in cur if p.get("_mock_rank")]
+    except Exception:
+        return {}
+    out = {}
+    for pos in ("G", "F", "C", "all"):
+        grp = pool if pos == "all" else [p for p in pool if _pos_group(p) == pos]
+        raws = [_raw_strengths(p) for p in grp]
+        for k in PHYSICAL_KEYS:
+            out[(pos, k)] = sorted(r[k] for r in raws if r[k] is not None)
+    return out
+
+
 def compute_strengths(players: list[dict], reference: list[dict] | None = None,
                       reference_n: int = REFERENCE_N) -> None:
     """Stamp p['strengths'] = {key: 0-100 percentile vs his position group}.
@@ -112,6 +146,9 @@ def compute_strengths(players: list[dict], reference: list[dict] | None = None,
         for k in STRENGTH_KEYS:
             vals = sorted(r[k] for r in raws if r[k] is not None)
             sorted_ref[(pos, k)] = vals
+    for key, vals in _pooled_physical_ref().items():  # physical: all classes
+        if vals:
+            sorted_ref[key] = vals
 
     for p in players:
         raw = _raw_strengths(p)

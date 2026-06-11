@@ -92,26 +92,26 @@
         "rim_protection": 96,
         "perimeter_defense": 93,
         "ball_security": 85,
-        "size": 96
+        "size": 99
       },
       "strengths_abs": {
-        "scoring": 42,
+        "scoring": 41,
         "shooting": 0,
         "playmaking": 7,
         "finishing": 97,
         "rim_pressure": 36,
         "rebounding": 88,
         "rim_protection": 99,
-        "perimeter_defense": 91,
+        "perimeter_defense": 92,
         "ball_security": 82,
         "size": 97
       },
       "fits": {
-        "Slasher": 54,
-        "Sharpshooter": 12,
+        "Slasher": 53,
+        "Sharpshooter": 11,
         "Stretch Big": 15,
-        "Three-Level Scorer": 22,
-        "Connector": 86,
+        "Three-Level Scorer": 25,
+        "Connector": 81,
         "Offensive Hub": 27,
         "Post Scorer": 67,
         "Play Finisher": 94,
@@ -201,19 +201,19 @@
         "rim_protection": 83,
         "perimeter_defense": 83,
         "ball_security": 17,
-        "size": 33
+        "size": 40
       },
       "strengths_abs": {
         "scoring": 70,
         "shooting": 78,
         "playmaking": 42,
         "finishing": 99,
-        "rim_pressure": 54,
+        "rim_pressure": 53,
         "rebounding": 96,
         "rim_protection": 98,
-        "perimeter_defense": 80,
-        "ball_security": 16,
-        "size": 93
+        "perimeter_defense": 81,
+        "ball_security": 17,
+        "size": 94
       },
       "fits": {
         "Stretch Big": 94,
@@ -324,13 +324,13 @@
         "size": 83
       },
       "strengths_abs": {
-        "scoring": 51,
+        "scoring": 50,
         "shooting": 0,
         "playmaking": 8,
         "finishing": 98,
         "rim_pressure": 21,
         "rebounding": 89,
-        "rim_protection": 95,
+        "rim_protection": 94,
         "perimeter_defense": 40,
         "ball_security": 82,
         "size": 99
@@ -341,7 +341,7 @@
         "Post Scorer": 42,
         "Play Finisher": 61,
         "Glass Cleaner": 93,
-        "Switch Defender": 79,
+        "Switch Defender": 76,
         "Rim Protector": 91
       },
       "archetype": "Glass Cleaner",
@@ -424,30 +424,30 @@
         "rim_protection": 52,
         "perimeter_defense": 70,
         "ball_security": 81,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
         "scoring": 91,
         "shooting": 97,
-        "playmaking": 49,
-        "finishing": 9,
-        "rim_pressure": 74,
+        "playmaking": 50,
+        "finishing": 8,
+        "rim_pressure": 73,
         "rebounding": 68,
         "rim_protection": 76,
         "perimeter_defense": 62,
         "ball_security": 77,
-        "size": 76
+        "size": 80
       },
       "fits": {
-        "Slasher": 63,
+        "Slasher": 64,
         "Sharpshooter": 98,
         "Stretch Big": 91,
-        "Three-Level Scorer": 82,
+        "Three-Level Scorer": 83,
         "Offensive Hub": 79,
         "Post Scorer": 52,
         "Play Finisher": 12,
-        "Glass Cleaner": 64,
-        "Switch Defender": 76,
+        "Glass Cleaner": 63,
+        "Switch Defender": 74,
         "Rim Protector": 39,
         "Wing Stopper": 74
       },
@@ -546,19 +546,19 @@
         "rim_protection": 78,
         "perimeter_defense": 96,
         "ball_security": 41,
-        "size": 41
+        "size": 55
       },
       "strengths_abs": {
         "scoring": 98,
         "shooting": 58,
         "playmaking": 21,
-        "finishing": 73,
+        "finishing": 72,
         "rim_pressure": 97,
         "rebounding": 80,
         "rim_protection": 88,
         "perimeter_defense": 99,
-        "ball_security": 40,
-        "size": 75
+        "ball_security": 39,
+        "size": 76
       },
       "fits": {
         "Slasher": 95,
@@ -568,7 +568,7 @@
         "Offensive Hub": 70,
         "Post Scorer": 91,
         "Play Finisher": 82,
-        "Glass Cleaner": 84,
+        "Glass Cleaner": 83,
         "Switch Defender": 97,
         "Rim Protector": 70,
         "Wing Stopper": 93
@@ -654,31 +654,31 @@
         "rim_protection": 19,
         "perimeter_defense": 48,
         "ball_security": 52,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
         "scoring": 68,
         "shooting": 46,
-        "playmaking": 67,
-        "finishing": 42,
-        "rim_pressure": 63,
-        "rebounding": 65,
-        "rim_protection": 52,
-        "perimeter_defense": 35,
+        "playmaking": 68,
+        "finishing": 41,
+        "rim_pressure": 62,
+        "rebounding": 64,
+        "rim_protection": 51,
+        "perimeter_defense": 36,
         "ball_security": 48,
-        "size": 76
+        "size": 80
       },
       "fits": {
         "Slasher": 39,
-        "Sharpshooter": 53,
+        "Sharpshooter": 54,
         "Stretch Big": 58,
-        "Three-Level Scorer": 42,
+        "Three-Level Scorer": 44,
         "Offensive Hub": 82,
         "Post Scorer": 30,
         "Play Finisher": 9,
-        "Glass Cleaner": 55,
-        "Switch Defender": 45,
-        "Rim Protector": 15,
+        "Glass Cleaner": 54,
+        "Switch Defender": 46,
+        "Rim Protector": 18,
         "Wing Stopper": 44
       },
       "archetype": "Offensive Hub",
@@ -836,19 +836,19 @@
         "rim_protection": 50,
         "perimeter_defense": 50,
         "ball_security": 33,
-        "size": 67
+        "size": 63
       },
       "strengths_abs": {
         "scoring": 59,
         "shooting": 0,
-        "playmaking": 25,
+        "playmaking": 26,
         "finishing": 93,
         "rim_pressure": 79,
         "rebounding": 86,
         "rim_protection": 93,
-        "perimeter_defense": 65,
-        "ball_security": 33,
-        "size": 98
+        "perimeter_defense": 66,
+        "ball_security": 32,
+        "size": 97
       },
       "fits": {
         "Stretch Big": 9,
@@ -1007,46 +1007,46 @@
       "strengths": {
         "scoring": 93,
         "shooting": 86,
-        "playmaking": 57,
+        "playmaking": 58,
         "finishing": 93,
-        "rim_pressure": 78,
+        "rim_pressure": 77,
         "rebounding": 86,
-        "rim_protection": 83,
-        "perimeter_defense": 41,
-        "ball_security": 43,
-        "size": 83
+        "rim_protection": 82,
+        "perimeter_defense": 42,
+        "ball_security": 42,
+        "size": 88
       },
       "strengths_abs": {
         "scoring": 88,
         "shooting": 87,
-        "playmaking": 69,
+        "playmaking": 70,
         "finishing": 89,
         "rim_pressure": 70,
-        "rebounding": 63,
-        "rim_protection": 65,
+        "rebounding": 62,
+        "rim_protection": 64,
         "perimeter_defense": 44,
-        "ball_security": 44,
-        "size": 55
+        "ball_security": 43,
+        "size": 56
       },
       "fits": {
-        "Floor General": 66,
+        "Floor General": 67,
         "Scoring Guard": 98,
-        "Combo Guard": 90,
+        "Combo Guard": 89,
         "Slasher": 99,
-        "Sharpshooter": 88,
+        "Sharpshooter": 89,
         "Three-Level Scorer": 99,
-        "Glass Cleaner": 74,
-        "Switch Defender": 60,
-        "Point-of-Attack Defender": 50
+        "Glass Cleaner": 73,
+        "Switch Defender": 59,
+        "Point-of-Attack Defender": 49
       },
       "archetype": "Slasher",
       "all_offensive": [
         "Slasher",
         "Three-Level Scorer"
       ],
-      "defensive_archetype": "Switch Defender",
+      "defensive_archetype": "Average Defender",
       "all_defensive": [
-        "Switch Defender"
+        "Average Defender"
       ]
     },
     {
@@ -1134,31 +1134,31 @@
         "rim_protection": 41,
         "perimeter_defense": 44,
         "ball_security": 63,
-        "size": 89
+        "size": 95
       },
       "strengths_abs": {
         "scoring": 89,
         "shooting": 47,
-        "playmaking": 79,
-        "finishing": 45,
-        "rim_pressure": 84,
-        "rebounding": 75,
+        "playmaking": 80,
+        "finishing": 44,
+        "rim_pressure": 83,
+        "rebounding": 74,
         "rim_protection": 71,
         "perimeter_defense": 33,
         "ball_security": 60,
-        "size": 92
+        "size": 94
       },
       "fits": {
         "Slasher": 67,
         "Sharpshooter": 62,
         "Stretch Big": 67,
-        "Three-Level Scorer": 67,
+        "Three-Level Scorer": 69,
         "Offensive Hub": 94,
         "Post Scorer": 61,
         "Play Finisher": 27,
         "Glass Cleaner": 70,
-        "Switch Defender": 63,
-        "Rim Protector": 42,
+        "Switch Defender": 62,
+        "Rim Protector": 45,
         "Wing Stopper": 52
       },
       "archetype": "Offensive Hub",
@@ -1300,7 +1300,7 @@
         "rim_protection": 70,
         "perimeter_defense": 63,
         "ball_security": 96,
-        "size": 19
+        "size": 25
       },
       "strengths_abs": {
         "scoring": 99,
@@ -1310,9 +1310,9 @@
         "rim_pressure": 66,
         "rebounding": 81,
         "rim_protection": 86,
-        "perimeter_defense": 56,
+        "perimeter_defense": 57,
         "ball_security": 99,
-        "size": 63
+        "size": 62
       },
       "fits": {
         "Slasher": 89,
@@ -1323,7 +1323,7 @@
         "Post Scorer": 97,
         "Play Finisher": 88,
         "Glass Cleaner": 90,
-        "Switch Defender": 77,
+        "Switch Defender": 78,
         "Rim Protector": 58,
         "Wing Stopper": 63
       },
@@ -1413,48 +1413,49 @@
       },
       "_mock_rank": 19,
       "strengths": {
-        "scoring": 36,
-        "shooting": 47,
-        "playmaking": 67,
-        "finishing": 97,
+        "scoring": 35,
+        "shooting": 46,
+        "playmaking": 68,
+        "finishing": 96,
         "rim_pressure": 88,
         "rebounding": 79,
         "rim_protection": 91,
-        "perimeter_defense": 76,
-        "ball_security": 3,
-        "size": 79
+        "perimeter_defense": 77,
+        "ball_security": 4,
+        "size": 88
       },
       "strengths_abs": {
-        "scoring": 32,
-        "shooting": 53,
-        "playmaking": 76,
+        "scoring": 31,
+        "shooting": 52,
+        "playmaking": 77,
         "finishing": 91,
         "rim_pressure": 86,
-        "rebounding": 54,
-        "rim_protection": 73,
-        "perimeter_defense": 79,
+        "rebounding": 53,
+        "rim_protection": 72,
+        "perimeter_defense": 80,
         "ball_security": 2,
-        "size": 53
+        "size": 56
       },
       "fits": {
-        "Floor General": 38,
-        "Scoring Guard": 52,
-        "Combo Guard": 43,
+        "Floor General": 40,
+        "Scoring Guard": 51,
+        "Combo Guard": 42,
         "Slasher": 84,
-        "Sharpshooter": 39,
+        "Sharpshooter": 38,
         "Three-Level Scorer": 73,
-        "Connector": 71,
+        "Connector": 78,
         "Glass Cleaner": 68,
-        "Switch Defender": 85,
-        "Point-of-Attack Defender": 84
+        "Switch Defender": 83,
+        "Point-of-Attack Defender": 86
       },
       "archetype": "Slasher",
       "all_offensive": [
-        "Slasher"
+        "Slasher",
+        "Connector"
       ],
-      "defensive_archetype": "Switch Defender",
+      "defensive_archetype": "Point-of-Attack Defender",
       "all_defensive": [
-        "Switch Defender"
+        "Point-of-Attack Defender"
       ]
     },
     {
@@ -1653,40 +1654,40 @@
       },
       "_mock_rank": 48,
       "strengths": {
-        "scoring": 14,
-        "shooting": 19,
-        "playmaking": 34,
+        "scoring": 12,
+        "shooting": 18,
+        "playmaking": 35,
         "finishing": 95,
-        "rim_pressure": 36,
-        "rebounding": 69,
-        "rim_protection": 69,
-        "perimeter_defense": 55,
-        "ball_security": 10,
-        "size": 86
+        "rim_pressure": 37,
+        "rebounding": 68,
+        "rim_protection": 68,
+        "perimeter_defense": 56,
+        "ball_security": 11,
+        "size": 91
       },
       "strengths_abs": {
-        "scoring": 11,
-        "shooting": 31,
-        "playmaking": 45,
+        "scoring": 10,
+        "shooting": 30,
+        "playmaking": 46,
         "finishing": 90,
         "rim_pressure": 30,
         "rebounding": 46,
         "rim_protection": 49,
-        "perimeter_defense": 58,
+        "perimeter_defense": 59,
         "ball_security": 8,
-        "size": 58
+        "size": 59
       },
       "fits": {
-        "Floor General": 9,
-        "Scoring Guard": 22,
+        "Floor General": 11,
+        "Scoring Guard": 21,
         "Combo Guard": 7,
-        "Slasher": 50,
-        "Sharpshooter": 15,
-        "Three-Level Scorer": 25,
-        "Connector": 25,
-        "Glass Cleaner": 53,
-        "Switch Defender": 59,
-        "Point-of-Attack Defender": 67
+        "Slasher": 51,
+        "Sharpshooter": 14,
+        "Three-Level Scorer": 23,
+        "Connector": 26,
+        "Glass Cleaner": 52,
+        "Switch Defender": 60,
+        "Point-of-Attack Defender": 63
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -1952,16 +1953,16 @@
       "tier": 2,
       "_mock_rank": 62,
       "strengths": {
-        "scoring": 83,
-        "shooting": 52,
-        "playmaking": 50,
+        "scoring": 82,
+        "shooting": 51,
+        "playmaking": 51,
         "finishing": 84,
         "rim_pressure": 95,
-        "rebounding": 24,
+        "rebounding": 23,
         "rim_protection": 88,
-        "perimeter_defense": 90,
+        "perimeter_defense": 91,
         "ball_security": 16,
-        "size": 33
+        "size": 47
       },
       "strengths_abs": {
         "scoring": 81,
@@ -1969,22 +1970,22 @@
         "playmaking": 62,
         "finishing": 71,
         "rim_pressure": 92,
-        "rebounding": 15,
+        "rebounding": 14,
         "rim_protection": 69,
-        "perimeter_defense": 92,
+        "perimeter_defense": 93,
         "ball_security": 13,
-        "size": 21
+        "size": 26
       },
       "fits": {
-        "Floor General": 41,
-        "Scoring Guard": 91,
-        "Combo Guard": 59,
+        "Floor General": 42,
+        "Scoring Guard": 89,
+        "Combo Guard": 58,
         "Slasher": 97,
-        "Sharpshooter": 52,
+        "Sharpshooter": 51,
         "Three-Level Scorer": 94,
-        "Glass Cleaner": 32,
-        "Switch Defender": 86,
-        "Point-of-Attack Defender": 91
+        "Glass Cleaner": 31,
+        "Switch Defender": 87,
+        "Point-of-Attack Defender": 93
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -2072,39 +2073,39 @@
       },
       "_mock_rank": 10,
       "strengths": {
-        "scoring": 90,
-        "shooting": 29,
-        "playmaking": 38,
-        "finishing": 28,
+        "scoring": 89,
+        "shooting": 28,
+        "playmaking": 39,
+        "finishing": 26,
         "rim_pressure": 81,
         "rebounding": 88,
-        "rim_protection": 71,
-        "perimeter_defense": 48,
-        "ball_security": 78,
-        "size": 45
+        "rim_protection": 70,
+        "perimeter_defense": 49,
+        "ball_security": 77,
+        "size": 61
       },
       "strengths_abs": {
         "scoring": 86,
         "shooting": 38,
         "playmaking": 51,
-        "finishing": 19,
+        "finishing": 18,
         "rim_pressure": 78,
-        "rebounding": 64,
-        "rim_protection": 51,
+        "rebounding": 63,
+        "rim_protection": 50,
         "perimeter_defense": 51,
         "ball_security": 80,
-        "size": 29
+        "size": 35
       },
       "fits": {
-        "Floor General": 64,
-        "Scoring Guard": 69,
-        "Combo Guard": 66,
-        "Slasher": 78,
-        "Sharpshooter": 40,
-        "Three-Level Scorer": 66,
-        "Glass Cleaner": 59,
-        "Switch Defender": 49,
-        "Point-of-Attack Defender": 48
+        "Floor General": 65,
+        "Scoring Guard": 67,
+        "Combo Guard": 65,
+        "Slasher": 77,
+        "Sharpshooter": 39,
+        "Three-Level Scorer": 64,
+        "Glass Cleaner": 57,
+        "Switch Defender": 48,
+        "Point-of-Attack Defender": 51
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -2202,7 +2203,7 @@
         "rim_protection": 0,
         "perimeter_defense": 0,
         "ball_security": 67,
-        "size": 50
+        "size": 54
       },
       "strengths_abs": {
         "scoring": 97,
@@ -2210,18 +2211,18 @@
         "playmaking": 4,
         "finishing": 87,
         "rim_pressure": 98,
-        "rebounding": 95,
+        "rebounding": 94,
         "rim_protection": 58,
         "perimeter_defense": 19,
         "ball_security": 68,
-        "size": 96
+        "size": 97
       },
       "fits": {
         "Stretch Big": 27,
         "Offensive Hub": 42,
         "Post Scorer": 70,
         "Play Finisher": 42,
-        "Glass Cleaner": 88,
+        "Glass Cleaner": 86,
         "Switch Defender": 41,
         "Rim Protector": 30
       },
@@ -2364,22 +2365,22 @@
         "rim_protection": 89,
         "perimeter_defense": 89,
         "ball_security": 44,
-        "size": 81
+        "size": 83
       },
       "strengths_abs": {
-        "scoring": 62,
+        "scoring": 61,
         "shooting": 60,
         "playmaking": 0,
-        "finishing": 62,
+        "finishing": 61,
         "rim_pressure": 38,
         "rebounding": 92,
         "rim_protection": 96,
-        "perimeter_defense": 88,
+        "perimeter_defense": 89,
         "ball_security": 46,
         "size": 89
       },
       "fits": {
-        "Slasher": 30,
+        "Slasher": 29,
         "Sharpshooter": 67,
         "Stretch Big": 82,
         "Three-Level Scorer": 58,
@@ -2486,19 +2487,19 @@
         "rim_protection": 56,
         "perimeter_defense": 78,
         "ball_security": 4,
-        "size": 74
+        "size": 73
       },
       "strengths_abs": {
         "scoring": 92,
         "shooting": 0,
         "playmaking": 99,
-        "finishing": 64,
-        "rim_pressure": 75,
+        "finishing": 63,
+        "rim_pressure": 74,
         "rebounding": 99,
         "rim_protection": 77,
-        "perimeter_defense": 77,
+        "perimeter_defense": 78,
         "ball_security": 11,
-        "size": 86
+        "size": 85
       },
       "fits": {
         "Sharpshooter": 13,
@@ -2507,7 +2508,7 @@
         "Offensive Hub": 97,
         "Post Scorer": 85,
         "Play Finisher": 55,
-        "Glass Cleaner": 95,
+        "Glass Cleaner": 94,
         "Switch Defender": 89,
         "Rim Protector": 61,
         "Wing Stopper": 78
@@ -2609,32 +2610,32 @@
         "rim_protection": 81,
         "perimeter_defense": 22,
         "ball_security": 59,
-        "size": 15
+        "size": 23
       },
       "strengths_abs": {
         "scoring": 89,
         "shooting": 66,
         "playmaking": 64,
-        "finishing": 65,
+        "finishing": 64,
         "rim_pressure": 96,
         "rebounding": 69,
         "rim_protection": 89,
-        "perimeter_defense": 15,
-        "ball_security": 55,
+        "perimeter_defense": 16,
+        "ball_security": 54,
         "size": 60
       },
       "fits": {
-        "Slasher": 86,
-        "Sharpshooter": 84,
+        "Slasher": 85,
+        "Sharpshooter": 83,
         "Stretch Big": 79,
-        "Three-Level Scorer": 89,
+        "Three-Level Scorer": 90,
         "Offensive Hub": 88,
         "Post Scorer": 73,
         "Play Finisher": 64,
         "Glass Cleaner": 76,
         "Switch Defender": 57,
         "Rim Protector": 55,
-        "Wing Stopper": 19
+        "Wing Stopper": 22
       },
       "archetype": "Three-Level Scorer",
       "all_offensive": [
@@ -2783,39 +2784,39 @@
       },
       "_mock_rank": 38,
       "strengths": {
-        "scoring": 48,
-        "shooting": 66,
-        "playmaking": 97,
-        "finishing": 40,
+        "scoring": 47,
+        "shooting": 65,
+        "playmaking": 96,
+        "finishing": 39,
         "rim_pressure": 21,
         "rebounding": 2,
         "rim_protection": 72,
-        "perimeter_defense": 97,
-        "ball_security": 17,
-        "size": 3
+        "perimeter_defense": 96,
+        "ball_security": 18,
+        "size": 6
       },
       "strengths_abs": {
-        "scoring": 44,
+        "scoring": 43,
         "shooting": 71,
         "playmaking": 97,
         "finishing": 26,
-        "rim_pressure": 16,
+        "rim_pressure": 17,
         "rebounding": 1,
         "rim_protection": 56,
         "perimeter_defense": 97,
         "ball_security": 14,
-        "size": 2
+        "size": 3
       },
       "fits": {
         "Floor General": 79,
-        "Scoring Guard": 50,
-        "Combo Guard": 71,
-        "Slasher": 28,
-        "Sharpshooter": 61,
-        "Three-Level Scorer": 48,
+        "Scoring Guard": 49,
+        "Combo Guard": 68,
+        "Slasher": 27,
+        "Sharpshooter": 60,
+        "Three-Level Scorer": 46,
         "Glass Cleaner": 9,
-        "Switch Defender": 74,
-        "Point-of-Attack Defender": 90
+        "Switch Defender": 73,
+        "Point-of-Attack Defender": 82
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -2902,40 +2903,40 @@
       },
       "_mock_rank": 21,
       "strengths": {
-        "scoring": 24,
-        "shooting": 55,
-        "playmaking": 45,
-        "finishing": 71,
-        "rim_pressure": 45,
+        "scoring": 23,
+        "shooting": 54,
+        "playmaking": 46,
+        "finishing": 70,
+        "rim_pressure": 44,
         "rebounding": 67,
         "rim_protection": 79,
         "perimeter_defense": 33,
-        "ball_security": 29,
-        "size": 41
+        "ball_security": 28,
+        "size": 57
       },
       "strengths_abs": {
-        "scoring": 23,
-        "shooting": 63,
-        "playmaking": 56,
+        "scoring": 22,
+        "shooting": 62,
+        "playmaking": 57,
         "finishing": 56,
-        "rim_pressure": 35,
-        "rebounding": 45,
-        "rim_protection": 63,
-        "perimeter_defense": 37,
-        "ball_security": 32,
-        "size": 26
+        "rim_pressure": 34,
+        "rebounding": 44,
+        "rim_protection": 62,
+        "perimeter_defense": 38,
+        "ball_security": 31,
+        "size": 32
       },
       "fits": {
-        "Floor General": 26,
-        "Scoring Guard": 34,
-        "Combo Guard": 28,
-        "Slasher": 47,
-        "Sharpshooter": 45,
-        "Three-Level Scorer": 46,
-        "Connector": 39,
-        "Glass Cleaner": 51,
+        "Floor General": 28,
+        "Scoring Guard": 33,
+        "Combo Guard": 26,
+        "Slasher": 45,
+        "Sharpshooter": 44,
+        "Three-Level Scorer": 45,
+        "Connector": 41,
+        "Glass Cleaner": 50,
         "Switch Defender": 47,
-        "Point-of-Attack Defender": 31
+        "Point-of-Attack Defender": 35
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -3022,44 +3023,44 @@
       },
       "_mock_rank": 6,
       "strengths": {
-        "scoring": 78,
+        "scoring": 77,
         "shooting": 88,
         "playmaking": 40,
         "finishing": 53,
         "rim_pressure": 72,
-        "rebounding": 55,
-        "rim_protection": 28,
-        "perimeter_defense": 22,
+        "rebounding": 54,
+        "rim_protection": 26,
+        "perimeter_defense": 23,
         "ball_security": 84,
-        "size": 48
+        "size": 64
       },
       "strengths_abs": {
         "scoring": 76,
         "shooting": 88,
         "playmaking": 52,
         "finishing": 36,
-        "rim_pressure": 64,
+        "rim_pressure": 63,
         "rebounding": 37,
-        "rim_protection": 18,
+        "rim_protection": 17,
         "perimeter_defense": 29,
         "ball_security": 87,
-        "size": 31
+        "size": 37
       },
       "fits": {
-        "Floor General": 71,
+        "Floor General": 68,
         "Scoring Guard": 93,
-        "Combo Guard": 83,
+        "Combo Guard": 82,
         "Slasher": 79,
-        "Sharpshooter": 92,
+        "Sharpshooter": 93,
         "Three-Level Scorer": 93,
-        "Glass Cleaner": 35,
+        "Glass Cleaner": 34,
         "Switch Defender": 13,
-        "Point-of-Attack Defender": 21
+        "Point-of-Attack Defender": 25
       },
       "archetype": "Scoring Guard",
       "all_offensive": [
         "Scoring Guard",
-        "Three-Level Scorer"
+        "Sharpshooter"
       ],
       "defensive_archetype": "Average Defender",
       "all_defensive": [
@@ -3146,35 +3147,35 @@
         "shooting": 93,
         "playmaking": 9,
         "finishing": 60,
-        "rim_pressure": 38,
-        "rebounding": 33,
-        "rim_protection": 57,
+        "rim_pressure": 39,
+        "rebounding": 32,
+        "rim_protection": 56,
         "perimeter_defense": 16,
-        "ball_security": 71,
-        "size": 74
+        "ball_security": 70,
+        "size": 79
       },
       "strengths_abs": {
-        "scoring": 73,
+        "scoring": 72,
         "shooting": 93,
         "playmaking": 19,
-        "finishing": 43,
+        "finishing": 42,
         "rim_pressure": 31,
-        "rebounding": 21,
+        "rebounding": 20,
         "rim_protection": 37,
         "perimeter_defense": 21,
-        "ball_security": 75,
-        "size": 48
+        "ball_security": 74,
+        "size": 47
       },
       "fits": {
-        "Floor General": 24,
-        "Scoring Guard": 90,
-        "Combo Guard": 53,
-        "Slasher": 66,
+        "Floor General": 25,
+        "Scoring Guard": 91,
+        "Combo Guard": 51,
+        "Slasher": 65,
         "Sharpshooter": 95,
         "Three-Level Scorer": 92,
-        "Glass Cleaner": 24,
+        "Glass Cleaner": 23,
         "Switch Defender": 23,
-        "Point-of-Attack Defender": 22
+        "Point-of-Attack Defender": 19
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -3324,36 +3325,36 @@
         "scoring": 84,
         "shooting": 60,
         "playmaking": 21,
-        "finishing": 14,
-        "rim_pressure": 17,
-        "rebounding": 71,
-        "rim_protection": 66,
-        "perimeter_defense": 69,
+        "finishing": 12,
+        "rim_pressure": 18,
+        "rebounding": 70,
+        "rim_protection": 65,
+        "perimeter_defense": 70,
         "ball_security": 98,
-        "size": 84
+        "size": 89
       },
       "strengths_abs": {
         "scoring": 82,
         "shooting": 68,
         "playmaking": 33,
-        "finishing": 10,
+        "finishing": 9,
         "rim_pressure": 14,
         "rebounding": 47,
         "rim_protection": 47,
-        "perimeter_defense": 71,
+        "perimeter_defense": 72,
         "ball_security": 97,
         "size": 56
       },
       "fits": {
-        "Floor General": 53,
-        "Scoring Guard": 71,
-        "Combo Guard": 62,
-        "Slasher": 33,
-        "Sharpshooter": 74,
+        "Floor General": 54,
+        "Scoring Guard": 72,
+        "Combo Guard": 63,
+        "Slasher": 32,
+        "Sharpshooter": 75,
         "Three-Level Scorer": 60,
         "Glass Cleaner": 41,
         "Switch Defender": 66,
-        "Point-of-Attack Defender": 76
+        "Point-of-Attack Defender": 77
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -3492,33 +3493,33 @@
         "rim_protection": 67,
         "perimeter_defense": 81,
         "ball_security": 15,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
-        "scoring": 10,
+        "scoring": 9,
         "shooting": 18,
-        "playmaking": 59,
-        "finishing": 55,
+        "playmaking": 60,
+        "finishing": 54,
         "rim_pressure": 71,
-        "rebounding": 85,
-        "rim_protection": 84,
-        "perimeter_defense": 78,
-        "ball_security": 22,
-        "size": 76
+        "rebounding": 84,
+        "rim_protection": 83,
+        "perimeter_defense": 79,
+        "ball_security": 21,
+        "size": 80
       },
       "fits": {
-        "Slasher": 26,
-        "Sharpshooter": 24,
+        "Slasher": 25,
+        "Sharpshooter": 23,
         "Stretch Big": 33,
-        "Three-Level Scorer": 7,
-        "Connector": 68,
+        "Three-Level Scorer": 6,
+        "Connector": 70,
         "Offensive Hub": 36,
         "Post Scorer": 18,
-        "Play Finisher": 45,
+        "Play Finisher": 42,
         "Glass Cleaner": 81,
         "Switch Defender": 92,
         "Rim Protector": 64,
-        "Wing Stopper": 78
+        "Wing Stopper": 81
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -3605,40 +3606,40 @@
       },
       "_mock_rank": 18,
       "strengths": {
-        "scoring": 3,
-        "shooting": 41,
-        "playmaking": 79,
-        "finishing": 78,
+        "scoring": 2,
+        "shooting": 40,
+        "playmaking": 81,
+        "finishing": 77,
         "rim_pressure": 2,
-        "rebounding": 59,
-        "rim_protection": 76,
-        "perimeter_defense": 71,
+        "rebounding": 58,
+        "rim_protection": 75,
+        "perimeter_defense": 72,
         "ball_security": 14,
-        "size": 93
+        "size": 95
       },
       "strengths_abs": {
-        "scoring": 2,
+        "scoring": 1,
         "shooting": 49,
-        "playmaking": 86,
-        "finishing": 63,
+        "playmaking": 87,
+        "finishing": 62,
         "rim_pressure": 2,
-        "rebounding": 40,
+        "rebounding": 39,
         "rim_protection": 60,
         "perimeter_defense": 73,
         "ball_security": 12,
-        "size": 68
+        "size": 67
       },
       "fits": {
         "Floor General": 47,
-        "Scoring Guard": 12,
-        "Combo Guard": 29,
-        "Slasher": 17,
+        "Scoring Guard": 11,
+        "Combo Guard": 28,
+        "Slasher": 16,
         "Sharpshooter": 29,
-        "Three-Level Scorer": 15,
-        "Connector": 82,
+        "Three-Level Scorer": 14,
+        "Connector": 85,
         "Glass Cleaner": 48,
         "Switch Defender": 71,
-        "Point-of-Attack Defender": 83
+        "Point-of-Attack Defender": 81
       },
       "archetype": "Connector",
       "all_offensive": [
@@ -3886,39 +3887,39 @@
       "tier": 2,
       "_mock_rank": 47,
       "strengths": {
-        "scoring": 43,
+        "scoring": 42,
         "shooting": 91,
-        "playmaking": 59,
-        "finishing": 90,
-        "rim_pressure": 52,
-        "rebounding": 62,
+        "playmaking": 60,
+        "finishing": 89,
+        "rim_pressure": 51,
+        "rebounding": 61,
         "rim_protection": 95,
-        "perimeter_defense": 81,
+        "perimeter_defense": 82,
         "ball_security": 2,
-        "size": 50
+        "size": 66
       },
       "strengths_abs": {
         "scoring": 37,
         "shooting": 92,
-        "playmaking": 70,
+        "playmaking": 71,
         "finishing": 82,
-        "rim_pressure": 44,
-        "rebounding": 42,
+        "rim_pressure": 43,
+        "rebounding": 41,
         "rim_protection": 79,
         "perimeter_defense": 84,
         "ball_security": 1,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 34,
+        "Floor General": 35,
         "Scoring Guard": 74,
-        "Combo Guard": 45,
+        "Combo Guard": 44,
         "Slasher": 68,
         "Sharpshooter": 85,
         "Three-Level Scorer": 88,
-        "Glass Cleaner": 54,
+        "Glass Cleaner": 53,
         "Switch Defender": 88,
-        "Point-of-Attack Defender": 81
+        "Point-of-Attack Defender": 84
       },
       "archetype": "Three-Level Scorer",
       "all_offensive": [
@@ -4067,47 +4068,47 @@
       },
       "_mock_rank": 29,
       "strengths": {
-        "scoring": 40,
-        "shooting": 48,
-        "playmaking": 81,
-        "finishing": 31,
-        "rim_pressure": 3,
-        "rebounding": 12,
-        "rim_protection": 55,
-        "perimeter_defense": 66,
-        "ball_security": 62,
-        "size": 26
+        "scoring": 39,
+        "shooting": 47,
+        "playmaking": 82,
+        "finishing": 30,
+        "rim_pressure": 4,
+        "rebounding": 11,
+        "rim_protection": 54,
+        "perimeter_defense": 67,
+        "ball_security": 61,
+        "size": 38
       },
       "strengths_abs": {
-        "scoring": 34,
+        "scoring": 33,
         "shooting": 56,
-        "playmaking": 87,
-        "finishing": 21,
+        "playmaking": 88,
+        "finishing": 20,
         "rim_pressure": 3,
-        "rebounding": 8,
+        "rebounding": 7,
         "rim_protection": 36,
-        "perimeter_defense": 69,
-        "ball_security": 65,
-        "size": 16
+        "perimeter_defense": 70,
+        "ball_security": 64,
+        "size": 22
       },
       "fits": {
         "Floor General": 84,
-        "Scoring Guard": 33,
+        "Scoring Guard": 32,
         "Combo Guard": 60,
         "Slasher": 13,
-        "Sharpshooter": 46,
-        "Three-Level Scorer": 20,
-        "Glass Cleaner": 10,
+        "Sharpshooter": 45,
+        "Three-Level Scorer": 19,
+        "Glass Cleaner": 8,
         "Switch Defender": 51,
-        "Point-of-Attack Defender": 59
+        "Point-of-Attack Defender": 60
       },
       "archetype": "Floor General",
       "all_offensive": [
         "Floor General"
       ],
-      "defensive_archetype": "Average Defender",
+      "defensive_archetype": "Point-of-Attack Defender",
       "all_defensive": [
-        "Average Defender"
+        "Point-of-Attack Defender"
       ]
     },
     {
@@ -4170,39 +4171,39 @@
       "tier": 2,
       "_mock_rank": 64,
       "strengths": {
-        "scoring": 69,
-        "shooting": 33,
-        "playmaking": 78,
-        "finishing": 50,
-        "rim_pressure": 71,
+        "scoring": 68,
+        "shooting": 32,
+        "playmaking": 79,
+        "finishing": 49,
+        "rim_pressure": 70,
         "rebounding": 91,
-        "rim_protection": 22,
-        "perimeter_defense": 57,
-        "ball_security": 33,
-        "size": 50
+        "rim_protection": 21,
+        "perimeter_defense": 58,
+        "ball_security": 32,
+        "size": 66
       },
       "strengths_abs": {
         "scoring": 66,
-        "shooting": 42,
-        "playmaking": 85,
-        "finishing": 34,
-        "rim_pressure": 62,
+        "shooting": 41,
+        "playmaking": 86,
+        "finishing": 33,
+        "rim_pressure": 61,
         "rebounding": 67,
-        "rim_protection": 14,
-        "perimeter_defense": 60,
+        "rim_protection": 13,
+        "perimeter_defense": 61,
         "ball_security": 36,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 76,
-        "Scoring Guard": 55,
+        "Floor General": 75,
+        "Scoring Guard": 54,
         "Combo Guard": 67,
         "Slasher": 72,
         "Sharpshooter": 36,
         "Three-Level Scorer": 61,
-        "Glass Cleaner": 58,
-        "Switch Defender": 34,
-        "Point-of-Attack Defender": 57
+        "Glass Cleaner": 59,
+        "Switch Defender": 36,
+        "Point-of-Attack Defender": 58
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -4276,36 +4277,36 @@
         "scoring": 95,
         "shooting": 7,
         "playmaking": 88,
-        "finishing": 34,
+        "finishing": 33,
         "rim_pressure": 79,
-        "rebounding": 14,
+        "rebounding": 12,
         "rim_protection": 60,
-        "perimeter_defense": 83,
+        "perimeter_defense": 84,
         "ball_security": 88,
-        "size": 10
+        "size": 16
       },
       "strengths_abs": {
         "scoring": 93,
         "shooting": 19,
         "playmaking": 91,
-        "finishing": 23,
+        "finishing": 22,
         "rim_pressure": 77,
-        "rebounding": 9,
-        "rim_protection": 41,
-        "perimeter_defense": 85,
+        "rebounding": 8,
+        "rim_protection": 40,
+        "perimeter_defense": 86,
         "ball_security": 89,
-        "size": 7
+        "size": 9
       },
       "fits": {
         "Floor General": 98,
-        "Scoring Guard": 66,
+        "Scoring Guard": 65,
         "Combo Guard": 95,
         "Slasher": 83,
-        "Sharpshooter": 26,
-        "Three-Level Scorer": 59,
-        "Glass Cleaner": 11,
-        "Switch Defender": 64,
-        "Point-of-Attack Defender": 74
+        "Sharpshooter": 25,
+        "Three-Level Scorer": 57,
+        "Glass Cleaner": 10,
+        "Switch Defender": 63,
+        "Point-of-Attack Defender": 75
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -4396,27 +4397,27 @@
       "_mock_rank": 30,
       "strengths": {
         "scoring": 0,
-        "shooting": 3,
+        "shooting": 4,
         "playmaking": 19,
         "finishing": 0,
         "rim_pressure": 14,
-        "rebounding": 78,
+        "rebounding": 77,
         "rim_protection": 93,
-        "perimeter_defense": 60,
+        "perimeter_defense": 61,
         "ball_security": 7,
-        "size": 97
+        "size": 96
       },
       "strengths_abs": {
         "scoring": 0,
-        "shooting": 15,
+        "shooting": 16,
         "playmaking": 32,
         "finishing": 0,
         "rim_pressure": 12,
-        "rebounding": 53,
+        "rebounding": 52,
         "rim_protection": 78,
-        "perimeter_defense": 66,
-        "ball_security": 5,
-        "size": 70
+        "perimeter_defense": 67,
+        "ball_security": 6,
+        "size": 68
       },
       "fits": {
         "Floor General": 0,
@@ -4567,7 +4568,7 @@
         "rim_protection": 59,
         "perimeter_defense": 30,
         "ball_security": 26,
-        "size": 81
+        "size": 83
       },
       "strengths_abs": {
         "scoring": 71,
@@ -4582,16 +4583,16 @@
         "size": 89
       },
       "fits": {
-        "Sharpshooter": 11,
+        "Sharpshooter": 10,
         "Stretch Big": 21,
-        "Three-Level Scorer": 62,
+        "Three-Level Scorer": 63,
         "Offensive Hub": 45,
         "Post Scorer": 94,
         "Play Finisher": 97,
         "Glass Cleaner": 92,
         "Switch Defender": 58,
         "Rim Protector": 67,
-        "Wing Stopper": 41
+        "Wing Stopper": 37
       },
       "archetype": "Play Finisher",
       "all_offensive": [
@@ -4733,32 +4734,32 @@
         "rim_protection": 33,
         "perimeter_defense": 33,
         "ball_security": 67,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
         "scoring": 26,
-        "shooting": 54,
-        "playmaking": 68,
+        "shooting": 53,
+        "playmaking": 69,
         "finishing": 27,
-        "rim_pressure": 55,
+        "rim_pressure": 54,
         "rebounding": 70,
         "rim_protection": 59,
         "perimeter_defense": 23,
-        "ball_security": 63,
-        "size": 76
+        "ball_security": 62,
+        "size": 80
       },
       "fits": {
-        "Slasher": 12,
-        "Sharpshooter": 54,
+        "Slasher": 11,
+        "Sharpshooter": 57,
         "Stretch Big": 52,
-        "Three-Level Scorer": 11,
+        "Three-Level Scorer": 10,
         "Offensive Hub": 55,
         "Post Scorer": 9,
         "Play Finisher": 6,
-        "Glass Cleaner": 63,
+        "Glass Cleaner": 62,
         "Switch Defender": 42,
         "Rim Protector": 27,
-        "Wing Stopper": 26
+        "Wing Stopper": 30
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -4840,17 +4841,17 @@
         "rim_protection": 17,
         "perimeter_defense": 33,
         "ball_security": 0,
-        "size": 17
+        "size": 29
       },
       "strengths_abs": {
         "scoring": 49,
         "shooting": 0,
-        "playmaking": 26,
-        "finishing": 85,
+        "playmaking": 27,
+        "finishing": 84,
         "rim_pressure": 76,
         "rebounding": 91,
         "rim_protection": 91,
-        "perimeter_defense": 46,
+        "perimeter_defense": 47,
         "ball_security": 4,
         "size": 89
       },
@@ -4859,8 +4860,8 @@
         "Offensive Hub": 30,
         "Post Scorer": 15,
         "Play Finisher": 30,
-        "Glass Cleaner": 87,
-        "Switch Defender": 78,
+        "Glass Cleaner": 88,
+        "Switch Defender": 79,
         "Rim Protector": 82
       },
       "archetype": "Glass Cleaner",
@@ -4941,19 +4942,19 @@
         "rim_protection": 33,
         "perimeter_defense": 67,
         "ball_security": 50,
-        "size": 0
+        "size": 11
       },
       "strengths_abs": {
-        "scoring": 18,
+        "scoring": 17,
         "shooting": 20,
         "playmaking": 2,
-        "finishing": 75,
-        "rim_pressure": 73,
-        "rebounding": 84,
+        "finishing": 74,
+        "rim_pressure": 72,
+        "rebounding": 83,
         "rim_protection": 92,
-        "perimeter_defense": 76,
-        "ball_security": 54,
-        "size": 76
+        "perimeter_defense": 77,
+        "ball_security": 53,
+        "size": 80
       },
       "fits": {
         "Stretch Big": 45,
@@ -4961,7 +4962,7 @@
         "Post Scorer": 0,
         "Play Finisher": 18,
         "Glass Cleaner": 78,
-        "Switch Defender": 95,
+        "Switch Defender": 94,
         "Rim Protector": 76
       },
       "archetype": "Glass Cleaner",
@@ -5034,38 +5035,38 @@
       "_mock_rank": 68,
       "strengths": {
         "scoring": 86,
-        "shooting": 12,
-        "playmaking": 74,
+        "shooting": 11,
+        "playmaking": 75,
         "finishing": 88,
         "rim_pressure": 84,
         "rebounding": 95,
         "rim_protection": 12,
-        "perimeter_defense": 84,
-        "ball_security": 47,
-        "size": 50
+        "perimeter_defense": 86,
+        "ball_security": 46,
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 84,
-        "shooting": 24,
-        "playmaking": 81,
+        "scoring": 83,
+        "shooting": 23,
+        "playmaking": 82,
         "finishing": 78,
         "rim_pressure": 81,
-        "rebounding": 74,
+        "rebounding": 73,
         "rim_protection": 8,
-        "perimeter_defense": 87,
+        "perimeter_defense": 88,
         "ball_security": 49,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 83,
-        "Scoring Guard": 83,
-        "Combo Guard": 81,
+        "Floor General": 82,
+        "Scoring Guard": 82,
+        "Combo Guard": 79,
         "Slasher": 96,
-        "Sharpshooter": 25,
-        "Three-Level Scorer": 81,
+        "Sharpshooter": 24,
+        "Three-Level Scorer": 82,
         "Glass Cleaner": 71,
         "Switch Defender": 44,
-        "Point-of-Attack Defender": 88
+        "Point-of-Attack Defender": 91
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -5153,40 +5154,40 @@
       },
       "_mock_rank": 72,
       "strengths": {
-        "scoring": 19,
+        "scoring": 18,
         "shooting": 84,
         "playmaking": 12,
-        "finishing": 83,
+        "finishing": 82,
         "rim_pressure": 53,
-        "rebounding": 83,
+        "rebounding": 82,
         "rim_protection": 81,
-        "perimeter_defense": 86,
-        "ball_security": 38,
-        "size": 40
+        "perimeter_defense": 88,
+        "ball_security": 37,
+        "size": 57
       },
       "strengths_abs": {
-        "scoring": 19,
+        "scoring": 18,
         "shooting": 86,
-        "playmaking": 27,
+        "playmaking": 28,
         "finishing": 69,
-        "rim_pressure": 45,
+        "rim_pressure": 44,
         "rebounding": 56,
-        "rim_protection": 64,
-        "perimeter_defense": 89,
-        "ball_security": 40,
-        "size": 25
+        "rim_protection": 63,
+        "perimeter_defense": 90,
+        "ball_security": 39,
+        "size": 32
       },
       "fits": {
         "Floor General": 7,
-        "Scoring Guard": 43,
-        "Combo Guard": 12,
-        "Slasher": 61,
-        "Sharpshooter": 78,
-        "Three-Level Scorer": 72,
-        "Connector": 64,
+        "Scoring Guard": 44,
+        "Combo Guard": 14,
+        "Slasher": 59,
+        "Sharpshooter": 77,
+        "Three-Level Scorer": 71,
+        "Connector": 67,
         "Glass Cleaner": 67,
         "Switch Defender": 80,
-        "Point-of-Attack Defender": 86
+        "Point-of-Attack Defender": 89
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -5275,40 +5276,40 @@
       },
       "_mock_rank": 31,
       "strengths": {
-        "scoring": 16,
+        "scoring": 14,
         "shooting": 81,
-        "playmaking": 90,
-        "finishing": 33,
+        "playmaking": 89,
+        "finishing": 32,
         "rim_pressure": 0,
         "rebounding": 0,
-        "rim_protection": 50,
-        "perimeter_defense": 72,
+        "rim_protection": 49,
+        "perimeter_defense": 74,
         "ball_security": 21,
-        "size": 14
+        "size": 24
       },
       "strengths_abs": {
-        "scoring": 14,
-        "shooting": 84,
+        "scoring": 13,
+        "shooting": 83,
         "playmaking": 92,
-        "finishing": 22,
+        "finishing": 21,
         "rim_pressure": 0,
         "rebounding": 0,
-        "rim_protection": 33,
+        "rim_protection": 32,
         "perimeter_defense": 74,
         "ball_security": 18,
-        "size": 9
+        "size": 14
       },
       "fits": {
-        "Floor General": 67,
-        "Scoring Guard": 26,
-        "Combo Guard": 48,
+        "Floor General": 61,
+        "Scoring Guard": 25,
+        "Combo Guard": 47,
         "Slasher": 5,
         "Sharpshooter": 68,
-        "Three-Level Scorer": 26,
+        "Three-Level Scorer": 24,
         "Connector": 96,
-        "Glass Cleaner": 3,
-        "Switch Defender": 52,
-        "Point-of-Attack Defender": 64
+        "Glass Cleaner": 2,
+        "Switch Defender": 49,
+        "Point-of-Attack Defender": 68
       },
       "archetype": "Connector",
       "all_offensive": [
@@ -5454,39 +5455,39 @@
       },
       "_mock_rank": 70,
       "strengths": {
-        "scoring": 97,
-        "shooting": 50,
+        "scoring": 96,
+        "shooting": 49,
         "playmaking": 98,
-        "finishing": 41,
+        "finishing": 40,
         "rim_pressure": 98,
-        "rebounding": 7,
-        "rim_protection": 41,
-        "perimeter_defense": 79,
-        "ball_security": 24,
-        "size": 9
+        "rebounding": 5,
+        "rim_protection": 40,
+        "perimeter_defense": 81,
+        "ball_security": 23,
+        "size": 13
       },
       "strengths_abs": {
-        "scoring": 95,
+        "scoring": 94,
         "shooting": 57,
         "playmaking": 98,
-        "finishing": 29,
+        "finishing": 28,
         "rim_pressure": 99,
-        "rebounding": 4,
+        "rebounding": 3,
         "rim_protection": 27,
-        "perimeter_defense": 82,
-        "ball_security": 25,
-        "size": 5
+        "perimeter_defense": 83,
+        "ball_security": 24,
+        "size": 7
       },
       "fits": {
         "Floor General": 93,
         "Scoring Guard": 88,
-        "Combo Guard": 97,
+        "Combo Guard": 96,
         "Slasher": 92,
-        "Sharpshooter": 56,
+        "Sharpshooter": 52,
         "Three-Level Scorer": 87,
-        "Glass Cleaner": 7,
-        "Switch Defender": 53,
-        "Point-of-Attack Defender": 69
+        "Glass Cleaner": 6,
+        "Switch Defender": 52,
+        "Point-of-Attack Defender": 70
       },
       "archetype": "Combo Guard",
       "all_offensive": [
@@ -5695,38 +5696,38 @@
       "_mock_rank": 44,
       "strengths": {
         "scoring": 91,
-        "shooting": 38,
-        "playmaking": 71,
+        "shooting": 37,
+        "playmaking": 72,
         "finishing": 67,
-        "rim_pressure": 69,
-        "rebounding": 57,
-        "rim_protection": 29,
-        "perimeter_defense": 67,
-        "ball_security": 66,
-        "size": 31
+        "rim_pressure": 68,
+        "rebounding": 56,
+        "rim_protection": 28,
+        "perimeter_defense": 68,
+        "ball_security": 65,
+        "size": 46
       },
       "strengths_abs": {
         "scoring": 87,
-        "shooting": 45,
-        "playmaking": 78,
+        "shooting": 44,
+        "playmaking": 79,
         "finishing": 49,
         "rim_pressure": 60,
         "rebounding": 38,
-        "rim_protection": 19,
-        "perimeter_defense": 70,
+        "rim_protection": 18,
+        "perimeter_defense": 71,
         "ball_security": 70,
-        "size": 20
+        "size": 26
       },
       "fits": {
-        "Floor General": 90,
+        "Floor General": 89,
         "Scoring Guard": 86,
         "Combo Guard": 91,
         "Slasher": 87,
-        "Sharpshooter": 49,
+        "Sharpshooter": 46,
         "Three-Level Scorer": 86,
-        "Glass Cleaner": 37,
-        "Switch Defender": 37,
-        "Point-of-Attack Defender": 62
+        "Glass Cleaner": 38,
+        "Switch Defender": 39,
+        "Point-of-Attack Defender": 65
       },
       "archetype": "Combo Guard",
       "all_offensive": [
@@ -5934,43 +5935,44 @@
       "tier": 3,
       "_mock_rank": 71,
       "strengths": {
-        "scoring": 57,
+        "scoring": 56,
         "shooting": 95,
-        "playmaking": 52,
-        "finishing": 36,
-        "rim_pressure": 31,
-        "rebounding": 41,
-        "rim_protection": 59,
-        "perimeter_defense": 50,
+        "playmaking": 53,
+        "finishing": 35,
+        "rim_pressure": 32,
+        "rebounding": 40,
+        "rim_protection": 58,
+        "perimeter_defense": 51,
         "ball_security": 74,
-        "size": 33
+        "size": 47
       },
       "strengths_abs": {
-        "scoring": 52,
-        "shooting": 95,
+        "scoring": 51,
+        "shooting": 94,
         "playmaking": 63,
-        "finishing": 24,
-        "rim_pressure": 25,
+        "finishing": 23,
+        "rim_pressure": 26,
         "rebounding": 26,
-        "rim_protection": 40,
+        "rim_protection": 39,
         "perimeter_defense": 53,
         "ball_security": 77,
-        "size": 21
+        "size": 26
       },
       "fits": {
         "Floor General": 72,
-        "Scoring Guard": 67,
-        "Combo Guard": 74,
-        "Slasher": 36,
+        "Scoring Guard": 68,
+        "Combo Guard": 75,
+        "Slasher": 37,
         "Sharpshooter": 94,
         "Three-Level Scorer": 74,
-        "Glass Cleaner": 25,
+        "Glass Cleaner": 24,
         "Switch Defender": 40,
         "Point-of-Attack Defender": 47
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
-        "Sharpshooter"
+        "Sharpshooter",
+        "Combo Guard"
       ],
       "defensive_archetype": "Average Defender",
       "all_defensive": [
@@ -6054,38 +6056,38 @@
       "_mock_rank": 12,
       "strengths": {
         "scoring": 67,
-        "shooting": 62,
-        "playmaking": 76,
-        "finishing": 76,
-        "rim_pressure": 57,
-        "rebounding": 16,
-        "rim_protection": 24,
+        "shooting": 61,
+        "playmaking": 77,
+        "finishing": 75,
+        "rim_pressure": 56,
+        "rebounding": 14,
+        "rim_protection": 23,
         "perimeter_defense": 21,
         "ball_security": 60,
-        "size": 95
+        "size": 96
       },
       "strengths_abs": {
-        "scoring": 65,
+        "scoring": 64,
         "shooting": 69,
         "playmaking": 84,
         "finishing": 60,
         "rim_pressure": 48,
-        "rebounding": 10,
-        "rim_protection": 15,
-        "perimeter_defense": 27,
-        "ball_security": 64,
-        "size": 69
+        "rebounding": 9,
+        "rim_protection": 14,
+        "perimeter_defense": 28,
+        "ball_security": 63,
+        "size": 68
       },
       "fits": {
-        "Floor General": 86,
-        "Scoring Guard": 79,
+        "Floor General": 88,
+        "Scoring Guard": 81,
         "Combo Guard": 84,
-        "Slasher": 75,
+        "Slasher": 73,
         "Sharpshooter": 64,
         "Three-Level Scorer": 85,
-        "Glass Cleaner": 15,
-        "Switch Defender": 16,
-        "Point-of-Attack Defender": 36
+        "Glass Cleaner": 14,
+        "Switch Defender": 17,
+        "Point-of-Attack Defender": 30
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -6175,39 +6177,39 @@
       },
       "_mock_rank": 90,
       "strengths": {
-        "scoring": 34,
-        "shooting": 17,
+        "scoring": 33,
+        "shooting": 16,
         "playmaking": 26,
-        "finishing": 3,
+        "finishing": 2,
         "rim_pressure": 86,
-        "rebounding": 97,
-        "rim_protection": 19,
-        "perimeter_defense": 45,
-        "ball_security": 52,
-        "size": 76
+        "rebounding": 96,
+        "rim_protection": 18,
+        "perimeter_defense": 46,
+        "ball_security": 51,
+        "size": 80
       },
       "strengths_abs": {
-        "scoring": 31,
-        "shooting": 29,
-        "playmaking": 36,
-        "finishing": 2,
+        "scoring": 30,
+        "shooting": 28,
+        "playmaking": 37,
+        "finishing": 1,
         "rim_pressure": 82,
         "rebounding": 77,
-        "rim_protection": 12,
-        "perimeter_defense": 48,
-        "ball_security": 55,
-        "size": 49
+        "rim_protection": 11,
+        "perimeter_defense": 49,
+        "ball_security": 54,
+        "size": 48
       },
       "fits": {
         "Floor General": 19,
-        "Scoring Guard": 9,
+        "Scoring Guard": 7,
         "Combo Guard": 16,
-        "Slasher": 41,
+        "Slasher": 40,
         "Sharpshooter": 20,
-        "Three-Level Scorer": 8,
-        "Glass Cleaner": 57,
+        "Three-Level Scorer": 7,
+        "Glass Cleaner": 58,
         "Switch Defender": 26,
-        "Point-of-Attack Defender": 52
+        "Point-of-Attack Defender": 53
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -6355,36 +6357,36 @@
       },
       "_mock_rank": 28,
       "strengths": {
-        "scoring": 31,
-        "shooting": 14,
+        "scoring": 30,
+        "shooting": 12,
         "playmaking": 28,
-        "finishing": 7,
+        "finishing": 5,
         "rim_pressure": 33,
         "rebounding": 72,
-        "rim_protection": 31,
-        "perimeter_defense": 3,
-        "ball_security": 43,
-        "size": 98
+        "rim_protection": 30,
+        "perimeter_defense": 4,
+        "ball_security": 42,
+        "size": 100
       },
       "strengths_abs": {
-        "scoring": 29,
-        "shooting": 25,
-        "playmaking": 37,
-        "finishing": 4,
-        "rim_pressure": 26,
+        "scoring": 28,
+        "shooting": 24,
+        "playmaking": 38,
+        "finishing": 3,
+        "rim_pressure": 27,
         "rebounding": 48,
-        "rim_protection": 20,
+        "rim_protection": 19,
         "perimeter_defense": 3,
-        "ball_security": 44,
-        "size": 87
+        "ball_security": 43,
+        "size": 85
       },
       "fits": {
         "Floor General": 16,
-        "Scoring Guard": 5,
-        "Combo Guard": 14,
-        "Slasher": 14,
-        "Sharpshooter": 16,
-        "Three-Level Scorer": 5,
+        "Scoring Guard": 4,
+        "Combo Guard": 12,
+        "Slasher": 12,
+        "Sharpshooter": 15,
+        "Three-Level Scorer": 2,
         "Glass Cleaner": 36,
         "Switch Defender": 7,
         "Point-of-Attack Defender": 14
@@ -6474,39 +6476,39 @@
       },
       "_mock_rank": 75,
       "strengths": {
-        "scoring": 76,
-        "shooting": 16,
+        "scoring": 75,
+        "shooting": 14,
         "playmaking": 95,
         "finishing": 91,
-        "rim_pressure": 76,
-        "rebounding": 66,
-        "rim_protection": 34,
+        "rim_pressure": 75,
+        "rebounding": 65,
+        "rim_protection": 33,
         "perimeter_defense": 28,
         "ball_security": 7,
-        "size": 28
+        "size": 39
       },
       "strengths_abs": {
-        "scoring": 75,
+        "scoring": 74,
         "shooting": 26,
         "playmaking": 96,
-        "finishing": 84,
+        "finishing": 83,
         "rim_pressure": 69,
-        "rebounding": 44,
-        "rim_protection": 22,
+        "rebounding": 43,
+        "rim_protection": 21,
         "perimeter_defense": 32,
-        "ball_security": 5,
-        "size": 18
+        "ball_security": 6,
+        "size": 22
       },
       "fits": {
         "Floor General": 81,
-        "Scoring Guard": 71,
-        "Combo Guard": 72,
+        "Scoring Guard": 70,
+        "Combo Guard": 70,
         "Slasher": 91,
-        "Sharpshooter": 22,
+        "Sharpshooter": 21,
         "Three-Level Scorer": 76,
         "Glass Cleaner": 47,
         "Switch Defender": 18,
-        "Point-of-Attack Defender": 24
+        "Point-of-Attack Defender": 23
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -6637,39 +6639,39 @@
       "tier": 3,
       "_mock_rank": 73,
       "strengths": {
-        "scoring": 21,
-        "shooting": 24,
-        "playmaking": 36,
-        "finishing": 57,
-        "rim_pressure": 50,
-        "rebounding": 26,
+        "scoring": 19,
+        "shooting": 23,
+        "playmaking": 37,
+        "finishing": 56,
+        "rim_pressure": 49,
+        "rebounding": 25,
         "rim_protection": 74,
-        "perimeter_defense": 88,
+        "perimeter_defense": 89,
         "ball_security": 12,
-        "size": 50
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 20,
-        "shooting": 34,
-        "playmaking": 48,
+        "scoring": 19,
+        "shooting": 33,
+        "playmaking": 49,
         "finishing": 38,
-        "rim_pressure": 43,
+        "rim_pressure": 42,
         "rebounding": 16,
         "rim_protection": 57,
-        "perimeter_defense": 90,
+        "perimeter_defense": 91,
         "ball_security": 9,
-        "size": 32
+        "size": 38
       },
       "fits": {
         "Floor General": 12,
-        "Scoring Guard": 21,
+        "Scoring Guard": 19,
         "Combo Guard": 9,
-        "Slasher": 38,
-        "Sharpshooter": 19,
-        "Three-Level Scorer": 16,
-        "Glass Cleaner": 20,
-        "Switch Defender": 75,
-        "Point-of-Attack Defender": 93
+        "Slasher": 35,
+        "Sharpshooter": 18,
+        "Three-Level Scorer": 15,
+        "Glass Cleaner": 22,
+        "Switch Defender": 77,
+        "Point-of-Attack Defender": 96
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -6742,40 +6744,40 @@
       "recruit_class_year": 2021,
       "_mock_rank": 32,
       "strengths": {
-        "scoring": 7,
-        "shooting": 69,
-        "playmaking": 3,
-        "finishing": 10,
+        "scoring": 5,
+        "shooting": 68,
+        "playmaking": 4,
+        "finishing": 9,
         "rim_pressure": 19,
-        "rebounding": 19,
-        "rim_protection": 10,
+        "rebounding": 18,
+        "rim_protection": 11,
         "perimeter_defense": 5,
-        "ball_security": 36,
-        "size": 90
+        "ball_security": 35,
+        "size": 92
       },
       "strengths_abs": {
-        "scoring": 5,
-        "shooting": 74,
+        "scoring": 4,
+        "shooting": 73,
         "playmaking": 12,
-        "finishing": 7,
-        "rim_pressure": 15,
-        "rebounding": 12,
+        "finishing": 6,
+        "rim_pressure": 16,
+        "rebounding": 11,
         "rim_protection": 7,
         "perimeter_defense": 4,
         "ball_security": 38,
-        "size": 63
+        "size": 62
       },
       "fits": {
         "Floor General": 2,
-        "Scoring Guard": 7,
+        "Scoring Guard": 5,
         "Combo Guard": 5,
         "Slasher": 3,
-        "Sharpshooter": 59,
-        "Three-Level Scorer": 9,
+        "Sharpshooter": 58,
+        "Three-Level Scorer": 8,
         "Connector": 7,
-        "Glass Cleaner": 4,
-        "Switch Defender": 4,
-        "Point-of-Attack Defender": 14
+        "Glass Cleaner": 3,
+        "Switch Defender": 2,
+        "Point-of-Attack Defender": 9
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -6906,15 +6908,15 @@
       "_mock_rank": 74,
       "strengths": {
         "scoring": 98,
-        "shooting": 76,
-        "playmaking": 64,
-        "finishing": 24,
-        "rim_pressure": 83,
+        "shooting": 75,
+        "playmaking": 65,
+        "finishing": 23,
+        "rim_pressure": 82,
         "rebounding": 84,
         "rim_protection": 5,
-        "perimeter_defense": 53,
+        "perimeter_defense": 54,
         "ball_security": 93,
-        "size": 16
+        "size": 26
       },
       "strengths_abs": {
         "scoring": 96,
@@ -6924,20 +6926,20 @@
         "rim_pressure": 80,
         "rebounding": 58,
         "rim_protection": 3,
-        "perimeter_defense": 57,
+        "perimeter_defense": 58,
         "ball_security": 93,
-        "size": 10
+        "size": 15
       },
       "fits": {
         "Floor General": 95,
-        "Scoring Guard": 97,
+        "Scoring Guard": 96,
         "Combo Guard": 98,
         "Slasher": 80,
         "Sharpshooter": 87,
-        "Three-Level Scorer": 91,
+        "Three-Level Scorer": 89,
         "Glass Cleaner": 43,
         "Switch Defender": 19,
-        "Point-of-Attack Defender": 45
+        "Point-of-Attack Defender": 46
       },
       "archetype": "Combo Guard",
       "all_offensive": [
@@ -7143,39 +7145,39 @@
       },
       "_mock_rank": 83,
       "strengths": {
-        "scoring": 52,
-        "shooting": 90,
-        "playmaking": 24,
-        "finishing": 29,
-        "rim_pressure": 47,
+        "scoring": 51,
+        "shooting": 89,
+        "playmaking": 25,
+        "finishing": 28,
+        "rim_pressure": 46,
         "rebounding": 53,
-        "rim_protection": 45,
-        "perimeter_defense": 17,
-        "ball_security": 83,
-        "size": 88
+        "rim_protection": 44,
+        "perimeter_defense": 18,
+        "ball_security": 82,
+        "size": 92
       },
       "strengths_abs": {
         "scoring": 46,
         "shooting": 91,
-        "playmaking": 35,
-        "finishing": 20,
+        "playmaking": 36,
+        "finishing": 19,
         "rim_pressure": 37,
         "rebounding": 36,
-        "rim_protection": 30,
+        "rim_protection": 29,
         "perimeter_defense": 22,
         "ball_security": 86,
-        "size": 62
+        "size": 61
       },
       "fits": {
-        "Floor General": 43,
-        "Scoring Guard": 59,
-        "Combo Guard": 50,
-        "Slasher": 42,
-        "Sharpshooter": 89,
-        "Three-Level Scorer": 69,
-        "Glass Cleaner": 33,
-        "Switch Defender": 21,
-        "Point-of-Attack Defender": 28
+        "Floor General": 44,
+        "Scoring Guard": 58,
+        "Combo Guard": 49,
+        "Slasher": 41,
+        "Sharpshooter": 88,
+        "Three-Level Scorer": 68,
+        "Glass Cleaner": 32,
+        "Switch Defender": 20,
+        "Point-of-Attack Defender": 26
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -7423,44 +7425,44 @@
       "tier": 3,
       "_mock_rank": 76,
       "strengths": {
-        "scoring": 59,
+        "scoring": 58,
         "shooting": 79,
-        "playmaking": 72,
-        "finishing": 66,
+        "playmaking": 74,
+        "finishing": 65,
         "rim_pressure": 9,
-        "rebounding": 28,
+        "rebounding": 26,
         "rim_protection": 84,
-        "perimeter_defense": 74,
-        "ball_security": 47,
-        "size": 7
+        "perimeter_defense": 75,
+        "ball_security": 46,
+        "size": 9
       },
       "strengths_abs": {
-        "scoring": 53,
+        "scoring": 52,
         "shooting": 82,
-        "playmaking": 80,
+        "playmaking": 81,
         "finishing": 48,
         "rim_pressure": 9,
-        "rebounding": 18,
+        "rebounding": 17,
         "rim_protection": 67,
-        "perimeter_defense": 75,
+        "perimeter_defense": 76,
         "ball_security": 49,
-        "size": 4
+        "size": 5
       },
       "fits": {
         "Floor General": 74,
-        "Scoring Guard": 78,
-        "Combo Guard": 79,
+        "Scoring Guard": 77,
+        "Combo Guard": 81,
         "Slasher": 43,
         "Sharpshooter": 81,
-        "Three-Level Scorer": 76,
-        "Glass Cleaner": 30,
+        "Three-Level Scorer": 77,
+        "Glass Cleaner": 29,
         "Switch Defender": 69,
-        "Point-of-Attack Defender": 66
+        "Point-of-Attack Defender": 61
       },
-      "archetype": "Sharpshooter",
+      "archetype": "Combo Guard",
       "all_offensive": [
-        "Sharpshooter",
-        "Combo Guard"
+        "Combo Guard",
+        "Sharpshooter"
       ],
       "defensive_archetype": "Switch Defender",
       "all_defensive": [
@@ -7536,32 +7538,32 @@
         "rim_protection": 30,
         "perimeter_defense": 37,
         "ball_security": 70,
-        "size": 30
+        "size": 42
       },
       "strengths_abs": {
-        "scoring": 64,
+        "scoring": 63,
         "shooting": 37,
-        "playmaking": 47,
+        "playmaking": 48,
         "finishing": 70,
-        "rim_pressure": 40,
+        "rim_pressure": 39,
         "rebounding": 59,
-        "rim_protection": 55,
+        "rim_protection": 54,
         "perimeter_defense": 24,
         "ball_security": 66,
-        "size": 71
+        "size": 70
       },
       "fits": {
         "Slasher": 49,
-        "Sharpshooter": 47,
+        "Sharpshooter": 49,
         "Stretch Big": 48,
-        "Three-Level Scorer": 53,
+        "Three-Level Scorer": 54,
         "Offensive Hub": 76,
         "Post Scorer": 55,
         "Play Finisher": 33,
         "Glass Cleaner": 60,
         "Switch Defender": 38,
-        "Rim Protector": 18,
-        "Wing Stopper": 22
+        "Rim Protector": 12,
+        "Wing Stopper": 19
       },
       "archetype": "Offensive Hub",
       "all_offensive": [
@@ -7632,40 +7634,40 @@
       "tier": 3,
       "_mock_rank": 78,
       "strengths": {
-        "scoring": 38,
+        "scoring": 37,
         "shooting": 74,
         "playmaking": 5,
-        "finishing": 47,
+        "finishing": 46,
         "rim_pressure": 16,
-        "rebounding": 47,
+        "rebounding": 46,
         "rim_protection": 86,
-        "perimeter_defense": 52,
-        "ball_security": 52,
-        "size": 50
+        "perimeter_defense": 53,
+        "ball_security": 51,
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 33,
+        "scoring": 32,
         "shooting": 77,
-        "playmaking": 15,
-        "finishing": 32,
+        "playmaking": 16,
+        "finishing": 31,
         "rim_pressure": 13,
-        "rebounding": 32,
+        "rebounding": 31,
         "rim_protection": 68,
         "perimeter_defense": 54,
-        "ball_security": 55,
-        "size": 32
+        "ball_security": 54,
+        "size": 38
       },
       "fits": {
-        "Floor General": 10,
-        "Scoring Guard": 47,
-        "Combo Guard": 22,
-        "Slasher": 25,
-        "Sharpshooter": 72,
+        "Floor General": 9,
+        "Scoring Guard": 46,
+        "Combo Guard": 23,
+        "Slasher": 24,
+        "Sharpshooter": 71,
         "Three-Level Scorer": 49,
-        "Connector": 32,
-        "Glass Cleaner": 38,
-        "Switch Defender": 65,
-        "Point-of-Attack Defender": 53
+        "Connector": 33,
+        "Glass Cleaner": 37,
+        "Switch Defender": 64,
+        "Point-of-Attack Defender": 54
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -7736,40 +7738,40 @@
       "tier": 3,
       "_mock_rank": 79,
       "strengths": {
-        "scoring": 12,
-        "shooting": 28,
-        "playmaking": 69,
+        "scoring": 11,
+        "shooting": 26,
+        "playmaking": 70,
         "finishing": 74,
-        "rim_pressure": 29,
-        "rebounding": 52,
-        "rim_protection": 78,
-        "perimeter_defense": 62,
-        "ball_security": 3,
-        "size": 50
+        "rim_pressure": 30,
+        "rebounding": 51,
+        "rim_protection": 77,
+        "perimeter_defense": 63,
+        "ball_security": 4,
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 9,
+        "scoring": 8,
         "shooting": 36,
-        "playmaking": 77,
+        "playmaking": 78,
         "finishing": 59,
         "rim_pressure": 24,
-        "rebounding": 35,
-        "rim_protection": 62,
-        "perimeter_defense": 67,
+        "rebounding": 34,
+        "rim_protection": 61,
+        "perimeter_defense": 68,
         "ball_security": 2,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 36,
-        "Scoring Guard": 19,
-        "Combo Guard": 17,
-        "Slasher": 29,
-        "Sharpshooter": 21,
-        "Three-Level Scorer": 18,
-        "Connector": 50,
-        "Glass Cleaner": 44,
-        "Switch Defender": 67,
-        "Point-of-Attack Defender": 60
+        "Floor General": 37,
+        "Scoring Guard": 16,
+        "Combo Guard": 19,
+        "Slasher": 28,
+        "Sharpshooter": 19,
+        "Three-Level Scorer": 17,
+        "Connector": 52,
+        "Glass Cleaner": 42,
+        "Switch Defender": 68,
+        "Point-of-Attack Defender": 65
       },
       "archetype": "Connector",
       "all_offensive": [
@@ -7858,39 +7860,39 @@
       },
       "_mock_rank": 102,
       "strengths": {
-        "scoring": 62,
-        "shooting": 64,
-        "playmaking": 22,
-        "finishing": 16,
+        "scoring": 61,
+        "shooting": 63,
+        "playmaking": 23,
+        "finishing": 14,
         "rim_pressure": 5,
-        "rebounding": 34,
+        "rebounding": 33,
         "rim_protection": 7,
         "perimeter_defense": 9,
         "ball_security": 95,
-        "size": 81
+        "size": 88
       },
       "strengths_abs": {
         "scoring": 56,
         "shooting": 70,
         "playmaking": 34,
-        "finishing": 11,
+        "finishing": 10,
         "rim_pressure": 7,
-        "rebounding": 22,
+        "rebounding": 21,
         "rim_protection": 4,
         "perimeter_defense": 8,
-        "ball_security": 95,
-        "size": 54
+        "ball_security": 94,
+        "size": 56
       },
       "fits": {
-        "Floor General": 48,
+        "Floor General": 49,
         "Scoring Guard": 53,
-        "Combo Guard": 57,
-        "Slasher": 18,
-        "Sharpshooter": 73,
-        "Three-Level Scorer": 44,
-        "Glass Cleaner": 13,
+        "Combo Guard": 56,
+        "Slasher": 17,
+        "Sharpshooter": 70,
+        "Three-Level Scorer": 42,
+        "Glass Cleaner": 12,
         "Switch Defender": 1,
-        "Point-of-Attack Defender": 17
+        "Point-of-Attack Defender": 18
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -7961,40 +7963,40 @@
       "tier": 3,
       "_mock_rank": 80,
       "strengths": {
-        "scoring": 41,
+        "scoring": 40,
         "shooting": 0,
         "playmaking": 47,
         "finishing": 98,
-        "rim_pressure": 97,
+        "rim_pressure": 96,
         "rebounding": 93,
         "rim_protection": 98,
         "perimeter_defense": 19,
         "ball_security": 19,
-        "size": 33
+        "size": 47
       },
       "strengths_abs": {
-        "scoring": 35,
+        "scoring": 34,
         "shooting": 0,
-        "playmaking": 58,
-        "finishing": 95,
-        "rim_pressure": 95,
+        "playmaking": 59,
+        "finishing": 94,
+        "rim_pressure": 94,
         "rebounding": 71,
-        "rim_protection": 85,
-        "perimeter_defense": 26,
-        "ball_security": 15,
-        "size": 21
+        "rim_protection": 84,
+        "perimeter_defense": 27,
+        "ball_security": 16,
+        "size": 26
       },
       "fits": {
-        "Floor General": 31,
-        "Scoring Guard": 38,
+        "Floor General": 32,
+        "Scoring Guard": 39,
         "Combo Guard": 21,
         "Slasher": 88,
         "Sharpshooter": 5,
-        "Three-Level Scorer": 47,
-        "Connector": 18,
+        "Three-Level Scorer": 48,
+        "Connector": 19,
         "Glass Cleaner": 82,
         "Switch Defender": 56,
-        "Point-of-Attack Defender": 10
+        "Point-of-Attack Defender": 16
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -8263,48 +8265,49 @@
       "recruit_class_year": 2021,
       "_mock_rank": 45,
       "strengths": {
-        "scoring": 47,
+        "scoring": 46,
         "shooting": 0,
         "playmaking": 33,
         "finishing": 79,
         "rim_pressure": 74,
         "rebounding": 98,
-        "rim_protection": 97,
-        "perimeter_defense": 78,
-        "ball_security": 34,
-        "size": 90
+        "rim_protection": 96,
+        "perimeter_defense": 79,
+        "ball_security": 33,
+        "size": 92
       },
       "strengths_abs": {
-        "scoring": 41,
+        "scoring": 40,
         "shooting": 0,
         "playmaking": 44,
         "finishing": 66,
         "rim_pressure": 68,
         "rebounding": 78,
         "rim_protection": 80,
-        "perimeter_defense": 81,
+        "perimeter_defense": 82,
         "ball_security": 37,
-        "size": 63
+        "size": 62
       },
       "fits": {
         "Floor General": 21,
-        "Scoring Guard": 36,
-        "Combo Guard": 19,
-        "Slasher": 74,
-        "Sharpshooter": 8,
-        "Three-Level Scorer": 40,
-        "Connector": 43,
-        "Glass Cleaner": 85,
+        "Scoring Guard": 35,
+        "Combo Guard": 18,
+        "Slasher": 75,
+        "Sharpshooter": 7,
+        "Three-Level Scorer": 39,
+        "Connector": 44,
+        "Glass Cleaner": 84,
         "Switch Defender": 90,
-        "Point-of-Attack Defender": 93
+        "Point-of-Attack Defender": 88
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
-        "Glass Cleaner"
+        "Glass Cleaner",
+        "Slasher"
       ],
-      "defensive_archetype": "Point-of-Attack Defender",
+      "defensive_archetype": "Switch Defender",
       "all_defensive": [
-        "Point-of-Attack Defender"
+        "Switch Defender"
       ]
     },
     {
@@ -8426,39 +8429,39 @@
       "tier": 3,
       "_mock_rank": 81,
       "strengths": {
-        "scoring": 33,
+        "scoring": 32,
         "shooting": 53,
-        "playmaking": 17,
-        "finishing": 38,
-        "rim_pressure": 64,
-        "rebounding": 43,
-        "rim_protection": 38,
-        "perimeter_defense": 34,
-        "ball_security": 97,
-        "size": 50
+        "playmaking": 18,
+        "finishing": 37,
+        "rim_pressure": 63,
+        "rebounding": 42,
+        "rim_protection": 37,
+        "perimeter_defense": 35,
+        "ball_security": 96,
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 30,
-        "shooting": 62,
+        "scoring": 29,
+        "shooting": 61,
         "playmaking": 31,
-        "finishing": 25,
-        "rim_pressure": 53,
+        "finishing": 24,
+        "rim_pressure": 52,
         "rebounding": 27,
-        "rim_protection": 25,
-        "perimeter_defense": 38,
+        "rim_protection": 24,
+        "perimeter_defense": 39,
         "ball_security": 96,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 40,
-        "Scoring Guard": 28,
-        "Combo Guard": 34,
-        "Slasher": 46,
-        "Sharpshooter": 55,
-        "Three-Level Scorer": 39,
-        "Connector": 46,
+        "Floor General": 39,
+        "Scoring Guard": 26,
+        "Combo Guard": 33,
+        "Slasher": 44,
+        "Sharpshooter": 56,
+        "Three-Level Scorer": 37,
+        "Connector": 48,
         "Glass Cleaner": 21,
-        "Switch Defender": 24,
+        "Switch Defender": 27,
         "Point-of-Attack Defender": 40
       },
       "archetype": "Sharpshooter",
@@ -8589,39 +8592,39 @@
       "tier": 3,
       "_mock_rank": 82,
       "strengths": {
-        "scoring": 71,
-        "shooting": 59,
-        "playmaking": 43,
-        "finishing": 69,
-        "rim_pressure": 48,
-        "rebounding": 31,
-        "rim_protection": 17,
-        "perimeter_defense": 59,
-        "ball_security": 78,
-        "size": 33
+        "scoring": 70,
+        "shooting": 58,
+        "playmaking": 44,
+        "finishing": 68,
+        "rim_pressure": 47,
+        "rebounding": 30,
+        "rim_protection": 16,
+        "perimeter_defense": 60,
+        "ball_security": 77,
+        "size": 47
       },
       "strengths_abs": {
         "scoring": 69,
-        "shooting": 65,
+        "shooting": 64,
         "playmaking": 54,
-        "finishing": 51,
-        "rim_pressure": 41,
-        "rebounding": 20,
-        "rim_protection": 11,
+        "finishing": 50,
+        "rim_pressure": 40,
+        "rebounding": 19,
+        "rim_protection": 10,
         "perimeter_defense": 63,
         "ball_security": 80,
-        "size": 21
+        "size": 26
       },
       "fits": {
-        "Floor General": 62,
-        "Scoring Guard": 81,
-        "Combo Guard": 62,
+        "Floor General": 63,
+        "Scoring Guard": 79,
+        "Combo Guard": 61,
         "Slasher": 71,
-        "Sharpshooter": 65,
-        "Three-Level Scorer": 84,
-        "Glass Cleaner": 18,
-        "Switch Defender": 31,
-        "Point-of-Attack Defender": 55
+        "Sharpshooter": 63,
+        "Three-Level Scorer": 81,
+        "Glass Cleaner": 17,
+        "Switch Defender": 29,
+        "Point-of-Attack Defender": 56
       },
       "archetype": "Three-Level Scorer",
       "all_offensive": [
@@ -8752,39 +8755,39 @@
       "tier": 3,
       "_mock_rank": 84,
       "strengths": {
-        "scoring": 55,
-        "shooting": 45,
+        "scoring": 54,
+        "shooting": 44,
         "playmaking": 2,
-        "finishing": 5,
+        "finishing": 4,
         "rim_pressure": 60,
         "rebounding": 74,
         "rim_protection": 53,
-        "perimeter_defense": 31,
+        "perimeter_defense": 32,
         "ball_security": 91,
-        "size": 50
+        "size": 66
       },
       "strengths_abs": {
         "scoring": 48,
-        "shooting": 52,
+        "shooting": 51,
         "playmaking": 10,
-        "finishing": 3,
-        "rim_pressure": 51,
+        "finishing": 2,
+        "rim_pressure": 50,
         "rebounding": 49,
-        "rim_protection": 35,
-        "perimeter_defense": 36,
+        "rim_protection": 34,
+        "perimeter_defense": 37,
         "ball_security": 91,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 22,
-        "Scoring Guard": 40,
-        "Combo Guard": 36,
-        "Slasher": 37,
-        "Sharpshooter": 51,
-        "Three-Level Scorer": 31,
-        "Glass Cleaner": 40,
-        "Switch Defender": 30,
-        "Point-of-Attack Defender": 34
+        "Floor General": 23,
+        "Scoring Guard": 37,
+        "Combo Guard": 35,
+        "Slasher": 36,
+        "Sharpshooter": 50,
+        "Three-Level Scorer": 29,
+        "Glass Cleaner": 39,
+        "Switch Defender": 31,
+        "Point-of-Attack Defender": 37
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -8871,39 +8874,39 @@
       },
       "_mock_rank": 85,
       "strengths": {
-        "scoring": 50,
+        "scoring": 49,
         "shooting": 98,
-        "playmaking": 62,
-        "finishing": 21,
-        "rim_pressure": 22,
-        "rebounding": 5,
-        "rim_protection": 21,
+        "playmaking": 63,
+        "finishing": 19,
+        "rim_pressure": 23,
+        "rebounding": 4,
+        "rim_protection": 19,
         "perimeter_defense": 26,
         "ball_security": 72,
-        "size": 5
+        "size": 9
       },
       "strengths_abs": {
-        "scoring": 45,
+        "scoring": 44,
         "shooting": 98,
         "playmaking": 73,
-        "finishing": 14,
+        "finishing": 13,
         "rim_pressure": 18,
-        "rebounding": 3,
-        "rim_protection": 13,
+        "rebounding": 2,
+        "rim_protection": 12,
         "perimeter_defense": 31,
         "ball_security": 76,
-        "size": 3
+        "size": 5
       },
       "fits": {
-        "Floor General": 78,
-        "Scoring Guard": 55,
-        "Combo Guard": 78,
-        "Slasher": 22,
+        "Floor General": 77,
+        "Scoring Guard": 56,
+        "Combo Guard": 77,
+        "Slasher": 21,
         "Sharpshooter": 96,
-        "Three-Level Scorer": 64,
-        "Glass Cleaner": 1,
+        "Three-Level Scorer": 62,
+        "Glass Cleaner": 0,
         "Switch Defender": 8,
-        "Point-of-Attack Defender": 10
+        "Point-of-Attack Defender": 11
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -9043,7 +9046,7 @@
         "rim_protection": 85,
         "perimeter_defense": 26,
         "ball_security": 0,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
         "scoring": 60,
@@ -9053,9 +9056,9 @@
         "rim_pressure": 67,
         "rebounding": 98,
         "rim_protection": 90,
-        "perimeter_defense": 16,
+        "perimeter_defense": 17,
         "ball_security": 10,
-        "size": 76
+        "size": 80
       },
       "fits": {
         "Sharpshooter": 4,
@@ -9065,7 +9068,7 @@
         "Post Scorer": 76,
         "Play Finisher": 91,
         "Glass Cleaner": 98,
-        "Switch Defender": 62,
+        "Switch Defender": 61,
         "Rim Protector": 79,
         "Wing Stopper": 33
       },
@@ -9266,29 +9269,29 @@
         "rim_protection": 74,
         "perimeter_defense": 67,
         "ball_security": 89,
-        "size": 19
+        "size": 25
       },
       "strengths_abs": {
-        "scoring": 43,
+        "scoring": 42,
         "shooting": 67,
-        "playmaking": 16,
-        "finishing": 52,
+        "playmaking": 17,
+        "finishing": 51,
         "rim_pressure": 4,
         "rebounding": 60,
         "rim_protection": 87,
-        "perimeter_defense": 59,
+        "perimeter_defense": 60,
         "ball_security": 92,
-        "size": 63
+        "size": 62
       },
       "fits": {
-        "Slasher": 11,
+        "Slasher": 9,
         "Sharpshooter": 82,
         "Stretch Big": 67,
         "Three-Level Scorer": 36,
         "Offensive Hub": 21,
         "Post Scorer": 12,
         "Play Finisher": 15,
-        "Glass Cleaner": 62,
+        "Glass Cleaner": 61,
         "Switch Defender": 82,
         "Rim Protector": 48,
         "Wing Stopper": 67
@@ -9371,24 +9374,24 @@
         "rim_protection": 22,
         "perimeter_defense": 11,
         "ball_security": 56,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
         "scoring": 38,
         "shooting": 21,
-        "playmaking": 55,
-        "finishing": 74,
+        "playmaking": 56,
+        "finishing": 73,
         "rim_pressure": 47,
-        "rebounding": 62,
-        "rim_protection": 53,
+        "rebounding": 61,
+        "rim_protection": 52,
         "perimeter_defense": 11,
-        "ball_security": 52,
-        "size": 76
+        "ball_security": 51,
+        "size": 80
       },
       "fits": {
         "Sharpshooter": 33,
         "Stretch Big": 30,
-        "Three-Level Scorer": 29,
+        "Three-Level Scorer": 30,
         "Offensive Hub": 61,
         "Post Scorer": 36,
         "Play Finisher": 39,
@@ -9584,40 +9587,40 @@
       "tier": 3,
       "_mock_rank": 89,
       "strengths": {
-        "scoring": 9,
-        "shooting": 10,
+        "scoring": 7,
+        "shooting": 9,
         "playmaking": 0,
         "finishing": 86,
         "rim_pressure": 93,
         "rebounding": 60,
-        "rim_protection": 52,
-        "perimeter_defense": 10,
-        "ball_security": 59,
-        "size": 50
+        "rim_protection": 51,
+        "perimeter_defense": 11,
+        "ball_security": 58,
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 7,
-        "shooting": 23,
+        "scoring": 6,
+        "shooting": 22,
         "playmaking": 1,
         "finishing": 76,
         "rim_pressure": 91,
-        "rebounding": 41,
-        "rim_protection": 34,
+        "rebounding": 40,
+        "rim_protection": 33,
         "perimeter_defense": 9,
         "ball_security": 60,
-        "size": 32
+        "size": 38
       },
       "fits": {
         "Floor General": 5,
-        "Scoring Guard": 10,
+        "Scoring Guard": 9,
         "Combo Guard": 2,
-        "Slasher": 70,
-        "Sharpshooter": 14,
-        "Three-Level Scorer": 21,
-        "Connector": 14,
-        "Glass Cleaner": 45,
+        "Slasher": 69,
+        "Sharpshooter": 12,
+        "Three-Level Scorer": 20,
+        "Connector": 15,
+        "Glass Cleaner": 44,
         "Switch Defender": 10,
-        "Point-of-Attack Defender": 5
+        "Point-of-Attack Defender": 7
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -9881,38 +9884,38 @@
       "tier": 3,
       "_mock_rank": 91,
       "strengths": {
-        "scoring": 28,
-        "shooting": 57,
+        "scoring": 26,
+        "shooting": 56,
         "playmaking": 16,
-        "finishing": 52,
-        "rim_pressure": 59,
-        "rebounding": 36,
-        "rim_protection": 62,
+        "finishing": 51,
+        "rim_pressure": 58,
+        "rebounding": 35,
+        "rim_protection": 61,
         "perimeter_defense": 95,
         "ball_security": 81,
-        "size": 50
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 25,
-        "shooting": 64,
+        "scoring": 24,
+        "shooting": 63,
         "playmaking": 30,
-        "finishing": 35,
+        "finishing": 34,
         "rim_pressure": 49,
-        "rebounding": 23,
-        "rim_protection": 43,
+        "rebounding": 22,
+        "rim_protection": 42,
         "perimeter_defense": 96,
-        "ball_security": 85,
-        "size": 32
+        "ball_security": 84,
+        "size": 38
       },
       "fits": {
-        "Floor General": 28,
-        "Scoring Guard": 29,
-        "Combo Guard": 26,
-        "Slasher": 51,
-        "Sharpshooter": 58,
-        "Three-Level Scorer": 45,
+        "Floor General": 26,
+        "Scoring Guard": 28,
+        "Combo Guard": 25,
+        "Slasher": 48,
+        "Sharpshooter": 55,
+        "Three-Level Scorer": 43,
         "Connector": 89,
-        "Glass Cleaner": 27,
+        "Glass Cleaner": 26,
         "Switch Defender": 70,
         "Point-of-Attack Defender": 98
       },
@@ -10055,30 +10058,30 @@
         "rim_protection": 44,
         "perimeter_defense": 52,
         "ball_security": 37,
-        "size": 30
+        "size": 42
       },
       "strengths_abs": {
         "scoring": 77,
         "shooting": 14,
         "playmaking": 23,
         "finishing": 81,
-        "rim_pressure": 42,
+        "rim_pressure": 41,
         "rebounding": 97,
-        "rim_protection": 74,
-        "perimeter_defense": 47,
-        "ball_security": 33,
-        "size": 71
+        "rim_protection": 73,
+        "perimeter_defense": 48,
+        "ball_security": 32,
+        "size": 70
       },
       "fits": {
-        "Sharpshooter": 32,
+        "Sharpshooter": 31,
         "Stretch Big": 55,
         "Three-Level Scorer": 65,
         "Offensive Hub": 64,
         "Post Scorer": 82,
-        "Play Finisher": 79,
+        "Play Finisher": 76,
         "Glass Cleaner": 96,
-        "Switch Defender": 68,
-        "Rim Protector": 45,
+        "Switch Defender": 67,
+        "Rim Protector": 42,
         "Wing Stopper": 59
       },
       "archetype": "Glass Cleaner",
@@ -10212,37 +10215,37 @@
       "strengths": {
         "scoring": 74,
         "shooting": 67,
-        "playmaking": 66,
-        "finishing": 64,
+        "playmaking": 67,
+        "finishing": 63,
         "rim_pressure": 12,
-        "rebounding": 48,
-        "rim_protection": 33,
-        "perimeter_defense": 64,
-        "ball_security": 24,
-        "size": 78
+        "rebounding": 47,
+        "rim_protection": 32,
+        "perimeter_defense": 65,
+        "ball_security": 23,
+        "size": 83
       },
       "strengths_abs": {
-        "scoring": 74,
-        "shooting": 73,
-        "playmaking": 75,
+        "scoring": 73,
+        "shooting": 72,
+        "playmaking": 76,
         "finishing": 47,
         "rim_pressure": 11,
-        "rebounding": 33,
-        "rim_protection": 21,
-        "perimeter_defense": 68,
-        "ball_security": 25,
+        "rebounding": 32,
+        "rim_protection": 20,
+        "perimeter_defense": 69,
+        "ball_security": 24,
         "size": 51
       },
       "fits": {
-        "Floor General": 59,
+        "Floor General": 58,
         "Scoring Guard": 84,
-        "Combo Guard": 69,
-        "Slasher": 55,
-        "Sharpshooter": 66,
+        "Combo Guard": 72,
+        "Slasher": 56,
+        "Sharpshooter": 65,
         "Three-Level Scorer": 79,
-        "Glass Cleaner": 34,
+        "Glass Cleaner": 33,
         "Switch Defender": 43,
-        "Point-of-Attack Defender": 71
+        "Point-of-Attack Defender": 74
       },
       "archetype": "Scoring Guard",
       "all_offensive": [
@@ -10441,33 +10444,33 @@
         "rim_protection": 63,
         "perimeter_defense": 7,
         "ball_security": 78,
-        "size": 93
+        "size": 96
       },
       "strengths_abs": {
-        "scoring": 13,
-        "shooting": 41,
+        "scoring": 12,
+        "shooting": 40,
         "playmaking": 11,
         "finishing": 80,
         "rim_pressure": 56,
-        "rebounding": 52,
+        "rebounding": 51,
         "rim_protection": 82,
         "perimeter_defense": 10,
-        "ball_security": 73,
-        "size": 93
+        "ball_security": 72,
+        "size": 94
       },
       "fits": {
-        "Slasher": 34,
-        "Sharpshooter": 42,
+        "Slasher": 33,
+        "Sharpshooter": 43,
         "Stretch Big": 36,
-        "Three-Level Scorer": 32,
-        "Connector": 29,
+        "Three-Level Scorer": 31,
+        "Connector": 30,
         "Offensive Hub": 15,
         "Post Scorer": 33,
         "Play Finisher": 58,
-        "Glass Cleaner": 65,
-        "Switch Defender": 54,
+        "Glass Cleaner": 64,
+        "Switch Defender": 53,
         "Rim Protector": 52,
-        "Wing Stopper": 30
+        "Wing Stopper": 26
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -10726,29 +10729,29 @@
         "rim_protection": 37,
         "perimeter_defense": 41,
         "ball_security": 33,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
-        "scoring": 54,
+        "scoring": 53,
         "shooting": 0,
         "playmaking": 14,
-        "finishing": 54,
+        "finishing": 53,
         "rim_pressure": 93,
         "rebounding": 93,
         "rim_protection": 66,
-        "perimeter_defense": 25,
-        "ball_security": 30,
-        "size": 76
+        "perimeter_defense": 26,
+        "ball_security": 29,
+        "size": 80
       },
       "fits": {
-        "Sharpshooter": 7,
+        "Sharpshooter": 6,
         "Stretch Big": 18,
         "Three-Level Scorer": 12,
         "Offensive Hub": 18,
         "Post Scorer": 58,
         "Play Finisher": 48,
-        "Glass Cleaner": 86,
-        "Switch Defender": 48,
+        "Glass Cleaner": 87,
+        "Switch Defender": 50,
         "Rim Protector": 33,
         "Wing Stopper": 37
       },
@@ -10891,37 +10894,36 @@
         "rim_protection": 93,
         "perimeter_defense": 56,
         "ball_security": 44,
-        "size": 44
+        "size": 62
       },
       "strengths_abs": {
-        "scoring": 3,
+        "scoring": 2,
         "shooting": 0,
         "playmaking": 3,
         "finishing": 96,
-        "rim_pressure": 5,
+        "rim_pressure": 6,
         "rebounding": 57,
         "rim_protection": 97,
         "perimeter_defense": 52,
         "ball_security": 46,
-        "size": 76
+        "size": 80
       },
       "fits": {
         "Sharpshooter": 2,
         "Stretch Big": 0,
-        "Three-Level Scorer": 6,
-        "Connector": 21,
+        "Three-Level Scorer": 5,
+        "Connector": 22,
         "Offensive Hub": 6,
         "Post Scorer": 27,
-        "Play Finisher": 76,
-        "Glass Cleaner": 75,
-        "Switch Defender": 87,
+        "Play Finisher": 79,
+        "Glass Cleaner": 74,
+        "Switch Defender": 86,
         "Rim Protector": 73,
         "Wing Stopper": 70
       },
       "archetype": "Play Finisher",
       "all_offensive": [
-        "Play Finisher",
-        "Glass Cleaner"
+        "Play Finisher"
       ],
       "defensive_archetype": "Switch Defender",
       "all_defensive": [
@@ -11126,40 +11128,40 @@
       },
       "_mock_rank": 42,
       "strengths": {
-        "scoring": 17,
-        "shooting": 36,
-        "playmaking": 48,
-        "finishing": 48,
-        "rim_pressure": 24,
-        "rebounding": 9,
+        "scoring": 16,
+        "shooting": 35,
+        "playmaking": 49,
+        "finishing": 47,
+        "rim_pressure": 25,
+        "rebounding": 7,
         "rim_protection": 9,
-        "perimeter_defense": 36,
-        "ball_security": 90,
-        "size": 29
+        "perimeter_defense": 37,
+        "ball_security": 89,
+        "size": 40
       },
       "strengths_abs": {
         "scoring": 16,
-        "shooting": 44,
-        "playmaking": 60,
-        "finishing": 33,
+        "shooting": 43,
+        "playmaking": 61,
+        "finishing": 32,
         "rim_pressure": 19,
-        "rebounding": 5,
-        "rim_protection": 5,
+        "rebounding": 4,
+        "rim_protection": 6,
         "perimeter_defense": 41,
         "ball_security": 90,
-        "size": 19
+        "size": 23
       },
       "fits": {
         "Floor General": 60,
-        "Scoring Guard": 14,
-        "Combo Guard": 40,
-        "Slasher": 20,
-        "Sharpshooter": 38,
-        "Three-Level Scorer": 13,
-        "Connector": 75,
-        "Glass Cleaner": 5,
+        "Scoring Guard": 12,
+        "Combo Guard": 39,
+        "Slasher": 19,
+        "Sharpshooter": 37,
+        "Three-Level Scorer": 11,
+        "Connector": 74,
+        "Glass Cleaner": 4,
         "Switch Defender": 11,
-        "Point-of-Attack Defender": 31
+        "Point-of-Attack Defender": 33
       },
       "archetype": "Connector",
       "all_offensive": [
@@ -11308,38 +11310,38 @@
       "_mock_rank": 20,
       "strengths": {
         "scoring": 53,
-        "shooting": 78,
-        "playmaking": 41,
-        "finishing": 59,
+        "shooting": 77,
+        "playmaking": 42,
+        "finishing": 58,
         "rim_pressure": 40,
-        "rebounding": 17,
+        "rebounding": 16,
         "rim_protection": 14,
         "perimeter_defense": 7,
-        "ball_security": 55,
-        "size": 72
+        "ball_security": 54,
+        "size": 79
       },
       "strengths_abs": {
         "scoring": 47,
         "shooting": 81,
         "playmaking": 53,
-        "finishing": 40,
+        "finishing": 39,
         "rim_pressure": 32,
-        "rebounding": 11,
+        "rebounding": 10,
         "rim_protection": 9,
-        "perimeter_defense": 5,
+        "perimeter_defense": 6,
         "ball_security": 58,
         "size": 47
       },
       "fits": {
-        "Floor General": 45,
-        "Scoring Guard": 64,
-        "Combo Guard": 52,
-        "Slasher": 62,
+        "Floor General": 46,
+        "Scoring Guard": 63,
+        "Combo Guard": 54,
+        "Slasher": 60,
         "Sharpshooter": 79,
         "Three-Level Scorer": 75,
-        "Glass Cleaner": 12,
-        "Switch Defender": 2,
-        "Point-of-Attack Defender": 9
+        "Glass Cleaner": 11,
+        "Switch Defender": 3,
+        "Point-of-Attack Defender": 5
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -11411,39 +11413,39 @@
       "tier": 3,
       "_mock_rank": 97,
       "strengths": {
-        "scoring": 45,
-        "shooting": 97,
-        "playmaking": 84,
-        "finishing": 45,
+        "scoring": 44,
+        "shooting": 96,
+        "playmaking": 86,
+        "finishing": 44,
         "rim_pressure": 7,
-        "rebounding": 22,
-        "rim_protection": 36,
-        "perimeter_defense": 38,
-        "ball_security": 69,
-        "size": 16
+        "rebounding": 21,
+        "rim_protection": 35,
+        "perimeter_defense": 39,
+        "ball_security": 68,
+        "size": 26
       },
       "strengths_abs": {
-        "scoring": 40,
+        "scoring": 39,
         "shooting": 96,
-        "playmaking": 89,
-        "finishing": 31,
+        "playmaking": 90,
+        "finishing": 30,
         "rim_pressure": 8,
-        "rebounding": 14,
-        "rim_protection": 24,
+        "rebounding": 13,
+        "rim_protection": 23,
         "perimeter_defense": 42,
-        "ball_security": 73,
-        "size": 10
+        "ball_security": 72,
+        "size": 15
       },
       "fits": {
         "Floor General": 91,
         "Scoring Guard": 60,
         "Combo Guard": 88,
-        "Slasher": 24,
-        "Sharpshooter": 93,
-        "Three-Level Scorer": 68,
-        "Glass Cleaner": 14,
+        "Slasher": 23,
+        "Sharpshooter": 92,
+        "Three-Level Scorer": 67,
+        "Glass Cleaner": 13,
         "Switch Defender": 22,
-        "Point-of-Attack Defender": 29
+        "Point-of-Attack Defender": 32
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -11516,38 +11518,38 @@
       "_mock_rank": 98,
       "strengths": {
         "scoring": 60,
-        "shooting": 43,
+        "shooting": 42,
         "playmaking": 14,
-        "finishing": 19,
-        "rim_pressure": 34,
-        "rebounding": 76,
-        "rim_protection": 40,
+        "finishing": 18,
+        "rim_pressure": 35,
+        "rebounding": 75,
+        "rim_protection": 39,
         "perimeter_defense": 47,
         "ball_security": 74,
-        "size": 16
+        "size": 26
       },
       "strengths_abs": {
-        "scoring": 55,
-        "shooting": 51,
+        "scoring": 54,
+        "shooting": 50,
         "playmaking": 29,
-        "finishing": 13,
+        "finishing": 12,
         "rim_pressure": 29,
-        "rebounding": 51,
+        "rebounding": 50,
         "rim_protection": 26,
-        "perimeter_defense": 49,
+        "perimeter_defense": 50,
         "ball_security": 77,
-        "size": 10
+        "size": 15
       },
       "fits": {
         "Floor General": 33,
-        "Scoring Guard": 41,
-        "Combo Guard": 41,
-        "Slasher": 32,
-        "Sharpshooter": 48,
-        "Three-Level Scorer": 34,
-        "Glass Cleaner": 42,
-        "Switch Defender": 27,
-        "Point-of-Attack Defender": 43
+        "Scoring Guard": 40,
+        "Combo Guard": 40,
+        "Slasher": 31,
+        "Sharpshooter": 46,
+        "Three-Level Scorer": 33,
+        "Glass Cleaner": 40,
+        "Switch Defender": 30,
+        "Point-of-Attack Defender": 42
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -11627,26 +11629,26 @@
         "rim_protection": 48,
         "perimeter_defense": 85,
         "ball_security": 7,
-        "size": 30
+        "size": 42
       },
       "strengths_abs": {
-        "scoring": 15,
+        "scoring": 14,
         "shooting": 27,
-        "playmaking": 46,
+        "playmaking": 47,
         "finishing": 79,
-        "rim_pressure": 65,
+        "rim_pressure": 64,
         "rebounding": 76,
-        "rim_protection": 75,
-        "perimeter_defense": 86,
+        "rim_protection": 74,
+        "perimeter_defense": 87,
         "ball_security": 18,
-        "size": 71
+        "size": 70
       },
       "fits": {
-        "Slasher": 45,
-        "Sharpshooter": 28,
+        "Slasher": 47,
+        "Sharpshooter": 27,
         "Stretch Big": 39,
-        "Three-Level Scorer": 28,
-        "Connector": 61,
+        "Three-Level Scorer": 27,
+        "Connector": 63,
         "Offensive Hub": 33,
         "Post Scorer": 45,
         "Play Finisher": 70,
@@ -11742,39 +11744,39 @@
       },
       "_mock_rank": 35,
       "strengths": {
-        "scoring": 5,
-        "shooting": 34,
-        "playmaking": 10,
-        "finishing": 9,
-        "rim_pressure": 10,
-        "rebounding": 10,
-        "rim_protection": 26,
+        "scoring": 4,
+        "shooting": 33,
+        "playmaking": 11,
+        "finishing": 7,
+        "rim_pressure": 11,
+        "rebounding": 9,
+        "rim_protection": 25,
         "perimeter_defense": 2,
-        "ball_security": 40,
-        "size": 47
+        "ball_security": 39,
+        "size": 62
       },
       "strengths_abs": {
-        "scoring": 4,
-        "shooting": 43,
+        "scoring": 3,
+        "shooting": 42,
         "playmaking": 20,
-        "finishing": 5,
+        "finishing": 4,
         "rim_pressure": 10,
-        "rebounding": 7,
+        "rebounding": 6,
         "rim_protection": 16,
         "perimeter_defense": 2,
-        "ball_security": 42,
-        "size": 30
+        "ball_security": 41,
+        "size": 36
       },
       "fits": {
-        "Floor General": 3,
-        "Scoring Guard": 3,
-        "Combo Guard": 3,
+        "Floor General": 4,
+        "Scoring Guard": 2,
+        "Combo Guard": 4,
         "Slasher": 1,
-        "Sharpshooter": 27,
-        "Three-Level Scorer": 2,
+        "Sharpshooter": 26,
+        "Three-Level Scorer": 1,
         "Connector": 4,
-        "Glass Cleaner": 2,
-        "Switch Defender": 3,
+        "Glass Cleaner": 1,
+        "Switch Defender": 4,
         "Point-of-Attack Defender": 0
       },
       "archetype": "Sharpshooter",
@@ -11873,19 +11875,19 @@
         "rim_protection": 15,
         "perimeter_defense": 0,
         "ball_security": 11,
-        "size": 78
+        "size": 80
       },
       "strengths_abs": {
-        "scoring": 12,
+        "scoring": 11,
         "shooting": 0,
-        "playmaking": 5,
+        "playmaking": 6,
         "finishing": 67,
         "rim_pressure": 57,
-        "rebounding": 73,
+        "rebounding": 72,
         "rim_protection": 46,
         "perimeter_defense": 0,
-        "ball_security": 21,
-        "size": 88
+        "ball_security": 20,
+        "size": 87
       },
       "fits": {
         "Sharpshooter": 0,
@@ -11896,17 +11898,17 @@
         "Post Scorer": 21,
         "Play Finisher": 36,
         "Glass Cleaner": 69,
-        "Switch Defender": 20,
-        "Rim Protector": 12,
+        "Switch Defender": 21,
+        "Rim Protector": 15,
         "Wing Stopper": 4
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
         "Glass Cleaner"
       ],
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ]
     },
     {
@@ -12096,29 +12098,29 @@
         "rim_protection": 26,
         "perimeter_defense": 19,
         "ball_security": 15,
-        "size": 19
+        "size": 25
       },
       "strengths_abs": {
         "scoring": 79,
-        "shooting": 30,
-        "playmaking": 38,
+        "shooting": 29,
+        "playmaking": 39,
         "finishing": 77,
         "rim_pressure": 89,
         "rebounding": 82,
-        "rim_protection": 54,
+        "rim_protection": 53,
         "perimeter_defense": 14,
-        "ball_security": 22,
-        "size": 63
+        "ball_security": 21,
+        "size": 62
       },
       "fits": {
-        "Sharpshooter": 41,
+        "Sharpshooter": 40,
         "Stretch Big": 61,
         "Three-Level Scorer": 80,
         "Offensive Hub": 67,
         "Post Scorer": 88,
         "Play Finisher": 73,
         "Glass Cleaner": 80,
-        "Switch Defender": 35,
+        "Switch Defender": 33,
         "Rim Protector": 24,
         "Wing Stopper": 11
       },
@@ -12193,38 +12195,38 @@
       "_mock_rank": 5,
       "strengths": {
         "scoring": 79,
-        "shooting": 71,
-        "playmaking": 60,
+        "shooting": 70,
+        "playmaking": 61,
         "finishing": 72,
-        "rim_pressure": 90,
-        "rebounding": 40,
-        "rim_protection": 48,
+        "rim_pressure": 89,
+        "rebounding": 39,
+        "rim_protection": 47,
         "perimeter_defense": 14,
-        "ball_security": 28,
-        "size": 16
+        "ball_security": 26,
+        "size": 26
       },
       "strengths_abs": {
         "scoring": 78,
-        "shooting": 75,
-        "playmaking": 71,
+        "shooting": 74,
+        "playmaking": 72,
         "finishing": 57,
         "rim_pressure": 88,
-        "rebounding": 25,
-        "rim_protection": 32,
+        "rebounding": 24,
+        "rim_protection": 31,
         "perimeter_defense": 20,
-        "ball_security": 30,
-        "size": 10
+        "ball_security": 29,
+        "size": 15
       },
       "fits": {
-        "Floor General": 52,
+        "Floor General": 53,
         "Scoring Guard": 95,
         "Combo Guard": 74,
         "Slasher": 93,
-        "Sharpshooter": 75,
+        "Sharpshooter": 74,
         "Three-Level Scorer": 95,
-        "Glass Cleaner": 31,
+        "Glass Cleaner": 30,
         "Switch Defender": 14,
-        "Point-of-Attack Defender": 3
+        "Point-of-Attack Defender": 4
       },
       "archetype": "Scoring Guard",
       "all_offensive": [
@@ -12355,39 +12357,39 @@
       "tier": 3,
       "_mock_rank": 100,
       "strengths": {
-        "scoring": 22,
+        "scoring": 21,
         "shooting": 72,
-        "playmaking": 55,
-        "finishing": 12,
+        "playmaking": 56,
+        "finishing": 11,
         "rim_pressure": 26,
-        "rebounding": 50,
-        "rim_protection": 64,
-        "perimeter_defense": 29,
+        "rebounding": 49,
+        "rim_protection": 63,
+        "perimeter_defense": 30,
         "ball_security": 84,
-        "size": 16
+        "size": 26
       },
       "strengths_abs": {
-        "scoring": 22,
+        "scoring": 21,
         "shooting": 76,
-        "playmaking": 66,
-        "finishing": 8,
+        "playmaking": 67,
+        "finishing": 7,
         "rim_pressure": 22,
-        "rebounding": 34,
-        "rim_protection": 44,
+        "rebounding": 33,
+        "rim_protection": 43,
         "perimeter_defense": 34,
         "ball_security": 87,
-        "size": 10
+        "size": 15
       },
       "fits": {
-        "Floor General": 69,
-        "Scoring Guard": 24,
-        "Combo Guard": 47,
-        "Slasher": 9,
+        "Floor General": 70,
+        "Scoring Guard": 23,
+        "Combo Guard": 46,
+        "Slasher": 8,
         "Sharpshooter": 69,
-        "Three-Level Scorer": 19,
-        "Glass Cleaner": 29,
+        "Three-Level Scorer": 18,
+        "Glass Cleaner": 28,
         "Switch Defender": 32,
-        "Point-of-Attack Defender": 19
+        "Point-of-Attack Defender": 21
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -12458,44 +12460,44 @@
       "tier": 3,
       "_mock_rank": 101,
       "strengths": {
-        "scoring": 26,
+        "scoring": 25,
         "shooting": 5,
-        "playmaking": 31,
-        "finishing": 62,
-        "rim_pressure": 55,
+        "playmaking": 32,
+        "finishing": 61,
+        "rim_pressure": 54,
         "rebounding": 81,
         "rim_protection": 67,
         "perimeter_defense": 98,
-        "ball_security": 31,
-        "size": 16
+        "ball_security": 30,
+        "size": 26
       },
       "strengths_abs": {
-        "scoring": 24,
-        "shooting": 16,
+        "scoring": 23,
+        "shooting": 17,
         "playmaking": 43,
         "finishing": 46,
         "rim_pressure": 46,
-        "rebounding": 55,
+        "rebounding": 54,
         "rim_protection": 48,
         "perimeter_defense": 98,
-        "ball_security": 35,
-        "size": 10
+        "ball_security": 34,
+        "size": 15
       },
       "fits": {
         "Floor General": 14,
         "Scoring Guard": 14,
-        "Combo Guard": 9,
-        "Slasher": 53,
-        "Sharpshooter": 9,
-        "Three-Level Scorer": 14,
-        "Connector": 54,
+        "Combo Guard": 11,
+        "Slasher": 52,
+        "Sharpshooter": 8,
+        "Three-Level Scorer": 13,
+        "Connector": 56,
         "Glass Cleaner": 56,
-        "Switch Defender": 73,
-        "Point-of-Attack Defender": 97
+        "Switch Defender": 72,
+        "Point-of-Attack Defender": 95
       },
-      "archetype": "Glass Cleaner",
+      "archetype": "Connector",
       "all_offensive": [
-        "Glass Cleaner"
+        "Connector"
       ],
       "defensive_archetype": "Point-of-Attack Defender",
       "all_defensive": [
@@ -12801,38 +12803,38 @@
       "_mock_rank": 103,
       "strengths": {
         "scoring": 81,
-        "shooting": 40,
-        "playmaking": 83,
-        "finishing": 22,
-        "rim_pressure": 41,
-        "rebounding": 29,
-        "rim_protection": 90,
-        "perimeter_defense": 91,
-        "ball_security": 41,
-        "size": 2
+        "shooting": 39,
+        "playmaking": 84,
+        "finishing": 21,
+        "rim_pressure": 42,
+        "rebounding": 28,
+        "rim_protection": 89,
+        "perimeter_defense": 93,
+        "ball_security": 40,
+        "size": 3
       },
       "strengths_abs": {
         "scoring": 80,
         "shooting": 48,
-        "playmaking": 88,
-        "finishing": 15,
+        "playmaking": 89,
+        "finishing": 14,
         "rim_pressure": 33,
-        "rebounding": 19,
+        "rebounding": 18,
         "rim_protection": 70,
-        "perimeter_defense": 93,
-        "ball_security": 43,
-        "size": 1
+        "perimeter_defense": 94,
+        "ball_security": 42,
+        "size": 2
       },
       "fits": {
-        "Floor General": 88,
-        "Scoring Guard": 62,
+        "Floor General": 86,
+        "Scoring Guard": 61,
         "Combo Guard": 86,
-        "Slasher": 55,
-        "Sharpshooter": 44,
+        "Slasher": 57,
+        "Sharpshooter": 42,
         "Three-Level Scorer": 55,
-        "Glass Cleaner": 19,
-        "Switch Defender": 84,
-        "Point-of-Attack Defender": 78
+        "Glass Cleaner": 18,
+        "Switch Defender": 83,
+        "Point-of-Attack Defender": 79
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -13099,36 +13101,36 @@
       },
       "_mock_rank": 40,
       "strengths": {
-        "scoring": 66,
-        "shooting": 22,
+        "scoring": 65,
+        "shooting": 21,
         "playmaking": 7,
-        "finishing": 43,
+        "finishing": 42,
         "rim_pressure": 91,
-        "rebounding": 38,
+        "rebounding": 37,
         "rim_protection": 2,
         "perimeter_defense": 0,
-        "ball_security": 66,
-        "size": 71
+        "ball_security": 65,
+        "size": 77
       },
       "strengths_abs": {
-        "scoring": 63,
-        "shooting": 33,
+        "scoring": 62,
+        "shooting": 32,
         "playmaking": 18,
-        "finishing": 30,
+        "finishing": 29,
         "rim_pressure": 90,
-        "rebounding": 24,
+        "rebounding": 23,
         "rim_protection": 1,
         "perimeter_defense": 1,
         "ball_security": 70,
-        "size": 46
+        "size": 45
       },
       "fits": {
-        "Floor General": 17,
-        "Scoring Guard": 48,
-        "Combo Guard": 31,
+        "Floor General": 18,
+        "Scoring Guard": 47,
+        "Combo Guard": 30,
         "Slasher": 76,
-        "Sharpshooter": 31,
-        "Three-Level Scorer": 54,
+        "Sharpshooter": 30,
+        "Three-Level Scorer": 50,
         "Glass Cleaner": 16,
         "Switch Defender": 0,
         "Point-of-Attack Defender": 2
@@ -13211,12 +13213,12 @@
         "rim_protection": 4,
         "perimeter_defense": 74,
         "ball_security": 74,
-        "size": 4
+        "size": 12
       },
       "strengths_abs": {
         "scoring": 58,
         "shooting": 89,
-        "playmaking": 57,
+        "playmaking": 58,
         "finishing": 58,
         "rim_pressure": 20,
         "rebounding": 79,
@@ -13226,15 +13228,15 @@
         "size": 51
       },
       "fits": {
-        "Slasher": 21,
+        "Slasher": 20,
         "Sharpshooter": 86,
         "Stretch Big": 88,
         "Three-Level Scorer": 56,
         "Offensive Hub": 73,
         "Post Scorer": 24,
-        "Play Finisher": 21,
-        "Glass Cleaner": 73,
-        "Switch Defender": 55,
+        "Play Finisher": 24,
+        "Glass Cleaner": 72,
+        "Switch Defender": 54,
         "Rim Protector": 6,
         "Wing Stopper": 56
       },
@@ -13443,38 +13445,38 @@
       "_mock_rank": 105,
       "strengths": {
         "scoring": 88,
-        "shooting": 21,
+        "shooting": 19,
         "playmaking": 91,
-        "finishing": 55,
+        "finishing": 54,
         "rim_pressure": 67,
-        "rebounding": 45,
+        "rebounding": 44,
         "rim_protection": 0,
-        "perimeter_defense": 24,
-        "ball_security": 64,
-        "size": 50
+        "perimeter_defense": 25,
+        "ball_security": 63,
+        "size": 66
       },
       "strengths_abs": {
-        "scoring": 85,
-        "shooting": 32,
+        "scoring": 84,
+        "shooting": 31,
         "playmaking": 93,
         "finishing": 37,
         "rim_pressure": 59,
-        "rebounding": 29,
+        "rebounding": 28,
         "rim_protection": 0,
         "perimeter_defense": 30,
         "ball_security": 66,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 97,
-        "Scoring Guard": 76,
+        "Floor General": 96,
+        "Scoring Guard": 75,
         "Combo Guard": 93,
-        "Slasher": 82,
-        "Sharpshooter": 34,
-        "Three-Level Scorer": 71,
-        "Glass Cleaner": 23,
-        "Switch Defender": 5,
-        "Point-of-Attack Defender": 26
+        "Slasher": 81,
+        "Sharpshooter": 32,
+        "Three-Level Scorer": 70,
+        "Glass Cleaner": 20,
+        "Switch Defender": 6,
+        "Point-of-Attack Defender": 28
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -14136,39 +14138,39 @@
       "tier": 3,
       "_mock_rank": 51,
       "strengths": {
-        "scoring": 29,
-        "shooting": 83,
-        "playmaking": 29,
-        "finishing": 17,
+        "scoring": 28,
+        "shooting": 82,
+        "playmaking": 30,
+        "finishing": 16,
         "rim_pressure": 28,
-        "rebounding": 90,
-        "rim_protection": 43,
+        "rebounding": 89,
+        "rim_protection": 42,
         "perimeter_defense": 12,
-        "ball_security": 57,
-        "size": 50
+        "ball_security": 56,
+        "size": 66
       },
       "strengths_abs": {
         "scoring": 27,
-        "shooting": 85,
+        "shooting": 84,
         "playmaking": 40,
-        "finishing": 12,
+        "finishing": 11,
         "rim_pressure": 23,
         "rebounding": 66,
-        "rim_protection": 29,
+        "rim_protection": 28,
         "perimeter_defense": 13,
         "ball_security": 59,
-        "size": 32
+        "size": 38
       },
       "fits": {
-        "Floor General": 29,
-        "Scoring Guard": 31,
-        "Combo Guard": 38,
-        "Slasher": 16,
+        "Floor General": 30,
+        "Scoring Guard": 30,
+        "Combo Guard": 37,
+        "Slasher": 15,
         "Sharpshooter": 80,
-        "Three-Level Scorer": 35,
-        "Glass Cleaner": 52,
+        "Three-Level Scorer": 32,
+        "Glass Cleaner": 51,
         "Switch Defender": 9,
-        "Point-of-Attack Defender": 7
+        "Point-of-Attack Defender": 12
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -14740,31 +14742,31 @@
         "rim_protection": 0,
         "perimeter_defense": 59,
         "ball_security": 26,
-        "size": 7
+        "size": 18
       },
       "strengths_abs": {
-        "scoring": 21,
+        "scoring": 20,
         "shooting": 79,
-        "playmaking": 82,
-        "finishing": 53,
-        "rim_pressure": 27,
-        "rebounding": 30,
-        "rim_protection": 23,
-        "perimeter_defense": 55,
+        "playmaking": 83,
+        "finishing": 52,
+        "rim_pressure": 28,
+        "rebounding": 29,
+        "rim_protection": 22,
+        "perimeter_defense": 56,
         "ball_security": 27,
-        "size": 57
+        "size": 58
       },
       "fits": {
-        "Slasher": 8,
-        "Sharpshooter": 71,
+        "Slasher": 7,
+        "Sharpshooter": 73,
         "Stretch Big": 64,
-        "Three-Level Scorer": 27,
+        "Three-Level Scorer": 26,
         "Connector": 93,
         "Offensive Hub": 58,
         "Post Scorer": 6,
         "Play Finisher": 3,
-        "Glass Cleaner": 22,
-        "Switch Defender": 36,
+        "Glass Cleaner": 19,
+        "Switch Defender": 37,
         "Rim Protector": 0,
         "Wing Stopper": 48
       },
@@ -21629,44 +21631,44 @@
       },
       "_mock_rank": 53,
       "strengths": {
-        "scoring": 10,
-        "shooting": 26,
+        "scoring": 9,
+        "shooting": 25,
         "playmaking": 93,
         "finishing": 81,
-        "rim_pressure": 62,
-        "rebounding": 64,
-        "rim_protection": 47,
-        "perimeter_defense": 43,
+        "rim_pressure": 61,
+        "rebounding": 63,
+        "rim_protection": 46,
+        "perimeter_defense": 44,
         "ball_security": 0,
-        "size": 12
+        "size": 20
       },
       "strengths_abs": {
-        "scoring": 8,
-        "shooting": 35,
-        "playmaking": 95,
+        "scoring": 7,
+        "shooting": 34,
+        "playmaking": 94,
         "finishing": 68,
-        "rim_pressure": 52,
-        "rebounding": 43,
-        "rim_protection": 31,
-        "perimeter_defense": 45,
+        "rim_pressure": 51,
+        "rebounding": 42,
+        "rim_protection": 30,
+        "perimeter_defense": 46,
         "ball_security": 0,
-        "size": 8
+        "size": 11
       },
       "fits": {
-        "Floor General": 50,
-        "Scoring Guard": 17,
-        "Combo Guard": 33,
-        "Slasher": 58,
-        "Sharpshooter": 18,
-        "Three-Level Scorer": 24,
-        "Connector": 57,
+        "Floor General": 51,
+        "Scoring Guard": 18,
+        "Combo Guard": 32,
+        "Slasher": 55,
+        "Sharpshooter": 17,
+        "Three-Level Scorer": 21,
+        "Connector": 59,
         "Glass Cleaner": 46,
-        "Switch Defender": 29,
-        "Point-of-Attack Defender": 38
+        "Switch Defender": 28,
+        "Point-of-Attack Defender": 39
       },
-      "archetype": "Slasher",
+      "archetype": "Connector",
       "all_offensive": [
-        "Slasher"
+        "Connector"
       ],
       "defensive_archetype": "Average Defender",
       "all_defensive": [
@@ -22398,39 +22400,39 @@
       },
       "_mock_rank": 25,
       "strengths": {
-        "scoring": 64,
-        "shooting": 31,
-        "playmaking": 53,
-        "finishing": 26,
-        "rim_pressure": 66,
-        "rebounding": 21,
-        "rim_protection": 3,
+        "scoring": 63,
+        "shooting": 30,
+        "playmaking": 54,
+        "finishing": 25,
+        "rim_pressure": 65,
+        "rebounding": 19,
+        "rim_protection": 4,
         "perimeter_defense": 40,
-        "ball_security": 50,
-        "size": 43
+        "ball_security": 49,
+        "size": 57
       },
       "strengths_abs": {
         "scoring": 57,
-        "shooting": 40,
-        "playmaking": 65,
-        "finishing": 18,
+        "shooting": 39,
+        "playmaking": 66,
+        "finishing": 17,
         "rim_pressure": 58,
-        "rebounding": 13,
+        "rebounding": 12,
         "rim_protection": 2,
         "perimeter_defense": 43,
-        "ball_security": 52,
-        "size": 27
+        "ball_security": 51,
+        "size": 33
       },
       "fits": {
-        "Floor General": 55,
-        "Scoring Guard": 45,
-        "Combo Guard": 55,
-        "Slasher": 64,
+        "Floor General": 56,
+        "Scoring Guard": 42,
+        "Combo Guard": 51,
+        "Slasher": 63,
         "Sharpshooter": 35,
-        "Three-Level Scorer": 41,
-        "Glass Cleaner": 8,
+        "Three-Level Scorer": 40,
+        "Glass Cleaner": 7,
         "Switch Defender": 12,
-        "Point-of-Attack Defender": 41
+        "Point-of-Attack Defender": 44
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -22823,28 +22825,28 @@
         "rim_protection": 11,
         "perimeter_defense": 15,
         "ball_security": 15,
-        "size": 11
+        "size": 21
       },
       "strengths_abs": {
         "scoring": 67,
-        "shooting": 55,
+        "shooting": 54,
         "playmaking": 22,
-        "finishing": 41,
-        "rim_pressure": 85,
+        "finishing": 40,
+        "rim_pressure": 84,
         "rebounding": 90,
-        "rim_protection": 45,
+        "rim_protection": 44,
         "perimeter_defense": 12,
-        "ball_security": 22,
-        "size": 59
+        "ball_security": 21,
+        "size": 60
       },
       "fits": {
-        "Slasher": 59,
+        "Slasher": 61,
         "Sharpshooter": 60,
         "Stretch Big": 76,
         "Three-Level Scorer": 51,
         "Offensive Hub": 24,
         "Post Scorer": 39,
-        "Play Finisher": 24,
+        "Play Finisher": 21,
         "Glass Cleaner": 77,
         "Switch Defender": 24,
         "Rim Protector": 9,
@@ -38246,31 +38248,31 @@
         "rim_protection": 7,
         "perimeter_defense": 4,
         "ball_security": 93,
-        "size": 0
+        "size": 2
       },
       "strengths_abs": {
         "scoring": 36,
         "shooting": 99,
         "playmaking": 9,
-        "finishing": 44,
+        "finishing": 43,
         "rim_pressure": 1,
-        "rebounding": 31,
-        "rim_protection": 42,
+        "rebounding": 30,
+        "rim_protection": 41,
         "perimeter_defense": 7,
         "ball_security": 98,
-        "size": 32
+        "size": 38
       },
       "fits": {
         "Slasher": 4,
-        "Sharpshooter": 91,
+        "Sharpshooter": 90,
         "Stretch Big": 73,
-        "Three-Level Scorer": 33,
-        "Connector": 36,
+        "Three-Level Scorer": 35,
+        "Connector": 37,
         "Offensive Hub": 9,
         "Post Scorer": 3,
         "Play Finisher": 0,
-        "Glass Cleaner": 26,
-        "Switch Defender": 15,
+        "Glass Cleaner": 27,
+        "Switch Defender": 16,
         "Rim Protector": 3,
         "Wing Stopper": 0
       },
@@ -80895,51 +80897,7 @@
       "id": 866269182,
       "rank": 1286,
       "tier": 3,
-      "_mock_rank": 8,
-      "strengths": {
-        "scoring": 2,
-        "shooting": 9,
-        "playmaking": 86,
-        "finishing": 2,
-        "rim_pressure": 43,
-        "rebounding": 3,
-        "rim_protection": 16,
-        "perimeter_defense": 93,
-        "ball_security": 21,
-        "size": 0
-      },
-      "strengths_abs": {
-        "scoring": 1,
-        "shooting": 22,
-        "playmaking": 90,
-        "finishing": 1,
-        "rim_pressure": 34,
-        "rebounding": 2,
-        "rim_protection": 10,
-        "perimeter_defense": 95,
-        "ball_security": 18,
-        "size": 0
-      },
-      "fits": {
-        "Floor General": 57,
-        "Scoring Guard": 2,
-        "Combo Guard": 24,
-        "Slasher": 7,
-        "Sharpshooter": 6,
-        "Three-Level Scorer": 1,
-        "Connector": 79,
-        "Glass Cleaner": 0,
-        "Switch Defender": 46,
-        "Point-of-Attack Defender": 79
-      },
-      "archetype": "Connector",
-      "all_offensive": [
-        "Connector"
-      ],
-      "defensive_archetype": "Point-of-Attack Defender",
-      "all_defensive": [
-        "Point-of-Attack Defender"
-      ]
+      "_mock_rank": 8
     },
     {
       "name": "Desi Sills",

@@ -92,7 +92,7 @@
         "rim_protection": 77,
         "perimeter_defense": 92,
         "ball_security": 69,
-        "size": 31
+        "size": 40
       },
       "strengths_abs": {
         "scoring": 95,
@@ -104,7 +104,7 @@
         "rim_protection": 91,
         "perimeter_defense": 89,
         "ball_security": 61,
-        "size": 70
+        "size": 69
       },
       "fits": {
         "Slasher": 76,
@@ -116,7 +116,7 @@
         "Play Finisher": 31,
         "Glass Cleaner": 64,
         "Switch Defender": 98,
-        "Rim Protector": 56,
+        "Rim Protector": 50,
         "Wing Stopper": 92
       },
       "archetype": "Offensive Hub",
@@ -228,7 +228,7 @@
         "rim_protection": 30,
         "perimeter_defense": 48,
         "ball_security": 39,
-        "size": 55
+        "size": 49
       },
       "fits": {
         "Floor General": 89,
@@ -239,7 +239,7 @@
         "Three-Level Scorer": 90,
         "Glass Cleaner": 34,
         "Switch Defender": 34,
-        "Point-of-Attack Defender": 57
+        "Point-of-Attack Defender": 50
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -338,7 +338,7 @@
         "rim_protection": 33,
         "perimeter_defense": 0,
         "ball_security": 33,
-        "size": 67
+        "size": 86
       },
       "strengths_abs": {
         "scoring": 9,
@@ -350,7 +350,7 @@
         "rim_protection": 82,
         "perimeter_defense": 7,
         "ball_security": 59,
-        "size": 98
+        "size": 99
       },
       "fits": {
         "Stretch Big": 0,
@@ -469,7 +469,7 @@
         "rim_protection": 61,
         "perimeter_defense": 93,
         "ball_security": 43,
-        "size": 27
+        "size": 24
       },
       "fits": {
         "Floor General": 39,
@@ -578,7 +578,7 @@
         "rim_protection": 46,
         "perimeter_defense": 36,
         "ball_security": 61,
-        "size": 57
+        "size": 55
       },
       "strengths_abs": {
         "scoring": 39,
@@ -590,7 +590,7 @@
         "rim_protection": 36,
         "perimeter_defense": 45,
         "ball_security": 66,
-        "size": 36
+        "size": 31
       },
       "fits": {
         "Floor General": 50,
@@ -698,7 +698,7 @@
         "rim_protection": 85,
         "perimeter_defense": 62,
         "ball_security": 85,
-        "size": 46
+        "size": 57
       },
       "strengths_abs": {
         "scoring": 93,
@@ -710,7 +710,7 @@
         "rim_protection": 93,
         "perimeter_defense": 55,
         "ball_security": 86,
-        "size": 75
+        "size": 77
       },
       "fits": {
         "Slasher": 73,
@@ -820,7 +820,7 @@
         "rim_protection": 86,
         "perimeter_defense": 86,
         "ball_security": 46,
-        "size": 86
+        "size": 90
       },
       "strengths_abs": {
         "scoring": 68,
@@ -832,7 +832,7 @@
         "rim_protection": 66,
         "perimeter_defense": 91,
         "ball_security": 45,
-        "size": 59
+        "size": 58
       },
       "fits": {
         "Floor General": 36,
@@ -941,7 +941,7 @@
         "rim_protection": 0,
         "perimeter_defense": 67,
         "ball_security": 0,
-        "size": 0
+        "size": 9
       },
       "strengths_abs": {
         "scoring": 64,
@@ -953,7 +953,7 @@
         "rim_protection": 68,
         "perimeter_defense": 59,
         "ball_security": 20,
-        "size": 77
+        "size": 78
       },
       "fits": {
         "Stretch Big": 25,
@@ -1058,7 +1058,7 @@
         "rim_protection": 67,
         "perimeter_defense": 33,
         "ball_security": 67,
-        "size": 33
+        "size": 74
       },
       "strengths_abs": {
         "scoring": 70,
@@ -1070,7 +1070,7 @@
         "rim_protection": 95,
         "perimeter_defense": 18,
         "ball_security": 77,
-        "size": 95
+        "size": 98
       },
       "fits": {
         "Stretch Big": 69,
@@ -1311,7 +1311,7 @@
         "rim_protection": 21,
         "perimeter_defense": 11,
         "ball_security": 61,
-        "size": 64
+        "size": 59
       },
       "strengths_abs": {
         "scoring": 98,
@@ -1323,7 +1323,7 @@
         "rim_protection": 18,
         "perimeter_defense": 16,
         "ball_security": 66,
-        "size": 41
+        "size": 34
       },
       "fits": {
         "Floor General": 46,
@@ -1508,7 +1508,7 @@
         "rim_protection": 4,
         "perimeter_defense": 4,
         "ball_security": 79,
-        "size": 79
+        "size": 81
       },
       "strengths_abs": {
         "scoring": 82,
@@ -1520,7 +1520,7 @@
         "rim_protection": 5,
         "perimeter_defense": 11,
         "ball_security": 80,
-        "size": 52
+        "size": 48
       },
       "fits": {
         "Floor General": 82,
@@ -1689,7 +1689,7 @@
         "rim_protection": 96,
         "perimeter_defense": 75,
         "ball_security": 7,
-        "size": 93
+        "size": 95
       },
       "strengths_abs": {
         "scoring": 5,
@@ -1713,7 +1713,7 @@
         "Connector": 8,
         "Glass Cleaner": 68,
         "Switch Defender": 93,
-        "Point-of-Attack Defender": 79
+        "Point-of-Attack Defender": 82
       },
       "archetype": "Glass Cleaner",
       "all_offensive": [
@@ -1809,7 +1809,7 @@
         "rim_protection": 64,
         "perimeter_defense": 43,
         "ball_security": 25,
-        "size": 46
+        "size": 45
       },
       "strengths_abs": {
         "scoring": 61,
@@ -1821,7 +1821,7 @@
         "rim_protection": 50,
         "perimeter_defense": 50,
         "ball_security": 27,
-        "size": 30
+        "size": 25
       },
       "fits": {
         "Floor General": 71,
@@ -1831,7 +1831,7 @@
         "Sharpshooter": 54,
         "Three-Level Scorer": 85,
         "Glass Cleaner": 73,
-        "Switch Defender": 50,
+        "Switch Defender": 45,
         "Point-of-Attack Defender": 43
       },
       "archetype": "Three-Level Scorer",
@@ -1931,7 +1931,7 @@
         "rim_protection": 31,
         "perimeter_defense": 31,
         "ball_security": 92,
-        "size": 38
+        "size": 56
       },
       "strengths_abs": {
         "scoring": 59,
@@ -1943,7 +1943,7 @@
         "rim_protection": 52,
         "perimeter_defense": 32,
         "ball_security": 89,
-        "size": 73
+        "size": 77
       },
       "fits": {
         "Slasher": 62,
@@ -2517,7 +2517,7 @@
         "rim_protection": 75,
         "perimeter_defense": 29,
         "ball_security": 71,
-        "size": 86
+        "size": 90
       },
       "strengths_abs": {
         "scoring": 2,
@@ -2529,7 +2529,7 @@
         "rim_protection": 59,
         "perimeter_defense": 34,
         "ball_security": 73,
-        "size": 59
+        "size": 58
       },
       "fits": {
         "Floor General": 7,
@@ -2540,7 +2540,7 @@
         "Three-Level Scorer": 7,
         "Connector": 0,
         "Glass Cleaner": 23,
-        "Switch Defender": 45,
+        "Switch Defender": 48,
         "Point-of-Attack Defender": 39
       },
       "archetype": "Sharpshooter",
@@ -2680,7 +2680,7 @@
         "rim_protection": 39,
         "perimeter_defense": 54,
         "ball_security": 75,
-        "size": 21
+        "size": 26
       },
       "strengths_abs": {
         "scoring": 77,
@@ -2692,7 +2692,7 @@
         "rim_protection": 32,
         "perimeter_defense": 61,
         "ball_security": 75,
-        "size": 14
+        "size": 15
       },
       "fits": {
         "Floor General": 96,
@@ -2918,7 +2918,7 @@
         "rim_protection": 32,
         "perimeter_defense": 71,
         "ball_security": 50,
-        "size": 18
+        "size": 22
       },
       "strengths_abs": {
         "scoring": 23,
@@ -2930,7 +2930,7 @@
         "rim_protection": 27,
         "perimeter_defense": 77,
         "ball_security": 50,
-        "size": 11
+        "size": 12
       },
       "fits": {
         "Floor General": 64,
@@ -2941,7 +2941,7 @@
         "Three-Level Scorer": 39,
         "Connector": 83,
         "Glass Cleaner": 52,
-        "Switch Defender": 48,
+        "Switch Defender": 50,
         "Point-of-Attack Defender": 71
       },
       "archetype": "Connector",
@@ -3022,7 +3022,7 @@
         "rim_protection": 68,
         "perimeter_defense": 79,
         "ball_security": 36,
-        "size": 54
+        "size": 47
       },
       "strengths_abs": {
         "scoring": 16,
@@ -3034,7 +3034,7 @@
         "rim_protection": 55,
         "perimeter_defense": 84,
         "ball_security": 39,
-        "size": 34
+        "size": 26
       },
       "fits": {
         "Floor General": 11,
@@ -3045,7 +3045,7 @@
         "Three-Level Scorer": 56,
         "Connector": 50,
         "Glass Cleaner": 43,
-        "Switch Defender": 73,
+        "Switch Defender": 70,
         "Point-of-Attack Defender": 75
       },
       "archetype": "Three-Level Scorer",
@@ -3260,7 +3260,7 @@
         "rim_protection": 54,
         "perimeter_defense": 46,
         "ball_security": 0,
-        "size": 77
+        "size": 93
       },
       "strengths_abs": {
         "scoring": 18,
@@ -3272,7 +3272,7 @@
         "rim_protection": 80,
         "perimeter_defense": 39,
         "ball_security": 2,
-        "size": 89
+        "size": 93
       },
       "fits": {
         "Slasher": 14,
@@ -3284,7 +3284,7 @@
         "Play Finisher": 44,
         "Glass Cleaner": 89,
         "Switch Defender": 66,
-        "Rim Protector": 50,
+        "Rim Protector": 56,
         "Wing Stopper": 46
       },
       "archetype": "Glass Cleaner",
@@ -3365,7 +3365,7 @@
         "rim_protection": 89,
         "perimeter_defense": 93,
         "ball_security": 29,
-        "size": 75
+        "size": 66
       },
       "strengths_abs": {
         "scoring": 30,
@@ -3377,7 +3377,7 @@
         "rim_protection": 70,
         "perimeter_defense": 95,
         "ball_security": 30,
-        "size": 48
+        "size": 38
       },
       "fits": {
         "Floor General": 54,
@@ -3387,7 +3387,7 @@
         "Sharpshooter": 7,
         "Three-Level Scorer": 0,
         "Glass Cleaner": 61,
-        "Switch Defender": 89,
+        "Switch Defender": 86,
         "Point-of-Attack Defender": 96
       },
       "archetype": "Glass Cleaner",
@@ -3484,7 +3484,7 @@
         "rim_protection": 46,
         "perimeter_defense": 85,
         "ball_security": 15,
-        "size": 23
+        "size": 35
       },
       "strengths_abs": {
         "scoring": 66,
@@ -3496,7 +3496,7 @@
         "rim_protection": 77,
         "perimeter_defense": 82,
         "ball_security": 9,
-        "size": 68
+        "size": 67
       },
       "fits": {
         "Sharpshooter": 22,
@@ -3506,7 +3506,7 @@
         "Post Scorer": 94,
         "Play Finisher": 88,
         "Glass Cleaner": 91,
-        "Switch Defender": 86,
+        "Switch Defender": 89,
         "Rim Protector": 38,
         "Wing Stopper": 77
       },
@@ -3800,7 +3800,7 @@
         "rim_protection": 69,
         "perimeter_defense": 77,
         "ball_security": 23,
-        "size": 92
+        "size": 98
       },
       "strengths_abs": {
         "scoring": 27,
@@ -3812,7 +3812,7 @@
         "rim_protection": 89,
         "perimeter_defense": 75,
         "ball_security": 14,
-        "size": 93
+        "size": 96
       },
       "fits": {
         "Sharpshooter": 12,
@@ -3923,7 +3923,7 @@
         "rim_protection": 82,
         "perimeter_defense": 57,
         "ball_security": 86,
-        "size": 7
+        "size": 16
       },
       "strengths_abs": {
         "scoring": 45,
@@ -3935,7 +3935,7 @@
         "rim_protection": 64,
         "perimeter_defense": 64,
         "ball_security": 91,
-        "size": 5
+        "size": 9
       },
       "fits": {
         "Floor General": 68,
@@ -3947,7 +3947,7 @@
         "Connector": 92,
         "Glass Cleaner": 20,
         "Switch Defender": 59,
-        "Point-of-Attack Defender": 46
+        "Point-of-Attack Defender": 57
       },
       "archetype": "Connector",
       "all_offensive": [
@@ -4223,7 +4223,7 @@
         "rim_protection": 43,
         "perimeter_defense": 61,
         "ball_security": 18,
-        "size": 4
+        "size": 9
       },
       "strengths_abs": {
         "scoring": 55,
@@ -4235,7 +4235,7 @@
         "rim_protection": 34,
         "perimeter_defense": 66,
         "ball_security": 23,
-        "size": 2
+        "size": 5
       },
       "fits": {
         "Floor General": 86,
@@ -4245,7 +4245,7 @@
         "Sharpshooter": 61,
         "Three-Level Scorer": 51,
         "Glass Cleaner": 9,
-        "Switch Defender": 43,
+        "Switch Defender": 41,
         "Point-of-Attack Defender": 61
       },
       "archetype": "Floor General",
@@ -4540,7 +4540,7 @@
         "rim_protection": 61,
         "perimeter_defense": 46,
         "ball_security": 32,
-        "size": 0
+        "size": 7
       },
       "strengths_abs": {
         "scoring": 73,
@@ -4552,7 +4552,7 @@
         "rim_protection": 45,
         "perimeter_defense": 52,
         "ball_security": 36,
-        "size": 0
+        "size": 4
       },
       "fits": {
         "Floor General": 75,
@@ -4839,7 +4839,7 @@
         "rim_protection": 71,
         "perimeter_defense": 50,
         "ball_security": 11,
-        "size": 36
+        "size": 37
       },
       "strengths_abs": {
         "scoring": 7,
@@ -4851,7 +4851,7 @@
         "rim_protection": 57,
         "perimeter_defense": 57,
         "ball_security": 16,
-        "size": 23
+        "size": 21
       },
       "fits": {
         "Floor General": 21,
@@ -4863,7 +4863,7 @@
         "Connector": 33,
         "Glass Cleaner": 50,
         "Switch Defender": 57,
-        "Point-of-Attack Defender": 50
+        "Point-of-Attack Defender": 46
       },
       "archetype": "Slasher",
       "all_offensive": [
@@ -5195,7 +5195,7 @@
         "rim_protection": 23,
         "perimeter_defense": 15,
         "ball_security": 62,
-        "size": 69
+        "size": 92
       },
       "strengths_abs": {
         "scoring": 89,
@@ -5207,7 +5207,7 @@
         "rim_protection": 48,
         "perimeter_defense": 9,
         "ball_security": 57,
-        "size": 86
+        "size": 93
       },
       "fits": {
         "Slasher": 27,
@@ -5510,7 +5510,7 @@
         "rim_protection": 92,
         "perimeter_defense": 23,
         "ball_security": 31,
-        "size": 62
+        "size": 82
       },
       "strengths_abs": {
         "scoring": 52,
@@ -5522,7 +5522,7 @@
         "rim_protection": 98,
         "perimeter_defense": 30,
         "ball_security": 30,
-        "size": 84
+        "size": 89
       },
       "fits": {
         "Sharpshooter": 5,
@@ -5753,7 +5753,7 @@
         "rim_protection": 54,
         "perimeter_defense": 82,
         "ball_security": 21,
-        "size": 68
+        "size": 60
       },
       "strengths_abs": {
         "scoring": 32,
@@ -5765,7 +5765,7 @@
         "rim_protection": 41,
         "perimeter_defense": 86,
         "ball_security": 25,
-        "size": 43
+        "size": 35
       },
       "fits": {
         "Floor General": 29,
@@ -5776,7 +5776,7 @@
         "Three-Level Scorer": 15,
         "Glass Cleaner": 32,
         "Switch Defender": 64,
-        "Point-of-Attack Defender": 82
+        "Point-of-Attack Defender": 79
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -5872,7 +5872,7 @@
         "rim_protection": 38,
         "perimeter_defense": 69,
         "ball_security": 54,
-        "size": 85
+        "size": 94
       },
       "strengths_abs": {
         "scoring": 34,
@@ -5884,7 +5884,7 @@
         "rim_protection": 73,
         "perimeter_defense": 68,
         "ball_security": 50,
-        "size": 91
+        "size": 94
       },
       "fits": {
         "Slasher": 22,
@@ -6190,7 +6190,7 @@
         "rim_protection": 57,
         "perimeter_defense": 7,
         "ball_security": 57,
-        "size": 96
+        "size": 99
       },
       "strengths_abs": {
         "scoring": 57,
@@ -6202,7 +6202,7 @@
         "rim_protection": 43,
         "perimeter_defense": 14,
         "ball_security": 64,
-        "size": 77
+        "size": 78
       },
       "fits": {
         "Floor General": 14,
@@ -6212,7 +6212,7 @@
         "Sharpshooter": 32,
         "Three-Level Scorer": 24,
         "Glass Cleaner": 59,
-        "Switch Defender": 27,
+        "Switch Defender": 25,
         "Point-of-Attack Defender": 14
       },
       "archetype": "Glass Cleaner",
@@ -6710,7 +6710,7 @@
         "rim_protection": 93,
         "perimeter_defense": 96,
         "ball_security": 14,
-        "size": 21
+        "size": 26
       },
       "strengths_abs": {
         "scoring": 0,
@@ -6722,7 +6722,7 @@
         "rim_protection": 75,
         "perimeter_defense": 98,
         "ball_security": 18,
-        "size": 14
+        "size": 15
       },
       "fits": {
         "Floor General": 4,
@@ -7127,7 +7127,7 @@
         "rim_protection": 14,
         "perimeter_defense": 32,
         "ball_security": 93,
-        "size": 21
+        "size": 26
       },
       "strengths_abs": {
         "scoring": 91,
@@ -7139,7 +7139,7 @@
         "rim_protection": 11,
         "perimeter_defense": 41,
         "ball_security": 95,
-        "size": 14
+        "size": 15
       },
       "fits": {
         "Floor General": 61,
@@ -7247,7 +7247,7 @@
         "rim_protection": 18,
         "perimeter_defense": 21,
         "ball_security": 89,
-        "size": 50
+        "size": 46
       },
       "strengths_abs": {
         "scoring": 80,
@@ -7259,7 +7259,7 @@
         "rim_protection": 16,
         "perimeter_defense": 25,
         "ball_security": 93,
-        "size": 32
+        "size": 26
       },
       "fits": {
         "Floor General": 25,
@@ -7560,7 +7560,7 @@
         "rim_protection": 29,
         "perimeter_defense": 14,
         "ball_security": 0,
-        "size": 61
+        "size": 58
       },
       "strengths_abs": {
         "scoring": 36,
@@ -7572,7 +7572,7 @@
         "rim_protection": 25,
         "perimeter_defense": 20,
         "ball_security": 0,
-        "size": 39
+        "size": 33
       },
       "fits": {
         "Floor General": 57,
@@ -8450,7 +8450,7 @@
         "rim_protection": 50,
         "perimeter_defense": 68,
         "ball_security": 68,
-        "size": 14
+        "size": 21
       },
       "strengths_abs": {
         "scoring": 41,
@@ -8462,7 +8462,7 @@
         "rim_protection": 39,
         "perimeter_defense": 73,
         "ball_security": 70,
-        "size": 9
+        "size": 12
       },
       "fits": {
         "Floor General": 32,
@@ -10386,7 +10386,7 @@
         "rim_protection": 25,
         "perimeter_defense": 25,
         "ball_security": 82,
-        "size": 39
+        "size": 42
       },
       "strengths_abs": {
         "scoring": 14,
@@ -10398,7 +10398,7 @@
         "rim_protection": 23,
         "perimeter_defense": 27,
         "ball_security": 84,
-        "size": 25
+        "size": 24
       },
       "fits": {
         "Floor General": 43,
@@ -10409,8 +10409,8 @@
         "Three-Level Scorer": 27,
         "Connector": 42,
         "Glass Cleaner": 2,
-        "Switch Defender": 20,
-        "Point-of-Attack Defender": 21
+        "Switch Defender": 18,
+        "Point-of-Attack Defender": 25
       },
       "archetype": "Sharpshooter",
       "all_offensive": [
@@ -10612,7 +10612,7 @@
         "rim_protection": 62,
         "perimeter_defense": 54,
         "ball_security": 8,
-        "size": 54
+        "size": 62
       },
       "strengths_abs": {
         "scoring": 43,
@@ -10624,7 +10624,7 @@
         "rim_protection": 84,
         "perimeter_defense": 43,
         "ball_security": 5,
-        "size": 82
+        "size": 80
       },
       "fits": {
         "Sharpshooter": 0,
@@ -11103,7 +11103,7 @@
         "rim_protection": 11,
         "perimeter_defense": 18,
         "ball_security": 50,
-        "size": 71
+        "size": 60
       },
       "strengths_abs": {
         "scoring": 50,
@@ -11115,7 +11115,7 @@
         "rim_protection": 9,
         "perimeter_defense": 23,
         "ball_security": 50,
-        "size": 45
+        "size": 35
       },
       "fits": {
         "Floor General": 93,
@@ -11126,7 +11126,7 @@
         "Three-Level Scorer": 37,
         "Glass Cleaner": 14,
         "Switch Defender": 9,
-        "Point-of-Attack Defender": 25
+        "Point-of-Attack Defender": 21
       },
       "archetype": "Floor General",
       "all_offensive": [
@@ -13565,7 +13565,7 @@
         "rim_protection": 8,
         "perimeter_defense": 0,
         "ball_security": 77,
-        "size": 8
+        "size": 9
       },
       "strengths_abs": {
         "scoring": 48,
@@ -13577,7 +13577,7 @@
         "rim_protection": 14,
         "perimeter_defense": 0,
         "ball_security": 80,
-        "size": 57
+        "size": 50
       },
       "fits": {
         "Slasher": 11,
@@ -16389,7 +16389,7 @@
         "rim_protection": 0,
         "perimeter_defense": 64,
         "ball_security": 4,
-        "size": 11
+        "size": 20
       },
       "strengths_abs": {
         "scoring": 75,
@@ -16401,7 +16401,7 @@
         "rim_protection": 2,
         "perimeter_defense": 70,
         "ball_security": 7,
-        "size": 7
+        "size": 11
       },
       "fits": {
         "Floor General": 79,
@@ -16411,7 +16411,7 @@
         "Sharpshooter": 15,
         "Three-Level Scorer": 44,
         "Glass Cleaner": 16,
-        "Switch Defender": 25,
+        "Switch Defender": 27,
         "Point-of-Attack Defender": 64
       },
       "archetype": "Slasher",
@@ -23377,7 +23377,7 @@
         "rim_protection": 7,
         "perimeter_defense": 0,
         "ball_security": 96,
-        "size": 32
+        "size": 35
       },
       "strengths_abs": {
         "scoring": 11,
@@ -28585,7 +28585,7 @@
         "rim_protection": 15,
         "perimeter_defense": 38,
         "ball_security": 31,
-        "size": 15
+        "size": 19
       },
       "strengths_abs": {
         "scoring": 86,
@@ -28597,7 +28597,7 @@
         "rim_protection": 20,
         "perimeter_defense": 36,
         "ball_security": 30,
-        "size": 64
+        "size": 59
       },
       "fits": {
         "Slasher": 78,
@@ -31428,7 +31428,7 @@
         "rim_protection": 0,
         "perimeter_defense": 8,
         "ball_security": 46,
-        "size": 0
+        "size": 5
       },
       "strengths_abs": {
         "scoring": 20,
@@ -31440,7 +31440,7 @@
         "rim_protection": 0,
         "perimeter_defense": 2,
         "ball_security": 48,
-        "size": 50
+        "size": 46
       },
       "fits": {
         "Slasher": 3,

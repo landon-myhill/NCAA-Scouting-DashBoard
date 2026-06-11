@@ -7,7 +7,7 @@
       "lottery": 3,
       "late_1st": 7,
       "second_rd": 23,
-      "avg_score": 76.5,
+      "avg_score": 77.9,
       "top_prospect_rank": 4,
       "top_prospect_name": "AJ Dybantsa",
       "depth_signal": "Deep",
@@ -22,6 +22,7 @@
         97.32,
         96.68,
         95.6,
+        94.61,
         93.69,
         85.73,
         80.16,
@@ -39,7 +40,6 @@
         58.39,
         51.33,
         51.07,
-        48.38,
         42.91,
         41.3,
         40.7,
@@ -180,7 +180,7 @@
       "lottery": 2,
       "late_1st": 3,
       "second_rd": 12,
-      "avg_score": 91.6,
+      "avg_score": 88.9,
       "top_prospect_rank": 2,
       "top_prospect_name": "Darryn Peterson",
       "depth_signal": "Deep",
@@ -190,7 +190,6 @@
         109.79,
         109.01,
         97.77,
-        94.61,
         93.21,
         91.73,
         89.06,
@@ -201,7 +200,8 @@
         71.23,
         66.24,
         65.86,
-        63.29
+        63.29,
+        48.38
       ],
       "tier_counts": {
         "1": 2,
@@ -1468,13 +1468,13 @@
       "tier": 3,
       "draft_score": 94.6,
       "archetype": "Slasher",
-      "defensive_archetype": "Point-of-Attack Defender",
+      "defensive_archetype": "Average Defender",
       "all_offensive": [
         "Slasher",
         "Floor General"
       ],
       "all_defensive": [
-        "Point-of-Attack Defender"
+        "Average Defender"
       ],
       "ppg": 22.8,
       "rpg": 3.7,
@@ -2517,12 +2517,12 @@
       "tier": 3,
       "draft_score": 48.4,
       "archetype": "Slasher",
-      "defensive_archetype": "Average Defender",
+      "defensive_archetype": "Point-of-Attack Defender",
       "all_offensive": [
         "Slasher"
       ],
       "all_defensive": [
-        "Average Defender"
+        "Point-of-Attack Defender"
       ],
       "ppg": 14.0,
       "rpg": 3.8,
