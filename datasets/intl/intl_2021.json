@@ -1,0 +1,525 @@
+{
+  "year": 2021,
+  "scraped_at": "2026-06-11T13:33:10.393968",
+  "players": [
+    {
+      "name": "Jalen Green",
+      "norm_name": "jalen green",
+      "pos": "G",
+      "born": "2002-02-09",
+      "age_label": "Age 24",
+      "team": "GLI",
+      "league": null,
+      "season": "2020-21",
+      "stats": {
+        "PPG": 17.9,
+        "RPG": 4.1,
+        "APG": 2.8,
+        "SPG": 1.5,
+        "BPG": 0.3,
+        "MPG": 32.0,
+        "TOV": 2.7,
+        "3PA": 5.7,
+        "FGA": 13.6,
+        "FTA": 2.3,
+        "FG%": 46.1,
+        "3P%": 36.5,
+        "FT%": 82.9,
+        "G": 15
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": null,
+          "league": null,
+          "g": "15",
+          "mp_per_g": "32.0",
+          "pts_per_g": "17.9"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/gleague/players/g/greenja02d.html"
+    },
+    {
+      "name": "Josh Giddey",
+      "norm_name": "josh giddey",
+      "pos": "G",
+      "born": "2002-10-10",
+      "age_label": "Age 23",
+      "team": "Adelaide",
+      "league": "NBL",
+      "season": "2021",
+      "stats": {
+        "PPG": 10.9,
+        "RPG": 7.4,
+        "APG": 7.5,
+        "SPG": 1.1,
+        "BPG": 0.5,
+        "MPG": 32.1,
+        "TOV": 3.3,
+        "3PA": 3.5,
+        "FGA": 9.5,
+        "FTA": 2.4,
+        "FG%": 42.7,
+        "3P%": 29.3,
+        "FT%": 69.1,
+        "G": 28
+      },
+      "all_rows": [
+        {
+          "season": "2021",
+          "team": "Adelaide",
+          "league": "NBL",
+          "g": "28",
+          "mp_per_g": "32.1",
+          "pts_per_g": "10.9"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/josh-giddey-1.html"
+    },
+    {
+      "name": "Jonathan Kuminga",
+      "norm_name": "jonathan kuminga",
+      "pos": "F",
+      "born": "2002-10-06",
+      "age_label": "Age 23",
+      "team": "GLI",
+      "league": null,
+      "season": "2020-21",
+      "stats": {
+        "PPG": 15.8,
+        "RPG": 7.2,
+        "APG": 2.7,
+        "SPG": 1.0,
+        "BPG": 0.8,
+        "MPG": 32.8,
+        "TOV": 2.6,
+        "3PA": 5.0,
+        "FGA": 14.3,
+        "FTA": 3.7,
+        "FG%": 38.7,
+        "3P%": 24.6,
+        "FT%": 62.5,
+        "G": 13
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": null,
+          "league": null,
+          "g": "13",
+          "mp_per_g": "32.8",
+          "pts_per_g": "15.8"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/gleague/players/k/kuminjo01d.html"
+    },
+    {
+      "name": "Alperen Şengün",
+      "norm_name": "alperen sengun",
+      "pos": "F",
+      "born": "2002-07-25",
+      "age_label": "Age 23",
+      "team": "Beşiktaş",
+      "league": "BSL",
+      "season": "2020-21",
+      "stats": {
+        "PPG": 19.2,
+        "RPG": 9.4,
+        "APG": 2.5,
+        "SPG": 1.3,
+        "BPG": 1.7,
+        "MPG": 28.3,
+        "TOV": 2.3,
+        "3PA": 0.7,
+        "FGA": 10.8,
+        "FTA": 6.2,
+        "FG%": 64.6,
+        "3P%": 19.0,
+        "FT%": 81.2,
+        "G": 29
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": "Beşiktaş",
+          "league": "BSL",
+          "g": "29",
+          "mp_per_g": "28.3",
+          "pts_per_g": "19.2"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/alperen-sengun-1.html"
+    },
+    {
+      "name": "Usman Garuba",
+      "norm_name": "usman garuba",
+      "pos": "C",
+      "born": "2002-03-09",
+      "age_label": "Age 24",
+      "team": "Real Madrid",
+      "league": "Liga ACB",
+      "season": "2020-21",
+      "stats": {
+        "PPG": 5.6,
+        "RPG": 5.3,
+        "APG": 1.1,
+        "SPG": 0.8,
+        "BPG": 0.4,
+        "MPG": 18.7,
+        "TOV": 1.0,
+        "3PA": 2.0,
+        "FGA": 4.6,
+        "FTA": 0.9,
+        "FG%": 46.1,
+        "3P%": 33.8,
+        "FT%": 67.6,
+        "G": 36
+      },
+      "all_rows": [
+        {
+          "season": "2018-19",
+          "team": "Real Madrid",
+          "league": "Liga ACB",
+          "g": "2",
+          "mp_per_g": "8.5",
+          "pts_per_g": "4.5"
+        },
+        {
+          "season": "2019-20",
+          "team": "Real Madrid",
+          "league": "EuroLeague",
+          "g": "14",
+          "mp_per_g": "11.9",
+          "pts_per_g": "4.4"
+        },
+        {
+          "season": "2019-20",
+          "team": "Real Madrid",
+          "league": "Liga ACB",
+          "g": "22",
+          "mp_per_g": "17.5",
+          "pts_per_g": "4.7"
+        },
+        {
+          "season": "2020-21",
+          "team": "Real Madrid",
+          "league": "EuroLeague",
+          "g": "33",
+          "mp_per_g": "14.5",
+          "pts_per_g": "3.0"
+        },
+        {
+          "season": "2020-21",
+          "team": "Real Madrid",
+          "league": "Liga ACB",
+          "g": "36",
+          "mp_per_g": "18.7",
+          "pts_per_g": "5.6"
+        },
+        {
+          "season": "2020",
+          "team": "Spain",
+          "league": "Tokyo 2020",
+          "g": "3",
+          "mp_per_g": "10.3",
+          "pts_per_g": "0.3"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/usman-garuba-1.html"
+    },
+    {
+      "name": "Isaiah Todd",
+      "norm_name": "isaiah todd",
+      "pos": "F",
+      "born": "2001-10-17",
+      "age_label": "Age 24",
+      "team": "GLI",
+      "league": null,
+      "season": "2020-21",
+      "stats": {
+        "PPG": 12.3,
+        "RPG": 4.9,
+        "APG": 0.8,
+        "SPG": 0.5,
+        "BPG": 0.7,
+        "MPG": 24.4,
+        "TOV": 1.5,
+        "3PA": 3.1,
+        "FGA": 11.1,
+        "FTA": 1.1,
+        "FG%": 43.7,
+        "3P%": 36.2,
+        "FT%": 82.4,
+        "G": 15
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": null,
+          "league": null,
+          "g": "15",
+          "mp_per_g": "24.4",
+          "pts_per_g": "12.3"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/gleague/players/t/toddis01d.html"
+    },
+    {
+      "name": "Rokas Jokubaitis",
+      "norm_name": "rokas jokubaitis",
+      "pos": "G",
+      "born": "2000-11-19",
+      "age_label": "Age 25",
+      "team": "Žalgiris",
+      "league": "EuroLeague",
+      "season": "2020-21",
+      "stats": {
+        "PPG": 7.0,
+        "RPG": 1.7,
+        "APG": 2.5,
+        "SPG": 0.5,
+        "BPG": 0.0,
+        "MPG": 20.9,
+        "TOV": 1.5,
+        "3PA": 1.6,
+        "FGA": 5.9,
+        "FTA": 1.3,
+        "FG%": 45.4,
+        "3P%": 38.8,
+        "FT%": 75.6,
+        "G": 31
+      },
+      "all_rows": [
+        {
+          "season": "2018-19",
+          "team": "Žalgiris",
+          "league": "EuroLeague",
+          "g": "12",
+          "mp_per_g": "5.8",
+          "pts_per_g": "2.6"
+        },
+        {
+          "season": "2019-20",
+          "team": "Žalgiris",
+          "league": "EuroLeague",
+          "g": "10",
+          "mp_per_g": "6.4",
+          "pts_per_g": "2.2"
+        },
+        {
+          "season": "2020-21",
+          "team": "Žalgiris",
+          "league": "EuroLeague",
+          "g": "31",
+          "mp_per_g": "20.9",
+          "pts_per_g": "7.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/rokas-jokubaitis-1.html"
+    },
+    {
+      "name": "Herbert Jones",
+      "norm_name": "herbert jones",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Trieste",
+      "league": "LBA",
+      "season": "2001-02",
+      "stats": {
+        "PPG": 8.1,
+        "RPG": 2.7,
+        "APG": 0.5,
+        "SPG": 1.7,
+        "BPG": 0.1,
+        "MPG": 22.4,
+        "TOV": 1.3,
+        "3PA": 4.0,
+        "FGA": 7.1,
+        "FTA": 1.3,
+        "FG%": 41.0,
+        "3P%": 33.1,
+        "FT%": 76.1,
+        "G": 36
+      },
+      "all_rows": [
+        {
+          "season": "1997-98",
+          "team": "Manresa",
+          "league": "Liga ACB",
+          "g": "34",
+          "mp_per_g": "35.1",
+          "pts_per_g": "12.6"
+        },
+        {
+          "season": "1998-99",
+          "team": "Manresa",
+          "league": "Liga ACB",
+          "g": "34",
+          "mp_per_g": "33.4",
+          "pts_per_g": "11.1"
+        },
+        {
+          "season": "2000-01",
+          "team": "Ourense",
+          "league": "Liga ACB",
+          "g": "8",
+          "mp_per_g": "31.5",
+          "pts_per_g": "11.4"
+        },
+        {
+          "season": "2000-01",
+          "team": "Varese",
+          "league": "LBA",
+          "g": "24",
+          "mp_per_g": "34.8",
+          "pts_per_g": "17.3"
+        },
+        {
+          "season": "2001-02",
+          "team": "Trieste",
+          "league": "LBA",
+          "g": "36",
+          "mp_per_g": "22.4",
+          "pts_per_g": "8.1"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/herbert-jones-1.html"
+    },
+    {
+      "name": "Filip Petrušev",
+      "norm_name": "filip petrusev",
+      "pos": "F",
+      "born": "2000-04-15",
+      "age_label": "Age 26",
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2020-21",
+      "stats": {
+        "PPG": 23.6,
+        "RPG": 7.6,
+        "APG": 1.6,
+        "SPG": 0.5,
+        "BPG": 1.1,
+        "MPG": 32.0,
+        "TOV": 2.3,
+        "3PA": 3.0,
+        "FGA": 15.1,
+        "FTA": 6.6,
+        "FG%": 57.9,
+        "3P%": 41.9,
+        "FT%": 73.9,
+        "G": 21
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "21",
+          "mp_per_g": "32.0",
+          "pts_per_g": "23.6"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/filip-petrusev-1.html"
+    },
+    {
+      "name": "Georgios Kalaitzakis",
+      "norm_name": "georgios kalaitzakis",
+      "pos": "G",
+      "born": "1999-01-02",
+      "age_label": "Age 27",
+      "team": "Panathinaikos",
+      "league": "GBL",
+      "season": "2020-21",
+      "stats": {
+        "PPG": 3.9,
+        "RPG": 1.7,
+        "APG": 1.2,
+        "SPG": 0.7,
+        "BPG": 0.2,
+        "MPG": 12.5,
+        "TOV": 1.2,
+        "3PA": 1.7,
+        "FGA": 2.9,
+        "FTA": 1.6,
+        "FG%": 37.5,
+        "3P%": 21.1,
+        "FT%": 83.3,
+        "G": 11
+      },
+      "all_rows": [
+        {
+          "season": "2015-16",
+          "team": "Panathinaikos",
+          "league": "GBL",
+          "g": "2",
+          "mp_per_g": "1.5",
+          "pts_per_g": "1.5"
+        },
+        {
+          "season": "2016-17",
+          "team": "Panathinaikos",
+          "league": "GBL",
+          "g": "1",
+          "mp_per_g": "0.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2017-18",
+          "team": "Panathinaikos",
+          "league": "EuroLeague",
+          "g": "1",
+          "mp_per_g": "0.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2017-18",
+          "team": "Panathinaikos",
+          "league": "GBL",
+          "g": "13",
+          "mp_per_g": "8.6",
+          "pts_per_g": "3.2"
+        },
+        {
+          "season": "2018-19",
+          "team": "Panathinaikos",
+          "league": "EuroLeague",
+          "g": "1",
+          "mp_per_g": "2.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2018-19",
+          "team": "Panathinaikos",
+          "league": "GBL",
+          "g": "16",
+          "mp_per_g": "8.3",
+          "pts_per_g": "3.3"
+        },
+        {
+          "season": "2020-21",
+          "team": "Panathinaikos",
+          "league": "EuroLeague",
+          "g": "14",
+          "mp_per_g": "4.4",
+          "pts_per_g": "1.6"
+        },
+        {
+          "season": "2020-21",
+          "team": "Panathinaikos",
+          "league": "GBL",
+          "g": "11",
+          "mp_per_g": "12.5",
+          "pts_per_g": "3.9"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/georgios-kalaitzakis-1.html"
+    }
+  ],
+  "missed": [
+    "Bones Hyland",
+    "Cam Thomas",
+    "Juhann Begarin"
+  ]
+}

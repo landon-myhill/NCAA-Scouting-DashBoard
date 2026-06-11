@@ -3,151 +3,59 @@
 {% block title %}Ranking System — NCAA Draft Scout{% endblock %}
 
 {% block content %}
-<h4 class="mb-1">Draft Score Methodology</h4>
-<p class="text-secondary small">How we rank every D1 player. Unlike a hand-tuned board, the component
-weights here are <strong>fit from data</strong> — see below.</p>
+<h4 class="mb-1">How the Ranking Works</h4>
+<p class="text-secondary small">The board is ordered by the <strong>strengths model</strong> — every number
+below comes straight from the trained model file, so this page can never disagree with the math.</p>
 
-<!-- Methodology callout -->
+{% if model %}
 <div class="info-card mb-4" style="border-left:3px solid #22d3ee">
-    <p class="mb-2">{{ methodology.summary }}</p>
-    <p class="mb-2 small" style="color:#34d399">{{ methodology.validation }}</p>
-    <p class="mb-0 small" style="color:#94a3b8">{{ methodology.projection }}</p>
+    <p class="mb-2">Each prospect gets <strong>10 measured strengths</strong> (scoring, shooting, playmaking,
+    finishing, rim pressure, rebounding, rim protection, perimeter defense, ball security, size) —
+    every one a percentile <strong>within his own draft class at his position</strong>, computed from his
+    college stats. The model blends those strengths with an <strong>age factor</strong>, <strong>height</strong>,
+    age×skill interaction terms, and a <strong>market-validation signal</strong> (consensus mock rank — the
+    screen that carries scout intel the box score can't see). All weights are <strong>learned</strong> from
+    what actually happened to the eligible 2020–23 draft classes (drafted + undrafted who left college,
+    returners excluded), never hand-tuned.</p>
+    <p class="mb-2 small" style="color:#34d399">Validation (leave-one-year-out, vs position-relative NBA value):
+        strengths model <strong>{{ "%+.3f"|format(model.validation.loyo_spearman_model) }}</strong> ·
+        legacy formula {{ "%+.3f"|format(model.validation.loyo_spearman_draft_score) }} on the same players.
+        The shipped model is the average of {{ model.bootstraps }} bootstrap fits; every rank carries a 90%
+        confidence band on the board.</p>
+    <p class="mb-0 small" style="color:#94a3b8">Boom/Bust = 1-D logistic calibrations of this model's score
+    (held-out AUC ≈ 0.90 for both), answering "of eligible prospects with this projection, how many became
+    NBA starters / how many washed out."</p>
 </div>
 
-<!-- Component weights (rendered straight from DEFAULT_WEIGHTS) -->
-<div class="section-hdr">Component Weights (data-fit)</div>
+<div class="section-hdr">Learned weights (standardized coefficients)</div>
 <div class="info-card mb-4">
-    <p class="mb-2" style="color:#94a3b8">Each component is a 0–100-ish score; the fitted weight below sets how much
-    it moves the final number. Components operate on different scales, so the honest way to read the blend is the
-    <em>live contributions</em> table at the bottom. A negative weight means the component, on its own, was
-    counter-predictive of NBA value once everything else was accounted for.</p>
-    <table class="table table-scout table-sm mb-0">
-        <thead><tr><th>Component</th><th>Fitted Weight</th><th>What it measures</th></tr></thead>
+    <p class="mb-2 small text-secondary">Positive pushes a prospect up, negative down. <code>age_x_*</code>
+    terms mean a skill counts differently for older players (e.g. senior scoring deflates).
+    The age and height "impactors" are learned from outcomes, not asserted.</p>
+    <table class="table table-dark table-sm w-auto" style="font-size:13px">
+        <thead><tr class="text-secondary" style="font-size:11px"><th>Feature</th><th class="text-end">Weight</th></tr></thead>
         <tbody>
-            {% for c in components %}
+        {% for f, c in coefs %}
             <tr>
-                <td><strong style="color:{{ c.color }}">{{ c.label }}</strong></td>
-                <td>
-                    {% set wv = weights[c.key] %}
-                    <span style="color:{{ '#f87171' if wv < 0 else '#e2e8f0' }}">{{ "%+.3f"|format(wv) }}</span>
-                </td>
-                <td class="small text-secondary">{{ c.desc }}</td>
+                <td>{{ f.replace('_', ' ') }}</td>
+                <td class="text-end" style="color:{{ '#10b981' if c > 0 else '#ef4444' }}">{{ "%+.4f"|format(c) }}</td>
             </tr>
-            {% endfor %}
+        {% endfor %}
         </tbody>
     </table>
 </div>
 
-<!-- Multipliers -->
-<div class="section-hdr">Multipliers</div>
-<p class="small text-secondary mb-2">After the weighted blend, the raw score is scaled by these. They look like
-noise within the (power-conference-heavy) drafted pool, but across the full board they keep mid-major
-stat-compilers from being over-ranked — so they stay multiplicative.</p>
-<div class="row g-3 mb-4">
-    <div class="col-md-4">
-        <div class="info-card h-100">
-            <h6 style="color:#f59e0b">Class Year (Age proxy)</h6>
-            <p class="small text-secondary mb-2">Younger players get an upside boost; older players a slight discount.</p>
-            <table class="table table-scout table-sm mb-0">
-                <thead><tr><th>Year</th><th>Multiplier</th><th>Effect</th></tr></thead>
-                <tbody>
-                    {% for year, mult in class_bonuses %}
-                    <tr><td><strong>{{ year }}</strong></td><td>{{ mult }}x</td>
-                        <td>{% if mult > 1.0 %}<span style="color:#34d399">+{{ ((mult-1)*100)|round(0)|int }}%</span>
-                        {% elif mult < 1.0 %}<span style="color:#f87171">{{ ((mult-1)*100)|round(0)|int }}%</span>
-                        {% else %}<span style="color:#94a3b8">baseline</span>{% endif %}</td></tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="info-card h-100">
-            <h6 style="color:#3b82f6">Conference Strength</h6>
-            <p class="small text-secondary mb-2">Power conferences get a boost; others default to 0.93x.</p>
-            <table class="table table-scout table-sm mb-0">
-                <thead><tr><th>Conference</th><th>Multiplier</th></tr></thead>
-                <tbody>
-                    {% for conf, mult in conf_multipliers %}
-                    <tr><td><strong>{{ conf }}</strong></td><td>{{ mult }}x</td></tr>
-                    {% endfor %}
-                    <tr><td style="color:#64748b">All others</td><td style="color:#64748b">0.93x</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="info-card h-100">
-            <h6 style="color:#10b981">Position Value</h6>
-            <p class="small text-secondary mb-2">Modern NBA slightly favors wings/guards over traditional centers.</p>
-            <table class="table table-scout table-sm mb-0">
-                <thead><tr><th>Position</th><th>Multiplier</th></tr></thead>
-                <tbody>
-                    {% for pos, mult in pos_values %}
-                    <tr><td><strong>{{ pos }}</strong></td><td>{{ mult }}x</td></tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-    </div>
+<div class="section-hdr">The other views</div>
+<div class="info-card">
+    <ul class="small mb-0" style="color:#94a3b8">
+        <li><strong>Raw college</strong> (board toggle) — pure un-adjusted college production, for transparency.</li>
+        <li><strong>Archetype fits</strong> — descriptive role measurements; they never feed this ranking
+            (tested: they didn't add held-out accuracy).</li>
+        <li><strong>Mock #</strong> — the consensus list, shown for comparison; it enters the model only
+            through the market-validation feature above.</li>
+    </ul>
 </div>
-
-<!-- Final formula -->
-<div class="section-hdr">Final Formula</div>
-<div class="info-card mb-3">
-    <div style="font-family:monospace;font-size:14px;color:#f1f5f9;line-height:2">
-        <span style="color:#64748b">raw</span> = &Sigma; ( component<sub>i</sub> &times; weight<sub>i</sub> )
-        &nbsp;<span style="color:#64748b">// includes a negative-weighted efficiency term</span><br>
-        <span style="color:#64748b">final</span> = <span style="color:#64748b">raw</span>
-        &times; <span style="color:#f59e0b">class_mult</span>
-        &times; <span style="color:#3b82f6">conf_mult</span>
-        &times; <span style="color:#10b981">pos_mult</span>
-    </div>
-</div>
-
-<!-- Tiers -->
-<div class="section-hdr">Tier Assignment</div>
-<div class="info-card mb-4">
-    <p class="mb-2" style="color:#94a3b8">Players are sorted by final score; tiers are assigned by rank position:</p>
-    <div class="d-flex gap-3 flex-wrap">
-        <div><span class="tier-1">Tier 1 — Lottery</span> Ranks 1–15</div>
-        <div><span class="tier-2">Tier 2 — Late 1st</span> Ranks 16–45</div>
-        <div><span class="tier-3">Tier 3 — 2nd Round</span> Ranks 46+</div>
-    </div>
-</div>
-
-<!-- Live examples: REAL weighted contributions from the live formula -->
-{% if examples %}
-<div class="section-hdr">Live Contributions (current top 10)</div>
-<p class="small text-secondary mb-2">Each cell is the component's actual weighted contribution to that player's
-raw score — these come straight from the live <code>draft_score()</code>, not a re-implementation.</p>
-<div class="table-responsive">
-    <table class="table table-scout table-sm">
-        <thead>
-            <tr>
-                <th>Rank</th><th>Player</th><th>Pos</th><th>Yr</th>
-                {% for c in components %}<th style="color:{{ c.color }}">{{ c.label.split(' ')[0] }}</th>{% endfor %}
-                <th>Raw</th><th>Mult</th><th>Final</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for ex in examples %}
-            <tr>
-                <td><strong>{{ ex.rank }}</strong></td>
-                <td><a href="/scouting?player_id={{ ex.id }}" class="text-info text-decoration-none">{{ ex.name }}</a></td>
-                <td>{{ ex.pos }}</td>
-                <td>{{ ex.year[:2] }}</td>
-                {% for c in components %}
-                <td>{{ "%.1f"|format(ex.contrib[c.key]) }}</td>
-                {% endfor %}
-                <td>{{ "%.1f"|format(ex.raw) }}</td>
-                <td>{{ ex.mult }}x</td>
-                <td><strong>{{ ex.final }}</strong></td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
+{% else %}
+<p class="text-warning">No trained model found — run <code>python -m analytics.strengths_model --save</code>.</p>
 {% endif %}
-
 {% endblock %}

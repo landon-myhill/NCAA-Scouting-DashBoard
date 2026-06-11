@@ -368,35 +368,14 @@ def archetypes():
 
 @views_bp.route("/ranking")
 def ranking():
-    # Single source of truth: the live formula. We score each example with the
-    # SAME draft_score()/combine_parts()/DEFAULT_WEIGHTS the board uses, via the
-    # return_parts decomposition — no re-implemented math that can drift.
-    examples = []
-    top10 = sorted(store.PLAYERS, key=lambda p: p["rank"])[:10]
-    for p in top10:
-        parts = draft_score(p, return_parts=True)
-        w = DEFAULT_WEIGHTS
-        # Weighted contribution of each additive component (tov is a penalty).
-        contrib = {k: parts[k] * w[k] for k in SCORE_COMPONENT_KEYS}
-        contrib["tov"] = -parts["tov"] * w["tov"]
-        raw = sum(contrib.values())
-        mult = (parts["age_mult"] * parts["conf_mult"] * parts["pos_mult"])
-        examples.append({
-            "id": p["id"], "rank": p["rank"], "name": p["name"],
-            "pos": p.get("pos", ""), "school": p["school"],
-            "year": p.get("year", "Unknown"), "conf": p.get("conference", ""),
-            "contrib": contrib, "raw": raw, "mult": round(mult, 3),
-            "final": round(p.get("draft_score", 0), 1),
-        })
-
-    class_bonuses = sorted(_CLASS_BONUS.items(), key=lambda x: x[1], reverse=True)
-    conf_multipliers = sorted(_CONF_MULTIPLIER.items(), key=lambda x: x[1], reverse=True)
-    pos_values = sorted(_POS_VALUE.items(), key=lambda x: x[1], reverse=True)
-
-    return render_template("ranking.html",
-        components=SCORE_COMPONENTS, weights=DEFAULT_WEIGHTS,
-        examples=examples, methodology=SCORE_METHODOLOGY,
-        class_bonuses=class_bonuses,
-        conf_multipliers=conf_multipliers,
-        pos_values=pos_values,
-    )
+    """Explains the ACTUAL ranking: the strengths model, straight from the
+    persisted model file so this page can never drift from the math."""
+    import json as _json
+    from core.config import DATASETS_DIR
+    path = DATASETS_DIR / "strengths_model.json"
+    model = _json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+    coefs = []
+    if model:
+        coefs = sorted(zip(model["features"], model["coef"]),
+                       key=lambda t: -abs(t[1]))
+    return render_template("ranking.html", model=model, coefs=coefs)

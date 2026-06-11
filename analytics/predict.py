@@ -1,38 +1,17 @@
 #!/usr/bin/env python3
 """
-analytics.predict — ML success/bust probabilities for every prospect.
----------------------------------------------------------------------
-The draft-score formula RANKS prospects. This module answers a different
-question: "how LIKELY is this profile to succeed (starter/star) or bust
-(bench/out of the league)?" — learned from what actually happened to the
-2020-2023 drafted classes (mature NBA careers only).
+analytics.predict — Boom/Bust probabilities, calibrated on the STRENGTHS
+MODEL (the actual ranking), not the retired formula.
 
-Two L2-regularized logistic heads (numpy Newton solver), chosen by held-out
-leave-one-year-out CV — the same honesty guard as tune.py:
-
-  SUCCESS — 1-D logistic calibration of draft_score itself (held-out AUC
-            0.68 vs the box-score outcome tiers). A multi-feature logistic
-            on the components scored WORSE: the formula's multiplicative
-            conference/age structure beats additive log-odds at ranking
-            upside, so we calibrate it into a probability instead of
-            re-learning it badly.
-
-  BUST    — also score-calibrated (held-out AUC 0.61). Under the old
-            impact-stat tiers a multi-feature head added signal (0.73); under
-            the box-score production tiers it no longer does (0.58 vs 0.61),
-            so it was removed — same shipping rule as everything else.
-
-Selection-bias caveat (see tune.py / README): we only observe NBA outcomes
-for DRAFTED players, who are overwhelmingly power-conference. Probabilities
-are therefore calibrated as "IF this player is a drafted-caliber prospect".
-
-Outputs (written into players.json per player):
-    pred.success   P(NBA starter or better)      0..1
-    pred.bust      P(bench-or-worse / no NBA)    0..1
+Boom = P(NBA starter or better), Bust = P(bench or out of the league),
+learned from the eligible 2020-23 classes. Each is a 1-D logistic
+calibration of the strengths-model score; in leave-one-year-out CV the
+strengths model is REFIT per fold so the held-out AUC is honest (no
+peeking at the held-out year through the ranking model).
 
 Usage:
-    python -m analytics.predict            # validate (LOYO CV) + stamp players.json
-    python -m analytics.predict --dry-run  # validate only, don't write
+    python -m analytics.predict            # validate + stamp the class pool
+    python -m analytics.predict --dry-run  # validate only
 """
 
 import sys
@@ -40,73 +19,49 @@ import sys
 import numpy as np
 
 from analytics.backtest import MATURE_YEARS, attach_value_target, load_matched
+from analytics.strengths_model import (FEATURE_SETS, _design, _fit_ridge,
+                                       _predict as _sm_predict)
 from core import PLAYERS_FILE, load_json, save_json
-from model.archetypes import draft_score
+from model.strengths import compute_fits, compute_strengths
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-# Career tiers (backtest.TIER_VALUE): no_nba=0 bench=1 rotation=2 starter=3 star=4
 SUCCESS_MIN_TIER = 3   # starter or star
 BUST_MAX_TIER = 1      # bench or never made it
+FEATS = FEATURE_SETS["inter+market"]
+LAMBDA_RIDGE = 20.0
+LAMBDA_LOGIT = 1.0
 
-LAMBDA_SUCCESS = 1.0   # 1-D calibrations barely need shrinkage
-LAMBDA_BUST = 1.0
-
-
-# ── Features ─────────────────────────────────────────────────────────────────
-
-def featurize_success(player: dict) -> list[float]:
-    """Both heads calibrate the formula itself: one feature."""
-    return [draft_score(player)]
-
-
-featurize_bust = featurize_success
-
-
-def _impute_standardize(X, mu=None, med=None, sd=None):
-    """Median-impute NaNs, then z-score. Returns (Xs, mu, med, sd)."""
-    if med is None:
-        med = np.nanmedian(X, axis=0)
-    idx = np.where(np.isnan(X))
-    X = X.copy()
-    X[idx] = np.take(med, idx[1])
-    if mu is None:
-        mu, sd = X.mean(0), X.std(0) + 1e-9
-    return (X - mu) / sd, mu, med, sd
-
-
-# ── L2 logistic regression (Newton) ──────────────────────────────────────────
 
 def _sigmoid(z):
     return 1.0 / (1.0 + np.exp(-np.clip(z, -30, 30)))
 
 
-def fit_logistic(Xs, y, lam, iters=25):
-    """Return coefficient vector (intercept first, unpenalized)."""
-    n, p = Xs.shape
-    A = np.hstack([np.ones((n, 1)), Xs])
-    b = np.zeros(p + 1)
-    reg = lam * np.eye(p + 1)
-    reg[0, 0] = 0.0  # don't shrink the intercept
+def fit_logistic_1d(x, y, lam=LAMBDA_LOGIT, iters=25):
+    """1-D logistic calibration: returns (a, b) for sigmoid(a*x_std + b)."""
+    mu, sd = float(np.mean(x)), float(np.std(x)) + 1e-9
+    xs = (np.asarray(x) - mu) / sd
+    A = np.column_stack([np.ones_like(xs), xs])
+    bvec = np.zeros(2)
+    reg = np.diag([0.0, lam])
     for _ in range(iters):
-        prob = _sigmoid(A @ b)
-        W = np.clip(prob * (1 - prob), 1e-6, None)
+        p = _sigmoid(A @ bvec)
+        W = np.clip(p * (1 - p), 1e-6, None)
         H = A.T @ (A * W[:, None]) + reg
-        g = A.T @ (y - prob) - reg @ b
+        g = A.T @ (y - p) - reg @ bvec
         step = np.linalg.solve(H, g)
-        b += step
+        bvec += step
         if np.max(np.abs(step)) < 1e-8:
             break
-    return b
+    return {"b0": float(bvec[0]), "b1": float(bvec[1]), "mu": mu, "sd": sd}
 
 
-def predict_prob(b, Xs):
-    return _sigmoid(np.hstack([np.ones((Xs.shape[0], 1)), Xs]) @ b)
+def calib_prob(c, x):
+    return _sigmoid(c["b0"] + c["b1"] * ((np.asarray(x) - c["mu"]) / c["sd"]))
 
 
 def auc(y_true, scores) -> float:
-    """Rank-based AUC (probability a random positive outranks a random negative)."""
     pos = [s for s, t in zip(scores, y_true) if t == 1]
     neg = [s for s, t in zip(scores, y_true) if t == 0]
     if not pos or not neg:
@@ -115,118 +70,117 @@ def auc(y_true, scores) -> float:
     return wins / (len(pos) * len(neg))
 
 
-# ── A trained head: features -> probability ──────────────────────────────────
+def _prep(rows):
+    """Stamp class-relative strengths + market on the training rows."""
+    for yr in sorted({r["year"] for r in rows}):
+        recs = [r["college_record"] for r in rows if r["year"] == yr]
+        compute_strengths(recs, reference=recs)
+        compute_fits(recs, reference=recs)
+    for r in rows:
+        r["college_record"]["_market_rank"] = r["pick"]
 
-class Head:
-    """One logistic head with its featurizer + imputation/scaling state."""
-
-    def __init__(self, featurize, lam):
-        self.featurize = featurize
-        self.lam = lam
-        self.b = self.mu = self.med = self.sd = None
-
-    def matrix(self, records):
-        return np.array([self.featurize(r) for r in records], dtype=float)
-
-    def fit(self, records, y):
-        X = self.matrix(records)
-        Xs, self.mu, self.med, self.sd = _impute_standardize(X)
-        self.b = fit_logistic(Xs, y, self.lam)
-        return self
-
-    def prob(self, records):
-        X = self.matrix(records)
-        Xs, *_ = _impute_standardize(X, self.mu, self.med, self.sd)
-        return predict_prob(self.b, Xs)
-
-
-def make_heads():
-    return (Head(featurize_success, LAMBDA_SUCCESS),
-            Head(featurize_bust, LAMBDA_BUST))
-
-
-# ── Train / validate ─────────────────────────────────────────────────────────
 
 def _labels(rows):
-    y_success = np.array([1.0 if r["tier_val"] >= SUCCESS_MIN_TIER else 0.0 for r in rows])
-    y_bust = np.array([1.0 if r["tier_val"] <= BUST_MAX_TIER else 0.0 for r in rows])
-    return y_success, y_bust
+    ys = np.array([1.0 if r["tier_val"] >= SUCCESS_MIN_TIER else 0.0 for r in rows])
+    yb = np.array([1.0 if r["tier_val"] <= BUST_MAX_TIER else 0.0 for r in rows])
+    return ys, yb
 
 
 def loyo_cv(rows):
-    """Leave-one-year-out CV: held-out AUC for both heads, per year."""
+    """Held-out AUC per year; the strengths model is refit per fold."""
+    rows = [r for r in rows if r.get("target") is not None] or rows
+    attach_value_target(rows)
+    rows = [r for r in rows if r.get("target") is not None]
+    _prep(rows)
     recs = [r["college_record"] for r in rows]
-    y_success, y_bust = _labels(rows)
+    X = _design(recs, FEATS)
+    yv = np.array([r["target"] for r in rows], float)
+    ys, yb = _labels(rows)
     years = np.array([r["year"] for r in rows])
     out = {}
     for hold in MATURE_YEARS:
         tr, te = years != hold, years == hold
         if te.sum() < 5:
             continue
-        head_s, head_b = make_heads()
-        tr_recs = [r for r, m in zip(recs, tr) if m]
-        te_recs = [r for r, m in zip(recs, te) if m]
-        head_s.fit(tr_recs, y_success[tr])
-        head_b.fit(tr_recs, y_bust[tr])
+        m = _fit_ridge(X[tr], yv[tr], LAMBDA_RIDGE)
+        s_tr, s_te = _sm_predict(m, X[tr]), _sm_predict(m, X[te])
+        cs = fit_logistic_1d(s_tr, ys[tr])
+        cb = fit_logistic_1d(-s_tr, yb[tr])
         out[hold] = {
-            "auc_success": auc(y_success[te], head_s.prob(te_recs)),
-            "auc_bust": auc(y_bust[te], head_b.prob(te_recs)),
+            "auc_success": auc(ys[te], calib_prob(cs, s_te)),
+            "auc_bust": auc(yb[te], calib_prob(cb, -s_te)),
             "n": int(te.sum()),
         }
     return out
 
 
+class Head:
+    """Calibrated head: strengths-model score -> probability."""
+
+    def __init__(self, ridge, calib, flip=False):
+        self.ridge, self.calib, self.flip = ridge, calib, flip
+
+    def prob(self, records):
+        s = _sm_predict(self.ridge, _design(records, FEATS))
+        return calib_prob(self.calib, -s if self.flip else s)
+
+
 def train_final(rows):
-    """Fit both heads on all mature years."""
+    rows = [r for r in rows if r.get("target") is not None] or rows
+    attach_value_target(rows)
+    rows = [r for r in rows if r.get("target") is not None]
+    _prep(rows)
     recs = [r["college_record"] for r in rows]
-    y_success, y_bust = _labels(rows)
-    head_s, head_b = make_heads()
-    return head_s.fit(recs, y_success), head_b.fit(recs, y_bust)
+    X = _design(recs, FEATS)
+    yv = np.array([r["target"] for r in rows], float)
+    ys, yb = _labels(rows)
+    m = _fit_ridge(X, yv, LAMBDA_RIDGE)
+    s = _sm_predict(m, X)
+    return (Head(m, fit_logistic_1d(s, ys)),
+            Head(m, fit_logistic_1d(-s, yb), flip=True))
 
-
-# ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
     dry = "--dry-run" in sys.argv
-
-    rows = load_matched()
+    rows = load_matched(include_undrafted=True)
     attach_value_target(rows)
-    if len(rows) < 100:
-        print(f"ERROR: only {len(rows)} matched training rows — is datasets/history populated?")
-        sys.exit(1)
-    y_success, y_bust = _labels(rows)
-    print(f"Training pool: {len(rows)} drafted players, classes {MATURE_YEARS}")
-    print(f"  success (starter+): {int(y_success.sum())}   bust (bench/none): {int(y_bust.sum())}")
+    rows = [r for r in rows if r.get("target") is not None]
+    ys, yb = _labels(rows)
+    print(f"Training pool: {len(rows)} eligible players "
+          f"(success {int(ys.sum())}, bust {int(yb.sum())})")
 
-    # Honesty guard: held-out performance per year
     cv = loyo_cv(rows)
-    print("\nLeave-one-year-out held-out AUC:")
-    print(f"  {'year':>6}  {'success':>8}  {'bust':>6}  {'n':>4}")
+    print("\nLeave-one-year-out held-out AUC (strengths-model calibration):")
     for y, m in cv.items():
-        print(f"  {y:>6}  {m['auc_success']:>8.3f}  {m['auc_bust']:>6.3f}  {m['n']:>4}")
-    mean_s = np.mean([m["auc_success"] for m in cv.values()])
-    mean_b = np.mean([m["auc_bust"] for m in cv.values()])
-    print(f"  {'MEAN':>6}  {mean_s:>8.3f}  {mean_b:>6.3f}")
-
+        print(f"  {y}: success {m['auc_success']:.3f}  bust {m['auc_bust']:.3f}  (n={m['n']})")
+    print(f"  MEAN: success {np.mean([m['auc_success'] for m in cv.values()]):.3f}  "
+          f"bust {np.mean([m['auc_bust'] for m in cv.values()]):.3f}")
     if dry:
-        print("\n--dry-run: not writing players.json")
         return
 
-    # Final fit on everything, then stamp the current board
+    # Stamp the current class pool (only pool players have model features)
     head_s, head_b = train_final(rows)
+    from web import store  # pool already has strengths + mock stamped
+    pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
+                                    with_stubs=False)
+    ps, pb = head_s.prob(pool), head_b.prob(pool)
     raw = load_json(PLAYERS_FILE)
-    players = raw["players"]
-    ps, pb = head_s.prob(players), head_b.prob(players)
-    for p, s, b in zip(players, ps, pb):
-        p["pred"] = {"success": round(float(s), 3), "bust": round(float(b), 3)}
+    by_id = {p["id"]: p for p in raw["players"]}
+    stamped = 0
+    for p, s, b in zip(pool, ps, pb):
+        rec = by_id.get(p["id"])
+        if rec is not None:
+            rec["pred"] = {"success": round(float(s), 3), "bust": round(float(b), 3)}
+            stamped += 1
+    # everyone outside the pool: no probabilities (the model can't see them)
+    for p in raw["players"]:
+        if p["id"] not in {q["id"] for q in pool}:
+            p.pop("pred", None)
     save_json(PLAYERS_FILE, raw)
-    print(f"\nStamped pred.success / pred.bust onto {len(players)} players -> {PLAYERS_FILE.name}")
-
-    top = sorted(players, key=lambda p: p["rank"])[:10]
-    print("\nTop 10 by board rank:")
-    for p in top:
-        print(f"  #{p['rank']:>3} {p['name']:<26} success {p['pred']['success']*100:4.0f}%"
-              f"   bust {p['pred']['bust']*100:4.0f}%")
+    print(f"\nStamped Boom/Bust for {stamped} eligible players -> {PLAYERS_FILE.name}")
+    top = sorted(pool, key=lambda p: p.get("sm_rank") or 999)[:8]
+    for p, s, b in [(p, ps[pool.index(p)], pb[pool.index(p)]) for p in top]:
+        print(f"  #{p.get('sm_rank'):>3} {p['name']:<24} boom {s*100:.0f}%  bust {b*100:.0f}%")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,547 @@
+{
+  "year": 2022,
+  "scraped_at": "2026-06-11T13:35:44.435457",
+  "players": [
+    {
+      "name": "Ousmane Dieng",
+      "norm_name": "ousmane dieng",
+      "pos": "C",
+      "born": "2003-05-21",
+      "age_label": "Age 23",
+      "team": "New Zealand",
+      "league": "NBL",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 8.9,
+        "RPG": 3.2,
+        "APG": 1.1,
+        "SPG": 0.6,
+        "BPG": 0.3,
+        "MPG": 20.3,
+        "TOV": 1.4,
+        "3PA": 4.2,
+        "FGA": 8.7,
+        "FTA": 1.2,
+        "FG%": 39.8,
+        "3P%": 27.1,
+        "FT%": 66.7,
+        "G": 23
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "New Zealand",
+          "league": "NBL",
+          "g": "23",
+          "mp_per_g": "20.3",
+          "pts_per_g": "8.9"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/ousmane-dieng-1.html"
+    },
+    {
+      "name": "Nikola Jović",
+      "norm_name": "nikola jovic",
+      "pos": "F",
+      "born": "2003-06-09",
+      "age_label": "Age 23",
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 11.7,
+        "RPG": 4.4,
+        "APG": 3.4,
+        "SPG": 0.6,
+        "BPG": 0.4,
+        "MPG": 27.8,
+        "TOV": 2.7,
+        "3PA": 4.7,
+        "FGA": 9.4,
+        "FTA": 2.6,
+        "FG%": 42.8,
+        "3P%": 35.6,
+        "FT%": 75.4,
+        "G": 25
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "4",
+          "mp_per_g": "24.8",
+          "pts_per_g": "11.8"
+        },
+        {
+          "season": "2021-22",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "25",
+          "mp_per_g": "27.8",
+          "pts_per_g": "11.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/nikola-jovic-1.html"
+    },
+    {
+      "name": "Gabriele Procida",
+      "norm_name": "gabriele procida",
+      "pos": "G",
+      "born": "2002-06-01",
+      "age_label": "Age 24",
+      "team": "Fortitudo Bologna",
+      "league": "LBA",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 7.0,
+        "RPG": 3.0,
+        "APG": 0.7,
+        "SPG": 0.8,
+        "BPG": 0.3,
+        "MPG": 18.5,
+        "TOV": 0.7,
+        "3PA": 2.3,
+        "FGA": 4.3,
+        "FTA": 2.0,
+        "FG%": 52.2,
+        "3P%": 38.3,
+        "FT%": 78.4,
+        "G": 26
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Cantù",
+          "league": "LBA",
+          "g": "7",
+          "mp_per_g": "4.0",
+          "pts_per_g": "1.3"
+        },
+        {
+          "season": "2020-21",
+          "team": "Cantù",
+          "league": "LBA",
+          "g": "28",
+          "mp_per_g": "15.5",
+          "pts_per_g": "6.4"
+        },
+        {
+          "season": "2021-22",
+          "team": "Fortitudo Bologna",
+          "league": "LBA",
+          "g": "26",
+          "mp_per_g": "18.5",
+          "pts_per_g": "7.0"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/gabriele-procida-1.html"
+    },
+    {
+      "name": "Jaden Hardy",
+      "norm_name": "jaden hardy",
+      "pos": "G",
+      "born": "2002-07-05",
+      "age_label": "Age 23",
+      "team": "GLI",
+      "league": null,
+      "season": "2021-22",
+      "stats": {
+        "PPG": 17.7,
+        "RPG": 4.6,
+        "APG": 3.2,
+        "SPG": 1.3,
+        "BPG": 0.3,
+        "MPG": 32.2,
+        "TOV": 3.5,
+        "3PA": 6.5,
+        "FGA": 17.1,
+        "FTA": 2.8,
+        "FG%": 35.1,
+        "3P%": 26.9,
+        "FT%": 88.2,
+        "G": 12
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": null,
+          "league": null,
+          "g": "12",
+          "mp_per_g": "32.2",
+          "pts_per_g": "17.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/gleague/players/h/hardyja01d.html"
+    },
+    {
+      "name": "Khalifa Diop",
+      "norm_name": "khalifa diop",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Gran Canaria",
+      "league": "Liga ACB",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 6.7,
+        "RPG": 4.3,
+        "APG": 0.4,
+        "SPG": 0.5,
+        "BPG": 0.7,
+        "MPG": 16.0,
+        "TOV": 1.4,
+        "3PA": 0.0,
+        "FGA": 4.2,
+        "FTA": 2.6,
+        "FG%": 63.9,
+        "3P%": null,
+        "FT%": 54.9,
+        "G": 32
+      },
+      "all_rows": [
+        {
+          "season": "2018-19",
+          "team": "Gran Canaria",
+          "league": "EuroLeague",
+          "g": "1",
+          "mp_per_g": "7.0",
+          "pts_per_g": "3.0"
+        },
+        {
+          "season": "2019-20",
+          "team": "Gran Canaria",
+          "league": "Liga ACB",
+          "g": "4",
+          "mp_per_g": "3.5",
+          "pts_per_g": "1.0"
+        },
+        {
+          "season": "2020-21",
+          "team": "Gran Canaria",
+          "league": "EuroCup",
+          "g": "10",
+          "mp_per_g": "9.3",
+          "pts_per_g": "2.9"
+        },
+        {
+          "season": "2020-21",
+          "team": "Gran Canaria",
+          "league": "Liga ACB",
+          "g": "26",
+          "mp_per_g": "8.8",
+          "pts_per_g": "3.0"
+        },
+        {
+          "season": "2021-22",
+          "team": "Gran Canaria",
+          "league": "EuroCup",
+          "g": "18",
+          "mp_per_g": "15.1",
+          "pts_per_g": "5.7"
+        },
+        {
+          "season": "2021-22",
+          "team": "Gran Canaria",
+          "league": "Liga ACB",
+          "g": "32",
+          "mp_per_g": "16.0",
+          "pts_per_g": "6.7"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/khalifa-diop-1.html"
+    },
+    {
+      "name": "Ismael Kamagate",
+      "norm_name": "ismael kamagate",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Paris",
+      "league": "LNB Pro A",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 11.3,
+        "RPG": 6.3,
+        "APG": 0.7,
+        "SPG": 0.7,
+        "BPG": 1.6,
+        "MPG": 27.1,
+        "TOV": 1.7,
+        "3PA": 0.0,
+        "FGA": 6.8,
+        "FTA": 3.9,
+        "FG%": 64.3,
+        "3P%": null,
+        "FT%": 65.4,
+        "G": 34
+      },
+      "all_rows": [
+        {
+          "season": "2021-22",
+          "team": "Paris",
+          "league": "LNB Pro A",
+          "g": "34",
+          "mp_per_g": "27.1",
+          "pts_per_g": "11.3"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/ismael-kamagate-1.html"
+    },
+    {
+      "name": "Matteo Spagnolo",
+      "norm_name": "matteo spagnolo",
+      "pos": "G",
+      "born": "2003-01-10",
+      "age_label": "Age 23",
+      "team": "Cremona",
+      "league": "LBA",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 12.2,
+        "RPG": 3.5,
+        "APG": 2.6,
+        "SPG": 0.8,
+        "BPG": 0.0,
+        "MPG": 27.0,
+        "TOV": 2.6,
+        "3PA": 2.7,
+        "FGA": 9.7,
+        "FTA": 2.9,
+        "FG%": 44.0,
+        "3P%": 44.1,
+        "FT%": 86.1,
+        "G": 25
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Real Madrid",
+          "league": "Liga ACB",
+          "g": "1",
+          "mp_per_g": "1.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2021-22",
+          "team": "Cremona",
+          "league": "LBA",
+          "g": "25",
+          "mp_per_g": "27.0",
+          "pts_per_g": "12.2"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/matteo-spagnolo-1.html"
+    },
+    {
+      "name": "Karlo Matković",
+      "norm_name": "karlo matkovic",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 11.6,
+        "RPG": 6.1,
+        "APG": 1.1,
+        "SPG": 0.5,
+        "BPG": 1.1,
+        "MPG": 22.0,
+        "TOV": 1.6,
+        "3PA": 0.1,
+        "FGA": 7.9,
+        "FTA": 2.8,
+        "FG%": 60.6,
+        "3P%": 0.0,
+        "FT%": 71.0,
+        "G": 25
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "19",
+          "mp_per_g": "11.9",
+          "pts_per_g": "6.4"
+        },
+        {
+          "season": "2021-22",
+          "team": "Mega",
+          "league": "ABA",
+          "g": "25",
+          "mp_per_g": "22.0",
+          "pts_per_g": "11.6"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/karlo-matkovic-1.html"
+    },
+    {
+      "name": "Yannick Nzosa",
+      "norm_name": "yannick nzosa",
+      "pos": null,
+      "born": null,
+      "age_label": null,
+      "team": "Unicaja",
+      "league": "Liga ACB",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 2.2,
+        "RPG": 2.0,
+        "APG": 0.2,
+        "SPG": 0.3,
+        "BPG": 0.7,
+        "MPG": 11.1,
+        "TOV": 0.7,
+        "3PA": 0.2,
+        "FGA": 2.6,
+        "FTA": 0.4,
+        "FG%": 36.8,
+        "3P%": 0.0,
+        "FT%": 69.2,
+        "G": 29
+      },
+      "all_rows": [
+        {
+          "season": "2020-21",
+          "team": "Unicaja",
+          "league": "EuroCup",
+          "g": "16",
+          "mp_per_g": "10.4",
+          "pts_per_g": "4.4"
+        },
+        {
+          "season": "2020-21",
+          "team": "Unicaja",
+          "league": "Liga ACB",
+          "g": "23",
+          "mp_per_g": "12.5",
+          "pts_per_g": "4.3"
+        },
+        {
+          "season": "2021-22",
+          "team": "Unicaja",
+          "league": "Liga ACB",
+          "g": "29",
+          "mp_per_g": "11.1",
+          "pts_per_g": "2.2"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/yannick-nzosa-1.html"
+    },
+    {
+      "name": "Luke Travers",
+      "norm_name": "luke travers",
+      "pos": "G",
+      "born": "2001-09-03",
+      "age_label": "Age 24",
+      "team": "Perth",
+      "league": "NBL",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 7.8,
+        "RPG": 5.4,
+        "APG": 2.3,
+        "SPG": 0.9,
+        "BPG": 0.7,
+        "MPG": 22.0,
+        "TOV": 1.6,
+        "3PA": 2.5,
+        "FGA": 7.1,
+        "FTA": 1.9,
+        "FG%": 41.7,
+        "3P%": 25.0,
+        "FT%": 68.0,
+        "G": 27
+      },
+      "all_rows": [
+        {
+          "season": "2019-20",
+          "team": "Wildcats",
+          "league": "NBL",
+          "g": "4",
+          "mp_per_g": "7.0",
+          "pts_per_g": "1.3"
+        },
+        {
+          "season": "2021",
+          "team": "Perth",
+          "league": "NBL",
+          "g": "36",
+          "mp_per_g": "11.1",
+          "pts_per_g": "4.3"
+        },
+        {
+          "season": "2021-22",
+          "team": "Perth",
+          "league": "NBL",
+          "g": "27",
+          "mp_per_g": "22.0",
+          "pts_per_g": "7.8"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/luke-travers-1.html"
+    },
+    {
+      "name": "Hugo Besson",
+      "norm_name": "hugo besson",
+      "pos": "G",
+      "born": "2001-04-26",
+      "age_label": "Age 25",
+      "team": "New Zealand",
+      "league": "NBL",
+      "season": "2021-22",
+      "stats": {
+        "PPG": 13.9,
+        "RPG": 3.9,
+        "APG": 2.5,
+        "SPG": 0.5,
+        "BPG": 0.0,
+        "MPG": 27.6,
+        "TOV": 1.8,
+        "3PA": 6.3,
+        "FGA": 12.2,
+        "FTA": 3.3,
+        "FG%": 38.5,
+        "3P%": 30.6,
+        "FT%": 79.5,
+        "G": 25
+      },
+      "all_rows": [
+        {
+          "season": "2018-19",
+          "team": "Élan",
+          "league": "LNB Pro A",
+          "g": "1",
+          "mp_per_g": "8.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2019-20",
+          "team": "Élan",
+          "league": "LNB Pro A",
+          "g": "12",
+          "mp_per_g": "6.3",
+          "pts_per_g": "1.4"
+        },
+        {
+          "season": "2021-22",
+          "team": "New Zealand",
+          "league": "NBL",
+          "g": "25",
+          "mp_per_g": "27.6",
+          "pts_per_g": "13.9"
+        }
+      ],
+      "source": "https://www.basketball-reference.com/international/players/hugo-besson-1.html"
+    }
+  ],
+  "missed": [
+    "Shaedon Sharpe",
+    "Dyson Daniels",
+    "MarJon Beauchamp",
+    "Gui Santos"
+  ]
+}
