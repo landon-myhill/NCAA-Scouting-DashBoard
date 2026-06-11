@@ -12,14 +12,38 @@ _RADAR_COLORS = [
 ]
 
 
+# Radar axes from the MEASURED strengths (class-relative percentiles) when
+# available; the legacy hand-rolled skills only as fallback for players
+# outside the draft pool.
+_RADAR_AXES = [
+    ("Scoring", "scoring"), ("Shooting", "shooting"), ("Playmaking", "playmaking"),
+    ("Finishing", "finishing"), ("Rebounding", "rebounding"),
+    ("Rim Protection", "rim_protection"), ("Perimeter D", "perimeter_defense"),
+    ("Ball Security", "ball_security"),
+]
+
+
+def _axes(p: dict) -> dict:
+    s = p.get("strengths")
+    if s:
+        return {label: (s.get(k) if s.get(k) is not None else 0)
+                for label, k in _RADAR_AXES}
+    return p.get("skills", {})
+
+
 def make_radar_json(*players) -> str:
     if not players:
         return "{}"
-    cats = list(players[0]["skills"].keys())
+    # Mixed sources don't compare — use strengths only if every player has them
+    use_strengths = all(p.get("strengths") for p in players)
+    axes = [_axes(p) if use_strengths else p.get("skills", {}) for p in players]
+    if not axes[0]:
+        return "{}"
+    cats = list(axes[0].keys())
     cats_c = cats + [cats[0]]
     fig = go.Figure()
     for i, p in enumerate(players):
-        vals = list(p["skills"].values()) + [list(p["skills"].values())[0]]
+        vals = list(axes[i].values()) + [list(axes[i].values())[0]]
         lc, fc = _RADAR_COLORS[i % len(_RADAR_COLORS)]
         fig.add_trace(go.Scatterpolar(
             r=vals, theta=cats_c, fill="toself", name=p["name"],

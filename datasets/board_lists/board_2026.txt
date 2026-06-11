@@ -1,104 +1,103 @@
-# Curated big board — 2026 draft class (top 100, user-provided)
-# Format: Name | School   ('#' = comment). Order doesn't matter; the board
-# always sorts by draft score. Names with no NCAA record (international,
-# G-League) are reported in the UI, never silently dropped.
-AJ Dybantsa | BYU
+# Curated big board — 2026 draft class (user-provided, current entrants)
+# Format: Name | School. Line order = consensus mock rank.
 Darryn Peterson | Kansas
 Cameron Boozer | Duke
+AJ Dybantsa | BYU
 Caleb Wilson | North Carolina
 Darius Acuff | Arkansas
+Mikel Brown | Louisville
 Keaton Wagler | Illinois
 Kingston Flemings | Houston
-Mikel Brown | Louisville
-Cameron Carr | Baylor
-Nate Ament | Tennessee
 Brayden Burries | Arizona
-Hannes Steinbach | Washington
 Yaxel Lendeborg | Michigan
-Allen Graves | Santa Clara
-Labaron Philon | Alabama
-Karim Lopez | Juventut Badalona
-Chris Cenac | Houston
 Morez Johnson | Michigan
-Isaiah Evans | Duke
-Meleek Thomas | Arkansas
-Bennett Stirtz | Iowa
-Joshua Jefferson | Iowa St.
-Christian Anderson | Texas Tech
-Jayden Quaintance | Kentucky
-Luigi Suigo | Olimpia Milano
+Labaron Philon | Alabama
 Aday Mara | Michigan
+Jayden Quaintance | Kentucky
+Cameron Carr | Baylor
+Bennett Stirtz | Iowa
+Hannes Steinbach | Washington
 Dailyn Swain | Texas
+Nate Ament | Tennessee
 Ebuka Okorie | Stanford
+Karim Lopez | New Zealand Breakers
+Christian Anderson | Texas Tech
 Koa Peat | Arizona
-Henri Veesaar | North Carolina
-Trevon Brazile | Arkansas
+Chris Cenac | Houston
 Tarris Reed | UConn
-Baba Miller | Cincinnati
-Jack Kayil | Alba Berlin
-Alex Karaban | UConn
-Sergio de Larrea | Valencia
-Zuby Ejiofor | St. Johns
-Jaden Bradley | Arizona
-Braden Smith | Purdue
-Keyshawn Hall | Auburn
-Jakobi Gillespie | Tennessee
-Jaron Pierre | SMU
+Isaiah Evans | Duke
+Zuby Ejiofor | St. John's
+Joshua Jefferson | Iowa State
+Meleek Thomas | Arkansas
+Allen Graves | Santa Clara
+Henri Veesaar | North Carolina
 Ryan Conwell | Louisville
-Pavle Backo
-Izaiyah Nelson | South Florida
-Milos Uzan | Houston
-Otega Oweh | Kentucky
-Tobi Lawal | Virginia Tech
-Aaron Nkrumah | Tennessee State
-Tre White | Kansas
-Dillon Mitchell | St. Johns
-Felix Okpara | Tennessee
+Luigi Suigo | Mega Basket
+Alex Karaban | UConn
+Braden Smith | Purdue
 Richie Saunders | BYU
-Ugonna Onyenso | Virginia
-Tobe Awaka | Tennessee
-Trey Kaufman-Renn | Purdue
+Trevon Brazile | Arkansas
+Jaden Bradley | Arizona
+Baba Miller | Cincinnati
 Emanuel Sharp | Houston
-Ernest Udeh | Miami
-Francesco Ferrari | Borgomanero
-Rafael Castro | George Washington
-Kylan Boswell | Illinois
-Donovan Atwell | Texas Tech
-Nick Martinelli | Northwestern
-Tyler Nickel | Vanderbilt
+Sergio de Larrea | Valencia
+Dillon Mitchell | St. John's
+Quadir Copeland | NC State
+Otega Oweh | Kentucky
 Maliq Brown | Duke
-Peter Suder | Miami (OH)
+Tyler Nickel | Vanderbilt
+Ugonna Onyenso | Virginia
+Jakobi Gillespie | Tennessee
+Rafael Castro | George Washington
+Bruce Thornton | Ohio State
 Seth Trimble | North Carolina
-Tyler Bilodeau | UCLA
-Nick Boyd | Wisconsin
-Tamin Lipsey | Iowa St.
-BJ Edwards | SMU
-KeShawn Murphy | Auburn
-Bruce Thornton | Ohio St.
-Malik Reneau | Miami
-Vsevolod Ishchenko
-Melvin Council | Kansas
-Roddy Gayle | Michigan
-Lamar Wilkerson | Indiana
-Riley Kugel | Mississippi St.
-Malique Ewin | Arkansas
+Izaiyah Nelson | South Florida
 Nate Bittle | Oregon
-Tobias Jensen | Ratiopharm Ulm
-AJ Storr | Mississippi
-Mark Mitchell | Missouri
-Graham Ike | Gonzaga
-Tyon Grant-Foster | Grand Canyon
+Nick Martinelli | Northwestern
+Tobi Lawal | Virginia Tech
+Kylan Boswell | Illinois
+Tyler Bilodeau | UCLA
+Tucker Devries | Indiana
+Lamar Wilkerson | Indiana
+Chase Ross | Marquette
+Milos Uzan | Houston
+Tamin Lipsey | Iowa State
+Xaivian Lee | Florida
+Keyshawn Hall | Auburn
+Felix Okpara | Tennessee
+Kowacie Reeves | Georgia Tech
+Jaron Pierre | SMU
+Ernest Udeh | Miami
+Malik Reneau | Indiana
+Robert McCray | Florida State
+Cade Tyson | North Carolina
 Darrion Williams | NC State
-Desmond Claude | Washington
-Rylan Griffen | Kansas
-Jevon Porter | Missouri
-Bryce Hopkins | St. Johns
-Michael Ajayi | Gonzaga
+Trey Kaufman-Renn | Purdue
+Michael Ajayi | Butler
+Peter Suder | Miami (OH)
+Duke Miles | Vanderbilt
+Elijah Mahi | Santa Clara
+Corey Camper | Nevada
+Jaden Henley | Grand Canyon
+Malique Lewis | South East Melbourne
+Donovan Atwell | Texas Tech
+Tobe Awaka | Arizona
+Nick Boyd | Wisconsin
+Tre Carroll | Xavier
+Zach Cleveland | Liberty
+Anthony Dell'Orso | Arizona
+Malik Dia | Ole Miss
 Tre Donaldson | Miami
-Keba Keita | Utah
-Cade Tyson | Minnesota
-Kevin Miller | Wake Forest
-Robert McCray | Florida St.
-Kobe Knox | South Carolina
-Mohammad Amini | Sluc Nancy
-Dylan Andrews | Boise State
+Reynan Dos Santos | Mexico City Capitanes
+Rylan Griffen | Texas A&M
+Bryce Hopkins | St. John's
+Graham Ike | Gonzaga
+Vsevolod Ishchenko | Lokomotiv Kuban
+Jack Kayil | Alba Berlin
+Keba Keita | BYU
+Kevin Miller | Southern Methodist  # "Boopie" Miller
+Mark Mitchell | Missouri
+Aaron Nkrumah | Tennessee State
+Jaylin Sellers | Providence
+Isaac McKneely | Louisville
+Fletcher Loyer | Purdue

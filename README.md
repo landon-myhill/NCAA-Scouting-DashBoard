@@ -83,24 +83,19 @@ tests/            pytest suite — run `python -m pytest`
 
 ### Draft Score (the ranking)
 
-The composite draft score blends component scores scaled by conference / class-year / position multipliers. **The blend weights are data-fit, not hand-tuned** — ridge regression of the components against real NBA career value (Win Shares + VORP + career tier) on the 2020–2023 draft classes, validated with leave-one-year-out cross-validation. Held-out rank correlation vs NBA value: **+0.358** (prior hand-tuned formula: +0.339).
+Built 100% from college stats. The composite blends component scores (production, impact, two-way, elite metrics, size, length, playmaking, FT touch, recruit pedigree) scaled by conference / class-year / position multipliers. Components are **position-fair**: elite-metric bars sit at each position's own 75th/90th percentile and steals+blocks are scaled per position, so guards and bigs qualify at comparable rates. **The blend weights are data-fit, not hand-tuned** — ridge regression against real NBA outcomes on the 2020–2023 classes, validated leave-one-year-out.
 
-What the fit learned (strongest → weakest NBA-success predictors):
-- **Size, elite advanced metrics, HS recruit rank, two-way value, win-share impact** — the real drivers
-- **Production** (PPG/RPG/APG) — modest signal once the above are in
-- **Efficiency** (PER/TS%/eFG%) — *negative* weight: adds noise, not signal
-- **Conference & class-year** — kept as multipliers (essential for full-board calibration)
+### NBA outcomes (the measuring stick — never an input to the score)
 
-Re-tune: `python -m analytics.tune`. Baseline check: `python -m analytics.backtest`.
+Careers are graded with a **position-relative box-score value** (`analytics/value.py`): career PPG / minutes-per-game / RPG / APG / durability, each percentiled within position group and per-season — no VORP/WS composites (they misgrade roles: durable backup bigs farm Win Shares, bad-team starters grade as benchwarmers). Career tiers (star / starter / rotation / bench / no_nba) are bands on that score; classes younger than 3 seasons show "early career" instead of a premature tier. The formula's held-out rank correlation vs this target is **+0.30**, and the actual NBA draft order scores comparably — a box-score model performing at parity with the scouting industry.
 
 ### Boom / Bust (the projection)
 
-`analytics/predict.py` adds two probabilities per player, learned from what actually happened to the 2020–2023 drafted classes (mature careers only) and validated leave-one-year-out:
+`analytics/predict.py` calibrates the draft score into probabilities, validated leave-one-year-out against the box-score outcome tiers: **Boom** = P(NBA starter or better), held-out AUC **0.68**; **Bust** = P(bench or out of the league), AUC **0.61**. Multi-feature models were tested and scored worse — they don't ship (same rule as everything else: held-out improvement or it doesn't go in).
 
-- **Boom** = P(NBA starter or better). A 1-D logistic calibration of the draft score itself (held-out AUC **0.70**). A multi-feature model scored *worse* — the formula's multiplicative structure already ranks upside best, so we convert it to a probability instead of re-learning it badly.
-- **Bust** = P(bench or out of the league). A logistic model on the score components + size (held-out AUC **0.73** vs 0.68 for the score alone) — downside risk has extra signal in the *shape* of the profile (efficiency-only producers, no defensive events, weak frame) that a rank can't see.
+Honesty caveats baked in: outcome data covers drafted players (plus scraped undrafted top-150 outcomes via `data/scrape_undrafted.py`), so probabilities read as "for a draftable-caliber prospect"; any change must improve held-out CV *and* pass face-validity spot checks before shipping.
 
-Honesty caveats baked into the design: we only observe NBA outcomes for **drafted** players, so probabilities read as "if this player is a drafted-caliber prospect"; and any change must improve held-out CV *and* pass the full-board sanity check (mid-major count, position split, recognizable top recruits) before shipping.
+Re-tune: `python -m analytics.tune`. Baseline check: `python -m analytics.backtest`. Re-grade outcomes: `python -m analytics.value --rescore`.
 
 ## Testing
 

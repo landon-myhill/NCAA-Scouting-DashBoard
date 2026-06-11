@@ -13,6 +13,7 @@ from core import HISTORY_DIR, PLAYERS_FILE, SCARCITY_FILE, SEASON_YEAR, season_l
 from core.config import BOARD_LISTS_DIR, INTL_DIR, MATURE_DRAFT_YEARS
 from core.names import match_player, name_keys, normalize_name
 from model.archetypes import DEFAULT_WEIGHTS, classify, combine_parts, draft_score
+from model.strengths import compute_fits, compute_strengths
 
 CURRENT_SEASON_YEAR = SEASON_YEAR  # active draft cycle (env-overridable)
 
@@ -126,6 +127,7 @@ def get_year_data(year):
     players, season = _load_history_year(year)
     if players is None:
         return None, None, None
+    ensure_fits(year, players)  # class-relative strengths/fits + v2 badges
     profiles = {p["id"]: get_profile(p) for p in players}
     _YEAR_CACHE[year] = {"players": players, "profiles": profiles, "season": season}
     return players, profiles, season
@@ -217,6 +219,14 @@ def _load_board_list(year, players):
         if not cands:  # nickname-tolerant fallback: first initial + last name
             _, initial = name_keys(name)
             cands = by_initial.get(initial, [])
+            # A fallback hit is a weaker claim — when the list names a school,
+            # demand agreement, or "Malique Lewis (NBL)" grabs Mikey Lewis
+            # (Saint Mary's) and a stranger ends up on the board.
+            if cands and school:
+                sc = normalize_name(school)
+                cands = [p for p in cands
+                         if sc in normalize_name(p.get("school", ""))
+                         or normalize_name(p.get("school", "")) in sc]
         if len(cands) > 1 and school:
             cands = _school_scope(cands, school)
         if cands:
@@ -318,6 +328,48 @@ def board_filter(players: list[dict], year, with_stubs: bool = True):
     return pool, [n for n, _, _ in unmatched], True
 
 
+_FITS_DONE: set = set()
+
+
+def ensure_fits(year, players: list[dict]) -> None:
+    """Compute strengths + archetype fits for a season's draft pool, once.
+    Percentiles are relative to THAT class only (the eligibility rule).
+    Load-time enrichment of the shared dicts, like the NBA outcome badges —
+    these numbers NEVER feed the draft score."""
+    if year in _FITS_DONE or year == "all" or year is None:
+        return
+    _FITS_DONE.add(year)
+    pool, _, curated = board_filter(players, year, with_stubs=False)
+    if not curated:
+        return
+    pool = sorted(pool, key=lambda p: p["rank"])
+    compute_strengths(pool, reference=pool)
+    compute_fits(pool, reference=pool)
+    _stamp_model_rank(pool)
+
+
+def _stamp_model_rank(pool: list[dict]) -> None:
+    """Score the pool with the trained strengths model (datasets/
+    strengths_model.json, trained+validated in analytics.strengths_model)
+    and stamp sm_score / sm_rank. The model learned its own age and height
+    adjusters from the eligible 2020-23 populations."""
+    from core.config import DATASETS_DIR
+    path = DATASETS_DIR / "strengths_model.json"
+    if not path.exists() or not pool:
+        return
+    import numpy as np
+    from analytics.strengths_model import featurize
+    m = json.loads(path.read_text(encoding="utf-8"))
+    X = np.array([featurize(p) for p in pool], float)
+    idx = np.where(np.isnan(X))
+    X[idx] = np.take(np.array(m["med"]), idx[1])
+    pred = (X - np.array(m["mu"])) / np.array(m["sd"]) @ np.array(m["coef"]) + m["y0"]
+    for p, v in zip(pool, pred):
+        p["sm_score"] = round(float(v), 4)
+    for i, p in enumerate(sorted(pool, key=lambda p: -p["sm_score"]), 1):
+        p["sm_rank"] = i
+
+
 # ── Raw college production score ─────────────────────────────────────────────
 # The SAME college-stat components as the draft score, but with the
 # conference / age / position multipliers neutralized (damp=0 -> mult 1.0)
@@ -376,3 +428,10 @@ def get_percentiles(player: dict) -> dict:
         else:
             result[key] = None
     return result
+
+
+# ── Startup enrichment ───────────────────────────────────────────────────────
+# Strengths/fits for the current class, then refresh the affected profiles
+# (their archetype badges now come from the fit engine).
+ensure_fits(CURRENT_SEASON_YEAR, PLAYERS)
+PROFILES.update({p["id"]: get_profile(p) for p in PLAYERS if p.get("fits")})

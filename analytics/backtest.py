@@ -62,10 +62,12 @@ def load_matched(years=MATURE_YEARS, include_undrafted=False):
         by_school = {}
         for p in players:
             by_school.setdefault(p.get("school", ""), []).append(p)
+        seen_ids = set()  # guard vs name-variant double counts (Bones/Nah'Shon Hyland)
         for pick in picks:
             rec = _match(pick, by_norm, by_school)
             if rec is None:
                 continue
+            seen_ids.add(rec.get("id"))
             car = pick.get("career", {})
             rows.append({
                 "year": y,
@@ -81,10 +83,15 @@ def load_matched(years=MATURE_YEARS, include_undrafted=False):
         uf = HISTORY_DIR / f"undrafted_results_{y}.json"
         if include_undrafted and uf.exists():
             for r in load_json(uf)["players"]:
+                # Class-eligibility rule: players who RETURNED to college are
+                # not part of this draft class (flagged by make_class_boards).
+                if r.get("returned"):
+                    continue
                 rec = _match({"player": r["player"], "college": r.get("college", "")},
                              by_norm, by_school)
-                if rec is None:
+                if rec is None or rec.get("id") in seen_ids:
                     continue
+                seen_ids.add(rec.get("id"))
                 car = r.get("career") or {}
                 tier = r.get("career_tier", "no_nba")
                 rows.append({

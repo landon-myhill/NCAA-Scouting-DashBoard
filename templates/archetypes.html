@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% set active_page = "archetypes" %}
+{% block title %}Archetype Rankings — NCAA Draft Scout{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-1 flex-wrap gap-2">
+    <h4 class="mb-0">Archetype Rankings — {{ season_label }}</h4>
+    <form method="GET" class="d-flex align-items-center gap-2 mb-0">
+        <label class="form-label small text-secondary mb-0">Archetype</label>
+        <select name="arch" class="form-select form-select-sm" onchange="this.form.submit()" style="min-width:190px">
+            <option value="">All (overview)</option>
+            {% for a in all_archetypes %}
+            <option value="{{ a }}" {% if detail and detail.name == a %}selected{% endif %}>{{ a }}</option>
+            {% endfor %}
+        </select>
+        <label for="yearSelect" class="form-label small text-secondary mb-0">Class</label>
+        <select id="yearSelect" name="year" class="form-select form-select-sm" onchange="this.form.submit()">
+            {% for y, label, is_cur in available_years %}
+            <option value="{{ y }}" {% if y == current_year %}selected{% endif %}>{{ label }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</div>
+<p class="text-secondary small mb-3">Every player is scored on every archetype his position can play —
+a weighted blend of his measured strengths, shown as a <strong>percentile within this draft class</strong>.
+Versatile players rank high in several groups. Descriptive only: these ratings never touch the draft score.</p>
+
+{% if detail %}
+<div class="info-card mb-3">
+    <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+        <h5 class="mb-1"><span class="{{ 'arch-off' if detail.side == 'offensive' else 'arch-def' }}">{{ detail.name }}</span>
+            <span class="text-secondary" style="font-size:13px">— all {{ detail.members|length }} eligible players</span></h5>
+        <a href="/archetypes?year={{ current_year }}" class="btn btn-sm btn-outline-secondary">← overview</a>
+    </div>
+    <p class="text-secondary small mb-2">{{ arch_desc.get(detail.name, '') }}</p>
+    <table class="table table-dark table-sm align-middle" style="font-size:13px">
+        <thead>
+            <tr class="text-secondary" style="font-size:11px">
+                <th style="width:36px">#</th>
+                <th>Player</th>
+                <th class="text-end">Fit pct</th>
+                {% for comp, is_abs, w in detail.components %}
+                <th class="text-end" title="recipe weight {{ (w*100)|int }}%{{ ' — absolute scale (vs everyone, not just his position)' if is_abs }}">
+                    {{ comp.replace('_', ' ') }}{{ '*' if is_abs }} <span style="opacity:.6">({{ (w*100)|int }}%)</span></th>
+                {% endfor %}
+                <th class="text-end">Board</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in detail.members %}
+            <tr>
+                <td style="color:#475569">{{ loop.index }}</td>
+                <td><a href="/scouting?player_id={{ p.id }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
+                    <span class="text-secondary" style="font-size:11px">{{ p.pos }} · {{ p.school }}</span></td>
+                <td class="text-end fw-bold" style="color:{{ '#10b981' if p.fits[detail.name] >= 80 else '#60a5fa' if p.fits[detail.name] >= 55 else '#94a3b8' }}">{{ p.fits[detail.name] }}</td>
+                {% for comp, is_abs, w in detail.components %}
+                {% set v = (p.strengths_abs if is_abs else p.strengths).get(comp) %}
+                <td class="text-end" style="color:{{ '#10b981' if v is not none and v >= 80 else '#e2e8f0' if v is not none else '#475569' }}">{{ v if v is not none else '—' }}</td>
+                {% endfor %}
+                <td class="text-end text-secondary">#{{ p.rank }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-secondary" style="font-size:11px">* measured on the absolute scale (vs the whole class, not just his position) — used for jobs like rebounding and rim protection.</div>
+</div>
+{% endif %}
+
+<div class="row g-3" {% if detail %}style="display:none"{% endif %}>
+    {% for g in groups %}
+    <div class="col-lg-4 col-md-6">
+        <div class="info-card h-100">
+            <div class="d-flex justify-content-between align-items-baseline">
+                <span class="{{ 'arch-off' if g.side == 'offensive' else 'arch-def' }}"
+                      data-bs-toggle="tooltip" data-bs-title="{{ arch_desc.get(g.name, '') }}">{{ g.name }}</span>
+                <a href="/archetypes?year={{ current_year }}&arch={{ g.name|urlencode }}"
+                   class="text-secondary" style="font-size:11px;text-decoration:none">view all {{ g.total }} →</a>
+            </div>
+            <table class="mt-2 w-100" style="font-size:12px">
+                {% for p in g.members %}
+                <tr>
+                    <td style="width:22px;color:#475569">{{ loop.index }}</td>
+                    <td><a href="/scouting?player_id={{ p.id }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
+                        <span class="text-secondary" style="font-size:10px">{{ p.pos }} · {{ p.school }}</span></td>
+                    <td style="width:36px;text-align:right;font-weight:600;color:{{ '#10b981' if p.fits[g.name] >= 80 else '#60a5fa' if p.fits[g.name] >= 55 else '#94a3b8' }}">{{ p.fits[g.name] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

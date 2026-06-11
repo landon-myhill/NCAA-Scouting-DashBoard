@@ -1,6 +1,6 @@
 {
   "year": 2021,
-  "scraped_at": "2026-06-10T16:17:39.336566",
+  "scraped_at": "2026-06-11T09:44:13.438206",
   "top_n": 150,
   "players": [
     {
@@ -8,9 +8,16 @@
       "player": "Jay Huff",
       "college": "Virginia",
       "ncaa_rank": 7,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 5,
+        "games": 177.0,
+        "WS": 6.4,
+        "VORP": 2.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/huffja01.html",
+      "returned": false,
+      "nba_value": 0.177
     },
     {
       "year": 2021,
@@ -19,16 +26,25 @@
       "ncaa_rank": 13,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/j/jamesjo01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Drew Timme",
       "college": "Gonzaga",
       "ncaa_rank": 14,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 2,
+        "games": 36.0,
+        "WS": 0.5,
+        "VORP": -0.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/timmedr01.html",
+      "returned": true,
+      "nba_value": 0.081
     },
     {
       "year": 2021,
@@ -37,16 +53,25 @@
       "ncaa_rank": 16,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/mayerma01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Justin Champagnie",
       "college": "Pittsburgh",
       "ncaa_rank": 20,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 5,
+        "games": 187.0,
+        "WS": 7.0,
+        "VORP": 1.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/champju01.html",
+      "returned": false,
+      "nba_value": 0.259
     },
     {
       "year": 2021,
@@ -55,43 +80,73 @@
       "ncaa_rank": 21,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Micah Potter",
       "college": "Wisconsin",
       "ncaa_rank": 22,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 5,
+        "games": 111.0,
+        "WS": 3.5,
+        "VORP": 0.4
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/p/pottemi01.html",
+      "returned": false,
+      "nba_value": 0.136
     },
     {
       "year": 2021,
       "player": "McKinley Wright IV",
       "college": "Colorado",
       "ncaa_rank": 24,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 2,
+        "games": 32.0,
+        "WS": 0.5,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/w/wrighmc01.html",
+      "returned": false,
+      "nba_value": 0.148
     },
     {
       "year": 2021,
       "player": "Andersson Garcia",
       "college": "Mississippi State",
       "ncaa_rank": 27,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 5.0,
+        "WS": 0.1,
+        "VORP": -0.2
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/g/garcian01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Jaquori McLaughlin",
       "college": "UC Santa Barbara",
       "ncaa_rank": 28,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 4.0,
+        "WS": 0.0,
+        "VORP": 0.0
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/mclauja01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -100,16 +155,25 @@
       "ncaa_rank": 29,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/murphgr01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Joel Ayayi",
       "college": "Gonzaga",
       "ncaa_rank": 31,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 7.0,
+        "WS": 0.0,
+        "VORP": 0.0
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/a/ayayijo01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -118,16 +182,25 @@
       "ncaa_rank": 32,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Jordan Schakel",
       "college": "San Diego State",
       "ncaa_rank": 34,
-      "career": {},
+      "career": {
+        "years": 2,
+        "games": 6.0,
+        "WS": -0.1,
+        "VORP": -0.1
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/s/schakjo01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -136,16 +209,25 @@
       "ncaa_rank": 35,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Julian Champagnie",
       "college": "St. John's (NY)",
       "ncaa_rank": 36,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 255.0,
+        "WS": 10.9,
+        "VORP": 2.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/champju02.html",
+      "returned": true,
+      "nba_value": 0.287
     },
     {
       "year": 2021,
@@ -154,16 +236,25 @@
       "ncaa_rank": 39,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Colin Castleton",
       "college": "Florida",
       "ncaa_rank": 40,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 46.0,
+        "WS": 0.8,
+        "VORP": -0.4
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/castlco01.html",
+      "returned": true,
+      "nba_value": 0.101
     },
     {
       "year": 2021,
@@ -172,25 +263,41 @@
       "ncaa_rank": 41,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Matthew Hurt",
       "college": "Duke",
       "ncaa_rank": 42,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 8.0,
+        "WS": 0.1,
+        "VORP": -0.1
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/h/hurtma01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Dejon Jarreau",
       "college": "Houston",
       "ncaa_rank": 43,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 21.0,
+        "WS": -0.2,
+        "VORP": -0.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/jarrede01.html",
+      "returned": false,
+      "nba_value": 0.129
     },
     {
       "year": 2021,
@@ -199,7 +306,9 @@
       "ncaa_rank": 45,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -208,7 +317,9 @@
       "ncaa_rank": 47,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -217,7 +328,9 @@
       "ncaa_rank": 48,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -226,7 +339,9 @@
       "ncaa_rank": 50,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -235,16 +350,25 @@
       "ncaa_rank": 51,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Keon Ellis",
       "college": "Alabama",
       "ncaa_rank": 52,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 225.0,
+        "WS": 9.7,
+        "VORP": 3.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/e/elliske01.html",
+      "returned": true,
+      "nba_value": 0.275
     },
     {
       "year": 2021,
@@ -253,16 +377,25 @@
       "ncaa_rank": 53,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Liam Robbins",
       "college": "Minnesota",
       "ncaa_rank": 55,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 13.0,
+        "WS": -0.1,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/r/robbili01.html",
+      "returned": true,
+      "nba_value": 0.059
     },
     {
       "year": 2021,
@@ -271,7 +404,9 @@
       "ncaa_rank": 56,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -280,16 +415,25 @@
       "ncaa_rank": 59,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/t/teaguma02.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Hunter Dickinson",
       "college": "Michigan",
       "ncaa_rank": 60,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 5.0,
+        "WS": -0.1,
+        "VORP": -0.1
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/d/dickihu01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -298,7 +442,9 @@
       "ncaa_rank": 62,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -307,7 +453,9 @@
       "ncaa_rank": 63,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -316,7 +464,9 @@
       "ncaa_rank": 65,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -325,7 +475,9 @@
       "ncaa_rank": 66,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -334,7 +486,9 @@
       "ncaa_rank": 67,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -343,7 +497,9 @@
       "ncaa_rank": 68,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/e/edwarky01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -352,16 +508,25 @@
       "ncaa_rank": 70,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Terry Taylor",
       "college": "Austin Peay",
       "ncaa_rank": 74,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 98.0,
+        "WS": 3.0,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/taylote01.html",
+      "returned": false,
+      "nba_value": 0.206
     },
     {
       "year": 2021,
@@ -370,7 +535,9 @@
       "ncaa_rank": 75,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -379,7 +546,9 @@
       "ncaa_rank": 76,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -388,7 +557,9 @@
       "ncaa_rank": 77,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -397,7 +568,9 @@
       "ncaa_rank": 78,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -406,7 +579,9 @@
       "ncaa_rank": 79,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -415,16 +590,25 @@
       "ncaa_rank": 80,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Moses Wright",
       "college": "Georgia Tech",
       "ncaa_rank": 81,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 4.0,
+        "WS": 0.1,
+        "VORP": 0.0
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/w/wrighmo01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -433,16 +617,25 @@
       "ncaa_rank": 82,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/mcconca01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Marcus Garrett",
       "college": "Kansas",
       "ncaa_rank": 84,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 2,
+        "games": 16.0,
+        "WS": 0.1,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/g/garrema01.html",
+      "returned": true,
+      "nba_value": 0.116
     },
     {
       "year": 2021,
@@ -451,7 +644,9 @@
       "ncaa_rank": 85,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/w/willitr03.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -460,7 +655,9 @@
       "ncaa_rank": 86,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/p/pettyjo01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -469,16 +666,25 @@
       "ncaa_rank": 91,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Herb Jones",
       "college": "Alabama",
       "ncaa_rank": 92,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 5,
+        "games": 296.0,
+        "WS": 16.4,
+        "VORP": 2.6
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/joneshe01.html",
+      "returned": false,
+      "nba_value": 0.285
     },
     {
       "year": 2021,
@@ -487,16 +693,25 @@
       "ncaa_rank": 93,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Jared Rhoden",
       "college": "Seton Hall",
       "ncaa_rank": 94,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 45.0,
+        "WS": 1.0,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/r/rhodeja01.html",
+      "returned": true,
+      "nba_value": 0.167
     },
     {
       "year": 2021,
@@ -505,7 +720,9 @@
       "ncaa_rank": 95,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/l/lewisma04.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -514,7 +731,9 @@
       "ncaa_rank": 96,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -523,7 +742,9 @@
       "ncaa_rank": 97,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -532,7 +753,9 @@
       "ncaa_rank": 98,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -541,7 +764,9 @@
       "ncaa_rank": 99,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -550,7 +775,9 @@
       "ncaa_rank": 100,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/r/rachabr01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -559,7 +786,9 @@
       "ncaa_rank": 102,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -568,7 +797,9 @@
       "ncaa_rank": 105,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/s/stewadj02.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -577,25 +808,41 @@
       "ncaa_rank": 107,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/f/figuelj01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Austin Reaves",
       "college": "Oklahoma",
       "ncaa_rank": 108,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 5,
+        "games": 331.0,
+        "WS": 27.5,
+        "VORP": 7.5
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/r/reaveau01.html",
+      "returned": false,
+      "nba_value": 0.363
     },
     {
       "year": 2021,
       "player": "Ron Harper Jr.",
       "college": "Rutgers",
       "ncaa_rank": 109,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 40.0,
+        "WS": 0.9,
+        "VORP": 0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/harpero02.html",
+      "returned": true,
+      "nba_value": 0.162
     },
     {
       "year": 2021,
@@ -604,7 +851,9 @@
       "ncaa_rank": 110,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/b/binghma01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -613,7 +862,9 @@
       "ncaa_rank": 111,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -622,7 +873,9 @@
       "ncaa_rank": 113,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -631,7 +884,9 @@
       "ncaa_rank": 115,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -640,16 +895,25 @@
       "ncaa_rank": 116,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Johnny Juzang",
       "college": "UCLA",
       "ncaa_rank": 122,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 123.0,
+        "WS": 1.9,
+        "VORP": -0.6
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/juzanjo01.html",
+      "returned": true,
+      "nba_value": 0.22
     },
     {
       "year": 2021,
@@ -658,7 +922,9 @@
       "ncaa_rank": 123,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -667,7 +933,9 @@
       "ncaa_rank": 124,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -676,7 +944,9 @@
       "ncaa_rank": 125,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -685,7 +955,9 @@
       "ncaa_rank": 127,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -694,7 +966,9 @@
       "ncaa_rank": 128,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -703,7 +977,9 @@
       "ncaa_rank": 129,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -712,7 +988,9 @@
       "ncaa_rank": 131,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -721,7 +999,9 @@
       "ncaa_rank": 133,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -730,7 +1010,9 @@
       "ncaa_rank": 134,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/n/nollela01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -739,7 +1021,9 @@
       "ncaa_rank": 137,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -748,7 +1032,9 @@
       "ncaa_rank": 138,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -757,7 +1043,9 @@
       "ncaa_rank": 139,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -766,7 +1054,9 @@
       "ncaa_rank": 140,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -775,7 +1065,9 @@
       "ncaa_rank": 141,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -784,7 +1076,9 @@
       "ncaa_rank": 142,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -793,16 +1087,25 @@
       "ncaa_rank": 143,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Kadary Richmond",
       "college": "Syracuse",
       "ncaa_rank": 144,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 3.0,
+        "WS": 0.2,
+        "VORP": 0.1
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/r/richmka01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -811,7 +1114,9 @@
       "ncaa_rank": 145,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
@@ -820,16 +1125,25 @@
       "ncaa_rank": 146,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2021,
       "player": "Scotty Pippen Jr.",
       "college": "Vanderbilt",
       "ncaa_rank": 147,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 116.0,
+        "WS": 5.8,
+        "VORP": 2.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/p/pippesc02.html",
+      "returned": true,
+      "nba_value": 0.216
     },
     {
       "year": 2021,
@@ -838,7 +1152,9 @@
       "ncaa_rank": 149,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     }
   ]
 }

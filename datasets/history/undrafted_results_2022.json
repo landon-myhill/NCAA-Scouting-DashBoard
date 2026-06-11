@@ -1,6 +1,6 @@
 {
   "year": 2022,
-  "scraped_at": "2026-06-10T16:21:43.089237",
+  "scraped_at": "2026-06-11T09:53:17.776009",
   "top_n": 150,
   "players": [
     {
@@ -8,18 +8,32 @@
       "player": "Oscar Tshiebwe",
       "college": "Kentucky",
       "ncaa_rank": 7,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 49.0,
+        "WS": 2.5,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/tshieos01.html",
+      "returned": true,
+      "nba_value": 0.115
     },
     {
       "year": 2022,
       "player": "Orlando Robinson",
       "college": "Fresno State",
       "ncaa_rank": 10,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 115.0,
+        "WS": 3.3,
+        "VORP": -0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/r/robinor01.html",
+      "returned": false,
+      "nba_value": 0.159
     },
     {
       "year": 2022,
@@ -28,7 +42,9 @@
       "ncaa_rank": 11,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/j/jamesjo01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -37,16 +53,25 @@
       "ncaa_rank": 14,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Hunter Dickinson",
       "college": "Michigan",
       "ncaa_rank": 17,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 5.0,
+        "WS": -0.1,
+        "VORP": -0.1
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/d/dickihu01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -55,7 +80,9 @@
       "ncaa_rank": 18,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -64,16 +91,25 @@
       "ncaa_rank": 20,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/w/willitr03.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Quenton Jackson",
       "college": "Texas A&M",
       "ncaa_rank": 21,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 89.0,
+        "WS": 2.7,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/jacksqu01.html",
+      "returned": false,
+      "nba_value": 0.212
     },
     {
       "year": 2022,
@@ -82,7 +118,9 @@
       "ncaa_rank": 23,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -91,7 +129,9 @@
       "ncaa_rank": 24,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/b/binghma01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -100,25 +140,41 @@
       "ncaa_rank": 29,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/mayerma01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Colin Castleton",
       "college": "Florida",
       "ncaa_rank": 31,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 46.0,
+        "WS": 0.8,
+        "VORP": -0.4
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/castlco01.html",
+      "returned": true,
+      "nba_value": 0.109
     },
     {
       "year": 2022,
       "player": "Malachi Smith",
       "college": "Chattanooga",
       "ncaa_rank": 34,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 15.0,
+        "WS": 0.7,
+        "VORP": 0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/s/smithma02.html",
+      "returned": true,
+      "nba_value": 0.124
     },
     {
       "year": 2022,
@@ -127,7 +183,9 @@
       "ncaa_rank": 35,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -136,16 +194,25 @@
       "ncaa_rank": 36,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Alex Morales",
       "college": "Wagner",
       "ncaa_rank": 39,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 4.0,
+        "WS": -0.1,
+        "VORP": -0.1
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/moralal01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -154,7 +221,9 @@
       "ncaa_rank": 41,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -163,7 +232,9 @@
       "ncaa_rank": 42,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -172,7 +243,9 @@
       "ncaa_rank": 44,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -181,16 +254,25 @@
       "ncaa_rank": 45,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/maldohu01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Drew Timme",
       "college": "Gonzaga",
       "ncaa_rank": 48,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 2,
+        "games": 36.0,
+        "WS": 0.5,
+        "VORP": -0.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/t/timmedr01.html",
+      "returned": true,
+      "nba_value": 0.094
     },
     {
       "year": 2022,
@@ -199,7 +281,9 @@
       "ncaa_rank": 49,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -208,7 +292,9 @@
       "ncaa_rank": 50,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -217,25 +303,41 @@
       "ncaa_rank": 53,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Julian Champagnie",
       "college": "St. John's (NY)",
       "ncaa_rank": 55,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 255.0,
+        "WS": 10.9,
+        "VORP": 2.2
+      },
+      "career_tier": "rotation",
+      "source": "https://www.basketball-reference.com/players/c/champju02.html",
+      "returned": false,
+      "nba_value": 0.343
     },
     {
       "year": 2022,
       "player": "Scotty Pippen Jr.",
       "college": "Vanderbilt",
       "ncaa_rank": 56,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 116.0,
+        "WS": 5.8,
+        "VORP": 2.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/p/pippesc02.html",
+      "returned": false,
+      "nba_value": 0.228
     },
     {
       "year": 2022,
@@ -244,7 +346,9 @@
       "ncaa_rank": 58,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -253,7 +357,9 @@
       "ncaa_rank": 59,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -262,7 +368,9 @@
       "ncaa_rank": 60,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/b/brownte01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -271,16 +379,25 @@
       "ncaa_rank": 62,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/t/tubelaz01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Keon Ellis",
       "college": "Alabama",
       "ncaa_rank": 65,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 225.0,
+        "WS": 9.7,
+        "VORP": 3.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/e/elliske01.html",
+      "returned": false,
+      "nba_value": 0.314
     },
     {
       "year": 2022,
@@ -289,7 +406,9 @@
       "ncaa_rank": 66,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -298,16 +417,25 @@
       "ncaa_rank": 68,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/mcconca01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Javon Freeman-Liberty",
       "college": "DePaul",
       "ncaa_rank": 69,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 22.0,
+        "WS": 0.2,
+        "VORP": -0.3
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/f/freemja01.html",
+      "returned": false,
+      "nba_value": 0.143
     },
     {
       "year": 2022,
@@ -316,34 +444,57 @@
       "ncaa_rank": 70,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Alondes Williams",
       "college": "Wake Forest",
       "ncaa_rank": 72,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 13.0,
+        "WS": 0.2,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/w/willial06.html",
+      "returned": false,
+      "nba_value": 0.118
     },
     {
       "year": 2022,
       "player": "Norchad Omier",
       "college": "Arkansas State",
       "ncaa_rank": 73,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 6.0,
+        "WS": 0.2,
+        "VORP": 0.0
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/o/omierno01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Reece Beekman",
       "college": "Virginia",
       "ncaa_rank": 74,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 36.0,
+        "WS": 0.1,
+        "VORP": -0.4
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/b/beekmre01.html",
+      "returned": true,
+      "nba_value": 0.167
     },
     {
       "year": 2022,
@@ -352,16 +503,25 @@
       "ncaa_rank": 75,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/s/sharpja01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Jamaree Bouyea",
       "college": "San Francisco",
       "ncaa_rank": 77,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 65.0,
+        "WS": 0.9,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/b/bouyeja01.html",
+      "returned": false,
+      "nba_value": 0.198
     },
     {
       "year": 2022,
@@ -370,16 +530,25 @@
       "ncaa_rank": 78,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Stanley Umude",
       "college": "Arkansas",
       "ncaa_rank": 79,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 49.0,
+        "WS": 0.4,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/u/umudest01.html",
+      "returned": false,
+      "nba_value": 0.188
     },
     {
       "year": 2022,
@@ -388,7 +557,9 @@
       "ncaa_rank": 80,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/a/armsad01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -397,7 +568,9 @@
       "ncaa_rank": 81,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -406,7 +579,9 @@
       "ncaa_rank": 82,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -415,7 +590,9 @@
       "ncaa_rank": 83,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -424,16 +601,25 @@
       "ncaa_rank": 86,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Jules Bernard",
       "college": "UCLA",
       "ncaa_rank": 87,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 19.0,
+        "WS": 0.1,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/b/bernaju01.html",
+      "returned": false,
+      "nba_value": 0.134
     },
     {
       "year": 2022,
@@ -442,7 +628,9 @@
       "ncaa_rank": 89,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -451,34 +639,57 @@
       "ncaa_rank": 90,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Ron Harper Jr.",
       "college": "Rutgers",
       "ncaa_rank": 91,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 40.0,
+        "WS": 0.9,
+        "VORP": 0.2
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/harpero02.html",
+      "returned": false,
+      "nba_value": 0.17
     },
     {
       "year": 2022,
       "player": "Jared Rhoden",
       "college": "Seton Hall",
       "ncaa_rank": 92,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 45.0,
+        "WS": 1.0,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/r/rhodeja01.html",
+      "returned": false,
+      "nba_value": 0.18
     },
     {
       "year": 2022,
       "player": "Collin Gillespie",
       "college": "Villanova",
       "ncaa_rank": 93,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 3,
+        "games": 137.0,
+        "WS": 7.8,
+        "VORP": 3.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/g/gilleco01.html",
+      "returned": false,
+      "nba_value": 0.244
     },
     {
       "year": 2022,
@@ -487,7 +698,9 @@
       "ncaa_rank": 95,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -496,7 +709,9 @@
       "ncaa_rank": 96,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -505,7 +720,9 @@
       "ncaa_rank": 97,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -514,7 +731,9 @@
       "ncaa_rank": 98,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/w/whitefa01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -523,7 +742,9 @@
       "ncaa_rank": 99,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -532,7 +753,9 @@
       "ncaa_rank": 101,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -541,7 +764,9 @@
       "ncaa_rank": 102,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/t/toneyau01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -550,7 +775,9 @@
       "ncaa_rank": 104,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/b/bradlma01.html",
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -559,7 +786,9 @@
       "ncaa_rank": 105,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/m/mohamam01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -568,7 +797,9 @@
       "ncaa_rank": 106,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -577,7 +808,9 @@
       "ncaa_rank": 107,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -586,7 +819,9 @@
       "ncaa_rank": 108,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -595,16 +830,25 @@
       "ncaa_rank": 109,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Nathan Mensah",
       "college": "San Diego State",
       "ncaa_rank": 110,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 25.0,
+        "WS": 0.1,
+        "VORP": -0.5
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/m/mensana01.html",
+      "returned": true,
+      "nba_value": 0.078
     },
     {
       "year": 2022,
@@ -613,16 +857,25 @@
       "ncaa_rank": 112,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/k/kirkwno01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Dylan Cardwell",
       "college": "Auburn",
       "ncaa_rank": 113,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 44.0,
+        "WS": 2.3,
+        "VORP": 0.0
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/cardwdy01.html",
+      "returned": true,
+      "nba_value": 0.148
     },
     {
       "year": 2022,
@@ -631,7 +884,9 @@
       "ncaa_rank": 114,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -640,7 +895,9 @@
       "ncaa_rank": 115,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -649,7 +906,9 @@
       "ncaa_rank": 118,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -658,7 +917,9 @@
       "ncaa_rank": 119,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -667,16 +928,25 @@
       "ncaa_rank": 121,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Moussa Cisse",
       "college": "Oklahoma State",
       "ncaa_rank": 122,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 1,
+        "games": 38.0,
+        "WS": 1.3,
+        "VORP": -0.1
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/cissemo01.html",
+      "returned": true,
+      "nba_value": 0.126
     },
     {
       "year": 2022,
@@ -685,7 +955,9 @@
       "ncaa_rank": 123,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -694,7 +966,9 @@
       "ncaa_rank": 124,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -703,16 +977,25 @@
       "ncaa_rank": 125,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Izaiah Brockington",
       "college": "Iowa State",
       "ncaa_rank": 126,
-      "career": {},
+      "career": {
+        "years": 1,
+        "games": 1.0,
+        "WS": 0.0,
+        "VORP": 0.0
+      },
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/b/brockiz01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -721,7 +1004,9 @@
       "ncaa_rank": 128,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -730,7 +1015,9 @@
       "ncaa_rank": 129,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -739,7 +1026,9 @@
       "ncaa_rank": 130,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -748,7 +1037,9 @@
       "ncaa_rank": 133,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/e/edwarky01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -757,7 +1048,9 @@
       "ncaa_rank": 134,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -766,7 +1059,9 @@
       "ncaa_rank": 136,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -775,16 +1070,25 @@
       "ncaa_rank": 137,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Johnny Juzang",
       "college": "UCLA",
       "ncaa_rank": 138,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 4,
+        "games": 123.0,
+        "WS": 1.9,
+        "VORP": -0.6
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/j/juzanjo01.html",
+      "returned": false,
+      "nba_value": 0.238
     },
     {
       "year": 2022,
@@ -793,7 +1097,9 @@
       "ncaa_rank": 139,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -802,7 +1108,9 @@
       "ncaa_rank": 140,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -811,7 +1119,9 @@
       "ncaa_rank": 141,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -820,7 +1130,9 @@
       "ncaa_rank": 142,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -829,7 +1141,9 @@
       "ncaa_rank": 143,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -838,7 +1152,9 @@
       "ncaa_rank": 144,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -847,16 +1163,25 @@
       "ncaa_rank": 145,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": "https://www.basketball-reference.com/players/b/beanju01.html",
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
       "player": "Ricky Council IV",
       "college": "Wichita State",
       "ncaa_rank": 146,
-      "career": {},
-      "career_tier": "no_nba",
-      "source": null
+      "career": {
+        "years": 2,
+        "games": 105.0,
+        "WS": 1.6,
+        "VORP": -0.5
+      },
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/c/councri01.html",
+      "returned": true,
+      "nba_value": 0.224
     },
     {
       "year": 2022,
@@ -865,7 +1190,9 @@
       "ncaa_rank": 148,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": false,
+      "nba_value": 0.0
     },
     {
       "year": 2022,
@@ -874,7 +1201,9 @@
       "ncaa_rank": 150,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "returned": true,
+      "nba_value": 0.0
     }
   ]
 }

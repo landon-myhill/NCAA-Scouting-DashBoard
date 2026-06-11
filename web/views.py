@@ -4,6 +4,7 @@ from flask import Blueprint, redirect, render_template, request, url_for
 
 from model.archetypes import (DEFAULT_WEIGHTS, _CLASS_BONUS, _CONF_MULTIPLIER,
                               _POS_VALUE, draft_score)
+from model.strengths import ALL_RECIPES, OFFENSE_RECIPES
 from web import store
 from web.charts import fmt_stat, make_radar_json
 from web.content import (ARCHETYPE_DESCRIPTIONS, SCORE_COMPONENT_KEYS,
@@ -138,6 +139,8 @@ def bigboard():
     sort_mode = request.args.get("sort", "score")
     if sort_mode == "raw":
         pool = sorted(pool, key=lambda p: -(store.raw_score(p) or -1e9))
+    elif sort_mode == "model":
+        pool = sorted(pool, key=lambda p: p.get("sm_rank") or 9999)
     else:
         sort_mode = "score"
         pool = sorted(pool, key=lambda p: p["rank"])
@@ -257,6 +260,57 @@ def needs():
         results=results, profiles=store.PROFILES,
         tier_labels=TIER_LABELS, fmt_stat=fmt_stat,
         arch_desc=ARCHETYPE_DESCRIPTIONS,
+    )
+
+
+@views_bp.route("/archetypes")
+def archetypes():
+    """Ranked leaderboards: every player in the class scored on every
+    applicable archetype, percentiled within the class. Descriptive only —
+    these never feed the draft score."""
+    year_q = request.args.get("year", default="")
+    year = int(year_q) if year_q.isdigit() else store.CURRENT_SEASON_YEAR
+    players, _, season_label = store.get_year_data(year)
+    if players is None:
+        year = store.CURRENT_SEASON_YEAR
+        players, _, season_label = store.get_year_data(year)
+    store.ensure_fits(year, players)
+    pool, _, _ = store.board_filter(players, year, with_stubs=False)
+
+    # Detail view: one archetype, EVERY eligible player, with the component
+    # strengths the recipe is built from.
+    selected = request.args.get("arch", "")
+    detail = None
+    if selected in ALL_RECIPES:
+        _, recipe, _ = ALL_RECIPES[selected]
+        components = [(k.replace("@abs", ""), k.endswith("@abs"), w)
+                      for k, w in sorted(recipe.items(), key=lambda kv: -kv[1])]
+        members = sorted((p for p in pool if selected in (p.get("fits") or {})),
+                         key=lambda p: -p["fits"][selected])
+        detail = {
+            "name": selected,
+            "side": "offensive" if selected in OFFENSE_RECIPES else "defensive",
+            "components": components,
+            "members": members,
+        }
+
+    groups = []
+    for name in ALL_RECIPES:
+        members = sorted((p for p in pool if name in (p.get("fits") or {})),
+                         key=lambda p: -p["fits"][name])
+        if members:
+            groups.append({
+                "name": name,
+                "side": "offensive" if name in OFFENSE_RECIPES else "defensive",
+                "members": members[:15],
+                "total": len(members),
+            })
+
+    return render_template("archetypes.html",
+        groups=groups, detail=detail, all_archetypes=list(ALL_RECIPES),
+        arch_desc=ARCHETYPE_DESCRIPTIONS,
+        available_years=store.available_years(), current_year=year,
+        season_label=season_label,
     )
 
 

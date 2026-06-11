@@ -597,15 +597,19 @@ def classify(player: dict) -> dict:
     # DEFENSIVE ARCHETYPES — collect ALL that qualify, no fallbacks
     # ═══════════════════════════════════════════════════════════════════════════
 
+    # "Positive defender" gate: dbpm > 0 was meaningless (98% of the top 300
+    # clear it — the population median is +3.0). Use ~the 25th percentile so
+    # the label actually claims above-the-bar defense for a draft prospect.
+    _DEF_OK = 2.0
     if bpg > 2 and dws > 1.5 and dbpm > 2:
         all_defensive.append("Defensive Anchor")
-    if is_guard and spg > 1.5 and dbpm > 0:
+    if is_guard and spg > 1.5 and dbpm >= _DEF_OK:
         all_defensive.append("Point of Attack Defender")
     if spg > 1.5 and not is_big:
         all_defensive.append("Perimeter Pest")
-    if is_wing and spg > 1 and bpg > 0.5 and dbpm > 0:
+    if is_wing and spg > 1 and bpg > 0.5 and dbpm >= _DEF_OK:
         all_defensive.append("Wing Stopper")
-    if spg > 1 and bpg > 0.8 and dbpm > 0:
+    if spg > 1 and bpg > 0.8 and dbpm >= _DEF_OK:
         all_defensive.append("Versatile Defender")
     if is_big and bpg > 1.5:
         all_defensive.append("Paint Presence")
@@ -637,9 +641,14 @@ def classify(player: dict) -> dict:
         "Weak Side Shot Blocker", "Help Defender",
     }
     skill_def = player.get("skills", {}).get("Defense")
-    # Stat veto: if on-court defensive impact is clearly elite, the scout
-    # grade can't override it (it's likely just an inaccurate/stale grade).
-    elite_def_stats = dbpm > 2.5 and dws > 1.5
+    # Stat veto: the scout grade is a stocks/def-rebound heuristic that
+    # structurally punishes guards (it branded 30% of top-200 guards
+    # below-average vs 13% of forwards). The downgrade only sticks when the
+    # impact stats AGREE the defense is weak: DBPM below the position's
+    # prospect median (G 2.9 / F 3.3 / C 3.5) and no elite-impact profile.
+    _POS_DBPM_MED = {"G": 2.9, "F": 3.3, "C": 3.5}
+    elite_def_stats = (dbpm >= _POS_DBPM_MED.get(pos, 3.0)
+                       or (dbpm > 2.5 and dws > 1.5))
     if isinstance(skill_def, (int, float)) and not elite_def_stats:
         if skill_def < 30:
             all_defensive = [a for a in all_defensive if a not in _POSITIVE_DEF]

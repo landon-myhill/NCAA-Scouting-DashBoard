@@ -298,7 +298,7 @@
       "rank": 3,
       "tier": 1,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Shot Creator",
         "Three-Level Scorer",
@@ -318,10 +318,11 @@
       "all_offensive": [
         "Scoring Guard",
         "Three-Level Scorer",
+        "Two-Way Star",
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "in_draft",
       "recruit_rank": 2,
@@ -1165,7 +1166,7 @@
       "rank": 11,
       "tier": 1,
       "archetype": "Combo Guard",
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Three-Level Scorer",
         "Secondary Scorer",
@@ -1191,7 +1192,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "in_draft",
       "pred": {
@@ -3136,7 +3137,7 @@
       "rank": 30,
       "tier": 2,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Reluctant Passer",
@@ -3151,7 +3152,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 39,
@@ -3329,7 +3330,7 @@
       "rank": 32,
       "tier": 2,
       "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Three-Level Scorer",
         "Secondary Scorer",
@@ -3349,10 +3350,12 @@
       "red_flags": [],
       "all_offensive": [
         "Three-Level Scorer",
+        "Two-Way Star",
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -3522,7 +3525,7 @@
       "rank": 34,
       "tier": 2,
       "archetype": "Two-Way Star",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -3541,7 +3544,6 @@
         "Two-Way Star"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": "withdrawn",
@@ -3628,7 +3630,7 @@
       "rank": 35,
       "tier": 2,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -3647,7 +3649,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -3715,7 +3717,7 @@
       "rank": 36,
       "tier": 2,
       "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Three-Level Scorer",
         "Clutch FT Upside",
@@ -3738,7 +3740,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -3928,7 +3930,7 @@
       "rank": 38,
       "tier": 2,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "Elite from the Line",
@@ -3940,7 +3942,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 15,
@@ -4984,7 +4986,7 @@
       "rank": 49,
       "tier": 3,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Primary Option",
         "Transition Threat",
@@ -5011,9 +5013,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper"
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -5189,7 +5189,7 @@
       "rank": 51,
       "tier": 3,
       "archetype": "Floor General",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Secondary Scorer",
         "Selective Shooter",
@@ -5205,10 +5205,12 @@
       ],
       "red_flags": [],
       "all_offensive": [
-        "Floor General"
+        "Floor General",
+        "Two-Way Wing"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -6141,7 +6143,7 @@
       "rank": 61,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -6154,7 +6156,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "withdrawn",
       "recruit_rank": 13,
@@ -7706,7 +7708,7 @@
       "rank": 78,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -7732,10 +7734,7 @@
         "Rebounder"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper",
-        "Versatile Defender"
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -10109,7 +10108,7 @@
       "rank": 104,
       "tier": 3,
       "archetype": "Post Scorer",
-      "defensive_archetype": "Versatile Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Rim Finisher",
         "Secondary Scorer",
@@ -10137,7 +10136,7 @@
         "Old School Big"
       ],
       "all_defensive": [
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -10205,7 +10204,7 @@
       "rank": 105,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -10228,7 +10227,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -11096,7 +11095,7 @@
       "rank": 115,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -11115,8 +11114,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -11805,7 +11803,7 @@
       "rank": 123,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -11815,7 +11813,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -12313,7 +12311,7 @@
       "rank": 129,
       "tier": 3,
       "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Three-Level Scorer",
         "Secondary Scorer",
@@ -12333,8 +12331,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -12402,7 +12399,7 @@
       "rank": 130,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -12417,7 +12414,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -12924,7 +12921,7 @@
       "rank": 136,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -12942,7 +12939,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 24,
@@ -13275,7 +13272,7 @@
       "rank": 140,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -13291,7 +13288,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -13874,7 +13871,7 @@
       "rank": 147,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -13893,7 +13890,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -14048,7 +14044,7 @@
       "rank": 149,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -14074,8 +14070,7 @@
         "Rebounder"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -14584,7 +14579,7 @@
       "rank": 155,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -14599,9 +14594,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper"
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -14669,7 +14662,7 @@
       "rank": 156,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -14681,7 +14674,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -14843,7 +14836,7 @@
       "rank": 158,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -14853,7 +14846,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -15004,7 +14997,7 @@
       "rank": 160,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -15027,7 +15020,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -15262,7 +15255,7 @@
       "rank": 163,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Tertiary Piece",
         "Sniper",
@@ -15276,7 +15269,8 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -15922,7 +15916,7 @@
       "rank": 171,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -15933,7 +15927,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 48,
@@ -16436,7 +16430,7 @@
       "rank": 177,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -16457,7 +16451,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 28,
@@ -16690,7 +16684,7 @@
       "rank": 180,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Paint Presence",
       "tags": [
         "Secondary Scorer",
         "Pick and Roll Roller",
@@ -16712,8 +16706,6 @@
         "Rim Protector"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender",
         "Paint Presence"
       ],
       "draft_status": null,
@@ -17036,7 +17028,7 @@
       "rank": 184,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -17052,7 +17044,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -17291,7 +17283,7 @@
       "rank": 187,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Sniper",
@@ -17305,7 +17297,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 37,
@@ -17454,7 +17446,7 @@
       "rank": 189,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -17468,7 +17460,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 18,
@@ -18430,7 +18422,7 @@
       "rank": 200,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -18447,7 +18439,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -18774,7 +18766,7 @@
       "rank": 204,
       "tier": 3,
       "archetype": "Rebounder",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -18798,7 +18790,6 @@
         "Rebounder"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
@@ -19032,7 +19023,7 @@
       "rank": 207,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -19055,7 +19046,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -19207,7 +19198,7 @@
       "rank": 209,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -19223,9 +19214,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper"
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -19824,7 +19813,7 @@
       "rank": 216,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Wing Stopper",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -19839,7 +19828,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Wing Stopper"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -20309,15 +20298,18 @@
       "rank": 222,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Secondary Scorer",
         "Moderate Usage"
       ],
       "red_flags": [],
-      "all_offensive": [],
+      "all_offensive": [
+        "Two-Way Wing"
+      ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -20643,7 +20635,7 @@
       "rank": 226,
       "tier": 3,
       "archetype": "Rim Protector",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Paint Presence",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -20662,7 +20654,7 @@
         "Rim Protector"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Paint Presence"
       ],
       "draft_status": null,
       "pred": {
@@ -21267,7 +21259,7 @@
       "rank": 233,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -21283,7 +21275,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -21429,7 +21421,7 @@
       "rank": 235,
       "tier": 3,
       "archetype": "Combo Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Three-Level Scorer",
         "Secondary Scorer",
@@ -21454,7 +21446,6 @@
         "Playmaker"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -21767,7 +21758,7 @@
       "rank": 239,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Transition Threat",
         "Streaky Shooter",
@@ -21785,7 +21776,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -22452,7 +22442,7 @@
       "rank": 247,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -22464,7 +22454,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -22625,7 +22615,7 @@
       "rank": 249,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -22637,7 +22627,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -23548,7 +23538,7 @@
       "rank": 260,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -23564,10 +23554,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper",
-        "Versatile Defender"
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -24075,7 +24062,7 @@
       "rank": 266,
       "tier": 3,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Transition Threat",
         "Streaky Shooter",
@@ -24094,7 +24081,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
@@ -24163,7 +24149,7 @@
       "rank": 267,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -24184,9 +24170,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper"
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -24254,7 +24238,7 @@
       "rank": 268,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Developing Range",
         "Guard Rebounder",
@@ -24264,7 +24248,6 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -24415,7 +24398,7 @@
       "rank": 270,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -24432,7 +24415,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -24775,7 +24758,7 @@
       "rank": 274,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -24788,7 +24771,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -24856,7 +24839,7 @@
       "rank": 275,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -24867,7 +24850,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -26744,7 +26727,7 @@
       "rank": 297,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Streaky Shooter",
         "Elite Rebounder",
@@ -26764,8 +26747,7 @@
         "Glass Cleaner"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -27398,7 +27380,7 @@
       "rank": 305,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Transition Threat",
         "No Range",
@@ -27419,7 +27401,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -28008,7 +27989,7 @@
       "rank": 312,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Tertiary Piece",
         "Guard Rebounder",
@@ -28024,7 +28005,6 @@
         "3-and-D Guard"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -28575,7 +28555,7 @@
       "rank": 319,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Wing Stopper",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -28590,7 +28570,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Wing Stopper"
       ],
       "draft_status": null,
       "pred": {
@@ -29103,7 +29083,7 @@
       "rank": 325,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -29123,7 +29103,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -29853,7 +29833,7 @@
       "rank": 334,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -29869,8 +29849,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -30196,7 +30175,7 @@
       "rank": 338,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance"
@@ -30204,7 +30183,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -30360,7 +30339,7 @@
       "rank": 340,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -30369,7 +30348,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 49,
@@ -30682,7 +30661,7 @@
       "rank": 344,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -30699,7 +30678,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -31015,7 +30994,7 @@
       "rank": 348,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Wing Stopper",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -31028,7 +31007,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Wing Stopper"
       ],
       "draft_status": null,
       "pred": {
@@ -31861,7 +31840,7 @@
       "rank": 358,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "No Range",
@@ -31883,7 +31862,7 @@
         "Glass Cleaner"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -33529,7 +33508,7 @@
       "rank": 378,
       "tier": 3,
       "archetype": "Glass Cleaner",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -33549,7 +33528,7 @@
         "Old School Big"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -33858,7 +33837,7 @@
       "rank": 382,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -33879,7 +33858,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -34826,7 +34805,7 @@
       "rank": 393,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -34838,7 +34817,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 22,
@@ -36151,7 +36130,7 @@
       "rank": 409,
       "tier": 3,
       "archetype": "Three-Level Scorer",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Three-Level Scorer",
         "Secondary Scorer",
@@ -36172,7 +36151,7 @@
         "Modern Big"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 21,
@@ -36481,7 +36460,7 @@
       "rank": 413,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -36495,7 +36474,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -37049,7 +37028,7 @@
       "rank": 420,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Reluctant Passer",
@@ -37066,7 +37045,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -37318,7 +37297,7 @@
       "rank": 423,
       "tier": 3,
       "archetype": "Rim Protector",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Paint Presence",
       "tags": [
         "No Range",
         "Putback Specialist",
@@ -37329,8 +37308,6 @@
         "Rim Protector"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender",
         "Paint Presence"
       ],
       "draft_status": null,
@@ -37817,7 +37794,7 @@
       "rank": 429,
       "tier": 3,
       "archetype": "Rebounder",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Board Crasher",
         "Guard Rebounder",
@@ -37831,7 +37808,7 @@
         "Rebounder"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -37983,7 +37960,7 @@
       "rank": 431,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -37996,7 +37973,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -38148,7 +38125,7 @@
       "rank": 433,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -38158,7 +38135,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -38226,7 +38203,7 @@
       "rank": 434,
       "tier": 3,
       "archetype": "Modern Big",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -38242,7 +38219,7 @@
         "Modern Big"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -38310,7 +38287,7 @@
       "rank": 435,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "Above Average Efficiency",
@@ -38323,8 +38300,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -38477,7 +38453,7 @@
       "rank": 437,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "Transition Threat",
@@ -38492,8 +38468,7 @@
         "Rebounder"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -39552,7 +39527,7 @@
       "rank": 450,
       "tier": 3,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Shot Creator",
         "Three-Level Scorer",
@@ -39573,7 +39548,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -39888,7 +39862,7 @@
       "rank": 454,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "No Range",
@@ -39904,7 +39878,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -39975,7 +39948,7 @@
       "rank": 455,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -39987,7 +39960,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -40730,7 +40703,7 @@
       "rank": 464,
       "tier": 3,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Shot Creator",
         "Three-Level Scorer",
@@ -40755,7 +40728,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
@@ -41014,7 +40986,7 @@
       "rank": 467,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -41036,7 +41008,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -41183,7 +41155,7 @@
       "rank": 469,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -41205,7 +41177,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -41604,7 +41576,7 @@
       "rank": 474,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -41623,7 +41595,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -42333,7 +42305,7 @@
       "rank": 483,
       "tier": 3,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Primary Option",
         "Transition Threat",
@@ -42352,7 +42324,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
@@ -42912,7 +42883,7 @@
       "rank": 490,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -42934,7 +42905,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -43161,7 +43132,7 @@
       "rank": 493,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -43174,7 +43145,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -43399,7 +43370,7 @@
       "rank": 496,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -43419,7 +43390,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -44314,7 +44285,7 @@
       "rank": 507,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -44333,7 +44304,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 34,
@@ -44736,7 +44707,7 @@
       "rank": 512,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -44755,7 +44726,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 16,
@@ -44988,7 +44959,7 @@
       "rank": 515,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -45001,7 +44972,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -45230,7 +45201,7 @@
       "rank": 518,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Below Average Efficiency",
         "Plus Size",
@@ -45239,7 +45210,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -45389,7 +45360,7 @@
       "rank": 520,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -45401,7 +45372,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -45819,7 +45790,7 @@
       "rank": 525,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Tertiary Piece",
         "Elite from the Line",
@@ -45833,7 +45804,8 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -46075,7 +46047,7 @@
       "rank": 528,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -46087,8 +46059,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -46156,7 +46127,7 @@
       "rank": 529,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -46166,7 +46137,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -46315,7 +46286,7 @@
       "rank": 531,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -46330,7 +46301,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -46398,7 +46369,7 @@
       "rank": 532,
       "tier": 3,
       "archetype": "Rim Protector",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Reluctant Passer",
         "Moderate Usage",
@@ -46411,8 +46382,7 @@
         "Rim Protector"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -46559,7 +46529,7 @@
       "rank": 534,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -46574,7 +46544,7 @@
         "3-and-D Guard"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -46888,7 +46858,7 @@
       "rank": 538,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -46900,7 +46870,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 40,
@@ -46970,7 +46940,7 @@
       "rank": 539,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -46982,7 +46952,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -47459,7 +47429,7 @@
       "rank": 545,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Rim Finisher",
         "Secondary Scorer",
@@ -47477,8 +47447,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -47640,7 +47609,7 @@
       "rank": 547,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Secondary Scorer",
         "Volume Three Shooter",
@@ -47654,7 +47623,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
@@ -47723,7 +47691,7 @@
       "rank": 548,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Wing Stopper",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -47734,7 +47702,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Wing Stopper"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -47882,7 +47850,7 @@
       "rank": 550,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -47895,7 +47863,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 39,
@@ -48047,7 +48015,7 @@
       "rank": 552,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -48063,7 +48031,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -48306,7 +48274,7 @@
       "rank": 555,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -48322,7 +48290,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -48879,7 +48847,7 @@
       "rank": 562,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -48893,7 +48861,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -49807,7 +49775,7 @@
       "rank": 573,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -49822,7 +49790,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 34,
@@ -50059,7 +50027,7 @@
       "rank": 576,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "Moderate Usage"
@@ -50067,7 +50035,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 38,
@@ -50137,7 +50105,7 @@
       "rank": 577,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -50152,7 +50120,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -50470,7 +50438,7 @@
       "rank": 581,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -50489,7 +50457,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -52459,7 +52427,7 @@
       "rank": 605,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "No Range",
@@ -52472,7 +52440,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -53447,7 +53415,7 @@
       "rank": 617,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -53457,7 +53425,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -53525,7 +53493,7 @@
       "rank": 618,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -53543,7 +53511,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -53780,7 +53748,7 @@
       "rank": 621,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Tertiary Piece",
         "Streaky Shooter",
@@ -53790,9 +53758,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Point of Attack Defender",
-        "Perimeter Pest",
-        "Wing Stopper"
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -54361,7 +54327,7 @@
       "rank": 628,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -54374,7 +54340,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -56148,7 +56114,7 @@
       "rank": 650,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -56163,7 +56129,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -57374,7 +57340,7 @@
       "rank": 665,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -57390,7 +57356,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -58109,7 +58075,7 @@
       "rank": 674,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -58125,8 +58091,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -58273,7 +58238,7 @@
       "rank": 676,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -58283,7 +58248,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -58936,7 +58901,7 @@
       "rank": 684,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -58957,7 +58922,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -61224,7 +61189,7 @@
       "rank": 712,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -61236,7 +61201,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -63186,7 +63151,7 @@
       "rank": 736,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -63197,7 +63162,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -63761,7 +63726,7 @@
       "rank": 743,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Boards",
@@ -63776,7 +63741,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -64344,7 +64309,7 @@
       "rank": 750,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -64356,7 +64321,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -65006,7 +64971,7 @@
       "rank": 758,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -65019,7 +64984,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -65087,7 +65052,7 @@
       "rank": 759,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Secondary Scorer",
         "Sniper",
@@ -65098,10 +65063,12 @@
       ],
       "red_flags": [],
       "all_offensive": [
-        "3-and-D Guard"
+        "3-and-D Guard",
+        "Two-Way Wing"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -65419,7 +65386,7 @@
       "rank": 763,
       "tier": 3,
       "archetype": "Scoring Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Primary Option",
         "Transition Threat",
@@ -65437,10 +65404,12 @@
       ],
       "red_flags": [],
       "all_offensive": [
-        "Scoring Guard"
+        "Scoring Guard",
+        "Two-Way Star"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -68319,7 +68288,7 @@
       "rank": 798,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -68330,7 +68299,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -68802,14 +68771,13 @@
       "rank": 804,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Developing Range"
       ],
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -69118,7 +69086,7 @@
       "rank": 808,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -69140,7 +69108,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -69208,7 +69176,7 @@
       "rank": 809,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -69222,7 +69190,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -72055,7 +72023,7 @@
       "rank": 844,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -72072,7 +72040,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -73029,7 +72997,7 @@
       "rank": 856,
       "tier": 3,
       "archetype": "Rim Protector",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Paint Presence",
       "tags": [
         "No Range",
         "Plus Size"
@@ -73039,8 +73007,6 @@
         "Rim Protector"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender",
         "Paint Presence"
       ],
       "draft_status": "auto_eligible",
@@ -73350,7 +73316,7 @@
       "rank": 860,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -73363,7 +73329,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -73679,7 +73645,7 @@
       "rank": 864,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -73695,7 +73661,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -73846,7 +73812,7 @@
       "rank": 866,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -73858,7 +73824,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -74165,7 +74131,7 @@
       "rank": 870,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance"
@@ -74173,7 +74139,8 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -74746,7 +74713,7 @@
       "rank": 877,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Avoids the Line",
@@ -74757,7 +74724,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -74909,7 +74876,7 @@
       "rank": 879,
       "tier": 3,
       "archetype": "Combo Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Three-Level Scorer",
         "Transition Threat",
@@ -74928,10 +74895,12 @@
       "red_flags": [],
       "all_offensive": [
         "Combo Guard",
-        "Three-Level Scorer"
+        "Three-Level Scorer",
+        "Two-Way Star"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -75075,7 +75044,7 @@
       "rank": 881,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -75092,7 +75061,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 37,
@@ -75252,7 +75221,7 @@
       "rank": 883,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -75263,7 +75232,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "recruit_rank": 33,
@@ -75333,7 +75302,7 @@
       "rank": 884,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -75355,7 +75324,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -76254,7 +76223,7 @@
       "rank": 895,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -76266,7 +76235,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -77622,7 +77591,7 @@
       "rank": 912,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Elite from the Line",
@@ -77633,7 +77602,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -78212,7 +78181,7 @@
       "rank": 919,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Above Average Efficiency",
@@ -78225,7 +78194,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -79865,7 +79834,7 @@
       "rank": 939,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -79879,7 +79848,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -80028,7 +79997,7 @@
       "rank": 941,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Reluctant Passer",
@@ -80041,7 +80010,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -80841,7 +80810,7 @@
       "rank": 951,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -80855,7 +80824,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -81153,7 +81122,7 @@
       "rank": 955,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Secondary Scorer",
         "No Range",
@@ -81166,8 +81135,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -81554,7 +81522,7 @@
       "rank": 960,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -81565,7 +81533,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -81714,7 +81682,7 @@
       "rank": 962,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -81729,7 +81697,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -83284,7 +83252,7 @@
       "rank": 981,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -83305,7 +83273,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -83616,7 +83584,7 @@
       "rank": 985,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -83637,7 +83605,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 28,
@@ -83960,14 +83928,13 @@
       "rank": 989,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [],
       "red_flags": [
         "One-Dimensional"
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -86488,7 +86455,7 @@
       "rank": 1020,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -86502,7 +86469,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -91506,7 +91473,7 @@
       "rank": 1081,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -91520,7 +91487,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -93366,7 +93333,7 @@
       "rank": 1104,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -93382,7 +93349,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -93450,7 +93417,7 @@
       "rank": 1105,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -93467,7 +93434,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -93697,7 +93664,7 @@
       "rank": 1108,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -93715,7 +93682,8 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -94818,7 +94786,7 @@
       "rank": 1122,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -94835,7 +94803,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -95475,7 +95443,7 @@
       "rank": 1130,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -95490,7 +95458,8 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -95558,7 +95527,7 @@
       "rank": 1131,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -95573,7 +95542,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -98268,7 +98237,7 @@
       "rank": 1164,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -98284,7 +98253,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -99396,7 +99365,7 @@
       "rank": 1178,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -99416,7 +99385,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -99801,7 +99770,7 @@
       "rank": 1183,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Avoids the Line",
@@ -99810,7 +99779,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -99961,7 +99930,7 @@
       "rank": 1185,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Paint Presence",
       "tags": [
         "Secondary Scorer",
         "No Range",
@@ -99975,8 +99944,6 @@
         "Rim Protector"
       ],
       "all_defensive": [
-        "Wing Stopper",
-        "Versatile Defender",
         "Paint Presence"
       ],
       "draft_status": null,
@@ -100460,7 +100427,7 @@
       "rank": 1191,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "No Boards",
@@ -100475,7 +100442,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -101440,7 +101407,7 @@
       "rank": 1203,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Spot Up Role",
         "Sniper",
@@ -101454,7 +101421,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "testing_waters",
       "pred": {
@@ -101866,7 +101833,7 @@
       "rank": 1208,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -101883,7 +101850,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -102113,7 +102080,7 @@
       "rank": 1211,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -102132,7 +102099,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -103098,7 +103065,7 @@
       "rank": 1223,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -103113,7 +103080,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -104478,7 +104445,7 @@
       "rank": 1240,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Pick and Roll Roller",
         "No Range",
@@ -104496,7 +104463,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -105546,7 +105513,7 @@
       "rank": 1253,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -105565,7 +105532,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -106751,7 +106718,7 @@
       "rank": 1268,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -106761,7 +106728,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -108222,7 +108189,7 @@
       "rank": 1286,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -108247,7 +108214,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -108476,7 +108443,7 @@
       "rank": 1289,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -108491,7 +108458,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -110333,7 +110300,7 @@
       "rank": 1312,
       "tier": 3,
       "archetype": "Modern Big",
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -110353,7 +110320,7 @@
         "Modern Big"
       ],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -110741,7 +110708,7 @@
       "rank": 1317,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -110751,7 +110718,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -111065,7 +111032,7 @@
       "rank": 1321,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -111085,7 +111052,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -111313,7 +111280,7 @@
       "rank": 1324,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -111323,7 +111290,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -112020,7 +111987,7 @@
       "rank": 1333,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Spot Up Role",
         "Selective Shooter",
@@ -112037,7 +112004,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -112345,7 +112312,7 @@
       "rank": 1337,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -112361,7 +112328,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -112998,7 +112965,7 @@
       "rank": 1345,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -113016,7 +112983,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -114451,7 +114418,7 @@
       "rank": 1363,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -114467,7 +114434,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -115016,7 +114983,7 @@
       "rank": 1370,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -115030,7 +114997,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -116657,7 +116624,7 @@
       "rank": 1390,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -116669,7 +116636,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -118988,7 +118955,7 @@
       "rank": 1419,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -119008,7 +118975,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -119316,7 +119283,7 @@
       "rank": 1423,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -119332,7 +119299,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "recruit_rank": 46,
@@ -120289,7 +120256,7 @@
       "rank": 1435,
       "tier": 3,
       "archetype": "Glass Cleaner",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -120305,7 +120272,7 @@
         "Glass Cleaner"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -121816,7 +121783,7 @@
       "rank": 1454,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -121832,7 +121799,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -123531,7 +123498,7 @@
       "rank": 1475,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -123546,7 +123513,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -124831,7 +124798,7 @@
       "rank": 1491,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Boards",
@@ -124845,7 +124812,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -127737,7 +127704,7 @@
       "rank": 1527,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Elite from the Line",
@@ -127748,7 +127715,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -132900,7 +132867,7 @@
       "rank": 1591,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Reluctant Passer",
@@ -132916,7 +132883,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -134435,7 +134402,7 @@
       "rank": 1610,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -134450,7 +134417,8 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -135718,7 +135686,7 @@
       "rank": 1626,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Elite from the Line",
@@ -135730,7 +135698,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -136281,7 +136249,7 @@
       "rank": 1633,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -136295,7 +136263,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -136934,7 +136902,7 @@
       "rank": 1641,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -136950,7 +136918,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -137333,7 +137301,7 @@
       "rank": 1646,
       "tier": 3,
       "archetype": "Sharpshooter",
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -137350,7 +137318,7 @@
         "Sharpshooter"
       ],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -139991,7 +139959,7 @@
       "rank": 1679,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -140008,7 +139976,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -142973,7 +142941,7 @@
       "rank": 1716,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -142987,7 +142955,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -143055,7 +143023,7 @@
       "rank": 1717,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Spot Up Role",
         "Selective Shooter",
@@ -143069,7 +143037,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -144813,7 +144781,7 @@
       "rank": 1739,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -144830,7 +144798,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -144898,7 +144866,7 @@
       "rank": 1740,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -144910,7 +144878,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -150490,7 +150458,7 @@
       "rank": 1809,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -150501,7 +150469,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -153369,7 +153337,7 @@
       "rank": 1845,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -153390,7 +153358,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -154036,7 +154004,7 @@
       "rank": 1853,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -154052,7 +154020,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -155481,7 +155449,7 @@
       "rank": 1871,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -155497,7 +155465,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -157418,7 +157386,7 @@
       "rank": 1895,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -157432,7 +157400,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -157907,7 +157875,7 @@
       "rank": 1901,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -157919,7 +157887,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -158546,7 +158514,7 @@
       "rank": 1909,
       "tier": 3,
       "archetype": "Combo Guard",
-      "defensive_archetype": "Point of Attack Defender",
+      "defensive_archetype": "Perimeter Pest",
       "tags": [
         "Transition Threat",
         "Pick and Roll Ball Handler",
@@ -158562,7 +158530,6 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Point of Attack Defender",
         "Perimeter Pest"
       ],
       "draft_status": null,
@@ -162343,7 +162310,7 @@
       "rank": 1956,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -162356,7 +162323,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -162584,7 +162551,7 @@
       "rank": 1959,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -162597,7 +162564,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -164192,7 +164159,7 @@
       "rank": 1979,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -164207,7 +164174,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -165155,7 +165122,7 @@
       "rank": 1991,
       "tier": 3,
       "archetype": "3-and-D Guard",
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -165170,7 +165137,7 @@
         "3-and-D Guard"
       ],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -167327,7 +167294,7 @@
       "rank": 2018,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -167339,7 +167306,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -169307,7 +169274,7 @@
       "rank": 2043,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Developing Range",
@@ -169325,7 +169292,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -170283,7 +170250,7 @@
       "rank": 2055,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "No Boards",
@@ -170296,7 +170263,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -171732,7 +171699,7 @@
       "rank": 2073,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Elite from the Line",
@@ -171743,7 +171710,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -175434,7 +175401,7 @@
       "rank": 2119,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Elite from the Line",
@@ -175446,7 +175413,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -175839,7 +175806,7 @@
       "rank": 2124,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -175860,7 +175827,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -177449,7 +177416,7 @@
       "rank": 2144,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -177464,7 +177431,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -182465,7 +182432,7 @@
       "rank": 2207,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -182477,7 +182444,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -185199,7 +185166,7 @@
       "rank": 2241,
       "tier": 3,
       "archetype": "Two-Way Wing",
-      "defensive_archetype": "Wing Stopper",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Mid-Range Reliant",
@@ -185218,7 +185185,7 @@
         "Two-Way Wing"
       ],
       "all_defensive": [
-        "Wing Stopper"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -185842,7 +185809,7 @@
       "rank": 2249,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Below Average Efficiency",
         "Undrafted Range"
@@ -185852,7 +185819,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -187145,7 +187112,7 @@
       "rank": 2265,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Low Maintenance",
@@ -187158,7 +187125,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -194995,7 +194962,7 @@
       "rank": 2362,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Elite from the Line",
@@ -195005,7 +194972,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -196529,7 +196496,7 @@
       "rank": 2381,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -196547,7 +196514,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -201167,7 +201134,7 @@
       "rank": 2439,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -201183,7 +201150,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -201251,7 +201218,7 @@
       "rank": 2440,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -201267,7 +201234,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -204135,7 +204102,7 @@
       "rank": 2476,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -204144,7 +204111,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -209088,7 +209055,7 @@
       "rank": 2538,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "No Boards",
@@ -209102,7 +209069,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -215283,7 +215250,7 @@
       "rank": 2615,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Point of Attack Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -215296,7 +215263,8 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Point of Attack Defender",
+        "Perimeter Pest"
       ],
       "draft_status": null,
       "pred": {
@@ -215364,7 +215332,7 @@
       "rank": 2616,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Elite from the Line",
@@ -215375,7 +215343,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -220914,7 +220882,7 @@
       "rank": 2685,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -220931,7 +220899,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -222603,7 +222571,7 @@
       "rank": 2706,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -222620,7 +222588,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -223160,7 +223128,7 @@
       "rank": 2713,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -223170,7 +223138,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -225523,7 +225491,7 @@
       "rank": 2742,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -225538,7 +225506,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -227196,7 +227164,7 @@
       "rank": 2763,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -227209,7 +227177,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -232713,7 +232681,7 @@
       "rank": 2832,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Pick and Roll Roller",
         "No Range",
@@ -232729,7 +232697,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -235364,7 +235332,7 @@
       "rank": 2865,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -235374,7 +235342,7 @@
       "red_flags": [],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -240284,7 +240252,7 @@
       "rank": 2926,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -240300,7 +240268,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -242809,7 +242777,7 @@
       "rank": 2957,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Pick and Roll Roller",
         "No Range",
@@ -242825,7 +242793,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -243533,7 +243501,7 @@
       "rank": 2966,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -243556,7 +243524,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -246501,7 +246469,7 @@
       "rank": 3003,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -246519,7 +246487,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -249390,7 +249358,7 @@
       "rank": 3039,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Pick and Roll Roller",
         "No Range",
@@ -249405,7 +249373,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -253483,7 +253451,7 @@
       "rank": 3090,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "No Boards",
@@ -253497,7 +253465,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -254783,7 +254751,7 @@
       "rank": 3106,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -254800,7 +254768,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -255526,7 +255494,7 @@
       "rank": 3115,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -255543,7 +255511,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -258503,7 +258471,7 @@
       "rank": 3152,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "No Boards",
@@ -258518,7 +258486,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -260412,7 +260380,7 @@
       "rank": 3176,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -260434,7 +260402,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -260667,7 +260635,7 @@
       "rank": 3179,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -260682,7 +260650,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -264834,7 +264802,7 @@
       "rank": 3231,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "No Boards",
@@ -264847,7 +264815,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -266698,7 +266666,7 @@
       "rank": 3254,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Boards",
@@ -266711,7 +266679,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -272569,7 +272537,7 @@
       "rank": 3326,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -272585,7 +272553,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -277267,7 +277235,7 @@
       "rank": 3384,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Spot Up Role",
         "Selective Shooter",
@@ -277282,7 +277250,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -277350,7 +277318,7 @@
       "rank": 3385,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Spot Up Role",
         "Selective Shooter",
@@ -277366,7 +277334,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -277834,7 +277802,7 @@
       "rank": 3391,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -277855,7 +277823,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -279943,7 +279911,7 @@
       "rank": 3417,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -279964,7 +279932,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -280530,7 +280498,7 @@
       "rank": 3424,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -280547,7 +280515,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -284503,7 +284471,7 @@
       "rank": 3473,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -284517,7 +284485,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -292040,7 +292008,7 @@
       "rank": 3566,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Pick and Roll Roller",
         "No Range",
@@ -292055,7 +292023,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -292211,7 +292179,7 @@
       "rank": 3568,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -292228,7 +292196,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -293830,7 +293798,7 @@
       "rank": 3588,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Spot Up Role",
         "Selective Shooter",
@@ -293847,7 +293815,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -296284,7 +296252,7 @@
       "rank": 3618,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -296300,7 +296268,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -297892,7 +297860,7 @@
       "rank": 3638,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Below Average Efficiency",
@@ -297904,7 +297872,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -299491,7 +299459,7 @@
       "rank": 3658,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -299506,7 +299474,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -302788,7 +302756,7 @@
       "rank": 3699,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -302801,7 +302769,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -304404,7 +304372,7 @@
       "rank": 3719,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Pick and Roll Roller",
@@ -304426,7 +304394,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -308839,7 +308807,7 @@
       "rank": 3774,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Selective Shooter",
@@ -308857,7 +308825,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -311663,7 +311631,7 @@
       "rank": 3809,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -311678,7 +311646,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -316862,7 +316830,7 @@
       "rank": 3873,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -316878,7 +316846,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -326681,7 +326649,7 @@
       "rank": 3994,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -326699,7 +326667,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -327830,7 +327798,7 @@
       "rank": 4008,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "No Range",
         "Below Average Efficiency",
@@ -327843,7 +327811,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": "auto_eligible",
       "pred": {
@@ -334477,7 +334445,7 @@
       "rank": 4089,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Below-Average Defender",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "No Range",
@@ -334492,7 +334460,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Below-Average Defender"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {
@@ -337345,7 +337313,7 @@
       "rank": 4124,
       "tier": 3,
       "archetype": null,
-      "defensive_archetype": "Defensive Liability",
+      "defensive_archetype": "Average Defender",
       "tags": [
         "Tertiary Piece",
         "Spot Up Role",
@@ -337365,7 +337333,7 @@
       ],
       "all_offensive": [],
       "all_defensive": [
-        "Defensive Liability"
+        "Average Defender"
       ],
       "draft_status": null,
       "pred": {

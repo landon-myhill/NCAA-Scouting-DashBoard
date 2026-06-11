@@ -14,7 +14,8 @@ def client():
 
 @pytest.mark.parametrize("path", [
     "/", "/scouting", "/bigboard", "/bigboard?year=all", "/bigboard?sort=raw",
-    "/ranking", "/scarcity", "/needs", "/watchlist", "/compare", "/api/players?q=a",
+    "/archetypes", "/archetypes?year=2023", "/ranking", "/scarcity", "/needs",
+    "/watchlist", "/compare", "/api/players?q=a",
 ])
 def test_routes_ok(client, path):
     assert client.get(path, follow_redirects=True).status_code == 200

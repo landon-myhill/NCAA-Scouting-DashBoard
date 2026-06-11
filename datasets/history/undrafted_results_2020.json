@@ -15,7 +15,9 @@
         "VORP": -0.1
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/d/dotsode01.html"
+      "source": "https://www.basketball-reference.com/players/d/dotsode01.html",
+      "nba_value": 0.132,
+      "returned": false
     },
     {
       "year": 2020,
@@ -29,7 +31,9 @@
         "VORP": 0.0
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/j/jonesma05.html"
+      "source": "https://www.basketball-reference.com/players/j/jonesma05.html",
+      "nba_value": 0.164,
+      "returned": true
     },
     {
       "year": 2020,
@@ -38,7 +42,9 @@
       "ncaa_rank": 16,
       "career": {},
       "career_tier": "no_nba",
-      "source": "https://www.basketball-reference.com/players/m/murphgr01.html"
+      "source": "https://www.basketball-reference.com/players/m/murphgr01.html",
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -52,7 +58,9 @@
         "VORP": -0.1
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/h/haganas01.html"
+      "source": "https://www.basketball-reference.com/players/h/haganas01.html",
+      "nba_value": 0.122,
+      "returned": false
     },
     {
       "year": 2020,
@@ -65,8 +73,10 @@
         "WS": 6.4,
         "VORP": 2.3
       },
-      "career_tier": "rotation",
-      "source": "https://www.basketball-reference.com/players/h/huffja01.html"
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/h/huffja01.html",
+      "nba_value": 0.162,
+      "returned": true
     },
     {
       "year": 2020,
@@ -80,7 +90,9 @@
         "VORP": 0.2
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/h/harpero02.html"
+      "source": "https://www.basketball-reference.com/players/h/harpero02.html",
+      "nba_value": 0.153,
+      "returned": true
     },
     {
       "year": 2020,
@@ -94,7 +106,9 @@
         "VORP": -0.2
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/t/tilliki02.html"
+      "source": "https://www.basketball-reference.com/players/t/tilliki02.html",
+      "nba_value": 0.094,
+      "returned": false
     },
     {
       "year": 2020,
@@ -108,7 +122,9 @@
         "VORP": 0.1
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/t/tshieos01.html"
+      "source": "https://www.basketball-reference.com/players/t/tshieos01.html",
+      "nba_value": 0.084,
+      "returned": true
     },
     {
       "year": 2020,
@@ -117,7 +133,9 @@
       "ncaa_rank": 34,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -131,7 +149,9 @@
         "VORP": -0.2
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/g/gillefr01.html"
+      "source": "https://www.basketball-reference.com/players/g/gillefr01.html",
+      "nba_value": 0.069,
+      "returned": false
     },
     {
       "year": 2020,
@@ -140,7 +160,9 @@
       "ncaa_rank": 38,
       "career": {},
       "career_tier": "no_nba",
-      "source": "https://www.basketball-reference.com/players/h/homesca01.html"
+      "source": "https://www.basketball-reference.com/players/h/homesca01.html",
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -154,7 +176,9 @@
         "VORP": -0.2
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/d/diakima01.html"
+      "source": "https://www.basketball-reference.com/players/d/diakima01.html",
+      "nba_value": 0.099,
+      "returned": false
     },
     {
       "year": 2020,
@@ -167,8 +191,10 @@
         "WS": 3.5,
         "VORP": 0.4
       },
-      "career_tier": "rotation",
-      "source": "https://www.basketball-reference.com/players/p/pottemi01.html"
+      "career_tier": "bench",
+      "source": "https://www.basketball-reference.com/players/p/pottemi01.html",
+      "nba_value": 0.127,
+      "returned": true
     },
     {
       "year": 2020,
@@ -177,7 +203,9 @@
       "ncaa_rank": 41,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -191,7 +219,9 @@
         "VORP": 0.0
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/h/hintona01.html"
+      "source": "https://www.basketball-reference.com/players/h/hintona01.html",
+      "nba_value": 0.146,
+      "returned": false
     },
     {
       "year": 2020,
@@ -200,7 +230,9 @@
       "ncaa_rank": 44,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -209,7 +241,9 @@
       "ncaa_rank": 45,
       "career": {},
       "career_tier": "no_nba",
-      "source": "https://www.basketball-reference.com/players/w/wessoka01.html"
+      "source": "https://www.basketball-reference.com/players/w/wessoka01.html",
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -218,7 +252,9 @@
       "ncaa_rank": 46,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -227,7 +263,9 @@
       "ncaa_rank": 47,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -241,7 +279,9 @@
         "VORP": 0.1
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/q/queentr01.html"
+      "source": "https://www.basketball-reference.com/players/q/queentr01.html",
+      "nba_value": 0.172,
+      "returned": false
     },
     {
       "year": 2020,
@@ -255,7 +295,9 @@
         "VORP": -0.2
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/g/garrema01.html"
+      "source": "https://www.basketball-reference.com/players/g/garrema01.html",
+      "nba_value": 0.11,
+      "returned": true
     },
     {
       "year": 2020,
@@ -264,7 +306,9 @@
       "ncaa_rank": 50,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -278,7 +322,9 @@
         "VORP": 0.1
       },
       "career_tier": "bench",
-      "source": "https://www.basketball-reference.com/players/t/taylote01.html"
+      "source": "https://www.basketball-reference.com/players/t/taylote01.html",
+      "nba_value": 0.2,
+      "returned": true
     },
     {
       "year": 2020,
@@ -287,7 +333,9 @@
       "ncaa_rank": 53,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -296,7 +344,9 @@
       "ncaa_rank": 54,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -305,7 +355,9 @@
       "ncaa_rank": 55,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -314,7 +366,9 @@
       "ncaa_rank": 56,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -323,7 +377,9 @@
       "ncaa_rank": 58,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -332,7 +388,9 @@
       "ncaa_rank": 59,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -341,7 +399,9 @@
       "ncaa_rank": 61,
       "career": {},
       "career_tier": "no_nba",
-      "source": "https://www.basketball-reference.com/players/b/beanju01.html"
+      "source": "https://www.basketball-reference.com/players/b/beanju01.html",
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -350,7 +410,9 @@
       "ncaa_rank": 62,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -359,7 +421,9 @@
       "ncaa_rank": 63,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -368,7 +432,9 @@
       "ncaa_rank": 66,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -377,7 +443,9 @@
       "ncaa_rank": 67,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -386,7 +454,9 @@
       "ncaa_rank": 68,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -395,7 +465,9 @@
       "ncaa_rank": 69,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -404,7 +476,9 @@
       "ncaa_rank": 70,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -413,7 +487,9 @@
       "ncaa_rank": 73,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -422,7 +498,9 @@
       "ncaa_rank": 74,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -431,7 +509,9 @@
       "ncaa_rank": 76,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -440,7 +520,9 @@
       "ncaa_rank": 79,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -449,7 +531,9 @@
       "ncaa_rank": 80,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -458,7 +542,9 @@
       "ncaa_rank": 81,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -467,7 +553,9 @@
       "ncaa_rank": 82,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -476,7 +564,9 @@
       "ncaa_rank": 83,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -485,7 +575,9 @@
       "ncaa_rank": 84,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -494,7 +586,9 @@
       "ncaa_rank": 85,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -503,7 +597,9 @@
       "ncaa_rank": 86,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -512,7 +608,9 @@
       "ncaa_rank": 87,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -521,7 +619,9 @@
       "ncaa_rank": 89,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -530,7 +630,9 @@
       "ncaa_rank": 90,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -539,7 +641,9 @@
       "ncaa_rank": 92,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -548,7 +652,9 @@
       "ncaa_rank": 93,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -557,7 +663,9 @@
       "ncaa_rank": 94,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -566,7 +674,9 @@
       "ncaa_rank": 95,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -575,7 +685,9 @@
       "ncaa_rank": 96,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -584,7 +696,9 @@
       "ncaa_rank": 97,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -593,7 +707,9 @@
       "ncaa_rank": 98,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -602,7 +718,9 @@
       "ncaa_rank": 100,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -611,7 +729,9 @@
       "ncaa_rank": 101,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -620,7 +740,9 @@
       "ncaa_rank": 102,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -629,7 +751,9 @@
       "ncaa_rank": 103,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -638,7 +762,9 @@
       "ncaa_rank": 105,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -647,7 +773,9 @@
       "ncaa_rank": 106,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -656,7 +784,9 @@
       "ncaa_rank": 107,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -665,7 +795,9 @@
       "ncaa_rank": 108,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -674,7 +806,9 @@
       "ncaa_rank": 109,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -683,7 +817,9 @@
       "ncaa_rank": 110,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -692,7 +828,9 @@
       "ncaa_rank": 111,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -701,7 +839,9 @@
       "ncaa_rank": 112,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -710,7 +850,9 @@
       "ncaa_rank": 114,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -719,7 +861,9 @@
       "ncaa_rank": 117,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -728,7 +872,9 @@
       "ncaa_rank": 118,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -737,7 +883,9 @@
       "ncaa_rank": 119,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -746,7 +894,9 @@
       "ncaa_rank": 122,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -755,7 +905,9 @@
       "ncaa_rank": 124,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -764,7 +916,9 @@
       "ncaa_rank": 125,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -773,7 +927,9 @@
       "ncaa_rank": 126,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -782,7 +938,9 @@
       "ncaa_rank": 129,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -791,7 +949,9 @@
       "ncaa_rank": 130,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -800,7 +960,9 @@
       "ncaa_rank": 131,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -809,7 +971,9 @@
       "ncaa_rank": 133,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -818,7 +982,9 @@
       "ncaa_rank": 134,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -827,7 +993,9 @@
       "ncaa_rank": 135,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -836,7 +1004,9 @@
       "ncaa_rank": 137,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -845,7 +1015,9 @@
       "ncaa_rank": 139,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -854,7 +1026,9 @@
       "ncaa_rank": 140,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -863,7 +1037,9 @@
       "ncaa_rank": 141,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -872,7 +1048,9 @@
       "ncaa_rank": 142,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -881,7 +1059,9 @@
       "ncaa_rank": 143,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -890,7 +1070,9 @@
       "ncaa_rank": 144,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -899,7 +1081,9 @@
       "ncaa_rank": 145,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -908,7 +1092,9 @@
       "ncaa_rank": 146,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -917,7 +1103,9 @@
       "ncaa_rank": 147,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     },
     {
       "year": 2020,
@@ -926,7 +1114,9 @@
       "ncaa_rank": 148,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": false
     },
     {
       "year": 2020,
@@ -935,7 +1125,9 @@
       "ncaa_rank": 150,
       "career": {},
       "career_tier": "no_nba",
-      "source": null
+      "source": null,
+      "nba_value": 0.0,
+      "returned": true
     }
   ]
 }

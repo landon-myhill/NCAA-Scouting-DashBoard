@@ -106,6 +106,21 @@
                 <span class="arch-def" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="{{ arch_desc.get(a, '') }}">{{ a }}</span>
                 {% endfor %}
             </div>
+            {% if player.get('fits') %}
+            <div class="mt-3">
+                <div class="small text-secondary mb-1" title="Weighted blends of his measured strengths, percentiled within this draft class. Descriptive only — never feeds the draft score.">
+                    Archetype fits — percentile within this draft class</div>
+                {% for name, pct in player.fits.items()|sort(attribute='1', reverse=true) %}
+                <div class="d-flex align-items-center gap-2 mb-1" style="font-size:12px">
+                    <span style="width:175px" title="{{ arch_desc.get(name, '') }}">{{ name }}</span>
+                    <div style="flex:1;background:#1e293b;border-radius:4px;height:8px">
+                        <div style="width:{{ pct }}%;height:8px;border-radius:4px;background:{{ '#10b981' if pct >= 80 else '#60a5fa' if pct >= 55 else '#475569' }}"></div>
+                    </div>
+                    <span style="width:28px;text-align:right;color:{{ '#10b981' if pct >= 80 else '#94a3b8' }}">{{ pct }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
             <div class="mt-3 d-flex gap-2">
                 <button class="btn btn-sm btn-watch {{ 'btn-warning' if in_watchlist else 'btn-outline-secondary' }}"
                         data-player-id="{{ player.id }}" data-watched="{{ 'true' if in_watchlist else 'false' }}">

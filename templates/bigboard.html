@@ -136,6 +136,9 @@
             <a href="/bigboard?year={{ current_year }}&sort=raw"
                class="btn btn-outline-secondary {% if sort_mode == 'raw' %}active{% endif %}"
                title="Raw college production only — same stat components, no conference/age/position adjustments, no HS recruit bonus">Raw college</a>
+            <a href="/bigboard?year={{ current_year }}&sort=model"
+               class="btn btn-outline-secondary {% if sort_mode == 'model' %}active{% endif %}"
+               title="Strengths model: measured strengths + learned age/height adjusters, trained on the eligible 2020-23 classes vs real NBA value (held-out +0.60 vs the formula's +0.22)">Strengths model</a>
         </div>
     </div>
     <div class="align-self-end">
@@ -198,6 +201,7 @@
         {% endif %}
         {% if p.get('_mock_rank') %}
         <div class="bb-stat" style="line-height:1.25">
+            {% if p.get('sm_rank') %}<span style="font-size:12px;color:#a78bfa" title="Strengths-model rank (measured strengths + learned age/height adjusters)">#{{ p.sm_rank }}</span> <span class="text-secondary" style="font-size:9px">model</span><br>{% endif %}
             {% set diff = p._mock_rank - pos_num %}
             <span style="font-size:12px;color:#94a3b8">#{{ p._mock_rank }}</span> <span class="text-secondary" style="font-size:9px">mock</span>
             {% if not p.get('_intl_stub') %}

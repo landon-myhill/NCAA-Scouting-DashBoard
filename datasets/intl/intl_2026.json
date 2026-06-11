@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "scraped_at": "2026-06-10T15:05:50.607187",
+  "scraped_at": "2026-06-11T09:31:12.450165",
   "players": [
     {
       "name": "Karim Lopez",
@@ -109,43 +109,6 @@
       "source": "https://www.basketball-reference.com/international/players/luigi-suigo-1.html"
     },
     {
-      "name": "Jack Kayil",
-      "norm_name": "jack kayil",
-      "pos": "G",
-      "born": "2006-01-27",
-      "age_label": "Age 20",
-      "team": "Mega",
-      "league": "ABA",
-      "season": "2024-25",
-      "stats": {
-        "PPG": 7.7,
-        "RPG": 2.2,
-        "APG": 2.8,
-        "SPG": 1.4,
-        "BPG": 0.2,
-        "MPG": 25.7,
-        "TOV": 1.8,
-        "3PA": 4.6,
-        "FGA": 6.6,
-        "FTA": 0.9,
-        "FG%": 39.8,
-        "3P%": 35.4,
-        "FT%": 88.2,
-        "G": 18
-      },
-      "all_rows": [
-        {
-          "season": "2024-25",
-          "team": "Mega",
-          "league": "ABA",
-          "g": "18",
-          "mp_per_g": "25.7",
-          "pts_per_g": "7.7"
-        }
-      ],
-      "source": "https://www.basketball-reference.com/international/players/jack-kayil-1.html"
-    },
-    {
       "name": "Sergio de Larrea",
       "norm_name": "sergio de larrea",
       "pos": "F",
@@ -239,186 +202,111 @@
       "source": "https://www.basketball-reference.com/international/players/sergio-de-larrea-1.html"
     },
     {
-      "name": "Francesco Ferrari",
-      "norm_name": "francesco ferrari",
+      "name": "Malique Lewis",
+      "norm_name": "malique lewis",
       "pos": "F",
-      "born": null,
-      "age_label": null,
-      "team": "Virtus Bologna",
-      "league": "EuroLeague",
+      "born": "2004-11-10",
+      "age_label": "Age 21",
+      "team": "S.E. Melbourne",
+      "league": "NBL",
       "season": "2025-26",
       "stats": {
-        "PPG": 2.3,
-        "RPG": 2.2,
-        "APG": 0.5,
-        "SPG": 0.0,
-        "BPG": 0.2,
-        "MPG": 9.6,
-        "TOV": 0.3,
-        "3PA": 0.9,
-        "FGA": 1.7,
-        "FTA": 1.1,
-        "FG%": 35.0,
-        "3P%": 18.2,
-        "FT%": 84.6,
-        "G": 12
+        "PPG": 7.1,
+        "RPG": 4.3,
+        "APG": 2.2,
+        "SPG": 1.2,
+        "BPG": 0.6,
+        "MPG": 21.3,
+        "TOV": 0.6,
+        "3PA": 3.0,
+        "FGA": 5.8,
+        "FTA": 0.8,
+        "FG%": 45.5,
+        "3P%": 38.7,
+        "FT%": 80.0,
+        "G": 25
       },
       "all_rows": [
         {
-          "season": "2025-26",
-          "team": "Virtus Bologna",
-          "league": "EuroLeague",
-          "g": "12",
-          "mp_per_g": "9.6",
-          "pts_per_g": "2.3"
+          "season": "2021-22",
+          "team": "Fuenlabrada",
+          "league": "Liga ACB",
+          "g": "3",
+          "mp_per_g": "2.0",
+          "pts_per_g": "0.0"
+        },
+        {
+          "season": "2022-23",
+          "team": "Fuenlabrada",
+          "league": "Liga ACB",
+          "g": "19",
+          "mp_per_g": "17.2",
+          "pts_per_g": "4.8"
+        },
+        {
+          "season": "2024-25",
+          "team": "S.E. Melbourne",
+          "league": "NBL",
+          "g": "29",
+          "mp_per_g": "21.9",
+          "pts_per_g": "7.0"
         },
         {
           "season": "2025-26",
-          "team": "Virtus Bologna",
-          "league": "LBA",
-          "g": "11",
-          "mp_per_g": "10.2",
-          "pts_per_g": "4.4"
+          "team": "S.E. Melbourne",
+          "league": "NBL",
+          "g": "25",
+          "mp_per_g": "21.3",
+          "pts_per_g": "7.1"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/francesco-ferrari-1.html"
+      "source": "https://www.basketball-reference.com/international/players/malique-lewis-1.html"
     },
     {
-      "name": "Tobias Jensen",
-      "norm_name": "tobias jensen",
-      "pos": "F",
-      "born": "2004-05-08",
-      "age_label": "Age 22",
-      "team": "Ulm",
-      "league": "EuroCup",
-      "season": "2025-26",
+      "name": "Jack Kayil",
+      "norm_name": "jack kayil",
+      "pos": "G",
+      "born": "2006-01-27",
+      "age_label": "Age 20",
+      "team": "Mega",
+      "league": "ABA",
+      "season": "2024-25",
       "stats": {
-        "PPG": 11.0,
-        "RPG": 3.4,
-        "APG": 4.7,
+        "PPG": 7.7,
+        "RPG": 2.2,
+        "APG": 2.8,
         "SPG": 1.4,
         "BPG": 0.2,
-        "MPG": 29.1,
-        "TOV": 2.1,
-        "3PA": 4.9,
-        "FGA": 9.8,
-        "FTA": 1.2,
-        "FG%": 41.2,
-        "3P%": 39.3,
-        "FT%": 81.0,
+        "MPG": 25.7,
+        "TOV": 1.8,
+        "3PA": 4.6,
+        "FGA": 6.6,
+        "FTA": 0.9,
+        "FG%": 39.8,
+        "3P%": 35.4,
+        "FT%": 88.2,
         "G": 18
       },
       "all_rows": [
         {
-          "season": "2022-23",
-          "team": "Ulm",
-          "league": "EuroCup",
-          "g": "1",
-          "mp_per_g": "7.0",
-          "pts_per_g": "3.0"
-        },
-        {
-          "season": "2023-24",
-          "team": "Ulm",
-          "league": "EuroCup",
-          "g": "18",
-          "mp_per_g": "10.4",
-          "pts_per_g": "3.2"
-        },
-        {
           "season": "2024-25",
-          "team": "Ulm",
-          "league": "EuroCup",
-          "g": "16",
-          "mp_per_g": "9.0",
-          "pts_per_g": "2.2"
-        },
-        {
-          "season": "2025-26",
-          "team": "Ulm",
-          "league": "EuroCup",
+          "team": "Mega",
+          "league": "ABA",
           "g": "18",
-          "mp_per_g": "29.1",
-          "pts_per_g": "11.0"
+          "mp_per_g": "25.7",
+          "pts_per_g": "7.7"
         }
       ],
-      "source": "https://www.basketball-reference.com/international/players/tobias-brahe-jensen-1.html"
-    },
-    {
-      "name": "Mohammad Amini",
-      "norm_name": "mohammad amini",
-      "pos": "G",
-      "born": "2005-04-26",
-      "age_label": "Age 21",
-      "team": "Nancy",
-      "league": "LNB Élite",
-      "season": "2025-26",
-      "stats": {
-        "PPG": 7.8,
-        "RPG": 4.1,
-        "APG": 1.8,
-        "SPG": 0.8,
-        "BPG": 0.2,
-        "MPG": 22.6,
-        "TOV": 1.4,
-        "3PA": 2.6,
-        "FGA": 4.1,
-        "FTA": 2.4,
-        "FG%": 50.0,
-        "3P%": 25.7,
-        "FT%": 62.5,
-        "G": 27
-      },
-      "all_rows": [
-        {
-          "season": "2022-23",
-          "team": "Monaco",
-          "league": "LNB Pro A",
-          "g": "1",
-          "mp_per_g": "37.0",
-          "pts_per_g": "12.0"
-        },
-        {
-          "season": "2023",
-          "team": "Iran",
-          "league": "FIBA",
-          "g": "3",
-          "mp_per_g": "28.0",
-          "pts_per_g": "12.7"
-        },
-        {
-          "season": "2023-24",
-          "team": "Monaco",
-          "league": "LNB Élite",
-          "g": "5",
-          "mp_per_g": "9.4",
-          "pts_per_g": "4.6"
-        },
-        {
-          "season": "2024-25",
-          "team": "Nancy",
-          "league": "LNB Élite",
-          "g": "30",
-          "mp_per_g": "16.7",
-          "pts_per_g": "6.3"
-        },
-        {
-          "season": "2025-26",
-          "team": "Nancy",
-          "league": "LNB Élite",
-          "g": "27",
-          "mp_per_g": "22.6",
-          "pts_per_g": "7.8"
-        }
-      ],
-      "source": "https://www.basketball-reference.com/international/players/mohammad-amini-1.html"
+      "source": "https://www.basketball-reference.com/international/players/jack-kayil-1.html"
     }
   ],
   "missed": [
     "Jayden Quaintance",
-    "Pavle Backo",
+    "Nate Bittle",
     "Tobi Lawal",
+    "Anthony Del'Orso",
+    "Reynan Dos Santos",
     "Vsevolod Ishchenko",
-    "Nate Bittle"
+    "Boopie Miller"
   ]
 }

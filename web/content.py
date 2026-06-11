@@ -52,6 +52,13 @@ SCORE_METHODOLOGY = {
 TIER_LABELS = {1: "Tier 1 — Lottery", 2: "Tier 2 — Late 1st", 3: "Tier 3 — 2nd Round"}
 
 ARCHETYPE_DESCRIPTIONS = {
+    # ── Strength-based archetypes (v2 vocabulary) ────────────────────────────
+    "Slasher": "A downhill attacker who lives in the paint and at the line. High rim pressure (free-throw rate), strong interior finishing, light three-point volume. Creates offense with force, not jumpers.",
+    "Connector": "The modern glue wing: no dominant skill, but above-average passing, ball security, and defense at low usage. Makes the right play, never needs the ball, fits next to anyone.",
+    "Play Finisher": "A vertical-spacer big who converts what others create — lobs, rolls, dump-offs — with elite interior finishing and rim protection, without needing post touches.",
+    "Switch Defender": "Elite at BOTH ends of the defensive spectrum: guards the perimeter and protects the rim. The rarest and most valuable defensive profile in the switch-everything era.",
+    "Offensive Hub": "A big who runs offense through himself — elbow touches, handoffs, post splits. Elite passing for his size plus real scoring gravity. The Şengün/Jokić structural role.",
+
     "Elite Floor General": "A top-tier point guard who controls tempo, creates for others at elite rates, and limits turnovers. Think Chris Paul — high AST%, low TOV%, efficient scoring.",
     "Floor General": "A strong facilitator who runs the offense and gets teammates involved. Solid assist numbers and court vision, but may lack the elite efficiency or turnover discipline of the top tier.",
     "Scoring Guard": "A high-usage backcourt scorer who can create his own shot consistently. Lives above 18 PPG with heavy usage — the go-to option in half-court sets.",
