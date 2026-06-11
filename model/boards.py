@@ -40,14 +40,14 @@ def load_board(year, players):
         name, _, school = (s.strip() for s in line.partition("|"))
         cands = by_norm.get(normalize_name(name), [])
         if not cands:  # nickname-tolerant fallback: first initial + last name
-            _, initial = name_keys(name)
-            cands = by_initial.get(initial, [])
-            # A fallback hit is a weaker claim — when the list names a school,
-            # demand agreement, or "Malique Lewis (NBL)" grabs Mikey Lewis
-            # (Saint Mary's) and a stranger ends up on the board.
-            if cands and school:
+            # A fallback hit is a weaker claim — it REQUIRES a school that
+            # agrees. Without that rule, "Malique Lewis (NBL)" grabbed Mikey
+            # Lewis (Saint Mary's) and school-less intl lines like "Bilal
+            # Coulibaly" grabbed Boubacar Coulibaly (Pepperdine).
+            if school:
+                _, initial = name_keys(name)
                 sc = normalize_name(school)
-                cands = [p for p in cands
+                cands = [p for p in by_initial.get(initial, [])
                          if sc in normalize_name(p.get("school", ""))
                          or normalize_name(p.get("school", "")) in sc]
         if len(cands) > 1 and school:
