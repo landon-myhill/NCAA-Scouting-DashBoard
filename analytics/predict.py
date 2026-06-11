@@ -30,7 +30,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 SUCCESS_MIN_TIER = 3   # starter or star
 BUST_MAX_TIER = 1      # bench or never made it
-FEATS = FEATURE_SETS["inter+market"]
+FEATS = FEATURE_SETS["inter+market+conf"]  # keep in lockstep with strengths_model
 LAMBDA_RIDGE = 20.0
 LAMBDA_LOGIT = 1.0
 

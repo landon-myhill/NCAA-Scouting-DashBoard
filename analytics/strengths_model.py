@@ -35,6 +35,7 @@ import sys
 import numpy as np
 
 from analytics.backtest import MATURE_YEARS, attach_value_target, load_matched, spearman
+from core.ages import age_for, class_age_fallback
 from core.config import DATASETS_DIR
 from core.numeric import height_inches
 from model.archetypes import draft_score
@@ -68,6 +69,27 @@ FEATURE_SETS = {
     # support (their hit rates are equal, not better) — it put Lendeborg #1.
     "inter+peak":       BASE + INTER + ["age_x_peak"],
     "inter+market":     BASE + INTER + ["market"],
+    # TRUE AGE (Tankathon draft-day age, data.scrape_ages): a 19.9-year-old
+    # freshman and an 18.4-year-old freshman were identical under age_ord.
+    # agey_x_* interactions use (age_years - 19) so freshmen sit near zero,
+    # matching the ordinal semantics. Unscraped players (undrafted rows,
+    # deep stubs) impute from their class-year mean — stamped as _age_years.
+    "inter+market+agey": list(STRENGTH_KEYS) + ["age_years", "height_in"]
+                         + [f"agey_x_{k}" for k in INTERACTIONS] + ["market"],
+    # STRENGTH OF SCHEDULE: conference tier (2 high-major / 1 strong-mid /
+    # 0 other) — 20 ppg in the SoCon is not 20 ppg in the SEC.
+    "inter+market+conf": BASE + INTER + ["market", "conf_tier"],
+    "inter+market+agey+conf": list(STRENGTH_KEYS) + ["age_years", "height_in"]
+                              + [f"agey_x_{k}" for k in INTERACTIONS]
+                              + ["market", "conf_tier"],
+    # additive: ordinal age machinery intact, true age as one extra column —
+    # lets the model separate old vs young freshmen without losing the
+    # class-year survival signal
+    "conf+ageadd":      BASE + INTER + ["market", "conf_tier", "age_years"],
+}
+CONF_TIERS = {  # judgment constants, same spirit as intl LEAGUE_TIERS
+    "SEC": 2, "ACC": 2, "Big Ten": 2, "Big 12": 2, "Big East": 2, "Pac-12": 2,
+    "WCC": 1, "AAC": 1, "MWC": 1, "A-10": 1,
 }
 LAMBDAS = (20.0, 60.0, 150.0)
 B_BOOT = 300
@@ -90,10 +112,20 @@ def featurize(p: dict, features) -> list[float]:
     if vals:
         peak = sum(vals[:3]) / min(3, len(vals))
 
+    ay = p.get("_age_years")
+
     row = []
     for f in features:
         if f == "age_ord":
             row.append(age)
+        elif f == "age_years":
+            row.append(ay if ay is not None else np.nan)
+        elif f == "conf_tier":
+            row.append(CONF_TIERS.get(p.get("conference") or "", 0))
+        elif f.startswith("agey_x_"):
+            v = s.get(f[7:])
+            row.append((ay - 19.0) * v if (ay is not None and v is not None)
+                       else np.nan)
         elif f == "height_in":
             row.append(ht if ht else np.nan)
         elif f == "market":
@@ -171,8 +203,17 @@ def build_training():
         recs = [r["college_record"] for r in rows if r["year"] == yr]
         compute_strengths(recs, reference=recs)
         compute_fits(recs, reference=recs)
+    n_age = 0
     for r in rows:  # market validation at training time = actual draft slot
         r["college_record"]["_market_rank"] = r["pick"]
+        a = age_for(r["player"], r["year"], r.get("college", ""))
+        if a is not None:
+            n_age += 1
+        else:  # unscraped (mostly undrafted) -> class-year mean
+            a = class_age_fallback(r["college_record"].get("year", ""))
+        r["college_record"]["_age_years"] = a
+    print(f"True draft-day ages: {n_age}/{len(rows)} scraped, rest imputed "
+          f"from class-year means")
     recs = [r["college_record"] for r in rows]
     y = np.array([r["target"] for r in rows], float)
     years = np.array([r["year"] for r in rows])

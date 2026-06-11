@@ -1,0 +1,3588 @@
+{
+  "by_year": {
+    "2020": {
+      "anthony edwards": {
+        "age": 18.9,
+        "school": "Georgia",
+        "class": "Freshman",
+        "name": "Anthony Edwards"
+      },
+      "james wiseman": {
+        "age": 19.2,
+        "school": "Memphis",
+        "class": "Freshman",
+        "name": "James Wiseman"
+      },
+      "lamelo ball": {
+        "age": 18.8,
+        "school": "Illawarra",
+        "class": "International",
+        "name": "LaMelo Ball"
+      },
+      "patrick williams": {
+        "age": 18.9,
+        "school": "Florida State",
+        "class": "Freshman",
+        "name": "Patrick Williams"
+      },
+      "isaac okoro": {
+        "age": 19.4,
+        "school": "Auburn",
+        "class": "Freshman",
+        "name": "Isaac Okoro"
+      },
+      "onyeka okongwu": {
+        "age": 19.5,
+        "school": "USC",
+        "class": "Freshman",
+        "name": "Onyeka Okongwu"
+      },
+      "killian hayes": {
+        "age": 18.9,
+        "school": "Ratiopharm Ulm",
+        "class": "International",
+        "name": "Killian Hayes"
+      },
+      "obi toppin": {
+        "age": 22.3,
+        "school": "Dayton",
+        "class": "Sophomore",
+        "name": "Obi Toppin"
+      },
+      "deni avdija": {
+        "age": 19.5,
+        "school": "Maccabi Tel Aviv",
+        "class": "International",
+        "name": "Deni Avdija"
+      },
+      "jalen smith": {
+        "age": 20.3,
+        "school": "Maryland",
+        "class": "Sophomore",
+        "name": "Jalen Smith"
+      },
+      "devin vassell": {
+        "age": 19.8,
+        "school": "Florida State",
+        "class": "Sophomore",
+        "name": "Devin Vassell"
+      },
+      "tyrese haliburton": {
+        "age": 20.3,
+        "school": "Iowa State",
+        "class": "Sophomore",
+        "name": "Tyrese Haliburton"
+      },
+      "kira lewis": {
+        "age": 19.2,
+        "school": "Alabama",
+        "class": "Sophomore",
+        "name": "Kira Lewis Jr."
+      },
+      "aaron nesmith": {
+        "age": 20.7,
+        "school": "Vanderbilt",
+        "class": "Sophomore",
+        "name": "Aaron Nesmith"
+      },
+      "cole anthony": {
+        "age": 20.1,
+        "school": "North Carolina",
+        "class": "Freshman",
+        "name": "Cole Anthony"
+      },
+      "isaiah stewart": {
+        "age": 19.1,
+        "school": "Washington",
+        "class": "Freshman",
+        "name": "Isaiah Stewart"
+      },
+      "aleksej pokusevski": {
+        "age": 18.5,
+        "school": "Olympiacos B",
+        "class": "International",
+        "name": "Aleksej Pokuševski"
+      },
+      "josh green": {
+        "age": 19.6,
+        "school": "Arizona",
+        "class": "Freshman",
+        "name": "Josh Green"
+      },
+      "saddiq bey": {
+        "age": 21.2,
+        "school": "Villanova",
+        "class": "Sophomore",
+        "name": "Saddiq Bey"
+      },
+      "precious achiuwa": {
+        "age": 20.7,
+        "school": "Memphis",
+        "class": "Freshman",
+        "name": "Precious Achiuwa"
+      },
+      "tyrese maxey": {
+        "age": 19.6,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Tyrese Maxey"
+      },
+      "zeke nnaji": {
+        "age": 19.4,
+        "school": "Arizona",
+        "class": "Freshman",
+        "name": "Zeke Nnaji"
+      },
+      "leandro bolmaro": {
+        "age": 19.8,
+        "school": "FC Barcelona",
+        "class": "International",
+        "name": "Leandro Bolmaro"
+      },
+      "rj hampton": {
+        "age": 19.4,
+        "school": "NZ Breakers",
+        "class": "International",
+        "name": "RJ Hampton"
+      },
+      "immanuel quickley": {
+        "age": 21.0,
+        "school": "Kentucky",
+        "class": "Sophomore",
+        "name": "Immanuel Quickley"
+      },
+      "payton pritchard": {
+        "age": 22.4,
+        "school": "Oregon",
+        "class": "Senior",
+        "name": "Payton Pritchard"
+      },
+      "udoka azubuike": {
+        "age": 20.8,
+        "school": "Kansas",
+        "class": "Senior",
+        "name": "Udoka Azubuike"
+      },
+      "jaden mcdaniels": {
+        "age": 19.7,
+        "school": "Washington",
+        "class": "Freshman",
+        "name": "Jaden McDaniels"
+      },
+      "malachi flynn": {
+        "age": 22.1,
+        "school": "San Diego State",
+        "class": "Junior",
+        "name": "Malachi Flynn"
+      },
+      "desmond bane": {
+        "age": 22.0,
+        "school": "TCU",
+        "class": "Senior",
+        "name": "Desmond Bane"
+      },
+      "tyrell terry": {
+        "age": 19.7,
+        "school": "Stanford",
+        "class": "Freshman",
+        "name": "Tyrell Terry"
+      },
+      "vernon carey": {
+        "age": 19.3,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Vernon Carey Jr."
+      },
+      "daniel oturu": {
+        "age": 20.7,
+        "school": "Minnesota",
+        "class": "Sophomore",
+        "name": "Daniel Oturu"
+      },
+      "theo maledon": {
+        "age": 19.0,
+        "school": "ASVEL",
+        "class": "International",
+        "name": "Theo Maledon"
+      },
+      "xavier tillman": {
+        "age": 21.4,
+        "school": "Michigan State",
+        "class": "Junior",
+        "name": "Xavier Tillman"
+      },
+      "tyler bey": {
+        "age": 22.4,
+        "school": "Colorado",
+        "class": "Junior",
+        "name": "Tyler Bey"
+      },
+      "vit krejci": {
+        "age": 20.0,
+        "school": "Zaragoza",
+        "class": "International",
+        "name": "Vít Krejčí"
+      },
+      "saben lee": {
+        "age": 21.0,
+        "school": "Vanderbilt",
+        "class": "Junior",
+        "name": "Saben Lee"
+      },
+      "elijah hughes": {
+        "age": 22.3,
+        "school": "Syracuse",
+        "class": "Junior",
+        "name": "Elijah Hughes"
+      },
+      "robert woodard": {
+        "age": 20.7,
+        "school": "Mississippi State",
+        "class": "Sophomore",
+        "name": "Robert Woodard II"
+      },
+      "tre jones": {
+        "age": 20.4,
+        "school": "Duke",
+        "class": "Sophomore",
+        "name": "Tre Jones"
+      },
+      "nick richards": {
+        "age": 22.6,
+        "school": "Kentucky",
+        "class": "Junior",
+        "name": "Nick Richards"
+      },
+      "jahmius ramsey": {
+        "age": 19.0,
+        "school": "Texas Tech",
+        "class": "Freshman",
+        "name": "Jahmi'us Ramsey"
+      },
+      "marko simonovic": {
+        "age": 20.7,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Marko Simonović"
+      },
+      "jordan nwora": {
+        "age": 21.8,
+        "school": "Louisville",
+        "class": "Junior",
+        "name": "Jordan Nwora"
+      },
+      "cj elleby": {
+        "age": 20.0,
+        "school": "Washington State",
+        "class": "Sophomore",
+        "name": "CJ Elleby"
+      },
+      "yam madar": {
+        "age": 19.5,
+        "school": "Hapoel Tel Aviv",
+        "class": "International",
+        "name": "Yam Madar"
+      },
+      "nico mannion": {
+        "age": 19.3,
+        "school": "Arizona",
+        "class": "Freshman",
+        "name": "Nico Mannion"
+      },
+      "isaiah joe": {
+        "age": 21.0,
+        "school": "Arkansas",
+        "class": "Sophomore",
+        "name": "Isaiah Joe"
+      },
+      "skylar mays": {
+        "age": 22.6,
+        "school": "LSU",
+        "class": "Senior",
+        "name": "Skylar Mays"
+      },
+      "justinian jessup": {
+        "age": 22.1,
+        "school": "Boise State",
+        "class": "Senior",
+        "name": "Justinian Jessup"
+      },
+      "kenyon martin": {
+        "age": 19.4,
+        "school": "IMG Academy",
+        "class": "HS Postgrad",
+        "name": "Kenyon Martin Jr."
+      },
+      "cassius winston": {
+        "age": 22.3,
+        "school": "Michigan State",
+        "class": "Senior",
+        "name": "Cassius Winston"
+      },
+      "cassius stanley": {
+        "age": 20.8,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Cassius Stanley"
+      },
+      "jay scrubb": {
+        "age": 19.8,
+        "school": "John A. Logan",
+        "class": "Freshman",
+        "name": "Jay Scrubb"
+      },
+      "grant riller": {
+        "age": 23.4,
+        "school": "Charleston",
+        "class": "Senior",
+        "name": "Grant Riller"
+      },
+      "reggie perry": {
+        "age": 20.2,
+        "school": "Mississippi State",
+        "class": "Sophomore",
+        "name": "Reggie Perry"
+      },
+      "paul reed": {
+        "age": 21.0,
+        "school": "DePaul",
+        "class": "Junior",
+        "name": "Paul Reed"
+      },
+      "jalen harris": {
+        "age": 21.8,
+        "school": "Nevada",
+        "class": "Junior",
+        "name": "Jalen Harris"
+      },
+      "sam merrill": {
+        "age": 24.1,
+        "school": "Utah State",
+        "class": "Senior",
+        "name": "Sam Merrill"
+      },
+      "devon dotson": {
+        "age": 26.9,
+        "school": "Kansas",
+        "class": "Sophomore",
+        "name": "Devon Dotson"
+      },
+      "paul eboua": {
+        "age": 26.3,
+        "school": "VL Pesaro",
+        "class": "International",
+        "name": "Paul Eboua"
+      },
+      "ashton hagans": {
+        "age": 26.9,
+        "school": "Kentucky",
+        "class": "Sophomore",
+        "name": "Ashton Hagans"
+      },
+      "josh hall": {
+        "age": 25.7,
+        "school": "Moravian Prep",
+        "class": "HS Senior",
+        "name": "Josh Hall"
+      },
+      "markus howard": {
+        "age": 27.3,
+        "school": "Marquette",
+        "class": "Senior",
+        "name": "Markus Howard"
+      },
+      "mason jones": {
+        "age": 27.9,
+        "school": "Arkansas",
+        "class": "Junior",
+        "name": "Mason Jones"
+      },
+      "anfernee mclemore": {
+        "age": 27.9,
+        "school": "Auburn",
+        "class": "Senior",
+        "name": "Anfernee McLemore"
+      },
+      "abdoulaye ndoye": {
+        "age": 28.3,
+        "school": "Cholet",
+        "class": "International",
+        "name": "Abdoulaye N'Doye"
+      },
+      "myles powell": {
+        "age": 28.9,
+        "school": "Seton Hall",
+        "class": "Senior",
+        "name": "Myles Powell"
+      },
+      "trevelin queen": {
+        "age": 29.3,
+        "school": "New Mexico State",
+        "class": "Senior",
+        "name": "Trevelin Queen"
+      },
+      "borisa simanic": {
+        "age": 28.2,
+        "school": "KK Crvena Zvezda",
+        "class": "International",
+        "name": "Borisa Simanic"
+      },
+      "jon teske": {
+        "age": 29.1,
+        "school": "Michigan",
+        "class": "Senior",
+        "name": "Jon Teske"
+      },
+      "killian tillie": {
+        "age": 28.3,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Killian Tillie"
+      },
+      "tres tinkle": {
+        "age": 30.0,
+        "school": "Oregon State",
+        "class": "Senior",
+        "name": "Tres Tinkle"
+      },
+      "kaleb wesson": {
+        "age": 26.9,
+        "school": "Ohio State",
+        "class": "Junior",
+        "name": "Kaleb Wesson"
+      },
+      "kahlil whitney": {
+        "age": 25.4,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Kahlil Whitney"
+      },
+      "austin wiley": {
+        "age": 27.4,
+        "school": "Auburn",
+        "class": "Senior",
+        "name": "Austin Wiley"
+      }
+    },
+    "2021": {
+      "cade cunningham": {
+        "age": 19.7,
+        "school": "Oklahoma State",
+        "class": "Freshman",
+        "name": "Cade Cunningham"
+      },
+      "jalen green": {
+        "age": 19.4,
+        "school": "G League",
+        "class": "G League",
+        "name": "Jalen Green"
+      },
+      "evan mobley": {
+        "age": 20.0,
+        "school": "USC",
+        "class": "Freshman",
+        "name": "Evan Mobley"
+      },
+      "scottie barnes": {
+        "age": 19.9,
+        "school": "Florida State",
+        "class": "Freshman",
+        "name": "Scottie Barnes"
+      },
+      "jalen suggs": {
+        "age": 20.0,
+        "school": "Gonzaga",
+        "class": "Freshman",
+        "name": "Jalen Suggs"
+      },
+      "josh giddey": {
+        "age": 18.7,
+        "school": "Adelaide",
+        "class": "International",
+        "name": "Josh Giddey"
+      },
+      "jonathan kuminga": {
+        "age": 18.7,
+        "school": "G League",
+        "class": "G League",
+        "name": "Jonathan Kuminga"
+      },
+      "franz wagner": {
+        "age": 19.8,
+        "school": "Michigan",
+        "class": "Sophomore",
+        "name": "Franz Wagner"
+      },
+      "davion mitchell": {
+        "age": 22.8,
+        "school": "Baylor",
+        "class": "Junior",
+        "name": "Davion Mitchell"
+      },
+      "ziaire williams": {
+        "age": 19.8,
+        "school": "Stanford",
+        "class": "Freshman",
+        "name": "Ziaire Williams"
+      },
+      "james bouknight": {
+        "age": 20.8,
+        "school": "UConn",
+        "class": "Sophomore",
+        "name": "James Bouknight"
+      },
+      "joshua primo": {
+        "age": 18.5,
+        "school": "Alabama",
+        "class": "Freshman",
+        "name": "Joshua Primo"
+      },
+      "chris duarte": {
+        "age": 24.0,
+        "school": "Oregon",
+        "class": "Senior",
+        "name": "Chris Duarte"
+      },
+      "moses moody": {
+        "age": 19.1,
+        "school": "Arkansas",
+        "class": "Freshman",
+        "name": "Moses Moody"
+      },
+      "corey kispert": {
+        "age": 22.3,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Corey Kispert"
+      },
+      "alperen sengun": {
+        "age": 18.9,
+        "school": "Beşiktaş",
+        "class": "International",
+        "name": "Alperen Şengün"
+      },
+      "trey murphy": {
+        "age": 21.0,
+        "school": "Virginia",
+        "class": "Junior",
+        "name": "Trey Murphy III"
+      },
+      "tre mann": {
+        "age": 20.4,
+        "school": "Florida",
+        "class": "Sophomore",
+        "name": "Tre Mann"
+      },
+      "kai jones": {
+        "age": 20.4,
+        "school": "Texas",
+        "class": "Sophomore",
+        "name": "Kai Jones"
+      },
+      "jalen johnson": {
+        "age": 19.5,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Jalen Johnson"
+      },
+      "keon johnson": {
+        "age": 19.3,
+        "school": "Tennessee",
+        "class": "Freshman",
+        "name": "Keon Johnson"
+      },
+      "isaiah jackson": {
+        "age": 19.4,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Isaiah Jackson"
+      },
+      "usman garuba": {
+        "age": 19.3,
+        "school": "Real Madrid",
+        "class": "International",
+        "name": "Usman Garuba"
+      },
+      "josh christopher": {
+        "age": 19.5,
+        "school": "Arizona State",
+        "class": "Freshman",
+        "name": "Josh Christopher"
+      },
+      "quentin grimes": {
+        "age": 21.1,
+        "school": "Houston",
+        "class": "Junior",
+        "name": "Quentin Grimes"
+      },
+      "nahshon hyland": {
+        "age": 20.8,
+        "school": "VCU",
+        "class": "Sophomore",
+        "name": "Nah'Shon Hyland"
+      },
+      "cameron thomas": {
+        "age": 19.7,
+        "school": "LSU",
+        "class": "Freshman",
+        "name": "Cameron Thomas"
+      },
+      "jaden springer": {
+        "age": 18.7,
+        "school": "Tennessee",
+        "class": "Freshman",
+        "name": "Jaden Springer"
+      },
+      "dayron sharpe": {
+        "age": 19.6,
+        "school": "North Carolina",
+        "class": "Freshman",
+        "name": "Day'Ron Sharpe"
+      },
+      "santi aldama": {
+        "age": 20.4,
+        "school": "Loyola (MD)",
+        "class": "Sophomore",
+        "name": "Santi Aldama"
+      },
+      "isaiah todd": {
+        "age": 19.7,
+        "school": "G League",
+        "class": "G League",
+        "name": "Isaiah Todd"
+      },
+      "jeremiah robinsonearl": {
+        "age": 20.6,
+        "school": "Villanova",
+        "class": "Sophomore",
+        "name": "Jeremiah Robinson-Earl"
+      },
+      "jason preston": {
+        "age": 21.9,
+        "school": "Ohio",
+        "class": "Junior",
+        "name": "Jason Preston"
+      },
+      "rokas jokubaitis": {
+        "age": 20.6,
+        "school": "Žalgiris",
+        "class": "International",
+        "name": "Rokas Jokubaitis"
+      },
+      "herbert jones": {
+        "age": 22.7,
+        "school": "Alabama",
+        "class": "Senior",
+        "name": "Herbert Jones"
+      },
+      "miles mcbride": {
+        "age": 20.8,
+        "school": "West Virginia",
+        "class": "Sophomore",
+        "name": "Miles McBride"
+      },
+      "jt thor": {
+        "age": 18.8,
+        "school": "Auburn",
+        "class": "Freshman",
+        "name": "JT Thor"
+      },
+      "ayo dosunmu": {
+        "age": 21.4,
+        "school": "Illinois",
+        "class": "Junior",
+        "name": "Ayo Dosunmu"
+      },
+      "neemias queta": {
+        "age": 21.9,
+        "school": "Utah State",
+        "class": "Junior",
+        "name": "Neemias Queta"
+      },
+      "jared butler": {
+        "age": 20.8,
+        "school": "Baylor",
+        "class": "Junior",
+        "name": "Jared Butler"
+      },
+      "joe wieskamp": {
+        "age": 21.8,
+        "school": "Iowa",
+        "class": "Junior",
+        "name": "Joe Wieskamp"
+      },
+      "isaiah livers": {
+        "age": 22.9,
+        "school": "Michigan",
+        "class": "Senior",
+        "name": "Isaiah Livers"
+      },
+      "greg brown": {
+        "age": 19.8,
+        "school": "Texas",
+        "class": "Freshman",
+        "name": "Greg Brown"
+      },
+      "kessler edwards": {
+        "age": 21.9,
+        "school": "Pepperdine",
+        "class": "Junior",
+        "name": "Kessler Edwards"
+      },
+      "juhann begarin": {
+        "age": 18.9,
+        "school": "Paris Basketball",
+        "class": "International",
+        "name": "Juhann Bégarin"
+      },
+      "dalano banton": {
+        "age": 21.6,
+        "school": "Nebraska",
+        "class": "Sophomore",
+        "name": "Dalano Banton"
+      },
+      "david johnson": {
+        "age": 20.3,
+        "school": "Louisville",
+        "class": "Sophomore",
+        "name": "David Johnson"
+      },
+      "sharife cooper": {
+        "age": 20.0,
+        "school": "Auburn",
+        "class": "Freshman",
+        "name": "Sharife Cooper"
+      },
+      "marcus zegarowski": {
+        "age": 22.9,
+        "school": "Creighton",
+        "class": "Junior",
+        "name": "Marcus Zegarowski"
+      },
+      "filip petrusev": {
+        "age": 21.2,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Filip Petrušev"
+      },
+      "bj boston": {
+        "age": 19.6,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "BJ Boston"
+      },
+      "luka garza": {
+        "age": 22.5,
+        "school": "Iowa",
+        "class": "Senior",
+        "name": "Luka Garza"
+      },
+      "charles bassey": {
+        "age": 20.6,
+        "school": "Western Kentucky",
+        "class": "Junior",
+        "name": "Charles Bassey"
+      },
+      "sandro mamukelashvili": {
+        "age": 22.1,
+        "school": "Seton Hall",
+        "class": "Senior",
+        "name": "Sandro Mamukelashvili"
+      },
+      "aaron wiggins": {
+        "age": 22.5,
+        "school": "Maryland",
+        "class": "Junior",
+        "name": "Aaron Wiggins"
+      },
+      "scottie lewis": {
+        "age": 21.3,
+        "school": "Florida",
+        "class": "Sophomore",
+        "name": "Scottie Lewis"
+      },
+      "balsa koprivica": {
+        "age": 21.1,
+        "school": "Florida State",
+        "class": "Sophomore",
+        "name": "Balša Koprivica"
+      },
+      "jericho sims": {
+        "age": 22.7,
+        "school": "Texas",
+        "class": "Senior",
+        "name": "Jericho Sims"
+      },
+      "raiquan gray": {
+        "age": 22.2,
+        "school": "Florida State",
+        "class": "Junior",
+        "name": "RaiQuan Gray"
+      },
+      "georgios kalaitzakis": {
+        "age": 22.5,
+        "school": "Panathinaikos",
+        "class": "International",
+        "name": "Georgios Kalaitzakis"
+      },
+      "joel ayayi": {
+        "age": 26.3,
+        "school": "Gonzaga",
+        "class": "Junior",
+        "name": "Joel Ayayi"
+      },
+      "david duke": {
+        "age": 26.7,
+        "school": "Providence",
+        "class": "Junior",
+        "name": "David Duke"
+      },
+      "aaron henry": {
+        "age": 26.8,
+        "school": "Michigan State",
+        "class": "Junior",
+        "name": "Aaron Henry"
+      },
+      "jay huff": {
+        "age": 27.8,
+        "school": "Virginia",
+        "class": "Senior",
+        "name": "Jay Huff"
+      },
+      "matthew hurt": {
+        "age": 26.1,
+        "school": "Duke",
+        "class": "Sophomore",
+        "name": "Matthew Hurt"
+      },
+      "aj lawson": {
+        "age": 25.9,
+        "school": "South Carolina",
+        "class": "Junior",
+        "name": "AJ Lawson"
+      },
+      "daishen nix": {
+        "age": 24.3,
+        "school": "G League",
+        "class": "G League",
+        "name": "Daishen Nix"
+      },
+      "john petty": {
+        "age": 27.5,
+        "school": "Alabama",
+        "class": "Senior",
+        "name": "John Petty"
+      },
+      "yves pons": {
+        "age": 27.1,
+        "school": "Tennessee",
+        "class": "Senior",
+        "name": "Yves Pons"
+      },
+      "austin reaves": {
+        "age": 28.0,
+        "school": "Oklahoma",
+        "class": "Senior",
+        "name": "Austin Reaves"
+      },
+      "dj steward": {
+        "age": 24.7,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "DJ Steward"
+      },
+      "trendon watford": {
+        "age": 25.6,
+        "school": "LSU",
+        "class": "Sophomore",
+        "name": "Trendon Watford"
+      },
+      "romeo weems": {
+        "age": 25.1,
+        "school": "DePaul",
+        "class": "Sophomore",
+        "name": "Romeo Weems"
+      },
+      "mckinley wright": {
+        "age": 27.6,
+        "school": "Colorado",
+        "class": "Senior",
+        "name": "McKinley Wright IV"
+      }
+    },
+    "2022": {
+      "paolo banchero": {
+        "age": 19.6,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Paolo Banchero"
+      },
+      "chet holmgren": {
+        "age": 20.1,
+        "school": "Gonzaga",
+        "class": "Freshman",
+        "name": "Chet Holmgren"
+      },
+      "jabari smith": {
+        "age": 19.1,
+        "school": "Auburn",
+        "class": "Freshman",
+        "name": "Jabari Smith"
+      },
+      "keegan murray": {
+        "age": 21.8,
+        "school": "Iowa",
+        "class": "Sophomore",
+        "name": "Keegan Murray"
+      },
+      "jaden ivey": {
+        "age": 20.3,
+        "school": "Purdue",
+        "class": "Sophomore",
+        "name": "Jaden Ivey"
+      },
+      "bennedict mathurin": {
+        "age": 20.0,
+        "school": "Arizona",
+        "class": "Sophomore",
+        "name": "Bennedict Mathurin"
+      },
+      "shaedon sharpe": {
+        "age": 19.1,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Shaedon Sharpe"
+      },
+      "dyson daniels": {
+        "age": 19.3,
+        "school": "G League",
+        "class": "G League",
+        "name": "Dyson Daniels"
+      },
+      "jeremy sochan": {
+        "age": 19.1,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "Jeremy Sochan"
+      },
+      "johnny davis": {
+        "age": 20.3,
+        "school": "Wisconsin",
+        "class": "Sophomore",
+        "name": "Johnny Davis"
+      },
+      "ousmane dieng": {
+        "age": 19.1,
+        "school": "New Zealand",
+        "class": "International",
+        "name": "Ousmane Dieng"
+      },
+      "jalen williams": {
+        "age": 21.2,
+        "school": "Santa Clara",
+        "class": "Junior",
+        "name": "Jalen Williams"
+      },
+      "jalen duren": {
+        "age": 18.6,
+        "school": "Memphis",
+        "class": "Freshman",
+        "name": "Jalen Duren"
+      },
+      "ochai agbaji": {
+        "age": 22.2,
+        "school": "Kansas",
+        "class": "Senior",
+        "name": "Ochai Agbaji"
+      },
+      "mark williams": {
+        "age": 20.5,
+        "school": "Duke",
+        "class": "Sophomore",
+        "name": "Mark Williams"
+      },
+      "aj griffin": {
+        "age": 18.8,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "AJ Griffin"
+      },
+      "tari eason": {
+        "age": 21.1,
+        "school": "LSU",
+        "class": "Sophomore",
+        "name": "Tari Eason"
+      },
+      "dalen terry": {
+        "age": 19.9,
+        "school": "Arizona",
+        "class": "Sophomore",
+        "name": "Dalen Terry"
+      },
+      "jake laravia": {
+        "age": 20.6,
+        "school": "Wake Forest",
+        "class": "Junior",
+        "name": "Jake LaRavia"
+      },
+      "malaki branham": {
+        "age": 19.1,
+        "school": "Ohio State",
+        "class": "Freshman",
+        "name": "Malaki Branham"
+      },
+      "christian braun": {
+        "age": 21.2,
+        "school": "Kansas",
+        "class": "Junior",
+        "name": "Christian Braun"
+      },
+      "walker kessler": {
+        "age": 20.9,
+        "school": "Auburn",
+        "class": "Sophomore",
+        "name": "Walker Kessler"
+      },
+      "david roddy": {
+        "age": 21.2,
+        "school": "Colorado State",
+        "class": "Junior",
+        "name": "David Roddy"
+      },
+      "marjon beauchamp": {
+        "age": 20.7,
+        "school": "G League",
+        "class": "G League",
+        "name": "MarJon Beauchamp"
+      },
+      "blake wesley": {
+        "age": 19.3,
+        "school": "Notre Dame",
+        "class": "Freshman",
+        "name": "Blake Wesley"
+      },
+      "wendell moore": {
+        "age": 20.8,
+        "school": "Duke",
+        "class": "Junior",
+        "name": "Wendell Moore"
+      },
+      "nikola jovic": {
+        "age": 19.0,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Nikola Jović"
+      },
+      "patrick baldwin": {
+        "age": 19.6,
+        "school": "Milwaukee",
+        "class": "Freshman",
+        "name": "Patrick Baldwin Jr."
+      },
+      "tyty washington": {
+        "age": 20.6,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "TyTy Washington"
+      },
+      "peyton watson": {
+        "age": 19.8,
+        "school": "UCLA",
+        "class": "Freshman",
+        "name": "Peyton Watson"
+      },
+      "andrew nembhard": {
+        "age": 22.4,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Andrew Nembhard"
+      },
+      "caleb houstan": {
+        "age": 19.4,
+        "school": "Michigan",
+        "class": "Freshman",
+        "name": "Caleb Houstan"
+      },
+      "christian koloko": {
+        "age": 22.0,
+        "school": "Arizona",
+        "class": "Junior",
+        "name": "Christian Koloko"
+      },
+      "jaylin williams": {
+        "age": 20.0,
+        "school": "Arkansas",
+        "class": "Sophomore",
+        "name": "Jaylin Williams"
+      },
+      "max christie": {
+        "age": 19.4,
+        "school": "Michigan State",
+        "class": "Freshman",
+        "name": "Max Christie"
+      },
+      "gabriele procida": {
+        "age": 20.0,
+        "school": "Bologna",
+        "class": "International",
+        "name": "Gabriele Procida"
+      },
+      "jaden hardy": {
+        "age": 20.0,
+        "school": "G League",
+        "class": "G League",
+        "name": "Jaden Hardy"
+      },
+      "kennedy chandler": {
+        "age": 19.8,
+        "school": "Tennessee",
+        "class": "Freshman",
+        "name": "Kennedy Chandler"
+      },
+      "khalifa diop": {
+        "age": 20.4,
+        "school": "Gran Canaria",
+        "class": "International",
+        "name": "Khalifa Diop"
+      },
+      "bryce mcgowens": {
+        "age": 19.6,
+        "school": "Nebraska",
+        "class": "Freshman",
+        "name": "Bryce McGowens"
+      },
+      "ej liddell": {
+        "age": 21.5,
+        "school": "Ohio State",
+        "class": "Junior",
+        "name": "E.J. Liddell"
+      },
+      "trevor keels": {
+        "age": 18.8,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Trevor Keels"
+      },
+      "moussa diabate": {
+        "age": 20.4,
+        "school": "Michigan",
+        "class": "Freshman",
+        "name": "Moussa Diabate"
+      },
+      "ryan rollins": {
+        "age": 20.0,
+        "school": "Toledo",
+        "class": "Sophomore",
+        "name": "Ryan Rollins"
+      },
+      "josh minott": {
+        "age": 20.5,
+        "school": "Memphis",
+        "class": "Freshman",
+        "name": "Josh Minott"
+      },
+      "ismael kamagate": {
+        "age": 21.4,
+        "school": "Paris Basketball",
+        "class": "International",
+        "name": "Ismael Kamagate"
+      },
+      "vince williams": {
+        "age": 21.8,
+        "school": "VCU",
+        "class": "Senior",
+        "name": "Vince Williams Jr."
+      },
+      "kendall brown": {
+        "age": 19.1,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "Kendall Brown"
+      },
+      "isaiah mobley": {
+        "age": 22.7,
+        "school": "USC",
+        "class": "Junior",
+        "name": "Isaiah Mobley"
+      },
+      "matteo spagnolo": {
+        "age": 19.4,
+        "school": "Cremona",
+        "class": "International",
+        "name": "Matteo Spagnolo"
+      },
+      "tyrese martin": {
+        "age": 23.3,
+        "school": "UConn",
+        "class": "Senior",
+        "name": "Tyrese Martin"
+      },
+      "karlo matkovic": {
+        "age": 21.2,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Karlo Matković"
+      },
+      "jd davison": {
+        "age": 19.7,
+        "school": "Alabama",
+        "class": "Freshman",
+        "name": "JD Davison"
+      },
+      "yannick nzosa": {
+        "age": 18.6,
+        "school": "Málaga",
+        "class": "International",
+        "name": "Yannick Nzosa"
+      },
+      "gui santos": {
+        "age": 20.0,
+        "school": "Minas",
+        "class": "International",
+        "name": "Gui Santos"
+      },
+      "luke travers": {
+        "age": 20.8,
+        "school": "Perth",
+        "class": "International",
+        "name": "Luke Travers"
+      },
+      "jabari walker": {
+        "age": 19.9,
+        "school": "Colorado",
+        "class": "Sophomore",
+        "name": "Jabari Walker"
+      },
+      "hugo besson": {
+        "age": 21.1,
+        "school": "New Zealand",
+        "class": "International",
+        "name": "Hugo Besson"
+      },
+      "dominick barlow": {
+        "age": 23.0,
+        "school": "Overtime Elite",
+        "class": "Overtime Elite",
+        "name": "Dominick Barlow"
+      },
+      "tevin brown": {
+        "age": 27.7,
+        "school": "Murray State",
+        "class": "Senior",
+        "name": "Tevin Brown"
+      },
+      "john butler": {
+        "age": 23.5,
+        "school": "Florida State",
+        "class": "Freshman",
+        "name": "John Butler"
+      },
+      "julian champagnie": {
+        "age": 24.9,
+        "school": "St. John's",
+        "class": "Junior",
+        "name": "Julian Champagnie"
+      },
+      "kofi cockburn": {
+        "age": 26.8,
+        "school": "Illinois",
+        "class": "Junior",
+        "name": "Kofi Cockburn"
+      },
+      "keon ellis": {
+        "age": 26.4,
+        "school": "Alabama",
+        "class": "Senior",
+        "name": "Keon Ellis"
+      },
+      "michael foster": {
+        "age": 23.4,
+        "school": "G League",
+        "class": "G League",
+        "name": "Michael Foster Jr."
+      },
+      "jordan hall": {
+        "age": 24.4,
+        "school": "Saint Joseph's",
+        "class": "Sophomore",
+        "name": "Jordan Hall"
+      },
+      "ron harper": {
+        "age": 26.2,
+        "school": "Rutgers",
+        "class": "Senior",
+        "name": "Ron Harper Jr."
+      },
+      "johnny juzang": {
+        "age": 25.1,
+        "school": "UCLA",
+        "class": "Junior",
+        "name": "Johnny Juzang"
+      },
+      "justin lewis": {
+        "age": 24.2,
+        "school": "Marquette",
+        "class": "Sophomore",
+        "name": "Justin Lewis"
+      },
+      "kenneth lofton": {
+        "age": 23.8,
+        "school": "Louisiana Tech",
+        "class": "Sophomore",
+        "name": "Kenneth Lofton Jr."
+      },
+      "makur maker": {
+        "age": 25.6,
+        "school": "Capital City",
+        "class": "G League",
+        "name": "Makur Maker"
+      },
+      "iverson molinar": {
+        "age": 26.5,
+        "school": "Mississippi State",
+        "class": "Junior",
+        "name": "Iverson Molinar"
+      },
+      "jean montero": {
+        "age": 22.9,
+        "school": "Overtime Elite",
+        "class": "Overtime Elite",
+        "name": "Jean Montero"
+      },
+      "orlando robinson": {
+        "age": 25.9,
+        "school": "Fresno State",
+        "class": "Junior",
+        "name": "Orlando Robinson"
+      },
+      "ziga samar": {
+        "age": 25.4,
+        "school": "Fuenlabrada",
+        "class": "International",
+        "name": "Ziga Samar"
+      },
+      "dereon seabron": {
+        "age": 26.0,
+        "school": "NC State",
+        "class": "Sophomore",
+        "name": "Dereon Seabron"
+      },
+      "alondes williams": {
+        "age": 26.9,
+        "school": "Wake Forest",
+        "class": "Senior",
+        "name": "Alondes Williams"
+      },
+      "trevion williams": {
+        "age": 25.7,
+        "school": "Purdue",
+        "class": "Senior",
+        "name": "Trevion Williams"
+      }
+    },
+    "2023": {
+      "victor wembanyama": {
+        "age": 19.5,
+        "school": "Metropolitans 92",
+        "class": "International",
+        "name": "Victor Wembanyama"
+      },
+      "brandon miller": {
+        "age": 20.6,
+        "school": "Alabama",
+        "class": "Freshman",
+        "name": "Brandon Miller"
+      },
+      "scoot henderson": {
+        "age": 19.4,
+        "school": "G League",
+        "class": "G League",
+        "name": "Scoot Henderson"
+      },
+      "amen thompson": {
+        "age": 20.4,
+        "school": "Overtime Elite",
+        "class": "Overtime Elite",
+        "name": "Amen Thompson"
+      },
+      "ausar thompson": {
+        "age": 20.4,
+        "school": "Overtime Elite",
+        "class": "Overtime Elite",
+        "name": "Ausar Thompson"
+      },
+      "anthony black": {
+        "age": 19.4,
+        "school": "Arkansas",
+        "class": "Freshman",
+        "name": "Anthony Black"
+      },
+      "bilal coulibaly": {
+        "age": 18.9,
+        "school": "Metropolitans 92",
+        "class": "International",
+        "name": "Bilal Coulibaly"
+      },
+      "jarace walker": {
+        "age": 19.8,
+        "school": "Houston",
+        "class": "Freshman",
+        "name": "Jarace Walker"
+      },
+      "taylor hendricks": {
+        "age": 19.6,
+        "school": "UCF",
+        "class": "Freshman",
+        "name": "Taylor Hendricks"
+      },
+      "cason wallace": {
+        "age": 19.6,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Cason Wallace"
+      },
+      "jett howard": {
+        "age": 19.8,
+        "school": "Michigan",
+        "class": "Freshman",
+        "name": "Jett Howard"
+      },
+      "dereck lively": {
+        "age": 19.3,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Dereck Lively II"
+      },
+      "gradey dick": {
+        "age": 19.6,
+        "school": "Kansas",
+        "class": "Freshman",
+        "name": "Gradey Dick"
+      },
+      "jordan hawkins": {
+        "age": 21.1,
+        "school": "UConn",
+        "class": "Sophomore",
+        "name": "Jordan Hawkins"
+      },
+      "kobe bufkin": {
+        "age": 19.7,
+        "school": "Michigan",
+        "class": "Sophomore",
+        "name": "Kobe Bufkin"
+      },
+      "keyonte george": {
+        "age": 19.6,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "Keyonte George"
+      },
+      "jalen hoodschifino": {
+        "age": 20.0,
+        "school": "Indiana",
+        "class": "Freshman",
+        "name": "Jalen Hood-Schifino"
+      },
+      "jaime jaquez": {
+        "age": 22.3,
+        "school": "UCLA",
+        "class": "Senior",
+        "name": "Jaime Jaquez Jr."
+      },
+      "brandin podziemski": {
+        "age": 20.3,
+        "school": "Santa Clara",
+        "class": "Sophomore",
+        "name": "Brandin Podziemski"
+      },
+      "cam whitmore": {
+        "age": 18.9,
+        "school": "Villanova",
+        "class": "Freshman",
+        "name": "Cam Whitmore"
+      },
+      "noah clowney": {
+        "age": 18.9,
+        "school": "Alabama",
+        "class": "Freshman",
+        "name": "Noah Clowney"
+      },
+      "dariq whitehead": {
+        "age": 18.9,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Dariq Whitehead"
+      },
+      "kris murray": {
+        "age": 22.8,
+        "school": "Iowa",
+        "class": "Junior",
+        "name": "Kris Murray"
+      },
+      "oliviermaxen prosper": {
+        "age": 21.0,
+        "school": "Marquette",
+        "class": "Junior",
+        "name": "Olivier-Maxen. Prosper"
+      },
+      "marcus sasser": {
+        "age": 22.7,
+        "school": "Houston",
+        "class": "Senior",
+        "name": "Marcus Sasser"
+      },
+      "ben sheppard": {
+        "age": 21.9,
+        "school": "Belmont",
+        "class": "Senior",
+        "name": "Ben Sheppard"
+      },
+      "nick smith": {
+        "age": 19.2,
+        "school": "Arkansas",
+        "class": "Freshman",
+        "name": "Nick Smith Jr."
+      },
+      "brice sensabaugh": {
+        "age": 19.6,
+        "school": "Ohio State",
+        "class": "Freshman",
+        "name": "Brice Sensabaugh"
+      },
+      "julian strawther": {
+        "age": 21.2,
+        "school": "Gonzaga",
+        "class": "Junior",
+        "name": "Julian Strawther"
+      },
+      "kobe brown": {
+        "age": 23.5,
+        "school": "Missouri",
+        "class": "Senior",
+        "name": "Kobe Brown"
+      },
+      "james nnaji": {
+        "age": 18.8,
+        "school": "Barcelona",
+        "class": "International",
+        "name": "James Nnaji"
+      },
+      "jalen pickett": {
+        "age": 23.7,
+        "school": "Penn State",
+        "class": "Senior",
+        "name": "Jalen Pickett"
+      },
+      "leonard miller": {
+        "age": 19.6,
+        "school": "G League",
+        "class": "G League",
+        "name": "Leonard Miller"
+      },
+      "colby jones": {
+        "age": 21.1,
+        "school": "Xavier",
+        "class": "Junior",
+        "name": "Colby Jones"
+      },
+      "julian phillips": {
+        "age": 19.6,
+        "school": "Tennessee",
+        "class": "Freshman",
+        "name": "Julian Phillips"
+      },
+      "andre jackson": {
+        "age": 21.6,
+        "school": "UConn",
+        "class": "Junior",
+        "name": "Andre Jackson Jr."
+      },
+      "hunter tyson": {
+        "age": 23.0,
+        "school": "Clemson",
+        "class": "Senior",
+        "name": "Hunter Tyson"
+      },
+      "jordan walsh": {
+        "age": 19.3,
+        "school": "Arkansas",
+        "class": "Freshman",
+        "name": "Jordan Walsh"
+      },
+      "mouhamed gueye": {
+        "age": 20.6,
+        "school": "Washington State",
+        "class": "Sophomore",
+        "name": "Mouhamed Gueye"
+      },
+      "maxwell lewis": {
+        "age": 20.9,
+        "school": "Pepperdine",
+        "class": "Sophomore",
+        "name": "Maxwell Lewis"
+      },
+      "amari bailey": {
+        "age": 19.3,
+        "school": "UCLA",
+        "class": "Freshman",
+        "name": "Amari Bailey"
+      },
+      "tristan vukcevic": {
+        "age": 20.3,
+        "school": "Real Madrid B",
+        "class": "International",
+        "name": "Tristan Vukčević"
+      },
+      "rayan rupert": {
+        "age": 19.1,
+        "school": "NZ Breakers",
+        "class": "International",
+        "name": "Rayan Rupert"
+      },
+      "sidy cissoko": {
+        "age": 19.2,
+        "school": "G League",
+        "class": "G League",
+        "name": "Sidy Cissoko"
+      },
+      "gg jackson": {
+        "age": 18.5,
+        "school": "South Carolina",
+        "class": "Freshman",
+        "name": "GG Jackson"
+      },
+      "seth lundy": {
+        "age": 23.2,
+        "school": "Penn State",
+        "class": "Senior",
+        "name": "Seth Lundy"
+      },
+      "mojave king": {
+        "age": 20.9,
+        "school": "G League",
+        "class": "G League",
+        "name": "Mojave King"
+      },
+      "jordan miller": {
+        "age": 23.4,
+        "school": "Miami",
+        "class": "Senior",
+        "name": "Jordan Miller"
+      },
+      "emoni bates": {
+        "age": 19.4,
+        "school": "Eastern Michigan",
+        "class": "Sophomore",
+        "name": "Emoni Bates"
+      },
+      "keyontae johnson": {
+        "age": 23.1,
+        "school": "Kansas State",
+        "class": "Senior",
+        "name": "Keyontae Johnson"
+      },
+      "jalen wilson": {
+        "age": 22.6,
+        "school": "Kansas",
+        "class": "Senior",
+        "name": "Jalen Wilson"
+      },
+      "toumani camara": {
+        "age": 23.1,
+        "school": "Dayton",
+        "class": "Junior",
+        "name": "Toumani Camara"
+      },
+      "jaylen clark": {
+        "age": 21.7,
+        "school": "UCLA",
+        "class": "Junior",
+        "name": "Jaylen Clark"
+      },
+      "jalen slawson": {
+        "age": 23.7,
+        "school": "Furman",
+        "class": "Senior",
+        "name": "Jalen Slawson"
+      },
+      "isaiah wong": {
+        "age": 22.4,
+        "school": "Miami",
+        "class": "Senior",
+        "name": "Isaiah Wong"
+      },
+      "tarik biberovic": {
+        "age": 22.4,
+        "school": "Fenerbahce Beko",
+        "class": "International",
+        "name": "Tarik Biberovic"
+      },
+      "trayce jacksondavis": {
+        "age": 23.3,
+        "school": "Indiana",
+        "class": "Senior",
+        "name": "Trayce Jackson-Davis"
+      },
+      "chris livingston": {
+        "age": 19.7,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Chris Livingston"
+      },
+      "charles bediako": {
+        "age": 24.3,
+        "school": "Alabama",
+        "class": "Sophomore",
+        "name": "Charles Bediako"
+      },
+      "colin castleton": {
+        "age": 26.0,
+        "school": "Florida",
+        "class": "Senior",
+        "name": "Colin Castleton"
+      },
+      "malcolm cazalon": {
+        "age": 24.8,
+        "school": "Leuven",
+        "class": "International",
+        "name": "Malcolm Cazalon"
+      },
+      "ricky council": {
+        "age": 24.9,
+        "school": "Arkansas",
+        "class": "Junior",
+        "name": "Ricky Council IV"
+      },
+      "adam flagler": {
+        "age": 26.5,
+        "school": "Baylor",
+        "class": "Senior",
+        "name": "Adam Flagler"
+      },
+      "nadir hifi": {
+        "age": 23.9,
+        "school": "Paris Basketball",
+        "class": "International",
+        "name": "Nadir Hifi"
+      },
+      "mike miles": {
+        "age": 23.8,
+        "school": "TCU",
+        "class": "Junior",
+        "name": "Mike Miles Jr."
+      },
+      "omari moore": {
+        "age": 25.7,
+        "school": "San Jose State",
+        "class": "Senior",
+        "name": "Omari Moore"
+      },
+      "markquis nowell": {
+        "age": 26.5,
+        "school": "Kansas State",
+        "class": "Senior",
+        "name": "Markquis Nowell"
+      },
+      "adama sanogo": {
+        "age": 24.3,
+        "school": "UConn",
+        "class": "Junior",
+        "name": "Adama Sanogo"
+      },
+      "terquavion smith": {
+        "age": 23.4,
+        "school": "NC State",
+        "class": "Sophomore",
+        "name": "Terquavion Smith"
+      },
+      "drew timme": {
+        "age": 25.8,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Drew Timme"
+      },
+      "oscar tshiebwe": {
+        "age": 26.5,
+        "school": "Kentucky",
+        "class": "Senior",
+        "name": "Oscar Tshiebwe"
+      },
+      "azuolas tubelis": {
+        "age": 24.2,
+        "school": "Arizona",
+        "class": "Junior",
+        "name": "Azuolas Tubelis"
+      }
+    },
+    "2024": {
+      "zaccharie risacher": {
+        "age": 19.2,
+        "school": "JL Bourg",
+        "class": "International",
+        "name": "Zaccharie Risacher"
+      },
+      "alexandre sarr": {
+        "age": 19.2,
+        "school": "Perth",
+        "class": "International",
+        "name": "Alexandre Sarr"
+      },
+      "reed sheppard": {
+        "age": 20.0,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Reed Sheppard"
+      },
+      "stephon castle": {
+        "age": 19.6,
+        "school": "UConn",
+        "class": "Freshman",
+        "name": "Stephon Castle"
+      },
+      "ron holland": {
+        "age": 19.0,
+        "school": "G League",
+        "class": "G League",
+        "name": "Ron Holland"
+      },
+      "tidjane salaun": {
+        "age": 18.9,
+        "school": "Cholet Basket",
+        "class": "International",
+        "name": "Tidjane Salaun"
+      },
+      "donovan clingan": {
+        "age": 20.3,
+        "school": "UConn",
+        "class": "Sophomore",
+        "name": "Donovan Clingan"
+      },
+      "rob dillingham": {
+        "age": 19.5,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Rob Dillingham"
+      },
+      "zach edey": {
+        "age": 22.1,
+        "school": "Purdue",
+        "class": "Senior",
+        "name": "Zach Edey"
+      },
+      "cody williams": {
+        "age": 19.6,
+        "school": "Colorado",
+        "class": "Freshman",
+        "name": "Cody Williams"
+      },
+      "matas buzelis": {
+        "age": 19.7,
+        "school": "G League",
+        "class": "G League",
+        "name": "Matas Buzelis"
+      },
+      "nikola topic": {
+        "age": 18.9,
+        "school": "Red Star",
+        "class": "International",
+        "name": "Nikola Topić"
+      },
+      "devin carter": {
+        "age": 22.3,
+        "school": "Providence",
+        "class": "Junior",
+        "name": "Devin Carter"
+      },
+      "carlton carrington": {
+        "age": 18.9,
+        "school": "Pittsburgh",
+        "class": "Freshman",
+        "name": "Carlton Carrington"
+      },
+      "kelel ware": {
+        "age": 20.2,
+        "school": "Indiana",
+        "class": "Sophomore",
+        "name": "Kel'el Ware"
+      },
+      "jared mccain": {
+        "age": 20.3,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Jared McCain"
+      },
+      "dalton knecht": {
+        "age": 23.2,
+        "school": "Tennessee",
+        "class": "Senior",
+        "name": "Dalton Knecht"
+      },
+      "tristan da silva": {
+        "age": 23.1,
+        "school": "Colorado",
+        "class": "Senior",
+        "name": "Tristan da Silva"
+      },
+      "jakobe walter": {
+        "age": 19.8,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "Ja'Kobe Walter"
+      },
+      "jaylon tyson": {
+        "age": 21.5,
+        "school": "California",
+        "class": "Junior",
+        "name": "Jaylon Tyson"
+      },
+      "yves missi": {
+        "age": 20.1,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "Yves Missi"
+      },
+      "daron holmes": {
+        "age": 21.8,
+        "school": "Dayton",
+        "class": "Junior",
+        "name": "DaRon Holmes II"
+      },
+      "aj johnson": {
+        "age": 19.6,
+        "school": "Illawarra",
+        "class": "International",
+        "name": "AJ Johnson"
+      },
+      "kyshawn george": {
+        "age": 20.5,
+        "school": "Miami",
+        "class": "Freshman",
+        "name": "Kyshawn George"
+      },
+      "pacome dadiet": {
+        "age": 18.9,
+        "school": "Ratiopharm Ulm",
+        "class": "International",
+        "name": "Pacome Dadiet"
+      },
+      "dillon jones": {
+        "age": 22.6,
+        "school": "Weber State",
+        "class": "Senior",
+        "name": "Dillon Jones"
+      },
+      "terrence shannon": {
+        "age": 23.9,
+        "school": "Illinois",
+        "class": "Senior",
+        "name": "Terrence Shannon Jr."
+      },
+      "ryan dunn": {
+        "age": 21.4,
+        "school": "Virginia",
+        "class": "Sophomore",
+        "name": "Ryan Dunn"
+      },
+      "isaiah collier": {
+        "age": 19.7,
+        "school": "USC",
+        "class": "Freshman",
+        "name": "Isaiah Collier"
+      },
+      "baylor scheierman": {
+        "age": 23.7,
+        "school": "Creighton",
+        "class": "Senior",
+        "name": "Baylor Scheierman"
+      },
+      "jonathan mogbo": {
+        "age": 22.6,
+        "school": "San Francisco",
+        "class": "Junior",
+        "name": "Jonathan Mogbo"
+      },
+      "kyle filipowski": {
+        "age": 20.6,
+        "school": "Duke",
+        "class": "Sophomore",
+        "name": "Kyle Filipowski"
+      },
+      "tyler smith": {
+        "age": 19.6,
+        "school": "G League",
+        "class": "G League",
+        "name": "Tyler Smith"
+      },
+      "tyler kolek": {
+        "age": 23.2,
+        "school": "Marquette",
+        "class": "Senior",
+        "name": "Tyler Kolek"
+      },
+      "johnny furphy": {
+        "age": 19.5,
+        "school": "Kansas",
+        "class": "Freshman",
+        "name": "Johnny Furphy"
+      },
+      "juan nunez": {
+        "age": 20.0,
+        "school": "Ratiopharm Ulm",
+        "class": "International",
+        "name": "Juan Núñez"
+      },
+      "bobi klintman": {
+        "age": 21.3,
+        "school": "Cairns",
+        "class": "International",
+        "name": "Bobi Klintman"
+      },
+      "ajay mitchell": {
+        "age": 22.0,
+        "school": "UC Santa Barbara",
+        "class": "Junior",
+        "name": "Ajay Mitchell"
+      },
+      "jaylen wells": {
+        "age": 20.8,
+        "school": "Washington State",
+        "class": "Junior",
+        "name": "Jaylen Wells"
+      },
+      "oso ighodaro": {
+        "age": 22.0,
+        "school": "Marquette",
+        "class": "Senior",
+        "name": "Oso Ighodaro"
+      },
+      "adem bona": {
+        "age": 21.2,
+        "school": "UCLA",
+        "class": "Sophomore",
+        "name": "Adem Bona"
+      },
+      "kj simpson": {
+        "age": 21.9,
+        "school": "Colorado",
+        "class": "Junior",
+        "name": "KJ Simpson"
+      },
+      "nikola djurisic": {
+        "age": 20.3,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Nikola Djurisic"
+      },
+      "pelle larsson": {
+        "age": 23.3,
+        "school": "Arizona",
+        "class": "Senior",
+        "name": "Pelle Larsson"
+      },
+      "jamal shead": {
+        "age": 22.0,
+        "school": "Houston",
+        "class": "Senior",
+        "name": "Jamal Shead"
+      },
+      "cam christie": {
+        "age": 18.9,
+        "school": "Minnesota",
+        "class": "Freshman",
+        "name": "Cam Christie"
+      },
+      "antonio reeves": {
+        "age": 23.6,
+        "school": "Kentucky",
+        "class": "Senior",
+        "name": "Antonio Reeves"
+      },
+      "harrison ingram": {
+        "age": 21.6,
+        "school": "North Carolina",
+        "class": "Junior",
+        "name": "Harrison Ingram"
+      },
+      "tristen newton": {
+        "age": 23.2,
+        "school": "UConn",
+        "class": "Senior",
+        "name": "Tristen Newton"
+      },
+      "enrique freeman": {
+        "age": 23.9,
+        "school": "Akron",
+        "class": "Senior",
+        "name": "Enrique Freeman"
+      },
+      "melvin ajinca": {
+        "age": 20.0,
+        "school": "Saint-Quentin",
+        "class": "International",
+        "name": "Melvin Ajinca"
+      },
+      "quinten post": {
+        "age": 24.2,
+        "school": "Boston College",
+        "class": "Senior",
+        "name": "Quinten Post"
+      },
+      "cam spencer": {
+        "age": 24.2,
+        "school": "UConn",
+        "class": "Senior",
+        "name": "Cam Spencer"
+      },
+      "anton watson": {
+        "age": 23.7,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Anton Watson"
+      },
+      "bronny james": {
+        "age": 19.7,
+        "school": "USC",
+        "class": "Freshman",
+        "name": "Bronny James"
+      },
+      "kevin mccullar": {
+        "age": 23.3,
+        "school": "Kansas",
+        "class": "Senior",
+        "name": "Kevin McCullar"
+      },
+      "ulrich chomche": {
+        "age": 18.5,
+        "school": "NBA Academy Africa",
+        "class": "International",
+        "name": "Ulrich Chomche"
+      },
+      "ariel hukporti": {
+        "age": 22.2,
+        "school": "Melbourne",
+        "class": "International",
+        "name": "Ariel Hukporti"
+      },
+      "trey alexander": {
+        "age": 23.1,
+        "school": "Creighton",
+        "class": "Junior",
+        "name": "Trey Alexander"
+      },
+      "reece beekman": {
+        "age": 24.7,
+        "school": "Virginia",
+        "class": "Senior",
+        "name": "Reece Beekman"
+      },
+      "jalen bridges": {
+        "age": 25.1,
+        "school": "Baylor",
+        "class": "Senior",
+        "name": "Jalen Bridges"
+      },
+      "isaiah crawford": {
+        "age": 24.6,
+        "school": "Louisiana Tech",
+        "class": "Senior",
+        "name": "Isaiah Crawford"
+      },
+      "nfaly dante": {
+        "age": 24.6,
+        "school": "Oregon",
+        "class": "Senior",
+        "name": "N'Faly Dante"
+      },
+      "justin edwards": {
+        "age": 22.5,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Justin Edwards"
+      },
+      "boogie ellis": {
+        "age": 25.5,
+        "school": "USC",
+        "class": "Senior",
+        "name": "Boogie Ellis"
+      },
+      "allen flanigan": {
+        "age": 25.1,
+        "school": "Ole Miss",
+        "class": "Senior",
+        "name": "Allen Flanigan"
+      },
+      "trentyn flowers": {
+        "age": 21.3,
+        "school": "Adelaide",
+        "class": "International",
+        "name": "Trentyn Flowers"
+      },
+      "pj hall": {
+        "age": 24.3,
+        "school": "Clemson",
+        "class": "Senior",
+        "name": "PJ Hall"
+      },
+      "keshad johnson": {
+        "age": 24.9,
+        "school": "Arizona",
+        "class": "Senior",
+        "name": "Keshad Johnson"
+      },
+      "isaac jones": {
+        "age": 25.9,
+        "school": "Washington State",
+        "class": "Senior",
+        "name": "Isaac Jones"
+      },
+      "judah mintz": {
+        "age": 22.9,
+        "school": "Syracuse",
+        "class": "Sophomore",
+        "name": "Judah Mintz"
+      },
+      "ousmane ndiaye": {
+        "age": 22.2,
+        "school": "Saski Baskonia B",
+        "class": "International",
+        "name": "Ousmane N'Diaye"
+      },
+      "roko prkacin": {
+        "age": 23.5,
+        "school": "Girona",
+        "class": "International",
+        "name": "Roko Prkačin"
+      },
+      "zyon pullin": {
+        "age": 25.3,
+        "school": "Florida",
+        "class": "Senior",
+        "name": "Zyon Pullin"
+      },
+      "mantas rubstavicius": {
+        "age": 24.1,
+        "school": "New Zealand",
+        "class": "International",
+        "name": "Mantas Rubstavicius"
+      }
+    },
+    "2025": {
+      "cooper flagg": {
+        "age": 18.5,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Cooper Flagg"
+      },
+      "dylan harper": {
+        "age": 19.3,
+        "school": "Rutgers",
+        "class": "Freshman",
+        "name": "Dylan Harper"
+      },
+      "vj edgecombe": {
+        "age": 19.9,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "V.J. Edgecombe"
+      },
+      "kon knueppel": {
+        "age": 19.9,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Kon Knueppel"
+      },
+      "ace bailey": {
+        "age": 18.9,
+        "school": "Rutgers",
+        "class": "Freshman",
+        "name": "Ace Bailey"
+      },
+      "tre johnson": {
+        "age": 19.3,
+        "school": "Texas",
+        "class": "Freshman",
+        "name": "Tre Johnson"
+      },
+      "jeremiah fears": {
+        "age": 18.7,
+        "school": "Oklahoma",
+        "class": "Freshman",
+        "name": "Jeremiah Fears"
+      },
+      "egor demin": {
+        "age": 19.3,
+        "school": "BYU",
+        "class": "Freshman",
+        "name": "Egor Demin"
+      },
+      "collin murrayboyles": {
+        "age": 20.0,
+        "school": "South Carolina",
+        "class": "Sophomore",
+        "name": "Collin Murray-Boyles"
+      },
+      "khaman maluach": {
+        "age": 18.8,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Khaman Maluach"
+      },
+      "cedric coward": {
+        "age": 21.8,
+        "school": "Washington State",
+        "class": "Senior",
+        "name": "Cedric Coward"
+      },
+      "noa essengue": {
+        "age": 18.5,
+        "school": "Ratiopharm Ulm",
+        "class": "International",
+        "name": "Noa Essengue"
+      },
+      "derik queen": {
+        "age": 20.5,
+        "school": "Maryland",
+        "class": "Freshman",
+        "name": "Derik Queen"
+      },
+      "carter bryant": {
+        "age": 19.6,
+        "school": "Arizona",
+        "class": "Freshman",
+        "name": "Carter Bryant"
+      },
+      "thomas sorber": {
+        "age": 19.5,
+        "school": "Georgetown",
+        "class": "Freshman",
+        "name": "Thomas Sorber"
+      },
+      "hansen yang": {
+        "age": 20.0,
+        "school": "Qingdao",
+        "class": "International",
+        "name": "Hansen Yang"
+      },
+      "joan beringer": {
+        "age": 18.6,
+        "school": "KK Cedevita Junior",
+        "class": "International",
+        "name": "Joan Beringer"
+      },
+      "walter clayton": {
+        "age": 22.3,
+        "school": "Florida",
+        "class": "Senior",
+        "name": "Walter Clayton Jr."
+      },
+      "nolan traore": {
+        "age": 19.1,
+        "school": "Saint-Quentin",
+        "class": "International",
+        "name": "Nolan Traore"
+      },
+      "kasparas jakucionis": {
+        "age": 19.1,
+        "school": "Illinois",
+        "class": "Freshman",
+        "name": "Kasparas Jakucionis"
+      },
+      "will riley": {
+        "age": 19.4,
+        "school": "Illinois",
+        "class": "Freshman",
+        "name": "Will Riley"
+      },
+      "drake powell": {
+        "age": 19.8,
+        "school": "North Carolina",
+        "class": "Freshman",
+        "name": "Drake Powell"
+      },
+      "asa newell": {
+        "age": 19.7,
+        "school": "Georgia",
+        "class": "Freshman",
+        "name": "Asa Newell"
+      },
+      "nique clifford": {
+        "age": 23.4,
+        "school": "Colorado State",
+        "class": "Senior",
+        "name": "Nique Clifford"
+      },
+      "jase richardson": {
+        "age": 19.7,
+        "school": "Michigan State",
+        "class": "Freshman",
+        "name": "Jase Richardson"
+      },
+      "ben saraf": {
+        "age": 19.2,
+        "school": "Ratiopharm Ulm",
+        "class": "International",
+        "name": "Ben Saraf"
+      },
+      "danny wolf": {
+        "age": 21.1,
+        "school": "Michigan",
+        "class": "Junior",
+        "name": "Danny Wolf"
+      },
+      "hugo gonzalez": {
+        "age": 19.4,
+        "school": "Real Madrid",
+        "class": "International",
+        "name": "Hugo González"
+      },
+      "liam mcneeley": {
+        "age": 19.7,
+        "school": "UConn",
+        "class": "Freshman",
+        "name": "Liam McNeeley"
+      },
+      "ya konan niederhauser": {
+        "age": 22.3,
+        "school": "Penn State",
+        "class": "Junior",
+        "name": "Ya. Konan Niederhauser"
+      },
+      "rasheer fleming": {
+        "age": 20.9,
+        "school": "Saint Joseph's",
+        "class": "Junior",
+        "name": "Rasheer Fleming"
+      },
+      "noah penda": {
+        "age": 20.4,
+        "school": "Le Mans Sarthe",
+        "class": "International",
+        "name": "Noah Penda"
+      },
+      "sion james": {
+        "age": 22.5,
+        "school": "Duke",
+        "class": "Senior",
+        "name": "Sion James"
+      },
+      "ryan kalkbrenner": {
+        "age": 23.4,
+        "school": "Creighton",
+        "class": "Senior",
+        "name": "Ryan Kalkbrenner"
+      },
+      "johni broome": {
+        "age": 22.9,
+        "school": "Auburn",
+        "class": "Senior",
+        "name": "Johni Broome"
+      },
+      "adou thiero": {
+        "age": 21.1,
+        "school": "Arkansas",
+        "class": "Junior",
+        "name": "Adou Thiero"
+      },
+      "chaz lanier": {
+        "age": 23.5,
+        "school": "Tennessee",
+        "class": "Senior",
+        "name": "Chaz Lanier"
+      },
+      "kam jones": {
+        "age": 23.3,
+        "school": "Marquette",
+        "class": "Senior",
+        "name": "Kam Jones"
+      },
+      "alijah martin": {
+        "age": 23.5,
+        "school": "Florida",
+        "class": "Senior",
+        "name": "Alijah Martin"
+      },
+      "micah peavy": {
+        "age": 23.9,
+        "school": "Georgetown",
+        "class": "Senior",
+        "name": "Micah Peavy"
+      },
+      "koby brea": {
+        "age": 22.6,
+        "school": "Kentucky",
+        "class": "Senior",
+        "name": "Koby Brea"
+      },
+      "maxime raynaud": {
+        "age": 22.2,
+        "school": "Stanford",
+        "class": "Senior",
+        "name": "Maxime Raynaud"
+      },
+      "jamir watkins": {
+        "age": 24.0,
+        "school": "Florida State",
+        "class": "Senior",
+        "name": "Jamir Watkins"
+      },
+      "brooks barnhizer": {
+        "age": 23.3,
+        "school": "Northwestern",
+        "class": "Senior",
+        "name": "Brooks Barnhizer"
+      },
+      "rocco zikarsky": {
+        "age": 18.9,
+        "school": "Brisbane",
+        "class": "International",
+        "name": "Rocco Zikarsky"
+      },
+      "amari williams": {
+        "age": 23.4,
+        "school": "Kentucky",
+        "class": "Senior",
+        "name": "Amari Williams"
+      },
+      "bogoljub markovic": {
+        "age": 19.9,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Bogoljub Marković"
+      },
+      "javon small": {
+        "age": 22.5,
+        "school": "West Virginia",
+        "class": "Senior",
+        "name": "Javon Small"
+      },
+      "tyrese proctor": {
+        "age": 21.2,
+        "school": "Duke",
+        "class": "Junior",
+        "name": "Tyrese Proctor"
+      },
+      "kobe sanders": {
+        "age": 23.1,
+        "school": "Nevada",
+        "class": "Senior",
+        "name": "Kobe Sanders"
+      },
+      "mohamed diawara": {
+        "age": 20.1,
+        "school": "Cholet",
+        "class": "International",
+        "name": "Mohamed Diawara"
+      },
+      "alex toohey": {
+        "age": 21.1,
+        "school": "Sydney",
+        "class": "International",
+        "name": "Alex Toohey"
+      },
+      "john tonje": {
+        "age": 24.2,
+        "school": "Wisconsin",
+        "class": "Senior",
+        "name": "John Tonje"
+      },
+      "taelon peter": {
+        "age": 23.3,
+        "school": "Liberty",
+        "class": "Senior",
+        "name": "Taelon Peter"
+      },
+      "lachlan olbrich": {
+        "age": 21.5,
+        "school": "Illawarra",
+        "class": "International",
+        "name": "Lachlan Olbrich"
+      },
+      "will richard": {
+        "age": 22.5,
+        "school": "Florida",
+        "class": "Senior",
+        "name": "Will Richard"
+      },
+      "max shulga": {
+        "age": 23.0,
+        "school": "VCU",
+        "class": "Senior",
+        "name": "Max Shulga"
+      },
+      "saliou niang": {
+        "age": 21.1,
+        "school": "Trento",
+        "class": "International",
+        "name": "Saliou Niang"
+      },
+      "jahmai mashack": {
+        "age": 22.6,
+        "school": "Tennessee",
+        "class": "Senior",
+        "name": "Jahmai Mashack"
+      },
+      "izan almansa": {
+        "age": 21.0,
+        "school": "Perth",
+        "class": "International",
+        "name": "Izan Almansa"
+      },
+      "tamar bates": {
+        "age": 23.3,
+        "school": "Missouri",
+        "class": "Senior",
+        "name": "Tamar Bates"
+      },
+      "matthew cleveland": {
+        "age": 23.7,
+        "school": "Miami",
+        "class": "Senior",
+        "name": "Matthew Cleveland"
+      },
+      "andre curbelo": {
+        "age": 24.7,
+        "school": "Southern Miss",
+        "class": "Senior",
+        "name": "Andre Curbelo"
+      },
+      "eric dixon": {
+        "age": 25.4,
+        "school": "Villanova",
+        "class": "Senior",
+        "name": "Eric Dixon"
+      },
+      "vladislav goldin": {
+        "age": 25.1,
+        "school": "Michigan",
+        "class": "Senior",
+        "name": "Vladislav Goldin"
+      },
+      "coleman hawkins": {
+        "age": 24.5,
+        "school": "Kansas State",
+        "class": "Senior",
+        "name": "Coleman Hawkins"
+      },
+      "chucky hepburn": {
+        "age": 23.3,
+        "school": "Louisville",
+        "class": "Senior",
+        "name": "Chucky Hepburn"
+      },
+      "tyrese hunter": {
+        "age": 22.8,
+        "school": "Memphis",
+        "class": "Senior",
+        "name": "Tyrese Hunter"
+      },
+      "kobe johnson": {
+        "age": 23.4,
+        "school": "UCLA",
+        "class": "Senior",
+        "name": "Kobe Johnson"
+      },
+      "arthur kaluma": {
+        "age": 24.3,
+        "school": "Texas",
+        "class": "Senior",
+        "name": "Arthur Kaluma"
+      },
+      "viktor lakhin": {
+        "age": 24.9,
+        "school": "Clemson",
+        "class": "Senior",
+        "name": "Viktor Lakhin"
+      },
+      "caleb love": {
+        "age": 24.7,
+        "school": "Arizona",
+        "class": "Senior",
+        "name": "Caleb Love"
+      },
+      "rj luis": {
+        "age": 23.5,
+        "school": "St. John's",
+        "class": "Junior",
+        "name": "RJ Luis Jr."
+      },
+      "grant nelson": {
+        "age": 24.2,
+        "school": "Alabama",
+        "class": "Senior",
+        "name": "Grant Nelson"
+      },
+      "ryan nembhard": {
+        "age": 23.3,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Ryan Nembhard"
+      },
+      "dink pate": {
+        "age": 20.3,
+        "school": "Mexico City",
+        "class": "G League",
+        "name": "Dink Pate"
+      },
+      "wooga poplar": {
+        "age": 23.4,
+        "school": "Villanova",
+        "class": "Senior",
+        "name": "Wooga Poplar"
+      },
+      "kadary richmond": {
+        "age": 24.8,
+        "school": "St. John's",
+        "class": "Senior",
+        "name": "Kadary Richmond"
+      },
+      "jaxson robinson": {
+        "age": 23.5,
+        "school": "Kentucky",
+        "class": "Senior",
+        "name": "Jaxson Robinson"
+      },
+      "hunter sallis": {
+        "age": 23.2,
+        "school": "Wake Forest",
+        "class": "Senior",
+        "name": "Hunter Sallis"
+      },
+      "payton sandfort": {
+        "age": 23.9,
+        "school": "Iowa",
+        "class": "Senior",
+        "name": "Payton Sandfort"
+      },
+      "mark sears": {
+        "age": 24.3,
+        "school": "Alabama",
+        "class": "Senior",
+        "name": "Mark Sears"
+      },
+      "brice williams": {
+        "age": 24.9,
+        "school": "Nebraska",
+        "class": "Senior",
+        "name": "Brice Williams"
+      }
+    },
+    "2026": {
+      "cameron boozer": {
+        "age": 18.9,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Cameron Boozer"
+      },
+      "darryn peterson": {
+        "age": 19.4,
+        "school": "Kansas",
+        "class": "Freshman",
+        "name": "Darryn Peterson"
+      },
+      "aj dybantsa": {
+        "age": 19.4,
+        "school": "BYU",
+        "class": "Freshman",
+        "name": "AJ Dybantsa"
+      },
+      "caleb wilson": {
+        "age": 19.9,
+        "school": "North Carolina",
+        "class": "Freshman",
+        "name": "Caleb Wilson"
+      },
+      "keaton wagler": {
+        "age": 19.4,
+        "school": "Illinois",
+        "class": "Freshman",
+        "name": "Keaton Wagler"
+      },
+      "darius acuff": {
+        "age": 19.6,
+        "school": "Arkansas",
+        "class": "Freshman",
+        "name": "Darius Acuff Jr."
+      },
+      "kingston flemings": {
+        "age": 19.5,
+        "school": "Houston",
+        "class": "Freshman",
+        "name": "Kingston Flemings"
+      },
+      "brayden burries": {
+        "age": 20.8,
+        "school": "Arizona",
+        "class": "Freshman",
+        "name": "Brayden Burries"
+      },
+      "mikel brown": {
+        "age": 20.2,
+        "school": "Louisville",
+        "class": "Freshman",
+        "name": "Mikel Brown Jr."
+      },
+      "nate ament": {
+        "age": 19.5,
+        "school": "Tennessee",
+        "class": "Freshman",
+        "name": "Nate Ament"
+      },
+      "labaron philon": {
+        "age": 20.6,
+        "school": "Alabama",
+        "class": "Sophomore",
+        "name": "Labaron Philon Jr."
+      },
+      "yaxel lendeborg": {
+        "age": 23.7,
+        "school": "Michigan",
+        "class": "Senior",
+        "name": "Yaxel Lendeborg"
+      },
+      "karim lopez": {
+        "age": 19.2,
+        "school": "New Zealand",
+        "class": "International",
+        "name": "Karim López"
+      },
+      "cameron carr": {
+        "age": 21.6,
+        "school": "Baylor",
+        "class": "Sophomore",
+        "name": "Cameron Carr"
+      },
+      "hannes steinbach": {
+        "age": 20.1,
+        "school": "Washington",
+        "class": "Freshman",
+        "name": "Hannes Steinbach"
+      },
+      "chris cenac": {
+        "age": 19.4,
+        "school": "Houston",
+        "class": "Freshman",
+        "name": "Chris Cenac Jr."
+      },
+      "morez johnson": {
+        "age": 20.4,
+        "school": "Michigan",
+        "class": "Sophomore",
+        "name": "Morez Johnson Jr."
+      },
+      "aday mara": {
+        "age": 21.2,
+        "school": "Michigan",
+        "class": "Junior",
+        "name": "Aday Mara"
+      },
+      "jayden quaintance": {
+        "age": 18.9,
+        "school": "Kentucky",
+        "class": "Sophomore",
+        "name": "Jayden Quaintance"
+      },
+      "bennett stirtz": {
+        "age": 22.7,
+        "school": "Iowa",
+        "class": "Senior",
+        "name": "Bennett Stirtz"
+      },
+      "dailyn swain": {
+        "age": 20.9,
+        "school": "Texas",
+        "class": "Junior",
+        "name": "Dailyn Swain"
+      },
+      "christian anderson": {
+        "age": 20.2,
+        "school": "Texas Tech",
+        "class": "Sophomore",
+        "name": "Christian Anderson"
+      },
+      "allen graves": {
+        "age": 19.9,
+        "school": "Santa Clara",
+        "class": "Freshman",
+        "name": "Allen Graves"
+      },
+      "ebuka okorie": {
+        "age": 19.2,
+        "school": "Stanford",
+        "class": "Freshman",
+        "name": "Ebuka Okorie"
+      },
+      "koa peat": {
+        "age": 19.4,
+        "school": "Arizona",
+        "class": "Freshman",
+        "name": "Koa Peat"
+      },
+      "isaiah evans": {
+        "age": 20.5,
+        "school": "Duke",
+        "class": "Sophomore",
+        "name": "Isaiah Evans"
+      },
+      "joshua jefferson": {
+        "age": 22.6,
+        "school": "Iowa State",
+        "class": "Senior",
+        "name": "Joshua Jefferson"
+      },
+      "meleek thomas": {
+        "age": 19.9,
+        "school": "Arkansas",
+        "class": "Freshman",
+        "name": "Meleek Thomas"
+      },
+      "henri veesaar": {
+        "age": 22.2,
+        "school": "North Carolina",
+        "class": "Junior",
+        "name": "Henri Veesaar"
+      },
+      "tarris reed": {
+        "age": 22.9,
+        "school": "UConn",
+        "class": "Senior",
+        "name": "Tarris Reed Jr."
+      },
+      "sergio de larrea": {
+        "age": 20.5,
+        "school": "Valencia",
+        "class": "International",
+        "name": "Sergio de Larrea"
+      },
+      "alex karaban": {
+        "age": 23.6,
+        "school": "UConn",
+        "class": "Senior",
+        "name": "Alex Karaban"
+      },
+      "zuby ejiofor": {
+        "age": 22.2,
+        "school": "St. John's",
+        "class": "Senior",
+        "name": "Zuby Ejiofor"
+      },
+      "luigi suigo": {
+        "age": 19.4,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Luigi Suigo"
+      },
+      "richie saunders": {
+        "age": 24.8,
+        "school": "BYU",
+        "class": "Senior",
+        "name": "Richie Saunders"
+      },
+      "ryan conwell": {
+        "age": 22.0,
+        "school": "Louisville",
+        "class": "Senior",
+        "name": "Ryan Conwell"
+      },
+      "ugonna onyenso": {
+        "age": 21.7,
+        "school": "Virginia",
+        "class": "Senior",
+        "name": "Ugonna Onyenso"
+      },
+      "jaden bradley": {
+        "age": 22.8,
+        "school": "Arizona",
+        "class": "Senior",
+        "name": "Jaden Bradley"
+      },
+      "trevon brazile": {
+        "age": 23.4,
+        "school": "Arkansas",
+        "class": "Senior",
+        "name": "Trevon Brazile"
+      },
+      "baba miller": {
+        "age": 22.4,
+        "school": "Cincinnati",
+        "class": "Senior",
+        "name": "Baba Miller"
+      },
+      "jack kayil": {
+        "age": 20.4,
+        "school": "Alba Berlin",
+        "class": "International",
+        "name": "Jack Kayil"
+      },
+      "otega oweh": {
+        "age": 22.9,
+        "school": "Kentucky",
+        "class": "Senior",
+        "name": "Otega Oweh"
+      },
+      "nick martinelli": {
+        "age": 22.2,
+        "school": "Northwestern",
+        "class": "Senior",
+        "name": "Nick Martinelli"
+      },
+      "jakobi gillespie": {
+        "age": 22.3,
+        "school": "Tennessee",
+        "class": "Senior",
+        "name": "Ja'Kobi Gillespie"
+      },
+      "emanuel sharp": {
+        "age": 22.3,
+        "school": "Houston",
+        "class": "Senior",
+        "name": "Emanuel Sharp"
+      },
+      "izaiyah nelson": {
+        "age": 22.7,
+        "school": "South Florida",
+        "class": "Senior",
+        "name": "Izaiyah Nelson"
+      },
+      "bruce thornton": {
+        "age": 22.8,
+        "school": "Ohio State",
+        "class": "Senior",
+        "name": "Bruce Thornton"
+      },
+      "milos uzan": {
+        "age": 23.5,
+        "school": "Houston",
+        "class": "Senior",
+        "name": "Milos Uzan"
+      },
+      "tyler nickel": {
+        "age": 22.8,
+        "school": "Vanderbilt",
+        "class": "Senior",
+        "name": "Tyler Nickel"
+      },
+      "braden smith": {
+        "age": 22.9,
+        "school": "Purdue",
+        "class": "Senior",
+        "name": "Braden Smith"
+      },
+      "maliq brown": {
+        "age": 22.6,
+        "school": "Duke",
+        "class": "Senior",
+        "name": "Maliq Brown"
+      },
+      "tyler bilodeau": {
+        "age": 22.2,
+        "school": "UCLA",
+        "class": "Senior",
+        "name": "Tyler Bilodeau"
+      },
+      "felix okpara": {
+        "age": 22.2,
+        "school": "Tennessee",
+        "class": "Senior",
+        "name": "Felix Okpara"
+      },
+      "tamin lipsey": {
+        "age": 22.9,
+        "school": "Iowa State",
+        "class": "Senior",
+        "name": "Tamin Lipsey"
+      },
+      "pavle backo": {
+        "age": 18.9,
+        "school": "KK Mega Basket",
+        "class": "International",
+        "name": "Pavle Backo"
+      },
+      "kylan boswell": {
+        "age": 21.2,
+        "school": "Illinois",
+        "class": "Senior",
+        "name": "Kylan Boswell"
+      },
+      "tobi lawal": {
+        "age": 23.1,
+        "school": "Virginia Tech",
+        "class": "Senior",
+        "name": "Tobi Lawal"
+      },
+      "rafael castro": {
+        "age": 23.2,
+        "school": "George Washington",
+        "class": "Senior",
+        "name": "Rafael Castro"
+      },
+      "keyshawn hall": {
+        "age": 23.2,
+        "school": "Auburn",
+        "class": "Senior",
+        "name": "Keyshawn Hall"
+      },
+      "dillon mitchell": {
+        "age": 22.7,
+        "school": "St. John's",
+        "class": "Senior",
+        "name": "Dillon Mitchell"
+      },
+      "quadir copeland": {
+        "age": 22.8,
+        "school": "NC State",
+        "class": "Senior",
+        "name": "Quadir Copeland"
+      },
+      "nick boyd": {
+        "age": 25.2,
+        "school": "Wisconsin",
+        "class": "Senior",
+        "name": "Nick Boyd"
+      },
+      "peter suder": {
+        "age": 22.9,
+        "school": "Miami (Ohio)",
+        "class": "Senior",
+        "name": "Peter Suder"
+      },
+      "nate bittle": {
+        "age": 23.0,
+        "school": "Oregon",
+        "class": "Senior",
+        "name": "Nate Bittle"
+      },
+      "aaron nkrumah": {
+        "age": 24.6,
+        "school": "Tennessee State",
+        "class": "Senior",
+        "name": "Aaron Nkrumah"
+      },
+      "trey kaufmanrenn": {
+        "age": 23.8,
+        "school": "Purdue",
+        "class": "Senior",
+        "name": "Trey Kaufman-Renn"
+      },
+      "bryce hopkins": {
+        "age": 23.8,
+        "school": "St. John's",
+        "class": "Senior",
+        "name": "Bryce Hopkins"
+      },
+      "malik reneau": {
+        "age": 23.2,
+        "school": "Miami",
+        "class": "Senior",
+        "name": "Malik Reneau"
+      },
+      "tucker devries": {
+        "age": 23.5,
+        "school": "Indiana",
+        "class": "Senior",
+        "name": "Tucker DeVries"
+      },
+      "darrion williams": {
+        "age": 23.2,
+        "school": "NC State",
+        "class": "Senior",
+        "name": "Darrion Williams"
+      },
+      "mark mitchell": {
+        "age": 22.8,
+        "school": "Missouri",
+        "class": "Senior",
+        "name": "Mark Mitchell"
+      },
+      "matt able": {
+        "age": 18.9,
+        "school": "NC State",
+        "class": "Freshman",
+        "name": "Matt Able"
+      },
+      "michael ajayi": {
+        "age": 22.9,
+        "school": "Butler",
+        "class": "Senior",
+        "name": "Michael Ajayi"
+      },
+      "amari allen": {
+        "age": 20.4,
+        "school": "Alabama",
+        "class": "Freshman",
+        "name": "Amari Allen"
+      },
+      "terrance arceneaux": {
+        "age": 22.6,
+        "school": "NC State",
+        "class": "Senior",
+        "name": "Terrance Arceneaux"
+      },
+      "alijah arenas": {
+        "age": 19.3,
+        "school": "USC",
+        "class": "Freshman",
+        "name": "Alijah Arenas"
+      },
+      "neoklis avdalas": {
+        "age": 20.4,
+        "school": "Virginia Tech",
+        "class": "Freshman",
+        "name": "Neoklis Avdalas"
+      },
+      "solo ball": {
+        "age": 22.5,
+        "school": "UConn",
+        "class": "Junior",
+        "name": "Solo Ball"
+      },
+      "jalil bethea": {
+        "age": 20.5,
+        "school": "Alabama",
+        "class": "Sophomore",
+        "name": "Jalil Bethea"
+      },
+      "flory bidunga": {
+        "age": 21.1,
+        "school": "Kansas",
+        "class": "Sophomore",
+        "name": "Flory Bidunga"
+      },
+      "omaha biliew": {
+        "age": 21.8,
+        "school": "Wake Forest",
+        "class": "Junior",
+        "name": "Omaha Biliew"
+      },
+      "xavier booker": {
+        "age": 21.8,
+        "school": "UCLA",
+        "class": "Junior",
+        "name": "Xavier Booker"
+      },
+      "cayden boozer": {
+        "age": 18.9,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Cayden Boozer"
+      },
+      "aaron bradshaw": {
+        "age": 22.2,
+        "school": "Memphis",
+        "class": "Junior",
+        "name": "Aaron Bradshaw"
+      },
+      "miles byrd": {
+        "age": 21.8,
+        "school": "San Diego State",
+        "class": "Junior",
+        "name": "Miles Byrd"
+      },
+      "elliot cadeau": {
+        "age": 21.8,
+        "school": "Michigan",
+        "class": "Junior",
+        "name": "Elliot Cadeau"
+      },
+      "kanaan carlyle": {
+        "age": 21.7,
+        "school": "Florida Atlantic",
+        "class": "Junior",
+        "name": "Kanaan Carlyle"
+      },
+      "coen carr": {
+        "age": 21.6,
+        "school": "Michigan State",
+        "class": "Junior",
+        "name": "Coen Carr"
+      },
+      "rueben chinyelu": {
+        "age": 22.7,
+        "school": "Florida",
+        "class": "Junior",
+        "name": "Rueben Chinyelu"
+      },
+      "daimion collins": {
+        "age": 23.6,
+        "school": "South Florida",
+        "class": "Senior",
+        "name": "Daimion Collins"
+      },
+      "alex condon": {
+        "age": 21.9,
+        "school": "Florida",
+        "class": "Junior",
+        "name": "Alex Condon"
+      },
+      "dash daniels": {
+        "age": 18.5,
+        "school": "Melbourne",
+        "class": "International",
+        "name": "Dash Daniels"
+      },
+      "thierry darlan": {
+        "age": 22.4,
+        "school": "G League",
+        "class": "G League",
+        "name": "Thierry Darlan"
+      },
+      "kwame evans": {
+        "age": 21.9,
+        "school": "Oregon",
+        "class": "Junior",
+        "name": "Kwame Evans"
+      },
+      "mouhamed faye": {
+        "age": 21.4,
+        "school": "Reggio Emilia",
+        "class": "International",
+        "name": "Mouhamed Faye"
+      },
+      "jeremy fears": {
+        "age": 21.2,
+        "school": "Michigan State",
+        "class": "Sophomore",
+        "name": "Jeremy Fears Jr."
+      },
+      "boogie fland": {
+        "age": 19.9,
+        "school": "Florida",
+        "class": "Sophomore",
+        "name": "Boogie Fland"
+      },
+      "donnie freeman": {
+        "age": 20.8,
+        "school": "Syracuse",
+        "class": "Sophomore",
+        "name": "Donnie Freeman"
+      },
+      "tyon grantfoster": {
+        "age": 26.3,
+        "school": "Gonzaga",
+        "class": "Senior",
+        "name": "Tyon Grant-Foster"
+      },
+      "johann grunloh": {
+        "age": 20.8,
+        "school": "Virginia",
+        "class": "Freshman",
+        "name": "Johann Grünloh"
+      },
+      "magoon gwath": {
+        "age": 20.9,
+        "school": "San Diego State",
+        "class": "Sophomore",
+        "name": "Magoon Gwath"
+      },
+      "juke harris": {
+        "age": 20.9,
+        "school": "Wake Forest",
+        "class": "Sophomore",
+        "name": "Juke Harris"
+      },
+      "isiah harwell": {
+        "age": 19.5,
+        "school": "Houston",
+        "class": "Freshman",
+        "name": "Isiah Harwell"
+      },
+      "thomas haugh": {
+        "age": 22.9,
+        "school": "Florida",
+        "class": "Junior",
+        "name": "Thomas Haugh"
+      },
+      "ben henshall": {
+        "age": 21.9,
+        "school": "Perth",
+        "class": "International",
+        "name": "Ben Henshall"
+      },
+      "zvonimir ivisic": {
+        "age": 22.8,
+        "school": "Illinois",
+        "class": "Junior",
+        "name": "Zvonimir Ivisic"
+      },
+      "tomislav ivisic": {
+        "age": 22.8,
+        "school": "Illinois",
+        "class": "Junior",
+        "name": "Tomislav Ivisic"
+      },
+      "elmarko jackson": {
+        "age": 22.2,
+        "school": "Kansas",
+        "class": "Sophomore",
+        "name": "Elmarko Jackson"
+      },
+      "ian jackson": {
+        "age": 21.3,
+        "school": "St. John's",
+        "class": "Sophomore",
+        "name": "Ian Jackson"
+      },
+      "daniel jacobsen": {
+        "age": 20.2,
+        "school": "Purdue",
+        "class": "Sophomore",
+        "name": "Daniel Jacobsen"
+      },
+      "nikolas khamenia": {
+        "age": 19.5,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Nikolas Khamenia"
+      },
+      "karter knox": {
+        "age": 21.1,
+        "school": "Arkansas",
+        "class": "Sophomore",
+        "name": "Karter Knox"
+      },
+      "motiejus krivas": {
+        "age": 21.6,
+        "school": "Arizona",
+        "class": "Junior",
+        "name": "Motiejus Krivas"
+      },
+      "riley kugel": {
+        "age": 22.6,
+        "school": "UCF",
+        "class": "Senior",
+        "name": "Riley Kugel"
+      },
+      "xaivian lee": {
+        "age": 22.3,
+        "school": "Florida",
+        "class": "Senior",
+        "name": "Xaivian Lee"
+      },
+      "kj lewis": {
+        "age": 21.9,
+        "school": "Georgetown",
+        "class": "Junior",
+        "name": "KJ Lewis"
+      },
+      "jaland lowe": {
+        "age": 21.8,
+        "school": "Kentucky",
+        "class": "Junior",
+        "name": "Jaland Lowe"
+      },
+      "paul mcneil": {
+        "age": 20.2,
+        "school": "NC State",
+        "class": "Sophomore",
+        "name": "Paul McNeil Jr."
+      },
+      "mackenzie mgbako": {
+        "age": 21.6,
+        "school": "Texas A&M",
+        "class": "Junior",
+        "name": "Mackenzie Mgbako"
+      },
+      "david mirkovic": {
+        "age": 20.5,
+        "school": "Illinois",
+        "class": "Freshman",
+        "name": "David Mirkovic"
+      },
+      "milan momcilovic": {
+        "age": 21.7,
+        "school": "Iowa State",
+        "class": "Junior",
+        "name": "Milan Momcilovic"
+      },
+      "malachi moreno": {
+        "age": 19.7,
+        "school": "Kentucky",
+        "class": "Freshman",
+        "name": "Malachi Moreno"
+      },
+      "braylon mullins": {
+        "age": 20.2,
+        "school": "UConn",
+        "class": "Freshman",
+        "name": "Braylon Mullins"
+      },
+      "patrick ngongba": {
+        "age": 20.3,
+        "school": "Duke",
+        "class": "Sophomore",
+        "name": "Patrick Ngongba II"
+      },
+      "tahaad pettiford": {
+        "age": 20.9,
+        "school": "Auburn",
+        "class": "Sophomore",
+        "name": "Tahaad Pettiford"
+      },
+      "derrion reid": {
+        "age": 19.9,
+        "school": "Oklahoma",
+        "class": "Sophomore",
+        "name": "Derrion Reid"
+      },
+      "billy richmond": {
+        "age": 20.2,
+        "school": "Arkansas",
+        "class": "Sophomore",
+        "name": "Billy Richmond III"
+      },
+      "michael ruzic": {
+        "age": 19.7,
+        "school": "Joventut",
+        "class": "International",
+        "name": "Michael Ruzic"
+      },
+      "pryce sandfort": {
+        "age": 21.9,
+        "school": "Nebraska",
+        "class": "Junior",
+        "name": "Pryce Sandfort"
+      },
+      "dame sarr": {
+        "age": 20.0,
+        "school": "Duke",
+        "class": "Freshman",
+        "name": "Dame Sarr"
+      },
+      "andrej stojakovic": {
+        "age": 21.8,
+        "school": "Illinois",
+        "class": "Junior",
+        "name": "Andrej Stojakovic"
+      },
+      "tyler tanner": {
+        "age": 20.4,
+        "school": "Vanderbilt",
+        "class": "Sophomore",
+        "name": "Tyler Tanner"
+      },
+      "jt toppin": {
+        "age": 21.0,
+        "school": "Texas Tech",
+        "class": "Junior",
+        "name": "JT Toppin"
+      },
+      "jojo tugler": {
+        "age": 21.1,
+        "school": "Houston",
+        "class": "Junior",
+        "name": "JoJo Tugler"
+      },
+      "dj wagner": {
+        "age": 21.1,
+        "school": "Arkansas",
+        "class": "Junior",
+        "name": "DJ Wagner"
+      },
+      "tounde yessoufou": {
+        "age": 20.1,
+        "school": "Baylor",
+        "class": "Freshman",
+        "name": "Tounde Yessoufou"
+      }
+    }
+  }
+}
