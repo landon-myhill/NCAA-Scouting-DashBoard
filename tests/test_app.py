@@ -14,6 +14,7 @@ def client():
 
 @pytest.mark.parametrize("path", [
     "/", "/scouting", "/bigboard", "/bigboard?year=all", "/bigboard?sort=raw",
+    "/bigboard?year=2024", "/bigboard?year=2020", "/bigboard?year=2025",
     "/archetypes", "/archetypes?year=2023", "/ranking", "/scarcity", "/needs",
     "/watchlist", "/compare", "/api/players?q=a",
 ])

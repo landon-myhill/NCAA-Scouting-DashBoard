@@ -79,7 +79,7 @@
         <label class="form-label small text-secondary mb-0">Position</label>
         <select id="bbFilterPos" class="form-select form-select-sm" style="min-width:100px">
             <option value="All">All</option>
-            {% set positions = players|map(attribute='pos')|unique|sort %}
+            {% set positions = players|map(attribute='pos')|select|unique|sort %}
             {% for pos in positions %}<option>{{ pos }}</option>{% endfor %}
         </select>
     </div>
@@ -87,7 +87,7 @@
         <label class="form-label small text-secondary mb-0">Conference</label>
         <select id="bbFilterConf" class="form-select form-select-sm" style="min-width:140px">
             <option value="All">All</option>
-            {% set confs = players|map(attribute='conference')|unique|sort %}
+            {% set confs = players|map(attribute='conference')|select|unique|sort %}
             {% for c in confs %}{% if c %}<option>{{ c }}</option>{% endif %}{% endfor %}
         </select>
     </div>
