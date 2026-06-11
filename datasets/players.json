@@ -91,8 +91,9 @@
       "recruit_rank": 3,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.82,
-        "bust": 0.012
+        "success": 0.795,
+        "bust": 0.025,
+        "rotation": 0.18
       },
       "combine": {
         "wingspan_in": 85.5,
@@ -236,8 +237,9 @@
       "recruit_rank": 2,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.83,
-        "bust": 0.011
+        "success": 0.8,
+        "bust": 0.025,
+        "rotation": 0.176
       },
       "combine": {
         "wingspan_in": 81.75,
@@ -383,8 +385,9 @@
       "recruit_rank": 5,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.802,
-        "bust": 0.013
+        "success": 0.786,
+        "bust": 0.026,
+        "rotation": 0.188
       },
       "combine": {
         "wingspan_in": 84.25,
@@ -531,8 +534,9 @@
       "recruit_rank": 1,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.829,
-        "bust": 0.011
+        "success": 0.799,
+        "bust": 0.025,
+        "rotation": 0.176
       },
       "_mock_rank": 3,
       "strengths": {
@@ -663,8 +667,9 @@
       "recruit_rank": 16,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.729,
-        "bust": 0.02
+        "success": 0.749,
+        "bust": 0.029,
+        "rotation": 0.222
       },
       "combine": {
         "wingspan_in": 75.5,
@@ -805,8 +810,9 @@
       "recruit_rank": 15,
       "recruit_class_year": 2023,
       "pred": {
-        "success": 0.473,
-        "bust": 0.063
+        "success": 0.46,
+        "bust": 0.066,
+        "rotation": 0.474
       },
       "combine": {
         "wingspan_in": 90.0,
@@ -944,8 +950,9 @@
       "recruit_rank": 10,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.622,
-        "bust": 0.034
+        "success": 0.632,
+        "bust": 0.042,
+        "rotation": 0.326
       },
       "combine": {
         "wingspan_in": 78.0,
@@ -1084,8 +1091,9 @@
       "recruit_rank": 15,
       "recruit_class_year": 2024,
       "pred": {
-        "success": 0.203,
-        "bust": 0.206
+        "success": 0.256,
+        "bust": 0.236,
+        "rotation": 0.508
       },
       "combine": {
         "wingspan_in": 80.75,
@@ -1227,8 +1235,9 @@
       "recruit_rank": 30,
       "recruit_class_year": 2024,
       "pred": {
-        "success": 0.509,
-        "bust": 0.055
+        "success": 0.501,
+        "bust": 0.06,
+        "rotation": 0.439
       },
       "combine": {
         "wingspan_in": 87.5,
@@ -1377,8 +1386,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.227,
-        "bust": 0.182
+        "success": 0.272,
+        "bust": 0.211,
+        "rotation": 0.518
       },
       "combine": {
         "wingspan_in": 86.0,
@@ -1520,8 +1530,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.557,
-        "bust": 0.045
+        "success": 0.556,
+        "bust": 0.052,
+        "rotation": 0.392
       },
       "combine": {
         "wingspan_in": 87.25,
@@ -1667,8 +1678,9 @@
       "red_flags": [],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.758,
-        "bust": 0.017
+        "success": 0.764,
+        "bust": 0.028,
+        "rotation": 0.208
       },
       "combine": {
         "wingspan_in": 78.25,
@@ -1810,8 +1822,9 @@
       "recruit_rank": 36,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.024,
-        "bust": 0.761
+        "success": 0.027,
+        "bust": 0.684,
+        "rotation": 0.289
       },
       "combine": {
         "wingspan_in": 88.75,
@@ -1960,8 +1973,9 @@
       "recruit_rank": 11,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.791,
-        "bust": 0.014
+        "success": 0.78,
+        "bust": 0.026,
+        "rotation": 0.193
       },
       "combine": {
         "wingspan_in": 78.5,
@@ -2106,8 +2120,9 @@
       "recruit_rank": 35,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.21,
-        "bust": 0.198
+        "success": 0.261,
+        "bust": 0.228,
+        "rotation": 0.512
       },
       "combine": {
         "wingspan_in": 88.25,
@@ -2247,8 +2262,9 @@
       "red_flags": [],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.422,
-        "bust": 0.077
+        "success": 0.402,
+        "bust": 0.076,
+        "rotation": 0.522
       },
       "combine": {
         "wingspan_in": 86.25,
@@ -2394,8 +2410,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.229,
-        "bust": 0.181
+        "success": 0.273,
+        "bust": 0.209,
+        "rotation": 0.518
       },
       "combine": {
         "wingspan_in": 82.75,
@@ -2786,8 +2803,9 @@
       "red_flags": [],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.142,
-        "bust": 0.292
+        "success": 0.164,
+        "bust": 0.321,
+        "rotation": 0.515
       },
       "combine": {
         "wingspan_in": 84.0,
@@ -2927,8 +2945,9 @@
       "recruit_rank": 4,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.45,
-        "bust": 0.069
+        "success": 0.434,
+        "bust": 0.071,
+        "rotation": 0.496
       },
       "_mock_rank": 19,
       "strengths": {
@@ -3144,8 +3163,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.074,
-        "bust": 0.473
+        "success": 0.07,
+        "bust": 0.457,
+        "rotation": 0.473
       },
       "combine": {
         "wingspan_in": 80.75,
@@ -3289,8 +3309,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.01,
-        "bust": 0.895
+        "success": 0.006,
+        "bust": 0.918,
+        "rotation": 0.076
       },
       "_mock_rank": 76,
       "strengths": {
@@ -3745,7 +3766,8 @@
       "draft_status": "auto_eligible",
       "pred": {
         "success": 0.014,
-        "bust": 0.853
+        "bust": 0.837,
+        "rotation": 0.149
       },
       "combine": {
         "wingspan_in": 86.5,
@@ -3890,8 +3912,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.018,
-        "bust": 0.817
+        "success": 0.019,
+        "bust": 0.772,
+        "rotation": 0.209
       },
       "combine": {
         "wingspan_in": 85.25,
@@ -4108,8 +4131,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.027,
-        "bust": 0.737
+        "success": 0.03,
+        "bust": 0.649,
+        "rotation": 0.321
       },
       "combine": {
         "wingspan_in": 77.0,
@@ -4399,8 +4423,9 @@
       "red_flags": [],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.532,
-        "bust": 0.05
+        "success": 0.527,
+        "bust": 0.056,
+        "rotation": 0.417
       },
       "combine": {
         "wingspan_in": 84.75,
@@ -4541,8 +4566,9 @@
       "recruit_rank": 47,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.083,
-        "bust": 0.442
+        "success": 0.076,
+        "bust": 0.438,
+        "rotation": 0.486
       },
       "combine": {
         "wingspan_in": 85.75,
@@ -4826,8 +4852,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.077,
-        "bust": 0.461
+        "success": 0.072,
+        "bust": 0.449,
+        "rotation": 0.478
       },
       "combine": {
         "wingspan_in": 75.0,
@@ -4970,8 +4997,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.357,
-        "bust": 0.101
+        "success": 0.355,
+        "bust": 0.11,
+        "rotation": 0.535
       },
       "combine": {
         "wingspan_in": 78.0,
@@ -5113,8 +5141,9 @@
       "recruit_rank": 5,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.046,
-        "bust": 0.609
+        "success": 0.047,
+        "bust": 0.537,
+        "rotation": 0.416
       },
       "combine": {
         "wingspan_in": 82.5,
@@ -5258,8 +5287,9 @@
       "recruit_rank": 8,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.753,
-        "bust": 0.018
+        "success": 0.761,
+        "bust": 0.028,
+        "rotation": 0.211
       },
       "_mock_rank": 6,
       "strengths": {
@@ -5386,8 +5416,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.012,
-        "bust": 0.873
+        "success": 0.01,
+        "bust": 0.878,
+        "rotation": 0.112
       },
       "combine": {
         "wingspan_in": 82.25,
@@ -5526,8 +5557,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.009,
-        "bust": 0.904
+        "success": 0.005,
+        "bust": 0.93,
+        "rotation": 0.065
       },
       "_mock_rank": 92,
       "strengths": {
@@ -5653,8 +5685,9 @@
       "recruit_rank": 6,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.235,
-        "bust": 0.175
+        "success": 0.277,
+        "bust": 0.202,
+        "rotation": 0.52
       },
       "_mock_rank": 24,
       "strengths": {
@@ -5867,8 +5900,9 @@
       "red_flags": [],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.444,
-        "bust": 0.071
+        "success": 0.427,
+        "bust": 0.072,
+        "rotation": 0.502
       },
       "combine": {
         "wingspan_in": 79.75,
@@ -6088,8 +6122,9 @@
       "recruit_rank": 35,
       "recruit_class_year": 2024,
       "pred": {
-        "success": 0.6,
-        "bust": 0.037
+        "success": 0.606,
+        "bust": 0.045,
+        "rotation": 0.348
       },
       "combine": {
         "wingspan_in": 78.25,
@@ -6226,8 +6261,9 @@
       "recruit_rank": 12,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.136,
-        "bust": 0.304
+        "success": 0.153,
+        "bust": 0.332,
+        "rotation": 0.515
       },
       "combine": {
         "wingspan_in": 78.75,
@@ -6369,8 +6405,9 @@
       ],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.143,
-        "bust": 0.29
+        "success": 0.166,
+        "bust": 0.32,
+        "rotation": 0.515
       },
       "combine": {
         "wingspan_in": 86.0,
@@ -6590,8 +6627,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.045,
-        "bust": 0.615
+        "success": 0.046,
+        "bust": 0.54,
+        "rotation": 0.413
       },
       "_mock_rank": 43,
       "strengths": {
@@ -6861,8 +6899,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.91
+        "success": 0.004,
+        "bust": 0.938,
+        "rotation": 0.058
       },
       "_mock_rank": 62,
       "strengths": {
@@ -7272,8 +7311,9 @@
       "recruit_rank": 9,
       "recruit_class_year": 2025,
       "pred": {
-        "success": 0.359,
-        "bust": 0.1
+        "success": 0.356,
+        "bust": 0.109,
+        "rotation": 0.535
       },
       "combine": {
         "wingspan_in": 83.25,
@@ -7558,8 +7598,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.062,
-        "bust": 0.522
+        "success": 0.061,
+        "bust": 0.485,
+        "rotation": 0.454
       },
       "combine": {
         "wingspan_in": 87.75,
@@ -7703,8 +7744,9 @@
       "recruit_rank": 26,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.092,
-        "bust": 0.41
+        "success": 0.083,
+        "bust": 0.42,
+        "rotation": 0.498
       },
       "combine": {
         "wingspan_in": 78.25,
@@ -8393,8 +8435,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.009,
-        "bust": 0.907
+        "success": 0.004,
+        "bust": 0.933,
+        "rotation": 0.063
       },
       "_mock_rank": 83,
       "strengths": {
@@ -8747,8 +8790,9 @@
       ],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.321,
-        "bust": 0.118
+        "success": 0.332,
+        "bust": 0.134,
+        "rotation": 0.534
       },
       "combine": {
         "wingspan_in": 78.25,
@@ -9118,8 +9162,9 @@
       "red_flags": [],
       "draft_status": null,
       "pred": {
-        "success": 0.009,
-        "bust": 0.905
+        "success": 0.005,
+        "bust": 0.931,
+        "rotation": 0.064
       },
       "combine": {
         "wingspan_in": 86.25,
@@ -9418,8 +9463,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.13,
-        "bust": 0.315
+        "success": 0.143,
+        "bust": 0.342,
+        "rotation": 0.514
       },
       "combine": {
         "wingspan_in": 75.25,
@@ -9640,8 +9686,9 @@
       "red_flags": [],
       "draft_status": "in_draft",
       "pred": {
-        "success": 0.388,
-        "bust": 0.089
+        "success": 0.374,
+        "bust": 0.092,
+        "rotation": 0.534
       },
       "combine": {
         "wingspan_in": 82.0,
@@ -9854,8 +9901,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.024,
-        "bust": 0.758
+        "success": 0.027,
+        "bust": 0.68,
+        "rotation": 0.293
       },
       "combine": {
         "wingspan_in": 84.75,
@@ -10067,7 +10115,8 @@
       "draft_status": "auto_eligible",
       "pred": {
         "success": 0.013,
-        "bust": 0.857
+        "bust": 0.845,
+        "rotation": 0.142
       },
       "_mock_rank": 58,
       "strengths": {
@@ -10189,8 +10238,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.035,
-        "bust": 0.68
+        "success": 0.037,
+        "bust": 0.579,
+        "rotation": 0.384
       },
       "combine": {
         "wingspan_in": 80.25,
@@ -11077,8 +11127,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.007,
-        "bust": 0.922
+        "success": 0.004,
+        "bust": 0.954,
+        "rotation": 0.043
       },
       "_mock_rank": 79,
       "strengths": {
@@ -11581,8 +11632,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.034,
-        "bust": 0.685
+        "success": 0.036,
+        "bust": 0.582,
+        "rotation": 0.381
       },
       "combine": {
         "wingspan_in": 76.0,
@@ -12106,8 +12158,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.879
+        "success": 0.009,
+        "bust": 0.891,
+        "rotation": 0.1
       },
       "_mock_rank": 74,
       "strengths": {
@@ -12738,8 +12791,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.918
+        "success": 0.004,
+        "bust": 0.95,
+        "rotation": 0.046
       },
       "_mock_rank": 86,
       "strengths": {
@@ -14101,8 +14155,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.023,
-        "bust": 0.768
+        "success": 0.026,
+        "bust": 0.695,
+        "rotation": 0.28
       },
       "_mock_rank": 53,
       "strengths": {
@@ -14520,8 +14575,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.127,
-        "bust": 0.32
+        "success": 0.139,
+        "bust": 0.347,
+        "rotation": 0.514
       },
       "combine": {
         "wingspan_in": 79.0,
@@ -15180,8 +15236,9 @@
       "recruit_rank": 30,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.008,
-        "bust": 0.908
+        "success": 0.004,
+        "bust": 0.935,
+        "rotation": 0.061
       },
       "_mock_rank": 69,
       "strengths": {
@@ -15745,8 +15802,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.91
+        "success": 0.004,
+        "bust": 0.937,
+        "rotation": 0.058
       },
       "combine": {
         "wingspan_in": 80.0,
@@ -16023,8 +16081,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.01,
-        "bust": 0.892
+        "success": 0.007,
+        "bust": 0.913,
+        "rotation": 0.08
       },
       "_mock_rank": 90,
       "strengths": {
@@ -16431,8 +16490,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.914
+        "success": 0.004,
+        "bust": 0.944,
+        "rotation": 0.052
       },
       "_mock_rank": 63,
       "strengths": {
@@ -16625,8 +16685,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.009,
-        "bust": 0.9
+        "success": 0.006,
+        "bust": 0.924,
+        "rotation": 0.071
       },
       "_mock_rank": 59,
       "strengths": {
@@ -18193,8 +18254,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.009,
-        "bust": 0.898
+        "success": 0.006,
+        "bust": 0.92,
+        "rotation": 0.074
       },
       "combine": {
         "wingspan_in": 77.0,
@@ -18848,8 +18910,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.884
+        "success": 0.009,
+        "bust": 0.902,
+        "rotation": 0.09
       },
       "_mock_rank": 78,
       "strengths": {
@@ -19040,8 +19103,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.912
+        "success": 0.004,
+        "bust": 0.941,
+        "rotation": 0.055
       },
       "_mock_rank": 60,
       "strengths": {
@@ -22115,8 +22179,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.881
+        "success": 0.009,
+        "bust": 0.895,
+        "rotation": 0.096
       },
       "_mock_rank": 101,
       "strengths": {
@@ -22311,8 +22376,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.009,
-        "bust": 0.907
+        "success": 0.004,
+        "bust": 0.934,
+        "rotation": 0.062
       },
       "_mock_rank": 88,
       "strengths": {
@@ -22645,8 +22711,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.909
+        "success": 0.004,
+        "bust": 0.937,
+        "rotation": 0.059
       },
       "_mock_rank": 85,
       "strengths": {
@@ -23192,8 +23259,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.884
+        "success": 0.008,
+        "bust": 0.902,
+        "rotation": 0.089
       },
       "_mock_rank": 70,
       "strengths": {
@@ -23541,8 +23609,9 @@
       "recruit_rank": 31,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.006,
-        "bust": 0.932
+        "success": 0.003,
+        "bust": 0.963,
+        "rotation": 0.034
       },
       "_mock_rank": 68,
       "strengths": {
@@ -24583,8 +24652,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.122,
-        "bust": 0.331
+        "success": 0.129,
+        "bust": 0.358,
+        "rotation": 0.513
       },
       "combine": {
         "wingspan_in": 83.0,
@@ -24894,8 +24964,9 @@
       "recruit_rank": 20,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.009,
-        "bust": 0.897
+        "success": 0.006,
+        "bust": 0.92,
+        "rotation": 0.074
       },
       "_mock_rank": 97,
       "strengths": {
@@ -25094,8 +25165,9 @@
       "red_flags": [],
       "draft_status": null,
       "pred": {
-        "success": 0.013,
-        "bust": 0.866
+        "success": 0.012,
+        "bust": 0.863,
+        "rotation": 0.125
       },
       "_mock_rank": 96,
       "strengths": {
@@ -25928,8 +26000,9 @@
       "recruit_rank": 42,
       "recruit_class_year": 2021,
       "pred": {
-        "success": 0.009,
-        "bust": 0.897
+        "success": 0.006,
+        "bust": 0.92,
+        "rotation": 0.074
       },
       "_mock_rank": 66,
       "strengths": {
@@ -30433,8 +30506,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.013,
-        "bust": 0.862
+        "success": 0.012,
+        "bust": 0.854,
+        "rotation": 0.133
       },
       "combine": {
         "wingspan_in": 84.75,
@@ -31010,8 +31084,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.913
+        "success": 0.004,
+        "bust": 0.943,
+        "rotation": 0.053
       },
       "_mock_rank": 67,
       "strengths": {
@@ -32711,8 +32786,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.005,
-        "bust": 0.943
+        "success": 0.003,
+        "bust": 0.972,
+        "rotation": 0.026
       },
       "_mock_rank": 95,
       "strengths": {
@@ -36643,8 +36719,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.006,
-        "bust": 0.938
+        "success": 0.003,
+        "bust": 0.969,
+        "rotation": 0.028
       },
       "combine": {
         "wingspan_in": 86.0,
@@ -37713,8 +37790,9 @@
       "recruit_rank": 44,
       "recruit_class_year": 2021,
       "pred": {
-        "success": 0.008,
-        "bust": 0.916
+        "success": 0.004,
+        "bust": 0.948,
+        "rotation": 0.049
       },
       "combine": {
         "wingspan_in": 82.5,
@@ -38489,8 +38567,9 @@
       "recruit_rank": 39,
       "recruit_class_year": 2021,
       "pred": {
-        "success": 0.008,
-        "bust": 0.911
+        "success": 0.004,
+        "bust": 0.94,
+        "rotation": 0.056
       },
       "combine": {
         "wingspan_in": 82.5,
@@ -39727,8 +39806,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.908
+        "success": 0.004,
+        "bust": 0.935,
+        "rotation": 0.06
       },
       "combine": {
         "wingspan_in": 82.25,
@@ -46659,8 +46739,9 @@
       "recruit_rank": 38,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.018,
-        "bust": 0.816
+        "success": 0.019,
+        "bust": 0.772,
+        "rotation": 0.209
       },
       "_mock_rank": 51,
       "strengths": {
@@ -50048,8 +50129,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.018,
-        "bust": 0.811
+        "success": 0.02,
+        "bust": 0.763,
+        "rotation": 0.217
       },
       "combine": {
         "wingspan_in": 82.0,
@@ -53546,8 +53628,9 @@
       "recruit_rank": 29,
       "recruit_class_year": 2022,
       "pred": {
-        "success": 0.013,
-        "bust": 0.862
+        "success": 0.012,
+        "bust": 0.855,
+        "rotation": 0.132
       },
       "combine": {
         "wingspan_in": 79.0,
@@ -64407,8 +64490,9 @@
       ],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.914
+        "success": 0.004,
+        "bust": 0.943,
+        "rotation": 0.053
       },
       "_mock_rank": 87,
       "strengths": {
@@ -65860,8 +65944,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.884
+        "success": 0.008,
+        "bust": 0.902,
+        "rotation": 0.089
       },
       "_mock_rank": 99,
       "strengths": {
@@ -66049,8 +66134,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.009,
-        "bust": 0.899
+        "success": 0.006,
+        "bust": 0.922,
+        "rotation": 0.072
       },
       "_mock_rank": 100,
       "strengths": {
@@ -69556,8 +69642,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.008,
-        "bust": 0.911
+        "success": 0.004,
+        "bust": 0.94,
+        "rotation": 0.056
       },
       "_mock_rank": 77,
       "strengths": {
@@ -70782,7 +70869,8 @@
       "draft_status": "auto_eligible",
       "pred": {
         "success": 0.015,
-        "bust": 0.844
+        "bust": 0.82,
+        "rotation": 0.165
       },
       "combine": {
         "wingspan_in": 82.5,
@@ -74357,8 +74445,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.01,
-        "bust": 0.893
+        "success": 0.007,
+        "bust": 0.914,
+        "rotation": 0.079
       },
       "_mock_rank": 71,
       "strengths": {
@@ -91450,8 +91539,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.034,
-        "bust": 0.685
+        "success": 0.037,
+        "bust": 0.582,
+        "rotation": 0.381
       },
       "combine": {
         "wingspan_in": 80.5,
@@ -92923,8 +93013,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.886
+        "success": 0.008,
+        "bust": 0.905,
+        "rotation": 0.086
       },
       "_mock_rank": 84,
       "strengths": {
@@ -131352,8 +131443,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.007,
-        "bust": 0.925
+        "success": 0.003,
+        "bust": 0.956,
+        "rotation": 0.041
       },
       "_mock_rank": 81,
       "strengths": {
@@ -135611,8 +135703,9 @@
       "red_flags": [],
       "draft_status": "auto_eligible",
       "pred": {
-        "success": 0.011,
-        "bust": 0.88
+        "success": 0.009,
+        "bust": 0.892,
+        "rotation": 0.098
       },
       "_mock_rank": 72,
       "strengths": {

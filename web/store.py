@@ -146,9 +146,9 @@ def _get_all_years_data():
     combined: list[dict] = []
     profiles: dict = {}
 
-    # Current season first (curated list applied per-season when present;
-    # no stub rows — score-less entries can't rank on a cross-year board)
-    cur_pool, _, _ = board_filter(PLAYERS, CURRENT_SEASON_YEAR, with_stubs=False)
+    # Current season first. Stubs included — graded internationals (Wemby!)
+    # carry sm_score and rank inline; score-less ones sink to the bottom.
+    cur_pool, _, _ = board_filter(PLAYERS, CURRENT_SEASON_YEAR)
     for p in cur_pool:
         clone = dict(p)
         clone["_season_year"] = CURRENT_SEASON_YEAR
@@ -164,7 +164,7 @@ def _get_all_years_data():
         players, _profiles, _season = get_year_data(y)
         if players is None:
             continue
-        pool, _, _ = board_filter(players, y, with_stubs=False)
+        pool, _, _ = board_filter(players, y)
         for p in pool:
             clone = dict(p)
             clone["_season_year"] = y

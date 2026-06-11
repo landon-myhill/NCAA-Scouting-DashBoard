@@ -4,8 +4,9 @@ analytics.predict — Boom/Bust probabilities, calibrated on the STRENGTHS
 MODEL (the actual ranking), not the retired formula.
 
 Boom = P(NBA starter or better), Bust = P(bench or out of the league),
-learned from the eligible 2020-23 classes. Each is a 1-D logistic
-calibration of the strengths-model score; in leave-one-year-out CV the
+learned from the eligible 2020-23 classes. Each is a 50/50 blend of a
+logistic and a binned-empirical (isotonic) calibration of the strengths-
+model score — smooth differentiation with honest tails; in LOYO CV the
 strengths model is REFIT per fold so the held-out AUC is honest (no
 peeking at the held-out year through the ranking model).
 
@@ -36,6 +37,36 @@ LAMBDA_LOGIT = 1.0
 
 def _sigmoid(z):
     return 1.0 / (1.0 + np.exp(-np.clip(z, -30, 30)))
+
+
+def fit_isotonic(x, y, min_bin=25):
+    """Monotone calibration on quantile bins of >=min_bin players each, then
+    PAVA. Probabilities equal empirical rates and can never be more extreme
+    than a full bin supports — the logistic's saturated tails claimed 1%
+    bust where history says 4%, and raw per-point PAVA claimed 0%."""
+    order = np.argsort(x)
+    xs = np.asarray(x, float)[order]
+    vals = np.asarray(y, float)[order]
+    n = len(xs)
+    n_bins = max(2, n // min_bin)
+    edges = [round(i * n / n_bins) for i in range(n_bins + 1)]
+    grid = [float(np.mean(xs[a:b])) for a, b in zip(edges, edges[1:])]
+    means = [float(np.mean(vals[a:b])) for a, b in zip(edges, edges[1:])]
+    weights = [float(b - a) for a, b in zip(edges, edges[1:])]
+    # PAVA over the bins
+    out_m, out_w, out_x = [], [], []
+    for g, m, w in zip(grid, means, weights):
+        out_m.append(m); out_w.append(w); out_x.append(g)
+        while len(out_m) > 1 and out_m[-2] >= out_m[-1]:
+            m2, w2 = out_m.pop(), out_w.pop(); x2 = out_x.pop()
+            out_m[-1] = (out_m[-1] * out_w[-1] + m2 * w2) / (out_w[-1] + w2)
+            out_x[-1] = (out_x[-1] * out_w[-1] + x2 * w2) / (out_w[-1] + w2)
+            out_w[-1] += w2
+    return {"x": out_x, "p": out_m}
+
+
+def iso_prob(c, x):
+    return np.clip(np.interp(np.asarray(x, float), c["x"], c["p"]), 0.0, 1.0)
 
 
 def fit_logistic_1d(x, y, lam=LAMBDA_LOGIT, iters=25):
@@ -104,25 +135,30 @@ def loyo_cv(rows):
             continue
         m = _fit_ridge(X[tr], yv[tr], LAMBDA_RIDGE)
         s_tr, s_te = _sm_predict(m, X[tr]), _sm_predict(m, X[te])
-        cs = fit_logistic_1d(s_tr, ys[tr])
-        cb = fit_logistic_1d(-s_tr, yb[tr])
+        cs, cls = fit_isotonic(s_tr, ys[tr]), fit_logistic_1d(s_tr, ys[tr])
+        cb, clb = fit_isotonic(-s_tr, yb[tr]), fit_logistic_1d(-s_tr, yb[tr])
         out[hold] = {
-            "auc_success": auc(ys[te], calib_prob(cs, s_te)),
-            "auc_bust": auc(yb[te], calib_prob(cb, -s_te)),
+            "auc_success": auc(ys[te], 0.5*iso_prob(cs, s_te) + 0.5*calib_prob(cls, s_te)),
+            "auc_bust": auc(yb[te], 0.5*iso_prob(cb, -s_te) + 0.5*calib_prob(clb, -s_te)),
             "n": int(te.sum()),
         }
     return out
 
 
 class Head:
-    """Calibrated head: strengths-model score -> probability."""
+    """Calibrated head: strengths-model score -> probability.
 
-    def __init__(self, ridge, calib, flip=False):
-        self.ridge, self.calib, self.flip = ridge, calib, flip
+    50/50 blend of two calibrations: logistic (smooth — differentiates the
+    top of the board) and binned-empirical isotonic (honest — tails can't
+    drift below what a full bin of history supports)."""
+
+    def __init__(self, ridge, iso, logi, flip=False):
+        self.ridge, self.iso, self.logi, self.flip = ridge, iso, logi, flip
 
     def prob(self, records):
         s = _sm_predict(self.ridge, _design(records, FEATS))
-        return calib_prob(self.calib, -s if self.flip else s)
+        x = -s if self.flip else s
+        return 0.5 * iso_prob(self.iso, x) + 0.5 * calib_prob(self.logi, x)
 
 
 def train_final(rows):
@@ -136,8 +172,8 @@ def train_final(rows):
     ys, yb = _labels(rows)
     m = _fit_ridge(X, yv, LAMBDA_RIDGE)
     s = _sm_predict(m, X)
-    return (Head(m, fit_logistic_1d(s, ys)),
-            Head(m, fit_logistic_1d(-s, yb), flip=True))
+    return (Head(m, fit_isotonic(s, ys), fit_logistic_1d(s, ys)),
+            Head(m, fit_isotonic(-s, yb), fit_logistic_1d(-s, yb), flip=True))
 
 
 def main():
@@ -170,7 +206,10 @@ def main():
     for p, s, b in zip(pool, ps, pb):
         rec = by_id.get(p["id"])
         if rec is not None:
-            rec["pred"] = {"success": round(float(s), 3), "bust": round(float(b), 3)}
+            s, b = float(s), float(b)
+            rot = max(0.0, 1.0 - s - b)  # the "settles as a rotation guy" risk
+            rec["pred"] = {"success": round(s, 3), "bust": round(b, 3),
+                           "rotation": round(rot, 3)}
             stamped += 1
     # everyone outside the pool: no probabilities (the model can't see them)
     for p in raw["players"]:
