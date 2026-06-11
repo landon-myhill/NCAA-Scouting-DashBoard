@@ -239,6 +239,34 @@ def _intl_lookup(year):
     return _INTL_CACHE[year]
 
 
+_INTL_MODEL = None
+
+
+def _intl_grade(intl_rec: dict, mock_rank, year):
+    """Grade a no-NCAA prospect with the experimental international model
+    (analytics.intl_model) — same 0-1 value scale as sm_score, so they slot
+    into the board order. Returns None when there's nothing to grade."""
+    global _INTL_MODEL
+    if not intl_rec or not intl_rec.get("stats"):
+        return None
+    if _INTL_MODEL is None:
+        from core.config import DATASETS_DIR
+        path = DATASETS_DIR / "intl_model.json"
+        _INTL_MODEL = json.loads(path.read_text(encoding="utf-8")) if path.exists() else False
+    if not _INTL_MODEL:
+        return None
+    import numpy as np
+    from analytics.intl_model import featurize
+    rec = dict(intl_rec)
+    rec["_draft_year"] = year if isinstance(year, int) else CURRENT_SEASON_YEAR
+    m = _INTL_MODEL
+    x = np.array(featurize(rec, mock_rank), float)
+    med = np.array(m["med"])
+    x[np.isnan(x)] = med[np.isnan(x)]
+    v = float((x - np.array(m["mu"])) / np.array(m["sd"]) @ np.array(m["coef"]) + m["y0"])
+    return v
+
+
 def _make_stub(name: str, club: str, year, idx: int, mock_rank=None) -> dict:
     """Board row for a listed prospect with no NCAA record (international,
     G-League, OTE, or injured/never played). Enriched with scraped intl stats
@@ -260,6 +288,9 @@ def _make_stub(name: str, club: str, year, idx: int, mock_rank=None) -> dict:
         "_intl_stub": True,
         "_mock_rank": mock_rank,
     }
+    grade = _intl_grade(intl, mock_rank, year)
+    if grade is not None:
+        stub["sm_score"] = round(grade, 4)  # slots into board order inline
     outcomes = _outcome_lookup(year)
     if outcomes is not None:
         stub["_draft_complete"] = True
