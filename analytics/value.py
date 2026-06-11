@@ -140,16 +140,33 @@ def attach_position_value(entries: list[dict], asof_year: int = SEASON_YEAR,
         e.pop("_rates", None)
 
 
+# Quality floors for the top tiers (WS/48 rate; league avg ~.100,
+# replacement ~.045). Box-score tiers alone counted ATTAINING a starter's
+# role as success: Keyonte George graded "star" at WS/48 .032 — below
+# replacement. The floor demotes empty-volume roles; the value SCORE itself
+# stays pure box-score per the project's grading rule.
+_STAR_WS48 = 0.075
+_STARTER_WS48 = 0.040
+
+
 def value_tier(nba_value, career: dict) -> str:
     games = (career or {}).get("games") or 0
     if games < 10:
         return "no_nba"
     if nba_value is None or nba_value == 0.0:
         return "bench"
-    for tier, floor in TIER_BANDS:
+    tier = "bench"
+    for t, floor in TIER_BANDS:
         if nba_value >= floor:
-            return tier
-    return "bench"
+            tier = t
+            break
+    ws48 = (career or {}).get("WS/48")
+    if ws48 is not None:
+        if tier == "star" and ws48 < _STAR_WS48:
+            tier = "starter"
+        if tier == "starter" and ws48 < _STARTER_WS48:
+            tier = "rotation"
+    return tier
 
 
 # ── Rescoring the stored result files ────────────────────────────────────────

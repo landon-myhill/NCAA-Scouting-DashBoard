@@ -74,7 +74,7 @@
         "RPG": 3.0,
         "APG": 5.0
       },
-      "career_tier": "starter",
+      "career_tier": "rotation",
       "nba_value": 0.799
     },
     {
@@ -174,7 +174,7 @@
         "RPG": 4.5,
         "APG": 2.6
       },
-      "career_tier": "starter",
+      "career_tier": "rotation",
       "nba_value": 0.822
     },
     {
@@ -399,7 +399,7 @@
         "RPG": 3.4,
         "APG": 5.3
       },
-      "career_tier": "star",
+      "career_tier": "rotation",
       "nba_value": 0.901
     },
     {
@@ -699,7 +699,7 @@
         "RPG": 3.1,
         "APG": 1.7
       },
-      "career_tier": "starter",
+      "career_tier": "rotation",
       "nba_value": 0.723
     },
     {
