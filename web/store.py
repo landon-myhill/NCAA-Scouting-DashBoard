@@ -230,6 +230,11 @@ def _intl_lookup(year):
         if path.exists():
             for r in json.loads(path.read_text(encoding="utf-8")).get("players", []):
                 table[r.get("norm_name") or normalize_name(r["name"])] = r
+        # Hand-curated entries (OTE etc. — leagues no scrapeable site covers)
+        manual = INTL_DIR / "intl_manual.json"
+        if manual.exists():
+            for r in json.loads(manual.read_text(encoding="utf-8")).get(str(year), []):
+                table[r.get("norm_name") or normalize_name(r["name"])] = r
         _INTL_CACHE[year] = table
     return _INTL_CACHE[year]
 

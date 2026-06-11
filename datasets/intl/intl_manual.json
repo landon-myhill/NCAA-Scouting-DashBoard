@@ -1,0 +1,27 @@
+{
+  "_comment": "Hand-curated pre-draft stats for players in leagues no scrapeable site covers (Overtime Elite etc.). Merged on top of scraped intl_<year>.json by web/store. Never overwritten by data/scrape_intl.",
+  "2023": [
+    {
+      "name": "Amen Thompson",
+      "norm_name": "amen thompson",
+      "pos": "G",
+      "age_label": "Age 20",
+      "team": "City Reapers",
+      "league": "OTE",
+      "season": "2022-23",
+      "stats": {"PPG": 16.4, "RPG": 5.9, "APG": 5.9, "MPG": 27.5},
+      "source": "https://www.sportskeeda.com/basketball/what-are-amen-thompson-ote-stats"
+    },
+    {
+      "name": "Ausar Thompson",
+      "norm_name": "ausar thompson",
+      "pos": "G",
+      "age_label": "Age 20",
+      "team": "City Reapers",
+      "league": "OTE",
+      "season": "2022-23",
+      "stats": {"PPG": 16.3, "RPG": 7.1, "APG": 6.1},
+      "source": "https://www.sportskeeda.com/basketball/what-are-ausar-thompson-overtime-elite-stats"
+    }
+  ]
+}
