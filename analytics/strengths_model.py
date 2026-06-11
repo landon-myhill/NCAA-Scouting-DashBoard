@@ -62,8 +62,12 @@ FEATURE_SETS = {
     #   market — draft slot at training / mock rank at inference: a senior
     #            the market screens into round 1 inherits that group's
     #            survival curve, not the undrafted-senior average
+    # NOTE: age_x_market was tried and REMOVED — held-out identical (+0.815
+    # vs +0.818) but the interaction (fit on 12 first-round seniors) pushed
+    # validated seniors ABOVE equal-mock freshmen, which the data doesn't
+    # support (their hit rates are equal, not better) — it put Lendeborg #1.
     "inter+peak":       BASE + INTER + ["age_x_peak"],
-    "inter+market":     BASE + INTER + ["market", "age_x_market"],
+    "inter+market":     BASE + INTER + ["market"],
 }
 LAMBDAS = (20.0, 60.0, 150.0)
 B_BOOT = 300
