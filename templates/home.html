@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% set active_page = "home" %}
+{% block title %}The Boykins Scouting — Every prospect, pointed{% endblock %}
+
+{% block head %}
+<style>
+.home-hero {
+    text-align: center;
+    padding: 56px 16px 40px;
+}
+.home-hero .hero-mark { height: 130px; width: auto; margin-bottom: 18px; }
+.home-hero h1 {
+    font-family: var(--font-display);
+    font-size: 44px;
+    letter-spacing: .03em;
+    margin-bottom: 2px;
+}
+.home-hero .hero-sub {
+    font-size: 13px; font-weight: 700; letter-spacing: .5em;
+    color: var(--orange); text-transform: uppercase; margin-bottom: 18px;
+}
+.home-hero .hero-tag {
+    font-size: 18px; color: var(--text); max-width: 560px; margin: 0 auto;
+}
+
+.home-stats {
+    display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+    margin: 30px 0 8px;
+}
+.home-stat {
+    background: var(--bg-1); border: 1px solid var(--line);
+    border-radius: var(--radius-lg); padding: 16px 26px; text-align: center;
+    min-width: 170px;
+}
+.home-stat .hs-num {
+    font-family: var(--font-display); font-size: 30px; font-weight: 700;
+    color: var(--orange);
+}
+.home-stat .hs-lbl {
+    font-size: 10px; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--muted); margin-top: 2px;
+}
+
+.home-story {
+    max-width: 720px; margin: 44px auto;
+    background: var(--bg-1); border: 1px solid var(--line);
+    border-left: 4px solid var(--orange);
+    border-radius: var(--radius-lg); padding: 30px 36px;
+}
+.home-story h2 {
+    font-family: var(--font-display); font-size: 22px; margin-bottom: 14px;
+}
+.home-story p { font-size: 15px; line-height: 1.75; color: var(--text); }
+.home-story p:last-child { margin-bottom: 0; }
+.home-story .story-kicker {
+    font-size: 11px; font-weight: 700; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--orange); margin-bottom: 6px;
+}
+
+.home-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px; max-width: 1080px; margin: 0 auto 56px;
+}
+.home-card {
+    background: var(--bg-1); border: 1px solid var(--line);
+    border-radius: var(--radius-lg); padding: 22px 24px;
+    text-decoration: none; display: block;
+    transition: border-color .15s, transform .15s, background .15s;
+}
+.home-card:hover {
+    border-color: var(--orange); background: var(--bg-2);
+    transform: translateY(-2px);
+}
+.home-card .hc-title {
+    font-family: var(--font-display); font-size: 17px; font-weight: 700;
+    color: var(--ink); margin-bottom: 6px;
+}
+.home-card .hc-desc { font-size: 13px; color: var(--muted); line-height: 1.55; }
+.home-card .hc-go {
+    font-size: 12px; font-weight: 700; color: var(--orange-hi); margin-top: 10px;
+    display: inline-block;
+}
+.section-kicker {
+    text-align: center; font-size: 11px; font-weight: 700; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--faint); margin: 0 0 16px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="home-hero">
+    <img class="hero-mark" src="{{ url_for('static', filename='brand-mark.png') }}" alt="The Boykins pointer mark">
+    <h1>THE BOYKINS</h1>
+    <div class="hero-sub">Scouting</div>
+    <p class="hero-tag">A statistical scouting service for the NBA draft.
+       Every prospect measured, every ranking validated against the careers
+       that actually happened — and every number honest about its uncertainty.</p>
+
+    <div class="home-stats">
+        <div class="home-stat">
+            <div class="hs-num">{{ n_prospects }}</div>
+            <div class="hs-lbl">{{ season_label }} prospects</div>
+        </div>
+        <div class="home-stat">
+            <div class="hs-num">+{{ '%.2f'|format(model_rho) }}</div>
+            <div class="hs-lbl">held-out accuracy (Spearman)</div>
+        </div>
+        <div class="home-stat">
+            <div class="hs-num">7</div>
+            <div class="hs-lbl">draft classes graded</div>
+        </div>
+    </div>
+</div>
+
+<div class="home-story">
+    <div class="story-kicker">Why "The Boykins"</div>
+    <h2>From stray to standard</h2>
+    <p>Around 1905, a small brown spaniel — a stray nobody claimed — followed a
+       banker home from church in Spartanburg, South Carolina. He wasn't big,
+       wasn't pedigreed, and wasn't on anyone's list. The banker passed him to
+       his hunting partner, <strong>Whit Boykin</strong>, who saw what the
+       bloodlines couldn't show: the dog could <em>hunt</em>. That stray —
+       "Dumpy" — became the foundation of the <strong>Boykin Spaniel</strong>,
+       a champion bird-hunting breed and the official state dog of South
+       Carolina.</p>
+    <p>That's the whole idea of this product. Draft pedigree is a mock ranking;
+       talent is what shows up when you actually measure the work. We grade
+       every eligible prospect on what he does — scoring, playmaking, rim
+       pressure, defense — against the draft classes that came before him and
+       the NBA careers they really produced. Sometimes the numbers point at the
+       consensus #1. Sometimes they point at the stray.</p>
+    <p>Like any good bird dog, the model is judged only on whether it finds the
+       bird: every ranking here is validated on draft classes it never saw, and
+       it ships with its misses documented next to its hits.</p>
+</div>
+
+<p class="section-kicker">The Kennel</p>
+<div class="home-grid">
+    <a class="home-card" href="/bigboard">
+        <div class="hc-title">Big Board</div>
+        <div class="hc-desc">The full ranking — model scores, uncertainty bands,
+            mock-draft deltas, and real NBA outcomes for every past class.</div>
+        <span class="hc-go">Open the board →</span>
+    </a>
+    <a class="home-card" href="/scouting">
+        <div class="hc-title">Scouting Cards</div>
+        <div class="hc-desc">One card per prospect: measured strengths, archetype
+            fits, combine numbers, and calibrated boom/bust odds.</div>
+        <span class="hc-go">Scout a player →</span>
+    </a>
+    <a class="home-card" href="/compare">
+        <div class="hc-title">Compare</div>
+        <div class="hc-desc">Side-by-side radar and stat comparison for any set
+            of prospects, current or historical.</div>
+        <span class="hc-go">Compare players →</span>
+    </a>
+    <a class="home-card" href="/archetypes">
+        <div class="hc-title">Archetypes</div>
+        <div class="hc-desc">Ranked leaderboards for every role — sharpshooters,
+            slashers, rim protectors — with effectiveness percentiles.</div>
+        <span class="hc-go">Browse roles →</span>
+    </a>
+    <a class="home-card" href="/scarcity">
+        <div class="hc-title">Scarcity</div>
+        <div class="hc-desc">Which roles this class is rich in, and which are
+            thin — where the supply runs out by the second round.</div>
+        <span class="hc-go">Check supply →</span>
+    </a>
+    <a class="home-card" href="/needs">
+        <div class="hc-title">Team Needs</div>
+        <div class="hc-desc">Pick the roles you need; get the prospects who fit
+            them best, ranked by fit.</div>
+        <span class="hc-go">Match needs →</span>
+    </a>
+    <a class="home-card" href="/watchlist">
+        <div class="hc-title">Watchlist</div>
+        <div class="hc-desc">Your flagged prospects in one place, with notes.</div>
+        <span class="hc-go">Open watchlist →</span>
+    </a>
+</div>
+{% endblock %}

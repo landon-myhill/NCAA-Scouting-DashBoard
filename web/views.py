@@ -17,7 +17,19 @@ views_bp = Blueprint("views", __name__)
 
 @views_bp.route("/")
 def index():
-    return redirect(url_for("views.bigboard"))
+    import json as _json
+
+    from core.config import DATASETS_DIR
+    _, _, season_label = store.get_year_data(store.CURRENT_SEASON_YEAR)
+    players, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
+                                       with_stubs=True)
+    rho = 0.0
+    mpath = DATASETS_DIR / "strengths_model.json"
+    if mpath.exists():
+        rho = (_json.loads(mpath.read_text(encoding="utf-8"))
+               .get("validation", {}).get("loyo_spearman_model", 0.0))
+    return render_template("home.html", n_prospects=len(players),
+                           season_label=season_label, model_rho=rho)
 
 
 @views_bp.route("/scouting")
