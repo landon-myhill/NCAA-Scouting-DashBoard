@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% set active_page = "mockdraft" %}
+{% block title %}Mock Draft — The Boykins Scouting{% endblock %}
+
+{% block head %}
+<style>
+.md-layout { display: grid; grid-template-columns: 1fr 380px; gap: 18px; align-items: start; }
+@media (max-width: 992px) { .md-layout { grid-template-columns: 1fr; } }
+
+.md-pick {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--bg-1); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 7px 12px; margin-bottom: 4px;
+}
+.md-pick.on-clock { border-color: var(--orange); background: var(--orange-soft); }
+.md-pick .md-num {
+    font-weight: 800; color: var(--gold); min-width: 30px;
+    text-align: center; font-size: 16px; font-variant-numeric: tabular-nums;
+}
+.md-pick .md-team {
+    width: 120px; background: transparent; border: none;
+    border-bottom: 1px dashed var(--line-strong);
+    color: var(--muted); font-size: 13px; padding: 1px 4px;
+}
+.md-pick .md-team:focus { outline: none; border-bottom-color: var(--orange); color: var(--ink); }
+.md-pick .md-player { flex: 1; font-weight: 600; color: var(--ink); font-size: 15px; }
+.md-pick .md-player .empty { color: var(--faint); font-weight: 400; font-style: italic; }
+.md-pick .md-meta { font-size: 12px; color: var(--muted); }
+.md-pick .md-x {
+    background: none; border: none; color: var(--faint);
+    font-size: 16px; cursor: pointer; padding: 0 4px; line-height: 1;
+}
+.md-pick .md-x:hover { color: var(--red); }
+
+.md-side {
+    background: var(--bg-1); border: 1px solid var(--line);
+    border-radius: var(--radius-lg); padding: 16px;
+    position: sticky; top: 150px; max-height: calc(100vh - 170px);
+    display: flex; flex-direction: column;
+}
+.md-side h6 { margin: 0 0 10px; }
+.md-ba-list { overflow-y: auto; flex: 1; }
+.md-ba {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 8px; border-radius: 6px; border-bottom: 1px solid var(--line);
+}
+.md-ba:hover { background: var(--bg-2); }
+.md-ba .ba-rank { font-weight: 800; color: var(--orange); min-width: 28px; text-align: center; font-size: 13px; }
+.md-ba .ba-name { flex: 1; font-weight: 600; font-size: 13.5px; color: var(--ink); }
+.md-ba .ba-meta { font-size: 11px; color: var(--muted); display: block; }
+.md-ba .ba-pred { font-size: 11px; min-width: 70px; text-align: right; }
+.md-ba .btn-draft {
+    font-size: 11px; font-weight: 700; padding: 3px 10px;
+    border-radius: 5px; border: 1px solid var(--orange);
+    background: transparent; color: var(--orange-hi); cursor: pointer;
+}
+.md-ba .btn-draft:hover { background: var(--orange); color: #fff; }
+.md-toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+.md-round-hdr {
+    font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--faint); margin: 14px 0 6px; border-bottom: 1px solid var(--line); padding-bottom: 4px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+    <div class="d-flex align-items-center gap-3 flex-wrap">
+        <h4 class="mb-0">Mock Draft — {{ season_label }}</h4>
+        <span class="text-secondary" style="font-size:13px">On the clock: <strong id="mdClock" style="color:var(--orange)">Pick 1</strong></span>
+    </div>
+    <div class="md-toolbar mb-0">
+        <select id="mdSaved" class="form-select form-select-sm" style="min-width:170px">
+            <option value="">— Saved mocks —</option>
+        </select>
+        <button class="btn btn-sm btn-outline-secondary" onclick="mdLoad()">Load</button>
+        <button class="btn btn-sm btn-outline-secondary" onclick="mdDelete()">Delete</button>
+        <button class="btn btn-sm btn-primary" onclick="mdSave()">Save Mock</button>
+    </div>
+</div>
+
+<div class="md-toolbar">
+    <button class="btn btn-sm btn-outline-secondary" onclick="mdAutofill('model')"
+            title="Fill every remaining pick with the model's best available">Autofill: model order</button>
+    <button class="btn btn-sm btn-outline-secondary" onclick="mdAutofill('mock')"
+            title="Fill every remaining pick by consensus mock rank">Autofill: consensus</button>
+    <button class="btn btn-sm btn-outline-secondary" onclick="mdClear()">Clear all</button>
+    <span class="text-secondary" style="font-size:12px">Click <strong>Draft</strong> on a player to assign him to the pick on the clock. Team names are editable.</span>
+</div>
+
+<div class="md-layout">
+    <div id="mdPicks"></div>
+    <div class="md-side">
+        <h6>Best Available</h6>
+        <input id="mdFilter" class="form-control form-control-sm mb-2" placeholder="Filter by name / school / pos...">
+        <div class="md-ba-list" id="mdBA"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const POOL = {{ pool_json|safe }};
+const BY_ID = Object.fromEntries(POOL.map(p => [p.id, p]));
+const N_PICKS = 60;
+let picks = Array.from({length: N_PICKS}, (_, i) => ({pick: i + 1, team: '', player_id: null}));
+let currentMockId = null;
+
+function takenIds() { return new Set(picks.filter(p => p.player_id).map(p => p.player_id)); }
+function onClock() { const p = picks.find(p => !p.player_id); return p ? p.pick : null; }
+
+function render() {
+    const clock = onClock();
+    document.getElementById('mdClock').textContent = clock ? `Pick ${clock}` : 'Draft complete';
+    const host = document.getElementById('mdPicks');
+    let html = '';
+    picks.forEach((pk, i) => {
+        if (i === 0) html += '<div class="md-round-hdr">Round 1</div>';
+        if (i === 30) html += '<div class="md-round-hdr">Round 2</div>';
+        const pl = pk.player_id ? BY_ID[pk.player_id] : null;
+        html += `<div class="md-pick ${pk.pick === clock ? 'on-clock' : ''}" data-pick="${pk.pick}">
+            <span class="md-num">${pk.pick}</span>
+            <input class="md-team" placeholder="team" value="${(pk.team || '').replace(/"/g, '&quot;')}"
+                   onchange="picks[${i}].team = this.value">
+            <span class="md-player">${pl
+                ? `${pl.name} <span class="md-meta">${pl.pos} · ${pl.school} · model #${pl.smRank ?? '—'}${pl.mock ? ' · mock #' + pl.mock : ''}</span>`
+                : '<span class="empty">on the board…</span>'}</span>
+            ${pl ? `<button class="md-x" title="Remove" onclick="mdRemove(${i})">&times;</button>` : ''}
+        </div>`;
+    });
+    host.innerHTML = html;
+    renderBA();
+}
+
+function renderBA() {
+    const taken = takenIds();
+    const q = (document.getElementById('mdFilter').value || '').toLowerCase();
+    const host = document.getElementById('mdBA');
+    const avail = POOL.filter(p => !taken.has(p.id))
+        .filter(p => !q || p.name.toLowerCase().includes(q)
+                      || (p.school || '').toLowerCase().includes(q)
+                      || (p.pos || '').toLowerCase() === q);
+    host.innerHTML = avail.slice(0, 80).map(p => `
+        <div class="md-ba">
+            <span class="ba-rank">${p.smRank ?? '—'}</span>
+            <span class="ba-name">${p.name}
+                <span class="ba-meta">${p.pos} · ${p.school}${p.arch ? ' · ' + p.arch : ''}${p.mock ? ' · mock #' + p.mock : ''}</span>
+            </span>
+            <span class="ba-pred">${p.boom != null
+                ? `<span style="color:var(--green-soft)">${p.boom}%</span> / <span style="color:var(--red-soft)">${p.bust}%</span>`
+                : ''}</span>
+            <button class="btn-draft" onclick="mdDraft(${p.id})">Draft</button>
+        </div>`).join('');
+}
+
+function mdDraft(pid) {
+    const slot = picks.find(p => !p.player_id);
+    if (!slot) return;
+    slot.player_id = pid;
+    render();
+}
+function mdRemove(i) { picks[i].player_id = null; render(); }
+function mdClear() { picks.forEach(p => p.player_id = null); render(); }
+
+function mdAutofill(mode) {
+    const taken = takenIds();
+    const order = POOL.filter(p => !taken.has(p.id)).slice();
+    if (mode === 'mock') {
+        order.sort((a, b) => (a.mock ?? 999) - (b.mock ?? 999) ||
+                             (a.smRank ?? 999) - (b.smRank ?? 999));
+    }  // 'model': POOL is already model order
+    let j = 0;
+    picks.forEach(p => { if (!p.player_id && j < order.length) p.player_id = order[j++].id; });
+    render();
+}
+
+async function mdRefreshSaved() {
+    const list = await (await fetch('/api/mocks')).json();
+    const sel = document.getElementById('mdSaved');
+    sel.innerHTML = '<option value="">— Saved mocks —</option>' +
+        list.map(m => `<option value="${m.id}">${m.name}</option>`).join('');
+    if (currentMockId) sel.value = currentMockId;
+}
+
+async function mdSave() {
+    let name;
+    if (currentMockId) {
+        name = document.querySelector(`#mdSaved option[value="${currentMockId}"]`)?.textContent;
+    }
+    if (!name) {
+        name = prompt('Name this mock:', 'My Mock ' + new Date().toLocaleDateString());
+        if (!name) return;
+        const r = await (await fetch('/api/mocks', {method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({name, picks})})).json();
+        currentMockId = r.id;
+    } else {
+        await fetch(`/api/mocks/${currentMockId}`, {method: 'PUT',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({picks})});
+    }
+    await mdRefreshSaved();
+}
+
+async function mdLoad() {
+    const id = document.getElementById('mdSaved').value;
+    if (!id) return;
+    const m = await (await fetch(`/api/mocks/${id}`)).json();
+    if (m.picks && m.picks.length) {
+        picks = Array.from({length: N_PICKS}, (_, i) =>
+            m.picks[i] || {pick: i + 1, team: '', player_id: null});
+        currentMockId = m.id;
+        render();
+    }
+}
+
+async function mdDelete() {
+    const id = document.getElementById('mdSaved').value;
+    if (!id || !confirm('Delete this saved mock?')) return;
+    await fetch(`/api/mocks/${id}`, {method: 'DELETE'});
+    if (String(currentMockId) === String(id)) currentMockId = null;
+    await mdRefreshSaved();
+}
+
+document.getElementById('mdFilter').addEventListener('input', renderBA);
+render();
+mdRefreshSaved();
+</script>
+{% endblock %}

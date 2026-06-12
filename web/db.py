@@ -48,6 +48,12 @@ def init_db():
             PRIMARY KEY (board_id, player_id),
             FOREIGN KEY (board_id) REFERENCES boards(id) ON DELETE CASCADE
         );
+        CREATE TABLE IF NOT EXISTS mocks (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            picks TEXT NOT NULL DEFAULT '[]',
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
     """)
     # Migrate: if old board_order has no board_id column, recreate
     cur = db.execute("PRAGMA table_info(board_order)")

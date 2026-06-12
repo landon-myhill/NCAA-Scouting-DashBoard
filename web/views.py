@@ -396,3 +396,26 @@ def ranking():
         coefs = sorted(zip(model["features"], model["coef"]),
                        key=lambda t: -abs(t[1]))
     return render_template("ranking.html", model=model, coefs=coefs)
+
+
+@views_bp.route("/mockdraft")
+def mockdraft():
+    import json as _json
+    all_players, _, season_label = store.get_year_data(store.CURRENT_SEASON_YEAR)
+    pool, _, _ = store.board_filter(all_players, store.CURRENT_SEASON_YEAR,
+                                    with_stubs=True)
+    players = []
+    for p in sorted(pool, key=lambda q: (q.get("sm_score") is None,
+                                         -(q.get("sm_score") or 0))):
+        pred = p.get("pred") or {}
+        players.append({
+            "id": p["id"], "name": p["name"], "pos": p.get("pos", ""),
+            "school": p.get("school", ""),
+            "smRank": p.get("sm_rank"), "mock": p.get("_mock_rank"),
+            "boom": round(pred["success"] * 100) if pred.get("success") is not None else None,
+            "bust": round(pred["bust"] * 100) if pred.get("bust") is not None else None,
+            "arch": p.get("archetype", ""),
+        })
+    return render_template("mockdraft.html", active_page="mockdraft",
+                           pool_json=_json.dumps(players),
+                           season_label=season_label)

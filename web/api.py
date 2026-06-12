@@ -166,3 +166,47 @@ def export_watchlist():
 
     return Response(out.getvalue(), mimetype="text/csv",
                     headers={"Content-Disposition": "attachment; filename=watchlist.csv"})
+
+
+# ── Mock drafts ──────────────────────────────────────────────────────────────
+
+@api_bp.route("/mocks", methods=["GET", "POST"])
+def mocks():
+    import json as _json
+    db = get_db()
+    if request.method == "POST":
+        data = request.get_json(silent=True) or {}
+        name = (data.get("name") or "").strip() or "Untitled Mock"
+        cur = db.execute("INSERT INTO mocks (name, picks) VALUES (?, ?)",
+                         (name, _json.dumps(data.get("picks") or [])))
+        db.commit()
+        return jsonify({"id": cur.lastrowid, "name": name})
+    rows = db.execute(
+        "SELECT id, name, created_at FROM mocks ORDER BY created_at DESC").fetchall()
+    return jsonify([dict(r) for r in rows])
+
+
+@api_bp.route("/mocks/<int:mid>", methods=["GET", "PUT", "DELETE"])
+def mock_detail(mid):
+    import json as _json
+    db = get_db()
+    if request.method == "DELETE":
+        db.execute("DELETE FROM mocks WHERE id = ?", (mid,))
+        db.commit()
+        return jsonify({"ok": True})
+    if request.method == "PUT":
+        data = request.get_json(silent=True) or {}
+        if "picks" in data:
+            db.execute("UPDATE mocks SET picks = ? WHERE id = ?",
+                       (_json.dumps(data["picks"]), mid))
+        if data.get("name"):
+            db.execute("UPDATE mocks SET name = ? WHERE id = ?",
+                       (data["name"].strip(), mid))
+        db.commit()
+        return jsonify({"ok": True})
+    row = db.execute("SELECT id, name, picks FROM mocks WHERE id = ?",
+                     (mid,)).fetchone()
+    if not row:
+        return jsonify({"error": "not found"}), 404
+    return jsonify({"id": row["id"], "name": row["name"],
+                    "picks": _json.loads(row["picks"])})
