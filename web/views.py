@@ -429,6 +429,12 @@ def mockdraft():
             "bust": round(pred["bust"] * 100) if pred.get("bust") is not None else None,
             "arch": p.get("archetype", ""),
         })
+    from core.config import DATASETS_DIR
+    order = []
+    opath = DATASETS_DIR / f"draft_order_{store.CURRENT_SEASON_YEAR}.json"
+    if opath.exists():
+        order = _json.loads(opath.read_text(encoding="utf-8")).get("picks", [])
     return render_template("mockdraft.html", active_page="mockdraft",
                            pool_json=_json.dumps(players),
+                           order_json=_json.dumps(order),
                            season_label=season_label)

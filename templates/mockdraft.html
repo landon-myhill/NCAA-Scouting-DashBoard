@@ -18,7 +18,7 @@
     text-align: center; font-size: 16px; font-variant-numeric: tabular-nums;
 }
 .md-pick .md-team {
-    width: 120px; background: transparent; border: none;
+    width: 170px; background: transparent; border: none;
     border-bottom: 1px dashed var(--line-strong);
     color: var(--muted); font-size: 13px; padding: 1px 4px;
 }
@@ -101,9 +101,11 @@
 {% block scripts %}
 <script>
 const POOL = {{ pool_json|safe }};
+const ORDER = {{ order_json|safe }};   // real draft order (post-lottery, incl. trades)
 const BY_ID = Object.fromEntries(POOL.map(p => [p.id, p]));
 const N_PICKS = 60;
-let picks = Array.from({length: N_PICKS}, (_, i) => ({pick: i + 1, team: '', player_id: null}));
+const TEAM_AT = i => (ORDER[i] && ORDER[i].team) || '';
+let picks = Array.from({length: N_PICKS}, (_, i) => ({pick: i + 1, team: TEAM_AT(i), player_id: null}));
 let currentMockId = null;
 
 function takenIds() { return new Set(picks.filter(p => p.player_id).map(p => p.player_id)); }

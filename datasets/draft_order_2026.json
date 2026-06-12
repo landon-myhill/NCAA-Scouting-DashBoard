@@ -1,0 +1,305 @@
+{
+  "source": "https://www.tankathon.com/mock_draft",
+  "picks": [
+    {
+      "pick": 1,
+      "team": "Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "pick": 2,
+      "team": "Jazz",
+      "abbr": "UTA"
+    },
+    {
+      "pick": 3,
+      "team": "Grizzlies",
+      "abbr": "MEM"
+    },
+    {
+      "pick": 4,
+      "team": "Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "pick": 5,
+      "team": "Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "pick": 6,
+      "team": "Nets",
+      "abbr": "BKN"
+    },
+    {
+      "pick": 7,
+      "team": "Kings",
+      "abbr": "SAC"
+    },
+    {
+      "pick": 8,
+      "team": "Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "pick": 9,
+      "team": "Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "pick": 10,
+      "team": "Bucks",
+      "abbr": "MIL"
+    },
+    {
+      "pick": 11,
+      "team": "Warriors",
+      "abbr": "GS"
+    },
+    {
+      "pick": 12,
+      "team": "Thunder",
+      "abbr": "OKC"
+    },
+    {
+      "pick": 13,
+      "team": "Heat",
+      "abbr": "MIA"
+    },
+    {
+      "pick": 14,
+      "team": "Hornets",
+      "abbr": "CHA"
+    },
+    {
+      "pick": 15,
+      "team": "Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "pick": 16,
+      "team": "Grizzlies",
+      "abbr": "MEM"
+    },
+    {
+      "pick": 17,
+      "team": "Thunder",
+      "abbr": "OKC"
+    },
+    {
+      "pick": 18,
+      "team": "Hornets",
+      "abbr": "CHA"
+    },
+    {
+      "pick": 19,
+      "team": "Raptors",
+      "abbr": "TOR"
+    },
+    {
+      "pick": 20,
+      "team": "Spurs",
+      "abbr": "SA"
+    },
+    {
+      "pick": 21,
+      "team": "Pistons",
+      "abbr": "DET"
+    },
+    {
+      "pick": 22,
+      "team": "76ers",
+      "abbr": "PHI"
+    },
+    {
+      "pick": 23,
+      "team": "Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "pick": 24,
+      "team": "Knicks",
+      "abbr": "NY"
+    },
+    {
+      "pick": 25,
+      "team": "Lakers",
+      "abbr": "LAL"
+    },
+    {
+      "pick": 26,
+      "team": "Nuggets",
+      "abbr": "DEN"
+    },
+    {
+      "pick": 27,
+      "team": "Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "pick": 28,
+      "team": "Timberwolves",
+      "abbr": "MIN"
+    },
+    {
+      "pick": 29,
+      "team": "Cavaliers",
+      "abbr": "CLE"
+    },
+    {
+      "pick": 30,
+      "team": "Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "pick": 31,
+      "team": "Knicks",
+      "abbr": "NY"
+    },
+    {
+      "pick": 32,
+      "team": "Grizzlies",
+      "abbr": "MEM"
+    },
+    {
+      "pick": 33,
+      "team": "Nets",
+      "abbr": "BKN"
+    },
+    {
+      "pick": 34,
+      "team": "Kings",
+      "abbr": "SAC"
+    },
+    {
+      "pick": 35,
+      "team": "Spurs",
+      "abbr": "SA"
+    },
+    {
+      "pick": 36,
+      "team": "Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "pick": 37,
+      "team": "Thunder",
+      "abbr": "OKC"
+    },
+    {
+      "pick": 38,
+      "team": "Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "pick": 39,
+      "team": "Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "pick": 40,
+      "team": "Celtics",
+      "abbr": "BOS"
+    },
+    {
+      "pick": 41,
+      "team": "Heat",
+      "abbr": "MIA"
+    },
+    {
+      "pick": 42,
+      "team": "Spurs",
+      "abbr": "SA"
+    },
+    {
+      "pick": 43,
+      "team": "Nets",
+      "abbr": "BKN"
+    },
+    {
+      "pick": 44,
+      "team": "Spurs",
+      "abbr": "SA"
+    },
+    {
+      "pick": 45,
+      "team": "Kings",
+      "abbr": "SAC"
+    },
+    {
+      "pick": 46,
+      "team": "Magic",
+      "abbr": "ORL"
+    },
+    {
+      "pick": 47,
+      "team": "Suns",
+      "abbr": "PHX"
+    },
+    {
+      "pick": 48,
+      "team": "Mavericks",
+      "abbr": "DAL"
+    },
+    {
+      "pick": 49,
+      "team": "Nuggets",
+      "abbr": "DEN"
+    },
+    {
+      "pick": 50,
+      "team": "Raptors",
+      "abbr": "TOR"
+    },
+    {
+      "pick": 51,
+      "team": "Wizards",
+      "abbr": "WAS"
+    },
+    {
+      "pick": 52,
+      "team": "Clippers",
+      "abbr": "LAC"
+    },
+    {
+      "pick": 53,
+      "team": "Rockets",
+      "abbr": "HOU"
+    },
+    {
+      "pick": 54,
+      "team": "Warriors",
+      "abbr": "GS"
+    },
+    {
+      "pick": 55,
+      "team": "Knicks",
+      "abbr": "NY"
+    },
+    {
+      "pick": 56,
+      "team": "Bulls",
+      "abbr": "CHI"
+    },
+    {
+      "pick": 57,
+      "team": "Hawks",
+      "abbr": "ATL"
+    },
+    {
+      "pick": 58,
+      "team": "Pelicans",
+      "abbr": "NO"
+    },
+    {
+      "pick": 59,
+      "team": "Timberwolves",
+      "abbr": "MIN"
+    },
+    {
+      "pick": 60,
+      "team": "Wizards",
+      "abbr": "WAS"
+    }
+  ]
+}
