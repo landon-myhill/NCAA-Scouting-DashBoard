@@ -95,7 +95,7 @@ table, .stat-value, .bb-stat, .bb-pos { font-variant-numeric: tabular-nums; }
     gap: 10px;
     text-decoration: none;
 }
-.bd-brand svg { height: 30px; width: auto; display: block; }
+.bd-brand .bd-mark { height: 34px; width: auto; display: block; }
 .bd-wordmark {
     font-family: var(--font-display);
     font-weight: 700;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Birddog Scouting{% endblock %}</title>
-    <link rel="icon" href="{{ url_for('static', filename='birddog.svg') }}" type="image/svg+xml">
+    <link rel="icon" href="{{ url_for('static', filename='brand-pup.png') }}" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bd-nav sticky-top">
         <div class="container-fluid">
             <a class="bd-brand" href="/">
-                {% include '_logo.svg' %}
+                <img src="{{ url_for('static', filename='brand-mark.png') }}" alt="" class="bd-mark">
                 <span class="bd-wordmark">BIRDDOG<small>SCOUTING</small></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
