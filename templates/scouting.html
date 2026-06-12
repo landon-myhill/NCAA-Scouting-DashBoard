@@ -89,7 +89,11 @@
                     {% if player.get('sm_rank') %}
                     <div class="rank-badge" style="border-color:#e8662a" data-bs-toggle="tooltip"
                          data-bs-title="Strengths-model draft rank{% if player.get('sm_band') %} (90% range {{ player.sm_band[0] }}–{{ player.sm_band[1] }}){% endif %} — the main ranking">
-                        <span class="badge-sub">MODEL RANK</span><span style="color:#e8662a">#{{ player.sm_rank }}</span></div>
+                        <span class="badge-sub">MODEL RANK</span><span style="color:#e8662a">#{{ player.sm_rank }}</span>
+                        {% if player.get('sm_stats_rank') and (player.sm_stats_rank - player.sm_rank)|abs >= 5 %}
+                        <span style="display:block;font-size:11px;font-weight:600;color:{{ '#e07a6b' if player.sm_stats_rank > player.sm_rank else '#6cc492' }}"
+                              title="Where his stats alone rank him, market influence removed — a big gap below means the rank leans on draft buzz; above means the model's own conviction">stats #{{ player.sm_stats_rank }}</span>
+                        {% endif %}</div>
                     <div class="score-badge" data-bs-toggle="tooltip"
                          data-bs-title="Strengths-model NBA-value projection (0-100)">
                         <span class="badge-sub">MODEL</span>{{ (player.sm_score * 100)|round|int }}</div>

@@ -365,15 +365,29 @@ def _stamp_model_rank(pool: list[dict]) -> None:
     X = np.array([featurize(p, feats) for p in pool], float)
     idx = np.where(np.isnan(X))
     X[idx] = np.take(np.array(m["med"]), idx[1])
-    pred = (X - np.array(m["mu"])) / np.array(m["sd"]) @ np.array(m["coef"]) + m["y0"]
+    mu, sd, coef = np.array(m["mu"]), np.array(m["sd"]), np.array(m["coef"])
+    Z = (X - mu) / sd
+    pred = Z @ coef + m["y0"]
+    # Stat-support: the same model with the market column's contribution
+    # zeroed — where his STATS alone put him. A big gap between sm_rank and
+    # sm_stats_rank means the rank is borrowed from the market (the Fears/
+    # Okoro warning); stats-rank above model-rank is the model's own
+    # conviction (the Cole Anthony shape).
+    pred_stats = pred.copy()
+    if "market" in feats:
+        mi = feats.index("market")
+        pred_stats = pred - Z[:, mi] * coef[mi]
     bands = m.get("rank_bands", {})
-    for p, v in zip(pool, pred):
+    for p, v, vs in zip(pool, pred, pred_stats):
         p["sm_score"] = round(float(v), 4)
+        p["_sm_stats_score"] = float(vs)
         band = bands.get(str(p["id"]))
         if band:
             p["sm_band"] = band  # [5th, 95th] percentile rank across bootstraps
     for i, p in enumerate(sorted(pool, key=lambda p: -p["sm_score"]), 1):
         p["sm_rank"] = i
+    for i, p in enumerate(sorted(pool, key=lambda p: -p["_sm_stats_score"]), 1):
+        p["sm_stats_rank"] = i
 
 
 def get_stub(pid, year=None):
