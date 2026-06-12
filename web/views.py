@@ -17,7 +17,7 @@ views_bp = Blueprint("views", __name__)
 
 @views_bp.route("/")
 def index():
-    return redirect(url_for("views.scouting"))
+    return redirect(url_for("views.bigboard"))
 
 
 @views_bp.route("/scouting")

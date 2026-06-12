@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "scouting" %}
-{% block title %}{{ player.name }} — Birddog Scouting{% endblock %}
+{% block title %}{{ player.name }} — The Boykins Scouting{% endblock %}
 
 {% block head %}
 <style>
@@ -97,11 +97,11 @@
                     <div class="rank-badge"><span class="badge-sub">RANK</span>#{{ player.rank }}</div>
                     {% endif %}
                     {% if player.get('pred') %}
-                    <div class="score-badge" style="border-color:#57b27e" data-bs-toggle="tooltip"
+                    <div class="pred-badge" data-bs-toggle="tooltip"
                          data-bs-title="ML projection trained on the 2020-23 draft classes vs their real NBA careers. Boom = P(NBA starter or better); Bust = P(bench or out of the league). Calibrated for drafted-caliber prospects.">
                         <span class="badge-sub">BOOM / BUST</span>
-                        <span style="color:#57b27e">{{ (player.pred.success * 100)|round|int }}%</span>
-                        / <span style="color:#d65745">{{ (player.pred.bust * 100)|round|int }}%</span>
+                        <span class="pred-boom">{{ (player.pred.success * 100)|round|int }}%</span>
+                        / <span class="pred-bust">{{ (player.pred.bust * 100)|round|int }}%</span>
                     </div>
                     {% endif %}
                 </div>

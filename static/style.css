@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════════
-   BIRDDOG SCOUTING — design system
+   THE BOYKINS SCOUTING — design system
    Palette derived from the brand mark: deep field slate, bone,
    hunter orange. One accent; semantic colors muted to match.
    ════════════════════════════════════════════════════════════ */
@@ -86,8 +86,8 @@ table, .stat-value, .bb-stat, .bb-pos { font-variant-numeric: tabular-nums; }
 .navbar.bd-nav {
     background: var(--bg-2) !important;
     border-bottom: 2px solid var(--orange);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 .bd-brand {
     display: flex;
@@ -95,11 +95,11 @@ table, .stat-value, .bb-stat, .bb-pos { font-variant-numeric: tabular-nums; }
     gap: 10px;
     text-decoration: none;
 }
-.bd-brand .bd-mark { height: 34px; width: auto; display: block; }
+.bd-brand .bd-mark { height: 52px; width: auto; display: block; }
 .bd-wordmark {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 19px;
+    font-size: 24px;
     letter-spacing: .04em;
     color: var(--ink);
     line-height: 1;
@@ -132,7 +132,7 @@ table, .stat-value, .bb-stat, .bb-pos { font-variant-numeric: tabular-nums; }
     border-bottom: 1px solid var(--line);
     padding: 12px 0;
     position: sticky;
-    top: 62px;
+    top: 86px;
     z-index: 1020;
 }
 .search-icon {
@@ -218,6 +218,16 @@ table, .stat-value, .bb-stat, .bb-pos { font-variant-numeric: tabular-nums; }
     min-width: 70px; display: inline-block;
 }
 .badge-sub { font-size: 10px; font-weight: 600; display: block; opacity: .85; }
+.pred-badge {
+    background: var(--bg-2);
+    border: 1px solid var(--line-strong);
+    color: var(--muted);
+    font-size: 22px; font-weight: 800;
+    padding: 10px 20px; border-radius: var(--radius); text-align: center;
+    min-width: 70px; display: inline-block;
+}
+.pred-badge .pred-boom { color: var(--green-soft); }
+.pred-badge .pred-bust { color: var(--red-soft); }
 
 /* ── Archetype badges ─────────────────────────────────── */
 .arch-off {
