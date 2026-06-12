@@ -38,12 +38,18 @@ def test_probabilities_are_valid_and_ordered(rows):
     succeeded must project higher success / lower bust than players who busted.
     (Individual pairs can legitimately invert — e.g. Haliburton's skinny
     low-usage college profile screamed bust risk and he hit anyway.)"""
-    head_s, head_b = train_final(rows)
+    head_s, head_b, head_st = train_final(rows)
     recs = [r["college_record"] for r in rows]
-    ps, pb = head_s.prob(recs), head_b.prob(recs)
-    assert ((0.0 <= ps) & (ps <= 1.0)).all() and ((0.0 <= pb) & (pb <= 1.0)).all()
+    ps, pb, pst = head_s.prob(recs), head_b.prob(recs), head_st.prob(recs)
+    for arr in (ps, pb, pst):
+        assert ((0.0 <= arr) & (arr <= 1.0)).all()
 
     hit = [i for i, r in enumerate(rows) if r["tier_val"] >= 3]
     bust = [i for i, r in enumerate(rows) if r["tier_val"] <= 1]
+    star = [i for i, r in enumerate(rows) if r["tier_val"] >= 4]
     assert np.mean(ps[hit]) > np.mean(ps[bust])
     assert np.mean(pb[hit]) < np.mean(pb[bust])
+    # star head: actual stars project more star-likely than busts, and the
+    # star tier nests inside success on average
+    assert np.mean(pst[star]) > np.mean(pst[bust])
+    assert np.mean(pst) <= np.mean(ps) + 1e-6
