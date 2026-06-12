@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "archetypes" %}
-{% block title %}Archetype Rankings — NCAA Draft Scout{% endblock %}
+{% block title %}Archetype Rankings — Birddog Scouting{% endblock %}
 
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-1 flex-wrap gap-2">
@@ -49,13 +49,13 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
         <tbody>
             {% for p in detail.members %}
             <tr>
-                <td style="color:#475569">{{ loop.index }}</td>
-                <td><a href="/scouting?player_id={{ p.id }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
+                <td style="color:#45545c">{{ loop.index }}</td>
+                <td><a href="/scouting?player_id={{ p.id }}" style="color:#d5cfc0;text-decoration:none">{{ p.name }}</a>
                     <span class="text-secondary" style="font-size:11px">{{ p.pos }} · {{ p.school }}</span></td>
-                <td class="text-end fw-bold" style="color:{{ '#10b981' if p.fits[detail.name] >= 80 else '#60a5fa' if p.fits[detail.name] >= 55 else '#94a3b8' }}">{{ p.fits[detail.name] }}</td>
+                <td class="text-end fw-bold" style="color:{{ '#57b27e' if p.fits[detail.name] >= 80 else '#7fb2d9' if p.fits[detail.name] >= 55 else '#9aa7ad' }}">{{ p.fits[detail.name] }}</td>
                 {% for comp, is_abs, w in detail.components %}
                 {% set v = (p.strengths_abs if is_abs else p.strengths).get(comp) %}
-                <td class="text-end" style="color:{{ '#10b981' if v is not none and v >= 80 else '#e2e8f0' if v is not none else '#475569' }}">{{ v if v is not none else '—' }}</td>
+                <td class="text-end" style="color:{{ '#57b27e' if v is not none and v >= 80 else '#d5cfc0' if v is not none else '#45545c' }}">{{ v if v is not none else '—' }}</td>
                 {% endfor %}
                 <td class="text-end text-secondary" title="Strengths-model draft rank">{{ '#' + p.sm_rank|string if p.get('sm_rank') else '—' }}</td>
             </tr>
@@ -83,10 +83,10 @@ Versatile players rank high in several groups. Descriptive only: these ratings n
             <table class="mt-1 w-100" style="font-size:12px">
                 {% for p in g.members[:6] %}
                 <tr>
-                    <td style="width:22px;color:#475569">{{ loop.index }}</td>
-                    <td><a href="/scouting?player_id={{ p.id }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
+                    <td style="width:22px;color:#45545c">{{ loop.index }}</td>
+                    <td><a href="/scouting?player_id={{ p.id }}" style="color:#d5cfc0;text-decoration:none">{{ p.name }}</a>
                         <span class="text-secondary" style="font-size:10px">{{ p.pos }}{% if p.get('sm_rank') %} · <span title="draft rank (strengths model)">#{{ p.sm_rank }}</span>{% endif %}</span></td>
-                    <td style="width:36px;text-align:right;font-weight:600;color:{{ '#10b981' if p.fits[g.name] >= 80 else '#60a5fa' if p.fits[g.name] >= 55 else '#94a3b8' }}">{{ p.fits[g.name] }}</td>
+                    <td style="width:36px;text-align:right;font-weight:600;color:{{ '#57b27e' if p.fits[g.name] >= 80 else '#7fb2d9' if p.fits[g.name] >= 55 else '#9aa7ad' }}">{{ p.fits[g.name] }}</td>
                 </tr>
                 {% endfor %}
             </table>

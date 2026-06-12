@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "scarcity" %}
-{% block title %}Scarcity — NCAA Draft Scout{% endblock %}
+{% block title %}Scarcity — Birddog Scouting{% endblock %}
 
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-1 flex-wrap gap-2">
@@ -36,13 +36,13 @@ this list, you can't wait on it. Drop-off = fit gap between the #1 and #4 player
                 <td><span class="{{ 'arch-off' if r.side == 'offensive' else 'arch-def' }}"
                           data-bs-toggle="tooltip" data-bs-title="{{ arch_desc.get(r.name, '') }}"
                           style="font-size:11px;padding:2px 8px">{{ r.name }}</span></td>
-                <td class="text-end fw-bold" style="color:{{ '#ef4444' if r.n_elite <= 2 else '#f59e0b' if r.n_elite <= 4 else '#10b981' }}">{{ r.n_elite }}</td>
+                <td class="text-end fw-bold" style="color:{{ '#d65745' if r.n_elite <= 2 else '#d9a521' if r.n_elite <= 4 else '#57b27e' }}">{{ r.n_elite }}</td>
                 <td class="text-end text-secondary">{{ r.n_solid }}</td>
                 <td class="text-end {{ 'text-warning' if r.dropoff >= 15 else 'text-secondary' }}">{{ r.dropoff }}</td>
-                <td style="font-size:11px;color:{{ '#ef4444' if 'Very' in r.signal else '#f59e0b' if r.signal == 'Scarce' else '#94a3b8' }}">{{ r.signal }}</td>
+                <td style="font-size:11px;color:{{ '#d65745' if 'Very' in r.signal else '#d9a521' if r.signal == 'Scarce' else '#9aa7ad' }}">{{ r.signal }}</td>
                 <td style="font-size:12px">
                     {% for p in r.top %}
-                    <a href="/scouting?player_id={{ p.id }}&year={{ current_year }}" style="color:#e2e8f0;text-decoration:none">{{ p.name }}</a>
+                    <a href="/scouting?player_id={{ p.id }}&year={{ current_year }}" style="color:#d5cfc0;text-decoration:none">{{ p.name }}</a>
                     <span class="text-secondary" style="font-size:10px">({{ p.fits[r.name] }}{% if p.get('sm_rank') %} · #{{ p.sm_rank }}{% endif %})</span>{{ ' · ' if not loop.last }}
                     {% endfor %}
                 </td>

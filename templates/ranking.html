@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "ranking" %}
-{% block title %}Ranking System — NCAA Draft Scout{% endblock %}
+{% block title %}Ranking System — Birddog Scouting{% endblock %}
 
 {% block content %}
 <h4 class="mb-1">How the Ranking Works</h4>
@@ -8,7 +8,7 @@
 below comes straight from the trained model file, so this page can never disagree with the math.</p>
 
 {% if model %}
-<div class="info-card mb-4" style="border-left:3px solid #22d3ee">
+<div class="info-card mb-4" style="border-left:3px solid #e8662a">
     <p class="mb-2">Each prospect gets <strong>10 measured strengths</strong> (scoring, shooting, playmaking,
     finishing, rim pressure, rebounding, rim protection, perimeter defense, ball security, size) —
     every one a percentile <strong>within his own draft class at his position</strong>, computed from his
@@ -17,12 +17,12 @@ below comes straight from the trained model file, so this page can never disagre
     screen that carries scout intel the box score can't see). All weights are <strong>learned</strong> from
     what actually happened to the eligible 2020–23 draft classes (drafted + undrafted who left college,
     returners excluded), never hand-tuned.</p>
-    <p class="mb-2 small" style="color:#34d399">Validation (leave-one-year-out, vs position-relative NBA value):
+    <p class="mb-2 small" style="color:#6cc492">Validation (leave-one-year-out, vs position-relative NBA value):
         strengths model <strong>{{ "%+.3f"|format(model.validation.loyo_spearman_model) }}</strong> ·
         legacy formula {{ "%+.3f"|format(model.validation.loyo_spearman_draft_score) }} on the same players.
         The shipped model is the average of {{ model.bootstraps }} bootstrap fits; every rank carries a 90%
         confidence band on the board.</p>
-    <p class="mb-0 small" style="color:#94a3b8">Boom/Bust = 1-D logistic calibrations of this model's score
+    <p class="mb-0 small" style="color:#9aa7ad">Boom/Bust = 1-D logistic calibrations of this model's score
     (held-out AUC ≈ 0.90 for both), answering "of eligible prospects with this projection, how many became
     NBA starters / how many washed out."</p>
 </div>
@@ -38,7 +38,7 @@ below comes straight from the trained model file, so this page can never disagre
         {% for f, c in coefs %}
             <tr>
                 <td>{{ f.replace('_', ' ') }}</td>
-                <td class="text-end" style="color:{{ '#10b981' if c > 0 else '#ef4444' }}">{{ "%+.4f"|format(c) }}</td>
+                <td class="text-end" style="color:{{ '#57b27e' if c > 0 else '#d65745' }}">{{ "%+.4f"|format(c) }}</td>
             </tr>
         {% endfor %}
         </tbody>
@@ -47,7 +47,7 @@ below comes straight from the trained model file, so this page can never disagre
 
 <div class="section-hdr">The other views</div>
 <div class="info-card">
-    <ul class="small mb-0" style="color:#94a3b8">
+    <ul class="small mb-0" style="color:#9aa7ad">
         <li><strong>Raw college</strong> (board toggle) — pure un-adjusted college production, for transparency.</li>
         <li><strong>Archetype fits</strong> — descriptive role measurements; they never feed this ranking
             (tested: they didn't add held-out accuracy).</li>

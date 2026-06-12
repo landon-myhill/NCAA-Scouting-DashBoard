@@ -2,13 +2,14 @@
 
 import plotly.graph_objects as go
 
+# Birddog palette: hunter orange leads, then field-muted companions
 _RADAR_COLORS = [
-    ("#f59e0b", "rgba(245,158,11,0.12)"),
-    ("#3b82f6", "rgba(59,130,246,0.12)"),
-    ("#10b981", "rgba(16,185,129,0.12)"),
-    ("#ef4444", "rgba(239,68,68,0.12)"),
-    ("#8b5cf6", "rgba(139,92,246,0.12)"),
-    ("#ec4899", "rgba(236,72,153,0.12)"),
+    ("#e8662a", "rgba(232,102,42,0.14)"),
+    ("#7fb2d9", "rgba(127,178,217,0.12)"),
+    ("#57b27e", "rgba(87,178,126,0.12)"),
+    ("#d9a521", "rgba(217,165,33,0.12)"),
+    ("#d65745", "rgba(214,87,69,0.12)"),
+    ("#ece5d3", "rgba(236,229,211,0.10)"),
 ]
 
 
@@ -57,6 +58,7 @@ def make_radar_json(*players) -> str:
             bgcolor="rgba(0,0,0,0)",
         ),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(family="Barlow, sans-serif", color="#d5cfc0"),
         margin=dict(l=40, r=40, t=40, b=40),
         legend=dict(orientation="h", yanchor="bottom", y=-0.15, xanchor="center", x=0.5),
         height=360,

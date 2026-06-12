@@ -1,66 +1,66 @@
 {% extends "base.html" %}
 {% set active_page = "scouting" %}
-{% block title %}{{ player.name }} — NCAA Draft Scout{% endblock %}
+{% block title %}{{ player.name }} — Birddog Scouting{% endblock %}
 
 {% block head %}
 <style>
 .pctl-bar-wrap { display:flex; align-items:center; gap:6px; margin-top:2px; }
-.pctl-bar { flex:1; height:6px; background:#1e293b; border-radius:3px; overflow:hidden; }
+.pctl-bar { flex:1; height:6px; background:#252f34; border-radius:3px; overflow:hidden; }
 .pctl-bar-fill { height:100%; border-radius:3px; transition:width .3s; }
 .pctl-label { font-size:10px; font-weight:700; min-width:32px; text-align:right; }
-.pctl-elite { color:#34d399; }
-.pctl-good { color:#60a5fa; }
-.pctl-avg { color:#94a3b8; }
-.pctl-below { color:#f87171; }
+.pctl-elite { color:#6cc492; }
+.pctl-good { color:#7fb2d9; }
+.pctl-avg { color:#9aa7ad; }
+.pctl-below { color:#e07a6b; }
 
 /* Combine card */
 .combine-card {
-    background: linear-gradient(180deg, #1a2030 0%, #1e293b 100%);
-    border: 1px solid #334155; border-radius: 12px; padding: 18px;
+    background: linear-gradient(180deg, #222b30 0%, #252f34 100%);
+    border: 1px solid #38454c; border-radius: 12px; padding: 18px;
 }
 .combine-card .combine-hdr {
     display:flex; justify-content:space-between; align-items:center;
-    margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #334155;
+    margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #38454c;
 }
 .combine-card .combine-hdr-title {
     font-size: 12px; font-weight: 700; letter-spacing: 1px;
-    color: #94a3b8; text-transform: uppercase;
+    color: #9aa7ad; text-transform: uppercase;
 }
 .combine-card .combine-hdr-tag {
     font-size: 9px; font-weight: 700; letter-spacing: 0.5px;
-    color: #cbd5e1; background: #334155; padding: 2px 8px; border-radius: 4px;
+    color: #cfc9ba; background: #38454c; padding: 2px 8px; border-radius: 4px;
 }
 .combine-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .combine-cell {
-    background: rgba(15,23,42,0.5); border-radius: 8px; padding: 8px 10px;
+    background: rgba(29,37,41,0.6); border-radius: 8px; padding: 8px 10px;
 }
 .combine-cell .lbl {
-    font-size: 9px; color: #64748b; font-weight: 700;
+    font-size: 9px; color: #7a878e; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.5px;
 }
-.combine-cell .val { font-size: 16px; font-weight: 700; color: #f1f5f9; margin-top: 2px; }
-.combine-cell.elite { background: rgba(52,211,153,0.08); border: 1px solid rgba(52,211,153,0.3); }
-.combine-cell.elite .val { color: #34d399; }
-.combine-cell.plus { background: rgba(96,165,250,0.06); border: 1px solid rgba(96,165,250,0.2); }
-.combine-cell.plus .val { color: #60a5fa; }
+.combine-cell .val { font-size: 16px; font-weight: 700; color: #ece5d3; margin-top: 2px; }
+.combine-cell.elite { background: rgba(87,178,126,0.1); border: 1px solid rgba(87,178,126,0.35); }
+.combine-cell.elite .val { color: #6cc492; }
+.combine-cell.plus { background: rgba(127,178,217,0.08); border: 1px solid rgba(127,178,217,0.25); }
+.combine-cell.plus .val { color: #7fb2d9; }
 .combine-section { margin-top: 10px; }
 .combine-section-title {
-    font-size: 10px; color: #64748b; font-weight: 700;
+    font-size: 10px; color: #7a878e; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;
 }
 .no-combine {
-    font-size: 11px; color: #64748b; font-style: italic; padding: 8px 0;
+    font-size: 11px; color: #7a878e; font-style: italic; padding: 8px 0;
 }
 
 /* Compare panel */
-.cmp-panel { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px; }
+.cmp-panel { background:#252f34; border:1px solid #38454c; border-radius:12px; padding:20px; }
 .cmp-search-wrap { position:relative; }
-.cmp-search-drop { display:none; position:absolute; top:100%; left:0; right:0; background:#1e293b; border:1px solid #475569; border-top:none; border-radius:0 0 8px 8px; max-height:280px; overflow-y:auto; z-index:1050; }
+.cmp-search-drop { display:none; position:absolute; top:100%; left:0; right:0; background:#252f34; border:1px solid #45545c; border-top:none; border-radius:0 0 8px 8px; max-height:280px; overflow-y:auto; z-index:1050; }
 .cmp-search-drop.show { display:block; }
 
 /* Side-by-side stat comparison */
-.cmp-stat-row { display:flex; align-items:center; padding:4px 0; border-bottom:1px solid #1e293b; }
-.cmp-stat-label { flex:0 0 60px; font-size:11px; color:#64748b; font-weight:700; text-align:center; }
+.cmp-stat-row { display:flex; align-items:center; padding:4px 0; border-bottom:1px solid #252f34; }
+.cmp-stat-label { flex:0 0 60px; font-size:11px; color:#7a878e; font-weight:700; text-align:center; }
 .cmp-stat-side { flex:1; display:flex; align-items:center; gap:4px; }
 .cmp-stat-side.left { justify-content:flex-end; text-align:right; }
 .cmp-stat-side.right { justify-content:flex-start; }
@@ -87,9 +87,9 @@
                 </div>
                 <div class="d-flex gap-2">
                     {% if player.get('sm_rank') %}
-                    <div class="rank-badge" style="border-color:#22d3ee" data-bs-toggle="tooltip"
+                    <div class="rank-badge" style="border-color:#e8662a" data-bs-toggle="tooltip"
                          data-bs-title="Strengths-model draft rank{% if player.get('sm_band') %} (90% range {{ player.sm_band[0] }}–{{ player.sm_band[1] }}){% endif %} — the main ranking">
-                        <span class="badge-sub">MODEL RANK</span><span style="color:#22d3ee">#{{ player.sm_rank }}</span></div>
+                        <span class="badge-sub">MODEL RANK</span><span style="color:#e8662a">#{{ player.sm_rank }}</span></div>
                     <div class="score-badge" data-bs-toggle="tooltip"
                          data-bs-title="Strengths-model NBA-value projection (0-100)">
                         <span class="badge-sub">MODEL</span>{{ (player.sm_score * 100)|round|int }}</div>
@@ -97,11 +97,11 @@
                     <div class="rank-badge"><span class="badge-sub">RANK</span>#{{ player.rank }}</div>
                     {% endif %}
                     {% if player.get('pred') %}
-                    <div class="score-badge" style="border-color:#10b981" data-bs-toggle="tooltip"
+                    <div class="score-badge" style="border-color:#57b27e" data-bs-toggle="tooltip"
                          data-bs-title="ML projection trained on the 2020-23 draft classes vs their real NBA careers. Boom = P(NBA starter or better); Bust = P(bench or out of the league). Calibrated for drafted-caliber prospects.">
                         <span class="badge-sub">BOOM / BUST</span>
-                        <span style="color:#10b981">{{ (player.pred.success * 100)|round|int }}%</span>
-                        / <span style="color:#ef4444">{{ (player.pred.bust * 100)|round|int }}%</span>
+                        <span style="color:#57b27e">{{ (player.pred.success * 100)|round|int }}%</span>
+                        / <span style="color:#d65745">{{ (player.pred.bust * 100)|round|int }}%</span>
                     </div>
                     {% endif %}
                 </div>
@@ -121,10 +121,10 @@
                 {% for name, pct in player.fits.items()|sort(attribute='1', reverse=true) %}
                 <div class="d-flex align-items-center gap-2 mb-1" style="font-size:12px">
                     <span style="width:175px" title="{{ arch_desc.get(name, '') }}">{{ name }}</span>
-                    <div style="flex:1;background:#1e293b;border-radius:4px;height:8px">
-                        <div style="width:{{ pct }}%;height:8px;border-radius:4px;background:{{ '#10b981' if pct >= 80 else '#60a5fa' if pct >= 55 else '#475569' }}"></div>
+                    <div style="flex:1;background:#252f34;border-radius:4px;height:8px">
+                        <div style="width:{{ pct }}%;height:8px;border-radius:4px;background:{{ '#57b27e' if pct >= 80 else '#7fb2d9' if pct >= 55 else '#45545c' }}"></div>
                     </div>
-                    <span style="width:28px;text-align:right;color:{{ '#10b981' if pct >= 80 else '#94a3b8' }}">{{ pct }}</span>
+                    <span style="width:28px;text-align:right;color:{{ '#57b27e' if pct >= 80 else '#9aa7ad' }}">{{ pct }}</span>
                 </div>
                 {% endfor %}
             </div>
@@ -150,7 +150,7 @@
                     {% set pctl = percentiles.get(key) %}
                     {% if pctl is not none %}
                     <div class="pctl-bar-wrap">
-                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#34d399' if pctl >= 90 else '#60a5fa' if pctl >= 70 else '#94a3b8' if pctl >= 40 else '#f87171' }}"></div></div>
+                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#6cc492' if pctl >= 90 else '#7fb2d9' if pctl >= 70 else '#9aa7ad' if pctl >= 40 else '#e07a6b' }}"></div></div>
                         <span class="pctl-label {{ 'pctl-elite' if pctl >= 90 else 'pctl-good' if pctl >= 70 else 'pctl-avg' if pctl >= 40 else 'pctl-below' }}">{{ pctl }}%</span>
                     </div>
                     {% endif %}
@@ -167,7 +167,7 @@
                     {% set pctl = percentiles.get(key) %}
                     {% if pctl is not none %}
                     <div class="pctl-bar-wrap">
-                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#34d399' if pctl >= 90 else '#60a5fa' if pctl >= 70 else '#94a3b8' if pctl >= 40 else '#f87171' }}"></div></div>
+                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#6cc492' if pctl >= 90 else '#7fb2d9' if pctl >= 70 else '#9aa7ad' if pctl >= 40 else '#e07a6b' }}"></div></div>
                         <span class="pctl-label {{ 'pctl-elite' if pctl >= 90 else 'pctl-good' if pctl >= 70 else 'pctl-avg' if pctl >= 40 else 'pctl-below' }}">{{ pctl }}%</span>
                     </div>
                     {% endif %}
@@ -184,7 +184,7 @@
                     {% set pctl = percentiles.get(key) %}
                     {% if pctl is not none %}
                     <div class="pctl-bar-wrap">
-                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#34d399' if pctl >= 90 else '#60a5fa' if pctl >= 70 else '#94a3b8' if pctl >= 40 else '#f87171' }}"></div></div>
+                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#6cc492' if pctl >= 90 else '#7fb2d9' if pctl >= 70 else '#9aa7ad' if pctl >= 40 else '#e07a6b' }}"></div></div>
                         <span class="pctl-label {{ 'pctl-elite' if pctl >= 90 else 'pctl-good' if pctl >= 70 else 'pctl-avg' if pctl >= 40 else 'pctl-below' }}">{{ pctl }}%</span>
                     </div>
                     {% endif %}
@@ -302,7 +302,7 @@
             {% endif %}
 
             <div class="text-secondary mt-2" style="font-size:10px;line-height:1.4">
-                <span style="color:#34d399">Elite</span> markers: wingspan ≥ 7'2", reach ≥ 9'0",
+                <span style="color:#6cc492">Elite</span> markers: wingspan ≥ 7'2", reach ≥ 9'0",
                 hand length ≥ 9.5", vert ≥ 40". Anthro trait signal +0.42 (best non-stat predictor of NBA success).
             </div>
             {% else %}
@@ -323,7 +323,7 @@
             <div class="cmp-search-wrap" style="max-width:400px">
                 <input type="text" class="form-control form-control-sm" id="quickCmpSearch"
                        placeholder="Search a player to compare with {{ player.name }}..."
-                       autocomplete="off" style="background:#0f172a;color:#f1f5f9;border-color:#475569;"
+                       autocomplete="off" style="background:#1d2529;color:#ece5d3;border-color:#45545c;"
                        {% if cmp_player %}value="{{ cmp_player.name }}"{% endif %}>
                 <div id="quickCmpDrop" class="cmp-search-drop"></div>
             </div>
@@ -336,7 +336,7 @@
                         <a href="/scouting?player_id={{ player.id }}" class="text-info text-decoration-none fw-bold">{{ player.name }}</a>
                         <div class="text-secondary" style="font-size:12px">{{ player.pos }} · {{ player.school }} · #{{ player.rank }}</div>
                     </div>
-                    <div style="font-size:12px;color:#475569;padding:0 16px">VS</div>
+                    <div style="font-size:12px;color:#45545c;padding:0 16px">VS</div>
                     <div class="text-center flex-1">
                         <a href="/scouting?player_id={{ cmp_player.id }}" class="text-info text-decoration-none fw-bold">{{ cmp_player.name }}</a>
                         <div class="text-secondary" style="font-size:12px">{{ cmp_player.pos }} · {{ cmp_player.school }} · #{{ cmp_player.rank }}</div>
@@ -431,7 +431,7 @@
                     {% set pctl = percentiles.get(key) %}
                     {% if pctl is not none %}
                     <div class="pctl-bar-wrap">
-                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#34d399' if pctl >= 90 else '#60a5fa' if pctl >= 70 else '#94a3b8' if pctl >= 40 else '#f87171' }}"></div></div>
+                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#6cc492' if pctl >= 90 else '#7fb2d9' if pctl >= 70 else '#9aa7ad' if pctl >= 40 else '#e07a6b' }}"></div></div>
                         <span class="pctl-label {{ 'pctl-elite' if pctl >= 90 else 'pctl-good' if pctl >= 70 else 'pctl-avg' if pctl >= 40 else 'pctl-below' }}" style="font-size:9px">{{ pctl }}%</span>
                     </div>
                     {% endif %}
@@ -463,7 +463,7 @@
                     {% set pctl = percentiles.get(key) %}
                     {% if pctl is not none %}
                     <div class="pctl-bar-wrap">
-                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#34d399' if pctl >= 90 else '#60a5fa' if pctl >= 70 else '#94a3b8' if pctl >= 40 else '#f87171' }}"></div></div>
+                        <div class="pctl-bar"><div class="pctl-bar-fill" style="width:{{ pctl }}%;background:{{ '#6cc492' if pctl >= 90 else '#7fb2d9' if pctl >= 70 else '#9aa7ad' if pctl >= 40 else '#e07a6b' }}"></div></div>
                         <span class="pctl-label {{ 'pctl-elite' if pctl >= 90 else 'pctl-good' if pctl >= 70 else 'pctl-avg' if pctl >= 40 else 'pctl-below' }}" style="font-size:9px">{{ pctl }}%</span>
                     </div>
                     {% endif %}

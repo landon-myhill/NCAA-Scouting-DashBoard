@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "needs" %}
-{% block title %}Team Needs — NCAA Draft Scout{% endblock %}
+{% block title %}Team Needs — Birddog Scouting{% endblock %}
 
 {% block content %}
 <h4 class="mb-1">Team Needs Finder</h4>
@@ -60,13 +60,13 @@
         <tbody>
             {% for r in results %}
             <tr>
-                <td style="color:#475569">{{ loop.index }}</td>
-                <td><a href="/scouting?player_id={{ r.player.id }}" style="color:#e2e8f0;text-decoration:none">{{ r.player.name }}</a>
+                <td style="color:#45545c">{{ loop.index }}</td>
+                <td><a href="/scouting?player_id={{ r.player.id }}" style="color:#d5cfc0;text-decoration:none">{{ r.player.name }}</a>
                     <span class="text-secondary" style="font-size:11px">{{ r.player.pos }} · {{ r.player.school }}</span></td>
-                <td class="text-end fw-bold" style="color:{{ '#10b981' if r.fit_avg >= 80 else '#60a5fa' if r.fit_avg >= 55 else '#94a3b8' }}">{{ r.fit_avg }}</td>
+                <td class="text-end fw-bold" style="color:{{ '#57b27e' if r.fit_avg >= 80 else '#7fb2d9' if r.fit_avg >= 55 else '#9aa7ad' }}">{{ r.fit_avg }}</td>
                 {% for a in sel %}
                 {% set v = r.need_fits.get(a) %}
-                <td class="text-end" style="color:{{ '#10b981' if v is not none and v >= 80 else '#e2e8f0' if v is not none else '#475569' }}">{{ v if v is not none else 'n/a' }}</td>
+                <td class="text-end" style="color:{{ '#57b27e' if v is not none and v >= 80 else '#d5cfc0' if v is not none else '#45545c' }}">{{ v if v is not none else 'n/a' }}</td>
                 {% endfor %}
                 <td class="text-end text-secondary">{{ '#' + r.player.sm_rank|string if r.player.get('sm_rank') else '—' }}</td>
             </tr>

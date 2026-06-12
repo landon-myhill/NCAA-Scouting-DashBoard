@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}NCAA Draft Scout{% endblock %}</title>
+    <title>{% block title %}Birddog Scouting{% endblock %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='birddog.svg') }}" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
@@ -12,14 +16,17 @@
 </head>
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bd-nav sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="/">NCAA Draft Scout</a>
+            <a class="bd-brand" href="/">
+                {% include '_logo.svg' %}
+                <span class="bd-wordmark">BIRDDOG<small>SCOUTING</small></span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMain">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav ms-4 me-auto">
                     <li class="nav-item">
                         <a class="nav-link {% if active_page == 'scouting' %}active{% endif %}" href="/scouting">Scouting</a>
                     </li>
@@ -51,7 +58,7 @@
         <div class="container-fluid">
             <form action="/scouting" method="GET" id="searchForm" class="position-relative">
                 <div class="input-group">
-                    <span class="input-group-text search-icon">🔍</span>
+                    <span class="input-group-text search-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="4.5"/><line x1="10.5" y1="10.5" x2="14" y2="14"/></svg></span>
                     <input class="form-control search-input" type="search" id="playerSearch"
                            placeholder="Search any player by name, school, or conference..."
                            autocomplete="off">
