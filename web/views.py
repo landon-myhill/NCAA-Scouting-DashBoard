@@ -426,13 +426,15 @@ def mockdraft():
     for p in sorted(pool, key=lambda q: (q.get("sm_score") is None,
                                          -(q.get("sm_score") or 0))):
         pred = p.get("pred") or {}
+        franks = p.get("fit_ranks") or {}
+        best = min(franks.items(), key=lambda t: t[1][0]) if franks else None
         players.append({
             "id": p["id"], "name": p["name"], "pos": p.get("pos", ""),
             "school": p.get("school", ""),
             "smRank": p.get("sm_rank"), "mock": p.get("_mock_rank"),
             "boom": round(pred["success"] * 100) if pred.get("success") is not None else None,
             "bust": round(pred["bust"] * 100) if pred.get("bust") is not None else None,
-            "arch": p.get("archetype", ""),
+            "arch": f"{best[0]} #{best[1][0]}" if best else p.get("archetype", ""),
         })
     from core.config import DATASETS_DIR
     order = []

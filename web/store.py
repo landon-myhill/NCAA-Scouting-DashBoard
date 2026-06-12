@@ -347,6 +347,23 @@ def ensure_fits(year, players: list[dict]) -> None:
     compute_strengths(pool, reference=pool)
     compute_fits(pool, reference=pool)
     _stamp_model_rank(pool)
+    _stamp_fit_ranks(pool)
+
+
+def _stamp_fit_ranks(pool: list[dict]) -> None:
+    """Class rank within each archetype: p['fit_ranks'][arch] = [rank, n].
+    Role-first presentation — a Connector gets introduced by his Connector
+    rank, not by a scorer's rubric."""
+    by_arch: dict = {}
+    for p in pool:
+        for arch, v in (p.get("fits") or {}).items():
+            if v is not None:
+                by_arch.setdefault(arch, []).append((v, p))
+    for arch, entries in by_arch.items():
+        entries.sort(key=lambda t: -t[0])
+        n = len(entries)
+        for i, (_, p) in enumerate(entries, 1):
+            p.setdefault("fit_ranks", {})[arch] = [i, n]
 
 
 def _stamp_model_rank(pool: list[dict]) -> None:

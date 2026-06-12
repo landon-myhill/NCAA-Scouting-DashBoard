@@ -123,12 +123,15 @@
                 <div class="small text-secondary mb-1" title="Weighted blends of his measured strengths, percentiled within this draft class. Descriptive only — never feeds the draft score.">
                     Archetype fits — percentile within this draft class</div>
                 {% for name, pct in player.fits.items()|sort(attribute='1', reverse=true) %}
+                {% set frk = (player.get('fit_ranks') or {}).get(name) %}
                 <div class="d-flex align-items-center gap-2 mb-1" style="font-size:12px">
                     <span style="width:175px" title="{{ arch_desc.get(name, '') }}">{{ name }}</span>
                     <div style="flex:1;background:#252f34;border-radius:4px;height:8px">
                         <div style="width:{{ pct }}%;height:8px;border-radius:4px;background:{{ '#57b27e' if pct >= 80 else '#7fb2d9' if pct >= 55 else '#45545c' }}"></div>
                     </div>
                     <span style="width:28px;text-align:right;color:{{ '#57b27e' if pct >= 80 else '#9aa7ad' }}">{{ pct }}</span>
+                    <span style="width:72px;text-align:right;font-weight:{{ '700' if frk and frk[0] <= 3 else '400' }};color:{{ '#e8662a' if frk and frk[0] <= 3 else '#9aa7ad' }}"
+                          title="His rank among the {{ frk[1] if frk else '?' }} {{ name }}-eligible players in this draft class">{{ '#' ~ frk[0] ~ ' of ' ~ frk[1] if frk else '' }}</span>
                 </div>
                 {% endfor %}
             </div>
