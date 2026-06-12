@@ -101,11 +101,13 @@
                     <div class="rank-badge"><span class="badge-sub">RANK</span>#{{ player.rank }}</div>
                     {% endif %}
                     {% if player.get('pred') %}
-                    <div class="pred-badge" data-bs-toggle="tooltip"
-                         data-bs-title="ML projection trained on the 2020-23 draft classes vs their real NBA careers. Boom = P(NBA starter or better); Bust = P(bench or out of the league). Calibrated for drafted-caliber prospects.">
-                        <span class="badge-sub">BOOM / BUST</span>
-                        <span class="pred-boom">{{ (player.pred.success * 100)|round|int }}%</span>
-                        / <span class="pred-bust">{{ (player.pred.bust * 100)|round|int }}%</span>
+                    <div class="pred-badge" style="font-size:14px;padding:8px 14px" data-bs-toggle="tooltip"
+                         data-bs-title="Calibrated career-outcome odds, trained on past draft classes vs their real NBA careers. The four sum to 100%.">
+                        <span class="badge-sub">PROJECTED OUTCOME</span>
+                        <span style="color:var(--gold-soft)" title="P(star)">★ {{ (player.pred.get('star', 0) * 100)|round|int }}%</span> ·
+                        <span class="pred-boom" title="P(starter)">St {{ (player.pred.get('starter', player.pred.success) * 100)|round|int }}%</span> ·
+                        <span style="color:var(--blue)" title="P(rotation)">R {{ (player.pred.get('rotation', 0) * 100)|round|int }}%</span> ·
+                        <span class="pred-bust" title="P(bust — bench or out of the league)">B {{ (player.pred.bust * 100)|round|int }}%</span>
                     </div>
                     {% endif %}
                 </div>

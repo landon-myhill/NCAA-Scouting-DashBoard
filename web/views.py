@@ -432,7 +432,8 @@ def mockdraft():
             "id": p["id"], "name": p["name"], "pos": p.get("pos", ""),
             "school": p.get("school", ""),
             "smRank": p.get("sm_rank"), "mock": p.get("_mock_rank"),
-            "boom": round(pred["success"] * 100) if pred.get("success") is not None else None,
+            "boom": round((pred.get("star", 0) + pred.get("starter", 0)) * 100) or
+                    (round(pred["success"] * 100) if pred.get("success") is not None else None),
             "bust": round(pred["bust"] * 100) if pred.get("bust") is not None else None,
             "arch": f"{best[0]} #{best[1][0]}" if best else p.get("archetype", ""),
         })

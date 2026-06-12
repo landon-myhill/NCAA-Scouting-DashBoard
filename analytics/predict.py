@@ -29,6 +29,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 SUCCESS_MIN_TIER = 3   # starter or star
+STAR_MIN_TIER = 4      # star only
 BUST_MAX_TIER = 1      # bench or never made it
 FEATS = FEATURE_SETS["inter+market+conf"]  # keep in lockstep with strengths_model
 LAMBDA_RIDGE = 20.0
@@ -114,7 +115,8 @@ def _prep(rows):
 def _labels(rows):
     ys = np.array([1.0 if r["tier_val"] >= SUCCESS_MIN_TIER else 0.0 for r in rows])
     yb = np.array([1.0 if r["tier_val"] <= BUST_MAX_TIER else 0.0 for r in rows])
-    return ys, yb
+    yst = np.array([1.0 if r["tier_val"] >= STAR_MIN_TIER else 0.0 for r in rows])
+    return ys, yb, yst
 
 
 def loyo_cv(rows):
@@ -126,7 +128,7 @@ def loyo_cv(rows):
     recs = [r["college_record"] for r in rows]
     X = _design(recs, FEATS)
     yv = np.array([r["target"] for r in rows], float)
-    ys, yb = _labels(rows)
+    ys, yb, yst = _labels(rows)
     years = np.array([r["year"] for r in rows])
     out = {}
     for hold in MATURE_YEARS:
@@ -137,9 +139,11 @@ def loyo_cv(rows):
         s_tr, s_te = _sm_predict(m, X[tr]), _sm_predict(m, X[te])
         cs, cls = fit_isotonic(s_tr, ys[tr]), fit_logistic_1d(s_tr, ys[tr])
         cb, clb = fit_isotonic(-s_tr, yb[tr]), fit_logistic_1d(-s_tr, yb[tr])
+        cst, clst = fit_isotonic(s_tr, yst[tr]), fit_logistic_1d(s_tr, yst[tr])
         out[hold] = {
             "auc_success": auc(ys[te], 0.5*iso_prob(cs, s_te) + 0.5*calib_prob(cls, s_te)),
             "auc_bust": auc(yb[te], 0.5*iso_prob(cb, -s_te) + 0.5*calib_prob(clb, -s_te)),
+            "auc_star": auc(yst[te], 0.5*iso_prob(cst, s_te) + 0.5*calib_prob(clst, s_te)),
             "n": int(te.sum()),
         }
     return out
@@ -169,11 +173,12 @@ def train_final(rows):
     recs = [r["college_record"] for r in rows]
     X = _design(recs, FEATS)
     yv = np.array([r["target"] for r in rows], float)
-    ys, yb = _labels(rows)
+    ys, yb, yst = _labels(rows)
     m = _fit_ridge(X, yv, LAMBDA_RIDGE)
     s = _sm_predict(m, X)
     return (Head(m, fit_isotonic(s, ys), fit_logistic_1d(s, ys)),
-            Head(m, fit_isotonic(-s, yb), fit_logistic_1d(-s, yb), flip=True))
+            Head(m, fit_isotonic(-s, yb), fit_logistic_1d(-s, yb), flip=True),
+            Head(m, fit_isotonic(s, yst), fit_logistic_1d(s, yst)))
 
 
 def main():
@@ -181,45 +186,55 @@ def main():
     rows = load_matched(years=(2020, 2021, 2022, 2023, 2024, 2025), include_undrafted=True)  # young classes join training (held-out unchanged)
     attach_value_target(rows)
     rows = [r for r in rows if r.get("target") is not None]
-    ys, yb = _labels(rows)
+    ys, yb, yst = _labels(rows)
     print(f"Training pool: {len(rows)} eligible players "
-          f"(success {int(ys.sum())}, bust {int(yb.sum())})")
+          f"(star {int(yst.sum())}, success {int(ys.sum())}, bust {int(yb.sum())})")
 
     cv = loyo_cv(rows)
     print("\nLeave-one-year-out held-out AUC (strengths-model calibration):")
     for y, m in cv.items():
-        print(f"  {y}: success {m['auc_success']:.3f}  bust {m['auc_bust']:.3f}  (n={m['n']})")
-    print(f"  MEAN: success {np.mean([m['auc_success'] for m in cv.values()]):.3f}  "
-          f"bust {np.mean([m['auc_bust'] for m in cv.values()]):.3f}")
+        print(f"  {y}: star {m['auc_star']:.3f}  success {m['auc_success']:.3f}  "
+              f"bust {m['auc_bust']:.3f}  (n={m['n']})")
+    print(f"  MEAN: star {np.nanmean([m['auc_star'] for m in cv.values()]):.3f}  "
+          f"success {np.mean([m['auc_success'] for m in cv.values()]):.3f}  "
+          f"bust {np.mean([m['auc_bust'] for m in cv.values()]):.3f}"
+          "   (star mean skips folds whose class produced no NCAA star)")
     if dry:
         return
 
     # Stamp the current class pool (only pool players have model features)
-    head_s, head_b = train_final(rows)
+    head_s, head_b, head_st = train_final(rows)
     from web import store  # pool already has strengths + mock stamped
     pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
                                     with_stubs=False)
-    ps, pb = head_s.prob(pool), head_b.prob(pool)
+    ps, pb, pst = head_s.prob(pool), head_b.prob(pool), head_st.prob(pool)
     raw = load_json(PLAYERS_FILE)
     by_id = {p["id"]: p for p in raw["players"]}
     stamped = 0
-    for p, s, b in zip(pool, ps, pb):
+    for p, s, b, st in zip(pool, ps, pb, pst):
         rec = by_id.get(p["id"])
         if rec is not None:
-            s, b = float(s), float(b)
-            rot = max(0.0, 1.0 - s - b)  # the "settles as a rotation guy" risk
-            rec["pred"] = {"success": round(s, 3), "bust": round(b, 3),
-                           "rotation": round(rot, 3)}
+            s, b, st = float(s), float(b), float(st)
+            st = min(st, s)                    # star ⊆ success (ordered tiers)
+            starter = max(0.0, s - st)
+            rot = max(0.0, 1.0 - s - b)        # the middle band
+            rec["pred"] = {"star": round(st, 3), "starter": round(starter, 3),
+                           "rotation": round(rot, 3), "bust": round(b, 3),
+                           "success": round(s, 3)}  # success kept for sorting/compat
             stamped += 1
     # everyone outside the pool: no probabilities (the model can't see them)
     for p in raw["players"]:
         if p["id"] not in {q["id"] for q in pool}:
             p.pop("pred", None)
     save_json(PLAYERS_FILE, raw)
-    print(f"\nStamped Boom/Bust for {stamped} eligible players -> {PLAYERS_FILE.name}")
+    print(f"\nStamped outcome probabilities for {stamped} eligible players -> {PLAYERS_FILE.name}")
     top = sorted(pool, key=lambda p: p.get("sm_rank") or 999)[:8]
-    for p, s, b in [(p, ps[pool.index(p)], pb[pool.index(p)]) for p in top]:
-        print(f"  #{p.get('sm_rank'):>3} {p['name']:<24} boom {s*100:.0f}%  bust {b*100:.0f}%")
+    for p in top:
+        i = pool.index(p)
+        st = min(float(pst[i]), float(ps[i]))
+        print(f"  #{p.get('sm_rank'):>3} {p['name']:<24} star {st*100:.0f}%  "
+              f"starter {(ps[i]-st)*100:.0f}%  rotation {max(0, 1-ps[i]-pb[i])*100:.0f}%  "
+              f"bust {pb[i]*100:.0f}%")
 
 
 if __name__ == "__main__":
