@@ -167,9 +167,22 @@ def bigboard():
     has_outcomes = any((p.get("nba") or {}).get("value") is not None for p in pool)
     sort_mode = request.args.get("sort") or ("model" if has_model else "score")
     if sort_mode == "nba" and has_outcomes:
-        # rank by what players ACTUALLY became (position-relative career value)
-        pool = sorted(pool, key=lambda p: -((p.get("nba") or {}).get("value")
-                                            if (p.get("nba") or {}).get("value") is not None else -1e9))
+        # Rank by what players ACTUALLY became: career TIER first (tiers carry
+        # the WS/48 quality floors raw value ignores — Keyonte George problem),
+        # then value within tier. Tier-first also keeps young classes honest on
+        # the all-years board: their values are within-class percentiles and
+        # can't be compared raw against the pooled mature scale (a 1.00 from a
+        # 2-season career must not outrank Anthony Edwards).
+        _tier_rank = {"star": 4, "starter": 3, "rotation": 2, "bench": 1,
+                      "no_nba": 0}
+
+        def _nba_key(p):
+            nba = p.get("nba") or {}
+            if nba.get("value") is None:
+                return (-1, -1e9)
+            return (_tier_rank.get(nba.get("tier"), 0), nba["value"])
+
+        pool = sorted(pool, key=_nba_key, reverse=True)
     elif sort_mode == "raw":
         pool = sorted(pool, key=lambda p: -(store.raw_score(p) or -1e9))
     elif sort_mode == "model" and has_model:
