@@ -185,6 +185,11 @@ def bigboard():
         pool = sorted(pool, key=_nba_key, reverse=True)
     elif sort_mode == "raw":
         pool = sorted(pool, key=lambda p: -(store.raw_score(p) or -1e9))
+    elif sort_mode == "stats" and has_model:
+        # the model with the market column zeroed: production only, no draft
+        # buzz — the board the model would publish if mocks didn't exist
+        pool = sorted(pool, key=lambda p: -(p.get("_sm_stats_score")
+                                            if p.get("_sm_stats_score") is not None else -1e9))
     elif sort_mode == "model" and has_model:
         # sm_score (projected NBA value) sorts within a class identically to
         # sm_rank AND compares across classes on the all-years board

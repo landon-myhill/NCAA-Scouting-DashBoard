@@ -147,6 +147,9 @@
             <a href="/bigboard?year={{ current_year }}&sort=model"
                class="btn btn-outline-secondary {% if sort_mode == 'model' %}active{% endif %}"
                title="The ranking — strengths model: measured strengths + learned age/height adjusters, trained on the eligible 2020-23 classes vs real NBA value">Strengths model</a>
+            <a href="/bigboard?year={{ current_year }}&sort=stats"
+               class="btn btn-outline-secondary {% if sort_mode == 'stats' %}active{% endif %}"
+               title="The same model with the market column removed — production only, no draft buzz. The board the model would publish if mocks didn't exist.">Stats only</a>
             <a href="/bigboard?year={{ current_year }}&sort=raw"
                class="btn btn-outline-secondary {% if sort_mode == 'raw' %}active{% endif %}"
                title="Raw college production — un-adjusted stat output, for transparency">Raw college</a>
