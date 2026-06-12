@@ -190,3 +190,12 @@ if (archSearch) {
         });
     });
 }
+
+// '/' anywhere focuses the universal search (skip when already typing)
+document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+        e.preventDefault();
+        const s = document.getElementById('playerSearch');
+        if (s) s.focus();
+    }
+});

@@ -28,30 +28,20 @@
             <div class="collapse navbar-collapse" id="navMain">
                 <ul class="navbar-nav ms-4 me-auto">
                     <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'scouting' %}active{% endif %}" href="/scouting">Scouting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'compare' %}active{% endif %}" href="/compare">Compare</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link {% if active_page == 'bigboard' %}active{% endif %}" href="/bigboard">Big Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page in ('scouting', 'compare') %}active{% endif %}" href="/scouting">Scouting</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if active_page == 'mockdraft' %}active{% endif %}" href="/mockdraft">Mock Draft</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'watchlist' %}active{% endif %}" href="/watchlist">Watchlist</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'archetypes' %}active{% endif %}" href="/archetypes">Archetypes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'scarcity' %}active{% endif %}" href="/scarcity">Scarcity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'needs' %}active{% endif %}" href="/needs">Team Needs</a>
+                        <a class="nav-link {% if active_page in ('archetypes', 'scarcity', 'needs') %}active{% endif %}" href="/archetypes">Roles</a>
                     </li>
                 </ul>
+                <a class="nav-link {% if active_page == 'watchlist' %}active{% endif %}" href="/watchlist"
+                   title="Watchlist" style="font-size:17px;padding:4px 12px">&#9733;</a>
             </div>
         </div>
     </nav>

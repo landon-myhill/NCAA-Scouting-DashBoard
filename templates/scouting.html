@@ -78,7 +78,9 @@
         <div class="info-card">
             <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
                 <div>
-                    <div class="player-name">{{ player.name }}</div>
+                    <div class="player-name">{{ player.name }}
+                        {% if hist_year %}<span style="font-size:12px;font-weight:700;vertical-align:middle;background:var(--bg-2);border:1px solid var(--line-strong);color:var(--muted);border-radius:12px;padding:3px 10px;margin-left:8px" title="Viewing a historical draft class">{{ hist_year }} class</span>{% endif %}
+                    </div>
                     <div class="player-meta">
                         {{ player.pos }} · {{ player.school }}{% if player.conference %} · {{ player.conference }}{% endif %}<br>
                         {{ player.year }} · {{ player.height }}{% if player.weight %} · {{ player.weight }}{% endif %}

@@ -73,6 +73,7 @@ def scouting():
     search_players = sorted(store.PLAYERS, key=lambda p: p["rank"])[:200]
 
     return render_template("scouting.html",
+        hist_year=year_q if is_hist else None,
         player=player, profile=profile, radar_json=radar_json,
         in_watchlist=player["id"] in wl_ids,
         note=notes.get(player["id"], ""),
