@@ -163,7 +163,7 @@
 </div>
 
 {% if is_curated %}
-<div class="info-card mb-3" style="border-left:3px solid #e8662a;padding:8px 14px;font-size:12px;color:#9aa7ad">
+<div class="info-card mb-3" style="border-left:3px solid #e8662a;padding:8px 14px;font-size:13.5px;color:#9aa7ad">
     Curated board — all {{ players|length }} listed prospects
     {%- if unmatched_names %} · <span style="color:#d9a521" title="{{ unmatched_names|join(', ') }}">{{ unmatched_names|length }} with no NCAA record (international / G-League / did not play) are listed at the bottom</span>{% endif %}.
     Edit datasets/board_lists/board_&lt;year&gt;.txt to change the list.
@@ -198,31 +198,31 @@
         </div>
         <div class="bb-archetypes">
             {% for a in prof.get('all_offensive', []) %}
-            <span class="arch-off" style="font-size:10px;padding:2px 7px">{{ a }}</span>
+            <span class="arch-off" style="font-size:11.5px;padding:2px 7px">{{ a }}</span>
             {% endfor %}
             {% for a in prof.get('all_defensive', []) %}
-            <span class="arch-def" style="font-size:10px;padding:2px 7px">{{ a }}</span>
+            <span class="arch-def" style="font-size:11.5px;padding:2px 7px">{{ a }}</span>
             {% endfor %}
         </div>
-        <div class="bb-stat">{{ fmt_stat(p.stats.get('PPG'), 'PPG') }} <span class="text-secondary" style="font-size:10px">PPG</span></div>
-        <div class="bb-stat" style="line-height:1.3">{% if p.get('sm_score') is not none %}<span style="color:#e8662a;font-size:16px;font-weight:700" title="{% if p.get('_intl_stub') %}International model grade (experimental, n=41 training set): league-adjusted production + age + market, same 0-100 scale — treat as a tier, not a precise rank{% else %}Strengths-model projection of NBA value (0-100): measured strengths + learned age/market adjusters, averaged over 300 bootstrap fits{% endif %}">{{ (p.sm_score * 100)|round|int }}</span> <span class="text-secondary" style="font-size:10px">Model{% if p.get('_intl_stub') %} <span style="color:#d9a521">intl</span>{% endif %}</span>{% if p.get('sm_band') %}<br><span class="text-secondary" style="font-size:10px" title="90% confidence range for his rank across the 300 bootstrap models — tight band = the model is sure, wide band = could swing">rk {{ p.sm_band[0] }}–{{ p.sm_band[1] }}</span>{% endif %}{% if p.get('_raw') is not none and sort_mode == 'raw' %}<br><span style="font-size:11px;color:#d9a521" title="Raw college production — un-adjusted stat output">{{ p._raw }} <span style="font-size:9px">raw</span></span>{% endif %}{% elif p.get('_intl_stub') %}— <span class="text-secondary" style="font-size:10px" title="No NCAA stats — the model needs an NCAA season">Model</span>{% else %}<span class="text-secondary">—</span>{% endif %}</div>
+        <div class="bb-stat">{{ fmt_stat(p.stats.get('PPG'), 'PPG') }} <span class="text-secondary" style="font-size:11.5px">PPG</span></div>
+        <div class="bb-stat" style="line-height:1.3">{% if p.get('sm_score') is not none %}<span style="color:#e8662a;font-size:18px;font-weight:700" title="{% if p.get('_intl_stub') %}International model grade (experimental, n=41 training set): league-adjusted production + age + market, same 0-100 scale — treat as a tier, not a precise rank{% else %}Strengths-model projection of NBA value (0-100): measured strengths + learned age/market adjusters, averaged over 300 bootstrap fits{% endif %}">{{ (p.sm_score * 100)|round|int }}</span> <span class="text-secondary" style="font-size:11.5px">Model{% if p.get('_intl_stub') %} <span style="color:#d9a521">intl</span>{% endif %}</span>{% if p.get('sm_band') %}<br><span class="text-secondary" style="font-size:11.5px" title="90% confidence range for his rank across the 300 bootstrap models — tight band = the model is sure, wide band = could swing">rk {{ p.sm_band[0] }}–{{ p.sm_band[1] }}</span>{% endif %}{% if p.get('_raw') is not none and sort_mode == 'raw' %}<br><span style="font-size:12.5px;color:#d9a521" title="Raw college production — un-adjusted stat output">{{ p._raw }} <span style="font-size:10.5px">raw</span></span>{% endif %}{% elif p.get('_intl_stub') %}— <span class="text-secondary" style="font-size:11.5px" title="No NCAA stats — the model needs an NCAA season">Model</span>{% else %}<span class="text-secondary">—</span>{% endif %}</div>
         {% if p.get('pred') %}
         <div class="bb-stat" style="line-height:1.25"
              title="ML projection (trained on 2020-23 draft classes vs real NBA careers): chance of becoming an NBA starter+ / chance of busting out">
-            <span style="color:#57b27e;font-size:12px">{{ (p.pred.success * 100)|round|int }}%</span> <span class="text-secondary" style="font-size:9px">boom</span><br>
-            <span style="color:#e07a6b;font-size:12px">{{ (p.pred.bust * 100)|round|int }}%</span> <span class="text-secondary" style="font-size:9px">bust</span>
+            <span style="color:#57b27e;font-size:13.5px">{{ (p.pred.success * 100)|round|int }}%</span> <span class="text-secondary" style="font-size:10.5px">boom</span><br>
+            <span style="color:#e07a6b;font-size:13.5px">{{ (p.pred.bust * 100)|round|int }}%</span> <span class="text-secondary" style="font-size:10.5px">bust</span>
         </div>
         {% endif %}
         {% if not is_master %}
-        <div class="bb-stat" style="color:#45545c;font-size:11px">#{{ p.rank }} <span style="font-size:9px">formula</span></div>
+        <div class="bb-stat" style="color:#45545c;font-size:12.5px">#{{ p.rank }} <span style="font-size:10.5px">formula</span></div>
         {% endif %}
         {% if p.get('_mock_rank') %}
         <div class="bb-stat" style="line-height:1.25">
             {% set diff = p._mock_rank - pos_num %}
-            <span style="font-size:12px;color:#9aa7ad">#{{ p._mock_rank }}</span> <span class="text-secondary" style="font-size:9px">mock</span>
+            <span style="font-size:13.5px;color:#9aa7ad">#{{ p._mock_rank }}</span> <span class="text-secondary" style="font-size:10.5px">mock</span>
             {% if not p.get('_intl_stub') %}
-                {% if diff >= 10 %}<br><span style="color:#57b27e;font-size:10px" title="Model ranks him {{ diff }} spots HIGHER than the mock consensus — potential steal">▲ +{{ diff }}</span>
-                {% elif diff <= -10 %}<br><span style="color:#d9a521;font-size:10px" title="Mock consensus is {{ -diff }} spots higher than the model — the market sees something the stats don't (or is overpaying)">▼ {{ diff }}</span>
+                {% if diff >= 10 %}<br><span style="color:#57b27e;font-size:11.5px" title="Model ranks him {{ diff }} spots HIGHER than the mock consensus — potential steal">▲ +{{ diff }}</span>
+                {% elif diff <= -10 %}<br><span style="color:#d9a521;font-size:11.5px" title="Mock consensus is {{ -diff }} spots higher than the model — the market sees something the stats don't (or is overpaying)">▼ {{ diff }}</span>
                 {% endif %}
             {% endif %}
         </div>
@@ -233,20 +233,20 @@
             {% set nba = p.get('nba') %}
             {% if nba %}
                 {% set tier_colors = {'star': '#e0b13a', 'starter': '#57b27e', 'rotation': '#7fb2d9', 'bench': '#9aa7ad', 'no_nba': '#d65745'} %}
-                <span style="font-size:10px;color:{{ tier_colors.get(nba.tier, '#9aa7ad') }}"
+                <span style="font-size:11.5px;color:{{ tier_colors.get(nba.tier, '#9aa7ad') }}"
                       title="Actual outcome: drafted #{{ nba.pick }} overall — career tier: {{ (nba.tier or '?')|replace('_',' ') }}{% if not nba.mature %} (early career — graded against his own draft class){% endif %}">
                     NBA #{{ nba.pick }} · {{ (nba.tier or '?')|replace('_',' ') }}</span>
             {% elif p.get('_draft_complete') %}
-                <span class="text-secondary" style="font-size:10px" title="Not drafted">undrafted</span>
+                <span class="text-secondary" style="font-size:11.5px" title="Not drafted">undrafted</span>
             {% endif %}
-            <span class="text-secondary" style="font-size:10px"> {{ p.get('_season_year','') }}</span>
+            <span class="text-secondary" style="font-size:11.5px"> {{ p.get('_season_year','') }}</span>
             {% elif p.get('_intl_stub') %}
-            <span class="text-secondary" style="font-size:10px">—</span>
+            <span class="text-secondary" style="font-size:11.5px">—</span>
             {% endif %}
         </div>
         <div class="bb-stat">
             <a href="/scouting?player_id={{ p._orig_id if p.get('_orig_id') is not none else p.id }}&year={{ p.get('_season_year', current_year) }}"
-               class="btn btn-outline-secondary btn-sm" style="font-size:10px;padding:2px 8px">Scout</a>
+               class="btn btn-outline-secondary btn-sm" style="font-size:11.5px;padding:2px 8px">Scout</a>
         </div>
     </div>
     {% endfor %}

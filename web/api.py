@@ -12,11 +12,26 @@ from web.db import (get_board_order, get_db, get_notes_map, get_watchlist_ids)
 api_bp = Blueprint("api", __name__, url_prefix="/api")
 
 
+_SEARCH_POOL = None
+
+
+def _search_pool():
+    """Search covers ONLY the product's population: the curated current-class
+    board (drafted-or-eligible prospects incl. data stubs) — never the full
+    scraped season. Historical classes are reachable via their year boards."""
+    global _SEARCH_POOL
+    if _SEARCH_POOL is None:
+        pool, _, _ = store.board_filter(store.PLAYERS, store.CURRENT_SEASON_YEAR,
+                                        with_stubs=True)
+        _SEARCH_POOL = pool
+    return _SEARCH_POOL
+
+
 @api_bp.route("/players")
 def players_search():
     q = request.args.get("q", "").lower().strip()
     results = []
-    for p in store.PLAYERS:
+    for p in _search_pool():
         if (q and q not in p["name"].lower()
                 and q not in p.get("school", "").lower()
                 and q not in p.get("conference", "").lower()):
