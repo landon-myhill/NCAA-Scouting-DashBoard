@@ -2,6 +2,17 @@
 
 A Flask-based scouting dashboard for NCAA D1 basketball prospects. Scrapes real stats from sports-reference.com, classifies players into multiple archetypes, ranks them with a data-fit composite draft score, and projects each prospect's **Boom % / Bust %** with an ML model trained on real NBA career outcomes.
 
+![Big Board](docs/screenshots/bigboard.png)
+
+<details>
+<summary>More screenshots — Scouting profile & Archetype rankings</summary>
+
+![Scouting profile](docs/screenshots/scouting.png)
+
+![Archetype rankings](docs/screenshots/roles.png)
+
+</details>
+
 ## Features
 
 - **Scouting** — Player profiles with archetype badges, Boom/Bust projection, skill radar charts, scouting tags, auto-saving notes, full stats and advanced metrics
@@ -87,15 +98,21 @@ Built 100% from college stats. The composite blends component scores (production
 
 ### NBA outcomes (the measuring stick — never an input to the score)
 
-Careers are graded with a **position-relative box-score value** (`analytics/value.py`): career PPG / minutes-per-game / RPG / APG / durability, each percentiled within position group and per-season — no VORP/WS composites (they misgrade roles: durable backup bigs farm Win Shares, bad-team starters grade as benchwarmers). Career tiers (star / starter / rotation / bench / no_nba) are bands on that score; classes younger than 3 seasons show "early career" instead of a premature tier. The formula's held-out rank correlation vs this target is **+0.30**, and the actual NBA draft order scores comparably — a box-score model performing at parity with the scouting industry.
+Careers are graded with a **position-relative box-score value** (`analytics/value.py`): career PPG / minutes-per-game / RPG / APG / durability, each percentiled within position group and per-season — no VORP/WS composites (they misgrade roles: durable backup bigs farm Win Shares, bad-team starters grade as benchwarmers). Career tiers (star / starter / rotation / bench / no_nba) are bands on that score; classes younger than 3 seasons show "early career" instead of a premature tier.
+
+The shipped ranking is a bagged ridge model on class-relative skill percentiles (`analytics/strengths_model.py`), validated leave-one-year-out on the 2020–23 classes. Held-out Spearman vs the outcome metric: **+0.62 from college statistics alone**, **+0.818 with the market-consensus feature included** — against ~+0.37 for the raw NBA draft order and +0.25 for the project's original hand-tuned formula. Read the +0.818 with care: the market feature (draft slot at training time) carries the largest coefficient by far, and draft position partly *causes* the outcome it helps predict (high picks are given minutes, and the outcome metric is minutes-heavy). The stats-only +0.62 is the cleaner measure of what the model itself sees; the full methodology, caveats, and rejected ideas are in [`docs/ANALYSIS.md`](docs/ANALYSIS.md).
 
 ### Boom / Bust (the projection)
 
-`analytics/predict.py` calibrates the draft score into probabilities, validated leave-one-year-out against the box-score outcome tiers: **Boom** = P(NBA starter or better), held-out AUC **0.68**; **Bust** = P(bench or out of the league), AUC **0.61**. Multi-feature models were tested and scored worse — they don't ship (same rule as everything else: held-out improvement or it doesn't go in).
+`analytics/predict.py` calibrates the strengths-model score into probabilities (blended logistic + binned-isotonic), validated leave-one-year-out against the box-score outcome tiers with the ranking model **refit inside each fold**: **Boom** = P(NBA starter or better), held-out AUC **0.889**; **Bust** = P(bench or out of the league), AUC **0.914**. The market-feature caveat above applies to these numbers too. Multi-feature probability models were tested and scored worse — they don't ship (same rule as everything else: held-out improvement or it doesn't go in).
 
 Honesty caveats baked in: outcome data covers drafted players (plus scraped undrafted top-150 outcomes via `data/scrape_undrafted.py`), so probabilities read as "for a draftable-caliber prospect"; any change must improve held-out CV *and* pass face-validity spot checks before shipping.
 
 Re-tune: `python -m analytics.tune`. Baseline check: `python -m analytics.backtest`. Re-grade outcomes: `python -m analytics.value --rescore`.
+
+## Data Sources & Fair Use
+
+College and NBA statistics are scraped from [sports-reference.com](https://www.sports-reference.com) (Sports Reference LLC); draft-day ages from Tankathon. The scrapers identify themselves and throttle to one request per 2 seconds. Snapshots of the scraped data are committed to `datasets/` solely so the project builds and validates offline without hammering the source sites. This is a **non-commercial educational/portfolio project**; the data belongs to its original providers, no ownership is claimed, and the snapshots will be removed on request from any rights holder. If you fork this project, please respect the source sites' terms of use and rate limits.
 
 ## Testing
 

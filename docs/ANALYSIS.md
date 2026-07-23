@@ -6,7 +6,7 @@
 
 ## Abstract
 
-We develop and validate a statistical system for ranking NCAA draft prospects by predicted NBA career value. Using seven draft classes (2020–2026) restricted to genuinely draft-eligible populations (n = 427 training careers), we construct a position-relative, box-score-based outcome metric; derive ten class-relative skill "strengths" per player; and fit a bootstrap-aggregated ridge regression whose features are selected exclusively by leave-one-year-out (LOYO) cross-validation. The shipped model achieves a mean held-out Spearman correlation of **+0.818** with realized NBA value, against **+0.249** for the project's legacy heuristic score and roughly **+0.37** for the NBA's actual draft order. A calibrated probability layer attains held-out AUC of **0.889** (success: starter-or-better) and **0.914** (bust). Secondary studies document: (i) the model's systematic miss profile (low-usage "glue" players); (ii) a conditional "fragility" effect in which shooting-dependent top prospects bust at elevated rates (permutation p = 0.010, n = 48); and (iii) multiple hypotheses that failed validation and were rejected, including true draft-day age, archetype-fit features, and an age × market interaction. We report all of these, including the failures, as a record of what the data does and does not support.
+We develop and validate a statistical system for ranking NCAA draft prospects by predicted NBA career value. Using seven draft classes (2020–2026) restricted to genuinely draft-eligible populations (n = 427 training careers), we construct a position-relative, box-score-based outcome metric; derive ten class-relative skill "strengths" per player; and fit a bootstrap-aggregated ridge regression whose features are selected exclusively by leave-one-year-out (LOYO) cross-validation. From college statistics alone the model achieves a mean held-out Spearman of **+0.62** with realized NBA value, against **+0.249** for the project's legacy heuristic score and roughly **+0.37** for the NBA's actual draft order. Adding a market-consensus feature (draft slot at training time) raises the shipped model to **+0.818** — a figure that must be read with its caveat: the market feature carries the largest coefficient by far, and draft position partly *causes* the minutes-heavy outcome it helps predict (§5.4, §10). A calibrated probability layer on the shipped model attains held-out AUC of **0.889** (success: starter-or-better) and **0.914** (bust). Secondary studies document: (i) the model's systematic miss profile (low-usage "glue" players); (ii) a conditional "fragility" effect in which shooting-dependent top prospects bust at elevated rates (permutation p = 0.010, n = 48); and (iii) multiple hypotheses that failed validation and were rejected, including true draft-day age, archetype-fit features, and an age × market interaction. We report all of these, including the failures, as a record of what the data does and does not support.
 
 ---
 
@@ -98,11 +98,22 @@ Ridge regression (closed-form, standardized features, median imputation) of `nba
 |---|---|
 | Legacy draft score | +0.249 |
 | NBA draft order (same rows, in-sample) | ~+0.37 |
-| Ridge, strengths only | ~+0.74 |
-| + age interactions + market | +0.813 |
+| Ridge, strengths only | +0.59 |
+| Ridge, strengths + age interactions (best no-market config) | **+0.62** |
+| + market | +0.812 |
 | + conf_tier (shipped) | **+0.818** (per-year +0.833/+0.807/+0.848/+0.785) |
 
-(The +0.821 measured before the pooled-size change moved to +0.818 after it — two folds improved, two declined; treated as a statistical tie and accepted for the interpretability gain.)
+(The +0.821 measured before the pooled-size change moved to +0.818 after it — two folds improved, two declined; treated as a statistical tie and accepted for the interpretability gain. An earlier draft of this document reported "strengths only ~+0.74"; re-running the harness against the current data gives +0.59, corrected above.)
+
+### 5.4 What the market feature is actually contributing
+
+The jump from +0.62 to +0.818 comes almost entirely from `market`, whose bootstrap-averaged coefficient (+0.196) is six to eight times larger than any skill strength (next largest: age × scoring at −0.034). Three consequences for interpreting the headline number:
+
+1. **The evaluation uses the actual draft slot on held-out rows.** At inference time on the current class only mock ranks exist, so +0.818 is an upper bound on live performance to the extent mocks diverge from final slots.
+2. **Draft slot partly causes the outcome.** High picks are handed minutes and development patience, and the outcome metric weights minutes heavily (MPG + games/season = 35% directly, and PPG/RPG/APG scale with minutes). Some of the market coefficient reflects opportunity allocation, not information about the player.
+3. **"Beats the draft order" needs qualification.** The model *contains* the draft order; the defensible claims are that (a) college statistics alone (+0.62) outperform both the legacy formula (+0.25) and the raw draft-order Spearman (~+0.37) on these populations, and (b) blending statistics with the market outperforms the market alone. The raw-order figure is also depressed by ties among the 149 undrafted players, which the blended model breaks with production data — part of the +0.818 gap is that tie-breaking, not prediction.
+
+The market feature stays in the shipped model because the app's job is the best available ranking, and the market carries real information (athleticism, medicals, intel) the box score cannot see. But the honest one-line summary of this project is the stats-only +0.62, not the +0.818.
 
 Training on all six classes (adding 2024–25 rows) left held-out performance on settled classes unchanged at +0.813→+0.818 scale — more data at zero cost.
 
@@ -166,7 +177,7 @@ The true-age result is the most instructive: the class-year ordinal already carr
 
 1. **Feature ceiling.** One season of box score caps what is knowable; the six §8.2 misses are structural, not parametric.
 2. **Selection bias.** Training only on draft entrants; development, opportunity, and landing spot are invisible.
-3. **Market dependence at the margins.** Players absent from mock boards get market = 0, concentrating model risk exactly where statistics are noisiest.
+3. **Market dependence.** The market feature dominates the shipped model (§5.4). Held-out evaluation uses actual draft slots where inference only has mock ranks; draft slot partly causes the minutes-heavy outcome; and players absent from mock boards get market = 0, concentrating model risk exactly where statistics are noisiest. The stats-only +0.62 is the market-free measure of model skill.
 4. **Selection-on-test-folds optimism.** Feature sets were chosen on the same four folds reported; headline +0.818 is mildly optimistic. The 2026 class is the only fully untouched test.
 5. **Small-n subgroup analyses.** §8.3 in particular (n = 48) carries wide uncertainty and a researcher-degrees-of-freedom caveat.
 6. **Young-class labels.** 2024–25 tiers are 1–2 season snapshots; they will move.
@@ -174,7 +185,7 @@ The true-age result is the most instructive: the class-year ordinal already carr
 
 ## 11. Conclusions
 
-A position-relative, box-score outcome metric plus class-relative skill percentiles, a market-validation feature, and a conference tier — fit by bagged ridge and disciplined by leave-one-year-out validation — predicts NBA career value at +0.818 held-out Spearman, a ~3.3× improvement over the project's legacy score and materially better than the NBA draft order itself on the same populations. The probability layer provides calibrated boom/bust estimates (AUC 0.889/0.914). The system's documented blind spots are precisely characterized (glue players inbound, shooting-dependent stars outbound) and are mirror images of one another: **at the top of a draft, shooting is fragile; playmaking, rim pressure, and defense are durable.**
+A position-relative, box-score outcome metric plus class-relative skill percentiles — fit by bagged ridge and disciplined by leave-one-year-out validation — predicts NBA career value at **+0.62 held-out Spearman from college statistics alone**, a ~2.5× improvement over the project's legacy score and ahead of the raw NBA draft-order correlation (~+0.37) on the same populations. Blending in the market-consensus feature lifts the shipped model to +0.818, with the important caveat that the market feature dominates the fit and draft position partly causes the outcome it predicts (§5.4). The probability layer provides calibrated boom/bust estimates (AUC 0.889/0.914 on the shipped model). The system's documented blind spots are precisely characterized (glue players inbound, shooting-dependent stars outbound) and are mirror images of one another: **at the top of a draft, shooting is fragile; playmaking, rim pressure, and defense are durable.**
 
 The single most valuable practice in this project was not any feature but the rule that nothing ships without held-out evidence — it rejected more of our ideas than it accepted, and every rejection is listed in §9.
 
